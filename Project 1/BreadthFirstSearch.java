@@ -31,6 +31,7 @@ public class BreadthFirstSearch extends SearchMethod
 	 */
 	public int search(String startVertex, String endVertex)
 	{
+		return -1;
 	}
 
 	/**
@@ -40,6 +41,7 @@ public class BreadthFirstSearch extends SearchMethod
 	 */
 	public String getPath()
 	{
+		return "";
 	}
 
 	/**
@@ -49,5 +51,6 @@ public class BreadthFirstSearch extends SearchMethod
 	 */
 	public String getName()
 	{
+		return "";
 	}
 }
