@@ -1,5 +1,7 @@
 import java.util.*;
 
+import sun.security.jca.GetInstance.Instance;
+
 /**
  * Class that searches a graph using A*
  * 
@@ -27,6 +29,7 @@ public class AStar extends SearchMethod
 		
 	    Node parent; //the node we came from
 	    
+	    int cost;
 	    int finalCost;
 	    String abbr;
 	}
@@ -63,6 +66,7 @@ public class AStar extends SearchMethod
 		//set up start vertex as a node
 		Node startNode = new Node();
 		startNode.finalCost = 0;
+		startNode.cost = 0;
 		startNode.abbr = startVertex;
 		
 		//add start node to both open lists
@@ -84,7 +88,7 @@ public class AStar extends SearchMethod
 			openNodes.remove(current.abbr);
 			
 			if(current.abbr.equals(endVertex)) {
-				int finalCost = current.finalCost;
+				int finalCost = 0;
 				System.out.println("Found path");
 				//set up path
 				while(true) {
@@ -92,6 +96,8 @@ public class AStar extends SearchMethod
 						return finalCost;
 					}
 					path.add(current.abbr);
+					finalCost += current.cost;
+					
 					current = current.parent;
 				}
 			}
@@ -114,6 +120,7 @@ public class AStar extends SearchMethod
 						//set final cost of n
 						Node t = new Node();
 						t.abbr = n;
+						t.cost = getGraph().get(current.abbr).get(i).cost;
 						t.finalCost = tempNeighborFinalCost;
 						t.parent = current;
 						
@@ -125,6 +132,7 @@ public class AStar extends SearchMethod
 							//update final cost
 							Node t = new Node();
 							t.abbr = n;
+							t.cost =  getGraph().get(current.abbr).get(i).cost;
 							t.finalCost = tempNeighborFinalCost;
 							t.parent = current;
 							openNodes.remove(n);
