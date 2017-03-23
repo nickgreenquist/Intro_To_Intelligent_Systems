@@ -90,9 +90,9 @@ public class PathFinder
 		System.out.println(heuristics.toString());
 
 		SearchMethod searchMethod = null;
-		if (method.equals("a*"))
+		if (method.equals("astar"))
 		{
-			searchMethod = new AStar(graph);
+			searchMethod = new AStar(graph, heuristics);
 		} else if (method.equals("backtracking"))
 		{
 			searchMethod = new Backtracking(graph);
