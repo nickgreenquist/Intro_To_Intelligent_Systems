@@ -114,7 +114,14 @@ public class PathFinder
 		in.close();
 
 		int cost = searchMethod.search(startVertex, endVertex);
-		System.out.println("Cost: " + cost);
-		System.out.println("Path: " + searchMethod.getPath());
+		if (cost == -1)
+		{
+			System.out.println(
+					"No path was found from the start node to the end node.");
+		} else
+		{
+			System.out.println("Cost: " + cost);
+			System.out.println("Path: " + searchMethod.getPath());
+		}
 	}
 }

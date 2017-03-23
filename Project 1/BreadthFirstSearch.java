@@ -36,9 +36,9 @@ public class BreadthFirstSearch extends SearchMethod
 	 */
 	public int search(String startVertex, String endVertex)
 	{
-		Map<String, Integer> distances = new HashMap<String, Integer>();
-		Map<String, String> predecessor = bfs(getGraph(), distances,
-				startVertex, endVertex);
+		Map<String, Integer> distance = new HashMap<String, Integer>();
+		Map<String, String> predecessor = bfs(getGraph(), distance, startVertex,
+				endVertex);
 		if (predecessor == null) // If no path connects the specified vertices
 		{
 			return -1;
@@ -51,7 +51,7 @@ public class BreadthFirstSearch extends SearchMethod
 			path.add(0, previous);
 			currentVertex = previous;
 		}
-		return distances.get(endVertex);
+		return distance.get(endVertex);
 	}
 
 	/**
@@ -117,11 +117,12 @@ public class BreadthFirstSearch extends SearchMethod
 	 */
 	public String getPath()
 	{
-		String p = path.get(0);
+		String p = "";
 		String delimiter = "";
 		for (String vertex : path)
 		{
-			p += " -> " + vertex;
+			p += delimiter + vertex;
+			delimiter = " -> ";
 		}
 		return p;
 	}
