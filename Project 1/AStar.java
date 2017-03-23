@@ -1,7 +1,5 @@
 import java.util.*;
 
-import sun.security.jca.GetInstance.Instance;
-
 /**
  * Class that searches a graph using A*
  * 

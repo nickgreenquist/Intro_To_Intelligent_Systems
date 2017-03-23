@@ -51,6 +51,6 @@ public class Backtracking extends SearchMethod
 	 */
 	public String getName()
 	{
-		return "";
+		return "Backtracking";
 	}
 }

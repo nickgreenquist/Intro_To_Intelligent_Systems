@@ -86,8 +86,8 @@ public class PathFinder
 			return;
 		}
 
-		System.out.println(graph.toString());
-		System.out.println(heuristics.toString());
+		// System.out.println(graph.toString());
+		// System.out.println(heuristics.toString());
 
 		SearchMethod searchMethod = null;
 		if (method.equals("astar"))
@@ -105,10 +105,11 @@ public class PathFinder
 			return;
 		}
 
+		System.out.println("Search method: " + searchMethod.getName());
 		Scanner in = new Scanner(System.in);
-		System.out.println("Start node: ");
+		System.out.print("Start node: ");
 		String startVertex = in.next();
-		System.out.println("End node: ");
+		System.out.print("End node: ");
 		String endVertex = in.next();
 		in.close();
 
