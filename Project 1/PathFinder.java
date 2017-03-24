@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  * Finds the shortest path between points on campus using the specified
@@ -112,7 +113,8 @@ public class PathFinder
 		System.out.print("End node: ");
 		String endVertex = in.next();
 		in.close();
-
+		
+		
 		int cost = searchMethod.search(startVertex, endVertex);
 		if (cost == -1)
 		{
@@ -123,5 +125,27 @@ public class PathFinder
 			System.out.println("Cost: " + cost);
 			System.out.println("Path: " + searchMethod.getPath());
 		}
+		
+		
+		
+		/*
+		//For testing our algorithms on all nodes
+		List<String> l = new ArrayList<String>(graph.keySet());
+		for(int i = 0; i < graph.size(); i++)
+		{
+			startVertex = l.get(i);
+			System.out.println("\n" + startVertex);
+			int cost = searchMethod.search(startVertex, endVertex);
+			if (cost == -1)
+			{
+				System.out.println(
+						"No path was found from the start node to the end node.");
+			} else
+			{
+				System.out.println("Cost: " + cost);
+				System.out.println("Path: " + searchMethod.getPath());
+			}
+		}
+		*/
 	}
 }
