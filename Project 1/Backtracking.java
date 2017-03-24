@@ -33,6 +33,7 @@ public class Backtracking extends SearchMethod
 	 *            end vertex for search
 	 * @return cost of the resulting path
 	 */
+	@Override
 	public int search(String startVertex, String endVertex)
 	{
 		Map<String, Boolean> visited = new HashMap<String, Boolean>();
@@ -61,13 +62,22 @@ public class Backtracking extends SearchMethod
 	}
 
 	/**
-	 * Runs a depth-first search through the graph to calculate the max
-	 * prerequisite chain
+	 * Runs a depth-first search on the given graph from the specified vertex.
+	 * It stores the distance and predecessor to each vertex.
 	 * 
 	 * @param graph
-	 *            graph of courses
-	 * @param vertex
-	 *            vertex being checked
+	 *            graph in adjacency list form
+	 * @param visited
+	 *            whether a vertex has been visited
+	 * @param distance
+	 *            distance from the start vertex to the given vertex
+	 * @param predecessor
+	 *            vertex used to reach the current vertex
+	 * @param currentVertex
+	 *            current vertex
+	 * @param endVertex
+	 *            start vertex
+	 * @return distances from the start vertex to every other calculated vertex
 	 */
 	public boolean dfs(Map<String, List<EndVertex>> graph,
 			Map<String, Boolean> visited, Map<String, Integer> distance,
@@ -103,6 +113,7 @@ public class Backtracking extends SearchMethod
 	 * 
 	 * @return order of vertices in the path
 	 */
+	@Override
 	public String getPath()
 	{
 		String p = "";
@@ -120,6 +131,7 @@ public class Backtracking extends SearchMethod
 	 * 
 	 * @return display name of method
 	 */
+	@Override
 	public String getName()
 	{
 		return "Backtracking";

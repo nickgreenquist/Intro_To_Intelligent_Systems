@@ -43,6 +43,7 @@ public class EndVertex implements Comparable<EndVertex>
 	 *         comes after the other, and 0 if they come at the same rank. This
 	 *         order is by increasing cost, and then increasing name.
 	 */
+	@Override
 	public int compareTo(EndVertex other)
 	{
 		if (this.cost < other.cost)

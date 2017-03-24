@@ -34,6 +34,7 @@ public class BreadthFirstSearch extends SearchMethod
 	 *            end vertex for search
 	 * @return cost of the resulting path
 	 */
+	@Override
 	public int search(String startVertex, String endVertex)
 	{
 		Map<String, Integer> distance = new HashMap<String, Integer>();
@@ -56,12 +57,10 @@ public class BreadthFirstSearch extends SearchMethod
 
 	/**
 	 * Runs a breadth-first search on the given graph from the specified vertex.
-	 * It stores the distance to each vertex.
-	 * 
-	 * Runs in O(n + m).
+	 * It stores the distance and predecessor to each vertex.
 	 * 
 	 * @param graph
-	 *            graph adjacency list form
+	 *            graph in adjacency list form
 	 * @param distance
 	 *            distance from the start vertex to the given vertex
 	 * @param startVertex
@@ -115,6 +114,7 @@ public class BreadthFirstSearch extends SearchMethod
 	 * 
 	 * @return order of vertices in the path
 	 */
+	@Override
 	public String getPath()
 	{
 		String p = "";
@@ -132,6 +132,7 @@ public class BreadthFirstSearch extends SearchMethod
 	 * 
 	 * @return display name of method
 	 */
+	@Override
 	public String getName()
 	{
 		return "Breadth-first search";
