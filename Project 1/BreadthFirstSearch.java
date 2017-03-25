@@ -37,6 +37,7 @@ public class BreadthFirstSearch extends SearchMethod
 	@Override
 	public int search(String startVertex, String endVertex)
 	{
+		path.clear();
 		Map<String, Integer> distance = new HashMap<String, Integer>();
 		Map<String, String> predecessor = bfs(getGraph(), distance, startVertex,
 				endVertex);

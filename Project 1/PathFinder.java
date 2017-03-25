@@ -7,7 +7,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 /**
  * Finds the shortest path between points on campus using the specified
@@ -19,6 +18,7 @@ import java.util.ArrayList;
 public class PathFinder
 {
 	private static final String USAGE = "Usage: PathFinder method_name filename.txt";
+	private static final boolean DEBUG_ENABLED = false;
 
 	/**
 	 * Read edges into adjacency list and heuristics into an array, then finds
@@ -106,35 +106,33 @@ public class PathFinder
 			return;
 		}
 
-		System.out.println("Search method: " + searchMethod.getName());
-		Scanner in = new Scanner(System.in);
-		System.out.print("Start node: ");
-		String startVertex = in.next();
-		System.out.print("End node: ");
-		String endVertex = in.next();
-		in.close();
-		
-		
-		int cost = searchMethod.search(startVertex, endVertex);
-		if (cost == -1)
+		if (DEBUG_ENABLED)
 		{
-			System.out.println(
-					"No path was found from the start node to the end node.");
+			// For testing our algorithms on all nodes
+			String endVertex = "GOL";
+			for (String testVertex : graph.keySet())
+			{
+				System.out.println("\n" + testVertex);
+				int cost = searchMethod.search(testVertex, endVertex);
+				if (cost == -1)
+				{
+					System.out.println(
+							"No path was found from the start node to the end node.");
+				} else
+				{
+					System.out.println("Cost: " + cost);
+					System.out.println("Path: " + searchMethod.getPath());
+				}
+			}
 		} else
 		{
-			System.out.println("Cost: " + cost);
-			System.out.println("Path: " + searchMethod.getPath());
-		}
-		
-		
-		
-		/*
-		//For testing our algorithms on all nodes
-		List<String> l = new ArrayList<String>(graph.keySet());
-		for(int i = 0; i < graph.size(); i++)
-		{
-			startVertex = l.get(i);
-			System.out.println("\n" + startVertex);
+			System.out.println("Search method: " + searchMethod.getName());
+			Scanner in = new Scanner(System.in);
+			System.out.print("Start node: ");
+			String startVertex = in.next();
+			System.out.print("End node: ");
+			String endVertex = in.next();
+			in.close();
 			int cost = searchMethod.search(startVertex, endVertex);
 			if (cost == -1)
 			{
@@ -146,6 +144,5 @@ public class PathFinder
 				System.out.println("Path: " + searchMethod.getPath());
 			}
 		}
-		*/
 	}
 }

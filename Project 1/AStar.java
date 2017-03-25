@@ -74,7 +74,7 @@ public class AStar extends SearchMethod
 				break;
 			}
 
-			//System.out.println("Expanding " + current.abbr);
+			// System.out.println("Expanding " + current.abbr);
 
 			closed.put(current.abbr, 1);
 			openNodes.remove(current.abbr);

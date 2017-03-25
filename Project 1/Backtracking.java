@@ -36,6 +36,7 @@ public class Backtracking extends SearchMethod
 	@Override
 	public int search(String startVertex, String endVertex)
 	{
+		path.clear();
 		Map<String, Boolean> visited = new HashMap<String, Boolean>();
 		Map<String, Integer> distance = new HashMap<String, Integer>();
 		Map<String, String> predecessor = new HashMap<String, String>();
