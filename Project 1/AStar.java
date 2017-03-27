@@ -198,6 +198,8 @@ public class AStar extends SearchMethod
 		 * 
 		 * @param abbr
 		 *            name of the node
+		 * @param baseCost
+		 * 			  base cost for this path, used to add up cost for output
 		 * @param cost
 		 *            cost of the node
 		 * @param finalCost
