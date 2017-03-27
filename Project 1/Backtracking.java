@@ -80,7 +80,7 @@ public class Backtracking extends SearchMethod
 	 *            start vertex
 	 * @return distances from the start vertex to every other calculated vertex
 	 */
-	public boolean dfs(Map<String, List<EndVertex>> graph,
+	private boolean dfs(Map<String, List<EndVertex>> graph,
 			Map<String, Boolean> visited, Map<String, Integer> distance,
 			Map<String, String> predecessor, String currentVertex,
 			String endVertex)

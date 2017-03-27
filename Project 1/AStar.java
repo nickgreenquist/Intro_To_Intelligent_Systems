@@ -3,7 +3,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
-import java.util.*;
 
 /**
  * Class that searches a graph using A*
@@ -75,7 +74,7 @@ public class AStar extends SearchMethod
 				break;
 			}
 
-			//System.out.println("Expanding " + current.abbr);
+			// System.out.println("Expanding " + current.abbr);
 
 			closed.put(current.abbr, 1);
 			openNodes.remove(current.abbr);
@@ -113,35 +112,45 @@ public class AStar extends SearchMethod
 					if (!open.contains(n))
 					{
 						// set final cost of n
-						Node t = new Node(n, 
-								getGraph().get(current.abbr).get(i).cost, 										//base cost
-								current.cost + getGraph().get(current.abbr).get(i).cost,						//cost (g)
-								current.cost + getGraph().get(current.abbr).get(i).cost + heuristic.get(n),		//finalCost (f)
+						Node t = new Node(n,
+								getGraph().get(current.abbr).get(i).cost, // base
+																			// cost
+								current.cost + getGraph().get(current.abbr)
+										.get(i).cost, // cost (g)
+								current.cost + getGraph().get(current.abbr)
+										.get(i).cost + heuristic.get(n), // finalCost
+																			// (f)
 								current);
 
 						open.add(t);
 						openNodes.put(n, t);
-						
-						//let's see the neighbors we got from this new node
-						//System.out.println(n + ": " + tempNeighborFinalCost);
+
+						// let's see the neighbors we got from this new node
+						// System.out.println(n + ": " + tempNeighborFinalCost);
 					}
 					if (open.contains(n))
 					{ // neighbor is in open
 						if (tempNeighborFinalCost < openNodes.get(n).finalCost)
 						{
 							// update final cost
-							Node t = new Node(n, 
-									getGraph().get(current.abbr).get(i).cost, 									//base cost
-									current.cost + getGraph().get(current.abbr).get(i).cost,					//cost (g)
-									current.cost + getGraph().get(current.abbr).get(i).cost + heuristic.get(n), //finalCost (f)
+							Node t = new Node(n,
+									getGraph().get(current.abbr).get(i).cost, // base
+																				// cost
+									current.cost + getGraph().get(current.abbr)
+											.get(i).cost, // cost (g)
+									current.cost
+											+ getGraph().get(current.abbr)
+													.get(i).cost
+											+ heuristic.get(n), // finalCost (f)
 									current);
 							openNodes.remove(n);
 							openNodes.put(n, t);
 							open.remove(n);
 							open.add(t);
-							
-							//let's see the neighbors we got from this new node
-							//System.out.println(n + ": " + tempNeighborFinalCost);
+
+							// let's see the neighbors we got from this new node
+							// System.out.println(n + ": " +
+							// tempNeighborFinalCost);
 						}
 					}
 				}
@@ -199,7 +208,7 @@ public class AStar extends SearchMethod
 		 * @param abbr
 		 *            name of the node
 		 * @param baseCost
-		 * 			  base cost for this path, used to add up cost for output
+		 *            base cost for this path, used to add up cost for output
 		 * @param cost
 		 *            cost of the node
 		 * @param finalCost

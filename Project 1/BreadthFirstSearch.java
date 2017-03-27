@@ -70,7 +70,7 @@ public class BreadthFirstSearch extends SearchMethod
 	 *            end vertex
 	 * @return distances from the start vertex to every other calculated vertex
 	 */
-	public Map<String, String> bfs(Map<String, List<EndVertex>> graph,
+	private Map<String, String> bfs(Map<String, List<EndVertex>> graph,
 			Map<String, Integer> distance, String startVertex, String endVertex)
 	{
 		Map<String, Boolean> visited = new HashMap<String, Boolean>();
