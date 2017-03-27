@@ -75,7 +75,7 @@ public class AStar extends SearchMethod
 				break;
 			}
 
-			System.out.println("Expanding " + current.abbr);
+			//System.out.println("Expanding " + current.abbr);
 
 			closed.put(current.abbr, 1);
 			openNodes.remove(current.abbr);
@@ -123,7 +123,7 @@ public class AStar extends SearchMethod
 						openNodes.put(n, t);
 						
 						//let's see the neighbors we got from this new node
-						System.out.println(n + ": " + tempNeighborFinalCost);
+						//System.out.println(n + ": " + tempNeighborFinalCost);
 					}
 					if (open.contains(n))
 					{ // neighbor is in open
@@ -141,7 +141,7 @@ public class AStar extends SearchMethod
 							open.add(t);
 							
 							//let's see the neighbors we got from this new node
-							System.out.println(n + ": " + tempNeighborFinalCost);
+							//System.out.println(n + ": " + tempNeighborFinalCost);
 						}
 					}
 				}
