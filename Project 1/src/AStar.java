@@ -13,8 +13,8 @@ import java.util.PriorityQueue;
 public class AStar extends SearchMethod
 {
 	private Map<String, Integer> heuristic;
-	// data structures used
 
+	// data structures used
 	private List<String> path;
 
 	/**
