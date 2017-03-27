@@ -75,7 +75,7 @@ public class AStar extends SearchMethod
 				break;
 			}
 
-			//System.out.println("Expanding " + current.abbr);
+			System.out.println("Expanding " + current.abbr);
 
 			closed.put(current.abbr, 1);
 			openNodes.remove(current.abbr);
@@ -109,7 +109,7 @@ public class AStar extends SearchMethod
 					// if new path to neighbor is shorter or neighbor not in
 					// open
 					int tempNeighborFinalCost = getGraph().get(current.abbr)
-							.get(i).cost + heuristic.get(n) + current.finalCost;
+							.get(i).cost + heuristic.get(n) + current.cost;
 					if (!open.contains(n))
 					{
 						// set final cost of n
@@ -123,7 +123,7 @@ public class AStar extends SearchMethod
 						openNodes.put(n, t);
 						
 						//let's see the neighbors we got from this new node
-						//System.out.println(n + ": " + tempNeighborFinalCost);
+						System.out.println(n + ": " + tempNeighborFinalCost);
 					}
 					if (open.contains(n))
 					{ // neighbor is in open
@@ -141,7 +141,7 @@ public class AStar extends SearchMethod
 							open.add(t);
 							
 							//let's see the neighbors we got from this new node
-							//System.out.println(n + ": " + tempNeighborFinalCost);
+							System.out.println(n + ": " + tempNeighborFinalCost);
 						}
 					}
 				}
