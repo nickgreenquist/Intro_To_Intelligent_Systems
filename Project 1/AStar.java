@@ -3,6 +3,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * Class that searches a graph using A*
@@ -58,7 +59,7 @@ public class AStar extends SearchMethod
 		path = new LinkedList<String>();
 
 		// set up start vertex as a node
-		Node startNode = new Node(startVertex, 0, 0, null);
+		Node startNode = new Node(startVertex, 0, 0, 0, null);
 
 		// add start node to both open lists
 		open.add(startNode);
@@ -74,7 +75,7 @@ public class AStar extends SearchMethod
 				break;
 			}
 
-			// System.out.println("Expanding " + current.abbr);
+			//System.out.println("Expanding " + current.abbr);
 
 			closed.put(current.abbr, 1);
 			openNodes.remove(current.abbr);
@@ -82,7 +83,7 @@ public class AStar extends SearchMethod
 			if (current.abbr.equals(endVertex))
 			{
 				int finalCost = 0;
-				// System.out.println("Found path");
+
 				// set up path
 				while (true)
 				{
@@ -91,7 +92,7 @@ public class AStar extends SearchMethod
 						return finalCost;
 					}
 					path.add(current.abbr);
-					finalCost += current.cost;
+					finalCost += current.baseCost;
 
 					current = current.parent;
 				}
@@ -105,36 +106,42 @@ public class AStar extends SearchMethod
 				// if neighbor is in closed skip to next neighbor
 				if (!closed.containsKey(n))
 				{
-					// System.out.println(n);
-
 					// if new path to neighbor is shorter or neighbor not in
 					// open
 					int tempNeighborFinalCost = getGraph().get(current.abbr)
-							.get(i).cost + heuristic.get(n) + current.cost;
+							.get(i).cost + heuristic.get(n) + current.finalCost;
 					if (!open.contains(n))
 					{
-						// System.out.println(n + " not in open, adding");
-
 						// set final cost of n
-						Node t = new Node(n,
-								getGraph().get(current.abbr).get(i).cost,
-								tempNeighborFinalCost, current);
+						Node t = new Node(n, 
+								getGraph().get(current.abbr).get(i).cost, 										//base cost
+								current.cost + getGraph().get(current.abbr).get(i).cost,						//cost (g)
+								current.cost + getGraph().get(current.abbr).get(i).cost + heuristic.get(n),		//finalCost (f)
+								current);
 
 						open.add(t);
 						openNodes.put(n, t);
+						
+						//let's see the neighbors we got from this new node
+						//System.out.println(n + ": " + tempNeighborFinalCost);
 					}
 					if (open.contains(n))
 					{ // neighbor is in open
 						if (tempNeighborFinalCost < openNodes.get(n).finalCost)
 						{
 							// update final cost
-							Node t = new Node(n,
-									getGraph().get(current.abbr).get(i).cost,
-									tempNeighborFinalCost, current);
+							Node t = new Node(n, 
+									getGraph().get(current.abbr).get(i).cost, 									//base cost
+									current.cost + getGraph().get(current.abbr).get(i).cost,					//cost (g)
+									current.cost + getGraph().get(current.abbr).get(i).cost + heuristic.get(n), //finalCost (f)
+									current);
 							openNodes.remove(n);
 							openNodes.put(n, t);
 							open.remove(n);
 							open.add(t);
+							
+							//let's see the neighbors we got from this new node
+							//System.out.println(n + ": " + tempNeighborFinalCost);
 						}
 					}
 				}
@@ -181,6 +188,7 @@ public class AStar extends SearchMethod
 	private static class Node
 	{
 		public String abbr;
+		public int baseCost;
 		public int cost;
 		public int finalCost;
 		public Node parent; // the node we came from
@@ -197,9 +205,10 @@ public class AStar extends SearchMethod
 		 * @param parent
 		 *            predecessor of the node
 		 */
-		public Node(String abbr, int cost, int finalCost, Node parent)
+		public Node(String abbr, int bc, int cost, int finalCost, Node parent)
 		{
 			this.abbr = abbr;
+			this.baseCost = bc;
 			this.cost = cost;
 			this.finalCost = finalCost;
 			this.parent = parent;
