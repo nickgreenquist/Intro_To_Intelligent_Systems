@@ -1,0 +1,12 @@
+algorithm = AdaBoost.NC
+inputData = "../datasets/newthyroid-10-1tra/newthyroid-10-1tra-10-5tra.dat" "../datasets/newthyroid-10-1tra/newthyroid-10-1tra-10-5tra.dat" "../datasets/newthyroid-10-1tra/newthyroid-10-1tra-10-5tst.dat" 
+outputData = "../results/AdaBoost.NC-C.newthyroid-10-1tra/result4s0.tra" "../results/AdaBoost.NC-C.newthyroid-10-1tra/result4s0.tst" "../results/AdaBoost.NC-C.newthyroid-10-1tra/result4s0e0.txt"  
+
+seed = 1286082570
+pruned = TRUE
+confidence = 0.25
+instancesPerLeaf = 2
+Number of Classifiers = 10
+Algorithm = ADABOOST.NC
+Train Method = NORESAMPLING
+Lambda = 2
