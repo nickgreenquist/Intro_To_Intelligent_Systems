@@ -1,0 +1,7403 @@
+@relation  abalone
+@attribute Sex{M,F,I}
+@attribute Length real[0.075,0.815]
+@attribute Diameter real[0.055,0.65]
+@attribute Height real[0.0,1.13]
+@attribute Whole_weight real[0.002,2.8255]
+@attribute Shucked_weight real[0.001,1.488]
+@attribute Viscera_weight real[5.0E-4,0.76]
+@attribute Shell_weight real[0.0015,1.005]
+@attribute Rings{15,7,9,10,8,20,16,19,14,11,12,18,13,5,4,6,21,17,22,1,3,26,23,29,2,27,25,24}
+@inputs Sex,Length,Diameter,Height,Whole_weight,Shucked_weight,Viscera_weight,Shell_weight
+@outputs Rings
+@data
+
+@decisiontree
+
+if ( Shell_weight <= 0.144000 ) then
+{
+	if ( Diameter <= 0.220000 ) then
+	{
+		if ( Viscera_weight <= 0.011000 ) then
+		{
+			if ( Shucked_weight <= 0.004500 ) then
+			{
+				if ( Height <= 0.025000 ) then
+				{
+					Rings = "1"
+				}
+				elseif ( Height > 0.025000 ) then
+				{
+					Rings = "3"
+				}
+			}
+			elseif ( Shucked_weight > 0.004500 ) then
+			{
+				if ( Sex = M ) then
+				{
+					if ( Whole_weight <= 0.023500 ) then
+					{
+						Rings = "3"
+					}
+					elseif ( Whole_weight > 0.023500 ) then
+					{
+						if ( Diameter <= 0.140000 ) then
+						{
+							if ( Diameter <= 0.130000 ) then
+							{
+								Rings = "4"
+							}
+							elseif ( Diameter > 0.130000 ) then
+							{
+								Rings = "5"
+							}
+						}
+						elseif ( Diameter > 0.140000 ) then
+						{
+							Rings = "7"
+						}
+					}
+				}
+				elseif ( Sex = F ) then
+				{
+					Rings = "4"
+				}
+				elseif ( Sex = I ) then
+				{
+					if ( Diameter <= 0.115000 ) then
+					{
+						Rings = "4"
+					}
+					elseif ( Diameter > 0.115000 ) then
+					{
+						if ( Shucked_weight <= 0.011500 ) then
+						{
+							if ( Length <= 0.170000 ) then
+							{
+								if ( Length <= 0.160000 ) then
+								{
+									Rings = "5"
+								}
+								elseif ( Length > 0.160000 ) then
+								{
+									Rings = "3"
+								}
+							}
+							elseif ( Length > 0.170000 ) then
+							{
+								if ( Diameter <= 0.125000 ) then
+								{
+									Rings = "4"
+								}
+								elseif ( Diameter > 0.125000 ) then
+								{
+									Rings = "5"
+								}
+							}
+						}
+						elseif ( Shucked_weight > 0.011500 ) then
+						{
+							if ( Viscera_weight <= 0.010000 ) then
+							{
+								Rings = "4"
+							}
+							elseif ( Viscera_weight > 0.010000 ) then
+							{
+								Rings = "5"
+							}
+						}
+					}
+				}
+			}
+		}
+		elseif ( Viscera_weight > 0.011000 ) then
+		{
+			if ( Length <= 0.260000 ) then
+			{
+				if ( Sex = M ) then
+				{
+					if ( Length <= 0.255000 ) then
+					{
+						Rings = "8"
+					}
+					elseif ( Length > 0.255000 ) then
+					{
+						Rings = "6"
+					}
+				}
+				elseif ( Sex = F ) then
+				{
+					Rings = "5"
+				}
+				elseif ( Sex = I ) then
+				{
+					if ( Height <= 0.070000 ) then
+					{
+						if ( Diameter <= 0.190000 ) then
+						{
+							if ( Diameter <= 0.145000 ) then
+							{
+								Rings = "6"
+							}
+							elseif ( Diameter > 0.145000 ) then
+							{
+								if ( Whole_weight <= 0.059000 ) then
+								{
+									if ( Viscera_weight <= 0.015500 ) then
+									{
+										if ( Shucked_weight <= 0.025000 ) then
+										{
+											if ( Length <= 0.220000 ) then
+											{
+												Rings = "5"
+											}
+											elseif ( Length > 0.220000 ) then
+											{
+												Rings = "4"
+											}
+										}
+										elseif ( Shucked_weight > 0.025000 ) then
+										{
+											Rings = "5"
+										}
+									}
+									elseif ( Viscera_weight > 0.015500 ) then
+									{
+										Rings = "5"
+									}
+								}
+								elseif ( Whole_weight > 0.059000 ) then
+								{
+									if ( Whole_weight <= 0.067000 ) then
+									{
+										Rings = "6"
+									}
+									elseif ( Whole_weight > 0.067000 ) then
+									{
+										if ( Diameter <= 0.180000 ) then
+										{
+											if ( Diameter <= 0.175000 ) then
+											{
+												Rings = "5"
+											}
+											elseif ( Diameter > 0.175000 ) then
+											{
+												if ( Shell_weight <= 0.022000 ) then
+												{
+													Rings = "4"
+												}
+												elseif ( Shell_weight > 0.022000 ) then
+												{
+													Rings = "5"
+												}
+											}
+										}
+										elseif ( Diameter > 0.180000 ) then
+										{
+											if ( Viscera_weight <= 0.019500 ) then
+											{
+												if ( Whole_weight <= 0.078500 ) then
+												{
+													Rings = "6"
+												}
+												elseif ( Whole_weight > 0.078500 ) then
+												{
+													Rings = "5"
+												}
+											}
+											elseif ( Viscera_weight > 0.019500 ) then
+											{
+												Rings = "6"
+											}
+										}
+									}
+								}
+							}
+						}
+						elseif ( Diameter > 0.190000 ) then
+						{
+							if ( Height <= 0.065000 ) then
+							{
+								Rings = "4"
+							}
+							elseif ( Height > 0.065000 ) then
+							{
+								Rings = "6"
+							}
+						}
+					}
+					elseif ( Height > 0.070000 ) then
+					{
+						Rings = "5"
+					}
+				}
+			}
+			elseif ( Length > 0.260000 ) then
+			{
+				if ( Sex = M ) then
+				{
+					if ( Shell_weight <= 0.032000 ) then
+					{
+						Rings = "5"
+					}
+					elseif ( Shell_weight > 0.032000 ) then
+					{
+						if ( Length <= 0.300000 ) then
+						{
+							Rings = "7"
+						}
+						elseif ( Length > 0.300000 ) then
+						{
+							Rings = "6"
+						}
+					}
+				}
+				elseif ( Sex = F ) then
+				{
+					Rings = "6"
+				}
+				elseif ( Sex = I ) then
+				{
+					if ( Shell_weight <= 0.030500 ) then
+					{
+						if ( Viscera_weight <= 0.020500 ) then
+						{
+							if ( Diameter <= 0.200000 ) then
+							{
+								Rings = "7"
+							}
+							elseif ( Diameter > 0.200000 ) then
+							{
+								Rings = "6"
+							}
+						}
+						elseif ( Viscera_weight > 0.020500 ) then
+						{
+							if ( Length <= 0.275000 ) then
+							{
+								if ( Height <= 0.065000 ) then
+								{
+									if ( Shell_weight <= 0.026000 ) then
+									{
+										Rings = "4"
+									}
+									elseif ( Shell_weight > 0.026000 ) then
+									{
+										Rings = "5"
+									}
+								}
+								elseif ( Height > 0.065000 ) then
+								{
+									Rings = "4"
+								}
+							}
+							elseif ( Length > 0.275000 ) then
+							{
+								Rings = "6"
+							}
+						}
+					}
+					elseif ( Shell_weight > 0.030500 ) then
+					{
+						if ( Whole_weight <= 0.109000 ) then
+						{
+							if ( Height <= 0.075000 ) then
+							{
+								Rings = "5"
+							}
+							elseif ( Height > 0.075000 ) then
+							{
+								Rings = "8"
+							}
+						}
+						elseif ( Whole_weight > 0.109000 ) then
+						{
+							if ( Shucked_weight <= 0.051500 ) then
+							{
+								if ( Height <= 0.060000 ) then
+								{
+									Rings = "7"
+								}
+								elseif ( Height > 0.060000 ) then
+								{
+									Rings = "6"
+								}
+							}
+							elseif ( Shucked_weight > 0.051500 ) then
+							{
+								if ( Shucked_weight <= 0.057500 ) then
+								{
+									if ( Viscera_weight <= 0.023000 ) then
+									{
+										Rings = "5"
+									}
+									elseif ( Viscera_weight > 0.023000 ) then
+									{
+										if ( Viscera_weight <= 0.031500 ) then
+										{
+											Rings = "6"
+										}
+										elseif ( Viscera_weight > 0.031500 ) then
+										{
+											Rings = "7"
+										}
+									}
+								}
+								elseif ( Shucked_weight > 0.057500 ) then
+								{
+									Rings = "5"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	elseif ( Diameter > 0.220000 ) then
+	{
+		if ( Sex = M ) then
+		{
+			if ( Shucked_weight <= 0.169500 ) then
+			{
+				if ( Height <= 0.115000 ) then
+				{
+					if ( Shell_weight <= 0.111000 ) then
+					{
+						if ( Height <= 0.095000 ) then
+						{
+							if ( Shucked_weight <= 0.065500 ) then
+							{
+								if ( Diameter <= 0.250000 ) then
+								{
+									if ( Shucked_weight <= 0.050000 ) then
+									{
+										if ( Whole_weight <= 0.127000 ) then
+										{
+											Rings = "7"
+										}
+										elseif ( Whole_weight > 0.127000 ) then
+										{
+											Rings = "9"
+										}
+									}
+									elseif ( Shucked_weight > 0.050000 ) then
+									{
+										if ( Viscera_weight <= 0.035000 ) then
+										{
+											if ( Length <= 0.315000 ) then
+											{
+												Rings = "7"
+											}
+											elseif ( Length > 0.315000 ) then
+											{
+												Rings = "10"
+											}
+										}
+										elseif ( Viscera_weight > 0.035000 ) then
+										{
+											Rings = "11"
+										}
+									}
+								}
+								elseif ( Diameter > 0.250000 ) then
+								{
+									if ( Whole_weight <= 0.168000 ) then
+									{
+										Rings = "8"
+									}
+									elseif ( Whole_weight > 0.168000 ) then
+									{
+										Rings = "10"
+									}
+								}
+							}
+							elseif ( Shucked_weight > 0.065500 ) then
+							{
+								if ( Shell_weight <= 0.087500 ) then
+								{
+									if ( Shell_weight <= 0.056000 ) then
+									{
+										Rings = "6"
+									}
+									elseif ( Shell_weight > 0.056000 ) then
+									{
+										if ( Viscera_weight <= 0.050500 ) then
+										{
+											if ( Height <= 0.075000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Height > 0.075000 ) then
+											{
+												if ( Diameter <= 0.270000 ) then
+												{
+													if ( Whole_weight <= 0.189500 ) then
+													{
+														Rings = "7"
+													}
+													elseif ( Whole_weight > 0.189500 ) then
+													{
+														if ( Height <= 0.090000 ) then
+														{
+															if ( Shell_weight <= 0.067500 ) then
+															{
+																Rings = "9"
+															}
+															elseif ( Shell_weight > 0.067500 ) then
+															{
+																Rings = "7"
+															}
+														}
+														elseif ( Height > 0.090000 ) then
+														{
+															Rings = "9"
+														}
+													}
+												}
+												elseif ( Diameter > 0.270000 ) then
+												{
+													Rings = "10"
+												}
+											}
+										}
+										elseif ( Viscera_weight > 0.050500 ) then
+										{
+											if ( Diameter <= 0.275000 ) then
+											{
+												if ( Whole_weight <= 0.207500 ) then
+												{
+													Rings = "10"
+												}
+												elseif ( Whole_weight > 0.207500 ) then
+												{
+													Rings = "6"
+												}
+											}
+											elseif ( Diameter > 0.275000 ) then
+											{
+												if ( Length <= 0.385000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Length > 0.385000 ) then
+												{
+													Rings = "8"
+												}
+											}
+										}
+									}
+								}
+								elseif ( Shell_weight > 0.087500 ) then
+								{
+									if ( Height <= 0.085000 ) then
+									{
+										Rings = "7"
+									}
+									elseif ( Height > 0.085000 ) then
+									{
+										if ( Height <= 0.090000 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Height > 0.090000 ) then
+										{
+											if ( Shucked_weight <= 0.127000 ) then
+											{
+												Rings = "9"
+											}
+											elseif ( Shucked_weight > 0.127000 ) then
+											{
+												Rings = "7"
+											}
+										}
+									}
+								}
+							}
+						}
+						elseif ( Height > 0.095000 ) then
+						{
+							if ( Diameter <= 0.280000 ) then
+							{
+								if ( Diameter <= 0.270000 ) then
+								{
+									Rings = "7"
+								}
+								elseif ( Diameter > 0.270000 ) then
+								{
+									Rings = "8"
+								}
+							}
+							elseif ( Diameter > 0.280000 ) then
+							{
+								if ( Shucked_weight <= 0.150000 ) then
+								{
+									if ( Shell_weight <= 0.107500 ) then
+									{
+										if ( Diameter <= 0.285000 ) then
+										{
+											Rings = "10"
+										}
+										elseif ( Diameter > 0.285000 ) then
+										{
+											if ( Diameter <= 0.305000 ) then
+											{
+												if ( Whole_weight <= 0.262500 ) then
+												{
+													if ( Viscera_weight <= 0.052500 ) then
+													{
+														Rings = "9"
+													}
+													elseif ( Viscera_weight > 0.052500 ) then
+													{
+														Rings = "8"
+													}
+												}
+												elseif ( Whole_weight > 0.262500 ) then
+												{
+													Rings = "9"
+												}
+											}
+											elseif ( Diameter > 0.305000 ) then
+											{
+												Rings = "11"
+											}
+										}
+									}
+									elseif ( Shell_weight > 0.107500 ) then
+									{
+										Rings = "7"
+									}
+								}
+								elseif ( Shucked_weight > 0.150000 ) then
+								{
+									Rings = "6"
+								}
+							}
+						}
+					}
+					elseif ( Shell_weight > 0.111000 ) then
+					{
+						if ( Shucked_weight <= 0.106500 ) then
+						{
+							Rings = "15"
+						}
+						elseif ( Shucked_weight > 0.106500 ) then
+						{
+							if ( Diameter <= 0.330000 ) then
+							{
+								if ( Shell_weight <= 0.114000 ) then
+								{
+									Rings = "7"
+								}
+								elseif ( Shell_weight > 0.114000 ) then
+								{
+									Rings = "8"
+								}
+							}
+							elseif ( Diameter > 0.330000 ) then
+							{
+								if ( Height <= 0.110000 ) then
+								{
+									if ( Height <= 0.100000 ) then
+									{
+										Rings = "10"
+									}
+									elseif ( Height > 0.100000 ) then
+									{
+										Rings = "9"
+									}
+								}
+								elseif ( Height > 0.110000 ) then
+								{
+									Rings = "8"
+								}
+							}
+						}
+					}
+				}
+				elseif ( Height > 0.115000 ) then
+				{
+					if ( Shell_weight <= 0.122000 ) then
+					{
+						if ( Whole_weight <= 0.354000 ) then
+						{
+							Rings = "10"
+						}
+						elseif ( Whole_weight > 0.354000 ) then
+						{
+							Rings = "9"
+						}
+					}
+					elseif ( Shell_weight > 0.122000 ) then
+					{
+						if ( Shell_weight <= 0.139500 ) then
+						{
+							Rings = "12"
+						}
+						elseif ( Shell_weight > 0.139500 ) then
+						{
+							Rings = "10"
+						}
+					}
+				}
+			}
+			elseif ( Shucked_weight > 0.169500 ) then
+			{
+				if ( Viscera_weight <= 0.161500 ) then
+				{
+					if ( Length <= 0.445000 ) then
+					{
+						if ( Height <= 0.110000 ) then
+						{
+							if ( Length <= 0.420000 ) then
+							{
+								Rings = "7"
+							}
+							elseif ( Length > 0.420000 ) then
+							{
+								if ( Viscera_weight <= 0.083500 ) then
+								{
+									Rings = "7"
+								}
+								elseif ( Viscera_weight > 0.083500 ) then
+								{
+									Rings = "9"
+								}
+							}
+						}
+						elseif ( Height > 0.110000 ) then
+						{
+							if ( Height <= 0.120000 ) then
+							{
+								Rings = "8"
+							}
+							elseif ( Height > 0.120000 ) then
+							{
+								Rings = "15"
+							}
+						}
+					}
+					elseif ( Length > 0.445000 ) then
+					{
+						if ( Whole_weight <= 0.429500 ) then
+						{
+							Rings = "7"
+						}
+						elseif ( Whole_weight > 0.429500 ) then
+						{
+							if ( Diameter <= 0.395000 ) then
+							{
+								Rings = "8"
+							}
+							elseif ( Diameter > 0.395000 ) then
+							{
+								Rings = "7"
+							}
+						}
+					}
+				}
+				elseif ( Viscera_weight > 0.161500 ) then
+				{
+					Rings = "9"
+				}
+			}
+		}
+		elseif ( Sex = F ) then
+		{
+			if ( Diameter <= 0.295000 ) then
+			{
+				if ( Shell_weight <= 0.057000 ) then
+				{
+					if ( Whole_weight <= 0.195000 ) then
+					{
+						Rings = "7"
+					}
+					elseif ( Whole_weight > 0.195000 ) then
+					{
+						Rings = "6"
+					}
+				}
+				elseif ( Shell_weight > 0.057000 ) then
+				{
+					if ( Shucked_weight <= 0.101500 ) then
+					{
+						if ( Whole_weight <= 0.202500 ) then
+						{
+							if ( Whole_weight <= 0.192500 ) then
+							{
+								Rings = "7"
+							}
+							elseif ( Whole_weight > 0.192500 ) then
+							{
+								Rings = "9"
+							}
+						}
+						elseif ( Whole_weight > 0.202500 ) then
+						{
+							if ( Diameter <= 0.275000 ) then
+							{
+								if ( Length <= 0.355000 ) then
+								{
+									Rings = "10"
+								}
+								elseif ( Length > 0.355000 ) then
+								{
+									Rings = "8"
+								}
+							}
+							elseif ( Diameter > 0.275000 ) then
+							{
+								Rings = "10"
+							}
+						}
+					}
+					elseif ( Shucked_weight > 0.101500 ) then
+					{
+						if ( Whole_weight <= 0.259000 ) then
+						{
+							Rings = "9"
+						}
+						elseif ( Whole_weight > 0.259000 ) then
+						{
+							Rings = "7"
+						}
+					}
+				}
+			}
+			elseif ( Diameter > 0.295000 ) then
+			{
+				if ( Shucked_weight <= 0.194000 ) then
+				{
+					if ( Viscera_weight <= 0.060500 ) then
+					{
+						if ( Viscera_weight <= 0.056500 ) then
+						{
+							Rings = "8"
+						}
+						elseif ( Viscera_weight > 0.056500 ) then
+						{
+							Rings = "13"
+						}
+					}
+					elseif ( Viscera_weight > 0.060500 ) then
+					{
+						if ( Diameter <= 0.345000 ) then
+						{
+							if ( Length <= 0.440000 ) then
+							{
+								if ( Length <= 0.395000 ) then
+								{
+									if ( Diameter <= 0.310000 ) then
+									{
+										Rings = "12"
+									}
+									elseif ( Diameter > 0.310000 ) then
+									{
+										Rings = "10"
+									}
+								}
+								elseif ( Length > 0.395000 ) then
+								{
+									if ( Diameter <= 0.340000 ) then
+									{
+										if ( Viscera_weight <= 0.090500 ) then
+										{
+											if ( Height <= 0.130000 ) then
+											{
+												if ( Shell_weight <= 0.117000 ) then
+												{
+													if ( Diameter <= 0.320000 ) then
+													{
+														Rings = "10"
+													}
+													elseif ( Diameter > 0.320000 ) then
+													{
+														Rings = "9"
+													}
+												}
+												elseif ( Shell_weight > 0.117000 ) then
+												{
+													if ( Length <= 0.420000 ) then
+													{
+														Rings = "10"
+													}
+													elseif ( Length > 0.420000 ) then
+													{
+														if ( Height <= 0.100000 ) then
+														{
+															Rings = "10"
+														}
+														elseif ( Height > 0.100000 ) then
+														{
+															Rings = "8"
+														}
+													}
+												}
+											}
+											elseif ( Height > 0.130000 ) then
+											{
+												Rings = "7"
+											}
+										}
+										elseif ( Viscera_weight > 0.090500 ) then
+										{
+											if ( Whole_weight <= 0.407000 ) then
+											{
+												if ( Height <= 0.110000 ) then
+												{
+													Rings = "8"
+												}
+												elseif ( Height > 0.110000 ) then
+												{
+													if ( Length <= 0.435000 ) then
+													{
+														if ( Whole_weight <= 0.389000 ) then
+														{
+															Rings = "11"
+														}
+														elseif ( Whole_weight > 0.389000 ) then
+														{
+															Rings = "7"
+														}
+													}
+													elseif ( Length > 0.435000 ) then
+													{
+														Rings = "8"
+													}
+												}
+											}
+											elseif ( Whole_weight > 0.407000 ) then
+											{
+												Rings = "10"
+											}
+										}
+									}
+									elseif ( Diameter > 0.340000 ) then
+									{
+										Rings = "11"
+									}
+								}
+							}
+							elseif ( Length > 0.440000 ) then
+							{
+								if ( Whole_weight <= 0.455500 ) then
+								{
+									Rings = "9"
+								}
+								elseif ( Whole_weight > 0.455500 ) then
+								{
+									Rings = "11"
+								}
+							}
+						}
+						elseif ( Diameter > 0.345000 ) then
+						{
+							if ( Shucked_weight <= 0.188000 ) then
+							{
+								if ( Length <= 0.445000 ) then
+								{
+									if ( Viscera_weight <= 0.090500 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Viscera_weight > 0.090500 ) then
+									{
+										Rings = "11"
+									}
+								}
+								elseif ( Length > 0.445000 ) then
+								{
+									if ( Shell_weight <= 0.139000 ) then
+									{
+										Rings = "8"
+									}
+									elseif ( Shell_weight > 0.139000 ) then
+									{
+										Rings = "9"
+									}
+								}
+							}
+							elseif ( Shucked_weight > 0.188000 ) then
+							{
+								Rings = "13"
+							}
+						}
+					}
+				}
+				elseif ( Shucked_weight > 0.194000 ) then
+				{
+					if ( Height <= 0.105000 ) then
+					{
+						Rings = "9"
+					}
+					elseif ( Height > 0.105000 ) then
+					{
+						if ( Shucked_weight <= 0.201000 ) then
+						{
+							Rings = "7"
+						}
+						elseif ( Shucked_weight > 0.201000 ) then
+						{
+							if ( Diameter <= 0.360000 ) then
+							{
+								if ( Height <= 0.130000 ) then
+								{
+									if ( Length <= 0.455000 ) then
+									{
+										Rings = "10"
+									}
+									elseif ( Length > 0.455000 ) then
+									{
+										Rings = "6"
+									}
+								}
+								elseif ( Height > 0.130000 ) then
+								{
+									Rings = "10"
+								}
+							}
+							elseif ( Diameter > 0.360000 ) then
+							{
+								if ( Length <= 0.480000 ) then
+								{
+									Rings = "8"
+								}
+								elseif ( Length > 0.480000 ) then
+								{
+									Rings = "7"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		elseif ( Sex = I ) then
+		{
+			if ( Shell_weight <= 0.103000 ) then
+			{
+				if ( Shell_weight <= 0.068000 ) then
+				{
+					if ( Viscera_weight <= 0.033000 ) then
+					{
+						if ( Shucked_weight <= 0.062500 ) then
+						{
+							if ( Height <= 0.080000 ) then
+							{
+								if ( Shucked_weight <= 0.056500 ) then
+								{
+									if ( Height <= 0.070000 ) then
+									{
+										Rings = "8"
+									}
+									elseif ( Height > 0.070000 ) then
+									{
+										Rings = "4"
+									}
+								}
+								elseif ( Shucked_weight > 0.056500 ) then
+								{
+									if ( Shell_weight <= 0.048000 ) then
+									{
+										if ( Height <= 0.070000 ) then
+										{
+											Rings = "7"
+										}
+										elseif ( Height > 0.070000 ) then
+										{
+											Rings = "5"
+										}
+									}
+									elseif ( Shell_weight > 0.048000 ) then
+									{
+										Rings = "6"
+									}
+								}
+							}
+							elseif ( Height > 0.080000 ) then
+							{
+								Rings = "6"
+							}
+						}
+						elseif ( Shucked_weight > 0.062500 ) then
+						{
+							if ( Viscera_weight <= 0.025000 ) then
+							{
+								Rings = "11"
+							}
+							elseif ( Viscera_weight > 0.025000 ) then
+							{
+								Rings = "6"
+							}
+						}
+					}
+					elseif ( Viscera_weight > 0.033000 ) then
+					{
+						if ( Shucked_weight <= 0.071000 ) then
+						{
+							if ( Shucked_weight <= 0.069500 ) then
+							{
+								if ( Viscera_weight <= 0.041000 ) then
+								{
+									if ( Viscera_weight <= 0.035500 ) then
+									{
+										if ( Whole_weight <= 0.164000 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Whole_weight > 0.164000 ) then
+										{
+											Rings = "7"
+										}
+									}
+									elseif ( Viscera_weight > 0.035500 ) then
+									{
+										if ( Height <= 0.090000 ) then
+										{
+											if ( Shucked_weight <= 0.057500 ) then
+											{
+												Rings = "7"
+											}
+											elseif ( Shucked_weight > 0.057500 ) then
+											{
+												Rings = "6"
+											}
+										}
+										elseif ( Height > 0.090000 ) then
+										{
+											Rings = "9"
+										}
+									}
+								}
+								elseif ( Viscera_weight > 0.041000 ) then
+								{
+									if ( Shell_weight <= 0.047000 ) then
+									{
+										Rings = "5"
+									}
+									elseif ( Shell_weight > 0.047000 ) then
+									{
+										Rings = "8"
+									}
+								}
+							}
+							elseif ( Shucked_weight > 0.069500 ) then
+							{
+								if ( Shucked_weight <= 0.070500 ) then
+								{
+									Rings = "7"
+								}
+								elseif ( Shucked_weight > 0.070500 ) then
+								{
+									Rings = "9"
+								}
+							}
+						}
+						elseif ( Shucked_weight > 0.071000 ) then
+						{
+							if ( Length <= 0.380000 ) then
+							{
+								if ( Length <= 0.330000 ) then
+								{
+									if ( Viscera_weight <= 0.043000 ) then
+									{
+										Rings = "7"
+									}
+									elseif ( Viscera_weight > 0.043000 ) then
+									{
+										Rings = "5"
+									}
+								}
+								elseif ( Length > 0.330000 ) then
+								{
+									if ( Shucked_weight <= 0.085000 ) then
+									{
+										if ( Shell_weight <= 0.060500 ) then
+										{
+											if ( Height <= 0.090000 ) then
+											{
+												Rings = "6"
+											}
+											elseif ( Height > 0.090000 ) then
+											{
+												if ( Length <= 0.345000 ) then
+												{
+													Rings = "8"
+												}
+												elseif ( Length > 0.345000 ) then
+												{
+													Rings = "5"
+												}
+											}
+										}
+										elseif ( Shell_weight > 0.060500 ) then
+										{
+											Rings = "8"
+										}
+									}
+									elseif ( Shucked_weight > 0.085000 ) then
+									{
+										if ( Shucked_weight <= 0.096500 ) then
+										{
+											Rings = "7"
+										}
+										elseif ( Shucked_weight > 0.096500 ) then
+										{
+											if ( Viscera_weight <= 0.041500 ) then
+											{
+												Rings = "6"
+											}
+											elseif ( Viscera_weight > 0.041500 ) then
+											{
+												if ( Shucked_weight <= 0.138000 ) then
+												{
+													if ( Whole_weight <= 0.217500 ) then
+													{
+														Rings = "6"
+													}
+													elseif ( Whole_weight > 0.217500 ) then
+													{
+														if ( Length <= 0.365000 ) then
+														{
+															Rings = "7"
+														}
+														elseif ( Length > 0.365000 ) then
+														{
+															if ( Whole_weight <= 0.220500 ) then
+															{
+																Rings = "7"
+															}
+															elseif ( Whole_weight > 0.220500 ) then
+															{
+																Rings = "6"
+															}
+														}
+													}
+												}
+												elseif ( Shucked_weight > 0.138000 ) then
+												{
+													Rings = "7"
+												}
+											}
+										}
+									}
+								}
+							}
+							elseif ( Length > 0.380000 ) then
+							{
+								if ( Height <= 0.085000 ) then
+								{
+									Rings = "8"
+								}
+								elseif ( Height > 0.085000 ) then
+								{
+									Rings = "5"
+								}
+							}
+						}
+					}
+				}
+				elseif ( Shell_weight > 0.068000 ) then
+				{
+					if ( Length <= 0.370000 ) then
+					{
+						if ( Height <= 0.095000 ) then
+						{
+							if ( Height <= 0.080000 ) then
+							{
+								Rings = "6"
+							}
+							elseif ( Height > 0.080000 ) then
+							{
+								if ( Viscera_weight <= 0.043000 ) then
+								{
+									if ( Whole_weight <= 0.209000 ) then
+									{
+										Rings = "7"
+									}
+									elseif ( Whole_weight > 0.209000 ) then
+									{
+										Rings = "8"
+									}
+								}
+								elseif ( Viscera_weight > 0.043000 ) then
+								{
+									if ( Whole_weight <= 0.204500 ) then
+									{
+										Rings = "6"
+									}
+									elseif ( Whole_weight > 0.204500 ) then
+									{
+										Rings = "7"
+									}
+								}
+							}
+						}
+						elseif ( Height > 0.095000 ) then
+						{
+							if ( Length <= 0.345000 ) then
+							{
+								Rings = "8"
+							}
+							elseif ( Length > 0.345000 ) then
+							{
+								if ( Shell_weight <= 0.082500 ) then
+								{
+									if ( Diameter <= 0.270000 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Diameter > 0.270000 ) then
+									{
+										Rings = "7"
+									}
+								}
+								elseif ( Shell_weight > 0.082500 ) then
+								{
+									Rings = "10"
+								}
+							}
+						}
+					}
+					elseif ( Length > 0.370000 ) then
+					{
+						if ( Diameter <= 0.325000 ) then
+						{
+							if ( Shell_weight <= 0.098500 ) then
+							{
+								if ( Height <= 0.100000 ) then
+								{
+									if ( Shell_weight <= 0.083000 ) then
+									{
+										if ( Whole_weight <= 0.280500 ) then
+										{
+											if ( Shucked_weight <= 0.119000 ) then
+											{
+												if ( Whole_weight <= 0.251000 ) then
+												{
+													if ( Diameter <= 0.275000 ) then
+													{
+														Rings = "6"
+													}
+													elseif ( Diameter > 0.275000 ) then
+													{
+														if ( Shell_weight <= 0.075500 ) then
+														{
+															Rings = "7"
+														}
+														elseif ( Shell_weight > 0.075500 ) then
+														{
+															if ( Whole_weight <= 0.234000 ) then
+															{
+																Rings = "7"
+															}
+															elseif ( Whole_weight > 0.234000 ) then
+															{
+																Rings = "8"
+															}
+														}
+													}
+												}
+												elseif ( Whole_weight > 0.251000 ) then
+												{
+													Rings = "7"
+												}
+											}
+											elseif ( Shucked_weight > 0.119000 ) then
+											{
+												if ( Height <= 0.095000 ) then
+												{
+													if ( Diameter <= 0.285000 ) then
+													{
+														Rings = "6"
+													}
+													elseif ( Diameter > 0.285000 ) then
+													{
+														Rings = "8"
+													}
+												}
+												elseif ( Height > 0.095000 ) then
+												{
+													Rings = "9"
+												}
+											}
+										}
+										elseif ( Whole_weight > 0.280500 ) then
+										{
+											if ( Viscera_weight <= 0.060500 ) then
+											{
+												Rings = "6"
+											}
+											elseif ( Viscera_weight > 0.060500 ) then
+											{
+												if ( Length <= 0.390000 ) then
+												{
+													Rings = "7"
+												}
+												elseif ( Length > 0.390000 ) then
+												{
+													if ( Shell_weight <= 0.077500 ) then
+													{
+														if ( Shucked_weight <= 0.138000 ) then
+														{
+															Rings = "6"
+														}
+														elseif ( Shucked_weight > 0.138000 ) then
+														{
+															Rings = "5"
+														}
+													}
+													elseif ( Shell_weight > 0.077500 ) then
+													{
+														Rings = "7"
+													}
+												}
+											}
+										}
+									}
+									elseif ( Shell_weight > 0.083000 ) then
+									{
+										if ( Viscera_weight <= 0.049500 ) then
+										{
+											Rings = "10"
+										}
+										elseif ( Viscera_weight > 0.049500 ) then
+										{
+											if ( Whole_weight <= 0.271500 ) then
+											{
+												if ( Shell_weight <= 0.085000 ) then
+												{
+													Rings = "7"
+												}
+												elseif ( Shell_weight > 0.085000 ) then
+												{
+													if ( Shucked_weight <= 0.098000 ) then
+													{
+														Rings = "7"
+													}
+													elseif ( Shucked_weight > 0.098000 ) then
+													{
+														Rings = "6"
+													}
+												}
+											}
+											elseif ( Whole_weight > 0.271500 ) then
+											{
+												if ( Shell_weight <= 0.085500 ) then
+												{
+													Rings = "8"
+												}
+												elseif ( Shell_weight > 0.085500 ) then
+												{
+													if ( Diameter <= 0.305000 ) then
+													{
+														Rings = "7"
+													}
+													elseif ( Diameter > 0.305000 ) then
+													{
+														if ( Shucked_weight <= 0.130500 ) then
+														{
+															Rings = "6"
+														}
+														elseif ( Shucked_weight > 0.130500 ) then
+														{
+															if ( Diameter <= 0.320000 ) then
+															{
+																if ( Length <= 0.420000 ) then
+																{
+																	if ( Length <= 0.395000 ) then
+																	{
+																		Rings = "7"
+																	}
+																	elseif ( Length > 0.395000 ) then
+																	{
+																		if ( Shell_weight <= 0.093500 ) then
+																		{
+																			if ( Shucked_weight <= 0.154000 ) then
+																			{
+																				Rings = "8"
+																			}
+																			elseif ( Shucked_weight > 0.154000 ) then
+																			{
+																				Rings = "6"
+																			}
+																		}
+																		elseif ( Shell_weight > 0.093500 ) then
+																		{
+																			Rings = "8"
+																		}
+																	}
+																}
+																elseif ( Length > 0.420000 ) then
+																{
+																	Rings = "7"
+																}
+															}
+															elseif ( Diameter > 0.320000 ) then
+															{
+																Rings = "7"
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								elseif ( Height > 0.100000 ) then
+								{
+									if ( Length <= 0.395000 ) then
+									{
+										if ( Diameter <= 0.285000 ) then
+										{
+											Rings = "6"
+										}
+										elseif ( Diameter > 0.285000 ) then
+										{
+											Rings = "8"
+										}
+									}
+									elseif ( Length > 0.395000 ) then
+									{
+										if ( Height <= 0.110000 ) then
+										{
+											if ( Height <= 0.105000 ) then
+											{
+												Rings = "6"
+											}
+											elseif ( Height > 0.105000 ) then
+											{
+												if ( Viscera_weight <= 0.074500 ) then
+												{
+													Rings = "6"
+												}
+												elseif ( Viscera_weight > 0.074500 ) then
+												{
+													Rings = "9"
+												}
+											}
+										}
+										elseif ( Height > 0.110000 ) then
+										{
+											if ( Length <= 0.410000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Length > 0.410000 ) then
+											{
+												Rings = "7"
+											}
+										}
+									}
+								}
+							}
+							elseif ( Shell_weight > 0.098500 ) then
+							{
+								if ( Viscera_weight <= 0.076500 ) then
+								{
+									if ( Shucked_weight <= 0.168500 ) then
+									{
+										Rings = "8"
+									}
+									elseif ( Shucked_weight > 0.168500 ) then
+									{
+										Rings = "7"
+									}
+								}
+								elseif ( Viscera_weight > 0.076500 ) then
+								{
+									Rings = "8"
+								}
+							}
+						}
+						elseif ( Diameter > 0.325000 ) then
+						{
+							if ( Height <= 0.110000 ) then
+							{
+								if ( Viscera_weight <= 0.082000 ) then
+								{
+									if ( Height <= 0.095000 ) then
+									{
+										Rings = "6"
+									}
+									elseif ( Height > 0.095000 ) then
+									{
+										Rings = "7"
+									}
+								}
+								elseif ( Viscera_weight > 0.082000 ) then
+								{
+									Rings = "6"
+								}
+							}
+							elseif ( Height > 0.110000 ) then
+							{
+								Rings = "12"
+							}
+						}
+					}
+				}
+			}
+			elseif ( Shell_weight > 0.103000 ) then
+			{
+				if ( Height <= 0.130000 ) then
+				{
+					if ( Shucked_weight <= 0.135000 ) then
+					{
+						if ( Viscera_weight <= 0.071000 ) then
+						{
+							Rings = "7"
+						}
+						elseif ( Viscera_weight > 0.071000 ) then
+						{
+							if ( Shucked_weight <= 0.124500 ) then
+							{
+								Rings = "8"
+							}
+							elseif ( Shucked_weight > 0.124500 ) then
+							{
+								Rings = "6"
+							}
+						}
+					}
+					elseif ( Shucked_weight > 0.135000 ) then
+					{
+						if ( Length <= 0.415000 ) then
+						{
+							if ( Whole_weight <= 0.329500 ) then
+							{
+								Rings = "10"
+							}
+							elseif ( Whole_weight > 0.329500 ) then
+							{
+								Rings = "7"
+							}
+						}
+						elseif ( Length > 0.415000 ) then
+						{
+							if ( Length <= 0.480000 ) then
+							{
+								if ( Shucked_weight <= 0.223000 ) then
+								{
+									if ( Viscera_weight <= 0.073500 ) then
+									{
+										if ( Shell_weight <= 0.127500 ) then
+										{
+											if ( Height <= 0.115000 ) then
+											{
+												if ( Whole_weight <= 0.343000 ) then
+												{
+													Rings = "8"
+												}
+												elseif ( Whole_weight > 0.343000 ) then
+												{
+													if ( Height <= 0.105000 ) then
+													{
+														if ( Length <= 0.430000 ) then
+														{
+															Rings = "11"
+														}
+														elseif ( Length > 0.430000 ) then
+														{
+															Rings = "7"
+														}
+													}
+													elseif ( Height > 0.105000 ) then
+													{
+														if ( Whole_weight <= 0.359500 ) then
+														{
+															Rings = "8"
+														}
+														elseif ( Whole_weight > 0.359500 ) then
+														{
+															Rings = "7"
+														}
+													}
+												}
+											}
+											elseif ( Height > 0.115000 ) then
+											{
+												Rings = "8"
+											}
+										}
+										elseif ( Shell_weight > 0.127500 ) then
+										{
+											if ( Length <= 0.440000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Length > 0.440000 ) then
+											{
+												Rings = "8"
+											}
+										}
+									}
+									elseif ( Viscera_weight > 0.073500 ) then
+									{
+										if ( Viscera_weight <= 0.079000 ) then
+										{
+											if ( Whole_weight <= 0.366000 ) then
+											{
+												Rings = "8"
+											}
+											elseif ( Whole_weight > 0.366000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Viscera_weight > 0.079000 ) then
+										{
+											if ( Whole_weight <= 0.488500 ) then
+											{
+												if ( Length <= 0.475000 ) then
+												{
+													if ( Length <= 0.420000 ) then
+													{
+														Rings = "9"
+													}
+													elseif ( Length > 0.420000 ) then
+													{
+														if ( Shucked_weight <= 0.211000 ) then
+														{
+															if ( Height <= 0.120000 ) then
+															{
+																if ( Viscera_weight <= 0.101500 ) then
+																{
+																	if ( Shell_weight <= 0.105000 ) then
+																	{
+																		if ( Viscera_weight <= 0.084000 ) then
+																		{
+																			Rings = "6"
+																		}
+																		elseif ( Viscera_weight > 0.084000 ) then
+																		{
+																			Rings = "7"
+																		}
+																	}
+																	elseif ( Shell_weight > 0.105000 ) then
+																	{
+																		if ( Viscera_weight <= 0.085000 ) then
+																		{
+																			if ( Shucked_weight <= 0.153000 ) then
+																			{
+																				Rings = "8"
+																			}
+																			elseif ( Shucked_weight > 0.153000 ) then
+																			{
+																				Rings = "7"
+																			}
+																		}
+																		elseif ( Viscera_weight > 0.085000 ) then
+																		{
+																			if ( Diameter <= 0.350000 ) then
+																			{
+																				if ( Diameter <= 0.345000 ) then
+																				{
+																					if ( Viscera_weight <= 0.094000 ) then
+																					{
+																						if ( Diameter <= 0.335000 ) then
+																						{
+																							if ( Viscera_weight <= 0.091500 ) then
+																							{
+																								Rings = "9"
+																							}
+																							elseif ( Viscera_weight > 0.091500 ) then
+																							{
+																								Rings = "8"
+																							}
+																						}
+																						elseif ( Diameter > 0.335000 ) then
+																						{
+																							if ( Height <= 0.105000 ) then
+																							{
+																								Rings = "8"
+																							}
+																							elseif ( Height > 0.105000 ) then
+																							{
+																								Rings = "7"
+																							}
+																						}
+																					}
+																					elseif ( Viscera_weight > 0.094000 ) then
+																					{
+																						Rings = "7"
+																					}
+																				}
+																				elseif ( Diameter > 0.345000 ) then
+																				{
+																					if ( Height <= 0.110000 ) then
+																					{
+																						Rings = "6"
+																					}
+																					elseif ( Height > 0.110000 ) then
+																					{
+																						Rings = "7"
+																					}
+																				}
+																			}
+																			elseif ( Diameter > 0.350000 ) then
+																			{
+																				if ( Height <= 0.105000 ) then
+																				{
+																					if ( Shell_weight <= 0.130000 ) then
+																					{
+																						Rings = "7"
+																					}
+																					elseif ( Shell_weight > 0.130000 ) then
+																					{
+																						Rings = "8"
+																					}
+																				}
+																				elseif ( Height > 0.105000 ) then
+																				{
+																					Rings = "8"
+																				}
+																			}
+																		}
+																	}
+																}
+																elseif ( Viscera_weight > 0.101500 ) then
+																{
+																	Rings = "8"
+																}
+															}
+															elseif ( Height > 0.120000 ) then
+															{
+																if ( Height <= 0.125000 ) then
+																{
+																	Rings = "6"
+																}
+																elseif ( Height > 0.125000 ) then
+																{
+																	Rings = "7"
+																}
+															}
+														}
+														elseif ( Shucked_weight > 0.211000 ) then
+														{
+															if ( Length <= 0.450000 ) then
+															{
+																if ( Viscera_weight <= 0.093500 ) then
+																{
+																	Rings = "9"
+																}
+																elseif ( Viscera_weight > 0.093500 ) then
+																{
+																	Rings = "8"
+																}
+															}
+															elseif ( Length > 0.450000 ) then
+															{
+																if ( Viscera_weight <= 0.099000 ) then
+																{
+																	Rings = "7"
+																}
+																elseif ( Viscera_weight > 0.099000 ) then
+																{
+																	Rings = "9"
+																}
+															}
+														}
+													}
+												}
+												elseif ( Length > 0.475000 ) then
+												{
+													Rings = "8"
+												}
+											}
+											elseif ( Whole_weight > 0.488500 ) then
+											{
+												if ( Shell_weight <= 0.134000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Shell_weight > 0.134000 ) then
+												{
+													Rings = "15"
+												}
+											}
+										}
+									}
+								}
+								elseif ( Shucked_weight > 0.223000 ) then
+								{
+									if ( Diameter <= 0.350000 ) then
+									{
+										if ( Diameter <= 0.335000 ) then
+										{
+											Rings = "8"
+										}
+										elseif ( Diameter > 0.335000 ) then
+										{
+											if ( Shell_weight <= 0.137500 ) then
+											{
+												Rings = "6"
+											}
+											elseif ( Shell_weight > 0.137500 ) then
+											{
+												Rings = "8"
+											}
+										}
+									}
+									elseif ( Diameter > 0.350000 ) then
+									{
+										if ( Height <= 0.115000 ) then
+										{
+											Rings = "7"
+										}
+										elseif ( Height > 0.115000 ) then
+										{
+											if ( Length <= 0.460000 ) then
+											{
+												Rings = "6"
+											}
+											elseif ( Length > 0.460000 ) then
+											{
+												Rings = "8"
+											}
+										}
+									}
+								}
+							}
+							elseif ( Length > 0.480000 ) then
+							{
+								if ( Length <= 0.485000 ) then
+								{
+									if ( Height <= 0.115000 ) then
+									{
+										Rings = "7"
+									}
+									elseif ( Height > 0.115000 ) then
+									{
+										Rings = "9"
+									}
+								}
+								elseif ( Length > 0.485000 ) then
+								{
+									if ( Length <= 0.505000 ) then
+									{
+										Rings = "8"
+									}
+									elseif ( Length > 0.505000 ) then
+									{
+										if ( Height <= 0.115000 ) then
+										{
+											Rings = "10"
+										}
+										elseif ( Height > 0.115000 ) then
+										{
+											Rings = "9"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				elseif ( Height > 0.130000 ) then
+				{
+					if ( Height <= 0.135000 ) then
+					{
+						if ( Length <= 0.445000 ) then
+						{
+							Rings = "12"
+						}
+						elseif ( Length > 0.445000 ) then
+						{
+							if ( Length <= 0.460000 ) then
+							{
+								Rings = "7"
+							}
+							elseif ( Length > 0.460000 ) then
+							{
+								Rings = "8"
+							}
+						}
+					}
+					elseif ( Height > 0.135000 ) then
+					{
+						if ( Length <= 0.460000 ) then
+						{
+							Rings = "16"
+						}
+						elseif ( Length > 0.460000 ) then
+						{
+							Rings = "7"
+						}
+					}
+				}
+			}
+		}
+	}
+}
+elseif ( Shell_weight > 0.144000 ) then
+{
+	if ( Shell_weight <= 0.290000 ) then
+	{
+		if ( Shell_weight <= 0.194000 ) then
+		{
+			if ( Shucked_weight <= 0.204000 ) then
+			{
+				if ( Viscera_weight <= 0.079500 ) then
+				{
+					if ( Shell_weight <= 0.162500 ) then
+					{
+						if ( Height <= 0.120000 ) then
+						{
+							Rings = "8"
+						}
+						elseif ( Height > 0.120000 ) then
+						{
+							if ( Length <= 0.425000 ) then
+							{
+								Rings = "13"
+							}
+							elseif ( Length > 0.425000 ) then
+							{
+								Rings = "14"
+							}
+						}
+					}
+					elseif ( Shell_weight > 0.162500 ) then
+					{
+						if ( Shell_weight <= 0.169500 ) then
+						{
+							Rings = "9"
+						}
+						elseif ( Shell_weight > 0.169500 ) then
+						{
+							Rings = "7"
+						}
+					}
+				}
+				elseif ( Viscera_weight > 0.079500 ) then
+				{
+					if ( Viscera_weight <= 0.138000 ) then
+					{
+						if ( Sex = M ) then
+						{
+							if ( Height <= 0.120000 ) then
+							{
+								if ( Height <= 0.100000 ) then
+								{
+									Rings = "8"
+								}
+								elseif ( Height > 0.100000 ) then
+								{
+									Rings = "10"
+								}
+							}
+							elseif ( Height > 0.120000 ) then
+							{
+								if ( Diameter <= 0.355000 ) then
+								{
+									if ( Viscera_weight <= 0.114500 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Viscera_weight > 0.114500 ) then
+									{
+										Rings = "11"
+									}
+								}
+								elseif ( Diameter > 0.355000 ) then
+								{
+									Rings = "10"
+								}
+							}
+						}
+						elseif ( Sex = F ) then
+						{
+							if ( Length <= 0.495000 ) then
+							{
+								if ( Shell_weight <= 0.164000 ) then
+								{
+									if ( Height <= 0.120000 ) then
+									{
+										if ( Shell_weight <= 0.152500 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Shell_weight > 0.152500 ) then
+										{
+											Rings = "8"
+										}
+									}
+									elseif ( Height > 0.120000 ) then
+									{
+										if ( Diameter <= 0.340000 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Diameter > 0.340000 ) then
+										{
+											if ( Length <= 0.465000 ) then
+											{
+												Rings = "11"
+											}
+											elseif ( Length > 0.465000 ) then
+											{
+												Rings = "12"
+											}
+										}
+									}
+								}
+								elseif ( Shell_weight > 0.164000 ) then
+								{
+									if ( Shell_weight <= 0.180000 ) then
+									{
+										if ( Whole_weight <= 0.549000 ) then
+										{
+											Rings = "13"
+										}
+										elseif ( Whole_weight > 0.549000 ) then
+										{
+											Rings = "10"
+										}
+									}
+									elseif ( Shell_weight > 0.180000 ) then
+									{
+										if ( Length <= 0.470000 ) then
+										{
+											Rings = "10"
+										}
+										elseif ( Length > 0.470000 ) then
+										{
+											Rings = "11"
+										}
+									}
+								}
+							}
+							elseif ( Length > 0.495000 ) then
+							{
+								Rings = "9"
+							}
+						}
+						elseif ( Sex = I ) then
+						{
+							if ( Length <= 0.450000 ) then
+							{
+								Rings = "14"
+							}
+							elseif ( Length > 0.450000 ) then
+							{
+								if ( Height <= 0.110000 ) then
+								{
+									if ( Whole_weight <= 0.449000 ) then
+									{
+										Rings = "7"
+									}
+									elseif ( Whole_weight > 0.449000 ) then
+									{
+										if ( Whole_weight <= 0.462000 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Whole_weight > 0.462000 ) then
+										{
+											Rings = "10"
+										}
+									}
+								}
+								elseif ( Height > 0.110000 ) then
+								{
+									if ( Diameter <= 0.370000 ) then
+									{
+										if ( Diameter <= 0.355000 ) then
+										{
+											Rings = "11"
+										}
+										elseif ( Diameter > 0.355000 ) then
+										{
+											Rings = "9"
+										}
+									}
+									elseif ( Diameter > 0.370000 ) then
+									{
+										if ( Diameter <= 0.375000 ) then
+										{
+											Rings = "8"
+										}
+										elseif ( Diameter > 0.375000 ) then
+										{
+											if ( Height <= 0.125000 ) then
+											{
+												Rings = "8"
+											}
+											elseif ( Height > 0.125000 ) then
+											{
+												Rings = "11"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					elseif ( Viscera_weight > 0.138000 ) then
+					{
+						if ( Height <= 0.125000 ) then
+						{
+							Rings = "11"
+						}
+						elseif ( Height > 0.125000 ) then
+						{
+							Rings = "14"
+						}
+					}
+				}
+			}
+			elseif ( Shucked_weight > 0.204000 ) then
+			{
+				if ( Shucked_weight <= 0.211000 ) then
+				{
+					if ( Whole_weight <= 0.510500 ) then
+					{
+						if ( Shell_weight <= 0.148500 ) then
+						{
+							Rings = "10"
+						}
+						elseif ( Shell_weight > 0.148500 ) then
+						{
+							if ( Sex = M ) then
+							{
+								Rings = "10"
+							}
+							elseif ( Sex = F ) then
+							{
+								Rings = "10"
+							}
+							elseif ( Sex = I ) then
+							{
+								Rings = "8"
+							}
+						}
+					}
+					elseif ( Whole_weight > 0.510500 ) then
+					{
+						if ( Viscera_weight <= 0.110000 ) then
+						{
+							Rings = "15"
+						}
+						elseif ( Viscera_weight > 0.110000 ) then
+						{
+							Rings = "10"
+						}
+					}
+				}
+				elseif ( Shucked_weight > 0.211000 ) then
+				{
+					if ( Sex = M ) then
+					{
+						if ( Viscera_weight <= 0.166000 ) then
+						{
+							if ( Whole_weight <= 0.619500 ) then
+							{
+								if ( Shell_weight <= 0.169500 ) then
+								{
+									if ( Diameter <= 0.365000 ) then
+									{
+										if ( Height <= 0.115000 ) then
+										{
+											Rings = "8"
+										}
+										elseif ( Height > 0.115000 ) then
+										{
+											Rings = "10"
+										}
+									}
+									elseif ( Diameter > 0.365000 ) then
+									{
+										if ( Diameter <= 0.370000 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Diameter > 0.370000 ) then
+										{
+											if ( Length <= 0.460000 ) then
+											{
+												Rings = "7"
+											}
+											elseif ( Length > 0.460000 ) then
+											{
+												if ( Length <= 0.490000 ) then
+												{
+													Rings = "8"
+												}
+												elseif ( Length > 0.490000 ) then
+												{
+													if ( Height <= 0.120000 ) then
+													{
+														Rings = "8"
+													}
+													elseif ( Height > 0.120000 ) then
+													{
+														Rings = "9"
+													}
+												}
+											}
+										}
+									}
+								}
+								elseif ( Shell_weight > 0.169500 ) then
+								{
+									if ( Viscera_weight <= 0.108500 ) then
+									{
+										Rings = "15"
+									}
+									elseif ( Viscera_weight > 0.108500 ) then
+									{
+										if ( Height <= 0.125000 ) then
+										{
+											if ( Diameter <= 0.365000 ) then
+											{
+												Rings = "8"
+											}
+											elseif ( Diameter > 0.365000 ) then
+											{
+												if ( Viscera_weight <= 0.127000 ) then
+												{
+													Rings = "10"
+												}
+												elseif ( Viscera_weight > 0.127000 ) then
+												{
+													Rings = "11"
+												}
+											}
+										}
+										elseif ( Height > 0.125000 ) then
+										{
+											if ( Viscera_weight <= 0.143000 ) then
+											{
+												Rings = "12"
+											}
+											elseif ( Viscera_weight > 0.143000 ) then
+											{
+												Rings = "8"
+											}
+										}
+									}
+								}
+							}
+							elseif ( Whole_weight > 0.619500 ) then
+							{
+								if ( Shucked_weight <= 0.298000 ) then
+								{
+									if ( Viscera_weight <= 0.156500 ) then
+									{
+										if ( Length <= 0.495000 ) then
+										{
+											Rings = "6"
+										}
+										elseif ( Length > 0.495000 ) then
+										{
+											if ( Diameter <= 0.390000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Diameter > 0.390000 ) then
+											{
+												Rings = "9"
+											}
+										}
+									}
+									elseif ( Viscera_weight > 0.156500 ) then
+									{
+										if ( Length <= 0.495000 ) then
+										{
+											Rings = "15"
+										}
+										elseif ( Length > 0.495000 ) then
+										{
+											Rings = "7"
+										}
+									}
+								}
+								elseif ( Shucked_weight > 0.298000 ) then
+								{
+									if ( Height <= 0.120000 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Height > 0.120000 ) then
+									{
+										if ( Diameter <= 0.405000 ) then
+										{
+											if ( Length <= 0.520000 ) then
+											{
+												if ( Length <= 0.505000 ) then
+												{
+													if ( Length <= 0.495000 ) then
+													{
+														Rings = "8"
+													}
+													elseif ( Length > 0.495000 ) then
+													{
+														Rings = "7"
+													}
+												}
+												elseif ( Length > 0.505000 ) then
+												{
+													if ( Shell_weight <= 0.184500 ) then
+													{
+														Rings = "7"
+													}
+													elseif ( Shell_weight > 0.184500 ) then
+													{
+														Rings = "8"
+													}
+												}
+											}
+											elseif ( Length > 0.520000 ) then
+											{
+												if ( Shell_weight <= 0.171000 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Shell_weight > 0.171000 ) then
+												{
+													if ( Shucked_weight <= 0.339500 ) then
+													{
+														Rings = "7"
+													}
+													elseif ( Shucked_weight > 0.339500 ) then
+													{
+														Rings = "8"
+													}
+												}
+											}
+										}
+										elseif ( Diameter > 0.405000 ) then
+										{
+											if ( Whole_weight <= 0.683500 ) then
+											{
+												Rings = "7"
+											}
+											elseif ( Whole_weight > 0.683500 ) then
+											{
+												Rings = "9"
+											}
+										}
+									}
+								}
+							}
+						}
+						elseif ( Viscera_weight > 0.166000 ) then
+						{
+							if ( Length <= 0.515000 ) then
+							{
+								Rings = "10"
+							}
+							elseif ( Length > 0.515000 ) then
+							{
+								if ( Viscera_weight <= 0.186500 ) then
+								{
+									if ( Length <= 0.525000 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Length > 0.525000 ) then
+									{
+										Rings = "7"
+									}
+								}
+								elseif ( Viscera_weight > 0.186500 ) then
+								{
+									Rings = "8"
+								}
+							}
+						}
+					}
+					elseif ( Sex = F ) then
+					{
+						if ( Shell_weight <= 0.152500 ) then
+						{
+							if ( Length <= 0.510000 ) then
+							{
+								if ( Shell_weight <= 0.147000 ) then
+								{
+									Rings = "8"
+								}
+								elseif ( Shell_weight > 0.147000 ) then
+								{
+									Rings = "7"
+								}
+							}
+							elseif ( Length > 0.510000 ) then
+							{
+								Rings = "6"
+							}
+						}
+						elseif ( Shell_weight > 0.152500 ) then
+						{
+							if ( Length <= 0.475000 ) then
+							{
+								if ( Viscera_weight <= 0.140500 ) then
+								{
+									if ( Diameter <= 0.335000 ) then
+									{
+										Rings = "7"
+									}
+									elseif ( Diameter > 0.335000 ) then
+									{
+										Rings = "10"
+									}
+								}
+								elseif ( Viscera_weight > 0.140500 ) then
+								{
+									Rings = "8"
+								}
+							}
+							elseif ( Length > 0.475000 ) then
+							{
+								if ( Shucked_weight <= 0.262500 ) then
+								{
+									if ( Whole_weight <= 0.583000 ) then
+									{
+										if ( Diameter <= 0.375000 ) then
+										{
+											Rings = "12"
+										}
+										elseif ( Diameter > 0.375000 ) then
+										{
+											if ( Height <= 0.120000 ) then
+											{
+												Rings = "9"
+											}
+											elseif ( Height > 0.120000 ) then
+											{
+												if ( Whole_weight <= 0.577000 ) then
+												{
+													Rings = "10"
+												}
+												elseif ( Whole_weight > 0.577000 ) then
+												{
+													Rings = "7"
+												}
+											}
+										}
+									}
+									elseif ( Whole_weight > 0.583000 ) then
+									{
+										if ( Shell_weight <= 0.182000 ) then
+										{
+											if ( Height <= 0.145000 ) then
+											{
+												Rings = "15"
+											}
+											elseif ( Height > 0.145000 ) then
+											{
+												Rings = "11"
+											}
+										}
+										elseif ( Shell_weight > 0.182000 ) then
+										{
+											if ( Diameter <= 0.385000 ) then
+											{
+												Rings = "13"
+											}
+											elseif ( Diameter > 0.385000 ) then
+											{
+												Rings = "12"
+											}
+										}
+									}
+								}
+								elseif ( Shucked_weight > 0.262500 ) then
+								{
+									if ( Shell_weight <= 0.187500 ) then
+									{
+										if ( Shell_weight <= 0.178000 ) then
+										{
+											if ( Shell_weight <= 0.168500 ) then
+											{
+												if ( Shell_weight <= 0.161500 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Shell_weight > 0.161500 ) then
+												{
+													Rings = "10"
+												}
+											}
+											elseif ( Shell_weight > 0.168500 ) then
+											{
+												Rings = "8"
+											}
+										}
+										elseif ( Shell_weight > 0.178000 ) then
+										{
+											if ( Whole_weight <= 0.631000 ) then
+											{
+												Rings = "8"
+											}
+											elseif ( Whole_weight > 0.631000 ) then
+											{
+												Rings = "9"
+											}
+										}
+									}
+									elseif ( Shell_weight > 0.187500 ) then
+									{
+										Rings = "7"
+									}
+								}
+							}
+						}
+					}
+					elseif ( Sex = I ) then
+					{
+						if ( Viscera_weight <= 0.159500 ) then
+						{
+							if ( Height <= 0.145000 ) then
+							{
+								if ( Length <= 0.520000 ) then
+								{
+									if ( Viscera_weight <= 0.109000 ) then
+									{
+										if ( Length <= 0.475000 ) then
+										{
+											if ( Length <= 0.470000 ) then
+											{
+												if ( Whole_weight <= 0.511500 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Whole_weight > 0.511500 ) then
+												{
+													Rings = "8"
+												}
+											}
+											elseif ( Length > 0.470000 ) then
+											{
+												Rings = "10"
+											}
+										}
+										elseif ( Length > 0.475000 ) then
+										{
+											if ( Shell_weight <= 0.149500 ) then
+											{
+												Rings = "8"
+											}
+											elseif ( Shell_weight > 0.149500 ) then
+											{
+												Rings = "9"
+											}
+										}
+									}
+									elseif ( Viscera_weight > 0.109000 ) then
+									{
+										if ( Diameter <= 0.355000 ) then
+										{
+											if ( Height <= 0.125000 ) then
+											{
+												if ( Whole_weight <= 0.564000 ) then
+												{
+													Rings = "7"
+												}
+												elseif ( Whole_weight > 0.564000 ) then
+												{
+													Rings = "8"
+												}
+											}
+											elseif ( Height > 0.125000 ) then
+											{
+												Rings = "11"
+											}
+										}
+										elseif ( Diameter > 0.355000 ) then
+										{
+											if ( Length <= 0.515000 ) then
+											{
+												if ( Diameter <= 0.370000 ) then
+												{
+													Rings = "8"
+												}
+												elseif ( Diameter > 0.370000 ) then
+												{
+													if ( Diameter <= 0.380000 ) then
+													{
+														if ( Viscera_weight <= 0.131000 ) then
+														{
+															if ( Shucked_weight <= 0.227500 ) then
+															{
+																Rings = "8"
+															}
+															elseif ( Shucked_weight > 0.227500 ) then
+															{
+																Rings = "7"
+															}
+														}
+														elseif ( Viscera_weight > 0.131000 ) then
+														{
+															if ( Length <= 0.495000 ) then
+															{
+																Rings = "8"
+															}
+															elseif ( Length > 0.495000 ) then
+															{
+																Rings = "9"
+															}
+														}
+													}
+													elseif ( Diameter > 0.380000 ) then
+													{
+														if ( Viscera_weight <= 0.122500 ) then
+														{
+															if ( Height <= 0.125000 ) then
+															{
+																Rings = "9"
+															}
+															elseif ( Height > 0.125000 ) then
+															{
+																Rings = "8"
+															}
+														}
+														elseif ( Viscera_weight > 0.122500 ) then
+														{
+															Rings = "8"
+														}
+													}
+												}
+											}
+											elseif ( Length > 0.515000 ) then
+											{
+												if ( Shucked_weight <= 0.295500 ) then
+												{
+													Rings = "8"
+												}
+												elseif ( Shucked_weight > 0.295500 ) then
+												{
+													Rings = "9"
+												}
+											}
+										}
+									}
+								}
+								elseif ( Length > 0.520000 ) then
+								{
+									if ( Diameter <= 0.410000 ) then
+									{
+										if ( Height <= 0.110000 ) then
+										{
+											Rings = "8"
+										}
+										elseif ( Height > 0.110000 ) then
+										{
+											Rings = "9"
+										}
+									}
+									elseif ( Diameter > 0.410000 ) then
+									{
+										if ( Length <= 0.535000 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Length > 0.535000 ) then
+										{
+											Rings = "10"
+										}
+									}
+								}
+							}
+							elseif ( Height > 0.145000 ) then
+							{
+								if ( Shell_weight <= 0.184500 ) then
+								{
+									if ( Shucked_weight <= 0.292000 ) then
+									{
+										if ( Whole_weight <= 0.622000 ) then
+										{
+											Rings = "7"
+										}
+										elseif ( Whole_weight > 0.622000 ) then
+										{
+											Rings = "12"
+										}
+									}
+									elseif ( Shucked_weight > 0.292000 ) then
+									{
+										Rings = "8"
+									}
+								}
+								elseif ( Shell_weight > 0.184500 ) then
+								{
+									Rings = "10"
+								}
+							}
+						}
+						elseif ( Viscera_weight > 0.159500 ) then
+						{
+							if ( Diameter <= 0.400000 ) then
+							{
+								if ( Height <= 0.125000 ) then
+								{
+									Rings = "13"
+								}
+								elseif ( Height > 0.125000 ) then
+								{
+									Rings = "7"
+								}
+							}
+							elseif ( Diameter > 0.400000 ) then
+							{
+								if ( Length <= 0.550000 ) then
+								{
+									Rings = "10"
+								}
+								elseif ( Length > 0.550000 ) then
+								{
+									Rings = "14"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		elseif ( Shell_weight > 0.194000 ) then
+		{
+			if ( Shucked_weight <= 0.288500 ) then
+			{
+				if ( Sex = M ) then
+				{
+					if ( Height <= 0.155000 ) then
+					{
+						if ( Whole_weight <= 0.772000 ) then
+						{
+							if ( Height <= 0.145000 ) then
+							{
+								if ( Viscera_weight <= 0.136500 ) then
+								{
+									if ( Shell_weight <= 0.210500 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Shell_weight > 0.210500 ) then
+									{
+										if ( Diameter <= 0.395000 ) then
+										{
+											Rings = "14"
+										}
+										elseif ( Diameter > 0.395000 ) then
+										{
+											Rings = "12"
+										}
+									}
+								}
+								elseif ( Viscera_weight > 0.136500 ) then
+								{
+									if ( Shell_weight <= 0.204500 ) then
+									{
+										if ( Length <= 0.495000 ) then
+										{
+											Rings = "13"
+										}
+										elseif ( Length > 0.495000 ) then
+										{
+											Rings = "14"
+										}
+									}
+									elseif ( Shell_weight > 0.204500 ) then
+									{
+										if ( Length <= 0.500000 ) then
+										{
+											if ( Length <= 0.495000 ) then
+											{
+												Rings = "12"
+											}
+											elseif ( Length > 0.495000 ) then
+											{
+												Rings = "11"
+											}
+										}
+										elseif ( Length > 0.500000 ) then
+										{
+											if ( Height <= 0.120000 ) then
+											{
+												Rings = "11"
+											}
+											elseif ( Height > 0.120000 ) then
+											{
+												if ( Height <= 0.140000 ) then
+												{
+													Rings = "13"
+												}
+												elseif ( Height > 0.140000 ) then
+												{
+													Rings = "12"
+												}
+											}
+										}
+									}
+								}
+							}
+							elseif ( Height > 0.145000 ) then
+							{
+								Rings = "9"
+							}
+						}
+						elseif ( Whole_weight > 0.772000 ) then
+						{
+							if ( Shucked_weight <= 0.255000 ) then
+							{
+								if ( Length <= 0.535000 ) then
+								{
+									Rings = "15"
+								}
+								elseif ( Length > 0.535000 ) then
+								{
+									Rings = "10"
+								}
+							}
+							elseif ( Shucked_weight > 0.255000 ) then
+							{
+								if ( Diameter <= 0.410000 ) then
+								{
+									Rings = "12"
+								}
+								elseif ( Diameter > 0.410000 ) then
+								{
+									Rings = "20"
+								}
+							}
+						}
+					}
+					elseif ( Height > 0.155000 ) then
+					{
+						if ( Shell_weight <= 0.231500 ) then
+						{
+							if ( Shucked_weight <= 0.274500 ) then
+							{
+								Rings = "12"
+							}
+							elseif ( Shucked_weight > 0.274500 ) then
+							{
+								Rings = "15"
+							}
+						}
+						elseif ( Shell_weight > 0.231500 ) then
+						{
+							if ( Height <= 0.160000 ) then
+							{
+								Rings = "8"
+							}
+							elseif ( Height > 0.160000 ) then
+							{
+								if ( Height <= 0.165000 ) then
+								{
+									Rings = "13"
+								}
+								elseif ( Height > 0.165000 ) then
+								{
+									Rings = "8"
+								}
+							}
+						}
+					}
+				}
+				elseif ( Sex = F ) then
+				{
+					if ( Whole_weight <= 0.778000 ) then
+					{
+						if ( Height <= 0.155000 ) then
+						{
+							if ( Height <= 0.145000 ) then
+							{
+								if ( Diameter <= 0.380000 ) then
+								{
+									if ( Length <= 0.480000 ) then
+									{
+										Rings = "15"
+									}
+									elseif ( Length > 0.480000 ) then
+									{
+										if ( Height <= 0.135000 ) then
+										{
+											Rings = "11"
+										}
+										elseif ( Height > 0.135000 ) then
+										{
+											Rings = "10"
+										}
+									}
+								}
+								elseif ( Diameter > 0.380000 ) then
+								{
+									if ( Shucked_weight <= 0.228500 ) then
+									{
+										if ( Shucked_weight <= 0.212000 ) then
+										{
+											Rings = "13"
+										}
+										elseif ( Shucked_weight > 0.212000 ) then
+										{
+											if ( Length <= 0.495000 ) then
+											{
+												Rings = "15"
+											}
+											elseif ( Length > 0.495000 ) then
+											{
+												Rings = "16"
+											}
+										}
+									}
+									elseif ( Shucked_weight > 0.228500 ) then
+									{
+										if ( Shell_weight <= 0.240000 ) then
+										{
+											if ( Length <= 0.500000 ) then
+											{
+												if ( Diameter <= 0.395000 ) then
+												{
+													Rings = "15"
+												}
+												elseif ( Diameter > 0.395000 ) then
+												{
+													if ( Height <= 0.135000 ) then
+													{
+														Rings = "10"
+													}
+													elseif ( Height > 0.135000 ) then
+													{
+														Rings = "8"
+													}
+												}
+											}
+											elseif ( Length > 0.500000 ) then
+											{
+												if ( Height <= 0.140000 ) then
+												{
+													if ( Diameter <= 0.410000 ) then
+													{
+														Rings = "12"
+													}
+													elseif ( Diameter > 0.410000 ) then
+													{
+														Rings = "9"
+													}
+												}
+												elseif ( Height > 0.140000 ) then
+												{
+													Rings = "15"
+												}
+											}
+										}
+										elseif ( Shell_weight > 0.240000 ) then
+										{
+											if ( Height <= 0.130000 ) then
+											{
+												Rings = "13"
+											}
+											elseif ( Height > 0.130000 ) then
+											{
+												Rings = "11"
+											}
+										}
+									}
+								}
+							}
+							elseif ( Height > 0.145000 ) then
+							{
+								if ( Diameter <= 0.415000 ) then
+								{
+									if ( Viscera_weight <= 0.144000 ) then
+									{
+										Rings = "17"
+									}
+									elseif ( Viscera_weight > 0.144000 ) then
+									{
+										Rings = "11"
+									}
+								}
+								elseif ( Diameter > 0.415000 ) then
+								{
+									Rings = "14"
+								}
+							}
+						}
+						elseif ( Height > 0.155000 ) then
+						{
+							if ( Length <= 0.500000 ) then
+							{
+								Rings = "20"
+							}
+							elseif ( Length > 0.500000 ) then
+							{
+								if ( Shell_weight <= 0.237500 ) then
+								{
+									if ( Height <= 0.160000 ) then
+									{
+										Rings = "10"
+									}
+									elseif ( Height > 0.160000 ) then
+									{
+										Rings = "12"
+									}
+								}
+								elseif ( Shell_weight > 0.237500 ) then
+								{
+									if ( Shucked_weight <= 0.261500 ) then
+									{
+										Rings = "10"
+									}
+									elseif ( Shucked_weight > 0.261500 ) then
+									{
+										Rings = "9"
+									}
+								}
+							}
+						}
+					}
+					elseif ( Whole_weight > 0.778000 ) then
+					{
+						if ( Height <= 0.165000 ) then
+						{
+							if ( Diameter <= 0.405000 ) then
+							{
+								Rings = "23"
+							}
+							elseif ( Diameter > 0.405000 ) then
+							{
+								if ( Whole_weight <= 0.808500 ) then
+								{
+									Rings = "11"
+								}
+								elseif ( Whole_weight > 0.808500 ) then
+								{
+									Rings = "19"
+								}
+							}
+						}
+						elseif ( Height > 0.165000 ) then
+						{
+							Rings = "14"
+						}
+					}
+				}
+				elseif ( Sex = I ) then
+				{
+					if ( Height <= 0.145000 ) then
+					{
+						if ( Length <= 0.490000 ) then
+						{
+							if ( Length <= 0.455000 ) then
+							{
+								Rings = "16"
+							}
+							elseif ( Length > 0.455000 ) then
+							{
+								Rings = "15"
+							}
+						}
+						elseif ( Length > 0.490000 ) then
+						{
+							if ( Height <= 0.130000 ) then
+							{
+								if ( Shell_weight <= 0.217500 ) then
+								{
+									if ( Shucked_weight <= 0.282500 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Shucked_weight > 0.282500 ) then
+									{
+										Rings = "8"
+									}
+								}
+								elseif ( Shell_weight > 0.217500 ) then
+								{
+									Rings = "11"
+								}
+							}
+							elseif ( Height > 0.130000 ) then
+							{
+								if ( Height <= 0.135000 ) then
+								{
+									Rings = "10"
+								}
+								elseif ( Height > 0.135000 ) then
+								{
+									if ( Diameter <= 0.430000 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Diameter > 0.430000 ) then
+									{
+										Rings = "10"
+									}
+								}
+							}
+						}
+					}
+					elseif ( Height > 0.145000 ) then
+					{
+						Rings = "14"
+					}
+				}
+			}
+			elseif ( Shucked_weight > 0.288500 ) then
+			{
+				if ( Shucked_weight <= 0.392500 ) then
+				{
+					if ( Whole_weight <= 0.803500 ) then
+					{
+						if ( Height <= 0.150000 ) then
+						{
+							if ( Shucked_weight <= 0.334500 ) then
+							{
+								if ( Sex = M ) then
+								{
+									if ( Diameter <= 0.420000 ) then
+									{
+										if ( Shucked_weight <= 0.308500 ) then
+										{
+											if ( Length <= 0.500000 ) then
+											{
+												Rings = "9"
+											}
+											elseif ( Length > 0.500000 ) then
+											{
+												Rings = "7"
+											}
+										}
+										elseif ( Shucked_weight > 0.308500 ) then
+										{
+											if ( Shell_weight <= 0.251000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Shell_weight > 0.251000 ) then
+											{
+												Rings = "11"
+											}
+										}
+									}
+									elseif ( Diameter > 0.420000 ) then
+									{
+										if ( Shell_weight <= 0.228000 ) then
+										{
+											if ( Viscera_weight <= 0.152500 ) then
+											{
+												Rings = "12"
+											}
+											elseif ( Viscera_weight > 0.152500 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Shell_weight > 0.228000 ) then
+										{
+											Rings = "10"
+										}
+									}
+								}
+								elseif ( Sex = F ) then
+								{
+									if ( Whole_weight <= 0.766500 ) then
+									{
+										if ( Shell_weight <= 0.197500 ) then
+										{
+											if ( Diameter <= 0.390000 ) then
+											{
+												Rings = "7"
+											}
+											elseif ( Diameter > 0.390000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Shell_weight > 0.197500 ) then
+										{
+											if ( Shell_weight <= 0.224000 ) then
+											{
+												if ( Length <= 0.535000 ) then
+												{
+													if ( Whole_weight <= 0.717000 ) then
+													{
+														Rings = "10"
+													}
+													elseif ( Whole_weight > 0.717000 ) then
+													{
+														Rings = "8"
+													}
+												}
+												elseif ( Length > 0.535000 ) then
+												{
+													Rings = "9"
+												}
+											}
+											elseif ( Shell_weight > 0.224000 ) then
+											{
+												if ( Shell_weight <= 0.235000 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Shell_weight > 0.235000 ) then
+												{
+													Rings = "10"
+												}
+											}
+										}
+									}
+									elseif ( Whole_weight > 0.766500 ) then
+									{
+										if ( Shucked_weight <= 0.316500 ) then
+										{
+											if ( Height <= 0.130000 ) then
+											{
+												Rings = "16"
+											}
+											elseif ( Height > 0.130000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Shucked_weight > 0.316500 ) then
+										{
+											Rings = "8"
+										}
+									}
+								}
+								elseif ( Sex = I ) then
+								{
+									if ( Length <= 0.575000 ) then
+									{
+										if ( Height <= 0.135000 ) then
+										{
+											if ( Shucked_weight <= 0.318500 ) then
+											{
+												if ( Height <= 0.125000 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Height > 0.125000 ) then
+												{
+													Rings = "8"
+												}
+											}
+											elseif ( Shucked_weight > 0.318500 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Height > 0.135000 ) then
+										{
+											if ( Viscera_weight <= 0.156000 ) then
+											{
+												if ( Length <= 0.530000 ) then
+												{
+													Rings = "8"
+												}
+												elseif ( Length > 0.530000 ) then
+												{
+													Rings = "10"
+												}
+											}
+											elseif ( Viscera_weight > 0.156000 ) then
+											{
+												Rings = "11"
+											}
+										}
+									}
+									elseif ( Length > 0.575000 ) then
+									{
+										Rings = "9"
+									}
+								}
+							}
+							elseif ( Shucked_weight > 0.334500 ) then
+							{
+								if ( Length <= 0.570000 ) then
+								{
+									if ( Sex = M ) then
+									{
+										if ( Height <= 0.140000 ) then
+										{
+											if ( Whole_weight <= 0.766000 ) then
+											{
+												if ( Viscera_weight <= 0.160000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Viscera_weight > 0.160000 ) then
+												{
+													Rings = "8"
+												}
+											}
+											elseif ( Whole_weight > 0.766000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Height > 0.140000 ) then
+										{
+											Rings = "8"
+										}
+									}
+									elseif ( Sex = F ) then
+									{
+										if ( Shell_weight <= 0.200000 ) then
+										{
+											Rings = "8"
+										}
+										elseif ( Shell_weight > 0.200000 ) then
+										{
+											Rings = "9"
+										}
+									}
+									elseif ( Sex = I ) then
+									{
+										if ( Length <= 0.520000 ) then
+										{
+											Rings = "10"
+										}
+										elseif ( Length > 0.520000 ) then
+										{
+											if ( Whole_weight <= 0.762500 ) then
+											{
+												Rings = "8"
+											}
+											elseif ( Whole_weight > 0.762500 ) then
+											{
+												if ( Diameter <= 0.435000 ) then
+												{
+													if ( Length <= 0.550000 ) then
+													{
+														if ( Whole_weight <= 0.785500 ) then
+														{
+															Rings = "8"
+														}
+														elseif ( Whole_weight > 0.785500 ) then
+														{
+															Rings = "10"
+														}
+													}
+													elseif ( Length > 0.550000 ) then
+													{
+														Rings = "9"
+													}
+												}
+												elseif ( Diameter > 0.435000 ) then
+												{
+													Rings = "10"
+												}
+											}
+										}
+									}
+								}
+								elseif ( Length > 0.570000 ) then
+								{
+									if ( Shell_weight <= 0.224000 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Shell_weight > 0.224000 ) then
+									{
+										Rings = "10"
+									}
+								}
+							}
+						}
+						elseif ( Height > 0.150000 ) then
+						{
+							if ( Height <= 0.165000 ) then
+							{
+								if ( Viscera_weight <= 0.184500 ) then
+								{
+									if ( Length <= 0.535000 ) then
+									{
+										Rings = "10"
+									}
+									elseif ( Length > 0.535000 ) then
+									{
+										Rings = "12"
+									}
+								}
+								elseif ( Viscera_weight > 0.184500 ) then
+								{
+									if ( Shell_weight <= 0.231500 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Shell_weight > 0.231500 ) then
+									{
+										Rings = "11"
+									}
+								}
+							}
+							elseif ( Height > 0.165000 ) then
+							{
+								if ( Length <= 0.540000 ) then
+								{
+									Rings = "20"
+								}
+								elseif ( Length > 0.540000 ) then
+								{
+									Rings = "9"
+								}
+							}
+						}
+					}
+					elseif ( Whole_weight > 0.803500 ) then
+					{
+						if ( Whole_weight <= 0.942000 ) then
+						{
+							if ( Shucked_weight <= 0.336000 ) then
+							{
+								if ( Length <= 0.570000 ) then
+								{
+									if ( Sex = M ) then
+									{
+										if ( Diameter <= 0.420000 ) then
+										{
+											if ( Shell_weight <= 0.247500 ) then
+											{
+												Rings = "16"
+											}
+											elseif ( Shell_weight > 0.247500 ) then
+											{
+												if ( Length <= 0.525000 ) then
+												{
+													Rings = "15"
+												}
+												elseif ( Length > 0.525000 ) then
+												{
+													if ( Shucked_weight <= 0.312500 ) then
+													{
+														Rings = "14"
+													}
+													elseif ( Shucked_weight > 0.312500 ) then
+													{
+														Rings = "16"
+													}
+												}
+											}
+										}
+										elseif ( Diameter > 0.420000 ) then
+										{
+											if ( Height <= 0.165000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Height > 0.165000 ) then
+											{
+												Rings = "14"
+											}
+										}
+									}
+									elseif ( Sex = F ) then
+									{
+										if ( Height <= 0.150000 ) then
+										{
+											if ( Length <= 0.560000 ) then
+											{
+												Rings = "13"
+											}
+											elseif ( Length > 0.560000 ) then
+											{
+												Rings = "16"
+											}
+										}
+										elseif ( Height > 0.150000 ) then
+										{
+											Rings = "10"
+										}
+									}
+									elseif ( Sex = I ) then
+									{
+										if ( Length <= 0.560000 ) then
+										{
+											Rings = "10"
+										}
+										elseif ( Length > 0.560000 ) then
+										{
+											Rings = "11"
+										}
+									}
+								}
+								elseif ( Length > 0.570000 ) then
+								{
+									if ( Diameter <= 0.440000 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Diameter > 0.440000 ) then
+									{
+										if ( Height <= 0.160000 ) then
+										{
+											Rings = "8"
+										}
+										elseif ( Height > 0.160000 ) then
+										{
+											Rings = "12"
+										}
+									}
+								}
+							}
+							elseif ( Shucked_weight > 0.336000 ) then
+							{
+								if ( Shell_weight <= 0.278500 ) then
+								{
+									if ( Diameter <= 0.425000 ) then
+									{
+										if ( Sex = M ) then
+										{
+											if ( Height <= 0.130000 ) then
+											{
+												Rings = "9"
+											}
+											elseif ( Height > 0.130000 ) then
+											{
+												if ( Whole_weight <= 0.821500 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Whole_weight > 0.821500 ) then
+												{
+													Rings = "10"
+												}
+											}
+										}
+										elseif ( Sex = F ) then
+										{
+											if ( Shell_weight <= 0.241500 ) then
+											{
+												if ( Diameter <= 0.420000 ) then
+												{
+													if ( Shell_weight <= 0.207500 ) then
+													{
+														Rings = "15"
+													}
+													elseif ( Shell_weight > 0.207500 ) then
+													{
+														Rings = "11"
+													}
+												}
+												elseif ( Diameter > 0.420000 ) then
+												{
+													Rings = "10"
+												}
+											}
+											elseif ( Shell_weight > 0.241500 ) then
+											{
+												if ( Whole_weight <= 0.846500 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Whole_weight > 0.846500 ) then
+												{
+													Rings = "14"
+												}
+											}
+										}
+										elseif ( Sex = I ) then
+										{
+											if ( Diameter <= 0.415000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Diameter > 0.415000 ) then
+											{
+												if ( Shell_weight <= 0.245000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Shell_weight > 0.245000 ) then
+												{
+													Rings = "11"
+												}
+											}
+										}
+									}
+									elseif ( Diameter > 0.425000 ) then
+									{
+										if ( Shell_weight <= 0.230500 ) then
+										{
+											if ( Diameter <= 0.445000 ) then
+											{
+												if ( Whole_weight <= 0.824000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Whole_weight > 0.824000 ) then
+												{
+													Rings = "8"
+												}
+											}
+											elseif ( Diameter > 0.445000 ) then
+											{
+												Rings = "6"
+											}
+										}
+										elseif ( Shell_weight > 0.230500 ) then
+										{
+											if ( Sex = M ) then
+											{
+												if ( Length <= 0.545000 ) then
+												{
+													if ( Diameter <= 0.435000 ) then
+													{
+														Rings = "16"
+													}
+													elseif ( Diameter > 0.435000 ) then
+													{
+														if ( Shucked_weight <= 0.351500 ) then
+														{
+															Rings = "8"
+														}
+														elseif ( Shucked_weight > 0.351500 ) then
+														{
+															Rings = "11"
+														}
+													}
+												}
+												elseif ( Length > 0.545000 ) then
+												{
+													if ( Shell_weight <= 0.256000 ) then
+													{
+														if ( Shell_weight <= 0.252500 ) then
+														{
+															if ( Diameter <= 0.460000 ) then
+															{
+																if ( Height <= 0.155000 ) then
+																{
+																	if ( Diameter <= 0.445000 ) then
+																	{
+																		Rings = "8"
+																	}
+																	elseif ( Diameter > 0.445000 ) then
+																	{
+																		Rings = "9"
+																	}
+																}
+																elseif ( Height > 0.155000 ) then
+																{
+																	Rings = "9"
+																}
+															}
+															elseif ( Diameter > 0.460000 ) then
+															{
+																Rings = "15"
+															}
+														}
+														elseif ( Shell_weight > 0.252500 ) then
+														{
+															if ( Whole_weight <= 0.887500 ) then
+															{
+																Rings = "12"
+															}
+															elseif ( Whole_weight > 0.887500 ) then
+															{
+																Rings = "15"
+															}
+														}
+													}
+													elseif ( Shell_weight > 0.256000 ) then
+													{
+														if ( Diameter <= 0.450000 ) then
+														{
+															if ( Whole_weight <= 0.883000 ) then
+															{
+																Rings = "10"
+															}
+															elseif ( Whole_weight > 0.883000 ) then
+															{
+																Rings = "9"
+															}
+														}
+														elseif ( Diameter > 0.450000 ) then
+														{
+															if ( Whole_weight <= 0.884000 ) then
+															{
+																if ( Whole_weight <= 0.862000 ) then
+																{
+																	Rings = "9"
+																}
+																elseif ( Whole_weight > 0.862000 ) then
+																{
+																	Rings = "8"
+																}
+															}
+															elseif ( Whole_weight > 0.884000 ) then
+															{
+																Rings = "10"
+															}
+														}
+													}
+												}
+											}
+											elseif ( Sex = F ) then
+											{
+												if ( Whole_weight <= 0.871500 ) then
+												{
+													if ( Whole_weight <= 0.839500 ) then
+													{
+														Rings = "10"
+													}
+													elseif ( Whole_weight > 0.839500 ) then
+													{
+														if ( Height <= 0.145000 ) then
+														{
+															Rings = "10"
+														}
+														elseif ( Height > 0.145000 ) then
+														{
+															Rings = "12"
+														}
+													}
+												}
+												elseif ( Whole_weight > 0.871500 ) then
+												{
+													if ( Whole_weight <= 0.907000 ) then
+													{
+														if ( Shell_weight <= 0.273500 ) then
+														{
+															Rings = "11"
+														}
+														elseif ( Shell_weight > 0.273500 ) then
+														{
+															Rings = "10"
+														}
+													}
+													elseif ( Whole_weight > 0.907000 ) then
+													{
+														if ( Diameter <= 0.460000 ) then
+														{
+															Rings = "9"
+														}
+														elseif ( Diameter > 0.460000 ) then
+														{
+															Rings = "10"
+														}
+													}
+												}
+											}
+											elseif ( Sex = I ) then
+											{
+												if ( Whole_weight <= 0.889000 ) then
+												{
+													if ( Diameter <= 0.435000 ) then
+													{
+														Rings = "9"
+													}
+													elseif ( Diameter > 0.435000 ) then
+													{
+														if ( Length <= 0.580000 ) then
+														{
+															if ( Diameter <= 0.455000 ) then
+															{
+																if ( Whole_weight <= 0.808500 ) then
+																{
+																	Rings = "10"
+																}
+																elseif ( Whole_weight > 0.808500 ) then
+																{
+																	Rings = "11"
+																}
+															}
+															elseif ( Diameter > 0.455000 ) then
+															{
+																Rings = "10"
+															}
+														}
+														elseif ( Length > 0.580000 ) then
+														{
+															Rings = "9"
+														}
+													}
+												}
+												elseif ( Whole_weight > 0.889000 ) then
+												{
+													Rings = "13"
+												}
+											}
+										}
+									}
+								}
+								elseif ( Shell_weight > 0.278500 ) then
+								{
+									if ( Height <= 0.135000 ) then
+									{
+										Rings = "13"
+									}
+									elseif ( Height > 0.135000 ) then
+									{
+										if ( Sex = M ) then
+										{
+											if ( Length <= 0.580000 ) then
+											{
+												Rings = "8"
+											}
+											elseif ( Length > 0.580000 ) then
+											{
+												Rings = "10"
+											}
+										}
+										elseif ( Sex = F ) then
+										{
+											if ( Whole_weight <= 0.888000 ) then
+											{
+												Rings = "8"
+											}
+											elseif ( Whole_weight > 0.888000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Sex = I ) then
+										{
+											if ( Length <= 0.570000 ) then
+											{
+												Rings = "9"
+											}
+											elseif ( Length > 0.570000 ) then
+											{
+												Rings = "8"
+											}
+										}
+									}
+								}
+							}
+						}
+						elseif ( Whole_weight > 0.942000 ) then
+						{
+							if ( Shucked_weight <= 0.378000 ) then
+							{
+								if ( Length <= 0.580000 ) then
+								{
+									if ( Viscera_weight <= 0.246500 ) then
+									{
+										Rings = "17"
+									}
+									elseif ( Viscera_weight > 0.246500 ) then
+									{
+										Rings = "13"
+									}
+								}
+								elseif ( Length > 0.580000 ) then
+								{
+									Rings = "11"
+								}
+							}
+							elseif ( Shucked_weight > 0.378000 ) then
+							{
+								if ( Diameter <= 0.465000 ) then
+								{
+									Rings = "12"
+								}
+								elseif ( Diameter > 0.465000 ) then
+								{
+									Rings = "15"
+								}
+							}
+						}
+					}
+				}
+				elseif ( Shucked_weight > 0.392500 ) then
+				{
+					if ( Shell_weight <= 0.256500 ) then
+					{
+						if ( Height <= 0.135000 ) then
+						{
+							if ( Whole_weight <= 0.811500 ) then
+							{
+								if ( Length <= 0.525000 ) then
+								{
+									Rings = "7"
+								}
+								elseif ( Length > 0.525000 ) then
+								{
+									Rings = "9"
+								}
+							}
+							elseif ( Whole_weight > 0.811500 ) then
+							{
+								if ( Sex = M ) then
+								{
+									if ( Length <= 0.530000 ) then
+									{
+										Rings = "8"
+									}
+									elseif ( Length > 0.530000 ) then
+									{
+										if ( Length <= 0.575000 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Length > 0.575000 ) then
+										{
+											Rings = "8"
+										}
+									}
+								}
+								elseif ( Sex = F ) then
+								{
+									if ( Viscera_weight <= 0.214000 ) then
+									{
+										if ( Whole_weight <= 0.843000 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Whole_weight > 0.843000 ) then
+										{
+											if ( Shell_weight <= 0.213500 ) then
+											{
+												Rings = "9"
+											}
+											elseif ( Shell_weight > 0.213500 ) then
+											{
+												Rings = "8"
+											}
+										}
+									}
+									elseif ( Viscera_weight > 0.214000 ) then
+									{
+										Rings = "12"
+									}
+								}
+								elseif ( Sex = I ) then
+								{
+									if ( Length <= 0.560000 ) then
+									{
+										Rings = "8"
+									}
+									elseif ( Length > 0.560000 ) then
+									{
+										Rings = "9"
+									}
+								}
+							}
+						}
+						elseif ( Height > 0.135000 ) then
+						{
+							if ( Diameter <= 0.475000 ) then
+							{
+								if ( Viscera_weight <= 0.267000 ) then
+								{
+									if ( Whole_weight <= 0.894000 ) then
+									{
+										if ( Whole_weight <= 0.836500 ) then
+										{
+											if ( Viscera_weight <= 0.173000 ) then
+											{
+												if ( Viscera_weight <= 0.159500 ) then
+												{
+													if ( Length <= 0.545000 ) then
+													{
+														Rings = "7"
+													}
+													elseif ( Length > 0.545000 ) then
+													{
+														Rings = "10"
+													}
+												}
+												elseif ( Viscera_weight > 0.159500 ) then
+												{
+													Rings = "9"
+												}
+											}
+											elseif ( Viscera_weight > 0.173000 ) then
+											{
+												Rings = "10"
+											}
+										}
+										elseif ( Whole_weight > 0.836500 ) then
+										{
+											if ( Height <= 0.155000 ) then
+											{
+												if ( Sex = M ) then
+												{
+													if ( Diameter <= 0.445000 ) then
+													{
+														if ( Shell_weight <= 0.204500 ) then
+														{
+															Rings = "9"
+														}
+														elseif ( Shell_weight > 0.204500 ) then
+														{
+															if ( Shucked_weight <= 0.414000 ) then
+															{
+																if ( Shucked_weight <= 0.400500 ) then
+																{
+																	Rings = "8"
+																}
+																elseif ( Shucked_weight > 0.400500 ) then
+																{
+																	Rings = "9"
+																}
+															}
+															elseif ( Shucked_weight > 0.414000 ) then
+															{
+																Rings = "8"
+															}
+														}
+													}
+													elseif ( Diameter > 0.445000 ) then
+													{
+														if ( Viscera_weight <= 0.169500 ) then
+														{
+															Rings = "9"
+														}
+														elseif ( Viscera_weight > 0.169500 ) then
+														{
+															Rings = "10"
+														}
+													}
+												}
+												elseif ( Sex = F ) then
+												{
+													if ( Height <= 0.145000 ) then
+													{
+														if ( Diameter <= 0.430000 ) then
+														{
+															Rings = "10"
+														}
+														elseif ( Diameter > 0.430000 ) then
+														{
+															Rings = "8"
+														}
+													}
+													elseif ( Height > 0.145000 ) then
+													{
+														Rings = "8"
+													}
+												}
+												elseif ( Sex = I ) then
+												{
+													if ( Viscera_weight <= 0.195000 ) then
+													{
+														if ( Height <= 0.145000 ) then
+														{
+															Rings = "9"
+														}
+														elseif ( Height > 0.145000 ) then
+														{
+															Rings = "10"
+														}
+													}
+													elseif ( Viscera_weight > 0.195000 ) then
+													{
+														Rings = "8"
+													}
+												}
+											}
+											elseif ( Height > 0.155000 ) then
+											{
+												if ( Shucked_weight <= 0.401000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Shucked_weight > 0.401000 ) then
+												{
+													if ( Shucked_weight <= 0.418000 ) then
+													{
+														Rings = "11"
+													}
+													elseif ( Shucked_weight > 0.418000 ) then
+													{
+														Rings = "8"
+													}
+												}
+											}
+										}
+									}
+									elseif ( Whole_weight > 0.894000 ) then
+									{
+										if ( Sex = M ) then
+										{
+											if ( Shell_weight <= 0.219000 ) then
+											{
+												if ( Diameter <= 0.440000 ) then
+												{
+													Rings = "8"
+												}
+												elseif ( Diameter > 0.440000 ) then
+												{
+													Rings = "7"
+												}
+											}
+											elseif ( Shell_weight > 0.219000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Sex = F ) then
+										{
+											if ( Diameter <= 0.425000 ) then
+											{
+												Rings = "7"
+											}
+											elseif ( Diameter > 0.425000 ) then
+											{
+												if ( Viscera_weight <= 0.220500 ) then
+												{
+													if ( Viscera_weight <= 0.210000 ) then
+													{
+														if ( Height <= 0.145000 ) then
+														{
+															Rings = "9"
+														}
+														elseif ( Height > 0.145000 ) then
+														{
+															if ( Viscera_weight <= 0.191500 ) then
+															{
+																Rings = "9"
+															}
+															elseif ( Viscera_weight > 0.191500 ) then
+															{
+																if ( Viscera_weight <= 0.197000 ) then
+																{
+																	Rings = "10"
+																}
+																elseif ( Viscera_weight > 0.197000 ) then
+																{
+																	Rings = "7"
+																}
+															}
+														}
+													}
+													elseif ( Viscera_weight > 0.210000 ) then
+													{
+														if ( Whole_weight <= 0.968500 ) then
+														{
+															Rings = "9"
+														}
+														elseif ( Whole_weight > 0.968500 ) then
+														{
+															Rings = "11"
+														}
+													}
+												}
+												elseif ( Viscera_weight > 0.220500 ) then
+												{
+													if ( Length <= 0.580000 ) then
+													{
+														Rings = "9"
+													}
+													elseif ( Length > 0.580000 ) then
+													{
+														if ( Diameter <= 0.470000 ) then
+														{
+															Rings = "8"
+														}
+														elseif ( Diameter > 0.470000 ) then
+														{
+															Rings = "9"
+														}
+													}
+												}
+											}
+										}
+										elseif ( Sex = I ) then
+										{
+											if ( Shucked_weight <= 0.447000 ) then
+											{
+												Rings = "11"
+											}
+											elseif ( Shucked_weight > 0.447000 ) then
+											{
+												Rings = "9"
+											}
+										}
+									}
+								}
+								elseif ( Viscera_weight > 0.267000 ) then
+								{
+									if ( Shucked_weight <= 0.486500 ) then
+									{
+										Rings = "11"
+									}
+									elseif ( Shucked_weight > 0.486500 ) then
+									{
+										Rings = "10"
+									}
+								}
+							}
+							elseif ( Diameter > 0.475000 ) then
+							{
+								Rings = "8"
+							}
+						}
+					}
+					elseif ( Shell_weight > 0.256500 ) then
+					{
+						if ( Diameter <= 0.450000 ) then
+						{
+							if ( Height <= 0.145000 ) then
+							{
+								if ( Length <= 0.565000 ) then
+								{
+									if ( Viscera_weight <= 0.187500 ) then
+									{
+										Rings = "11"
+									}
+									elseif ( Viscera_weight > 0.187500 ) then
+									{
+										Rings = "17"
+									}
+								}
+								elseif ( Length > 0.565000 ) then
+								{
+									if ( Whole_weight <= 0.944000 ) then
+									{
+										Rings = "8"
+									}
+									elseif ( Whole_weight > 0.944000 ) then
+									{
+										Rings = "10"
+									}
+								}
+							}
+							elseif ( Height > 0.145000 ) then
+							{
+								if ( Viscera_weight <= 0.249000 ) then
+								{
+									if ( Sex = M ) then
+									{
+										if ( Length <= 0.555000 ) then
+										{
+											Rings = "8"
+										}
+										elseif ( Length > 0.555000 ) then
+										{
+											if ( Length <= 0.575000 ) then
+											{
+												Rings = "13"
+											}
+											elseif ( Length > 0.575000 ) then
+											{
+												Rings = "9"
+											}
+										}
+									}
+									elseif ( Sex = F ) then
+									{
+										if ( Shucked_weight <= 0.461500 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Shucked_weight > 0.461500 ) then
+										{
+											if ( Viscera_weight <= 0.224500 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Viscera_weight > 0.224500 ) then
+											{
+												Rings = "8"
+											}
+										}
+									}
+									elseif ( Sex = I ) then
+									{
+										Rings = "8"
+									}
+								}
+								elseif ( Viscera_weight > 0.249000 ) then
+								{
+									if ( Diameter <= 0.445000 ) then
+									{
+										Rings = "10"
+									}
+									elseif ( Diameter > 0.445000 ) then
+									{
+										if ( Height <= 0.175000 ) then
+										{
+											Rings = "12"
+										}
+										elseif ( Height > 0.175000 ) then
+										{
+											Rings = "15"
+										}
+									}
+								}
+							}
+						}
+						elseif ( Diameter > 0.450000 ) then
+						{
+							if ( Diameter <= 0.480000 ) then
+							{
+								if ( Shucked_weight <= 0.475500 ) then
+								{
+									if ( Shell_weight <= 0.265000 ) then
+									{
+										if ( Viscera_weight <= 0.206000 ) then
+										{
+											Rings = "11"
+										}
+										elseif ( Viscera_weight > 0.206000 ) then
+										{
+											if ( Diameter <= 0.470000 ) then
+											{
+												if ( Shucked_weight <= 0.431500 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Shucked_weight > 0.431500 ) then
+												{
+													Rings = "7"
+												}
+											}
+											elseif ( Diameter > 0.470000 ) then
+											{
+												Rings = "10"
+											}
+										}
+									}
+									elseif ( Shell_weight > 0.265000 ) then
+									{
+										if ( Shell_weight <= 0.276500 ) then
+										{
+											if ( Shucked_weight <= 0.466000 ) then
+											{
+												if ( Length <= 0.575000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Length > 0.575000 ) then
+												{
+													if ( Diameter <= 0.475000 ) then
+													{
+														if ( Shell_weight <= 0.274500 ) then
+														{
+															Rings = "10"
+														}
+														elseif ( Shell_weight > 0.274500 ) then
+														{
+															if ( Shucked_weight <= 0.442500 ) then
+															{
+																Rings = "8"
+															}
+															elseif ( Shucked_weight > 0.442500 ) then
+															{
+																Rings = "10"
+															}
+														}
+													}
+													elseif ( Diameter > 0.475000 ) then
+													{
+														Rings = "9"
+													}
+												}
+											}
+											elseif ( Shucked_weight > 0.466000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Shell_weight > 0.276500 ) then
+										{
+											if ( Length <= 0.590000 ) then
+											{
+												if ( Viscera_weight <= 0.234000 ) then
+												{
+													if ( Sex = M ) then
+													{
+														Rings = "14"
+													}
+													elseif ( Sex = F ) then
+													{
+														Rings = "10"
+													}
+													elseif ( Sex = I ) then
+													{
+														Rings = "14"
+													}
+												}
+												elseif ( Viscera_weight > 0.234000 ) then
+												{
+													Rings = "11"
+												}
+											}
+											elseif ( Length > 0.590000 ) then
+											{
+												if ( Height <= 0.135000 ) then
+												{
+													Rings = "10"
+												}
+												elseif ( Height > 0.135000 ) then
+												{
+													if ( Shell_weight <= 0.284500 ) then
+													{
+														Rings = "11"
+													}
+													elseif ( Shell_weight > 0.284500 ) then
+													{
+														if ( Viscera_weight <= 0.270000 ) then
+														{
+															Rings = "9"
+														}
+														elseif ( Viscera_weight > 0.270000 ) then
+														{
+															Rings = "11"
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								elseif ( Shucked_weight > 0.475500 ) then
+								{
+									if ( Sex = M ) then
+									{
+										if ( Diameter <= 0.475000 ) then
+										{
+											if ( Diameter <= 0.465000 ) then
+											{
+												if ( Length <= 0.580000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Length > 0.580000 ) then
+												{
+													if ( Whole_weight <= 1.132500 ) then
+													{
+														Rings = "10"
+													}
+													elseif ( Whole_weight > 1.132500 ) then
+													{
+														Rings = "9"
+													}
+												}
+											}
+											elseif ( Diameter > 0.465000 ) then
+											{
+												if ( Diameter <= 0.470000 ) then
+												{
+													if ( Whole_weight <= 1.182500 ) then
+													{
+														if ( Shell_weight <= 0.279500 ) then
+														{
+															Rings = "9"
+														}
+														elseif ( Shell_weight > 0.279500 ) then
+														{
+															Rings = "8"
+														}
+													}
+													elseif ( Whole_weight > 1.182500 ) then
+													{
+														Rings = "10"
+													}
+												}
+												elseif ( Diameter > 0.470000 ) then
+												{
+													if ( Viscera_weight <= 0.224500 ) then
+													{
+														Rings = "10"
+													}
+													elseif ( Viscera_weight > 0.224500 ) then
+													{
+														Rings = "9"
+													}
+												}
+											}
+										}
+										elseif ( Diameter > 0.475000 ) then
+										{
+											if ( Height <= 0.165000 ) then
+											{
+												if ( Length <= 0.615000 ) then
+												{
+													Rings = "8"
+												}
+												elseif ( Length > 0.615000 ) then
+												{
+													Rings = "9"
+												}
+											}
+											elseif ( Height > 0.165000 ) then
+											{
+												Rings = "10"
+											}
+										}
+									}
+									elseif ( Sex = F ) then
+									{
+										if ( Shucked_weight <= 0.491500 ) then
+										{
+											if ( Shucked_weight <= 0.485000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Shucked_weight > 0.485000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Shucked_weight > 0.491500 ) then
+										{
+											if ( Length <= 0.600000 ) then
+											{
+												Rings = "8"
+											}
+											elseif ( Length > 0.600000 ) then
+											{
+												if ( Height <= 0.155000 ) then
+												{
+													Rings = "10"
+												}
+												elseif ( Height > 0.155000 ) then
+												{
+													Rings = "8"
+												}
+											}
+										}
+									}
+									elseif ( Sex = I ) then
+									{
+										Rings = "10"
+									}
+								}
+							}
+							elseif ( Diameter > 0.480000 ) then
+							{
+								if ( Viscera_weight <= 0.312500 ) then
+								{
+									if ( Length <= 0.605000 ) then
+									{
+										if ( Whole_weight <= 1.071000 ) then
+										{
+											Rings = "11"
+										}
+										elseif ( Whole_weight > 1.071000 ) then
+										{
+											Rings = "9"
+										}
+									}
+									elseif ( Length > 0.605000 ) then
+									{
+										if ( Sex = M ) then
+										{
+											if ( Viscera_weight <= 0.251500 ) then
+											{
+												if ( Whole_weight <= 1.004500 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Whole_weight > 1.004500 ) then
+												{
+													Rings = "9"
+												}
+											}
+											elseif ( Viscera_weight > 0.251500 ) then
+											{
+												Rings = "11"
+											}
+										}
+										elseif ( Sex = F ) then
+										{
+											if ( Shell_weight <= 0.284000 ) then
+											{
+												if ( Height <= 0.155000 ) then
+												{
+													Rings = "10"
+												}
+												elseif ( Height > 0.155000 ) then
+												{
+													Rings = "9"
+												}
+											}
+											elseif ( Shell_weight > 0.284000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Sex = I ) then
+										{
+											Rings = "9"
+										}
+									}
+								}
+								elseif ( Viscera_weight > 0.312500 ) then
+								{
+									Rings = "11"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	elseif ( Shell_weight > 0.290000 ) then
+	{
+		if ( Shucked_weight <= 0.435000 ) then
+		{
+			if ( Height <= 0.190000 ) then
+			{
+				if ( Shell_weight <= 0.358000 ) then
+				{
+					if ( Length <= 0.515000 ) then
+					{
+						if ( Length <= 0.505000 ) then
+						{
+							Rings = "6"
+						}
+						elseif ( Length > 0.505000 ) then
+						{
+							Rings = "10"
+						}
+					}
+					elseif ( Length > 0.515000 ) then
+					{
+						if ( Diameter <= 0.445000 ) then
+						{
+							if ( Shell_weight <= 0.312000 ) then
+							{
+								if ( Length <= 0.550000 ) then
+								{
+									if ( Diameter <= 0.415000 ) then
+									{
+										if ( Shell_weight <= 0.305000 ) then
+										{
+											Rings = "15"
+										}
+										elseif ( Shell_weight > 0.305000 ) then
+										{
+											Rings = "11"
+										}
+									}
+									elseif ( Diameter > 0.415000 ) then
+									{
+										if ( Shell_weight <= 0.297000 ) then
+										{
+											Rings = "13"
+										}
+										elseif ( Shell_weight > 0.297000 ) then
+										{
+											Rings = "17"
+										}
+									}
+								}
+								elseif ( Length > 0.550000 ) then
+								{
+									if ( Shell_weight <= 0.307500 ) then
+									{
+										if ( Diameter <= 0.440000 ) then
+										{
+											if ( Diameter <= 0.435000 ) then
+											{
+												Rings = "17"
+											}
+											elseif ( Diameter > 0.435000 ) then
+											{
+												Rings = "11"
+											}
+										}
+										elseif ( Diameter > 0.440000 ) then
+										{
+											Rings = "9"
+										}
+									}
+									elseif ( Shell_weight > 0.307500 ) then
+									{
+										Rings = "9"
+									}
+								}
+							}
+							elseif ( Shell_weight > 0.312000 ) then
+							{
+								if ( Sex = M ) then
+								{
+									if ( Viscera_weight <= 0.207500 ) then
+									{
+										if ( Shell_weight <= 0.337500 ) then
+										{
+											if ( Shucked_weight <= 0.313000 ) then
+											{
+												Rings = "14"
+											}
+											elseif ( Shucked_weight > 0.313000 ) then
+											{
+												Rings = "15"
+											}
+										}
+										elseif ( Shell_weight > 0.337500 ) then
+										{
+											Rings = "13"
+										}
+									}
+									elseif ( Viscera_weight > 0.207500 ) then
+									{
+										if ( Length <= 0.545000 ) then
+										{
+											Rings = "19"
+										}
+										elseif ( Length > 0.545000 ) then
+										{
+											Rings = "10"
+										}
+									}
+								}
+								elseif ( Sex = F ) then
+								{
+									if ( Diameter <= 0.430000 ) then
+									{
+										Rings = "20"
+									}
+									elseif ( Diameter > 0.430000 ) then
+									{
+										if ( Whole_weight <= 1.081500 ) then
+										{
+											Rings = "19"
+										}
+										elseif ( Whole_weight > 1.081500 ) then
+										{
+											Rings = "15"
+										}
+									}
+								}
+								elseif ( Sex = I ) then
+								{
+									Rings = "20"
+								}
+							}
+						}
+						elseif ( Diameter > 0.445000 ) then
+						{
+							if ( Sex = M ) then
+							{
+								if ( Diameter <= 0.480000 ) then
+								{
+									if ( Whole_weight <= 1.038500 ) then
+									{
+										if ( Viscera_weight <= 0.184000 ) then
+										{
+											if ( Diameter <= 0.460000 ) then
+											{
+												Rings = "15"
+											}
+											elseif ( Diameter > 0.460000 ) then
+											{
+												Rings = "16"
+											}
+										}
+										elseif ( Viscera_weight > 0.184000 ) then
+										{
+											if ( Viscera_weight <= 0.201000 ) then
+											{
+												if ( Length <= 0.575000 ) then
+												{
+													Rings = "14"
+												}
+												elseif ( Length > 0.575000 ) then
+												{
+													Rings = "9"
+												}
+											}
+											elseif ( Viscera_weight > 0.201000 ) then
+											{
+												Rings = "10"
+											}
+										}
+									}
+									elseif ( Whole_weight > 1.038500 ) then
+									{
+										if ( Whole_weight <= 1.092000 ) then
+										{
+											if ( Viscera_weight <= 0.259000 ) then
+											{
+												Rings = "13"
+											}
+											elseif ( Viscera_weight > 0.259000 ) then
+											{
+												Rings = "14"
+											}
+										}
+										elseif ( Whole_weight > 1.092000 ) then
+										{
+											if ( Length <= 0.600000 ) then
+											{
+												Rings = "16"
+											}
+											elseif ( Length > 0.600000 ) then
+											{
+												Rings = "15"
+											}
+										}
+									}
+								}
+								elseif ( Diameter > 0.480000 ) then
+								{
+									if ( Shell_weight <= 0.327000 ) then
+									{
+										if ( Whole_weight <= 1.071000 ) then
+										{
+											Rings = "10"
+										}
+										elseif ( Whole_weight > 1.071000 ) then
+										{
+											Rings = "11"
+										}
+									}
+									elseif ( Shell_weight > 0.327000 ) then
+									{
+										if ( Diameter <= 0.495000 ) then
+										{
+											Rings = "12"
+										}
+										elseif ( Diameter > 0.495000 ) then
+										{
+											Rings = "19"
+										}
+									}
+								}
+							}
+							elseif ( Sex = F ) then
+							{
+								if ( Shell_weight <= 0.297000 ) then
+								{
+									if ( Diameter <= 0.460000 ) then
+									{
+										if ( Viscera_weight <= 0.189500 ) then
+										{
+											Rings = "14"
+										}
+										elseif ( Viscera_weight > 0.189500 ) then
+										{
+											Rings = "11"
+										}
+									}
+									elseif ( Diameter > 0.460000 ) then
+									{
+										Rings = "16"
+									}
+								}
+								elseif ( Shell_weight > 0.297000 ) then
+								{
+									if ( Viscera_weight <= 0.233000 ) then
+									{
+										if ( Shell_weight <= 0.307500 ) then
+										{
+											if ( Shell_weight <= 0.300000 ) then
+											{
+												if ( Height <= 0.150000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Height > 0.150000 ) then
+												{
+													Rings = "8"
+												}
+											}
+											elseif ( Shell_weight > 0.300000 ) then
+											{
+												Rings = "10"
+											}
+										}
+										elseif ( Shell_weight > 0.307500 ) then
+										{
+											if ( Diameter <= 0.460000 ) then
+											{
+												if ( Length <= 0.575000 ) then
+												{
+													Rings = "12"
+												}
+												elseif ( Length > 0.575000 ) then
+												{
+													Rings = "19"
+												}
+											}
+											elseif ( Diameter > 0.460000 ) then
+											{
+												if ( Shucked_weight <= 0.429500 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Shucked_weight > 0.429500 ) then
+												{
+													Rings = "9"
+												}
+											}
+										}
+									}
+									elseif ( Viscera_weight > 0.233000 ) then
+									{
+										if ( Length <= 0.605000 ) then
+										{
+											if ( Diameter <= 0.480000 ) then
+											{
+												if ( Diameter <= 0.455000 ) then
+												{
+													Rings = "10"
+												}
+												elseif ( Diameter > 0.455000 ) then
+												{
+													Rings = "13"
+												}
+											}
+											elseif ( Diameter > 0.480000 ) then
+											{
+												Rings = "10"
+											}
+										}
+										elseif ( Length > 0.605000 ) then
+										{
+											if ( Diameter <= 0.470000 ) then
+											{
+												Rings = "9"
+											}
+											elseif ( Diameter > 0.470000 ) then
+											{
+												Rings = "8"
+											}
+										}
+									}
+								}
+							}
+							elseif ( Sex = I ) then
+							{
+								if ( Shell_weight <= 0.327500 ) then
+								{
+									if ( Shucked_weight <= 0.338500 ) then
+									{
+										if ( Length <= 0.565000 ) then
+										{
+											Rings = "15"
+										}
+										elseif ( Length > 0.565000 ) then
+										{
+											Rings = "13"
+										}
+									}
+									elseif ( Shucked_weight > 0.338500 ) then
+									{
+										if ( Length <= 0.610000 ) then
+										{
+											Rings = "10"
+										}
+										elseif ( Length > 0.610000 ) then
+										{
+											if ( Height <= 0.145000 ) then
+											{
+												Rings = "9"
+											}
+											elseif ( Height > 0.145000 ) then
+											{
+												Rings = "11"
+											}
+										}
+									}
+								}
+								elseif ( Shell_weight > 0.327500 ) then
+								{
+									if ( Shucked_weight <= 0.409000 ) then
+									{
+										Rings = "14"
+									}
+									elseif ( Shucked_weight > 0.409000 ) then
+									{
+										Rings = "13"
+									}
+								}
+							}
+						}
+					}
+				}
+				elseif ( Shell_weight > 0.358000 ) then
+				{
+					if ( Shucked_weight <= 0.416500 ) then
+					{
+						if ( Height <= 0.180000 ) then
+						{
+							if ( Shell_weight <= 0.367000 ) then
+							{
+								if ( Viscera_weight <= 0.220000 ) then
+								{
+									if ( Height <= 0.150000 ) then
+									{
+										Rings = "14"
+									}
+									elseif ( Height > 0.150000 ) then
+									{
+										Rings = "16"
+									}
+								}
+								elseif ( Viscera_weight > 0.220000 ) then
+								{
+									if ( Length <= 0.610000 ) then
+									{
+										Rings = "12"
+									}
+									elseif ( Length > 0.610000 ) then
+									{
+										Rings = "15"
+									}
+								}
+							}
+							elseif ( Shell_weight > 0.367000 ) then
+							{
+								if ( Sex = M ) then
+								{
+									if ( Shell_weight <= 0.490000 ) then
+									{
+										if ( Shucked_weight <= 0.397000 ) then
+										{
+											if ( Height <= 0.165000 ) then
+											{
+												Rings = "20"
+											}
+											elseif ( Height > 0.165000 ) then
+											{
+												Rings = "15"
+											}
+										}
+										elseif ( Shucked_weight > 0.397000 ) then
+										{
+											if ( Length <= 0.585000 ) then
+											{
+												Rings = "15"
+											}
+											elseif ( Length > 0.585000 ) then
+											{
+												Rings = "13"
+											}
+										}
+									}
+									elseif ( Shell_weight > 0.490000 ) then
+									{
+										Rings = "12"
+									}
+								}
+								elseif ( Sex = F ) then
+								{
+									if ( Shucked_weight <= 0.379500 ) then
+									{
+										if ( Height <= 0.165000 ) then
+										{
+											if ( Whole_weight <= 1.091500 ) then
+											{
+												Rings = "21"
+											}
+											elseif ( Whole_weight > 1.091500 ) then
+											{
+												Rings = "13"
+											}
+										}
+										elseif ( Height > 0.165000 ) then
+										{
+											if ( Height <= 0.175000 ) then
+											{
+												Rings = "18"
+											}
+											elseif ( Height > 0.175000 ) then
+											{
+												Rings = "14"
+											}
+										}
+									}
+									elseif ( Shucked_weight > 0.379500 ) then
+									{
+										if ( Diameter <= 0.455000 ) then
+										{
+											Rings = "20"
+										}
+										elseif ( Diameter > 0.455000 ) then
+										{
+											Rings = "14"
+										}
+									}
+								}
+								elseif ( Sex = I ) then
+								{
+									Rings = "17"
+								}
+							}
+						}
+						elseif ( Height > 0.180000 ) then
+						{
+							if ( Length <= 0.560000 ) then
+							{
+								Rings = "10"
+							}
+							elseif ( Length > 0.560000 ) then
+							{
+								if ( Height <= 0.185000 ) then
+								{
+									Rings = "13"
+								}
+								elseif ( Height > 0.185000 ) then
+								{
+									Rings = "16"
+								}
+							}
+						}
+					}
+					elseif ( Shucked_weight > 0.416500 ) then
+					{
+						if ( Sex = M ) then
+						{
+							if ( Diameter <= 0.475000 ) then
+							{
+								Rings = "10"
+							}
+							elseif ( Diameter > 0.475000 ) then
+							{
+								Rings = "23"
+							}
+						}
+						elseif ( Sex = F ) then
+						{
+							if ( Diameter <= 0.500000 ) then
+							{
+								Rings = "9"
+							}
+							elseif ( Diameter > 0.500000 ) then
+							{
+								Rings = "16"
+							}
+						}
+						elseif ( Sex = I ) then
+						{
+							Rings = "10"
+						}
+					}
+				}
+			}
+			elseif ( Height > 0.190000 ) then
+			{
+				if ( Height <= 0.195000 ) then
+				{
+					if ( Whole_weight <= 1.073000 ) then
+					{
+						Rings = "18"
+					}
+					elseif ( Whole_weight > 1.073000 ) then
+					{
+						Rings = "17"
+					}
+				}
+				elseif ( Height > 0.195000 ) then
+				{
+					if ( Shucked_weight <= 0.384500 ) then
+					{
+						if ( Whole_weight <= 1.148000 ) then
+						{
+							Rings = "15"
+						}
+						elseif ( Whole_weight > 1.148000 ) then
+						{
+							Rings = "23"
+						}
+					}
+					elseif ( Shucked_weight > 0.384500 ) then
+					{
+						if ( Shucked_weight <= 0.407500 ) then
+						{
+							Rings = "14"
+						}
+						elseif ( Shucked_weight > 0.407500 ) then
+						{
+							Rings = "16"
+						}
+					}
+				}
+			}
+		}
+		elseif ( Shucked_weight > 0.435000 ) then
+		{
+			if ( Shell_weight <= 0.389000 ) then
+			{
+				if ( Whole_weight <= 1.556000 ) then
+				{
+					if ( Sex = M ) then
+					{
+						if ( Shucked_weight <= 0.511000 ) then
+						{
+							if ( Height <= 0.190000 ) then
+							{
+								if ( Whole_weight <= 1.186000 ) then
+								{
+									if ( Length <= 0.605000 ) then
+									{
+										if ( Length <= 0.585000 ) then
+										{
+											Rings = "11"
+										}
+										elseif ( Length > 0.585000 ) then
+										{
+											if ( Length <= 0.590000 ) then
+											{
+												if ( Height <= 0.145000 ) then
+												{
+													Rings = "15"
+												}
+												elseif ( Height > 0.145000 ) then
+												{
+													Rings = "9"
+												}
+											}
+											elseif ( Length > 0.590000 ) then
+											{
+												if ( Diameter <= 0.465000 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Diameter > 0.465000 ) then
+												{
+													if ( Shell_weight <= 0.323000 ) then
+													{
+														if ( Height <= 0.155000 ) then
+														{
+															Rings = "15"
+														}
+														elseif ( Height > 0.155000 ) then
+														{
+															Rings = "10"
+														}
+													}
+													elseif ( Shell_weight > 0.323000 ) then
+													{
+														if ( Length <= 0.595000 ) then
+														{
+															Rings = "9"
+														}
+														elseif ( Length > 0.595000 ) then
+														{
+															if ( Whole_weight <= 1.144000 ) then
+															{
+																Rings = "11"
+															}
+															elseif ( Whole_weight > 1.144000 ) then
+															{
+																Rings = "12"
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									elseif ( Length > 0.605000 ) then
+									{
+										if ( Length <= 0.625000 ) then
+										{
+											if ( Whole_weight <= 1.136000 ) then
+											{
+												if ( Viscera_weight <= 0.258000 ) then
+												{
+													if ( Whole_weight <= 1.050500 ) then
+													{
+														Rings = "9"
+													}
+													elseif ( Whole_weight > 1.050500 ) then
+													{
+														if ( Length <= 0.615000 ) then
+														{
+															Rings = "10"
+														}
+														elseif ( Length > 0.615000 ) then
+														{
+															if ( Viscera_weight <= 0.235000 ) then
+															{
+																Rings = "9"
+															}
+															elseif ( Viscera_weight > 0.235000 ) then
+															{
+																Rings = "10"
+															}
+														}
+													}
+												}
+												elseif ( Viscera_weight > 0.258000 ) then
+												{
+													if ( Shell_weight <= 0.302000 ) then
+													{
+														Rings = "9"
+													}
+													elseif ( Shell_weight > 0.302000 ) then
+													{
+														Rings = "11"
+													}
+												}
+											}
+											elseif ( Whole_weight > 1.136000 ) then
+											{
+												Rings = "10"
+											}
+										}
+										elseif ( Length > 0.625000 ) then
+										{
+											if ( Viscera_weight <= 0.223500 ) then
+											{
+												Rings = "12"
+											}
+											elseif ( Viscera_weight > 0.223500 ) then
+											{
+												if ( Height <= 0.175000 ) then
+												{
+													if ( Viscera_weight <= 0.254000 ) then
+													{
+														Rings = "11"
+													}
+													elseif ( Viscera_weight > 0.254000 ) then
+													{
+														Rings = "9"
+													}
+												}
+												elseif ( Height > 0.175000 ) then
+												{
+													Rings = "9"
+												}
+											}
+										}
+									}
+								}
+								elseif ( Whole_weight > 1.186000 ) then
+								{
+									if ( Diameter <= 0.500000 ) then
+									{
+										if ( Diameter <= 0.485000 ) then
+										{
+											Rings = "10"
+										}
+										elseif ( Diameter > 0.485000 ) then
+										{
+											Rings = "15"
+										}
+									}
+									elseif ( Diameter > 0.500000 ) then
+									{
+										if ( Whole_weight <= 1.223500 ) then
+										{
+											Rings = "11"
+										}
+										elseif ( Whole_weight > 1.223500 ) then
+										{
+											Rings = "10"
+										}
+									}
+								}
+							}
+							elseif ( Height > 0.190000 ) then
+							{
+								Rings = "19"
+							}
+						}
+						elseif ( Shucked_weight > 0.511000 ) then
+						{
+							if ( Diameter <= 0.460000 ) then
+							{
+								if ( Length <= 0.540000 ) then
+								{
+									Rings = "9"
+								}
+								elseif ( Length > 0.540000 ) then
+								{
+									Rings = "10"
+								}
+							}
+							elseif ( Diameter > 0.460000 ) then
+							{
+								if ( Height <= 0.190000 ) then
+								{
+									if ( Diameter <= 0.520000 ) then
+									{
+										if ( Height <= 0.180000 ) then
+										{
+											if ( Shell_weight <= 0.375500 ) then
+											{
+												if ( Shell_weight <= 0.298500 ) then
+												{
+													if ( Shell_weight <= 0.294500 ) then
+													{
+														Rings = "11"
+													}
+													elseif ( Shell_weight > 0.294500 ) then
+													{
+														Rings = "10"
+													}
+												}
+												elseif ( Shell_weight > 0.298500 ) then
+												{
+													if ( Shucked_weight <= 0.708000 ) then
+													{
+														if ( Shucked_weight <= 0.654000 ) then
+														{
+															if ( Viscera_weight <= 0.290000 ) then
+															{
+																if ( Diameter <= 0.505000 ) then
+																{
+																	if ( Whole_weight <= 1.286500 ) then
+																	{
+																		if ( Shucked_weight <= 0.567500 ) then
+																		{
+																			if ( Length <= 0.625000 ) then
+																			{
+																				if ( Length <= 0.610000 ) then
+																				{
+																					Rings = "10"
+																				}
+																				elseif ( Length > 0.610000 ) then
+																				{
+																					Rings = "11"
+																				}
+																			}
+																			elseif ( Length > 0.625000 ) then
+																			{
+																				if ( Length <= 0.630000 ) then
+																				{
+																					if ( Shucked_weight <= 0.537000 ) then
+																					{
+																						Rings = "11"
+																					}
+																					elseif ( Shucked_weight > 0.537000 ) then
+																					{
+																						Rings = "12"
+																					}
+																				}
+																				elseif ( Length > 0.630000 ) then
+																				{
+																					Rings = "10"
+																				}
+																			}
+																		}
+																		elseif ( Shucked_weight > 0.567500 ) then
+																		{
+																			if ( Whole_weight <= 1.225500 ) then
+																			{
+																				Rings = "9"
+																			}
+																			elseif ( Whole_weight > 1.225500 ) then
+																			{
+																				if ( Length <= 0.625000 ) then
+																				{
+																					if ( Viscera_weight <= 0.265000 ) then
+																					{
+																						Rings = "12"
+																					}
+																					elseif ( Viscera_weight > 0.265000 ) then
+																					{
+																						Rings = "9"
+																					}
+																				}
+																				elseif ( Length > 0.625000 ) then
+																				{
+																					if ( Height <= 0.155000 ) then
+																					{
+																						Rings = "8"
+																					}
+																					elseif ( Height > 0.155000 ) then
+																					{
+																						if ( Whole_weight <= 1.271000 ) then
+																						{
+																							Rings = "10"
+																						}
+																						elseif ( Whole_weight > 1.271000 ) then
+																						{
+																							Rings = "8"
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																	elseif ( Whole_weight > 1.286500 ) then
+																	{
+																		Rings = "11"
+																	}
+																}
+																elseif ( Diameter > 0.505000 ) then
+																{
+																	if ( Height <= 0.155000 ) then
+																	{
+																		Rings = "9"
+																	}
+																	elseif ( Height > 0.155000 ) then
+																	{
+																		if ( Diameter <= 0.515000 ) then
+																		{
+																			Rings = "11"
+																		}
+																		elseif ( Diameter > 0.515000 ) then
+																		{
+																			if ( Whole_weight <= 1.278500 ) then
+																			{
+																				Rings = "9"
+																			}
+																			elseif ( Whole_weight > 1.278500 ) then
+																			{
+																				Rings = "11"
+																			}
+																		}
+																	}
+																}
+															}
+															elseif ( Viscera_weight > 0.290000 ) then
+															{
+																if ( Length <= 0.625000 ) then
+																{
+																	if ( Height <= 0.170000 ) then
+																	{
+																		Rings = "9"
+																	}
+																	elseif ( Height > 0.170000 ) then
+																	{
+																		if ( Viscera_weight <= 0.304000 ) then
+																		{
+																			Rings = "12"
+																		}
+																		elseif ( Viscera_weight > 0.304000 ) then
+																		{
+																			Rings = "9"
+																		}
+																	}
+																}
+																elseif ( Length > 0.625000 ) then
+																{
+																	if ( Diameter <= 0.510000 ) then
+																	{
+																		if ( Whole_weight <= 1.297000 ) then
+																		{
+																			Rings = "11"
+																		}
+																		elseif ( Whole_weight > 1.297000 ) then
+																		{
+																			if ( Length <= 0.650000 ) then
+																			{
+																				Rings = "9"
+																			}
+																			elseif ( Length > 0.650000 ) then
+																			{
+																				if ( Length <= 0.660000 ) then
+																				{
+																					Rings = "10"
+																				}
+																				elseif ( Length > 0.660000 ) then
+																				{
+																					Rings = "9"
+																				}
+																			}
+																		}
+																	}
+																	elseif ( Diameter > 0.510000 ) then
+																	{
+																		Rings = "10"
+																	}
+																}
+															}
+														}
+														elseif ( Shucked_weight > 0.654000 ) then
+														{
+															if ( Length <= 0.640000 ) then
+															{
+																Rings = "10"
+															}
+															elseif ( Length > 0.640000 ) then
+															{
+																if ( Diameter <= 0.510000 ) then
+																{
+																	Rings = "9"
+																}
+																elseif ( Diameter > 0.510000 ) then
+																{
+																	Rings = "10"
+																}
+															}
+														}
+													}
+													elseif ( Shucked_weight > 0.708000 ) then
+													{
+														Rings = "11"
+													}
+												}
+											}
+											elseif ( Shell_weight > 0.375500 ) then
+											{
+												if ( Diameter <= 0.500000 ) then
+												{
+													Rings = "12"
+												}
+												elseif ( Diameter > 0.500000 ) then
+												{
+													Rings = "11"
+												}
+											}
+										}
+										elseif ( Height > 0.180000 ) then
+										{
+											if ( Height <= 0.185000 ) then
+											{
+												if ( Viscera_weight <= 0.315000 ) then
+												{
+													if ( Shucked_weight <= 0.526500 ) then
+													{
+														Rings = "10"
+													}
+													elseif ( Shucked_weight > 0.526500 ) then
+													{
+														if ( Diameter <= 0.495000 ) then
+														{
+															Rings = "11"
+														}
+														elseif ( Diameter > 0.495000 ) then
+														{
+															Rings = "10"
+														}
+													}
+												}
+												elseif ( Viscera_weight > 0.315000 ) then
+												{
+													Rings = "8"
+												}
+											}
+											elseif ( Height > 0.185000 ) then
+											{
+												if ( Whole_weight <= 1.387500 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Whole_weight > 1.387500 ) then
+												{
+													Rings = "9"
+												}
+											}
+										}
+									}
+									elseif ( Diameter > 0.520000 ) then
+									{
+										if ( Shell_weight <= 0.351000 ) then
+										{
+											Rings = "8"
+										}
+										elseif ( Shell_weight > 0.351000 ) then
+										{
+											if ( Shell_weight <= 0.385000 ) then
+											{
+												if ( Viscera_weight <= 0.297000 ) then
+												{
+													Rings = "13"
+												}
+												elseif ( Viscera_weight > 0.297000 ) then
+												{
+													Rings = "10"
+												}
+											}
+											elseif ( Shell_weight > 0.385000 ) then
+											{
+												Rings = "9"
+											}
+										}
+									}
+								}
+								elseif ( Height > 0.190000 ) then
+								{
+									if ( Shell_weight <= 0.370500 ) then
+									{
+										if ( Length <= 0.605000 ) then
+										{
+											Rings = "9"
+										}
+										elseif ( Length > 0.605000 ) then
+										{
+											Rings = "11"
+										}
+									}
+									elseif ( Shell_weight > 0.370500 ) then
+									{
+										Rings = "10"
+									}
+								}
+							}
+						}
+					}
+					elseif ( Sex = F ) then
+					{
+						if ( Length <= 0.580000 ) then
+						{
+							if ( Shell_weight <= 0.352500 ) then
+							{
+								if ( Length <= 0.545000 ) then
+								{
+									Rings = "9"
+								}
+								elseif ( Length > 0.545000 ) then
+								{
+									if ( Viscera_weight <= 0.229000 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Viscera_weight > 0.229000 ) then
+									{
+										Rings = "10"
+									}
+								}
+							}
+							elseif ( Shell_weight > 0.352500 ) then
+							{
+								Rings = "8"
+							}
+						}
+						elseif ( Length > 0.580000 ) then
+						{
+							if ( Height <= 0.175000 ) then
+							{
+								if ( Length <= 0.590000 ) then
+								{
+									if ( Shell_weight <= 0.294500 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Shell_weight > 0.294500 ) then
+									{
+										Rings = "13"
+									}
+								}
+								elseif ( Length > 0.590000 ) then
+								{
+									if ( Shucked_weight <= 0.519000 ) then
+									{
+										if ( Diameter <= 0.490000 ) then
+										{
+											if ( Length <= 0.615000 ) then
+											{
+												if ( Height <= 0.170000 ) then
+												{
+													if ( Shell_weight <= 0.306500 ) then
+													{
+														if ( Viscera_weight <= 0.263500 ) then
+														{
+															Rings = "12"
+														}
+														elseif ( Viscera_weight > 0.263500 ) then
+														{
+															Rings = "10"
+														}
+													}
+													elseif ( Shell_weight > 0.306500 ) then
+													{
+														if ( Viscera_weight <= 0.276000 ) then
+														{
+															if ( Length <= 0.600000 ) then
+															{
+																Rings = "10"
+															}
+															elseif ( Length > 0.600000 ) then
+															{
+																if ( Height <= 0.160000 ) then
+																{
+																	Rings = "10"
+																}
+																elseif ( Height > 0.160000 ) then
+																{
+																	Rings = "14"
+																}
+															}
+														}
+														elseif ( Viscera_weight > 0.276000 ) then
+														{
+															Rings = "14"
+														}
+													}
+												}
+												elseif ( Height > 0.170000 ) then
+												{
+													Rings = "9"
+												}
+											}
+											elseif ( Length > 0.615000 ) then
+											{
+												if ( Length <= 0.635000 ) then
+												{
+													if ( Height <= 0.155000 ) then
+													{
+														Rings = "9"
+													}
+													elseif ( Height > 0.155000 ) then
+													{
+														Rings = "10"
+													}
+												}
+												elseif ( Length > 0.635000 ) then
+												{
+													Rings = "8"
+												}
+											}
+										}
+										elseif ( Diameter > 0.490000 ) then
+										{
+											if ( Height <= 0.150000 ) then
+											{
+												if ( Shell_weight <= 0.312000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Shell_weight > 0.312000 ) then
+												{
+													Rings = "10"
+												}
+											}
+											elseif ( Height > 0.150000 ) then
+											{
+												if ( Viscera_weight <= 0.271000 ) then
+												{
+													if ( Length <= 0.625000 ) then
+													{
+														if ( Shell_weight <= 0.325000 ) then
+														{
+															Rings = "10"
+														}
+														elseif ( Shell_weight > 0.325000 ) then
+														{
+															Rings = "11"
+														}
+													}
+													elseif ( Length > 0.625000 ) then
+													{
+														if ( Height <= 0.170000 ) then
+														{
+															Rings = "12"
+														}
+														elseif ( Height > 0.170000 ) then
+														{
+															Rings = "10"
+														}
+													}
+												}
+												elseif ( Viscera_weight > 0.271000 ) then
+												{
+													if ( Viscera_weight <= 0.290000 ) then
+													{
+														if ( Height <= 0.165000 ) then
+														{
+															Rings = "11"
+														}
+														elseif ( Height > 0.165000 ) then
+														{
+															Rings = "13"
+														}
+													}
+													elseif ( Viscera_weight > 0.290000 ) then
+													{
+														if ( Whole_weight <= 1.205000 ) then
+														{
+															Rings = "12"
+														}
+														elseif ( Whole_weight > 1.205000 ) then
+														{
+															Rings = "9"
+														}
+													}
+												}
+											}
+										}
+									}
+									elseif ( Shucked_weight > 0.519000 ) then
+									{
+										if ( Length <= 0.605000 ) then
+										{
+											if ( Shell_weight <= 0.318500 ) then
+											{
+												Rings = "9"
+											}
+											elseif ( Shell_weight > 0.318500 ) then
+											{
+												Rings = "8"
+											}
+										}
+										elseif ( Length > 0.605000 ) then
+										{
+											if ( Length <= 0.610000 ) then
+											{
+												if ( Diameter <= 0.475000 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Diameter > 0.475000 ) then
+												{
+													if ( Diameter <= 0.485000 ) then
+													{
+														Rings = "12"
+													}
+													elseif ( Diameter > 0.485000 ) then
+													{
+														Rings = "15"
+													}
+												}
+											}
+											elseif ( Length > 0.610000 ) then
+											{
+												if ( Height <= 0.140000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Height > 0.140000 ) then
+												{
+													if ( Shell_weight <= 0.357500 ) then
+													{
+														if ( Whole_weight <= 1.395500 ) then
+														{
+															if ( Shucked_weight <= 0.601000 ) then
+															{
+																if ( Shell_weight <= 0.300500 ) then
+																{
+																	if ( Shucked_weight <= 0.552500 ) then
+																	{
+																		Rings = "10"
+																	}
+																	elseif ( Shucked_weight > 0.552500 ) then
+																	{
+																		Rings = "12"
+																	}
+																}
+																elseif ( Shell_weight > 0.300500 ) then
+																{
+																	if ( Length <= 0.620000 ) then
+																	{
+																		Rings = "10"
+																	}
+																	elseif ( Length > 0.620000 ) then
+																	{
+																		if ( Height <= 0.165000 ) then
+																		{
+																			if ( Shucked_weight <= 0.556500 ) then
+																			{
+																				Rings = "11"
+																			}
+																			elseif ( Shucked_weight > 0.556500 ) then
+																			{
+																				if ( Length <= 0.635000 ) then
+																				{
+																					if ( Length <= 0.625000 ) then
+																					{
+																						Rings = "9"
+																					}
+																					elseif ( Length > 0.625000 ) then
+																					{
+																						Rings = "11"
+																					}
+																				}
+																				elseif ( Length > 0.635000 ) then
+																				{
+																					Rings = "9"
+																				}
+																			}
+																		}
+																		elseif ( Height > 0.165000 ) then
+																		{
+																			if ( Height <= 0.170000 ) then
+																			{
+																				if ( Length <= 0.640000 ) then
+																				{
+																					Rings = "9"
+																				}
+																				elseif ( Length > 0.640000 ) then
+																				{
+																					Rings = "11"
+																				}
+																			}
+																			elseif ( Height > 0.170000 ) then
+																			{
+																				Rings = "10"
+																			}
+																		}
+																	}
+																}
+															}
+															elseif ( Shucked_weight > 0.601000 ) then
+															{
+																if ( Shucked_weight <= 0.680500 ) then
+																{
+																	if ( Shucked_weight <= 0.647000 ) then
+																	{
+																		if ( Shucked_weight <= 0.631000 ) then
+																		{
+																			if ( Viscera_weight <= 0.299000 ) then
+																			{
+																				Rings = "10"
+																			}
+																			elseif ( Viscera_weight > 0.299000 ) then
+																			{
+																				Rings = "9"
+																			}
+																		}
+																		elseif ( Shucked_weight > 0.631000 ) then
+																		{
+																			Rings = "9"
+																		}
+																	}
+																	elseif ( Shucked_weight > 0.647000 ) then
+																	{
+																		if ( Shell_weight <= 0.332500 ) then
+																		{
+																			Rings = "10"
+																		}
+																		elseif ( Shell_weight > 0.332500 ) then
+																		{
+																			Rings = "12"
+																		}
+																	}
+																}
+																elseif ( Shucked_weight > 0.680500 ) then
+																{
+																	Rings = "9"
+																}
+															}
+														}
+														elseif ( Whole_weight > 1.395500 ) then
+														{
+															if ( Height <= 0.165000 ) then
+															{
+																Rings = "8"
+															}
+															elseif ( Height > 0.165000 ) then
+															{
+																Rings = "11"
+															}
+														}
+													}
+													elseif ( Shell_weight > 0.357500 ) then
+													{
+														if ( Height <= 0.160000 ) then
+														{
+															Rings = "11"
+														}
+														elseif ( Height > 0.160000 ) then
+														{
+															if ( Viscera_weight <= 0.263500 ) then
+															{
+																Rings = "11"
+															}
+															elseif ( Viscera_weight > 0.263500 ) then
+															{
+																if ( Shell_weight <= 0.367000 ) then
+																{
+																	Rings = "10"
+																}
+																elseif ( Shell_weight > 0.367000 ) then
+																{
+																	if ( Shell_weight <= 0.371000 ) then
+																	{
+																		if ( Diameter <= 0.515000 ) then
+																		{
+																			Rings = "11"
+																		}
+																		elseif ( Diameter > 0.515000 ) then
+																		{
+																			Rings = "9"
+																		}
+																	}
+																	elseif ( Shell_weight > 0.371000 ) then
+																	{
+																		Rings = "10"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							elseif ( Height > 0.175000 ) then
+							{
+								if ( Length <= 0.655000 ) then
+								{
+									if ( Whole_weight <= 1.283000 ) then
+									{
+										if ( Shucked_weight <= 0.536000 ) then
+										{
+											if ( Length <= 0.600000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Length > 0.600000 ) then
+											{
+												if ( Viscera_weight <= 0.269500 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Viscera_weight > 0.269500 ) then
+												{
+													Rings = "13"
+												}
+											}
+										}
+										elseif ( Shucked_weight > 0.536000 ) then
+										{
+											Rings = "10"
+										}
+									}
+									elseif ( Whole_weight > 1.283000 ) then
+									{
+										if ( Shell_weight <= 0.357500 ) then
+										{
+											if ( Shucked_weight <= 0.661500 ) then
+											{
+												Rings = "9"
+											}
+											elseif ( Shucked_weight > 0.661500 ) then
+											{
+												Rings = "10"
+											}
+										}
+										elseif ( Shell_weight > 0.357500 ) then
+										{
+											if ( Height <= 0.190000 ) then
+											{
+												if ( Height <= 0.180000 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Height > 0.180000 ) then
+												{
+													Rings = "10"
+												}
+											}
+											elseif ( Height > 0.190000 ) then
+											{
+												Rings = "11"
+											}
+										}
+									}
+								}
+								elseif ( Length > 0.655000 ) then
+								{
+									Rings = "9"
+								}
+							}
+						}
+					}
+					elseif ( Sex = I ) then
+					{
+						if ( Diameter <= 0.485000 ) then
+						{
+							if ( Diameter <= 0.460000 ) then
+							{
+								Rings = "8"
+							}
+							elseif ( Diameter > 0.460000 ) then
+							{
+								if ( Shell_weight <= 0.322500 ) then
+								{
+									Rings = "12"
+								}
+								elseif ( Shell_weight > 0.322500 ) then
+								{
+									if ( Height <= 0.165000 ) then
+									{
+										Rings = "11"
+									}
+									elseif ( Height > 0.165000 ) then
+									{
+										Rings = "15"
+									}
+								}
+							}
+						}
+						elseif ( Diameter > 0.485000 ) then
+						{
+							if ( Length <= 0.635000 ) then
+							{
+								Rings = "11"
+							}
+							elseif ( Length > 0.635000 ) then
+							{
+								Rings = "10"
+							}
+						}
+					}
+				}
+				elseif ( Whole_weight > 1.556000 ) then
+				{
+					if ( Shell_weight <= 0.364500 ) then
+					{
+						if ( Sex = M ) then
+						{
+							if ( Shucked_weight <= 0.623000 ) then
+							{
+								Rings = "10"
+							}
+							elseif ( Shucked_weight > 0.623000 ) then
+							{
+								Rings = "13"
+							}
+						}
+						elseif ( Sex = F ) then
+						{
+							Rings = "10"
+						}
+						elseif ( Sex = I ) then
+						{
+							Rings = "10"
+						}
+					}
+					elseif ( Shell_weight > 0.364500 ) then
+					{
+						if ( Sex = M ) then
+						{
+							if ( Length <= 0.655000 ) then
+							{
+								Rings = "14"
+							}
+							elseif ( Length > 0.655000 ) then
+							{
+								Rings = "11"
+							}
+						}
+						elseif ( Sex = F ) then
+						{
+							Rings = "11"
+						}
+						elseif ( Sex = I ) then
+						{
+							Rings = "11"
+						}
+					}
+				}
+			}
+			elseif ( Shell_weight > 0.389000 ) then
+			{
+				if ( Shell_weight <= 0.600000 ) then
+				{
+					if ( Shucked_weight <= 0.639000 ) then
+					{
+						if ( Shell_weight <= 0.507500 ) then
+						{
+							if ( Diameter <= 0.525000 ) then
+							{
+								if ( Shucked_weight <= 0.483000 ) then
+								{
+									if ( Shell_weight <= 0.422000 ) then
+									{
+										if ( Height <= 0.170000 ) then
+										{
+											if ( Height <= 0.150000 ) then
+											{
+												Rings = "13"
+											}
+											elseif ( Height > 0.150000 ) then
+											{
+												Rings = "11"
+											}
+										}
+										elseif ( Height > 0.170000 ) then
+										{
+											if ( Shell_weight <= 0.394000 ) then
+											{
+												if ( Height <= 0.185000 ) then
+												{
+													Rings = "13"
+												}
+												elseif ( Height > 0.185000 ) then
+												{
+													Rings = "16"
+												}
+											}
+											elseif ( Shell_weight > 0.394000 ) then
+											{
+												if ( Length <= 0.605000 ) then
+												{
+													Rings = "15"
+												}
+												elseif ( Length > 0.605000 ) then
+												{
+													Rings = "12"
+												}
+											}
+										}
+									}
+									elseif ( Shell_weight > 0.422000 ) then
+									{
+										if ( Sex = M ) then
+										{
+											Rings = "16"
+										}
+										elseif ( Sex = F ) then
+										{
+											Rings = "14"
+										}
+										elseif ( Sex = I ) then
+										{
+											Rings = "16"
+										}
+									}
+								}
+								elseif ( Shucked_weight > 0.483000 ) then
+								{
+									if ( Height <= 0.200000 ) then
+									{
+										if ( Shucked_weight <= 0.617000 ) then
+										{
+											if ( Whole_weight <= 1.449000 ) then
+											{
+												if ( Viscera_weight <= 0.304000 ) then
+												{
+													if ( Length <= 0.645000 ) then
+													{
+														if ( Sex = M ) then
+														{
+															if ( Height <= 0.170000 ) then
+															{
+																Rings = "11"
+															}
+															elseif ( Height > 0.170000 ) then
+															{
+																if ( Whole_weight <= 1.277000 ) then
+																{
+																	Rings = "13"
+																}
+																elseif ( Whole_weight > 1.277000 ) then
+																{
+																	if ( Whole_weight <= 1.346000 ) then
+																	{
+																		Rings = "10"
+																	}
+																	elseif ( Whole_weight > 1.346000 ) then
+																	{
+																		Rings = "18"
+																	}
+																}
+															}
+														}
+														elseif ( Sex = F ) then
+														{
+															if ( Height <= 0.180000 ) then
+															{
+																if ( Shell_weight <= 0.395000 ) then
+																{
+																	Rings = "14"
+																}
+																elseif ( Shell_weight > 0.395000 ) then
+																{
+																	Rings = "10"
+																}
+															}
+															elseif ( Height > 0.180000 ) then
+															{
+																if ( Diameter <= 0.505000 ) then
+																{
+																	Rings = "9"
+																}
+																elseif ( Diameter > 0.505000 ) then
+																{
+																	Rings = "12"
+																}
+															}
+														}
+														elseif ( Sex = I ) then
+														{
+															if ( Length <= 0.630000 ) then
+															{
+																Rings = "12"
+															}
+															elseif ( Length > 0.630000 ) then
+															{
+																Rings = "16"
+															}
+														}
+													}
+													elseif ( Length > 0.645000 ) then
+													{
+														if ( Height <= 0.180000 ) then
+														{
+															if ( Shell_weight <= 0.409000 ) then
+															{
+																if ( Viscera_weight <= 0.271000 ) then
+																{
+																	Rings = "10"
+																}
+																elseif ( Viscera_weight > 0.271000 ) then
+																{
+																	Rings = "9"
+																}
+															}
+															elseif ( Shell_weight > 0.409000 ) then
+															{
+																Rings = "11"
+															}
+														}
+														elseif ( Height > 0.180000 ) then
+														{
+															if ( Height <= 0.190000 ) then
+															{
+																Rings = "11"
+															}
+															elseif ( Height > 0.190000 ) then
+															{
+																Rings = "12"
+															}
+														}
+													}
+												}
+												elseif ( Viscera_weight > 0.304000 ) then
+												{
+													if ( Shucked_weight <= 0.605000 ) then
+													{
+														if ( Shucked_weight <= 0.492500 ) then
+														{
+															Rings = "20"
+														}
+														elseif ( Shucked_weight > 0.492500 ) then
+														{
+															if ( Diameter <= 0.510000 ) then
+															{
+																Rings = "10"
+															}
+															elseif ( Diameter > 0.510000 ) then
+															{
+																if ( Whole_weight <= 1.350000 ) then
+																{
+																	Rings = "13"
+																}
+																elseif ( Whole_weight > 1.350000 ) then
+																{
+																	Rings = "10"
+																}
+															}
+														}
+													}
+													elseif ( Shucked_weight > 0.605000 ) then
+													{
+														Rings = "12"
+													}
+												}
+											}
+											elseif ( Whole_weight > 1.449000 ) then
+											{
+												if ( Viscera_weight <= 0.352000 ) then
+												{
+													if ( Diameter <= 0.505000 ) then
+													{
+														Rings = "11"
+													}
+													elseif ( Diameter > 0.505000 ) then
+													{
+														Rings = "19"
+													}
+												}
+												elseif ( Viscera_weight > 0.352000 ) then
+												{
+													if ( Height <= 0.180000 ) then
+													{
+														Rings = "15"
+													}
+													elseif ( Height > 0.180000 ) then
+													{
+														Rings = "10"
+													}
+												}
+											}
+										}
+										elseif ( Shucked_weight > 0.617000 ) then
+										{
+											if ( Viscera_weight <= 0.303500 ) then
+											{
+												Rings = "11"
+											}
+											elseif ( Viscera_weight > 0.303500 ) then
+											{
+												if ( Height <= 0.185000 ) then
+												{
+													Rings = "9"
+												}
+												elseif ( Height > 0.185000 ) then
+												{
+													if ( Height <= 0.190000 ) then
+													{
+														Rings = "14"
+													}
+													elseif ( Height > 0.190000 ) then
+													{
+														Rings = "12"
+													}
+												}
+											}
+										}
+									}
+									elseif ( Height > 0.200000 ) then
+									{
+										if ( Diameter <= 0.510000 ) then
+										{
+											if ( Height <= 0.220000 ) then
+											{
+												Rings = "11"
+											}
+											elseif ( Height > 0.220000 ) then
+											{
+												Rings = "15"
+											}
+										}
+										elseif ( Diameter > 0.510000 ) then
+										{
+											Rings = "20"
+										}
+									}
+								}
+							}
+							elseif ( Diameter > 0.525000 ) then
+							{
+								if ( Sex = M ) then
+								{
+									if ( Shucked_weight <= 0.551500 ) then
+									{
+										if ( Diameter <= 0.545000 ) then
+										{
+											if ( Height <= 0.180000 ) then
+											{
+												Rings = "15"
+											}
+											elseif ( Height > 0.180000 ) then
+											{
+												Rings = "16"
+											}
+										}
+										elseif ( Diameter > 0.545000 ) then
+										{
+											Rings = "21"
+										}
+									}
+									elseif ( Shucked_weight > 0.551500 ) then
+									{
+										if ( Shucked_weight <= 0.570500 ) then
+										{
+											Rings = "13"
+										}
+										elseif ( Shucked_weight > 0.570500 ) then
+										{
+											if ( Viscera_weight <= 0.251500 ) then
+											{
+												Rings = "15"
+											}
+											elseif ( Viscera_weight > 0.251500 ) then
+											{
+												Rings = "14"
+											}
+										}
+									}
+								}
+								elseif ( Sex = F ) then
+								{
+									if ( Shucked_weight <= 0.618500 ) then
+									{
+										if ( Height <= 0.185000 ) then
+										{
+											if ( Shucked_weight <= 0.540500 ) then
+											{
+												if ( Height <= 0.170000 ) then
+												{
+													if ( Shucked_weight <= 0.518500 ) then
+													{
+														Rings = "14"
+													}
+													elseif ( Shucked_weight > 0.518500 ) then
+													{
+														Rings = "12"
+													}
+												}
+												elseif ( Height > 0.170000 ) then
+												{
+													Rings = "15"
+												}
+											}
+											elseif ( Shucked_weight > 0.540500 ) then
+											{
+												if ( Height <= 0.165000 ) then
+												{
+													if ( Diameter <= 0.540000 ) then
+													{
+														Rings = "8"
+													}
+													elseif ( Diameter > 0.540000 ) then
+													{
+														Rings = "15"
+													}
+												}
+												elseif ( Height > 0.165000 ) then
+												{
+													if ( Whole_weight <= 1.491000 ) then
+													{
+														Rings = "11"
+													}
+													elseif ( Whole_weight > 1.491000 ) then
+													{
+														Rings = "10"
+													}
+												}
+											}
+										}
+										elseif ( Height > 0.185000 ) then
+										{
+											if ( Length <= 0.660000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Length > 0.660000 ) then
+											{
+												Rings = "14"
+											}
+										}
+									}
+									elseif ( Shucked_weight > 0.618500 ) then
+									{
+										if ( Shell_weight <= 0.452500 ) then
+										{
+											if ( Length <= 0.670000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Length > 0.670000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Shell_weight > 0.452500 ) then
+										{
+											Rings = "18"
+										}
+									}
+								}
+								elseif ( Sex = I ) then
+								{
+									Rings = "15"
+								}
+							}
+						}
+						elseif ( Shell_weight > 0.507500 ) then
+						{
+							if ( Viscera_weight <= 0.345000 ) then
+							{
+								if ( Sex = M ) then
+								{
+									if ( Shell_weight <= 0.553000 ) then
+									{
+										Rings = "20"
+									}
+									elseif ( Shell_weight > 0.553000 ) then
+									{
+										Rings = "21"
+									}
+								}
+								elseif ( Sex = F ) then
+								{
+									if ( Shucked_weight <= 0.497000 ) then
+									{
+										Rings = "19"
+									}
+									elseif ( Shucked_weight > 0.497000 ) then
+									{
+										if ( Shell_weight <= 0.540000 ) then
+										{
+											Rings = "17"
+										}
+										elseif ( Shell_weight > 0.540000 ) then
+										{
+											Rings = "16"
+										}
+									}
+								}
+								elseif ( Sex = I ) then
+								{
+									Rings = "18"
+								}
+							}
+							elseif ( Viscera_weight > 0.345000 ) then
+							{
+								if ( Height <= 0.195000 ) then
+								{
+									Rings = "15"
+								}
+								elseif ( Height > 0.195000 ) then
+								{
+									if ( Whole_weight <= 1.777500 ) then
+									{
+										Rings = "13"
+									}
+									elseif ( Whole_weight > 1.777500 ) then
+									{
+										Rings = "19"
+									}
+								}
+							}
+						}
+					}
+					elseif ( Shucked_weight > 0.639000 ) then
+					{
+						if ( Shell_weight <= 0.578000 ) then
+						{
+							if ( Shucked_weight <= 0.705500 ) then
+							{
+								if ( Shucked_weight <= 0.663500 ) then
+								{
+									if ( Viscera_weight <= 0.342000 ) then
+									{
+										if ( Height <= 0.205000 ) then
+										{
+											if ( Length <= 0.675000 ) then
+											{
+												if ( Viscera_weight <= 0.299000 ) then
+												{
+													if ( Sex = M ) then
+													{
+														if ( Length <= 0.655000 ) then
+														{
+															Rings = "12"
+														}
+														elseif ( Length > 0.655000 ) then
+														{
+															Rings = "9"
+														}
+													}
+													elseif ( Sex = F ) then
+													{
+														Rings = "12"
+													}
+													elseif ( Sex = I ) then
+													{
+														Rings = "12"
+													}
+												}
+												elseif ( Viscera_weight > 0.299000 ) then
+												{
+													if ( Viscera_weight <= 0.320500 ) then
+													{
+														Rings = "11"
+													}
+													elseif ( Viscera_weight > 0.320500 ) then
+													{
+														if ( Shell_weight <= 0.426500 ) then
+														{
+															Rings = "9"
+														}
+														elseif ( Shell_weight > 0.426500 ) then
+														{
+															Rings = "10"
+														}
+													}
+												}
+											}
+											elseif ( Length > 0.675000 ) then
+											{
+												Rings = "10"
+											}
+										}
+										elseif ( Height > 0.205000 ) then
+										{
+											Rings = "11"
+										}
+									}
+									elseif ( Viscera_weight > 0.342000 ) then
+									{
+										if ( Whole_weight <= 1.505500 ) then
+										{
+											Rings = "19"
+										}
+										elseif ( Whole_weight > 1.505500 ) then
+										{
+											if ( Shucked_weight <= 0.646500 ) then
+											{
+												Rings = "15"
+											}
+											elseif ( Shucked_weight > 0.646500 ) then
+											{
+												Rings = "11"
+											}
+										}
+									}
+								}
+								elseif ( Shucked_weight > 0.663500 ) then
+								{
+									if ( Diameter <= 0.540000 ) then
+									{
+										if ( Sex = M ) then
+										{
+											if ( Height <= 0.180000 ) then
+											{
+												if ( Diameter <= 0.520000 ) then
+												{
+													Rings = "10"
+												}
+												elseif ( Diameter > 0.520000 ) then
+												{
+													if ( Height <= 0.165000 ) then
+													{
+														Rings = "11"
+													}
+													elseif ( Height > 0.165000 ) then
+													{
+														if ( Length <= 0.655000 ) then
+														{
+															Rings = "11"
+														}
+														elseif ( Length > 0.655000 ) then
+														{
+															Rings = "12"
+														}
+													}
+												}
+											}
+											elseif ( Height > 0.180000 ) then
+											{
+												if ( Whole_weight <= 1.590500 ) then
+												{
+													Rings = "13"
+												}
+												elseif ( Whole_weight > 1.590500 ) then
+												{
+													Rings = "10"
+												}
+											}
+										}
+										elseif ( Sex = F ) then
+										{
+											if ( Shell_weight <= 0.453000 ) then
+											{
+												if ( Whole_weight <= 1.650000 ) then
+												{
+													Rings = "11"
+												}
+												elseif ( Whole_weight > 1.650000 ) then
+												{
+													Rings = "12"
+												}
+											}
+											elseif ( Shell_weight > 0.453000 ) then
+											{
+												if ( Length <= 0.685000 ) then
+												{
+													Rings = "14"
+												}
+												elseif ( Length > 0.685000 ) then
+												{
+													Rings = "15"
+												}
+											}
+										}
+										elseif ( Sex = I ) then
+										{
+											Rings = "11"
+										}
+									}
+									elseif ( Diameter > 0.540000 ) then
+									{
+										if ( Length <= 0.660000 ) then
+										{
+											Rings = "16"
+										}
+										elseif ( Length > 0.660000 ) then
+										{
+											if ( Shucked_weight <= 0.699500 ) then
+											{
+												if ( Sex = M ) then
+												{
+													if ( Height <= 0.180000 ) then
+													{
+														Rings = "11"
+													}
+													elseif ( Height > 0.180000 ) then
+													{
+														Rings = "13"
+													}
+												}
+												elseif ( Sex = F ) then
+												{
+													if ( Height <= 0.190000 ) then
+													{
+														Rings = "13"
+													}
+													elseif ( Height > 0.190000 ) then
+													{
+														Rings = "12"
+													}
+												}
+												elseif ( Sex = I ) then
+												{
+													Rings = "13"
+												}
+											}
+											elseif ( Shucked_weight > 0.699500 ) then
+											{
+												Rings = "14"
+											}
+										}
+									}
+								}
+							}
+							elseif ( Shucked_weight > 0.705500 ) then
+							{
+								if ( Diameter <= 0.495000 ) then
+								{
+									if ( Height <= 0.185000 ) then
+									{
+										Rings = "9"
+									}
+									elseif ( Height > 0.185000 ) then
+									{
+										Rings = "10"
+									}
+								}
+								elseif ( Diameter > 0.495000 ) then
+								{
+									if ( Shell_weight <= 0.450000 ) then
+									{
+										if ( Shell_weight <= 0.394000 ) then
+										{
+											if ( Length <= 0.665000 ) then
+											{
+												Rings = "10"
+											}
+											elseif ( Length > 0.665000 ) then
+											{
+												Rings = "9"
+											}
+										}
+										elseif ( Shell_weight > 0.394000 ) then
+										{
+											if ( Shucked_weight <= 0.726000 ) then
+											{
+												if ( Viscera_weight <= 0.354000 ) then
+												{
+													if ( Sex = M ) then
+													{
+														Rings = "11"
+													}
+													elseif ( Sex = F ) then
+													{
+														Rings = "12"
+													}
+													elseif ( Sex = I ) then
+													{
+														Rings = "12"
+													}
+												}
+												elseif ( Viscera_weight > 0.354000 ) then
+												{
+													Rings = "9"
+												}
+											}
+											elseif ( Shucked_weight > 0.726000 ) then
+											{
+												if ( Diameter <= 0.560000 ) then
+												{
+													if ( Height <= 0.200000 ) then
+													{
+														if ( Sex = M ) then
+														{
+															if ( Length <= 0.655000 ) then
+															{
+																Rings = "11"
+															}
+															elseif ( Length > 0.655000 ) then
+															{
+																if ( Diameter <= 0.540000 ) then
+																{
+																	if ( Shell_weight <= 0.403000 ) then
+																	{
+																		Rings = "11"
+																	}
+																	elseif ( Shell_weight > 0.403000 ) then
+																	{
+																		if ( Whole_weight <= 1.685000 ) then
+																		{
+																			Rings = "10"
+																		}
+																		elseif ( Whole_weight > 1.685000 ) then
+																		{
+																			Rings = "8"
+																		}
+																	}
+																}
+																elseif ( Diameter > 0.540000 ) then
+																{
+																	if ( Viscera_weight <= 0.372000 ) then
+																	{
+																		Rings = "10"
+																	}
+																	elseif ( Viscera_weight > 0.372000 ) then
+																	{
+																		Rings = "11"
+																	}
+																}
+															}
+														}
+														elseif ( Sex = F ) then
+														{
+															if ( Length <= 0.695000 ) then
+															{
+																if ( Length <= 0.685000 ) then
+																{
+																	if ( Shell_weight <= 0.404000 ) then
+																	{
+																		Rings = "10"
+																	}
+																	elseif ( Shell_weight > 0.404000 ) then
+																	{
+																		Rings = "11"
+																	}
+																}
+																elseif ( Length > 0.685000 ) then
+																{
+																	Rings = "10"
+																}
+															}
+															elseif ( Length > 0.695000 ) then
+															{
+																Rings = "11"
+															}
+														}
+														elseif ( Sex = I ) then
+														{
+															Rings = "11"
+														}
+													}
+													elseif ( Height > 0.200000 ) then
+													{
+														Rings = "10"
+													}
+												}
+												elseif ( Diameter > 0.560000 ) then
+												{
+													if ( Sex = M ) then
+													{
+														Rings = "10"
+													}
+													elseif ( Sex = F ) then
+													{
+														if ( Shell_weight <= 0.432500 ) then
+														{
+															Rings = "12"
+														}
+														elseif ( Shell_weight > 0.432500 ) then
+														{
+															Rings = "11"
+														}
+													}
+													elseif ( Sex = I ) then
+													{
+														Rings = "9"
+													}
+												}
+											}
+										}
+									}
+									elseif ( Shell_weight > 0.450000 ) then
+									{
+										if ( Viscera_weight <= 0.355500 ) then
+										{
+											if ( Sex = M ) then
+											{
+												Rings = "12"
+											}
+											elseif ( Sex = F ) then
+											{
+												if ( Height <= 0.190000 ) then
+												{
+													Rings = "12"
+												}
+												elseif ( Height > 0.190000 ) then
+												{
+													Rings = "11"
+												}
+											}
+											elseif ( Sex = I ) then
+											{
+												Rings = "12"
+											}
+										}
+										elseif ( Viscera_weight > 0.355500 ) then
+										{
+											if ( Length <= 0.705000 ) then
+											{
+												if ( Height <= 0.200000 ) then
+												{
+													if ( Whole_weight <= 1.837500 ) then
+													{
+														if ( Diameter <= 0.565000 ) then
+														{
+															if ( Shell_weight <= 0.465000 ) then
+															{
+																Rings = "12"
+															}
+															elseif ( Shell_weight > 0.465000 ) then
+															{
+																if ( Shell_weight <= 0.515000 ) then
+																{
+																	Rings = "11"
+																}
+																elseif ( Shell_weight > 0.515000 ) then
+																{
+																	Rings = "12"
+																}
+															}
+														}
+														elseif ( Diameter > 0.565000 ) then
+														{
+															Rings = "10"
+														}
+													}
+													elseif ( Whole_weight > 1.837500 ) then
+													{
+														Rings = "10"
+													}
+												}
+												elseif ( Height > 0.200000 ) then
+												{
+													if ( Height <= 0.210000 ) then
+													{
+														if ( Viscera_weight <= 0.430500 ) then
+														{
+															if ( Shucked_weight <= 0.801000 ) then
+															{
+																Rings = "13"
+															}
+															elseif ( Shucked_weight > 0.801000 ) then
+															{
+																Rings = "9"
+															}
+														}
+														elseif ( Viscera_weight > 0.430500 ) then
+														{
+															Rings = "10"
+														}
+													}
+													elseif ( Height > 0.210000 ) then
+													{
+														if ( Length <= 0.695000 ) then
+														{
+															Rings = "19"
+														}
+														elseif ( Length > 0.695000 ) then
+														{
+															Rings = "10"
+														}
+													}
+												}
+											}
+											elseif ( Length > 0.705000 ) then
+											{
+												if ( Height <= 0.220000 ) then
+												{
+													if ( Shucked_weight <= 1.149500 ) then
+													{
+														if ( Viscera_weight <= 0.380500 ) then
+														{
+															Rings = "12"
+														}
+														elseif ( Viscera_weight > 0.380500 ) then
+														{
+															if ( Whole_weight <= 1.959000 ) then
+															{
+																Rings = "11"
+															}
+															elseif ( Whole_weight > 1.959000 ) then
+															{
+																if ( Sex = M ) then
+																{
+																	if ( Whole_weight <= 2.333000 ) then
+																	{
+																		if ( Diameter <= 0.550000 ) then
+																		{
+																			Rings = "12"
+																		}
+																		elseif ( Diameter > 0.550000 ) then
+																		{
+																			Rings = "11"
+																		}
+																	}
+																	elseif ( Whole_weight > 2.333000 ) then
+																	{
+																		Rings = "12"
+																	}
+																}
+																elseif ( Sex = F ) then
+																{
+																	if ( Height <= 0.195000 ) then
+																	{
+																		Rings = "9"
+																	}
+																	elseif ( Height > 0.195000 ) then
+																	{
+																		if ( Length <= 0.745000 ) then
+																		{
+																			Rings = "12"
+																		}
+																		elseif ( Length > 0.745000 ) then
+																		{
+																			Rings = "11"
+																		}
+																	}
+																}
+																elseif ( Sex = I ) then
+																{
+																	Rings = "11"
+																}
+															}
+														}
+													}
+													elseif ( Shucked_weight > 1.149500 ) then
+													{
+														Rings = "9"
+													}
+												}
+												elseif ( Height > 0.220000 ) then
+												{
+													if ( Diameter <= 0.580000 ) then
+													{
+														Rings = "13"
+													}
+													elseif ( Diameter > 0.580000 ) then
+													{
+														Rings = "10"
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						elseif ( Shell_weight > 0.578000 ) then
+						{
+							if ( Shell_weight <= 0.580000 ) then
+							{
+								Rings = "15"
+							}
+							elseif ( Shell_weight > 0.580000 ) then
+							{
+								if ( Diameter <= 0.550000 ) then
+								{
+									Rings = "14"
+								}
+								elseif ( Diameter > 0.550000 ) then
+								{
+									if ( Shell_weight <= 0.585000 ) then
+									{
+										Rings = "10"
+									}
+									elseif ( Shell_weight > 0.585000 ) then
+									{
+										Rings = "11"
+									}
+								}
+							}
+						}
+					}
+				}
+				elseif ( Shell_weight > 0.600000 ) then
+				{
+					if ( Sex = M ) then
+					{
+						if ( Shell_weight <= 0.678500 ) then
+						{
+							if ( Diameter <= 0.505000 ) then
+							{
+								Rings = "16"
+							}
+							elseif ( Diameter > 0.505000 ) then
+							{
+								if ( Whole_weight <= 2.081000 ) then
+								{
+									if ( Length <= 0.660000 ) then
+									{
+										Rings = "12"
+									}
+									elseif ( Length > 0.660000 ) then
+									{
+										Rings = "11"
+									}
+								}
+								elseif ( Whole_weight > 2.081000 ) then
+								{
+									Rings = "12"
+								}
+							}
+						}
+						elseif ( Shell_weight > 0.678500 ) then
+						{
+							if ( Diameter <= 0.550000 ) then
+							{
+								Rings = "18"
+							}
+							elseif ( Diameter > 0.550000 ) then
+							{
+								if ( Diameter <= 0.575000 ) then
+								{
+									Rings = "14"
+								}
+								elseif ( Diameter > 0.575000 ) then
+								{
+									Rings = "17"
+								}
+							}
+						}
+					}
+					elseif ( Sex = F ) then
+					{
+						if ( Shucked_weight <= 0.873000 ) then
+						{
+							if ( Height <= 0.205000 ) then
+							{
+								if ( Diameter <= 0.535000 ) then
+								{
+									Rings = "14"
+								}
+								elseif ( Diameter > 0.535000 ) then
+								{
+									Rings = "20"
+								}
+							}
+							elseif ( Height > 0.205000 ) then
+							{
+								if ( Whole_weight <= 1.969000 ) then
+								{
+									Rings = "16"
+								}
+								elseif ( Whole_weight > 1.969000 ) then
+								{
+									if ( Length <= 0.715000 ) then
+									{
+										Rings = "17"
+									}
+									elseif ( Length > 0.715000 ) then
+									{
+										Rings = "12"
+									}
+								}
+							}
+						}
+						elseif ( Shucked_weight > 0.873000 ) then
+						{
+							if ( Height <= 0.210000 ) then
+							{
+								Rings = "10"
+							}
+							elseif ( Height > 0.210000 ) then
+							{
+								Rings = "14"
+							}
+						}
+					}
+					elseif ( Sex = I ) then
+					{
+						Rings = "10"
+					}
+				}
+			}
+		}
+	}
+}
+
+@TotalNumberOfNodes 1029
+@NumberOfLeafs 1071
+@TotalNumberOfNodes 1029
+@NumberOfAntecedentsByRule 12.325863678804856
+
+@NumberOfItemsetsTraining 3757
+@NumberOfCorrectlyClassifiedTraining 2828
+@PercentageOfCorrectlyClassifiedTraining 75.27283%
+@NumberOfInCorrectlyClassifiedTraining 929
+@PercentageOfInCorrectlyClassifiedTraining 24.727177%
+
+@NumberOfItemsetsTest 417
+@NumberOfCorrectlyClassifiedTest 80
+@PercentageOfCorrectlyClassifiedTest 19.184652%
+@NumberOfInCorrectlyClassifiedTest 337
+@PercentageOfInCorrectlyClassifiedTest 80.815346%
+
+@ElapsedTime 0:0:2

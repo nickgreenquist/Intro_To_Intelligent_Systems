@@ -1,0 +1,7 @@
+algorithm = C4.5 Decision Tree
+inputData = "../datasets/bupa-10-1tra/bupa-10-1tra-10-9tra.dat" "../datasets/bupa-10-1tra/bupa-10-1tra-10-9tra.dat" "../datasets/bupa-10-1tra/bupa-10-1tra-10-9tst.dat" 
+outputData = "../results/C45-C.bupa-10-1tra/result8.tra" "../results/C45-C.bupa-10-1tra/result8.tst" "../results/C45-C.bupa-10-1tra/result8e0.txt"  
+
+pruned = TRUE
+confidence = 0.25
+instancesPerLeaf = 2

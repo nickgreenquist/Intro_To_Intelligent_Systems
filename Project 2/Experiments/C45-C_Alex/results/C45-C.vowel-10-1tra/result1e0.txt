@@ -1,0 +1,699 @@
+@relation  vowel
+@attribute TT integer[0,1]
+@attribute SpeakerNumber integer[0,14]
+@attribute Sex integer[0,1]
+@attribute F0 real[-5.211,-0.941]
+@attribute F1 real[-1.274,5.074]
+@attribute F2 real[-2.487,1.431]
+@attribute F3 real[-1.409,2.377]
+@attribute F4 real[-2.127,1.831]
+@attribute F5 real[-0.836,2.327]
+@attribute F6 real[-1.537,1.403]
+@attribute F7 real[-1.293,2.039]
+@attribute F8 real[-1.613,1.309]
+@attribute F9 real[-1.68,1.396]
+@attribute Class{0,1,2,3,4,5,6,7,8,9,10}
+@inputs TT,SpeakerNumber,Sex,F0,F1,F2,F3,F4,F5,F6,F7,F8,F9
+@outputs Class
+@data
+
+@decisiontree
+
+if ( F0 <= -3.356000 ) then
+{
+	if ( F1 <= 2.138000 ) then
+	{
+		if ( F1 <= 0.458000 ) then
+		{
+			Class = "0"
+		}
+		elseif ( F1 > 0.458000 ) then
+		{
+			if ( F4 <= -0.645000 ) then
+			{
+				if ( Sex <= 0.000000 ) then
+				{
+					if ( F4 <= -1.223000 ) then
+					{
+						if ( SpeakerNumber <= 1.000000 ) then
+						{
+							Class = "6"
+						}
+						elseif ( SpeakerNumber > 1.000000 ) then
+						{
+							Class = "7"
+						}
+					}
+					elseif ( F4 > -1.223000 ) then
+					{
+						Class = "8"
+					}
+				}
+				elseif ( Sex > 0.000000 ) then
+				{
+					Class = "0"
+				}
+			}
+			elseif ( F4 > -0.645000 ) then
+			{
+				if ( Sex <= 0.000000 ) then
+				{
+					if ( F6 <= -0.128000 ) then
+					{
+						Class = "9"
+					}
+					elseif ( F6 > -0.128000 ) then
+					{
+						if ( F3 <= 1.051000 ) then
+						{
+							Class = "10"
+						}
+						elseif ( F3 > 1.051000 ) then
+						{
+							Class = "1"
+						}
+					}
+				}
+				elseif ( Sex > 0.000000 ) then
+				{
+					if ( F3 <= 0.996000 ) then
+					{
+						if ( F3 <= 0.465000 ) then
+						{
+							if ( F0 <= -3.878000 ) then
+							{
+								Class = "10"
+							}
+							elseif ( F0 > -3.878000 ) then
+							{
+								Class = "3"
+							}
+						}
+						elseif ( F3 > 0.465000 ) then
+						{
+							if ( F5 <= 0.590000 ) then
+							{
+								Class = "5"
+							}
+							elseif ( F5 > 0.590000 ) then
+							{
+								Class = "8"
+							}
+						}
+					}
+					elseif ( F3 > 0.996000 ) then
+					{
+						if ( F2 <= 0.643000 ) then
+						{
+							if ( F4 <= 0.223000 ) then
+							{
+								if ( SpeakerNumber <= 6.000000 ) then
+								{
+									Class = "8"
+								}
+								elseif ( SpeakerNumber > 6.000000 ) then
+								{
+									Class = "2"
+								}
+							}
+							elseif ( F4 > 0.223000 ) then
+							{
+								Class = "1"
+							}
+						}
+						elseif ( F2 > 0.643000 ) then
+						{
+							if ( F3 <= 1.443000 ) then
+							{
+								Class = "1"
+							}
+							elseif ( F3 > 1.443000 ) then
+							{
+								Class = "0"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	elseif ( F1 > 2.138000 ) then
+	{
+		if ( F0 <= -3.984000 ) then
+		{
+			if ( F4 <= -1.020000 ) then
+			{
+				if ( F7 <= 0.373000 ) then
+				{
+					Class = "8"
+				}
+				elseif ( F7 > 0.373000 ) then
+				{
+					Class = "7"
+				}
+			}
+			elseif ( F4 > -1.020000 ) then
+			{
+				if ( F0 <= -4.676000 ) then
+				{
+					if ( F1 <= 2.236000 ) then
+					{
+						Class = "0"
+					}
+					elseif ( F1 > 2.236000 ) then
+					{
+						Class = "9"
+					}
+				}
+				elseif ( F0 > -4.676000 ) then
+				{
+					if ( F3 <= -0.099000 ) then
+					{
+						if ( F9 <= 0.238000 ) then
+						{
+							if ( F1 <= 3.018000 ) then
+							{
+								Class = "8"
+							}
+							elseif ( F1 > 3.018000 ) then
+							{
+								if ( F7 <= 0.328000 ) then
+								{
+									Class = "8"
+								}
+								elseif ( F7 > 0.328000 ) then
+								{
+									Class = "7"
+								}
+							}
+						}
+						elseif ( F9 > 0.238000 ) then
+						{
+							Class = "10"
+						}
+					}
+					elseif ( F3 > -0.099000 ) then
+					{
+						if ( F0 <= -4.169000 ) then
+						{
+							Class = "9"
+						}
+						elseif ( F0 > -4.169000 ) then
+						{
+							if ( F4 <= 0.417000 ) then
+							{
+								Class = "8"
+							}
+							elseif ( F4 > 0.417000 ) then
+							{
+								Class = "9"
+							}
+						}
+					}
+				}
+			}
+		}
+		elseif ( F0 > -3.984000 ) then
+		{
+			if ( F8 <= -0.782000 ) then
+			{
+				if ( F8 <= -1.006000 ) then
+				{
+					Class = "6"
+				}
+				elseif ( F8 > -1.006000 ) then
+				{
+					if ( F1 <= 3.188000 ) then
+					{
+						Class = "10"
+					}
+					elseif ( F1 > 3.188000 ) then
+					{
+						Class = "7"
+					}
+				}
+			}
+			elseif ( F8 > -0.782000 ) then
+			{
+				if ( F0 <= -3.689000 ) then
+				{
+					if ( F4 <= -1.041000 ) then
+					{
+						Class = "7"
+					}
+					elseif ( F4 > -1.041000 ) then
+					{
+						if ( F1 <= 3.454000 ) then
+						{
+							if ( F6 <= 0.746000 ) then
+							{
+								Class = "8"
+							}
+							elseif ( F6 > 0.746000 ) then
+							{
+								Class = "4"
+							}
+						}
+						elseif ( F1 > 3.454000 ) then
+						{
+							if ( Sex <= 0.000000 ) then
+							{
+								Class = "7"
+							}
+							elseif ( Sex > 0.000000 ) then
+							{
+								if ( SpeakerNumber <= 12.000000 ) then
+								{
+									Class = "8"
+								}
+								elseif ( SpeakerNumber > 12.000000 ) then
+								{
+									Class = "7"
+								}
+							}
+						}
+					}
+				}
+				elseif ( F0 > -3.689000 ) then
+				{
+					if ( TT <= 0.000000 ) then
+					{
+						if ( SpeakerNumber <= 6.000000 ) then
+						{
+							Class = "6"
+						}
+						elseif ( SpeakerNumber > 6.000000 ) then
+						{
+							Class = "4"
+						}
+					}
+					elseif ( TT > 0.000000 ) then
+					{
+						Class = "7"
+					}
+				}
+			}
+		}
+	}
+}
+elseif ( F0 > -3.356000 ) then
+{
+	if ( F1 <= 0.786000 ) then
+	{
+		if ( F1 <= 0.146000 ) then
+		{
+			if ( F1 <= -0.137000 ) then
+			{
+				Class = "0"
+			}
+			elseif ( F1 > -0.137000 ) then
+			{
+				if ( F8 <= -0.980000 ) then
+				{
+					Class = "0"
+				}
+				elseif ( F8 > -0.980000 ) then
+				{
+					Class = "1"
+				}
+			}
+		}
+		elseif ( F1 > 0.146000 ) then
+		{
+			if ( F9 <= 0.879000 ) then
+			{
+				if ( F0 <= -2.867000 ) then
+				{
+					if ( F4 <= -0.524000 ) then
+					{
+						Class = "10"
+					}
+					elseif ( F4 > -0.524000 ) then
+					{
+						Class = "1"
+					}
+				}
+				elseif ( F0 > -2.867000 ) then
+				{
+					if ( F5 <= 1.229000 ) then
+					{
+						Class = "2"
+					}
+					elseif ( F5 > 1.229000 ) then
+					{
+						if ( F1 <= 0.596000 ) then
+						{
+							Class = "1"
+						}
+						elseif ( F1 > 0.596000 ) then
+						{
+							Class = "2"
+						}
+					}
+				}
+			}
+			elseif ( F9 > 0.879000 ) then
+			{
+				Class = "6"
+			}
+		}
+	}
+	elseif ( F1 > 0.786000 ) then
+	{
+		if ( F0 <= -2.411000 ) then
+		{
+			if ( F1 <= 1.856000 ) then
+			{
+				if ( F6 <= -0.701000 ) then
+				{
+					Class = "6"
+				}
+				elseif ( F6 > -0.701000 ) then
+				{
+					if ( F9 <= 0.314000 ) then
+					{
+						if ( F7 <= -0.494000 ) then
+						{
+							Class = "3"
+						}
+						elseif ( F7 > -0.494000 ) then
+						{
+							if ( F5 <= -0.191000 ) then
+							{
+								Class = "4"
+							}
+							elseif ( F5 > -0.191000 ) then
+							{
+								if ( F4 <= 0.238000 ) then
+								{
+									if ( TT <= 0.000000 ) then
+									{
+										if ( F7 <= 0.373000 ) then
+										{
+											if ( F5 <= 0.651000 ) then
+											{
+												Class = "5"
+											}
+											elseif ( F5 > 0.651000 ) then
+											{
+												Class = "10"
+											}
+										}
+										elseif ( F7 > 0.373000 ) then
+										{
+											if ( Sex <= 0.000000 ) then
+											{
+												Class = "10"
+											}
+											elseif ( Sex > 0.000000 ) then
+											{
+												if ( F6 <= -0.090000 ) then
+												{
+													Class = "5"
+												}
+												elseif ( F6 > -0.090000 ) then
+												{
+													Class = "10"
+												}
+											}
+										}
+									}
+									elseif ( TT > 0.000000 ) then
+									{
+										if ( F0 <= -3.000000 ) then
+										{
+											if ( F3 <= 1.210000 ) then
+											{
+												Class = "10"
+											}
+											elseif ( F3 > 1.210000 ) then
+											{
+												Class = "1"
+											}
+										}
+										elseif ( F0 > -3.000000 ) then
+										{
+											Class = "5"
+										}
+									}
+								}
+								elseif ( F4 > 0.238000 ) then
+								{
+									if ( SpeakerNumber <= 10.000000 ) then
+									{
+										Class = "2"
+									}
+									elseif ( SpeakerNumber > 10.000000 ) then
+									{
+										Class = "10"
+									}
+								}
+							}
+						}
+					}
+					elseif ( F9 > 0.314000 ) then
+					{
+						if ( Sex <= 0.000000 ) then
+						{
+							Class = "8"
+						}
+						elseif ( Sex > 0.000000 ) then
+						{
+							if ( F6 <= 0.033000 ) then
+							{
+								if ( F1 <= 1.695000 ) then
+								{
+									Class = "2"
+								}
+								elseif ( F1 > 1.695000 ) then
+								{
+									Class = "5"
+								}
+							}
+							elseif ( F6 > 0.033000 ) then
+							{
+								Class = "3"
+							}
+						}
+					}
+				}
+			}
+			elseif ( F1 > 1.856000 ) then
+			{
+				if ( F0 <= -3.024000 ) then
+				{
+					if ( F7 <= 0.036000 ) then
+					{
+						if ( SpeakerNumber <= 13.000000 ) then
+						{
+							if ( F3 <= 0.741000 ) then
+							{
+								Class = "5"
+							}
+							elseif ( F3 > 0.741000 ) then
+							{
+								Class = "4"
+							}
+						}
+						elseif ( SpeakerNumber > 13.000000 ) then
+						{
+							Class = "4"
+						}
+					}
+					elseif ( F7 > 0.036000 ) then
+					{
+						if ( F3 <= 0.152000 ) then
+						{
+							Class = "6"
+						}
+						elseif ( F3 > 0.152000 ) then
+						{
+							if ( SpeakerNumber <= 9.000000 ) then
+							{
+								Class = "4"
+							}
+							elseif ( SpeakerNumber > 9.000000 ) then
+							{
+								Class = "10"
+							}
+						}
+					}
+				}
+				elseif ( F0 > -3.024000 ) then
+				{
+					if ( F8 <= -1.248000 ) then
+					{
+						Class = "10"
+					}
+					elseif ( F8 > -1.248000 ) then
+					{
+						if ( F7 <= 1.353000 ) then
+						{
+							if ( F4 <= -0.484000 ) then
+							{
+								if ( SpeakerNumber <= 9.000000 ) then
+								{
+									if ( F3 <= 0.032000 ) then
+									{
+										Class = "4"
+									}
+									elseif ( F3 > 0.032000 ) then
+									{
+										if ( F8 <= -0.412000 ) then
+										{
+											Class = "5"
+										}
+										elseif ( F8 > -0.412000 ) then
+										{
+											if ( F7 <= -0.229000 ) then
+											{
+												Class = "5"
+											}
+											elseif ( F7 > -0.229000 ) then
+											{
+												if ( F4 <= -0.707000 ) then
+												{
+													Class = "4"
+												}
+												elseif ( F4 > -0.707000 ) then
+												{
+													Class = "5"
+												}
+											}
+										}
+									}
+								}
+								elseif ( SpeakerNumber > 9.000000 ) then
+								{
+									if ( SpeakerNumber <= 13.000000 ) then
+									{
+										if ( F6 <= 0.204000 ) then
+										{
+											Class = "4"
+										}
+										elseif ( F6 > 0.204000 ) then
+										{
+											if ( F0 <= -2.624000 ) then
+											{
+												Class = "6"
+											}
+											elseif ( F0 > -2.624000 ) then
+											{
+												Class = "4"
+											}
+										}
+									}
+									elseif ( SpeakerNumber > 13.000000 ) then
+									{
+										Class = "3"
+									}
+								}
+							}
+							elseif ( F4 > -0.484000 ) then
+							{
+								if ( F5 <= 0.353000 ) then
+								{
+									Class = "3"
+								}
+								elseif ( F5 > 0.353000 ) then
+								{
+									if ( F2 <= -1.361000 ) then
+									{
+										Class = "4"
+									}
+									elseif ( F2 > -1.361000 ) then
+									{
+										Class = "5"
+									}
+								}
+							}
+						}
+						elseif ( F7 > 1.353000 ) then
+						{
+							Class = "6"
+						}
+					}
+				}
+			}
+		}
+		elseif ( F0 > -2.411000 ) then
+		{
+			if ( F8 <= 0.326000 ) then
+			{
+				if ( F3 <= 1.296000 ) then
+				{
+					if ( F1 <= 1.258000 ) then
+					{
+						if ( Sex <= 0.000000 ) then
+						{
+							if ( F3 <= -0.013000 ) then
+							{
+								Class = "3"
+							}
+							elseif ( F3 > -0.013000 ) then
+							{
+								Class = "2"
+							}
+						}
+						elseif ( Sex > 0.000000 ) then
+						{
+							Class = "3"
+						}
+					}
+					elseif ( F1 > 1.258000 ) then
+					{
+						if ( F1 <= 2.686000 ) then
+						{
+							Class = "3"
+						}
+						elseif ( F1 > 2.686000 ) then
+						{
+							if ( TT <= 0.000000 ) then
+							{
+								Class = "5"
+							}
+							elseif ( TT > 0.000000 ) then
+							{
+								Class = "4"
+							}
+						}
+					}
+				}
+				elseif ( F3 > 1.296000 ) then
+				{
+					if ( F0 <= -2.176000 ) then
+					{
+						Class = "4"
+					}
+					elseif ( F0 > -2.176000 ) then
+					{
+						Class = "5"
+					}
+				}
+			}
+			elseif ( F8 > 0.326000 ) then
+			{
+				Class = "5"
+			}
+		}
+	}
+}
+
+@TotalNumberOfNodes 94
+@NumberOfLeafs 95
+@TotalNumberOfNodes 94
+@NumberOfAntecedentsByRule 7.989473684210527
+
+@NumberOfItemsetsTraining 891
+@NumberOfCorrectlyClassifiedTraining 869
+@PercentageOfCorrectlyClassifiedTraining 97.53086%
+@NumberOfInCorrectlyClassifiedTraining 22
+@PercentageOfInCorrectlyClassifiedTraining 2.4691358%
+
+@NumberOfItemsetsTest 99
+@NumberOfCorrectlyClassifiedTest 74
+@PercentageOfCorrectlyClassifiedTest 74.747475%
+@NumberOfInCorrectlyClassifiedTest 25
+@PercentageOfInCorrectlyClassifiedTest 25.252525%
+
+@ElapsedTime 0:0:0

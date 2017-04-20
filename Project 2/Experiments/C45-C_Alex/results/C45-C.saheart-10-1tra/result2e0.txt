@@ -1,0 +1,100 @@
+@relation  saheart
+@attribute Sbp integer[101,218]
+@attribute Tobacco real[0.0,31.2]
+@attribute Ldl real[0.98,15.33]
+@attribute Adiposity real[6.74,42.49]
+@attribute Famhist{Present,Absent}
+@attribute Typea integer[13,78]
+@attribute Obesity real[14.7,46.58]
+@attribute Alcohol real[0.0,147.19]
+@attribute Age integer[15,64]
+@attribute Chd{0,1}
+@inputs Sbp,Tobacco,Ldl,Adiposity,Famhist,Typea,Obesity,Alcohol,Age
+@outputs Chd
+@data
+
+@decisiontree
+
+if ( Age <= 49.000000 ) then
+{
+	Chd = "0"
+}
+elseif ( Age > 49.000000 ) then
+{
+	if ( Famhist = Present ) then
+	{
+		if ( Ldl <= 2.580000 ) then
+		{
+			Chd = "0"
+		}
+		elseif ( Ldl > 2.580000 ) then
+		{
+			Chd = "1"
+		}
+	}
+	elseif ( Famhist = Absent ) then
+	{
+		if ( Tobacco <= 7.600000 ) then
+		{
+			if ( Typea <= 42.000000 ) then
+			{
+				Chd = "0"
+			}
+			elseif ( Typea > 42.000000 ) then
+			{
+				if ( Sbp <= 123.000000 ) then
+				{
+					Chd = "1"
+				}
+				elseif ( Sbp > 123.000000 ) then
+				{
+					Chd = "0"
+				}
+			}
+		}
+		elseif ( Tobacco > 7.600000 ) then
+		{
+			if ( Ldl <= 4.260000 ) then
+			{
+				Chd = "1"
+			}
+			elseif ( Ldl > 4.260000 ) then
+			{
+				if ( Tobacco <= 9.100000 ) then
+				{
+					Chd = "1"
+				}
+				elseif ( Tobacco > 9.100000 ) then
+				{
+					if ( Sbp <= 129.000000 ) then
+					{
+						Chd = "1"
+					}
+					elseif ( Sbp > 129.000000 ) then
+					{
+						Chd = "0"
+					}
+				}
+			}
+		}
+	}
+}
+
+@TotalNumberOfNodes 9
+@NumberOfLeafs 10
+@TotalNumberOfNodes 9
+@NumberOfAntecedentsByRule 4.2
+
+@NumberOfItemsetsTraining 416
+@NumberOfCorrectlyClassifiedTraining 326
+@PercentageOfCorrectlyClassifiedTraining 78.36539%
+@NumberOfInCorrectlyClassifiedTraining 90
+@PercentageOfInCorrectlyClassifiedTraining 21.634615%
+
+@NumberOfItemsetsTest 46
+@NumberOfCorrectlyClassifiedTest 29
+@PercentageOfCorrectlyClassifiedTest 63.04348%
+@NumberOfInCorrectlyClassifiedTest 17
+@PercentageOfInCorrectlyClassifiedTest 36.95652%
+
+@ElapsedTime 0:0:0

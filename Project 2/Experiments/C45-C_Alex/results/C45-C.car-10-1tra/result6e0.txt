@@ -1,0 +1,636 @@
+@relation  car
+@attribute Buying{vhigh,high,med,low}
+@attribute Maint{vhigh,high,med,low}
+@attribute Doors{2,3,4,5more}
+@attribute Persons{2,4,more}
+@attribute Lug_boot{small,med,big}
+@attribute Safety{low,med,high}
+@attribute Acceptability{unacc,acc,vgood,good}
+@inputs Buying,Maint,Doors,Persons,Lug_boot,Safety
+@outputs Acceptability
+@data
+
+@decisiontree
+
+if ( Safety = low ) then
+{
+	Acceptability = "unacc"
+}
+elseif ( Safety = med ) then
+{
+	if ( Persons = 2 ) then
+	{
+		Acceptability = "unacc"
+	}
+	elseif ( Persons = 4 ) then
+	{
+		if ( Buying = vhigh ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				Acceptability = "unacc"
+			}
+			elseif ( Maint = high ) then
+			{
+				Acceptability = "unacc"
+			}
+			elseif ( Maint = med ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "acc"
+				}
+			}
+			elseif ( Maint = low ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "acc"
+				}
+			}
+		}
+		elseif ( Buying = high ) then
+		{
+			if ( Lug_boot = small ) then
+			{
+				Acceptability = "unacc"
+			}
+			elseif ( Lug_boot = med ) then
+			{
+				if ( Doors = 2 ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Doors = 3 ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Doors = 4 ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Doors = 5more ) then
+				{
+					Acceptability = "acc"
+				}
+			}
+			elseif ( Lug_boot = big ) then
+			{
+				Acceptability = "acc"
+			}
+		}
+		elseif ( Buying = med ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "acc"
+				}
+			}
+			elseif ( Maint = high ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "acc"
+				}
+			}
+			elseif ( Maint = med ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = low ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "good"
+				}
+			}
+		}
+		elseif ( Buying = low ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "acc"
+				}
+			}
+			elseif ( Maint = high ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = med ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "good"
+				}
+			}
+			elseif ( Maint = low ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "good"
+				}
+			}
+		}
+	}
+	elseif ( Persons = more ) then
+	{
+		if ( Lug_boot = small ) then
+		{
+			Acceptability = "unacc"
+		}
+		elseif ( Lug_boot = med ) then
+		{
+			if ( Buying = vhigh ) then
+			{
+				if ( Maint = vhigh ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Maint = high ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Maint = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = low ) then
+				{
+					Acceptability = "acc"
+				}
+			}
+			elseif ( Buying = high ) then
+			{
+				if ( Maint = vhigh ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Maint = high ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = low ) then
+				{
+					Acceptability = "acc"
+				}
+			}
+			elseif ( Buying = med ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Buying = low ) then
+			{
+				if ( Maint = vhigh ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = high ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = med ) then
+				{
+					Acceptability = "good"
+				}
+				elseif ( Maint = low ) then
+				{
+					Acceptability = "good"
+				}
+			}
+		}
+		elseif ( Lug_boot = big ) then
+		{
+			if ( Buying = vhigh ) then
+			{
+				if ( Maint = vhigh ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Maint = high ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Maint = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = low ) then
+				{
+					Acceptability = "acc"
+				}
+			}
+			elseif ( Buying = high ) then
+			{
+				if ( Maint = vhigh ) then
+				{
+					Acceptability = "unacc"
+				}
+				elseif ( Maint = high ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = low ) then
+				{
+					Acceptability = "acc"
+				}
+			}
+			elseif ( Buying = med ) then
+			{
+				if ( Maint = vhigh ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = high ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = low ) then
+				{
+					Acceptability = "good"
+				}
+			}
+			elseif ( Buying = low ) then
+			{
+				if ( Maint = vhigh ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = high ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Maint = med ) then
+				{
+					Acceptability = "good"
+				}
+				elseif ( Maint = low ) then
+				{
+					Acceptability = "good"
+				}
+			}
+		}
+	}
+}
+elseif ( Safety = high ) then
+{
+	if ( Persons = 2 ) then
+	{
+		Acceptability = "unacc"
+	}
+	elseif ( Persons = 4 ) then
+	{
+		if ( Buying = vhigh ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				Acceptability = "unacc"
+			}
+			elseif ( Maint = high ) then
+			{
+				Acceptability = "unacc"
+			}
+			elseif ( Maint = med ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = low ) then
+			{
+				Acceptability = "acc"
+			}
+		}
+		elseif ( Buying = high ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				Acceptability = "unacc"
+			}
+			elseif ( Maint = high ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = med ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = low ) then
+			{
+				Acceptability = "acc"
+			}
+		}
+		elseif ( Buying = med ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = high ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = med ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "vgood"
+				}
+			}
+			elseif ( Maint = low ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "good"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "vgood"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "vgood"
+				}
+			}
+		}
+		elseif ( Buying = low ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = high ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "vgood"
+				}
+			}
+			elseif ( Maint = med ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "good"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "vgood"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "vgood"
+				}
+			}
+			elseif ( Maint = low ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "good"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "vgood"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "vgood"
+				}
+			}
+		}
+	}
+	elseif ( Persons = more ) then
+	{
+		if ( Buying = vhigh ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				Acceptability = "unacc"
+			}
+			elseif ( Maint = high ) then
+			{
+				Acceptability = "unacc"
+			}
+			elseif ( Maint = med ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = low ) then
+			{
+				Acceptability = "acc"
+			}
+		}
+		elseif ( Buying = high ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				Acceptability = "unacc"
+			}
+			elseif ( Maint = high ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = med ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = low ) then
+			{
+				Acceptability = "acc"
+			}
+		}
+		elseif ( Buying = med ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = high ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = med ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "vgood"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "vgood"
+				}
+			}
+			elseif ( Maint = low ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "good"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "vgood"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "vgood"
+				}
+			}
+		}
+		elseif ( Buying = low ) then
+		{
+			if ( Maint = vhigh ) then
+			{
+				Acceptability = "acc"
+			}
+			elseif ( Maint = high ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "acc"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "vgood"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "vgood"
+				}
+			}
+			elseif ( Maint = med ) then
+			{
+				if ( Lug_boot = small ) then
+				{
+					Acceptability = "good"
+				}
+				elseif ( Lug_boot = med ) then
+				{
+					Acceptability = "vgood"
+				}
+				elseif ( Lug_boot = big ) then
+				{
+					Acceptability = "vgood"
+				}
+			}
+			elseif ( Maint = low ) then
+			{
+				Acceptability = "vgood"
+			}
+		}
+	}
+}
+
+@TotalNumberOfNodes 46
+@NumberOfLeafs 117
+@TotalNumberOfNodes 46
+@NumberOfAntecedentsByRule 4.641025641025641
+
+@NumberOfItemsetsTraining 1555
+@NumberOfCorrectlyClassifiedTraining 1487
+@PercentageOfCorrectlyClassifiedTraining 95.62701%
+@NumberOfInCorrectlyClassifiedTraining 68
+@PercentageOfInCorrectlyClassifiedTraining 4.37299%
+
+@NumberOfItemsetsTest 173
+@NumberOfCorrectlyClassifiedTest 160
+@PercentageOfCorrectlyClassifiedTest 92.48555%
+@NumberOfInCorrectlyClassifiedTest 13
+@PercentageOfInCorrectlyClassifiedTest 7.514451%
+
+@ElapsedTime 0:0:0

@@ -1,0 +1,7 @@
+algorithm = C4.5 Decision Tree
+inputData = "../datasets/splice-10-1tra/splice-10-1tra-10-3tra.dat" "../datasets/splice-10-1tra/splice-10-1tra-10-3tra.dat" "../datasets/splice-10-1tra/splice-10-1tra-10-3tst.dat" 
+outputData = "../results/C45-C.splice-10-1tra/result2.tra" "../results/C45-C.splice-10-1tra/result2.tst" "../results/C45-C.splice-10-1tra/result2e0.txt"  
+
+pruned = TRUE
+confidence = 0.25
+instancesPerLeaf = 2

@@ -1,0 +1,161 @@
+@relation  ecoli
+@attribute Mcg real[0.0,89.0]
+@attribute Gvh real[1.0,88.0]
+@attribute Lip real[1.0,48.0]
+@attribute Chg real[1.0,5.0]
+@attribute Aac real[0.0,88.0]
+@attribute Alm1 real[1.0,94.0]
+@attribute Alm2 real[0.0,99.0]
+@attribute Site{cp,im,imS,imL,imU,om,omL,pp}
+@inputs Mcg,Gvh,Lip,Chg,Aac,Alm1,Alm2
+@outputs Site
+@data
+
+@decisiontree
+
+if ( Alm1 <= 59.000000 ) then
+{
+	if ( Gvh <= 56.000000 ) then
+	{
+		if ( Alm2 <= 61.000000 ) then
+		{
+			if ( Lip <= 1.000000 ) then
+			{
+				Site = "omL"
+			}
+			elseif ( Lip > 1.000000 ) then
+			{
+				if ( Mcg <= 55.000000 ) then
+				{
+					Site = "cp"
+				}
+				elseif ( Mcg > 55.000000 ) then
+				{
+					if ( Aac <= 47.000000 ) then
+					{
+						if ( Aac <= 39.000000 ) then
+						{
+							if ( Aac <= 17.000000 ) then
+							{
+								Site = "im"
+							}
+							elseif ( Aac > 17.000000 ) then
+							{
+								Site = "cp"
+							}
+						}
+						elseif ( Aac > 39.000000 ) then
+						{
+							Site = "pp"
+						}
+					}
+					elseif ( Aac > 47.000000 ) then
+					{
+						if ( Alm1 <= 48.000000 ) then
+						{
+							Site = "cp"
+						}
+						elseif ( Alm1 > 48.000000 ) then
+						{
+							Site = "om"
+						}
+					}
+				}
+			}
+		}
+		elseif ( Alm2 > 61.000000 ) then
+		{
+			if ( Mcg <= 73.000000 ) then
+			{
+				Site = "im"
+			}
+			elseif ( Mcg > 73.000000 ) then
+			{
+				Site = "imU"
+			}
+		}
+	}
+	elseif ( Gvh > 56.000000 ) then
+	{
+		if ( Aac <= 64.000000 ) then
+		{
+			if ( Gvh <= 58.000000 ) then
+			{
+				if ( Mcg <= 43.000000 ) then
+				{
+					Site = "cp"
+				}
+				elseif ( Mcg > 43.000000 ) then
+				{
+					if ( Aac <= 42.000000 ) then
+					{
+						Site = "om"
+					}
+					elseif ( Aac > 42.000000 ) then
+					{
+						Site = "pp"
+					}
+				}
+			}
+			elseif ( Gvh > 58.000000 ) then
+			{
+				Site = "pp"
+			}
+		}
+		elseif ( Aac > 64.000000 ) then
+		{
+			Site = "om"
+		}
+	}
+}
+elseif ( Alm1 > 59.000000 ) then
+{
+	if ( Mcg <= 56.000000 ) then
+	{
+		Site = "im"
+	}
+	elseif ( Mcg > 56.000000 ) then
+	{
+		if ( Alm2 <= 61.000000 ) then
+		{
+			if ( Gvh <= 55.000000 ) then
+			{
+				Site = "imU"
+			}
+			elseif ( Gvh > 55.000000 ) then
+			{
+				Site = "pp"
+			}
+		}
+		elseif ( Alm2 > 61.000000 ) then
+		{
+			if ( Alm1 <= 81.000000 ) then
+			{
+				Site = "imU"
+			}
+			elseif ( Alm1 > 81.000000 ) then
+			{
+				Site = "im"
+			}
+		}
+	}
+}
+
+@TotalNumberOfNodes 18
+@NumberOfLeafs 19
+@TotalNumberOfNodes 18
+@NumberOfAntecedentsByRule 5.052631578947368
+
+@NumberOfItemsetsTraining 302
+@NumberOfCorrectlyClassifiedTraining 273
+@PercentageOfCorrectlyClassifiedTraining 90.397354%
+@NumberOfInCorrectlyClassifiedTraining 29
+@PercentageOfInCorrectlyClassifiedTraining 9.602649%
+
+@NumberOfItemsetsTest 34
+@NumberOfCorrectlyClassifiedTest 26
+@PercentageOfCorrectlyClassifiedTest 76.47059%
+@NumberOfInCorrectlyClassifiedTest 8
+@PercentageOfInCorrectlyClassifiedTest 23.529411%
+
+@ElapsedTime 0:0:0

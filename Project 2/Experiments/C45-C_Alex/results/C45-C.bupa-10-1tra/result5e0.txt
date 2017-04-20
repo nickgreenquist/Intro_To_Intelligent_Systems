@@ -1,0 +1,146 @@
+@relation  bupa
+@attribute Mcv integer[65,103]
+@attribute Alkphos integer[23,138]
+@attribute Sgpt integer[4,155]
+@attribute Sgot integer[5,82]
+@attribute Gammagt integer[5,297]
+@attribute Drinks real[0.0,20.0]
+@attribute Selector{1,2}
+@inputs Mcv,Alkphos,Sgpt,Sgot,Gammagt,Drinks
+@outputs Selector
+@data
+
+@decisiontree
+
+if ( Gammagt <= 20.000000 ) then
+{
+	if ( Sgpt <= 19.000000 ) then
+	{
+		if ( Gammagt <= 7.000000 ) then
+		{
+			Selector = "1"
+		}
+		elseif ( Gammagt > 7.000000 ) then
+		{
+			if ( Alkphos <= 77.000000 ) then
+			{
+				Selector = "2"
+			}
+			elseif ( Alkphos > 77.000000 ) then
+			{
+				if ( Mcv <= 90.000000 ) then
+				{
+					if ( Sgpt <= 16.000000 ) then
+					{
+						Selector = "2"
+					}
+					elseif ( Sgpt > 16.000000 ) then
+					{
+						if ( Sgpt <= 17.000000 ) then
+						{
+							Selector = "1"
+						}
+						elseif ( Sgpt > 17.000000 ) then
+						{
+							if ( Mcv <= 89.000000 ) then
+							{
+								Selector = "2"
+							}
+							elseif ( Mcv > 89.000000 ) then
+							{
+								Selector = "1"
+							}
+						}
+					}
+				}
+				elseif ( Mcv > 90.000000 ) then
+				{
+					Selector = "1"
+				}
+			}
+		}
+	}
+	elseif ( Sgpt > 19.000000 ) then
+	{
+		if ( Sgot <= 20.000000 ) then
+		{
+			if ( Drinks <= 4.000000 ) then
+			{
+				Selector = "1"
+			}
+			elseif ( Drinks > 4.000000 ) then
+			{
+				if ( Sgpt <= 23.000000 ) then
+				{
+					Selector = "2"
+				}
+				elseif ( Sgpt > 23.000000 ) then
+				{
+					Selector = "1"
+				}
+			}
+		}
+		elseif ( Sgot > 20.000000 ) then
+		{
+			if ( Drinks <= 5.000000 ) then
+			{
+				if ( Sgpt <= 26.000000 ) then
+				{
+					Selector = "2"
+				}
+				elseif ( Sgpt > 26.000000 ) then
+				{
+					Selector = "1"
+				}
+			}
+			elseif ( Drinks > 5.000000 ) then
+			{
+				Selector = "1"
+			}
+		}
+	}
+}
+elseif ( Gammagt > 20.000000 ) then
+{
+	if ( Sgpt <= 30.000000 ) then
+	{
+		Selector = "2"
+	}
+	elseif ( Sgpt > 30.000000 ) then
+	{
+		if ( Sgot <= 45.000000 ) then
+		{
+			if ( Sgpt <= 67.000000 ) then
+			{
+				Selector = "2"
+			}
+			elseif ( Sgpt > 67.000000 ) then
+			{
+				Selector = "1"
+			}
+		}
+		elseif ( Sgot > 45.000000 ) then
+		{
+			Selector = "2"
+		}
+	}
+}
+
+@TotalNumberOfNodes 16
+@NumberOfLeafs 17
+@TotalNumberOfNodes 16
+@NumberOfAntecedentsByRule 4.823529411764706
+
+@NumberOfItemsetsTraining 310
+@NumberOfCorrectlyClassifiedTraining 238
+@PercentageOfCorrectlyClassifiedTraining 76.77419%
+@NumberOfInCorrectlyClassifiedTraining 72
+@PercentageOfInCorrectlyClassifiedTraining 23.225807%
+
+@NumberOfItemsetsTest 35
+@NumberOfCorrectlyClassifiedTest 27
+@PercentageOfCorrectlyClassifiedTest 77.14286%
+@NumberOfInCorrectlyClassifiedTest 8
+@PercentageOfInCorrectlyClassifiedTest 22.857143%
+
+@ElapsedTime 0:0:0

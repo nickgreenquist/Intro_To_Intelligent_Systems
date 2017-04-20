@@ -1,0 +1,190 @@
+@relation  australian
+@attribute A1{0,1}
+@attribute A2 real[16.0,8025.0]
+@attribute A3 real[0.0,26335.0]
+@attribute A4{1,2,3}
+@attribute A5 integer[1,14]
+@attribute A6 integer[1,9]
+@attribute A7 real[0.0,14415.0]
+@attribute A8{0,1}
+@attribute A9{0,1}
+@attribute A10 integer[0,67]
+@attribute A11{0,1}
+@attribute A12{1,2,3}
+@attribute A13 integer[0,2000]
+@attribute A14 integer[1,100001]
+@attribute Class{0,1}
+@inputs A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14
+@outputs Class
+@data
+
+@decisiontree
+
+if ( A8 = 0 ) then
+{
+	Class = "0"
+}
+elseif ( A8 = 1 ) then
+{
+	if ( A9 = 0 ) then
+	{
+		if ( A14 <= 445.000000 ) then
+		{
+			if ( A13 <= 110.000000 ) then
+			{
+				if ( A14 <= 34.000000 ) then
+				{
+					if ( A4 = 1 ) then
+					{
+						if ( A2 <= 2783.000000 ) then
+						{
+							Class = "1"
+						}
+						elseif ( A2 > 2783.000000 ) then
+						{
+							Class = "0"
+						}
+					}
+					elseif ( A4 = 2 ) then
+					{
+						Class = "1"
+					}
+					elseif ( A4 = 3 ) then
+					{
+						Class = "1"
+					}
+				}
+				elseif ( A14 > 34.000000 ) then
+				{
+					Class = "0"
+				}
+			}
+			elseif ( A13 > 110.000000 ) then
+			{
+				if ( A6 <= 5.000000 ) then
+				{
+					if ( A5 <= 3.000000 ) then
+					{
+						Class = "0"
+					}
+					elseif ( A5 > 3.000000 ) then
+					{
+						if ( A4 = 1 ) then
+						{
+							if ( A2 <= 2125.000000 ) then
+							{
+								Class = "0"
+							}
+							elseif ( A2 > 2125.000000 ) then
+							{
+								Class = "1"
+							}
+						}
+						elseif ( A4 = 2 ) then
+						{
+							if ( A14 <= 12.000000 ) then
+							{
+								if ( A7 <= 21.000000 ) then
+								{
+									Class = "0"
+								}
+								elseif ( A7 > 21.000000 ) then
+								{
+									if ( A3 <= 4.000000 ) then
+									{
+										Class = "1"
+									}
+									elseif ( A3 > 4.000000 ) then
+									{
+										if ( A13 <= 280.000000 ) then
+										{
+											if ( A13 <= 212.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A13 > 212.000000 ) then
+											{
+												Class = "1"
+											}
+										}
+										elseif ( A13 > 280.000000 ) then
+										{
+											Class = "0"
+										}
+									}
+								}
+							}
+							elseif ( A14 > 12.000000 ) then
+							{
+								Class = "1"
+							}
+						}
+						elseif ( A4 = 3 ) then
+						{
+							Class = "0"
+						}
+					}
+				}
+				elseif ( A6 > 5.000000 ) then
+				{
+					if ( A14 <= 151.000000 ) then
+					{
+						if ( A14 <= 1.000000 ) then
+						{
+							if ( A5 <= 12.000000 ) then
+							{
+								if ( A13 <= 145.000000 ) then
+								{
+									Class = "0"
+								}
+								elseif ( A13 > 145.000000 ) then
+								{
+									Class = "1"
+								}
+							}
+							elseif ( A5 > 12.000000 ) then
+							{
+								Class = "0"
+							}
+						}
+						elseif ( A14 > 1.000000 ) then
+						{
+							Class = "0"
+						}
+					}
+					elseif ( A14 > 151.000000 ) then
+					{
+						Class = "1"
+					}
+				}
+			}
+		}
+		elseif ( A14 > 445.000000 ) then
+		{
+			Class = "1"
+		}
+	}
+	elseif ( A9 = 1 ) then
+	{
+		Class = "1"
+	}
+}
+
+@TotalNumberOfNodes 20
+@NumberOfLeafs 23
+@TotalNumberOfNodes 20
+@NumberOfAntecedentsByRule 7.260869565217392
+
+@NumberOfItemsetsTraining 621
+@NumberOfCorrectlyClassifiedTraining 576
+@PercentageOfCorrectlyClassifiedTraining 92.753624%
+@NumberOfInCorrectlyClassifiedTraining 45
+@PercentageOfInCorrectlyClassifiedTraining 7.246377%
+
+@NumberOfItemsetsTest 69
+@NumberOfCorrectlyClassifiedTest 57
+@PercentageOfCorrectlyClassifiedTest 82.608696%
+@NumberOfInCorrectlyClassifiedTest 12
+@PercentageOfInCorrectlyClassifiedTest 17.391304%
+
+@ElapsedTime 0:0:0
