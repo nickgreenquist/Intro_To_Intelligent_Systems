@@ -1,0 +1,195 @@
+@relation  bupa
+@attribute Mcv integer[65,103]
+@attribute Alkphos integer[23,138]
+@attribute Sgpt integer[4,155]
+@attribute Sgot integer[5,82]
+@attribute Gammagt integer[5,297]
+@attribute Drinks real[0.0,20.0]
+@attribute Selector{1,2}
+@inputs Mcv,Alkphos,Sgpt,Sgot,Gammagt,Drinks
+@outputs Selector
+@data
+
+@decisiontree
+
+if ( Gammagt <= 20.000000 ) then
+{
+	if ( Gammagt <= 7.000000 ) then
+	{
+		Selector = "1"
+	}
+	elseif ( Gammagt > 7.000000 ) then
+	{
+		if ( Sgpt <= 19.000000 ) then
+		{
+			if ( Alkphos <= 77.000000 ) then
+			{
+				Selector = "2"
+			}
+			elseif ( Alkphos > 77.000000 ) then
+			{
+				if ( Mcv <= 90.000000 ) then
+				{
+					if ( Sgpt <= 15.000000 ) then
+					{
+						Selector = "2"
+					}
+					elseif ( Sgpt > 15.000000 ) then
+					{
+						if ( Sgpt <= 17.000000 ) then
+						{
+							Selector = "1"
+						}
+						elseif ( Sgpt > 17.000000 ) then
+						{
+							if ( Mcv <= 89.000000 ) then
+							{
+								Selector = "2"
+							}
+							elseif ( Mcv > 89.000000 ) then
+							{
+								Selector = "1"
+							}
+						}
+					}
+				}
+				elseif ( Mcv > 90.000000 ) then
+				{
+					Selector = "1"
+				}
+			}
+		}
+		elseif ( Sgpt > 19.000000 ) then
+		{
+			if ( Mcv <= 87.000000 ) then
+			{
+				if ( Sgpt <= 26.000000 ) then
+				{
+					if ( Gammagt <= 15.000000 ) then
+					{
+						Selector = "2"
+					}
+					elseif ( Gammagt > 15.000000 ) then
+					{
+						if ( Mcv <= 85.000000 ) then
+						{
+							Selector = "2"
+						}
+						elseif ( Mcv > 85.000000 ) then
+						{
+							Selector = "1"
+						}
+					}
+				}
+				elseif ( Sgpt > 26.000000 ) then
+				{
+					Selector = "1"
+				}
+			}
+			elseif ( Mcv > 87.000000 ) then
+			{
+				Selector = "1"
+			}
+		}
+	}
+}
+elseif ( Gammagt > 20.000000 ) then
+{
+	if ( Drinks <= 5.000000 ) then
+	{
+		if ( Drinks <= 3.000000 ) then
+		{
+			if ( Alkphos <= 65.000000 ) then
+			{
+				Selector = "2"
+			}
+			elseif ( Alkphos > 65.000000 ) then
+			{
+				if ( Sgot <= 24.000000 ) then
+				{
+					if ( Drinks <= 0.000000 ) then
+					{
+						Selector = "2"
+					}
+					elseif ( Drinks > 0.000000 ) then
+					{
+						if ( Gammagt <= 67.000000 ) then
+						{
+							if ( Mcv <= 93.000000 ) then
+							{
+								Selector = "1"
+							}
+							elseif ( Mcv > 93.000000 ) then
+							{
+								Selector = "2"
+							}
+						}
+						elseif ( Gammagt > 67.000000 ) then
+						{
+							Selector = "2"
+						}
+					}
+				}
+				elseif ( Sgot > 24.000000 ) then
+				{
+					if ( Sgpt <= 42.000000 ) then
+					{
+						Selector = "2"
+					}
+					elseif ( Sgpt > 42.000000 ) then
+					{
+						if ( Sgpt <= 48.000000 ) then
+						{
+							Selector = "1"
+						}
+						elseif ( Sgpt > 48.000000 ) then
+						{
+							Selector = "2"
+						}
+					}
+				}
+			}
+		}
+		elseif ( Drinks > 3.000000 ) then
+		{
+			Selector = "2"
+		}
+	}
+	elseif ( Drinks > 5.000000 ) then
+	{
+		if ( Drinks <= 12.000000 ) then
+		{
+			if ( Sgot <= 19.000000 ) then
+			{
+				Selector = "1"
+			}
+			elseif ( Sgot > 19.000000 ) then
+			{
+				Selector = "2"
+			}
+		}
+		elseif ( Drinks > 12.000000 ) then
+		{
+			Selector = "1"
+		}
+	}
+}
+
+@TotalNumberOfNodes 23
+@NumberOfLeafs 24
+@TotalNumberOfNodes 23
+@NumberOfAntecedentsByRule 5.666666666666667
+
+@NumberOfItemsetsTraining 310
+@NumberOfCorrectlyClassifiedTraining 259
+@PercentageOfCorrectlyClassifiedTraining 83.548386%
+@NumberOfInCorrectlyClassifiedTraining 51
+@PercentageOfInCorrectlyClassifiedTraining 16.451612%
+
+@NumberOfItemsetsTest 35
+@NumberOfCorrectlyClassifiedTest 28
+@PercentageOfCorrectlyClassifiedTest 80.0%
+@NumberOfInCorrectlyClassifiedTest 7
+@PercentageOfInCorrectlyClassifiedTest 20.0%
+
+@ElapsedTime 0:0:0

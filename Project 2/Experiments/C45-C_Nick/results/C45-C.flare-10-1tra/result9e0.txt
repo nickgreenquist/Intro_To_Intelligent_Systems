@@ -1,0 +1,227 @@
+@relation  flare
+@attribute LargestSpotSize{A,R,S,X,K,H}
+@attribute SpotDistribution{X,O,I,C}
+@attribute Activity{1,2}
+@attribute Evolution{1,2,3}
+@attribute Prev24Hour{1,2,3}
+@attribute HistComplex{1,2}
+@attribute BecomeHist{1,2}
+@attribute Area{1,2}
+@attribute C-class{0,1,2,3,4,5,6,7,8}
+@attribute M-class{0,1,2,3,4,5}
+@attribute X-class{0,1,2}
+@attribute Class{H,D,C,B,E,F}
+@inputs LargestSpotSize,SpotDistribution,Activity,Evolution,Prev24Hour,HistComplex,BecomeHist,Area,C-class,M-class,X-class
+@outputs Class
+@data
+
+@decisiontree
+
+if ( SpotDistribution = X ) then
+{
+	Class = "H"
+}
+elseif ( SpotDistribution = O ) then
+{
+	if ( LargestSpotSize = A ) then
+	{
+		if ( C-class = 0 ) then
+		{
+			if ( Activity = 1 ) then
+			{
+				Class = "C"
+			}
+			elseif ( Activity = 2 ) then
+			{
+				if ( HistComplex = 1 ) then
+				{
+					Class = "D"
+				}
+				elseif ( HistComplex = 2 ) then
+				{
+					if ( Prev24Hour = 1 ) then
+					{
+						Class = "E"
+					}
+					elseif ( Prev24Hour = 2 ) then
+					{
+						Class = "E"
+					}
+					elseif ( Prev24Hour = 3 ) then
+					{
+						Class = "D"
+					}
+				}
+			}
+		}
+		elseif ( C-class = 1 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 2 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 3 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 4 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 5 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 6 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 7 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 8 ) then
+		{
+			Class = "D"
+		}
+	}
+	elseif ( LargestSpotSize = R ) then
+	{
+		Class = "C"
+	}
+	elseif ( LargestSpotSize = S ) then
+	{
+		Class = "C"
+	}
+	elseif ( LargestSpotSize = X ) then
+	{
+		Class = "B"
+	}
+	elseif ( LargestSpotSize = K ) then
+	{
+		Class = "C"
+	}
+	elseif ( LargestSpotSize = H ) then
+	{
+		if ( Activity = 1 ) then
+		{
+			if ( HistComplex = 1 ) then
+			{
+				Class = "C"
+			}
+			elseif ( HistComplex = 2 ) then
+			{
+				Class = "D"
+			}
+		}
+		elseif ( Activity = 2 ) then
+		{
+			Class = "E"
+		}
+	}
+}
+elseif ( SpotDistribution = I ) then
+{
+	if ( LargestSpotSize = A ) then
+	{
+		Class = "D"
+	}
+	elseif ( LargestSpotSize = R ) then
+	{
+		Class = "D"
+	}
+	elseif ( LargestSpotSize = S ) then
+	{
+		if ( C-class = 0 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 1 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 2 ) then
+		{
+			Class = "F"
+		}
+		elseif ( C-class = 3 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 4 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 5 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 6 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 7 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 8 ) then
+		{
+			Class = "D"
+		}
+	}
+	elseif ( LargestSpotSize = X ) then
+	{
+		Class = "B"
+	}
+	elseif ( LargestSpotSize = K ) then
+	{
+		if ( Area = 1 ) then
+		{
+			Class = "D"
+		}
+		elseif ( Area = 2 ) then
+		{
+			if ( Evolution = 1 ) then
+			{
+				Class = "E"
+			}
+			elseif ( Evolution = 2 ) then
+			{
+				Class = "F"
+			}
+			elseif ( Evolution = 3 ) then
+			{
+				Class = "E"
+			}
+		}
+	}
+	elseif ( LargestSpotSize = H ) then
+	{
+		Class = "E"
+	}
+}
+elseif ( SpotDistribution = C ) then
+{
+	Class = "E"
+}
+
+@TotalNumberOfNodes 12
+@NumberOfLeafs 39
+@TotalNumberOfNodes 12
+@NumberOfAntecedentsByRule 3.128205128205128
+
+@NumberOfItemsetsTraining 960
+@NumberOfCorrectlyClassifiedTraining 752
+@PercentageOfCorrectlyClassifiedTraining 78.333336%
+@NumberOfInCorrectlyClassifiedTraining 208
+@PercentageOfInCorrectlyClassifiedTraining 21.666666%
+
+@NumberOfItemsetsTest 106
+@NumberOfCorrectlyClassifiedTest 80
+@PercentageOfCorrectlyClassifiedTest 75.471695%
+@NumberOfInCorrectlyClassifiedTest 26
+@PercentageOfInCorrectlyClassifiedTest 24.528301%
+
+@ElapsedTime 0:0:0

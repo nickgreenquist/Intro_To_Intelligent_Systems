@@ -1,0 +1,466 @@
+@relation  vehicle
+@attribute Compactness integer[73,119]
+@attribute Circularity integer[33,59]
+@attribute Distance_circularity integer[40,112]
+@attribute Radius_ratio integer[104,333]
+@attribute Praxis_aspect_ratio integer[47,138]
+@attribute Max_length_aspect_ratio integer[2,55]
+@attribute Scatter_ratio integer[112,265]
+@attribute Elongatedness integer[26,61]
+@attribute Praxis_rectangular integer[17,29]
+@attribute Length_rectangular integer[118,188]
+@attribute Major_variance integer[130,320]
+@attribute Minor_variance integer[184,1018]
+@attribute Gyration_radius integer[109,268]
+@attribute Major_skewness integer[59,135]
+@attribute Minor_skewness integer[0,22]
+@attribute Minor_kurtosis integer[0,41]
+@attribute Major_kurtosis integer[176,206]
+@attribute Hollows_ratio integer[181,211]
+@attribute Class{van,saab,bus,opel}
+@inputs Compactness,Circularity,Distance_circularity,Radius_ratio,Praxis_aspect_ratio,Max_length_aspect_ratio,Scatter_ratio,Elongatedness,Praxis_rectangular,Length_rectangular,Major_variance,Minor_variance,Gyration_radius,Major_skewness,Minor_skewness,Minor_kurtosis,Major_kurtosis,Hollows_ratio
+@outputs Class
+@data
+
+@decisiontree
+
+if ( Elongatedness <= 41.000000 ) then
+{
+	if ( Max_length_aspect_ratio <= 7.000000 ) then
+	{
+		if ( Compactness <= 95.000000 ) then
+		{
+			if ( Praxis_aspect_ratio <= 67.000000 ) then
+			{
+				if ( Major_kurtosis <= 196.000000 ) then
+				{
+					if ( Compactness <= 89.000000 ) then
+					{
+						Class = "opel"
+					}
+					elseif ( Compactness > 89.000000 ) then
+					{
+						if ( Major_skewness <= 72.000000 ) then
+						{
+							Class = "saab"
+						}
+						elseif ( Major_skewness > 72.000000 ) then
+						{
+							Class = "opel"
+						}
+					}
+				}
+				elseif ( Major_kurtosis > 196.000000 ) then
+				{
+					Class = "opel"
+				}
+			}
+			elseif ( Praxis_aspect_ratio > 67.000000 ) then
+			{
+				Class = "bus"
+			}
+		}
+		elseif ( Compactness > 95.000000 ) then
+		{
+			Class = "bus"
+		}
+	}
+	elseif ( Max_length_aspect_ratio > 7.000000 ) then
+	{
+		if ( Minor_variance <= 721.000000 ) then
+		{
+			if ( Compactness <= 106.000000 ) then
+			{
+				if ( Major_skewness <= 74.000000 ) then
+				{
+					if ( Circularity <= 54.000000 ) then
+					{
+						if ( Minor_skewness <= 12.000000 ) then
+						{
+							Class = "opel"
+						}
+						elseif ( Minor_skewness > 12.000000 ) then
+						{
+							if ( Minor_kurtosis <= 2.000000 ) then
+							{
+								Class = "opel"
+							}
+							elseif ( Minor_kurtosis > 2.000000 ) then
+							{
+								if ( Minor_skewness <= 18.000000 ) then
+								{
+									Class = "saab"
+								}
+								elseif ( Minor_skewness > 18.000000 ) then
+								{
+									Class = "opel"
+								}
+							}
+						}
+					}
+					elseif ( Circularity > 54.000000 ) then
+					{
+						if ( Minor_skewness <= 3.000000 ) then
+						{
+							if ( Major_kurtosis <= 187.000000 ) then
+							{
+								if ( Hollows_ratio <= 193.000000 ) then
+								{
+									Class = "opel"
+								}
+								elseif ( Hollows_ratio > 193.000000 ) then
+								{
+									Class = "saab"
+								}
+							}
+							elseif ( Major_kurtosis > 187.000000 ) then
+							{
+								Class = "opel"
+							}
+						}
+						elseif ( Minor_skewness > 3.000000 ) then
+						{
+							Class = "opel"
+						}
+					}
+				}
+				elseif ( Major_skewness > 74.000000 ) then
+				{
+					Class = "opel"
+				}
+			}
+			elseif ( Compactness > 106.000000 ) then
+			{
+				if ( Major_skewness <= 69.000000 ) then
+				{
+					if ( Compactness <= 109.000000 ) then
+					{
+						if ( Gyration_radius <= 196.000000 ) then
+						{
+							Class = "opel"
+						}
+						elseif ( Gyration_radius > 196.000000 ) then
+						{
+							if ( Minor_kurtosis <= 5.000000 ) then
+							{
+								Class = "opel"
+							}
+							elseif ( Minor_kurtosis > 5.000000 ) then
+							{
+								Class = "saab"
+							}
+						}
+					}
+					elseif ( Compactness > 109.000000 ) then
+					{
+						Class = "saab"
+					}
+				}
+				elseif ( Major_skewness > 69.000000 ) then
+				{
+					Class = "saab"
+				}
+			}
+		}
+		elseif ( Minor_variance > 721.000000 ) then
+		{
+			Class = "opel"
+		}
+	}
+}
+elseif ( Elongatedness > 41.000000 ) then
+{
+	if ( Max_length_aspect_ratio <= 8.000000 ) then
+	{
+		if ( Minor_variance <= 305.000000 ) then
+		{
+			if ( Compactness <= 82.000000 ) then
+			{
+				if ( Max_length_aspect_ratio <= 6.000000 ) then
+				{
+					Class = "opel"
+				}
+				elseif ( Max_length_aspect_ratio > 6.000000 ) then
+				{
+					Class = "saab"
+				}
+			}
+			elseif ( Compactness > 82.000000 ) then
+			{
+				if ( Length_rectangular <= 138.000000 ) then
+				{
+					if ( Praxis_rectangular <= 17.000000 ) then
+					{
+						if ( Minor_skewness <= 18.000000 ) then
+						{
+							if ( Length_rectangular <= 121.000000 ) then
+							{
+								Class = "saab"
+							}
+							elseif ( Length_rectangular > 121.000000 ) then
+							{
+								Class = "van"
+							}
+						}
+						elseif ( Minor_skewness > 18.000000 ) then
+						{
+							Class = "opel"
+						}
+					}
+					elseif ( Praxis_rectangular > 17.000000 ) then
+					{
+						if ( Praxis_rectangular <= 18.000000 ) then
+						{
+							if ( Length_rectangular <= 128.000000 ) then
+							{
+								if ( Hollows_ratio <= 186.000000 ) then
+								{
+									Class = "saab"
+								}
+								elseif ( Hollows_ratio > 186.000000 ) then
+								{
+									if ( Length_rectangular <= 125.000000 ) then
+									{
+										if ( Elongatedness <= 50.000000 ) then
+										{
+											Class = "saab"
+										}
+										elseif ( Elongatedness > 50.000000 ) then
+										{
+											Class = "opel"
+										}
+									}
+									elseif ( Length_rectangular > 125.000000 ) then
+									{
+										Class = "opel"
+									}
+								}
+							}
+							elseif ( Length_rectangular > 128.000000 ) then
+							{
+								if ( Gyration_radius <= 138.000000 ) then
+								{
+									if ( Max_length_aspect_ratio <= 6.000000 ) then
+									{
+										if ( Major_variance <= 152.000000 ) then
+										{
+											Class = "van"
+										}
+										elseif ( Major_variance > 152.000000 ) then
+										{
+											Class = "saab"
+										}
+									}
+									elseif ( Max_length_aspect_ratio > 6.000000 ) then
+									{
+										Class = "van"
+									}
+								}
+								elseif ( Gyration_radius > 138.000000 ) then
+								{
+									if ( Praxis_aspect_ratio <= 54.000000 ) then
+									{
+										Class = "van"
+									}
+									elseif ( Praxis_aspect_ratio > 54.000000 ) then
+									{
+										if ( Minor_kurtosis <= 6.000000 ) then
+										{
+											Class = "opel"
+										}
+										elseif ( Minor_kurtosis > 6.000000 ) then
+										{
+											if ( Praxis_aspect_ratio <= 60.000000 ) then
+											{
+												Class = "saab"
+											}
+											elseif ( Praxis_aspect_ratio > 60.000000 ) then
+											{
+												Class = "opel"
+											}
+										}
+									}
+								}
+							}
+						}
+						elseif ( Praxis_rectangular > 18.000000 ) then
+						{
+							Class = "saab"
+						}
+					}
+				}
+				elseif ( Length_rectangular > 138.000000 ) then
+				{
+					Class = "van"
+				}
+			}
+		}
+		elseif ( Minor_variance > 305.000000 ) then
+		{
+			if ( Distance_circularity <= 76.000000 ) then
+			{
+				if ( Minor_skewness <= 10.000000 ) then
+				{
+					if ( Major_skewness <= 64.000000 ) then
+					{
+						if ( Circularity <= 35.000000 ) then
+						{
+							Class = "opel"
+						}
+						elseif ( Circularity > 35.000000 ) then
+						{
+							Class = "saab"
+						}
+					}
+					elseif ( Major_skewness > 64.000000 ) then
+					{
+						if ( Circularity <= 40.000000 ) then
+						{
+							if ( Major_kurtosis <= 191.000000 ) then
+							{
+								Class = "saab"
+							}
+							elseif ( Major_kurtosis > 191.000000 ) then
+							{
+								Class = "bus"
+							}
+						}
+						elseif ( Circularity > 40.000000 ) then
+						{
+							if ( Minor_variance <= 308.000000 ) then
+							{
+								Class = "van"
+							}
+							elseif ( Minor_variance > 308.000000 ) then
+							{
+								Class = "bus"
+							}
+						}
+					}
+				}
+				elseif ( Minor_skewness > 10.000000 ) then
+				{
+					if ( Praxis_aspect_ratio <= 62.000000 ) then
+					{
+						if ( Praxis_rectangular <= 19.000000 ) then
+						{
+							if ( Major_variance <= 165.000000 ) then
+							{
+								Class = "saab"
+							}
+							elseif ( Major_variance > 165.000000 ) then
+							{
+								if ( Circularity <= 42.000000 ) then
+								{
+									Class = "opel"
+								}
+								elseif ( Circularity > 42.000000 ) then
+								{
+									if ( Major_variance <= 171.000000 ) then
+									{
+										Class = "opel"
+									}
+									elseif ( Major_variance > 171.000000 ) then
+									{
+										Class = "saab"
+									}
+								}
+							}
+						}
+						elseif ( Praxis_rectangular > 19.000000 ) then
+						{
+							Class = "opel"
+						}
+					}
+					elseif ( Praxis_aspect_ratio > 62.000000 ) then
+					{
+						Class = "bus"
+					}
+				}
+			}
+			elseif ( Distance_circularity > 76.000000 ) then
+			{
+				if ( Praxis_aspect_ratio <= 61.000000 ) then
+				{
+					if ( Length_rectangular <= 145.000000 ) then
+					{
+						if ( Gyration_radius <= 132.000000 ) then
+						{
+							Class = "saab"
+						}
+						elseif ( Gyration_radius > 132.000000 ) then
+						{
+							if ( Compactness <= 84.000000 ) then
+							{
+								if ( Compactness <= 83.000000 ) then
+								{
+									Class = "opel"
+								}
+								elseif ( Compactness > 83.000000 ) then
+								{
+									Class = "saab"
+								}
+							}
+							elseif ( Compactness > 84.000000 ) then
+							{
+								Class = "opel"
+							}
+						}
+					}
+					elseif ( Length_rectangular > 145.000000 ) then
+					{
+						Class = "saab"
+					}
+				}
+				elseif ( Praxis_aspect_ratio > 61.000000 ) then
+				{
+					if ( Minor_skewness <= 4.000000 ) then
+					{
+						Class = "van"
+					}
+					elseif ( Minor_skewness > 4.000000 ) then
+					{
+						Class = "saab"
+					}
+				}
+			}
+		}
+	}
+	elseif ( Max_length_aspect_ratio > 8.000000 ) then
+	{
+		if ( Hollows_ratio <= 189.000000 ) then
+		{
+			Class = "bus"
+		}
+		elseif ( Hollows_ratio > 189.000000 ) then
+		{
+			if ( Major_skewness <= 63.000000 ) then
+			{
+				Class = "saab"
+			}
+			elseif ( Major_skewness > 63.000000 ) then
+			{
+				Class = "van"
+			}
+		}
+	}
+}
+
+@TotalNumberOfNodes 60
+@NumberOfLeafs 61
+@TotalNumberOfNodes 60
+@NumberOfAntecedentsByRule 7.557377049180328
+
+@NumberOfItemsetsTraining 761
+@NumberOfCorrectlyClassifiedTraining 678
+@PercentageOfCorrectlyClassifiedTraining 89.0933%
+@NumberOfInCorrectlyClassifiedTraining 83
+@PercentageOfInCorrectlyClassifiedTraining 10.906702%
+
+@NumberOfItemsetsTest 85
+@NumberOfCorrectlyClassifiedTest 61
+@PercentageOfCorrectlyClassifiedTest 71.76471%
+@NumberOfInCorrectlyClassifiedTest 24
+@PercentageOfInCorrectlyClassifiedTest 28.235294%
+
+@ElapsedTime 0:0:0

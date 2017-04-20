@@ -1,0 +1,308 @@
+@relation  flare
+@attribute LargestSpotSize{A,R,S,X,K,H}
+@attribute SpotDistribution{X,O,I,C}
+@attribute Activity{1,2}
+@attribute Evolution{1,2,3}
+@attribute Prev24Hour{1,2,3}
+@attribute HistComplex{1,2}
+@attribute BecomeHist{1,2}
+@attribute Area{1,2}
+@attribute C-class{0,1,2,3,4,5,6,7,8}
+@attribute M-class{0,1,2,3,4,5}
+@attribute X-class{0,1,2}
+@attribute Class{H,D,C,B,E,F}
+@inputs LargestSpotSize,SpotDistribution,Activity,Evolution,Prev24Hour,HistComplex,BecomeHist,Area,C-class,M-class,X-class
+@outputs Class
+@data
+
+@decisiontree
+
+if ( SpotDistribution = X ) then
+{
+	Class = "H"
+}
+elseif ( SpotDistribution = O ) then
+{
+	if ( LargestSpotSize = A ) then
+	{
+		if ( C-class = 0 ) then
+		{
+			if ( Activity = 1 ) then
+			{
+				if ( Evolution = 1 ) then
+				{
+					Class = "D"
+				}
+				elseif ( Evolution = 2 ) then
+				{
+					Class = "C"
+				}
+				elseif ( Evolution = 3 ) then
+				{
+					Class = "D"
+				}
+			}
+			elseif ( Activity = 2 ) then
+			{
+				if ( Prev24Hour = 1 ) then
+				{
+					if ( HistComplex = 1 ) then
+					{
+						Class = "D"
+					}
+					elseif ( HistComplex = 2 ) then
+					{
+						Class = "E"
+					}
+				}
+				elseif ( Prev24Hour = 2 ) then
+				{
+					Class = "D"
+				}
+				elseif ( Prev24Hour = 3 ) then
+				{
+					Class = "D"
+				}
+			}
+		}
+		elseif ( C-class = 1 ) then
+		{
+			if ( Evolution = 1 ) then
+			{
+				Class = "D"
+			}
+			elseif ( Evolution = 2 ) then
+			{
+				Class = "E"
+			}
+			elseif ( Evolution = 3 ) then
+			{
+				Class = "D"
+			}
+		}
+		elseif ( C-class = 2 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 3 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 4 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 5 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 6 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 7 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 8 ) then
+		{
+			Class = "D"
+		}
+	}
+	elseif ( LargestSpotSize = R ) then
+	{
+		if ( C-class = 0 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 1 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 2 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 3 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 4 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 5 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 6 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 7 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 8 ) then
+		{
+			Class = "C"
+		}
+	}
+	elseif ( LargestSpotSize = S ) then
+	{
+		Class = "C"
+	}
+	elseif ( LargestSpotSize = X ) then
+	{
+		Class = "B"
+	}
+	elseif ( LargestSpotSize = K ) then
+	{
+		Class = "C"
+	}
+	elseif ( LargestSpotSize = H ) then
+	{
+		if ( Activity = 1 ) then
+		{
+			if ( C-class = 0 ) then
+			{
+				Class = "D"
+			}
+			elseif ( C-class = 1 ) then
+			{
+				Class = "C"
+			}
+			elseif ( C-class = 2 ) then
+			{
+				Class = "D"
+			}
+			elseif ( C-class = 3 ) then
+			{
+				Class = "D"
+			}
+			elseif ( C-class = 4 ) then
+			{
+				Class = "D"
+			}
+			elseif ( C-class = 5 ) then
+			{
+				Class = "D"
+			}
+			elseif ( C-class = 6 ) then
+			{
+				Class = "D"
+			}
+			elseif ( C-class = 7 ) then
+			{
+				Class = "D"
+			}
+			elseif ( C-class = 8 ) then
+			{
+				Class = "D"
+			}
+		}
+		elseif ( Activity = 2 ) then
+		{
+			Class = "E"
+		}
+	}
+}
+elseif ( SpotDistribution = I ) then
+{
+	if ( LargestSpotSize = A ) then
+	{
+		if ( Area = 1 ) then
+		{
+			Class = "D"
+		}
+		elseif ( Area = 2 ) then
+		{
+			Class = "F"
+		}
+	}
+	elseif ( LargestSpotSize = R ) then
+	{
+		Class = "D"
+	}
+	elseif ( LargestSpotSize = S ) then
+	{
+		if ( C-class = 0 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 1 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 2 ) then
+		{
+			Class = "F"
+		}
+		elseif ( C-class = 3 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 4 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 5 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 6 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 7 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 8 ) then
+		{
+			Class = "D"
+		}
+	}
+	elseif ( LargestSpotSize = X ) then
+	{
+		Class = "B"
+	}
+	elseif ( LargestSpotSize = K ) then
+	{
+		if ( Area = 1 ) then
+		{
+			Class = "D"
+		}
+		elseif ( Area = 2 ) then
+		{
+			Class = "E"
+		}
+	}
+	elseif ( LargestSpotSize = H ) then
+	{
+		Class = "E"
+	}
+}
+elseif ( SpotDistribution = C ) then
+{
+	Class = "E"
+}
+
+@TotalNumberOfNodes 15
+@NumberOfLeafs 57
+@TotalNumberOfNodes 15
+@NumberOfAntecedentsByRule 3.3157894736842106
+
+@NumberOfItemsetsTraining 959
+@NumberOfCorrectlyClassifiedTraining 758
+@PercentageOfCorrectlyClassifiedTraining 79.040665%
+@NumberOfInCorrectlyClassifiedTraining 201
+@PercentageOfInCorrectlyClassifiedTraining 20.959333%
+
+@NumberOfItemsetsTest 107
+@NumberOfCorrectlyClassifiedTest 79
+@PercentageOfCorrectlyClassifiedTest 73.83178%
+@NumberOfInCorrectlyClassifiedTest 28
+@PercentageOfInCorrectlyClassifiedTest 26.168224%
+
+@ElapsedTime 0:0:0

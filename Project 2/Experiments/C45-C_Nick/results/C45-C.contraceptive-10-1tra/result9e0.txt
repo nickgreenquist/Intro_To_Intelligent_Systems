@@ -1,0 +1,856 @@
+@relation  contraceptive
+@attribute Wife_age integer[16,49]
+@attribute Wife_education integer[1,4]
+@attribute Husband_education integer[1,4]
+@attribute Children integer[0,16]
+@attribute Wife_religion integer[0,1]
+@attribute Wife_working integer[0,1]
+@attribute Husband_occupation integer[1,4]
+@attribute Standard-of-living integer[1,4]
+@attribute Media_exposure integer[0,1]
+@attribute Contraceptive_method{1,2,3}
+@inputs Wife_age,Wife_education,Husband_education,Children,Wife_religion,Wife_working,Husband_occupation,Standard-of-living,Media_exposure
+@outputs Contraceptive_method
+@data
+
+@decisiontree
+
+if ( Children <= 0.000000 ) then
+{
+	Contraceptive_method = "1"
+}
+elseif ( Children > 0.000000 ) then
+{
+	if ( Wife_education <= 3.000000 ) then
+	{
+		if ( Wife_age <= 37.000000 ) then
+		{
+			if ( Children <= 2.000000 ) then
+			{
+				if ( Husband_occupation <= 3.000000 ) then
+				{
+					if ( Wife_age <= 30.000000 ) then
+					{
+						if ( Husband_occupation <= 1.000000 ) then
+						{
+							if ( Husband_education <= 3.000000 ) then
+							{
+								Contraceptive_method = "1"
+							}
+							elseif ( Husband_education > 3.000000 ) then
+							{
+								if ( Children <= 1.000000 ) then
+								{
+									Contraceptive_method = "3"
+								}
+								elseif ( Children > 1.000000 ) then
+								{
+									if ( Standard-of-living <= 3.000000 ) then
+									{
+										Contraceptive_method = "3"
+									}
+									elseif ( Standard-of-living > 3.000000 ) then
+									{
+										if ( Wife_age <= 25.000000 ) then
+										{
+											Contraceptive_method = "1"
+										}
+										elseif ( Wife_age > 25.000000 ) then
+										{
+											Contraceptive_method = "2"
+										}
+									}
+								}
+							}
+						}
+						elseif ( Husband_occupation > 1.000000 ) then
+						{
+							if ( Media_exposure <= 0.000000 ) then
+							{
+								if ( Husband_occupation <= 2.000000 ) then
+								{
+									if ( Children <= 1.000000 ) then
+									{
+										Contraceptive_method = "1"
+									}
+									elseif ( Children > 1.000000 ) then
+									{
+										if ( Wife_age <= 29.000000 ) then
+										{
+											if ( Husband_education <= 2.000000 ) then
+											{
+												Contraceptive_method = "3"
+											}
+											elseif ( Husband_education > 2.000000 ) then
+											{
+												if ( Wife_age <= 24.000000 ) then
+												{
+													if ( Wife_age <= 21.000000 ) then
+													{
+														Contraceptive_method = "3"
+													}
+													elseif ( Wife_age > 21.000000 ) then
+													{
+														Contraceptive_method = "1"
+													}
+												}
+												elseif ( Wife_age > 24.000000 ) then
+												{
+													Contraceptive_method = "3"
+												}
+											}
+										}
+										elseif ( Wife_age > 29.000000 ) then
+										{
+											Contraceptive_method = "1"
+										}
+									}
+								}
+								elseif ( Husband_occupation > 2.000000 ) then
+								{
+									if ( Standard-of-living <= 3.000000 ) then
+									{
+										if ( Wife_working <= 0.000000 ) then
+										{
+											if ( Wife_education <= 2.000000 ) then
+											{
+												Contraceptive_method = "3"
+											}
+											elseif ( Wife_education > 2.000000 ) then
+											{
+												Contraceptive_method = "1"
+											}
+										}
+										elseif ( Wife_working > 0.000000 ) then
+										{
+											if ( Standard-of-living <= 1.000000 ) then
+											{
+												Contraceptive_method = "1"
+											}
+											elseif ( Standard-of-living > 1.000000 ) then
+											{
+												if ( Wife_age <= 28.000000 ) then
+												{
+													if ( Children <= 1.000000 ) then
+													{
+														Contraceptive_method = "3"
+													}
+													elseif ( Children > 1.000000 ) then
+													{
+														if ( Wife_age <= 20.000000 ) then
+														{
+															Contraceptive_method = "1"
+														}
+														elseif ( Wife_age > 20.000000 ) then
+														{
+															if ( Husband_education <= 3.000000 ) then
+															{
+																Contraceptive_method = "1"
+															}
+															elseif ( Husband_education > 3.000000 ) then
+															{
+																Contraceptive_method = "3"
+															}
+														}
+													}
+												}
+												elseif ( Wife_age > 28.000000 ) then
+												{
+													Contraceptive_method = "3"
+												}
+											}
+										}
+									}
+									elseif ( Standard-of-living > 3.000000 ) then
+									{
+										if ( Husband_education <= 1.000000 ) then
+										{
+											Contraceptive_method = "2"
+										}
+										elseif ( Husband_education > 1.000000 ) then
+										{
+											if ( Husband_education <= 2.000000 ) then
+											{
+												Contraceptive_method = "3"
+											}
+											elseif ( Husband_education > 2.000000 ) then
+											{
+												if ( Wife_working <= 0.000000 ) then
+												{
+													if ( Wife_education <= 2.000000 ) then
+													{
+														Contraceptive_method = "1"
+													}
+													elseif ( Wife_education > 2.000000 ) then
+													{
+														Contraceptive_method = "2"
+													}
+												}
+												elseif ( Wife_working > 0.000000 ) then
+												{
+													Contraceptive_method = "1"
+												}
+											}
+										}
+									}
+								}
+							}
+							elseif ( Media_exposure > 0.000000 ) then
+							{
+								if ( Wife_age <= 21.000000 ) then
+								{
+									Contraceptive_method = "3"
+								}
+								elseif ( Wife_age > 21.000000 ) then
+								{
+									Contraceptive_method = "1"
+								}
+							}
+						}
+					}
+					elseif ( Wife_age > 30.000000 ) then
+					{
+						Contraceptive_method = "1"
+					}
+				}
+				elseif ( Husband_occupation > 3.000000 ) then
+				{
+					if ( Wife_age <= 25.000000 ) then
+					{
+						Contraceptive_method = "2"
+					}
+					elseif ( Wife_age > 25.000000 ) then
+					{
+						Contraceptive_method = "1"
+					}
+				}
+			}
+			elseif ( Children > 2.000000 ) then
+			{
+				if ( Husband_occupation <= 1.000000 ) then
+				{
+					if ( Wife_religion <= 0.000000 ) then
+					{
+						Contraceptive_method = "2"
+					}
+					elseif ( Wife_religion > 0.000000 ) then
+					{
+						if ( Children <= 3.000000 ) then
+						{
+							Contraceptive_method = "2"
+						}
+						elseif ( Children > 3.000000 ) then
+						{
+							if ( Standard-of-living <= 3.000000 ) then
+							{
+								if ( Media_exposure <= 0.000000 ) then
+								{
+									if ( Standard-of-living <= 2.000000 ) then
+									{
+										Contraceptive_method = "3"
+									}
+									elseif ( Standard-of-living > 2.000000 ) then
+									{
+										if ( Husband_education <= 3.000000 ) then
+										{
+											Contraceptive_method = "2"
+										}
+										elseif ( Husband_education > 3.000000 ) then
+										{
+											Contraceptive_method = "1"
+										}
+									}
+								}
+								elseif ( Media_exposure > 0.000000 ) then
+								{
+									Contraceptive_method = "2"
+								}
+							}
+							elseif ( Standard-of-living > 3.000000 ) then
+							{
+								if ( Wife_age <= 33.000000 ) then
+								{
+									Contraceptive_method = "1"
+								}
+								elseif ( Wife_age > 33.000000 ) then
+								{
+									Contraceptive_method = "3"
+								}
+							}
+						}
+					}
+				}
+				elseif ( Husband_occupation > 1.000000 ) then
+				{
+					if ( Wife_religion <= 0.000000 ) then
+					{
+						if ( Husband_occupation <= 2.000000 ) then
+						{
+							Contraceptive_method = "1"
+						}
+						elseif ( Husband_occupation > 2.000000 ) then
+						{
+							if ( Husband_education <= 3.000000 ) then
+							{
+								Contraceptive_method = "3"
+							}
+							elseif ( Husband_education > 3.000000 ) then
+							{
+								if ( Wife_education <= 2.000000 ) then
+								{
+									Contraceptive_method = "2"
+								}
+								elseif ( Wife_education > 2.000000 ) then
+								{
+									Contraceptive_method = "3"
+								}
+							}
+						}
+					}
+					elseif ( Wife_religion > 0.000000 ) then
+					{
+						if ( Children <= 5.000000 ) then
+						{
+							if ( Standard-of-living <= 2.000000 ) then
+							{
+								if ( Husband_education <= 1.000000 ) then
+								{
+									if ( Wife_education <= 1.000000 ) then
+									{
+										Contraceptive_method = "1"
+									}
+									elseif ( Wife_education > 1.000000 ) then
+									{
+										Contraceptive_method = "2"
+									}
+								}
+								elseif ( Husband_education > 1.000000 ) then
+								{
+									if ( Wife_working <= 0.000000 ) then
+									{
+										if ( Husband_education <= 3.000000 ) then
+										{
+											if ( Wife_education <= 2.000000 ) then
+											{
+												if ( Standard-of-living <= 1.000000 ) then
+												{
+													Contraceptive_method = "1"
+												}
+												elseif ( Standard-of-living > 1.000000 ) then
+												{
+													if ( Wife_age <= 29.000000 ) then
+													{
+														Contraceptive_method = "3"
+													}
+													elseif ( Wife_age > 29.000000 ) then
+													{
+														Contraceptive_method = "1"
+													}
+												}
+											}
+											elseif ( Wife_education > 2.000000 ) then
+											{
+												Contraceptive_method = "3"
+											}
+										}
+										elseif ( Husband_education > 3.000000 ) then
+										{
+											Contraceptive_method = "1"
+										}
+									}
+									elseif ( Wife_working > 0.000000 ) then
+									{
+										if ( Wife_age <= 33.000000 ) then
+										{
+											if ( Children <= 3.000000 ) then
+											{
+												if ( Wife_education <= 1.000000 ) then
+												{
+													Contraceptive_method = "3"
+												}
+												elseif ( Wife_education > 1.000000 ) then
+												{
+													if ( Husband_education <= 2.000000 ) then
+													{
+														Contraceptive_method = "1"
+													}
+													elseif ( Husband_education > 2.000000 ) then
+													{
+														if ( Wife_education <= 2.000000 ) then
+														{
+															Contraceptive_method = "1"
+														}
+														elseif ( Wife_education > 2.000000 ) then
+														{
+															Contraceptive_method = "3"
+														}
+													}
+												}
+											}
+											elseif ( Children > 3.000000 ) then
+											{
+												if ( Media_exposure <= 0.000000 ) then
+												{
+													if ( Wife_education <= 1.000000 ) then
+													{
+														Contraceptive_method = "1"
+													}
+													elseif ( Wife_education > 1.000000 ) then
+													{
+														Contraceptive_method = "3"
+													}
+												}
+												elseif ( Media_exposure > 0.000000 ) then
+												{
+													Contraceptive_method = "1"
+												}
+											}
+										}
+										elseif ( Wife_age > 33.000000 ) then
+										{
+											if ( Wife_education <= 2.000000 ) then
+											{
+												Contraceptive_method = "3"
+											}
+											elseif ( Wife_education > 2.000000 ) then
+											{
+												Contraceptive_method = "2"
+											}
+										}
+									}
+								}
+							}
+							elseif ( Standard-of-living > 2.000000 ) then
+							{
+								Contraceptive_method = "3"
+							}
+						}
+						elseif ( Children > 5.000000 ) then
+						{
+							if ( Media_exposure <= 0.000000 ) then
+							{
+								if ( Husband_occupation <= 2.000000 ) then
+								{
+									if ( Wife_education <= 2.000000 ) then
+									{
+										Contraceptive_method = "3"
+									}
+									elseif ( Wife_education > 2.000000 ) then
+									{
+										Contraceptive_method = "1"
+									}
+								}
+								elseif ( Husband_occupation > 2.000000 ) then
+								{
+									if ( Husband_education <= 2.000000 ) then
+									{
+										Contraceptive_method = "2"
+									}
+									elseif ( Husband_education > 2.000000 ) then
+									{
+										Contraceptive_method = "3"
+									}
+								}
+							}
+							elseif ( Media_exposure > 0.000000 ) then
+							{
+								if ( Wife_education <= 1.000000 ) then
+								{
+									Contraceptive_method = "2"
+								}
+								elseif ( Wife_education > 1.000000 ) then
+								{
+									Contraceptive_method = "1"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		elseif ( Wife_age > 37.000000 ) then
+		{
+			Contraceptive_method = "1"
+		}
+	}
+	elseif ( Wife_education > 3.000000 ) then
+	{
+		if ( Children <= 2.000000 ) then
+		{
+			if ( Wife_age <= 41.000000 ) then
+			{
+				if ( Husband_education <= 3.000000 ) then
+				{
+					Contraceptive_method = "3"
+				}
+				elseif ( Husband_education > 3.000000 ) then
+				{
+					if ( Husband_occupation <= 1.000000 ) then
+					{
+						if ( Wife_religion <= 0.000000 ) then
+						{
+							if ( Wife_working <= 0.000000 ) then
+							{
+								if ( Wife_age <= 31.000000 ) then
+								{
+									Contraceptive_method = "2"
+								}
+								elseif ( Wife_age > 31.000000 ) then
+								{
+									Contraceptive_method = "3"
+								}
+							}
+							elseif ( Wife_working > 0.000000 ) then
+							{
+								if ( Wife_age <= 27.000000 ) then
+								{
+									Contraceptive_method = "2"
+								}
+								elseif ( Wife_age > 27.000000 ) then
+								{
+									if ( Children <= 1.000000 ) then
+									{
+										if ( Wife_age <= 33.000000 ) then
+										{
+											Contraceptive_method = "1"
+										}
+										elseif ( Wife_age > 33.000000 ) then
+										{
+											Contraceptive_method = "3"
+										}
+									}
+									elseif ( Children > 1.000000 ) then
+									{
+										Contraceptive_method = "1"
+									}
+								}
+							}
+						}
+						elseif ( Wife_religion > 0.000000 ) then
+						{
+							if ( Wife_age <= 25.000000 ) then
+							{
+								if ( Wife_age <= 23.000000 ) then
+								{
+									if ( Wife_age <= 20.000000 ) then
+									{
+										Contraceptive_method = "3"
+									}
+									elseif ( Wife_age > 20.000000 ) then
+									{
+										Contraceptive_method = "2"
+									}
+								}
+								elseif ( Wife_age > 23.000000 ) then
+								{
+									Contraceptive_method = "3"
+								}
+							}
+							elseif ( Wife_age > 25.000000 ) then
+							{
+								if ( Children <= 1.000000 ) then
+								{
+									Contraceptive_method = "1"
+								}
+								elseif ( Children > 1.000000 ) then
+								{
+									if ( Standard-of-living <= 3.000000 ) then
+									{
+										if ( Wife_age <= 30.000000 ) then
+										{
+											Contraceptive_method = "2"
+										}
+										elseif ( Wife_age > 30.000000 ) then
+										{
+											Contraceptive_method = "1"
+										}
+									}
+									elseif ( Standard-of-living > 3.000000 ) then
+									{
+										Contraceptive_method = "1"
+									}
+								}
+							}
+						}
+					}
+					elseif ( Husband_occupation > 1.000000 ) then
+					{
+						if ( Husband_occupation <= 2.000000 ) then
+						{
+							if ( Standard-of-living <= 2.000000 ) then
+							{
+								Contraceptive_method = "2"
+							}
+							elseif ( Standard-of-living > 2.000000 ) then
+							{
+								Contraceptive_method = "3"
+							}
+						}
+						elseif ( Husband_occupation > 2.000000 ) then
+						{
+							if ( Wife_working <= 0.000000 ) then
+							{
+								if ( Wife_age <= 25.000000 ) then
+								{
+									Contraceptive_method = "1"
+								}
+								elseif ( Wife_age > 25.000000 ) then
+								{
+									if ( Wife_age <= 33.000000 ) then
+									{
+										Contraceptive_method = "3"
+									}
+									elseif ( Wife_age > 33.000000 ) then
+									{
+										Contraceptive_method = "2"
+									}
+								}
+							}
+							elseif ( Wife_working > 0.000000 ) then
+							{
+								if ( Wife_religion <= 0.000000 ) then
+								{
+									if ( Children <= 1.000000 ) then
+									{
+										Contraceptive_method = "3"
+									}
+									elseif ( Children > 1.000000 ) then
+									{
+										Contraceptive_method = "1"
+									}
+								}
+								elseif ( Wife_religion > 0.000000 ) then
+								{
+									if ( Children <= 1.000000 ) then
+									{
+										if ( Standard-of-living <= 3.000000 ) then
+										{
+											Contraceptive_method = "3"
+										}
+										elseif ( Standard-of-living > 3.000000 ) then
+										{
+											Contraceptive_method = "1"
+										}
+									}
+									elseif ( Children > 1.000000 ) then
+									{
+										if ( Standard-of-living <= 2.000000 ) then
+										{
+											Contraceptive_method = "1"
+										}
+										elseif ( Standard-of-living > 2.000000 ) then
+										{
+											Contraceptive_method = "3"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			elseif ( Wife_age > 41.000000 ) then
+			{
+				Contraceptive_method = "1"
+			}
+		}
+		elseif ( Children > 2.000000 ) then
+		{
+			if ( Wife_age <= 28.000000 ) then
+			{
+				if ( Husband_occupation <= 2.000000 ) then
+				{
+					Contraceptive_method = "1"
+				}
+				elseif ( Husband_occupation > 2.000000 ) then
+				{
+					Contraceptive_method = "3"
+				}
+			}
+			elseif ( Wife_age > 28.000000 ) then
+			{
+				if ( Wife_age <= 42.000000 ) then
+				{
+					if ( Children <= 5.000000 ) then
+					{
+						if ( Husband_education <= 3.000000 ) then
+						{
+							if ( Standard-of-living <= 2.000000 ) then
+							{
+								Contraceptive_method = "1"
+							}
+							elseif ( Standard-of-living > 2.000000 ) then
+							{
+								Contraceptive_method = "3"
+							}
+						}
+						elseif ( Husband_education > 3.000000 ) then
+						{
+							if ( Wife_age <= 35.000000 ) then
+							{
+								if ( Wife_working <= 0.000000 ) then
+								{
+									if ( Wife_age <= 33.000000 ) then
+									{
+										Contraceptive_method = "3"
+									}
+									elseif ( Wife_age > 33.000000 ) then
+									{
+										Contraceptive_method = "2"
+									}
+								}
+								elseif ( Wife_working > 0.000000 ) then
+								{
+									Contraceptive_method = "2"
+								}
+							}
+							elseif ( Wife_age > 35.000000 ) then
+							{
+								if ( Husband_occupation <= 2.000000 ) then
+								{
+									if ( Husband_occupation <= 1.000000 ) then
+									{
+										Contraceptive_method = "2"
+									}
+									elseif ( Husband_occupation > 1.000000 ) then
+									{
+										if ( Wife_working <= 0.000000 ) then
+										{
+											Contraceptive_method = "2"
+										}
+										elseif ( Wife_working > 0.000000 ) then
+										{
+											if ( Children <= 3.000000 ) then
+											{
+												Contraceptive_method = "3"
+											}
+											elseif ( Children > 3.000000 ) then
+											{
+												Contraceptive_method = "2"
+											}
+										}
+									}
+								}
+								elseif ( Husband_occupation > 2.000000 ) then
+								{
+									if ( Wife_age <= 39.000000 ) then
+									{
+										if ( Wife_religion <= 0.000000 ) then
+										{
+											Contraceptive_method = "3"
+										}
+										elseif ( Wife_religion > 0.000000 ) then
+										{
+											Contraceptive_method = "2"
+										}
+									}
+									elseif ( Wife_age > 39.000000 ) then
+									{
+										Contraceptive_method = "1"
+									}
+								}
+							}
+						}
+					}
+					elseif ( Children > 5.000000 ) then
+					{
+						if ( Standard-of-living <= 2.000000 ) then
+						{
+							Contraceptive_method = "3"
+						}
+						elseif ( Standard-of-living > 2.000000 ) then
+						{
+							Contraceptive_method = "2"
+						}
+					}
+				}
+				elseif ( Wife_age > 42.000000 ) then
+				{
+					if ( Children <= 10.000000 ) then
+					{
+						if ( Wife_age <= 48.000000 ) then
+						{
+							if ( Children <= 7.000000 ) then
+							{
+								if ( Children <= 5.000000 ) then
+								{
+									if ( Husband_occupation <= 2.000000 ) then
+									{
+										if ( Husband_occupation <= 1.000000 ) then
+										{
+											if ( Standard-of-living <= 3.000000 ) then
+											{
+												Contraceptive_method = "3"
+											}
+											elseif ( Standard-of-living > 3.000000 ) then
+											{
+												if ( Wife_age <= 43.000000 ) then
+												{
+													if ( Wife_religion <= 0.000000 ) then
+													{
+														Contraceptive_method = "2"
+													}
+													elseif ( Wife_religion > 0.000000 ) then
+													{
+														Contraceptive_method = "1"
+													}
+												}
+												elseif ( Wife_age > 43.000000 ) then
+												{
+													Contraceptive_method = "2"
+												}
+											}
+										}
+										elseif ( Husband_occupation > 1.000000 ) then
+										{
+											Contraceptive_method = "1"
+										}
+									}
+									elseif ( Husband_occupation > 2.000000 ) then
+									{
+										Contraceptive_method = "3"
+									}
+								}
+								elseif ( Children > 5.000000 ) then
+								{
+									Contraceptive_method = "2"
+								}
+							}
+							elseif ( Children > 7.000000 ) then
+							{
+								Contraceptive_method = "1"
+							}
+						}
+						elseif ( Wife_age > 48.000000 ) then
+						{
+							Contraceptive_method = "1"
+						}
+					}
+					elseif ( Children > 10.000000 ) then
+					{
+						Contraceptive_method = "3"
+					}
+				}
+			}
+		}
+	}
+}
+
+@TotalNumberOfNodes 117
+@NumberOfLeafs 118
+@TotalNumberOfNodes 117
+@NumberOfAntecedentsByRule 10.26271186440678
+
+@NumberOfItemsetsTraining 1326
+@NumberOfCorrectlyClassifiedTraining 951
+@PercentageOfCorrectlyClassifiedTraining 71.71946%
+@NumberOfInCorrectlyClassifiedTraining 375
+@PercentageOfInCorrectlyClassifiedTraining 28.280542%
+
+@NumberOfItemsetsTest 147
+@NumberOfCorrectlyClassifiedTest 75
+@PercentageOfCorrectlyClassifiedTest 51.02041%
+@NumberOfInCorrectlyClassifiedTest 72
+@PercentageOfInCorrectlyClassifiedTest 48.97959%
+
+@ElapsedTime 0:0:0

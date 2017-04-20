@@ -1,0 +1,444 @@
+@relation  tic-tac-toe
+@attribute TopLeft{x,o,b}
+@attribute TopMiddle{x,o,b}
+@attribute TopRight{x,o,b}
+@attribute MiddleLeft{x,o,b}
+@attribute MiddleMiddle{o,b,x}
+@attribute MiddleRight{o,b,x}
+@attribute BottomLeft{x,o,b}
+@attribute BottomMiddle{o,x,b}
+@attribute BottomRight{o,x,b}
+@attribute Class{positive,negative}
+@inputs TopLeft,TopMiddle,TopRight,MiddleLeft,MiddleMiddle,MiddleRight,BottomLeft,BottomMiddle,BottomRight
+@outputs Class
+@data
+
+@decisiontree
+
+if ( MiddleMiddle = o ) then
+{
+	if ( BottomLeft = x ) then
+	{
+		if ( BottomRight = o ) then
+		{
+			if ( TopLeft = x ) then
+			{
+				Class = "positive"
+			}
+			elseif ( TopLeft = o ) then
+			{
+				Class = "negative"
+			}
+			elseif ( TopLeft = b ) then
+			{
+				Class = "negative"
+			}
+		}
+		elseif ( BottomRight = x ) then
+		{
+			if ( BottomMiddle = o ) then
+			{
+				if ( TopMiddle = x ) then
+				{
+					Class = "negative"
+				}
+				elseif ( TopMiddle = o ) then
+				{
+					Class = "negative"
+				}
+				elseif ( TopMiddle = b ) then
+				{
+					Class = "positive"
+				}
+			}
+			elseif ( BottomMiddle = x ) then
+			{
+				Class = "positive"
+			}
+			elseif ( BottomMiddle = b ) then
+			{
+				if ( MiddleLeft = x ) then
+				{
+					Class = "positive"
+				}
+				elseif ( MiddleLeft = o ) then
+				{
+					Class = "negative"
+				}
+				elseif ( MiddleLeft = b ) then
+				{
+					Class = "positive"
+				}
+			}
+		}
+		elseif ( BottomRight = b ) then
+		{
+			if ( TopLeft = x ) then
+			{
+				if ( MiddleLeft = x ) then
+				{
+					Class = "positive"
+				}
+				elseif ( MiddleLeft = o ) then
+				{
+					Class = "negative"
+				}
+				elseif ( MiddleLeft = b ) then
+				{
+					Class = "negative"
+				}
+			}
+			elseif ( TopLeft = o ) then
+			{
+				Class = "negative"
+			}
+			elseif ( TopLeft = b ) then
+			{
+				Class = "negative"
+			}
+		}
+	}
+	elseif ( BottomLeft = o ) then
+	{
+		if ( TopRight = x ) then
+		{
+			if ( BottomRight = o ) then
+			{
+				Class = "negative"
+			}
+			elseif ( BottomRight = x ) then
+			{
+				if ( MiddleRight = o ) then
+				{
+					Class = "negative"
+				}
+				elseif ( MiddleRight = b ) then
+				{
+					Class = "positive"
+				}
+				elseif ( MiddleRight = x ) then
+				{
+					Class = "positive"
+				}
+			}
+			elseif ( BottomRight = b ) then
+			{
+				Class = "positive"
+			}
+		}
+		elseif ( TopRight = o ) then
+		{
+			Class = "negative"
+		}
+		elseif ( TopRight = b ) then
+		{
+			Class = "negative"
+		}
+	}
+	elseif ( BottomLeft = b ) then
+	{
+		if ( TopRight = x ) then
+		{
+			if ( BottomMiddle = o ) then
+			{
+				if ( TopMiddle = x ) then
+				{
+					Class = "positive"
+				}
+				elseif ( TopMiddle = o ) then
+				{
+					Class = "negative"
+				}
+				elseif ( TopMiddle = b ) then
+				{
+					Class = "positive"
+				}
+			}
+			elseif ( BottomMiddle = x ) then
+			{
+				if ( MiddleRight = o ) then
+				{
+					Class = "negative"
+				}
+				elseif ( MiddleRight = b ) then
+				{
+					Class = "negative"
+				}
+				elseif ( MiddleRight = x ) then
+				{
+					if ( BottomRight = o ) then
+					{
+						Class = "negative"
+					}
+					elseif ( BottomRight = x ) then
+					{
+						Class = "positive"
+					}
+					elseif ( BottomRight = b ) then
+					{
+						Class = "positive"
+					}
+				}
+			}
+			elseif ( BottomMiddle = b ) then
+			{
+				if ( TopLeft = x ) then
+				{
+					Class = "positive"
+				}
+				elseif ( TopLeft = o ) then
+				{
+					if ( BottomRight = o ) then
+					{
+						Class = "negative"
+					}
+					elseif ( BottomRight = x ) then
+					{
+						Class = "positive"
+					}
+					elseif ( BottomRight = b ) then
+					{
+						Class = "positive"
+					}
+				}
+				elseif ( TopLeft = b ) then
+				{
+					Class = "positive"
+				}
+			}
+		}
+		elseif ( TopRight = o ) then
+		{
+			Class = "negative"
+		}
+		elseif ( TopRight = b ) then
+		{
+			Class = "negative"
+		}
+	}
+}
+elseif ( MiddleMiddle = b ) then
+{
+	if ( BottomLeft = x ) then
+	{
+		Class = "positive"
+	}
+	elseif ( BottomLeft = o ) then
+	{
+		if ( TopRight = x ) then
+		{
+			if ( BottomRight = o ) then
+			{
+				if ( BottomMiddle = o ) then
+				{
+					Class = "negative"
+				}
+				elseif ( BottomMiddle = x ) then
+				{
+					Class = "positive"
+				}
+				elseif ( BottomMiddle = b ) then
+				{
+					Class = "positive"
+				}
+			}
+			elseif ( BottomRight = x ) then
+			{
+				Class = "positive"
+			}
+			elseif ( BottomRight = b ) then
+			{
+				if ( TopLeft = x ) then
+				{
+					Class = "positive"
+				}
+				elseif ( TopLeft = o ) then
+				{
+					Class = "negative"
+				}
+				elseif ( TopLeft = b ) then
+				{
+					Class = "positive"
+				}
+			}
+		}
+		elseif ( TopRight = o ) then
+		{
+			Class = "negative"
+		}
+		elseif ( TopRight = b ) then
+		{
+			Class = "negative"
+		}
+	}
+	elseif ( BottomLeft = b ) then
+	{
+		if ( TopRight = x ) then
+		{
+			Class = "positive"
+		}
+		elseif ( TopRight = o ) then
+		{
+			Class = "negative"
+		}
+		elseif ( TopRight = b ) then
+		{
+			Class = "positive"
+		}
+	}
+}
+elseif ( MiddleMiddle = x ) then
+{
+	if ( TopRight = x ) then
+	{
+		if ( BottomLeft = x ) then
+		{
+			Class = "positive"
+		}
+		elseif ( BottomLeft = o ) then
+		{
+			if ( BottomRight = o ) then
+			{
+				if ( BottomMiddle = o ) then
+				{
+					Class = "negative"
+				}
+				elseif ( BottomMiddle = x ) then
+				{
+					if ( TopMiddle = x ) then
+					{
+						Class = "positive"
+					}
+					elseif ( TopMiddle = o ) then
+					{
+						Class = "negative"
+					}
+					elseif ( TopMiddle = b ) then
+					{
+						Class = "negative"
+					}
+				}
+				elseif ( BottomMiddle = b ) then
+				{
+					Class = "positive"
+				}
+			}
+			elseif ( BottomRight = x ) then
+			{
+				if ( TopLeft = x ) then
+				{
+					Class = "positive"
+				}
+				elseif ( TopLeft = o ) then
+				{
+					if ( MiddleRight = o ) then
+					{
+						Class = "negative"
+					}
+					elseif ( MiddleRight = b ) then
+					{
+						Class = "negative"
+					}
+					elseif ( MiddleRight = x ) then
+					{
+						Class = "positive"
+					}
+				}
+				elseif ( TopLeft = b ) then
+				{
+					Class = "positive"
+				}
+			}
+			elseif ( BottomRight = b ) then
+			{
+				if ( TopLeft = x ) then
+				{
+					Class = "positive"
+				}
+				elseif ( TopLeft = o ) then
+				{
+					if ( MiddleLeft = x ) then
+					{
+						Class = "positive"
+					}
+					elseif ( MiddleLeft = o ) then
+					{
+						Class = "negative"
+					}
+					elseif ( MiddleLeft = b ) then
+					{
+						Class = "positive"
+					}
+				}
+				elseif ( TopLeft = b ) then
+				{
+					Class = "positive"
+				}
+			}
+		}
+		elseif ( BottomLeft = b ) then
+		{
+			Class = "positive"
+		}
+	}
+	elseif ( TopRight = o ) then
+	{
+		if ( TopLeft = x ) then
+		{
+			if ( BottomRight = o ) then
+			{
+				Class = "negative"
+			}
+			elseif ( BottomRight = x ) then
+			{
+				Class = "positive"
+			}
+			elseif ( BottomRight = b ) then
+			{
+				Class = "positive"
+			}
+		}
+		elseif ( TopLeft = o ) then
+		{
+			if ( TopMiddle = x ) then
+			{
+				Class = "positive"
+			}
+			elseif ( TopMiddle = o ) then
+			{
+				Class = "negative"
+			}
+			elseif ( TopMiddle = b ) then
+			{
+				Class = "positive"
+			}
+		}
+		elseif ( TopLeft = b ) then
+		{
+			Class = "positive"
+		}
+	}
+	elseif ( TopRight = b ) then
+	{
+		Class = "positive"
+	}
+}
+
+@TotalNumberOfNodes 37
+@NumberOfLeafs 75
+@TotalNumberOfNodes 37
+@NumberOfAntecedentsByRule 4.6
+
+@NumberOfItemsetsTraining 863
+@NumberOfCorrectlyClassifiedTraining 795
+@PercentageOfCorrectlyClassifiedTraining 92.12051%
+@NumberOfInCorrectlyClassifiedTraining 68
+@PercentageOfInCorrectlyClassifiedTraining 7.8794904%
+
+@NumberOfItemsetsTest 95
+@NumberOfCorrectlyClassifiedTest 76
+@PercentageOfCorrectlyClassifiedTest 80.0%
+@NumberOfInCorrectlyClassifiedTest 19
+@PercentageOfInCorrectlyClassifiedTest 20.0%
+
+@ElapsedTime 0:0:0

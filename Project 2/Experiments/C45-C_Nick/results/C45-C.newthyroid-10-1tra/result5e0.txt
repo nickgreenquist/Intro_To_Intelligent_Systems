@@ -1,0 +1,75 @@
+@relation  newthyroid
+@attribute T3resin integer[65,144]
+@attribute thyroxin real[0.5,25.3]
+@attribute triiodothyronine real[0.2,10.0]
+@attribute thyroidstimulating real[0.1,56.4]
+@attribute TSH_value real[-0.7,56.3]
+@attribute class{3,2,1}
+@inputs T3resin,thyroxin,triiodothyronine,thyroidstimulating,TSH_value
+@outputs class
+@data
+
+@decisiontree
+
+if ( thyroidstimulating <= 3.700000 ) then
+{
+	if ( triiodothyronine <= 2.600000 ) then
+	{
+		if ( thyroxin <= 5.300000 ) then
+		{
+			class = "3"
+		}
+		elseif ( thyroxin > 5.300000 ) then
+		{
+			if ( thyroxin <= 14.300000 ) then
+			{
+				class = "1"
+			}
+			elseif ( thyroxin > 14.300000 ) then
+			{
+				if ( TSH_value <= 0.900000 ) then
+				{
+					class = "2"
+				}
+				elseif ( TSH_value > 0.900000 ) then
+				{
+					class = "1"
+				}
+			}
+		}
+	}
+	elseif ( triiodothyronine > 2.600000 ) then
+	{
+		if ( TSH_value <= 1.200000 ) then
+		{
+			class = "2"
+		}
+		elseif ( TSH_value > 1.200000 ) then
+		{
+			class = "1"
+		}
+	}
+}
+elseif ( thyroidstimulating > 3.700000 ) then
+{
+	class = "3"
+}
+
+@TotalNumberOfNodes 6
+@NumberOfLeafs 7
+@TotalNumberOfNodes 6
+@NumberOfAntecedentsByRule 3.4285714285714284
+
+@NumberOfItemsetsTraining 194
+@NumberOfCorrectlyClassifiedTraining 192
+@PercentageOfCorrectlyClassifiedTraining 98.96907%
+@NumberOfInCorrectlyClassifiedTraining 2
+@PercentageOfInCorrectlyClassifiedTraining 1.0309278%
+
+@NumberOfItemsetsTest 21
+@NumberOfCorrectlyClassifiedTest 18
+@PercentageOfCorrectlyClassifiedTest 85.71429%
+@NumberOfInCorrectlyClassifiedTest 3
+@PercentageOfInCorrectlyClassifiedTest 14.285714%
+
+@ElapsedTime 0:0:0

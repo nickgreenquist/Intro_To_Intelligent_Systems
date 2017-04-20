@@ -1,0 +1,203 @@
+@relation  led7digit
+@attribute Led1 real[0.0,1.0]
+@attribute Led2 real[0.0,1.0]
+@attribute Led3 real[0.0,1.0]
+@attribute Led4 real[0.0,1.0]
+@attribute Led5 real[0.0,1.0]
+@attribute Led6 real[0.0,1.0]
+@attribute Led7 real[0.0,1.0]
+@attribute number{0,1,2,3,4,5,6,7,8,9}
+@inputs Led1,Led2,Led3,Led4,Led5,Led6,Led7
+@outputs number
+@data
+
+@decisiontree
+
+if ( Led2 <= 0.000000 ) then
+{
+	if ( Led7 <= 0.000000 ) then
+	{
+		if ( Led4 <= 0.000000 ) then
+		{
+			if ( Led1 <= 0.000000 ) then
+			{
+				number = "1"
+			}
+			elseif ( Led1 > 0.000000 ) then
+			{
+				number = "7"
+			}
+		}
+		elseif ( Led4 > 0.000000 ) then
+		{
+			if ( Led1 <= 0.000000 ) then
+			{
+				if ( Led5 <= 0.000000 ) then
+				{
+					number = "4"
+				}
+				elseif ( Led5 > 0.000000 ) then
+				{
+					number = "2"
+				}
+			}
+			elseif ( Led1 > 0.000000 ) then
+			{
+				if ( Led6 <= 0.000000 ) then
+				{
+					number = "2"
+				}
+				elseif ( Led6 > 0.000000 ) then
+				{
+					number = "7"
+				}
+			}
+		}
+	}
+	elseif ( Led7 > 0.000000 ) then
+	{
+		if ( Led6 <= 0.000000 ) then
+		{
+			number = "2"
+		}
+		elseif ( Led6 > 0.000000 ) then
+		{
+			if ( Led4 <= 0.000000 ) then
+			{
+				if ( Led5 <= 0.000000 ) then
+				{
+					if ( Led1 <= 0.000000 ) then
+					{
+						number = "1"
+					}
+					elseif ( Led1 > 0.000000 ) then
+					{
+						if ( Led3 <= 0.000000 ) then
+						{
+							number = "3"
+						}
+						elseif ( Led3 > 0.000000 ) then
+						{
+							number = "7"
+						}
+					}
+				}
+				elseif ( Led5 > 0.000000 ) then
+				{
+					number = "0"
+				}
+			}
+			elseif ( Led4 > 0.000000 ) then
+			{
+				if ( Led3 <= 0.000000 ) then
+				{
+					if ( Led1 <= 0.000000 ) then
+					{
+						number = "5"
+					}
+					elseif ( Led1 > 0.000000 ) then
+					{
+						number = "6"
+					}
+				}
+				elseif ( Led3 > 0.000000 ) then
+				{
+					if ( Led5 <= 0.000000 ) then
+					{
+						number = "3"
+					}
+					elseif ( Led5 > 0.000000 ) then
+					{
+						number = "8"
+					}
+				}
+			}
+		}
+	}
+}
+elseif ( Led2 > 0.000000 ) then
+{
+	if ( Led5 <= 0.000000 ) then
+	{
+		if ( Led1 <= 0.000000 ) then
+		{
+			if ( Led7 <= 0.000000 ) then
+			{
+				number = "4"
+			}
+			elseif ( Led7 > 0.000000 ) then
+			{
+				if ( Led3 <= 0.000000 ) then
+				{
+					number = "4"
+				}
+				elseif ( Led3 > 0.000000 ) then
+				{
+					number = "9"
+				}
+			}
+		}
+		elseif ( Led1 > 0.000000 ) then
+		{
+			if ( Led3 <= 0.000000 ) then
+			{
+				number = "5"
+			}
+			elseif ( Led3 > 0.000000 ) then
+			{
+				number = "9"
+			}
+		}
+	}
+	elseif ( Led5 > 0.000000 ) then
+	{
+		if ( Led3 <= 0.000000 ) then
+		{
+			number = "6"
+		}
+		elseif ( Led3 > 0.000000 ) then
+		{
+			if ( Led4 <= 0.000000 ) then
+			{
+				number = "0"
+			}
+			elseif ( Led4 > 0.000000 ) then
+			{
+				if ( Led7 <= 0.000000 ) then
+				{
+					if ( Led1 <= 0.000000 ) then
+					{
+						number = "4"
+					}
+					elseif ( Led1 > 0.000000 ) then
+					{
+						number = "8"
+					}
+				}
+				elseif ( Led7 > 0.000000 ) then
+				{
+					number = "8"
+				}
+			}
+		}
+	}
+}
+
+@TotalNumberOfNodes 24
+@NumberOfLeafs 25
+@TotalNumberOfNodes 24
+@NumberOfAntecedentsByRule 5.04
+
+@NumberOfItemsetsTraining 450
+@NumberOfCorrectlyClassifiedTraining 354
+@PercentageOfCorrectlyClassifiedTraining 78.666664%
+@NumberOfInCorrectlyClassifiedTraining 96
+@PercentageOfInCorrectlyClassifiedTraining 21.333334%
+
+@NumberOfItemsetsTest 50
+@NumberOfCorrectlyClassifiedTest 35
+@PercentageOfCorrectlyClassifiedTest 70.0%
+@NumberOfInCorrectlyClassifiedTest 15
+@PercentageOfInCorrectlyClassifiedTest 30.0%
+
+@ElapsedTime 0:0:0

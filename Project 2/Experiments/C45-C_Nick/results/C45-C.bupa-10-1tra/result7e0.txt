@@ -1,0 +1,223 @@
+@relation  bupa
+@attribute Mcv integer[65,103]
+@attribute Alkphos integer[23,138]
+@attribute Sgpt integer[4,155]
+@attribute Sgot integer[5,82]
+@attribute Gammagt integer[5,297]
+@attribute Drinks real[0.0,20.0]
+@attribute Selector{1,2}
+@inputs Mcv,Alkphos,Sgpt,Sgot,Gammagt,Drinks
+@outputs Selector
+@data
+
+@decisiontree
+
+if ( Sgot <= 43.000000 ) then
+{
+	if ( Sgpt <= 21.000000 ) then
+	{
+		if ( Alkphos <= 61.000000 ) then
+		{
+			Selector = "2"
+		}
+		elseif ( Alkphos > 61.000000 ) then
+		{
+			if ( Sgot <= 12.000000 ) then
+			{
+				Selector = "1"
+			}
+			elseif ( Sgot > 12.000000 ) then
+			{
+				if ( Mcv <= 90.000000 ) then
+				{
+					Selector = "2"
+				}
+				elseif ( Mcv > 90.000000 ) then
+				{
+					if ( Gammagt <= 20.000000 ) then
+					{
+						Selector = "1"
+					}
+					elseif ( Gammagt > 20.000000 ) then
+					{
+						if ( Mcv <= 93.000000 ) then
+						{
+							if ( Alkphos <= 65.000000 ) then
+							{
+								Selector = "2"
+							}
+							elseif ( Alkphos > 65.000000 ) then
+							{
+								Selector = "1"
+							}
+						}
+						elseif ( Mcv > 93.000000 ) then
+						{
+							Selector = "2"
+						}
+					}
+				}
+			}
+		}
+	}
+	elseif ( Sgpt > 21.000000 ) then
+	{
+		if ( Gammagt <= 22.000000 ) then
+		{
+			if ( Sgot <= 21.000000 ) then
+			{
+				Selector = "1"
+			}
+			elseif ( Sgot > 21.000000 ) then
+			{
+				if ( Sgot <= 23.000000 ) then
+				{
+					if ( Gammagt <= 13.000000 ) then
+					{
+						if ( Sgpt <= 25.000000 ) then
+						{
+							Selector = "2"
+						}
+						elseif ( Sgpt > 25.000000 ) then
+						{
+							Selector = "1"
+						}
+					}
+					elseif ( Gammagt > 13.000000 ) then
+					{
+						Selector = "2"
+					}
+				}
+				elseif ( Sgot > 23.000000 ) then
+				{
+					if ( Sgpt <= 24.000000 ) then
+					{
+						if ( Mcv <= 88.000000 ) then
+						{
+							Selector = "2"
+						}
+						elseif ( Mcv > 88.000000 ) then
+						{
+							Selector = "1"
+						}
+					}
+					elseif ( Sgpt > 24.000000 ) then
+					{
+						Selector = "1"
+					}
+				}
+			}
+		}
+		elseif ( Gammagt > 22.000000 ) then
+		{
+			if ( Drinks <= 5.000000 ) then
+			{
+				if ( Sgot <= 23.000000 ) then
+				{
+					if ( Gammagt <= 28.000000 ) then
+					{
+						if ( Mcv <= 86.000000 ) then
+						{
+							Selector = "2"
+						}
+						elseif ( Mcv > 86.000000 ) then
+						{
+							Selector = "1"
+						}
+					}
+					elseif ( Gammagt > 28.000000 ) then
+					{
+						if ( Drinks <= 0.500000 ) then
+						{
+							if ( Drinks <= 0.000000 ) then
+							{
+								Selector = "2"
+							}
+							elseif ( Drinks > 0.000000 ) then
+							{
+								if ( Sgot <= 19.000000 ) then
+								{
+									Selector = "1"
+								}
+								elseif ( Sgot > 19.000000 ) then
+								{
+									if ( Sgot <= 20.000000 ) then
+									{
+										Selector = "2"
+									}
+									elseif ( Sgot > 20.000000 ) then
+									{
+										Selector = "1"
+									}
+								}
+							}
+						}
+						elseif ( Drinks > 0.500000 ) then
+						{
+							Selector = "2"
+						}
+					}
+				}
+				elseif ( Sgot > 23.000000 ) then
+				{
+					Selector = "2"
+				}
+			}
+			elseif ( Drinks > 5.000000 ) then
+			{
+				if ( Sgpt <= 36.000000 ) then
+				{
+					if ( Sgot <= 22.000000 ) then
+					{
+						Selector = "1"
+					}
+					elseif ( Sgot > 22.000000 ) then
+					{
+						if ( Alkphos <= 99.000000 ) then
+						{
+							Selector = "2"
+						}
+						elseif ( Alkphos > 99.000000 ) then
+						{
+							Selector = "1"
+						}
+					}
+				}
+				elseif ( Sgpt > 36.000000 ) then
+				{
+					if ( Mcv <= 89.000000 ) then
+					{
+						Selector = "2"
+					}
+					elseif ( Mcv > 89.000000 ) then
+					{
+						Selector = "1"
+					}
+				}
+			}
+		}
+	}
+}
+elseif ( Sgot > 43.000000 ) then
+{
+	Selector = "2"
+}
+
+@TotalNumberOfNodes 27
+@NumberOfLeafs 28
+@TotalNumberOfNodes 27
+@NumberOfAntecedentsByRule 6.464285714285714
+
+@NumberOfItemsetsTraining 310
+@NumberOfCorrectlyClassifiedTraining 275
+@PercentageOfCorrectlyClassifiedTraining 88.70968%
+@NumberOfInCorrectlyClassifiedTraining 35
+@PercentageOfInCorrectlyClassifiedTraining 11.290322%
+
+@NumberOfItemsetsTest 35
+@NumberOfCorrectlyClassifiedTest 23
+@PercentageOfCorrectlyClassifiedTest 65.71429%
+@NumberOfInCorrectlyClassifiedTest 12
+@PercentageOfInCorrectlyClassifiedTest 34.285713%
+
+@ElapsedTime 0:0:0

@@ -1,0 +1,7 @@
+algorithm = C4.5 Decision Tree
+inputData = "../datasets/saheart-10-1tra/saheart-10-1tra-10-5tra.dat" "../datasets/saheart-10-1tra/saheart-10-1tra-10-5tra.dat" "../datasets/saheart-10-1tra/saheart-10-1tra-10-5tst.dat" 
+outputData = "../results/C45-C.saheart-10-1tra/result4.tra" "../results/C45-C.saheart-10-1tra/result4.tst" "../results/C45-C.saheart-10-1tra/result4e0.txt"  
+
+pruned = TRUE
+confidence = 0.25
+instancesPerLeaf = 2

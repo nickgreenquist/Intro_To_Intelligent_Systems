@@ -1,0 +1,818 @@
+@relation  splice
+@attribute POS1{G,C,A,T,D}
+@attribute POS2{C,G,A,T,D}
+@attribute POS3{C,G,T,A}
+@attribute POS4{C,G,A,T}
+@attribute POS5{C,T,A,G}
+@attribute POS6{C,G,T,A}
+@attribute POS7{C,A,G,T}
+@attribute POS8{C,T,A,G}
+@attribute POS9{C,T,G,A}
+@attribute POS10{T,C,A,G}
+@attribute POS11{T,C,G,A}
+@attribute POS12{C,G,T,A}
+@attribute POS13{C,T,G,A}
+@attribute POS14{C,A,T,G,N}
+@attribute POS15{C,T,G,A}
+@attribute POS16{C,T,A,G}
+@attribute POS17{T,C,G,A}
+@attribute POS18{T,C,G,A}
+@attribute POS19{C,T,G,A,N}
+@attribute POS20{T,C,A,G,N}
+@attribute POS21{C,T,G,A,N}
+@attribute POS22{C,T,G,A,N}
+@attribute POS23{C,T,G,A,N}
+@attribute POS24{C,T,G,A,N}
+@attribute POS25{C,T,G,A,N}
+@attribute POS26{T,C,A,G,N}
+@attribute POS27{C,G,A,T,N}
+@attribute POS28{C,A,T,G,N}
+@attribute POS29{A,C,G,T,N}
+@attribute POS30{G,A,T,C,N}
+@attribute POS31{G,A,C,T,N}
+@attribute POS32{T,A,C,G,N}
+@attribute POS33{A,G,C,T,N}
+@attribute POS34{A,G,C,T,N}
+@attribute POS35{G,C,T,A,N,R}
+@attribute POS36{T,C,G,A,N,S}
+@attribute POS37{G,A,C,T,N}
+@attribute POS38{C,G,A,T,N}
+@attribute POS39{C,G,T,A,N}
+@attribute POS40{G,C,T,A,N}
+@attribute POS41{G,C,T,A,N}
+@attribute POS42{G,C,T,A,N}
+@attribute POS43{G,C,A,T,N}
+@attribute POS44{C,G,T,A,N}
+@attribute POS45{C,G,A,T,N}
+@attribute POS46{G,C,A,T,N}
+@attribute POS47{G,T,C,A,N}
+@attribute POS48{G,C,A,T,N}
+@attribute POS49{G,C,A,T,N}
+@attribute POS50{G,C,A,T,N}
+@attribute POS51{G,C,T,A,N}
+@attribute POS52{G,A,C,T,N}
+@attribute POS53{G,C,T,A,N}
+@attribute POS54{G,C,T,A,N}
+@attribute POS55{G,C,A,T,N}
+@attribute POS56{G,C,T,A,N}
+@attribute POS57{G,C,T,A,N}
+@attribute POS58{C,G,T,A,N}
+@attribute POS59{C,G,A,T,N}
+@attribute POS60{G,C,T,A,N}
+@attribute Class{EI,IE,N}
+@inputs POS1,POS2,POS3,POS4,POS5,POS6,POS7,POS8,POS9,POS10,POS11,POS12,POS13,POS14,POS15,POS16,POS17,POS18,POS19,POS20,POS21,POS22,POS23,POS24,POS25,POS26,POS27,POS28,POS29,POS30,POS31,POS32,POS33,POS34,POS35,POS36,POS37,POS38,POS39,POS40,POS41,POS42,POS43,POS44,POS45,POS46,POS47,POS48,POS49,POS50,POS51,POS52,POS53,POS54,POS55,POS56,POS57,POS58,POS59,POS60
+@outputs Class
+@data
+
+@decisiontree
+
+if ( POS30 = G ) then
+{
+	if ( POS29 = A ) then
+	{
+		if ( POS32 = T ) then
+		{
+			if ( POS31 = G ) then
+			{
+				if ( POS35 = G ) then
+				{
+					Class = "EI"
+				}
+				elseif ( POS35 = C ) then
+				{
+					if ( POS33 = A ) then
+					{
+						Class = "EI"
+					}
+					elseif ( POS33 = G ) then
+					{
+						if ( POS50 = G ) then
+						{
+							Class = "EI"
+						}
+						elseif ( POS50 = C ) then
+						{
+							Class = "IE"
+						}
+						elseif ( POS50 = A ) then
+						{
+							Class = "EI"
+						}
+						elseif ( POS50 = T ) then
+						{
+							Class = "IE"
+						}
+						elseif ( POS50 = N ) then
+						{
+							Class = "EI"
+						}
+					}
+					elseif ( POS33 = C ) then
+					{
+						Class = "IE"
+					}
+					elseif ( POS33 = T ) then
+					{
+						Class = "IE"
+					}
+					elseif ( POS33 = N ) then
+					{
+						Class = "IE"
+					}
+				}
+				elseif ( POS35 = T ) then
+				{
+					if ( POS33 = A ) then
+					{
+						Class = "EI"
+					}
+					elseif ( POS33 = G ) then
+					{
+						if ( POS22 = C ) then
+						{
+							Class = "IE"
+						}
+						elseif ( POS22 = T ) then
+						{
+							Class = "IE"
+						}
+						elseif ( POS22 = G ) then
+						{
+							Class = "IE"
+						}
+						elseif ( POS22 = A ) then
+						{
+							Class = "EI"
+						}
+						elseif ( POS22 = N ) then
+						{
+							Class = "IE"
+						}
+					}
+					elseif ( POS33 = C ) then
+					{
+						Class = "IE"
+					}
+					elseif ( POS33 = T ) then
+					{
+						Class = "IE"
+					}
+					elseif ( POS33 = N ) then
+					{
+						Class = "EI"
+					}
+				}
+				elseif ( POS35 = A ) then
+				{
+					if ( POS28 = C ) then
+					{
+						if ( POS24 = C ) then
+						{
+							Class = "IE"
+						}
+						elseif ( POS24 = T ) then
+						{
+							if ( POS3 = C ) then
+							{
+								Class = "IE"
+							}
+							elseif ( POS3 = G ) then
+							{
+								Class = "IE"
+							}
+							elseif ( POS3 = T ) then
+							{
+								Class = "IE"
+							}
+							elseif ( POS3 = A ) then
+							{
+								Class = "EI"
+							}
+						}
+						elseif ( POS24 = G ) then
+						{
+							Class = "IE"
+						}
+						elseif ( POS24 = A ) then
+						{
+							Class = "EI"
+						}
+						elseif ( POS24 = N ) then
+						{
+							Class = "IE"
+						}
+					}
+					elseif ( POS28 = A ) then
+					{
+						Class = "EI"
+					}
+					elseif ( POS28 = T ) then
+					{
+						Class = "IE"
+					}
+					elseif ( POS28 = G ) then
+					{
+						Class = "EI"
+					}
+					elseif ( POS28 = N ) then
+					{
+						Class = "EI"
+					}
+				}
+				elseif ( POS35 = N ) then
+				{
+					Class = "EI"
+				}
+				elseif ( POS35 = R ) then
+				{
+					Class = "EI"
+				}
+			}
+			elseif ( POS31 = A ) then
+			{
+				if ( POS25 = C ) then
+				{
+					Class = "IE"
+				}
+				elseif ( POS25 = T ) then
+				{
+					Class = "IE"
+				}
+				elseif ( POS25 = G ) then
+				{
+					Class = "N"
+				}
+				elseif ( POS25 = A ) then
+				{
+					Class = "IE"
+				}
+				elseif ( POS25 = N ) then
+				{
+					Class = "IE"
+				}
+			}
+			elseif ( POS31 = C ) then
+			{
+				if ( POS25 = C ) then
+				{
+					Class = "IE"
+				}
+				elseif ( POS25 = T ) then
+				{
+					Class = "IE"
+				}
+				elseif ( POS25 = G ) then
+				{
+					if ( POS43 = G ) then
+					{
+						Class = "IE"
+					}
+					elseif ( POS43 = C ) then
+					{
+						Class = "N"
+					}
+					elseif ( POS43 = A ) then
+					{
+						Class = "IE"
+					}
+					elseif ( POS43 = T ) then
+					{
+						Class = "IE"
+					}
+					elseif ( POS43 = N ) then
+					{
+						Class = "IE"
+					}
+				}
+				elseif ( POS25 = A ) then
+				{
+					Class = "N"
+				}
+				elseif ( POS25 = N ) then
+				{
+					Class = "IE"
+				}
+			}
+			elseif ( POS31 = T ) then
+			{
+				if ( POS28 = C ) then
+				{
+					Class = "IE"
+				}
+				elseif ( POS28 = A ) then
+				{
+					Class = "N"
+				}
+				elseif ( POS28 = T ) then
+				{
+					Class = "IE"
+				}
+				elseif ( POS28 = G ) then
+				{
+					Class = "N"
+				}
+				elseif ( POS28 = N ) then
+				{
+					Class = "IE"
+				}
+			}
+			elseif ( POS31 = N ) then
+			{
+				Class = "EI"
+			}
+		}
+		elseif ( POS32 = A ) then
+		{
+			if ( POS28 = C ) then
+			{
+				Class = "IE"
+			}
+			elseif ( POS28 = A ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS28 = T ) then
+			{
+				Class = "IE"
+			}
+			elseif ( POS28 = G ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS28 = N ) then
+			{
+				Class = "IE"
+			}
+		}
+		elseif ( POS32 = C ) then
+		{
+			if ( POS28 = C ) then
+			{
+				Class = "IE"
+			}
+			elseif ( POS28 = A ) then
+			{
+				if ( POS21 = C ) then
+				{
+					if ( POS6 = C ) then
+					{
+						Class = "IE"
+					}
+					elseif ( POS6 = G ) then
+					{
+						Class = "N"
+					}
+					elseif ( POS6 = T ) then
+					{
+						Class = "N"
+					}
+					elseif ( POS6 = A ) then
+					{
+						Class = "N"
+					}
+				}
+				elseif ( POS21 = T ) then
+				{
+					Class = "IE"
+				}
+				elseif ( POS21 = G ) then
+				{
+					Class = "N"
+				}
+				elseif ( POS21 = A ) then
+				{
+					Class = "N"
+				}
+				elseif ( POS21 = N ) then
+				{
+					Class = "N"
+				}
+			}
+			elseif ( POS28 = T ) then
+			{
+				Class = "IE"
+			}
+			elseif ( POS28 = G ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS28 = N ) then
+			{
+				Class = "IE"
+			}
+		}
+		elseif ( POS32 = G ) then
+		{
+			if ( POS28 = C ) then
+			{
+				Class = "IE"
+			}
+			elseif ( POS28 = A ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS28 = T ) then
+			{
+				Class = "IE"
+			}
+			elseif ( POS28 = G ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS28 = N ) then
+			{
+				Class = "IE"
+			}
+		}
+		elseif ( POS32 = N ) then
+		{
+			Class = "IE"
+		}
+	}
+	elseif ( POS29 = C ) then
+	{
+		if ( POS32 = T ) then
+		{
+			if ( POS31 = G ) then
+			{
+				Class = "EI"
+			}
+			elseif ( POS31 = A ) then
+			{
+				Class = "EI"
+			}
+			elseif ( POS31 = C ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS31 = T ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS31 = N ) then
+			{
+				Class = "EI"
+			}
+		}
+		elseif ( POS32 = A ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS32 = C ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS32 = G ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS32 = N ) then
+		{
+			Class = "EI"
+		}
+	}
+	elseif ( POS29 = G ) then
+	{
+		if ( POS32 = T ) then
+		{
+			if ( POS31 = G ) then
+			{
+				if ( POS35 = G ) then
+				{
+					Class = "EI"
+				}
+				elseif ( POS35 = C ) then
+				{
+					Class = "EI"
+				}
+				elseif ( POS35 = T ) then
+				{
+					if ( POS16 = C ) then
+					{
+						Class = "N"
+					}
+					elseif ( POS16 = T ) then
+					{
+						Class = "EI"
+					}
+					elseif ( POS16 = A ) then
+					{
+						Class = "N"
+					}
+					elseif ( POS16 = G ) then
+					{
+						Class = "N"
+					}
+				}
+				elseif ( POS35 = A ) then
+				{
+					Class = "EI"
+				}
+				elseif ( POS35 = N ) then
+				{
+					Class = "EI"
+				}
+				elseif ( POS35 = R ) then
+				{
+					Class = "EI"
+				}
+			}
+			elseif ( POS31 = A ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS31 = C ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS31 = T ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS31 = N ) then
+			{
+				Class = "EI"
+			}
+		}
+		elseif ( POS32 = A ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS32 = C ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS32 = G ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS32 = N ) then
+		{
+			Class = "N"
+		}
+	}
+	elseif ( POS29 = T ) then
+	{
+		if ( POS31 = G ) then
+		{
+			if ( POS32 = T ) then
+			{
+				Class = "EI"
+			}
+			elseif ( POS32 = A ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS32 = C ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS32 = G ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS32 = N ) then
+			{
+				Class = "EI"
+			}
+		}
+		elseif ( POS31 = A ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS31 = C ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS31 = T ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS31 = N ) then
+		{
+			Class = "N"
+		}
+	}
+	elseif ( POS29 = N ) then
+	{
+		Class = "IE"
+	}
+}
+elseif ( POS30 = A ) then
+{
+	if ( POS32 = T ) then
+	{
+		if ( POS31 = G ) then
+		{
+			if ( POS35 = G ) then
+			{
+				Class = "EI"
+			}
+			elseif ( POS35 = C ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS35 = T ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS35 = A ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS35 = N ) then
+			{
+				Class = "EI"
+			}
+			elseif ( POS35 = R ) then
+			{
+				Class = "EI"
+			}
+		}
+		elseif ( POS31 = A ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS31 = C ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS31 = T ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS31 = N ) then
+		{
+			Class = "N"
+		}
+	}
+	elseif ( POS32 = A ) then
+	{
+		Class = "N"
+	}
+	elseif ( POS32 = C ) then
+	{
+		Class = "N"
+	}
+	elseif ( POS32 = G ) then
+	{
+		Class = "N"
+	}
+	elseif ( POS32 = N ) then
+	{
+		Class = "N"
+	}
+}
+elseif ( POS30 = T ) then
+{
+	if ( POS35 = G ) then
+	{
+		if ( POS31 = G ) then
+		{
+			if ( POS32 = T ) then
+			{
+				Class = "EI"
+			}
+			elseif ( POS32 = A ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS32 = C ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS32 = G ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS32 = N ) then
+			{
+				Class = "EI"
+			}
+		}
+		elseif ( POS31 = A ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS31 = C ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS31 = T ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS31 = N ) then
+		{
+			Class = "N"
+		}
+	}
+	elseif ( POS35 = C ) then
+	{
+		Class = "N"
+	}
+	elseif ( POS35 = T ) then
+	{
+		Class = "N"
+	}
+	elseif ( POS35 = A ) then
+	{
+		Class = "N"
+	}
+	elseif ( POS35 = N ) then
+	{
+		Class = "N"
+	}
+	elseif ( POS35 = R ) then
+	{
+		Class = "N"
+	}
+}
+elseif ( POS30 = C ) then
+{
+	if ( POS31 = G ) then
+	{
+		if ( POS32 = T ) then
+		{
+			if ( POS35 = G ) then
+			{
+				Class = "EI"
+			}
+			elseif ( POS35 = C ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS35 = T ) then
+			{
+				Class = "N"
+			}
+			elseif ( POS35 = A ) then
+			{
+				Class = "EI"
+			}
+			elseif ( POS35 = N ) then
+			{
+				Class = "EI"
+			}
+			elseif ( POS35 = R ) then
+			{
+				Class = "EI"
+			}
+		}
+		elseif ( POS32 = A ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS32 = C ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS32 = G ) then
+		{
+			Class = "N"
+		}
+		elseif ( POS32 = N ) then
+		{
+			Class = "N"
+		}
+	}
+	elseif ( POS31 = A ) then
+	{
+		Class = "N"
+	}
+	elseif ( POS31 = C ) then
+	{
+		Class = "N"
+	}
+	elseif ( POS31 = T ) then
+	{
+		Class = "N"
+	}
+	elseif ( POS31 = N ) then
+	{
+		Class = "N"
+	}
+}
+elseif ( POS30 = N ) then
+{
+	Class = "EI"
+}
+
+@TotalNumberOfNodes 38
+@NumberOfLeafs 155
+@TotalNumberOfNodes 38
+@NumberOfAntecedentsByRule 4.503225806451613
+
+@NumberOfItemsetsTraining 2871
+@NumberOfCorrectlyClassifiedTraining 2749
+@PercentageOfCorrectlyClassifiedTraining 95.75061%
+@NumberOfInCorrectlyClassifiedTraining 122
+@PercentageOfInCorrectlyClassifiedTraining 4.2493906%
+
+@NumberOfItemsetsTest 319
+@NumberOfCorrectlyClassifiedTest 301
+@PercentageOfCorrectlyClassifiedTest 94.35737%
+@NumberOfInCorrectlyClassifiedTest 18
+@PercentageOfInCorrectlyClassifiedTest 5.6426334%
+
+@ElapsedTime 0:0:0

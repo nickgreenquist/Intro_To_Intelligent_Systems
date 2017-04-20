@@ -1,0 +1,1504 @@
+@relation  ring
+@attribute A1 real[-6879.0,6285.0]
+@attribute A2 real[-7141.0,6921.0]
+@attribute A3 real[-7734.0,7611.0]
+@attribute A4 real[-6627.0,7149.0]
+@attribute A5 real[-7184.0,6383.0]
+@attribute A6 real[-6946.0,6743.0]
+@attribute A7 real[-7781.0,6285.0]
+@attribute A8 real[-6882.0,6357.0]
+@attribute A9 real[-7184.0,7487.0]
+@attribute A10 real[-7232.0,6757.0]
+@attribute A11 real[-7803.0,7208.0]
+@attribute A12 real[-7395.0,6791.0]
+@attribute A13 real[-7096.0,6403.0]
+@attribute A14 real[-7472.0,7261.0]
+@attribute A15 real[-7342.0,7372.0]
+@attribute A16 real[-7121.0,6905.0]
+@attribute A17 real[-7163.0,7175.0]
+@attribute A18 real[-8778.0,6896.0]
+@attribute A19 real[-7554.0,5726.0]
+@attribute A20 real[-6722.0,7627.0]
+@attribute Class{0,1}
+@inputs A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18,A19,A20
+@outputs Class
+@data
+
+@decisiontree
+
+if ( A18 <= -1572.000000 ) then
+{
+	if ( A18 <= -2346.000000 ) then
+	{
+		Class = "0"
+	}
+	elseif ( A18 > -2346.000000 ) then
+	{
+		if ( A6 <= -1256.000000 ) then
+		{
+			Class = "0"
+		}
+		elseif ( A6 > -1256.000000 ) then
+		{
+			if ( A10 <= -1031.000000 ) then
+			{
+				Class = "0"
+			}
+			elseif ( A10 > -1031.000000 ) then
+			{
+				if ( A3 <= -956.000000 ) then
+				{
+					Class = "0"
+				}
+				elseif ( A3 > -956.000000 ) then
+				{
+					if ( A7 <= 1398.000000 ) then
+					{
+						if ( A7 <= -1332.000000 ) then
+						{
+							Class = "0"
+						}
+						elseif ( A7 > -1332.000000 ) then
+						{
+							if ( A3 <= 2473.000000 ) then
+							{
+								if ( A9 <= -2032.000000 ) then
+								{
+									Class = "0"
+								}
+								elseif ( A9 > -2032.000000 ) then
+								{
+									if ( A13 <= -2135.000000 ) then
+									{
+										Class = "0"
+									}
+									elseif ( A13 > -2135.000000 ) then
+									{
+										if ( A4 <= -1645.000000 ) then
+										{
+											Class = "0"
+										}
+										elseif ( A4 > -1645.000000 ) then
+										{
+											if ( A1 <= -1086.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A1 > -1086.000000 ) then
+											{
+												if ( A6 <= 2528.000000 ) then
+												{
+													if ( A4 <= 3057.000000 ) then
+													{
+														if ( A20 <= 1748.000000 ) then
+														{
+															if ( A8 <= -913.000000 ) then
+															{
+																if ( A10 <= 249.000000 ) then
+																{
+																	Class = "0"
+																}
+																elseif ( A10 > 249.000000 ) then
+																{
+																	Class = "1"
+																}
+															}
+															elseif ( A8 > -913.000000 ) then
+															{
+																Class = "1"
+															}
+														}
+														elseif ( A20 > 1748.000000 ) then
+														{
+															Class = "0"
+														}
+													}
+													elseif ( A4 > 3057.000000 ) then
+													{
+														Class = "0"
+													}
+												}
+												elseif ( A6 > 2528.000000 ) then
+												{
+													Class = "0"
+												}
+											}
+										}
+									}
+								}
+							}
+							elseif ( A3 > 2473.000000 ) then
+							{
+								Class = "0"
+							}
+						}
+					}
+					elseif ( A7 > 1398.000000 ) then
+					{
+						Class = "0"
+					}
+				}
+			}
+		}
+	}
+}
+elseif ( A18 > -1572.000000 ) then
+{
+	if ( A9 <= -1874.000000 ) then
+	{
+		if ( A3 <= -231.000000 ) then
+		{
+			Class = "0"
+		}
+		elseif ( A3 > -231.000000 ) then
+		{
+			if ( A9 <= -2808.000000 ) then
+			{
+				Class = "0"
+			}
+			elseif ( A9 > -2808.000000 ) then
+			{
+				if ( A1 <= -1148.000000 ) then
+				{
+					Class = "0"
+				}
+				elseif ( A1 > -1148.000000 ) then
+				{
+					if ( A16 <= -906.000000 ) then
+					{
+						Class = "0"
+					}
+					elseif ( A16 > -906.000000 ) then
+					{
+						if ( A7 <= -618.000000 ) then
+						{
+							Class = "0"
+						}
+						elseif ( A7 > -618.000000 ) then
+						{
+							if ( A20 <= -621.000000 ) then
+							{
+								Class = "0"
+							}
+							elseif ( A20 > -621.000000 ) then
+							{
+								if ( A11 <= -1704.000000 ) then
+								{
+									Class = "0"
+								}
+								elseif ( A11 > -1704.000000 ) then
+								{
+									if ( A12 <= -1816.000000 ) then
+									{
+										Class = "0"
+									}
+									elseif ( A12 > -1816.000000 ) then
+									{
+										if ( A8 <= -917.000000 ) then
+										{
+											Class = "0"
+										}
+										elseif ( A8 > -917.000000 ) then
+										{
+											if ( A13 <= -1518.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A13 > -1518.000000 ) then
+											{
+												Class = "1"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	elseif ( A9 > -1874.000000 ) then
+	{
+		if ( A19 <= -1876.000000 ) then
+		{
+			if ( A19 <= -2584.000000 ) then
+			{
+				Class = "0"
+			}
+			elseif ( A19 > -2584.000000 ) then
+			{
+				if ( A11 <= -907.000000 ) then
+				{
+					Class = "0"
+				}
+				elseif ( A11 > -907.000000 ) then
+				{
+					if ( A6 <= -418.000000 ) then
+					{
+						Class = "0"
+					}
+					elseif ( A6 > -418.000000 ) then
+					{
+						if ( A6 <= 1672.000000 ) then
+						{
+							if ( A8 <= -1296.000000 ) then
+							{
+								Class = "0"
+							}
+							elseif ( A8 > -1296.000000 ) then
+							{
+								if ( A7 <= -908.000000 ) then
+								{
+									Class = "0"
+								}
+								elseif ( A7 > -908.000000 ) then
+								{
+									if ( A13 <= 1706.000000 ) then
+									{
+										if ( A10 <= 1878.000000 ) then
+										{
+											if ( A1 <= 1839.000000 ) then
+											{
+												if ( A19 <= -2002.000000 ) then
+												{
+													Class = "1"
+												}
+												elseif ( A19 > -2002.000000 ) then
+												{
+													if ( A4 <= 45.000000 ) then
+													{
+														Class = "0"
+													}
+													elseif ( A4 > 45.000000 ) then
+													{
+														Class = "1"
+													}
+												}
+											}
+											elseif ( A1 > 1839.000000 ) then
+											{
+												Class = "0"
+											}
+										}
+										elseif ( A10 > 1878.000000 ) then
+										{
+											Class = "0"
+										}
+									}
+									elseif ( A13 > 1706.000000 ) then
+									{
+										Class = "0"
+									}
+								}
+							}
+						}
+						elseif ( A6 > 1672.000000 ) then
+						{
+							Class = "0"
+						}
+					}
+				}
+			}
+		}
+		elseif ( A19 > -1876.000000 ) then
+		{
+			if ( A6 <= -1714.000000 ) then
+			{
+				if ( A6 <= -2602.000000 ) then
+				{
+					Class = "0"
+				}
+				elseif ( A6 > -2602.000000 ) then
+				{
+					if ( A5 <= -831.000000 ) then
+					{
+						Class = "0"
+					}
+					elseif ( A5 > -831.000000 ) then
+					{
+						if ( A7 <= -938.000000 ) then
+						{
+							Class = "0"
+						}
+						elseif ( A7 > -938.000000 ) then
+						{
+							if ( A8 <= -824.000000 ) then
+							{
+								Class = "0"
+							}
+							elseif ( A8 > -824.000000 ) then
+							{
+								if ( A16 <= -888.000000 ) then
+								{
+									if ( A3 <= -898.000000 ) then
+									{
+										if ( A10 <= -214.000000 ) then
+										{
+											Class = "0"
+										}
+										elseif ( A10 > -214.000000 ) then
+										{
+											Class = "1"
+										}
+									}
+									elseif ( A3 > -898.000000 ) then
+									{
+										Class = "0"
+									}
+								}
+								elseif ( A16 > -888.000000 ) then
+								{
+									if ( A2 <= -372.000000 ) then
+									{
+										if ( A1 <= -175.000000 ) then
+										{
+											Class = "0"
+										}
+										elseif ( A1 > -175.000000 ) then
+										{
+											if ( A7 <= 1335.000000 ) then
+											{
+												if ( A6 <= -2237.000000 ) then
+												{
+													Class = "0"
+												}
+												elseif ( A6 > -2237.000000 ) then
+												{
+													Class = "1"
+												}
+											}
+											elseif ( A7 > 1335.000000 ) then
+											{
+												Class = "0"
+											}
+										}
+									}
+									elseif ( A2 > -372.000000 ) then
+									{
+										if ( A13 <= -1578.000000 ) then
+										{
+											Class = "0"
+										}
+										elseif ( A13 > -1578.000000 ) then
+										{
+											if ( A15 <= -1138.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A15 > -1138.000000 ) then
+											{
+												if ( A4 <= -741.000000 ) then
+												{
+													Class = "0"
+												}
+												elseif ( A4 > -741.000000 ) then
+												{
+													Class = "1"
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			elseif ( A6 > -1714.000000 ) then
+			{
+				if ( A3 <= -1741.000000 ) then
+				{
+					if ( A3 <= -2765.000000 ) then
+					{
+						Class = "0"
+					}
+					elseif ( A3 > -2765.000000 ) then
+					{
+						if ( A8 <= -742.000000 ) then
+						{
+							Class = "0"
+						}
+						elseif ( A8 > -742.000000 ) then
+						{
+							if ( A12 <= -1151.000000 ) then
+							{
+								Class = "0"
+							}
+							elseif ( A12 > -1151.000000 ) then
+							{
+								if ( A10 <= -951.000000 ) then
+								{
+									Class = "0"
+								}
+								elseif ( A10 > -951.000000 ) then
+								{
+									if ( A4 <= -1457.000000 ) then
+									{
+										Class = "0"
+									}
+									elseif ( A4 > -1457.000000 ) then
+									{
+										if ( A4 <= 2426.000000 ) then
+										{
+											if ( A1 <= -1562.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A1 > -1562.000000 ) then
+											{
+												if ( A16 <= -1836.000000 ) then
+												{
+													Class = "0"
+												}
+												elseif ( A16 > -1836.000000 ) then
+												{
+													if ( A13 <= -1893.000000 ) then
+													{
+														Class = "0"
+													}
+													elseif ( A13 > -1893.000000 ) then
+													{
+														if ( A5 <= 2308.000000 ) then
+														{
+															if ( A5 <= -1319.000000 ) then
+															{
+																Class = "0"
+															}
+															elseif ( A5 > -1319.000000 ) then
+															{
+																Class = "1"
+															}
+														}
+														elseif ( A5 > 2308.000000 ) then
+														{
+															Class = "0"
+														}
+													}
+												}
+											}
+										}
+										elseif ( A4 > 2426.000000 ) then
+										{
+											Class = "0"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				elseif ( A3 > -1741.000000 ) then
+				{
+					if ( A14 <= -1872.000000 ) then
+					{
+						if ( A4 <= -211.000000 ) then
+						{
+							Class = "0"
+						}
+						elseif ( A4 > -211.000000 ) then
+						{
+							if ( A12 <= -1011.000000 ) then
+							{
+								Class = "0"
+							}
+							elseif ( A12 > -1011.000000 ) then
+							{
+								if ( A7 <= -875.000000 ) then
+								{
+									Class = "0"
+								}
+								elseif ( A7 > -875.000000 ) then
+								{
+									if ( A5 <= -1563.000000 ) then
+									{
+										Class = "0"
+									}
+									elseif ( A5 > -1563.000000 ) then
+									{
+										if ( A4 <= 2137.000000 ) then
+										{
+											if ( A1 <= -722.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A1 > -722.000000 ) then
+											{
+												if ( A9 <= 2366.000000 ) then
+												{
+													if ( A6 <= 3253.000000 ) then
+													{
+														if ( A16 <= 55.000000 ) then
+														{
+															if ( A1 <= 642.000000 ) then
+															{
+																Class = "1"
+															}
+															elseif ( A1 > 642.000000 ) then
+															{
+																Class = "0"
+															}
+														}
+														elseif ( A16 > 55.000000 ) then
+														{
+															Class = "1"
+														}
+													}
+													elseif ( A6 > 3253.000000 ) then
+													{
+														Class = "0"
+													}
+												}
+												elseif ( A9 > 2366.000000 ) then
+												{
+													Class = "0"
+												}
+											}
+										}
+										elseif ( A4 > 2137.000000 ) then
+										{
+											Class = "0"
+										}
+									}
+								}
+							}
+						}
+					}
+					elseif ( A14 > -1872.000000 ) then
+					{
+						if ( A1 <= -1965.000000 ) then
+						{
+							if ( A1 <= -2636.000000 ) then
+							{
+								Class = "0"
+							}
+							elseif ( A1 > -2636.000000 ) then
+							{
+								if ( A13 <= 132.000000 ) then
+								{
+									Class = "0"
+								}
+								elseif ( A13 > 132.000000 ) then
+								{
+									if ( A11 <= -666.000000 ) then
+									{
+										Class = "0"
+									}
+									elseif ( A11 > -666.000000 ) then
+									{
+										if ( A6 <= 1336.000000 ) then
+										{
+											if ( A18 <= -599.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A18 > -599.000000 ) then
+											{
+												if ( A5 <= -2072.000000 ) then
+												{
+													Class = "0"
+												}
+												elseif ( A5 > -2072.000000 ) then
+												{
+													if ( A12 <= -2304.000000 ) then
+													{
+														Class = "0"
+													}
+													elseif ( A12 > -2304.000000 ) then
+													{
+														Class = "1"
+													}
+												}
+											}
+										}
+										elseif ( A6 > 1336.000000 ) then
+										{
+											Class = "0"
+										}
+									}
+								}
+							}
+						}
+						elseif ( A1 > -1965.000000 ) then
+						{
+							if ( A13 <= -1644.000000 ) then
+							{
+								if ( A13 <= -2799.000000 ) then
+								{
+									Class = "0"
+								}
+								elseif ( A13 > -2799.000000 ) then
+								{
+									if ( A20 <= -962.000000 ) then
+									{
+										Class = "0"
+									}
+									elseif ( A20 > -962.000000 ) then
+									{
+										if ( A10 <= -841.000000 ) then
+										{
+											Class = "0"
+										}
+										elseif ( A10 > -841.000000 ) then
+										{
+											if ( A5 <= -1507.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A5 > -1507.000000 ) then
+											{
+												if ( A9 <= 2503.000000 ) then
+												{
+													if ( A16 <= -1215.000000 ) then
+													{
+														Class = "0"
+													}
+													elseif ( A16 > -1215.000000 ) then
+													{
+														if ( A8 <= -519.000000 ) then
+														{
+															if ( A6 <= 999.000000 ) then
+															{
+																Class = "0"
+															}
+															elseif ( A6 > 999.000000 ) then
+															{
+																Class = "1"
+															}
+														}
+														elseif ( A8 > -519.000000 ) then
+														{
+															if ( A14 <= -1162.000000 ) then
+															{
+																Class = "0"
+															}
+															elseif ( A14 > -1162.000000 ) then
+															{
+																if ( A4 <= -822.000000 ) then
+																{
+																	if ( A3 <= -97.000000 ) then
+																	{
+																		Class = "1"
+																	}
+																	elseif ( A3 > -97.000000 ) then
+																	{
+																		Class = "0"
+																	}
+																}
+																elseif ( A4 > -822.000000 ) then
+																{
+																	Class = "1"
+																}
+															}
+														}
+													}
+												}
+												elseif ( A9 > 2503.000000 ) then
+												{
+													Class = "0"
+												}
+											}
+										}
+									}
+								}
+							}
+							elseif ( A13 > -1644.000000 ) then
+							{
+								if ( A5 <= -2027.000000 ) then
+								{
+									if ( A16 <= -566.000000 ) then
+									{
+										Class = "0"
+									}
+									elseif ( A16 > -566.000000 ) then
+									{
+										if ( A2 <= -911.000000 ) then
+										{
+											Class = "0"
+										}
+										elseif ( A2 > -911.000000 ) then
+										{
+											if ( A10 <= -707.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A10 > -707.000000 ) then
+											{
+												if ( A8 <= -1304.000000 ) then
+												{
+													Class = "0"
+												}
+												elseif ( A8 > -1304.000000 ) then
+												{
+													if ( A17 <= -1469.000000 ) then
+													{
+														Class = "0"
+													}
+													elseif ( A17 > -1469.000000 ) then
+													{
+														if ( A5 <= -3437.000000 ) then
+														{
+															Class = "0"
+														}
+														elseif ( A5 > -3437.000000 ) then
+														{
+															if ( A14 <= 111.000000 ) then
+															{
+																if ( A15 <= -611.000000 ) then
+																{
+																	Class = "0"
+																}
+																elseif ( A15 > -611.000000 ) then
+																{
+																	Class = "1"
+																}
+															}
+															elseif ( A14 > 111.000000 ) then
+															{
+																Class = "1"
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								elseif ( A5 > -2027.000000 ) then
+								{
+									if ( A2 <= -1596.000000 ) then
+									{
+										if ( A2 <= -2965.000000 ) then
+										{
+											Class = "0"
+										}
+										elseif ( A2 > -2965.000000 ) then
+										{
+											if ( A10 <= -944.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A10 > -944.000000 ) then
+											{
+												if ( A12 <= -1502.000000 ) then
+												{
+													Class = "0"
+												}
+												elseif ( A12 > -1502.000000 ) then
+												{
+													if ( A7 <= -1119.000000 ) then
+													{
+														Class = "0"
+													}
+													elseif ( A7 > -1119.000000 ) then
+													{
+														if ( A1 <= 2467.000000 ) then
+														{
+															if ( A18 <= 2339.000000 ) then
+															{
+																if ( A20 <= -1378.000000 ) then
+																{
+																	Class = "0"
+																}
+																elseif ( A20 > -1378.000000 ) then
+																{
+																	if ( A7 <= 2152.000000 ) then
+																	{
+																		if ( A6 <= 349.000000 ) then
+																		{
+																			if ( A1 <= -543.000000 ) then
+																			{
+																				Class = "0"
+																			}
+																			elseif ( A1 > -543.000000 ) then
+																			{
+																				if ( A17 <= 171.000000 ) then
+																				{
+																					if ( A18 <= 126.000000 ) then
+																					{
+																						Class = "1"
+																					}
+																					elseif ( A18 > 126.000000 ) then
+																					{
+																						if ( A19 <= -24.000000 ) then
+																						{
+																							Class = "0"
+																						}
+																						elseif ( A19 > -24.000000 ) then
+																						{
+																							Class = "1"
+																						}
+																					}
+																				}
+																				elseif ( A17 > 171.000000 ) then
+																				{
+																					Class = "1"
+																				}
+																			}
+																		}
+																		elseif ( A6 > 349.000000 ) then
+																		{
+																			Class = "1"
+																		}
+																	}
+																	elseif ( A7 > 2152.000000 ) then
+																	{
+																		if ( A6 <= -279.000000 ) then
+																		{
+																			Class = "1"
+																		}
+																		elseif ( A6 > -279.000000 ) then
+																		{
+																			Class = "0"
+																		}
+																	}
+																}
+															}
+															elseif ( A18 > 2339.000000 ) then
+															{
+																Class = "0"
+															}
+														}
+														elseif ( A1 > 2467.000000 ) then
+														{
+															Class = "0"
+														}
+													}
+												}
+											}
+										}
+									}
+									elseif ( A2 > -1596.000000 ) then
+									{
+										if ( A12 <= -1701.000000 ) then
+										{
+											if ( A12 <= -2693.000000 ) then
+											{
+												Class = "0"
+											}
+											elseif ( A12 > -2693.000000 ) then
+											{
+												if ( A4 <= -887.000000 ) then
+												{
+													Class = "0"
+												}
+												elseif ( A4 > -887.000000 ) then
+												{
+													if ( A17 <= -1553.000000 ) then
+													{
+														Class = "0"
+													}
+													elseif ( A17 > -1553.000000 ) then
+													{
+														if ( A16 <= -1329.000000 ) then
+														{
+															Class = "0"
+														}
+														elseif ( A16 > -1329.000000 ) then
+														{
+															if ( A16 <= 2543.000000 ) then
+															{
+																if ( A1 <= 282.000000 ) then
+																{
+																	if ( A20 <= 144.000000 ) then
+																	{
+																		if ( A14 <= 274.000000 ) then
+																		{
+																			Class = "0"
+																		}
+																		elseif ( A14 > 274.000000 ) then
+																		{
+																			if ( A11 <= -289.000000 ) then
+																			{
+																				Class = "0"
+																			}
+																			elseif ( A11 > -289.000000 ) then
+																			{
+																				Class = "1"
+																			}
+																		}
+																	}
+																	elseif ( A20 > 144.000000 ) then
+																	{
+																		if ( A18 <= -185.000000 ) then
+																		{
+																			Class = "0"
+																		}
+																		elseif ( A18 > -185.000000 ) then
+																		{
+																			Class = "1"
+																		}
+																	}
+																}
+																elseif ( A1 > 282.000000 ) then
+																{
+																	Class = "1"
+																}
+															}
+															elseif ( A16 > 2543.000000 ) then
+															{
+																Class = "0"
+															}
+														}
+													}
+												}
+											}
+										}
+										elseif ( A12 > -1701.000000 ) then
+										{
+											if ( A16 <= -2109.000000 ) then
+											{
+												if ( A16 <= -3748.000000 ) then
+												{
+													Class = "0"
+												}
+												elseif ( A16 > -3748.000000 ) then
+												{
+													if ( A15 <= -683.000000 ) then
+													{
+														Class = "0"
+													}
+													elseif ( A15 > -683.000000 ) then
+													{
+														if ( A15 <= 1699.000000 ) then
+														{
+															if ( A4 <= 1212.000000 ) then
+															{
+																if ( A8 <= -969.000000 ) then
+																{
+																	Class = "0"
+																}
+																elseif ( A8 > -969.000000 ) then
+																{
+																	Class = "1"
+																}
+															}
+															elseif ( A4 > 1212.000000 ) then
+															{
+																Class = "0"
+															}
+														}
+														elseif ( A15 > 1699.000000 ) then
+														{
+															Class = "0"
+														}
+													}
+												}
+											}
+											elseif ( A16 > -2109.000000 ) then
+											{
+												if ( A11 <= -2576.000000 ) then
+												{
+													Class = "0"
+												}
+												elseif ( A11 > -2576.000000 ) then
+												{
+													if ( A8 <= -2054.000000 ) then
+													{
+														if ( A8 <= -2268.000000 ) then
+														{
+															Class = "0"
+														}
+														elseif ( A8 > -2268.000000 ) then
+														{
+															if ( A2 <= 987.000000 ) then
+															{
+																if ( A10 <= -469.000000 ) then
+																{
+																	Class = "0"
+																}
+																elseif ( A10 > -469.000000 ) then
+																{
+																	Class = "1"
+																}
+															}
+															elseif ( A2 > 987.000000 ) then
+															{
+																Class = "0"
+															}
+														}
+													}
+													elseif ( A8 > -2054.000000 ) then
+													{
+														if ( A7 <= -2005.000000 ) then
+														{
+															if ( A7 <= -2639.000000 ) then
+															{
+																Class = "0"
+															}
+															elseif ( A7 > -2639.000000 ) then
+															{
+																if ( A19 <= 1863.000000 ) then
+																{
+																	if ( A13 <= -79.000000 ) then
+																	{
+																		if ( A2 <= 1146.000000 ) then
+																		{
+																			Class = "0"
+																		}
+																		elseif ( A2 > 1146.000000 ) then
+																		{
+																			Class = "1"
+																		}
+																	}
+																	elseif ( A13 > -79.000000 ) then
+																	{
+																		if ( A4 <= -1158.000000 ) then
+																		{
+																			Class = "0"
+																		}
+																		elseif ( A4 > -1158.000000 ) then
+																		{
+																			if ( A1 <= -331.000000 ) then
+																			{
+																				Class = "0"
+																			}
+																			elseif ( A1 > -331.000000 ) then
+																			{
+																				Class = "1"
+																			}
+																		}
+																	}
+																}
+																elseif ( A19 > 1863.000000 ) then
+																{
+																	Class = "0"
+																}
+															}
+														}
+														elseif ( A7 > -2005.000000 ) then
+														{
+															if ( A10 <= -1939.000000 ) then
+															{
+																if ( A2 <= 778.000000 ) then
+																{
+																	if ( A3 <= 1415.000000 ) then
+																	{
+																		if ( A6 <= 1672.000000 ) then
+																		{
+																			if ( A17 <= 1787.000000 ) then
+																			{
+																				if ( A11 <= 2095.000000 ) then
+																				{
+																					if ( A15 <= 1373.000000 ) then
+																					{
+																						Class = "1"
+																					}
+																					elseif ( A15 > 1373.000000 ) then
+																					{
+																						Class = "0"
+																					}
+																				}
+																				elseif ( A11 > 2095.000000 ) then
+																				{
+																					Class = "0"
+																				}
+																			}
+																			elseif ( A17 > 1787.000000 ) then
+																			{
+																				Class = "0"
+																			}
+																		}
+																		elseif ( A6 > 1672.000000 ) then
+																		{
+																			Class = "0"
+																		}
+																	}
+																	elseif ( A3 > 1415.000000 ) then
+																	{
+																		Class = "0"
+																	}
+																}
+																elseif ( A2 > 778.000000 ) then
+																{
+																	Class = "0"
+																}
+															}
+															elseif ( A10 > -1939.000000 ) then
+															{
+																if ( A3 <= 3087.000000 ) then
+																{
+																	if ( A15 <= -1901.000000 ) then
+																	{
+																		if ( A15 <= -3049.000000 ) then
+																		{
+																			Class = "0"
+																		}
+																		elseif ( A15 > -3049.000000 ) then
+																		{
+																			if ( A12 <= -882.000000 ) then
+																			{
+																				Class = "0"
+																			}
+																			elseif ( A12 > -882.000000 ) then
+																			{
+																				if ( A14 <= 558.000000 ) then
+																				{
+																					if ( A12 <= 1467.000000 ) then
+																					{
+																						if ( A4 <= -673.000000 ) then
+																						{
+																							Class = "0"
+																						}
+																						elseif ( A4 > -673.000000 ) then
+																						{
+																							if ( A6 <= 1368.000000 ) then
+																							{
+																								Class = "1"
+																							}
+																							elseif ( A6 > 1368.000000 ) then
+																							{
+																								Class = "0"
+																							}
+																						}
+																					}
+																					elseif ( A12 > 1467.000000 ) then
+																					{
+																						Class = "0"
+																					}
+																				}
+																				elseif ( A14 > 558.000000 ) then
+																				{
+																					Class = "1"
+																				}
+																			}
+																		}
+																	}
+																	elseif ( A15 > -1901.000000 ) then
+																	{
+																		if ( A6 <= 3115.000000 ) then
+																		{
+																			if ( A20 <= -1626.000000 ) then
+																			{
+																				if ( A20 <= -2356.000000 ) then
+																				{
+																					Class = "0"
+																				}
+																				elseif ( A20 > -2356.000000 ) then
+																				{
+																					if ( A4 <= 2278.000000 ) then
+																					{
+																						if ( A11 <= -1811.000000 ) then
+																						{
+																							Class = "0"
+																						}
+																						elseif ( A11 > -1811.000000 ) then
+																						{
+																							if ( A16 <= 2362.000000 ) then
+																							{
+																								if ( A6 <= -526.000000 ) then
+																								{
+																									if ( A2 <= -1217.000000 ) then
+																									{
+																										Class = "0"
+																									}
+																									elseif ( A2 > -1217.000000 ) then
+																									{
+																										Class = "1"
+																									}
+																								}
+																								elseif ( A6 > -526.000000 ) then
+																								{
+																									Class = "1"
+																								}
+																							}
+																							elseif ( A16 > 2362.000000 ) then
+																							{
+																								Class = "0"
+																							}
+																						}
+																					}
+																					elseif ( A4 > 2278.000000 ) then
+																					{
+																						Class = "0"
+																					}
+																				}
+																			}
+																			elseif ( A20 > -1626.000000 ) then
+																			{
+																				if ( A11 <= 2718.000000 ) then
+																				{
+																					if ( A7 <= 2821.000000 ) then
+																					{
+																						if ( A8 <= 2643.000000 ) then
+																						{
+																							if ( A14 <= 2067.000000 ) then
+																							{
+																								if ( A4 <= -1586.000000 ) then
+																								{
+																									if ( A13 <= 1488.000000 ) then
+																									{
+																										if ( A16 <= -344.000000 ) then
+																										{
+																											if ( A12 <= -125.000000 ) then
+																											{
+																												Class = "0"
+																											}
+																											elseif ( A12 > -125.000000 ) then
+																											{
+																												if ( A8 <= -1022.000000 ) then
+																												{
+																													Class = "0"
+																												}
+																												elseif ( A8 > -1022.000000 ) then
+																												{
+																													Class = "1"
+																												}
+																											}
+																										}
+																										elseif ( A16 > -344.000000 ) then
+																										{
+																											Class = "1"
+																										}
+																									}
+																									elseif ( A13 > 1488.000000 ) then
+																									{
+																										Class = "0"
+																									}
+																								}
+																								elseif ( A4 > -1586.000000 ) then
+																								{
+																									if ( A10 <= -1502.000000 ) then
+																									{
+																										if ( A17 <= -886.000000 ) then
+																										{
+																											Class = "0"
+																										}
+																										elseif ( A17 > -886.000000 ) then
+																										{
+																											if ( A7 <= -856.000000 ) then
+																											{
+																												if ( A18 <= 77.000000 ) then
+																												{
+																													Class = "0"
+																												}
+																												elseif ( A18 > 77.000000 ) then
+																												{
+																													Class = "1"
+																												}
+																											}
+																											elseif ( A7 > -856.000000 ) then
+																											{
+																												Class = "1"
+																											}
+																										}
+																									}
+																									elseif ( A10 > -1502.000000 ) then
+																									{
+																										if ( A16 <= 2495.000000 ) then
+																										{
+																											Class = "1"
+																										}
+																										elseif ( A16 > 2495.000000 ) then
+																										{
+																											if ( A18 <= 1998.000000 ) then
+																											{
+																												Class = "1"
+																											}
+																											elseif ( A18 > 1998.000000 ) then
+																											{
+																												if ( A7 <= 186.000000 ) then
+																												{
+																													Class = "1"
+																												}
+																												elseif ( A7 > 186.000000 ) then
+																												{
+																													Class = "0"
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																							elseif ( A14 > 2067.000000 ) then
+																							{
+																								if ( A10 <= -961.000000 ) then
+																								{
+																									if ( A2 <= 139.000000 ) then
+																									{
+																										Class = "1"
+																									}
+																									elseif ( A2 > 139.000000 ) then
+																									{
+																										Class = "0"
+																									}
+																								}
+																								elseif ( A10 > -961.000000 ) then
+																								{
+																									if ( A15 <= -1238.000000 ) then
+																									{
+																										if ( A2 <= -124.000000 ) then
+																										{
+																											Class = "1"
+																										}
+																										elseif ( A2 > -124.000000 ) then
+																										{
+																											Class = "0"
+																										}
+																									}
+																									elseif ( A15 > -1238.000000 ) then
+																									{
+																										Class = "1"
+																									}
+																								}
+																							}
+																						}
+																						elseif ( A8 > 2643.000000 ) then
+																						{
+																							if ( A8 <= 3708.000000 ) then
+																							{
+																								if ( A9 <= 25.000000 ) then
+																								{
+																									if ( A10 <= 121.000000 ) then
+																									{
+																										Class = "0"
+																									}
+																									elseif ( A10 > 121.000000 ) then
+																									{
+																										if ( A1 <= 1753.000000 ) then
+																										{
+																											Class = "1"
+																										}
+																										elseif ( A1 > 1753.000000 ) then
+																										{
+																											Class = "0"
+																										}
+																									}
+																								}
+																								elseif ( A9 > 25.000000 ) then
+																								{
+																									Class = "1"
+																								}
+																							}
+																							elseif ( A8 > 3708.000000 ) then
+																							{
+																								Class = "0"
+																							}
+																						}
+																					}
+																					elseif ( A7 > 2821.000000 ) then
+																					{
+																						if ( A8 <= -948.000000 ) then
+																						{
+																							Class = "0"
+																						}
+																						elseif ( A8 > -948.000000 ) then
+																						{
+																							if ( A4 <= -865.000000 ) then
+																							{
+																								Class = "0"
+																							}
+																							elseif ( A4 > -865.000000 ) then
+																							{
+																								if ( A9 <= -871.000000 ) then
+																								{
+																									Class = "0"
+																								}
+																								elseif ( A9 > -871.000000 ) then
+																								{
+																									Class = "1"
+																								}
+																							}
+																						}
+																					}
+																				}
+																				elseif ( A11 > 2718.000000 ) then
+																				{
+																					if ( A17 <= -314.000000 ) then
+																					{
+																						Class = "0"
+																					}
+																					elseif ( A17 > -314.000000 ) then
+																					{
+																						if ( A2 <= -739.000000 ) then
+																						{
+																							Class = "0"
+																						}
+																						elseif ( A2 > -739.000000 ) then
+																						{
+																							Class = "1"
+																						}
+																					}
+																				}
+																			}
+																		}
+																		elseif ( A6 > 3115.000000 ) then
+																		{
+																			if ( A11 <= 19.000000 ) then
+																			{
+																				Class = "0"
+																			}
+																			elseif ( A11 > 19.000000 ) then
+																			{
+																				if ( A19 <= 751.000000 ) then
+																				{
+																					Class = "1"
+																				}
+																				elseif ( A19 > 751.000000 ) then
+																				{
+																					Class = "0"
+																				}
+																			}
+																		}
+																	}
+																}
+																elseif ( A3 > 3087.000000 ) then
+																{
+																	if ( A2 <= 1046.000000 ) then
+																	{
+																		if ( A8 <= -291.000000 ) then
+																		{
+																			Class = "0"
+																		}
+																		elseif ( A8 > -291.000000 ) then
+																		{
+																			if ( A13 <= 1595.000000 ) then
+																			{
+																				Class = "1"
+																			}
+																			elseif ( A13 > 1595.000000 ) then
+																			{
+																				Class = "0"
+																			}
+																		}
+																	}
+																	elseif ( A2 > 1046.000000 ) then
+																	{
+																		Class = "0"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@TotalNumberOfNodes 208
+@NumberOfLeafs 209
+@TotalNumberOfNodes 208
+@NumberOfAntecedentsByRule 15.866028708133971
+
+@NumberOfItemsetsTraining 6660
+@NumberOfCorrectlyClassifiedTraining 6591
+@PercentageOfCorrectlyClassifiedTraining 98.96397%
+@NumberOfInCorrectlyClassifiedTraining 69
+@PercentageOfInCorrectlyClassifiedTraining 1.036036%
+
+@NumberOfItemsetsTest 740
+@NumberOfCorrectlyClassifiedTest 674
+@PercentageOfCorrectlyClassifiedTest 91.08108%
+@NumberOfInCorrectlyClassifiedTest 66
+@PercentageOfInCorrectlyClassifiedTest 8.918919%
+
+@ElapsedTime 0:0:6

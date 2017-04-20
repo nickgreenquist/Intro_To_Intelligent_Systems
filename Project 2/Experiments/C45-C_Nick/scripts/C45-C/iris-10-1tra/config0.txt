@@ -1,0 +1,7 @@
+algorithm = C4.5 Decision Tree
+inputData = "../datasets/iris-10-1tra/iris-10-1tra-10-1tra.dat" "../datasets/iris-10-1tra/iris-10-1tra-10-1tra.dat" "../datasets/iris-10-1tra/iris-10-1tra-10-1tst.dat" 
+outputData = "../results/C45-C.iris-10-1tra/result0.tra" "../results/C45-C.iris-10-1tra/result0.tst" "../results/C45-C.iris-10-1tra/result0e0.txt"  
+
+pruned = TRUE
+confidence = 0.25
+instancesPerLeaf = 2

@@ -1,0 +1,62 @@
+@relation  monk-2
+@attribute A1 integer[1,3]
+@attribute A2 integer[1,3]
+@attribute A3 integer[1,2]
+@attribute A4 integer[1,3]
+@attribute A5 integer[1,4]
+@attribute A6 integer[1,2]
+@attribute Class{0,1}
+@inputs A1,A2,A3,A4,A5,A6
+@outputs Class
+@data
+
+@decisiontree
+
+if ( A5 <= 3.000000 ) then
+{
+	if ( A2 <= 2.000000 ) then
+	{
+		Class = "1"
+	}
+	elseif ( A2 > 2.000000 ) then
+	{
+		if ( A5 <= 2.000000 ) then
+		{
+			Class = "0"
+		}
+		elseif ( A5 > 2.000000 ) then
+		{
+			if ( A4 <= 1.000000 ) then
+			{
+				Class = "1"
+			}
+			elseif ( A4 > 1.000000 ) then
+			{
+				Class = "0"
+			}
+		}
+	}
+}
+elseif ( A5 > 3.000000 ) then
+{
+	Class = "0"
+}
+
+@TotalNumberOfNodes 4
+@NumberOfLeafs 5
+@TotalNumberOfNodes 4
+@NumberOfAntecedentsByRule 2.8
+
+@NumberOfItemsetsTraining 388
+@NumberOfCorrectlyClassifiedTraining 388
+@PercentageOfCorrectlyClassifiedTraining 100.0%
+@NumberOfInCorrectlyClassifiedTraining 0
+@PercentageOfInCorrectlyClassifiedTraining 0.0%
+
+@NumberOfItemsetsTest 44
+@NumberOfCorrectlyClassifiedTest 44
+@PercentageOfCorrectlyClassifiedTest 100.0%
+@NumberOfInCorrectlyClassifiedTest 0
+@PercentageOfInCorrectlyClassifiedTest 0.0%
+
+@ElapsedTime 0:0:0

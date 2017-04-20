@@ -1,0 +1,248 @@
+@relation  flare
+@attribute LargestSpotSize{A,R,S,X,K,H}
+@attribute SpotDistribution{X,O,I,C}
+@attribute Activity{1,2}
+@attribute Evolution{1,2,3}
+@attribute Prev24Hour{1,2,3}
+@attribute HistComplex{1,2}
+@attribute BecomeHist{1,2}
+@attribute Area{1,2}
+@attribute C-class{0,1,2,3,4,5,6,7,8}
+@attribute M-class{0,1,2,3,4,5}
+@attribute X-class{0,1,2}
+@attribute Class{H,D,C,B,E,F}
+@inputs LargestSpotSize,SpotDistribution,Activity,Evolution,Prev24Hour,HistComplex,BecomeHist,Area,C-class,M-class,X-class
+@outputs Class
+@data
+
+@decisiontree
+
+if ( SpotDistribution = X ) then
+{
+	Class = "H"
+}
+elseif ( SpotDistribution = O ) then
+{
+	if ( LargestSpotSize = A ) then
+	{
+		if ( C-class = 0 ) then
+		{
+			if ( Activity = 1 ) then
+			{
+				Class = "C"
+			}
+			elseif ( Activity = 2 ) then
+			{
+				Class = "D"
+			}
+		}
+		elseif ( C-class = 1 ) then
+		{
+			if ( Evolution = 1 ) then
+			{
+				Class = "E"
+			}
+			elseif ( Evolution = 2 ) then
+			{
+				Class = "E"
+			}
+			elseif ( Evolution = 3 ) then
+			{
+				Class = "D"
+			}
+		}
+		elseif ( C-class = 2 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 3 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 4 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 5 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 6 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 7 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 8 ) then
+		{
+			Class = "D"
+		}
+	}
+	elseif ( LargestSpotSize = R ) then
+	{
+		if ( C-class = 0 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 1 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 2 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 3 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 4 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 5 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 6 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 7 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 8 ) then
+		{
+			Class = "C"
+		}
+	}
+	elseif ( LargestSpotSize = S ) then
+	{
+		if ( C-class = 0 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 1 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 2 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 3 ) then
+		{
+			Class = "D"
+		}
+		elseif ( C-class = 4 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 5 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 6 ) then
+		{
+			Class = "E"
+		}
+		elseif ( C-class = 7 ) then
+		{
+			Class = "C"
+		}
+		elseif ( C-class = 8 ) then
+		{
+			Class = "C"
+		}
+	}
+	elseif ( LargestSpotSize = X ) then
+	{
+		Class = "B"
+	}
+	elseif ( LargestSpotSize = K ) then
+	{
+		Class = "C"
+	}
+	elseif ( LargestSpotSize = H ) then
+	{
+		if ( Activity = 1 ) then
+		{
+			Class = "D"
+		}
+		elseif ( Activity = 2 ) then
+		{
+			Class = "E"
+		}
+	}
+}
+elseif ( SpotDistribution = I ) then
+{
+	if ( LargestSpotSize = A ) then
+	{
+		Class = "D"
+	}
+	elseif ( LargestSpotSize = R ) then
+	{
+		Class = "D"
+	}
+	elseif ( LargestSpotSize = S ) then
+	{
+		Class = "D"
+	}
+	elseif ( LargestSpotSize = X ) then
+	{
+		Class = "B"
+	}
+	elseif ( LargestSpotSize = K ) then
+	{
+		if ( Area = 1 ) then
+		{
+			Class = "D"
+		}
+		elseif ( Area = 2 ) then
+		{
+			if ( Evolution = 1 ) then
+			{
+				Class = "E"
+			}
+			elseif ( Evolution = 2 ) then
+			{
+				Class = "F"
+			}
+			elseif ( Evolution = 3 ) then
+			{
+				Class = "E"
+			}
+		}
+	}
+	elseif ( LargestSpotSize = H ) then
+	{
+		Class = "E"
+	}
+}
+elseif ( SpotDistribution = C ) then
+{
+	Class = "E"
+}
+
+@TotalNumberOfNodes 11
+@NumberOfLeafs 45
+@TotalNumberOfNodes 11
+@NumberOfAntecedentsByRule 2.933333333333333
+
+@NumberOfItemsetsTraining 959
+@NumberOfCorrectlyClassifiedTraining 757
+@PercentageOfCorrectlyClassifiedTraining 78.93639%
+@NumberOfInCorrectlyClassifiedTraining 202
+@PercentageOfInCorrectlyClassifiedTraining 21.063608%
+
+@NumberOfItemsetsTest 107
+@NumberOfCorrectlyClassifiedTest 75
+@PercentageOfCorrectlyClassifiedTest 70.09346%
+@NumberOfInCorrectlyClassifiedTest 32
+@PercentageOfInCorrectlyClassifiedTest 29.906542%
+
+@ElapsedTime 0:0:0
