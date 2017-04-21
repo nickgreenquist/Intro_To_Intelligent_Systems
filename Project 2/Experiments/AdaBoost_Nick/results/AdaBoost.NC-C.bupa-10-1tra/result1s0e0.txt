@@ -1,0 +1,175 @@
+@Classifier number 0: 
+Number of Rules: 28
+Rule[1]: IF  Sgpt <= 16.0 AND  Sgpt <= 13.0 AND  Alkphos <= 70.0 AND  Alkphos <= 53.0 AND  Sgpt <= 12.0  THEN Class = 2 (0.016129032/0.019354839)
+Rule[2]: IF  Sgpt <= 16.0 AND  Sgpt <= 13.0 AND  Alkphos <= 70.0 AND  Alkphos <= 53.0 AND  Sgpt > 12.0  THEN Class = 1 (0.006451613/0.006451613)
+Rule[3]: IF  Sgpt <= 16.0 AND  Sgpt <= 13.0 AND  Alkphos <= 70.0 AND  Alkphos > 53.0  THEN Class = 2 (0.035483874/0.035483874)
+Rule[4]: IF  Sgpt <= 16.0 AND  Sgpt <= 13.0 AND  Alkphos > 70.0  THEN Class = 1 (0.009677419/0.009677419)
+Rule[5]: IF  Sgpt <= 16.0 AND  Sgpt > 13.0  THEN Class = 2 (0.058064524/0.058064524)
+Rule[6]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt <= 8.0  THEN Class = 1 (0.025806453/0.025806453)
+Rule[7]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt > 8.0 AND  Drinks <= 3.0 AND  Sgot <= 21.0 AND  Mcv <= 87.0 AND  Drinks <= 1.0 AND  Sgpt <= 17.0  THEN Class = 1 (0.006451613/0.006451613)
+Rule[8]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt > 8.0 AND  Drinks <= 3.0 AND  Sgot <= 21.0 AND  Mcv <= 87.0 AND  Drinks <= 1.0 AND  Sgpt > 17.0  THEN Class = 2 (0.009677419/0.009677419)
+Rule[9]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt > 8.0 AND  Drinks <= 3.0 AND  Sgot <= 21.0 AND  Mcv <= 87.0 AND  Drinks > 1.0  THEN Class = 1 (0.006451613/0.006451613)
+Rule[10]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt > 8.0 AND  Drinks <= 3.0 AND  Sgot <= 21.0 AND  Mcv > 87.0  THEN Class = 1 (0.045161296/0.045161296)
+Rule[11]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt > 8.0 AND  Drinks <= 3.0 AND  Sgot > 21.0 AND  Gammagt <= 17.0  THEN Class = 2 (0.022580646/0.022580646)
+Rule[12]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt > 8.0 AND  Drinks <= 3.0 AND  Sgot > 21.0 AND  Gammagt > 17.0  THEN Class = 1 (0.006451613/0.009677419)
+Rule[13]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt > 8.0 AND  Drinks > 3.0 AND  Alkphos <= 61.0  THEN Class = 2 (0.035483874/0.035483874)
+Rule[14]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt > 8.0 AND  Drinks > 3.0 AND  Alkphos > 61.0 AND  Mcv <= 88.0  THEN Class = 2 (0.009677419/0.009677419)
+Rule[15]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt > 8.0 AND  Drinks > 3.0 AND  Alkphos > 61.0 AND  Mcv > 88.0 AND  Alkphos <= 69.0  THEN Class = 1 (0.012903226/0.012903226)
+Rule[16]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt <= 24.0 AND  Gammagt > 8.0 AND  Drinks > 3.0 AND  Alkphos > 61.0 AND  Mcv > 88.0 AND  Alkphos > 69.0  THEN Class = 2 (0.006451613/0.009677419)
+Rule[17]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt > 24.0 AND  Sgot <= 21.0  THEN Class = 1 (0.064516135/0.064516135)
+Rule[18]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt > 24.0 AND  Sgot > 21.0 AND  Alkphos <= 55.0  THEN Class = 2 (0.012903226/0.016129032)
+Rule[19]: IF  Sgpt > 16.0 AND  Gammagt <= 21.0 AND  Sgpt > 24.0 AND  Sgot > 21.0 AND  Alkphos > 55.0  THEN Class = 1 (0.048387103/0.05161291)
+Rule[20]: IF  Sgpt > 16.0 AND  Gammagt > 21.0 AND  Drinks <= 5.0  THEN Class = 2 (0.27419338/0.36774167)
+Rule[21]: IF  Sgpt > 16.0 AND  Gammagt > 21.0 AND  Drinks > 5.0 AND  Sgpt <= 25.0  THEN Class = 2 (0.02903226/0.02903226)
+Rule[22]: IF  Sgpt > 16.0 AND  Gammagt > 21.0 AND  Drinks > 5.0 AND  Sgpt > 25.0 AND  Sgot <= 22.0  THEN Class = 1 (0.02903226/0.02903226)
+Rule[23]: IF  Sgpt > 16.0 AND  Gammagt > 21.0 AND  Drinks > 5.0 AND  Sgpt > 25.0 AND  Sgot > 22.0 AND  Gammagt <= 36.0  THEN Class = 1 (0.016129032/0.016129032)
+Rule[24]: IF  Sgpt > 16.0 AND  Gammagt > 21.0 AND  Drinks > 5.0 AND  Sgpt > 25.0 AND  Sgot > 22.0 AND  Gammagt > 36.0 AND  Gammagt <= 71.0  THEN Class = 2 (0.03870968/0.04193549)
+Rule[25]: IF  Sgpt > 16.0 AND  Gammagt > 21.0 AND  Drinks > 5.0 AND  Sgpt > 25.0 AND  Sgot > 22.0 AND  Gammagt > 36.0 AND  Gammagt > 71.0 AND  Sgpt <= 36.0  THEN Class = 2 (0.009677419/0.009677419)
+Rule[26]: IF  Sgpt > 16.0 AND  Gammagt > 21.0 AND  Drinks > 5.0 AND  Sgpt > 25.0 AND  Sgot > 22.0 AND  Gammagt > 36.0 AND  Gammagt > 71.0 AND  Sgpt > 36.0 AND  Mcv <= 89.0  THEN Class = 2 (0.006451613/0.006451613)
+Rule[27]: IF  Sgpt > 16.0 AND  Gammagt > 21.0 AND  Drinks > 5.0 AND  Sgpt > 25.0 AND  Sgot > 22.0 AND  Gammagt > 36.0 AND  Gammagt > 71.0 AND  Sgpt > 36.0 AND  Mcv > 89.0 AND  Alkphos <= 94.0  THEN Class = 1 (0.035483874/0.03870968)
+Rule[28]: IF  Sgpt > 16.0 AND  Gammagt > 21.0 AND  Drinks > 5.0 AND  Sgpt > 25.0 AND  Sgot > 22.0 AND  Gammagt > 36.0 AND  Gammagt > 71.0 AND  Sgpt > 36.0 AND  Mcv > 89.0 AND  Alkphos > 94.0  THEN Class = 2 (0.006451613/0.006451613)
+
+@Classifier number 1: 
+Number of Rules: 14
+Rule[1]: IF  Sgot <= 42.0 AND  Sgpt <= 17.0 AND  Gammagt <= 53.0 AND  Gammagt <= 7.0  THEN Class = 1 (0.40003937/0.40003937)
+Rule[2]: IF  Sgot <= 42.0 AND  Sgpt <= 17.0 AND  Gammagt <= 53.0 AND  Gammagt > 7.0  THEN Class = 2 (5.6005535/6.8006725)
+Rule[3]: IF  Sgot <= 42.0 AND  Sgpt <= 17.0 AND  Gammagt > 53.0  THEN Class = 1 (1.0/1.1333464)
+Rule[4]: IF  Sgot <= 42.0 AND  Sgpt > 17.0 AND  Sgot <= 22.0 AND  Alkphos <= 65.0 AND  Sgpt <= 21.0  THEN Class = 2 (1.8668503/2.4002364)
+Rule[5]: IF  Sgot <= 42.0 AND  Sgpt > 17.0 AND  Sgot <= 22.0 AND  Alkphos <= 65.0 AND  Sgpt > 21.0  THEN Class = 1 (5.8002768/7.4004354)
+Rule[6]: IF  Sgot <= 42.0 AND  Sgpt > 17.0 AND  Sgot <= 22.0 AND  Alkphos > 65.0  THEN Class = 1 (18.333662/20.600555)
+Rule[7]: IF  Sgot <= 42.0 AND  Sgpt > 17.0 AND  Sgot > 22.0 AND  Sgpt <= 26.0  THEN Class = 2 (4.8670483/7.933821)
+Rule[8]: IF  Sgot <= 42.0 AND  Sgpt > 17.0 AND  Sgot > 22.0 AND  Sgpt > 26.0 AND  Sgpt <= 68.0 AND  Sgot <= 23.0  THEN Class = 1 (3.266693/3.5333862)
+Rule[9]: IF  Sgot <= 42.0 AND  Sgpt > 17.0 AND  Sgot > 22.0 AND  Sgpt > 26.0 AND  Sgpt <= 68.0 AND  Sgot > 23.0 AND  Sgot <= 25.0  THEN Class = 2 (1.466811/1.7335038)
+Rule[10]: IF  Sgot <= 42.0 AND  Sgpt > 17.0 AND  Sgot > 22.0 AND  Sgpt > 26.0 AND  Sgpt <= 68.0 AND  Sgot > 23.0 AND  Sgot > 25.0 AND  Alkphos <= 43.0  THEN Class = 1 (2.0/2.0)
+Rule[11]: IF  Sgot <= 42.0 AND  Sgpt > 17.0 AND  Sgot > 22.0 AND  Sgpt > 26.0 AND  Sgpt <= 68.0 AND  Sgot > 23.0 AND  Sgot > 25.0 AND  Alkphos > 43.0 AND  Alkphos <= 60.0  THEN Class = 2 (2.1335433/2.4002364)
+Rule[12]: IF  Sgot <= 42.0 AND  Sgpt > 17.0 AND  Sgot > 22.0 AND  Sgpt > 26.0 AND  Sgpt <= 68.0 AND  Sgot > 23.0 AND  Sgot > 25.0 AND  Alkphos > 43.0 AND  Alkphos > 60.0  THEN Class = 1 (7.866852/11.133743)
+Rule[13]: IF  Sgot <= 42.0 AND  Sgpt > 17.0 AND  Sgot > 22.0 AND  Sgpt > 26.0 AND  Sgpt > 68.0  THEN Class = 1 (1.8000787/1.8000787)
+Rule[14]: IF  Sgot > 42.0  THEN Class = 2 (3.1335433/3.2668898)
+
+@Classifier number 2: 
+Number of Rules: 12
+Rule[1]: IF  Sgot <= 32.0 AND  Drinks <= 10.0 AND  Gammagt <= 35.0 AND  Gammagt <= 7.0  THEN Class = 1 (0.53758186/0.53758186)
+Rule[2]: IF  Sgot <= 32.0 AND  Drinks <= 10.0 AND  Gammagt <= 35.0 AND  Gammagt > 7.0 AND  Sgpt <= 30.0 AND  Sgpt <= 28.0 AND  Mcv <= 92.0 AND  Sgpt <= 16.0  THEN Class = 2 (0.68771243/1.0877517)
+Rule[3]: IF  Sgot <= 32.0 AND  Drinks <= 10.0 AND  Gammagt <= 35.0 AND  Gammagt > 7.0 AND  Sgpt <= 30.0 AND  Sgpt <= 28.0 AND  Mcv <= 92.0 AND  Sgpt > 16.0  THEN Class = 1 (5.0444384/6.688504)
+Rule[4]: IF  Sgot <= 32.0 AND  Drinks <= 10.0 AND  Gammagt <= 35.0 AND  Gammagt > 7.0 AND  Sgpt <= 30.0 AND  Sgpt <= 28.0 AND  Mcv > 92.0  THEN Class = 2 (1.0262294/1.491953)
+Rule[5]: IF  Sgot <= 32.0 AND  Drinks <= 10.0 AND  Gammagt <= 35.0 AND  Gammagt > 7.0 AND  Sgpt <= 30.0 AND  Sgpt > 28.0  THEN Class = 2 (0.689656/0.7355035)
+Rule[6]: IF  Sgot <= 32.0 AND  Drinks <= 10.0 AND  Gammagt <= 35.0 AND  Gammagt > 7.0 AND  Sgpt > 30.0  THEN Class = 1 (2.2035964/2.6953309)
+Rule[7]: IF  Sgot <= 32.0 AND  Drinks <= 10.0 AND  Gammagt > 35.0 AND  Sgpt <= 61.0 AND  Alkphos <= 94.0 AND  Sgot <= 16.0  THEN Class = 1 (0.34382227/0.50009245)
+Rule[8]: IF  Sgot <= 32.0 AND  Drinks <= 10.0 AND  Gammagt > 35.0 AND  Sgpt <= 61.0 AND  Alkphos <= 94.0 AND  Sgot > 16.0  THEN Class = 2 (3.1712518/3.8245275)
+Rule[9]: IF  Sgot <= 32.0 AND  Drinks <= 10.0 AND  Gammagt > 35.0 AND  Sgpt <= 61.0 AND  Alkphos > 94.0  THEN Class = 1 (0.7105683/1.1106076)
+Rule[10]: IF  Sgot <= 32.0 AND  Drinks <= 10.0 AND  Gammagt > 35.0 AND  Sgpt > 61.0  THEN Class = 1 (0.21775863/0.21775863)
+Rule[11]: IF  Sgot <= 32.0 AND  Drinks > 10.0  THEN Class = 1 (1.0229237/1.0458474)
+Rule[12]: IF  Sgot > 32.0  THEN Class = 2 (2.5221593/3.3004236)
+
+@Classifier number 3: 
+Number of Rules: 13
+Rule[1]: IF  Mcv <= 89.0 AND  Drinks <= 3.0 AND  Gammagt <= 9.0 AND  Sgpt <= 15.0  THEN Class = 2 (0.022923741/0.022923741)
+Rule[2]: IF  Mcv <= 89.0 AND  Drinks <= 3.0 AND  Gammagt <= 9.0 AND  Sgpt > 15.0  THEN Class = 1 (0.20211768/0.20211768)
+Rule[3]: IF  Mcv <= 89.0 AND  Drinks <= 3.0 AND  Gammagt > 9.0 AND  Sgot <= 31.0 AND  Alkphos <= 109.0 AND  Sgpt <= 13.0  THEN Class = 1 (0.18039055/0.27208552)
+Rule[4]: IF  Mcv <= 89.0 AND  Drinks <= 3.0 AND  Gammagt > 9.0 AND  Sgot <= 31.0 AND  Alkphos <= 109.0 AND  Sgpt > 13.0  THEN Class = 2 (3.1531498/4.0275655)
+Rule[5]: IF  Mcv <= 89.0 AND  Drinks <= 3.0 AND  Gammagt > 9.0 AND  Sgot <= 31.0 AND  Alkphos > 109.0  THEN Class = 1 (0.12404458/0.12404458)
+Rule[6]: IF  Mcv <= 89.0 AND  Drinks <= 3.0 AND  Gammagt > 9.0 AND  Sgot > 31.0  THEN Class = 1 (0.5891659/0.905001)
+Rule[7]: IF  Mcv <= 89.0 AND  Drinks > 3.0  THEN Class = 2 (2.628856/2.8072782)
+Rule[8]: IF  Mcv > 89.0 AND  Alkphos <= 91.0 AND  Drinks <= 5.0 AND  Alkphos <= 79.0 AND  Sgpt <= 27.0 AND  Gammagt <= 20.0  THEN Class = 1 (0.8130004/1.4364854)
+Rule[9]: IF  Mcv > 89.0 AND  Alkphos <= 91.0 AND  Drinks <= 5.0 AND  Alkphos <= 79.0 AND  Sgpt <= 27.0 AND  Gammagt > 20.0  THEN Class = 2 (1.7063811/1.9212701)
+Rule[10]: IF  Mcv > 89.0 AND  Alkphos <= 91.0 AND  Drinks <= 5.0 AND  Alkphos <= 79.0 AND  Sgpt > 27.0  THEN Class = 1 (1.0885657/1.6106286)
+Rule[11]: IF  Mcv > 89.0 AND  Alkphos <= 91.0 AND  Drinks <= 5.0 AND  Alkphos > 79.0  THEN Class = 1 (1.5217448/1.5780052)
+Rule[12]: IF  Mcv > 89.0 AND  Alkphos <= 91.0 AND  Drinks > 5.0  THEN Class = 1 (3.9086084/4.5424204)
+Rule[13]: IF  Mcv > 89.0 AND  Alkphos > 91.0  THEN Class = 2 (1.6994542/2.2349303)
+
+@Classifier number 4: 
+Number of Rules: 18
+Rule[1]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt <= 19.0 AND  Gammagt <= 7.0  THEN Class = 1 (0.103156835/0.103156835)
+Rule[2]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt <= 19.0 AND  Gammagt > 7.0  THEN Class = 2 (8.347618/9.425564)
+Rule[3]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt > 19.0 AND  Sgot <= 21.0 AND  Mcv <= 93.0  THEN Class = 1 (5.2215495/6.382677)
+Rule[4]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt > 19.0 AND  Sgot <= 21.0 AND  Mcv > 93.0  THEN Class = 2 (0.83761907/1.0562198)
+Rule[5]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt > 19.0 AND  Sgot > 21.0 AND  Sgpt <= 68.0 AND  Alkphos <= 41.0  THEN Class = 1 (0.540509/0.5920874)
+Rule[6]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt > 19.0 AND  Sgot > 21.0 AND  Sgpt <= 68.0 AND  Alkphos > 41.0 AND  Mcv <= 85.0  THEN Class = 2 (1.9562113/1.9562113)
+Rule[7]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt > 19.0 AND  Sgot > 21.0 AND  Sgpt <= 68.0 AND  Alkphos > 41.0 AND  Mcv > 85.0 AND  Gammagt <= 10.0  THEN Class = 1 (0.37047926/0.37047926)
+Rule[8]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt > 19.0 AND  Sgot > 21.0 AND  Sgpt <= 68.0 AND  Alkphos > 41.0 AND  Mcv > 85.0 AND  Gammagt > 10.0 AND  Alkphos <= 74.0 AND  Sgot <= 23.0  THEN Class = 1 (1.254447/2.2991133)
+Rule[9]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt > 19.0 AND  Sgot > 21.0 AND  Sgpt <= 68.0 AND  Alkphos > 41.0 AND  Mcv > 85.0 AND  Gammagt > 10.0 AND  Alkphos <= 74.0 AND  Sgot > 23.0  THEN Class = 2 (5.11245/6.51029)
+Rule[10]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt > 19.0 AND  Sgot > 21.0 AND  Sgpt <= 68.0 AND  Alkphos > 41.0 AND  Mcv > 85.0 AND  Gammagt > 10.0 AND  Alkphos > 74.0  THEN Class = 2 (1.2111552/1.2111552)
+Rule[11]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos <= 76.0 AND  Sgpt > 19.0 AND  Sgot > 21.0 AND  Sgpt > 68.0  THEN Class = 1 (0.43543363/0.43543363)
+Rule[12]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos > 76.0 AND  Sgpt <= 12.0  THEN Class = 1 (1.0544031/1.0544031)
+Rule[13]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos > 76.0 AND  Sgpt > 12.0 AND  Alkphos <= 77.0  THEN Class = 1 (0.79087347/0.79087347)
+Rule[14]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos > 76.0 AND  Sgpt > 12.0 AND  Alkphos > 77.0 AND  Gammagt <= 15.0  THEN Class = 1 (2.3223643/2.6011443)
+Rule[15]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos > 76.0 AND  Sgpt > 12.0 AND  Alkphos > 77.0 AND  Gammagt > 15.0 AND  Gammagt <= 54.0  THEN Class = 2 (4.7388268/7.4279695)
+Rule[16]: IF  Sgot <= 42.0 AND  Drinks <= 10.0 AND  Alkphos > 76.0 AND  Sgpt > 12.0 AND  Alkphos > 77.0 AND  Gammagt > 15.0 AND  Gammagt > 54.0  THEN Class = 1 (1.6338902/2.0476372)
+Rule[17]: IF  Sgot <= 42.0 AND  Drinks > 10.0  THEN Class = 1 (1.4237121/1.5810933)
+Rule[18]: IF  Sgot > 42.0  THEN Class = 2 (3.21506/3.3954506)
+
+@Classifier number 5: 
+Number of Rules: 11
+Rule[1]: IF  Alkphos <= 60.0 AND  Alkphos <= 36.0  THEN Class = 1 (0.48195976/0.48195976)
+Rule[2]: IF  Alkphos <= 60.0 AND  Alkphos > 36.0 AND  Drinks <= 5.0  THEN Class = 2 (9.5135145/11.475164)
+Rule[3]: IF  Alkphos <= 60.0 AND  Alkphos > 36.0 AND  Drinks > 5.0  THEN Class = 1 (1.6037663/3.1088834)
+Rule[4]: IF  Alkphos > 60.0 AND  Gammagt <= 48.0 AND  Sgpt <= 27.0 AND  Sgpt <= 16.0  THEN Class = 2 (2.635311/3.5519066)
+Rule[5]: IF  Alkphos > 60.0 AND  Gammagt <= 48.0 AND  Sgpt <= 27.0 AND  Sgpt > 16.0 AND  Sgot <= 19.0  THEN Class = 1 (4.617087/5.6985188)
+Rule[6]: IF  Alkphos > 60.0 AND  Gammagt <= 48.0 AND  Sgpt <= 27.0 AND  Sgpt > 16.0 AND  Sgot > 19.0 AND  Drinks <= 10.0 AND  Gammagt <= 21.0  THEN Class = 1 (1.8068194/3.6068225)
+Rule[7]: IF  Alkphos > 60.0 AND  Gammagt <= 48.0 AND  Sgpt <= 27.0 AND  Sgpt > 16.0 AND  Sgot > 19.0 AND  Drinks <= 10.0 AND  Gammagt > 21.0  THEN Class = 2 (2.1182456/2.1760309)
+Rule[8]: IF  Alkphos > 60.0 AND  Gammagt <= 48.0 AND  Sgpt <= 27.0 AND  Sgpt > 16.0 AND  Sgot > 19.0 AND  Drinks > 10.0  THEN Class = 1 (0.3347561/0.3347561)
+Rule[9]: IF  Alkphos > 60.0 AND  Gammagt <= 48.0 AND  Sgpt > 27.0  THEN Class = 1 (9.901107/11.58067)
+Rule[10]: IF  Alkphos > 60.0 AND  Gammagt > 48.0 AND  Alkphos <= 67.0  THEN Class = 1 (0.9591766/1.3935205)
+Rule[11]: IF  Alkphos > 60.0 AND  Gammagt > 48.0 AND  Alkphos > 67.0  THEN Class = 2 (4.2936993/5.3555703)
+
+@Classifier number 6: 
+Number of Rules: 14
+Rule[1]: IF  Alkphos <= 101.0 AND  Gammagt <= 8.0  THEN Class = 1 (1.2887667/1.3448012)
+Rule[2]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot <= 22.0 AND  Sgpt <= 21.0 AND  Sgot <= 21.0  THEN Class = 2 (7.0780506/8.41369)
+Rule[3]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot <= 22.0 AND  Sgpt <= 21.0 AND  Sgot > 21.0  THEN Class = 1 (0.58788306/0.790389)
+Rule[4]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot <= 22.0 AND  Sgpt > 21.0 AND  Gammagt <= 11.0  THEN Class = 2 (1.0/1.3354737)
+Rule[5]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot <= 22.0 AND  Sgpt > 21.0 AND  Gammagt > 11.0  THEN Class = 1 (7.372163/8.947477)
+Rule[6]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot > 22.0 AND  Mcv <= 99.0 AND  Mcv <= 98.0 AND  Sgot <= 42.0 AND  Sgpt <= 68.0 AND  Alkphos <= 96.0 AND  Gammagt <= 15.0  THEN Class = 1 (1.5101032/2.3908112)
+Rule[7]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot > 22.0 AND  Mcv <= 99.0 AND  Mcv <= 98.0 AND  Sgot <= 42.0 AND  Sgpt <= 68.0 AND  Alkphos <= 96.0 AND  Gammagt > 15.0  THEN Class = 2 (10.428096/13.066264)
+Rule[8]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot > 22.0 AND  Mcv <= 99.0 AND  Mcv <= 98.0 AND  Sgot <= 42.0 AND  Sgpt <= 68.0 AND  Alkphos > 96.0  THEN Class = 2 (1.579634/1.628148)
+Rule[9]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot > 22.0 AND  Mcv <= 99.0 AND  Mcv <= 98.0 AND  Sgot <= 42.0 AND  Sgpt > 68.0  THEN Class = 1 (0.60640895/0.60640895)
+Rule[10]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot > 22.0 AND  Mcv <= 99.0 AND  Mcv <= 98.0 AND  Sgot > 42.0  THEN Class = 2 (2.1032274/2.2162642)
+Rule[11]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot > 22.0 AND  Mcv <= 99.0 AND  Mcv > 98.0  THEN Class = 1 (0.4106816/0.4106816)
+Rule[12]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks <= 12.0 AND  Sgot > 22.0 AND  Mcv > 99.0  THEN Class = 2 (1.2301722/1.2301722)
+Rule[13]: IF  Alkphos <= 101.0 AND  Gammagt > 8.0 AND  Drinks > 12.0  THEN Class = 1 (0.81296986/0.81296986)
+Rule[14]: IF  Alkphos > 101.0  THEN Class = 1 (2.2485921/2.7521605)
+
+@Classifier number 7: 
+Number of Rules: 9
+Rule[1]: IF  Sgpt <= 16.0  THEN Class = 2 (5.591729/6.996335)
+Rule[2]: IF  Sgpt > 16.0 AND  Sgot <= 42.0 AND  Sgot <= 15.0  THEN Class = 1 (2.3111734/2.5878463)
+Rule[3]: IF  Sgpt > 16.0 AND  Sgot <= 42.0 AND  Sgot > 15.0 AND  Sgpt <= 36.0 AND  Gammagt <= 22.0 AND  Sgot <= 21.0  THEN Class = 1 (4.835718/5.67689)
+Rule[4]: IF  Sgpt > 16.0 AND  Sgot <= 42.0 AND  Sgot > 15.0 AND  Sgpt <= 36.0 AND  Gammagt <= 22.0 AND  Sgot > 21.0  THEN Class = 2 (3.7979584/5.6369543)
+Rule[5]: IF  Sgpt > 16.0 AND  Sgot <= 42.0 AND  Sgot > 15.0 AND  Sgpt <= 36.0 AND  Gammagt > 22.0 AND  Mcv <= 81.0  THEN Class = 1 (0.17442213/0.22573721)
+Rule[6]: IF  Sgpt > 16.0 AND  Sgot <= 42.0 AND  Sgot > 15.0 AND  Sgpt <= 36.0 AND  Gammagt > 22.0 AND  Mcv > 81.0  THEN Class = 2 (6.666702/8.1279745)
+Rule[7]: IF  Sgpt > 16.0 AND  Sgot <= 42.0 AND  Sgot > 15.0 AND  Sgpt > 36.0 AND  Drinks <= 2.0  THEN Class = 2 (1.4189776/2.3022394)
+Rule[8]: IF  Sgpt > 16.0 AND  Sgot <= 42.0 AND  Sgot > 15.0 AND  Sgpt > 36.0 AND  Drinks > 2.0  THEN Class = 1 (5.942709/6.6359167)
+Rule[9]: IF  Sgpt > 16.0 AND  Sgot > 42.0  THEN Class = 2 (1.7048632/1.8819193)
+
+@Classifier number 8: 
+Number of Rules: 11
+Rule[1]: IF  Drinks <= 3.0 AND  Gammagt <= 21.0 AND  Sgpt <= 26.0 AND  Mcv <= 87.0  THEN Class = 2 (0.8481534/1.0916489)
+Rule[2]: IF  Drinks <= 3.0 AND  Gammagt <= 21.0 AND  Sgpt <= 26.0 AND  Mcv > 87.0  THEN Class = 1 (2.9693635/3.6899545)
+Rule[3]: IF  Drinks <= 3.0 AND  Gammagt <= 21.0 AND  Sgpt > 26.0  THEN Class = 1 (4.3837204/4.4364595)
+Rule[4]: IF  Drinks <= 3.0 AND  Gammagt > 21.0 AND  Alkphos <= 79.0 AND  Gammagt <= 67.0 AND  Sgpt <= 26.0  THEN Class = 2 (0.7891091/0.86935395)
+Rule[5]: IF  Drinks <= 3.0 AND  Gammagt > 21.0 AND  Alkphos <= 79.0 AND  Gammagt <= 67.0 AND  Sgpt > 26.0  THEN Class = 1 (0.71848553/1.3227082)
+Rule[6]: IF  Drinks <= 3.0 AND  Gammagt > 21.0 AND  Alkphos <= 79.0 AND  Gammagt > 67.0  THEN Class = 2 (0.48791447/0.48791447)
+Rule[7]: IF  Drinks <= 3.0 AND  Gammagt > 21.0 AND  Alkphos > 79.0  THEN Class = 1 (1.2317972/1.4671075)
+Rule[8]: IF  Drinks > 3.0 AND  Drinks <= 5.0  THEN Class = 2 (3.3208144/3.7386045)
+Rule[9]: IF  Drinks > 3.0 AND  Drinks > 5.0 AND  Mcv <= 90.0  THEN Class = 2 (1.7811296/2.3744786)
+Rule[10]: IF  Drinks > 3.0 AND  Drinks > 5.0 AND  Mcv > 90.0 AND  Alkphos <= 81.0  THEN Class = 1 (2.8405452/3.795574)
+Rule[11]: IF  Drinks > 3.0 AND  Drinks > 5.0 AND  Mcv > 90.0 AND  Alkphos > 81.0  THEN Class = 2 (0.8181291/1.0672282)
+
+@Classifier number 9: 
+Number of Rules: 11
+Rule[1]: IF  Gammagt <= 9.0  THEN Class = 1 (1.5633281/1.8034252)
+Rule[2]: IF  Gammagt > 9.0 AND  Sgpt <= 19.0 AND  Sgot <= 31.0  THEN Class = 2 (6.12019/7.079351)
+Rule[3]: IF  Gammagt > 9.0 AND  Sgpt <= 19.0 AND  Sgot > 31.0  THEN Class = 1 (0.11808037/0.11808037)
+Rule[4]: IF  Gammagt > 9.0 AND  Sgpt > 19.0 AND  Gammagt <= 26.0 AND  Drinks <= 5.0 AND  Gammagt <= 21.0 AND  Drinks <= 4.0 AND  Mcv <= 94.0  THEN Class = 1 (3.4108791/3.8314965)
+Rule[5]: IF  Gammagt > 9.0 AND  Sgpt > 19.0 AND  Gammagt <= 26.0 AND  Drinks <= 5.0 AND  Gammagt <= 21.0 AND  Drinks <= 4.0 AND  Mcv > 94.0  THEN Class = 2 (0.08396037/0.09559899)
+Rule[6]: IF  Gammagt > 9.0 AND  Sgpt > 19.0 AND  Gammagt <= 26.0 AND  Drinks <= 5.0 AND  Gammagt <= 21.0 AND  Drinks > 4.0  THEN Class = 2 (0.16123225/0.23103856)
+Rule[7]: IF  Gammagt > 9.0 AND  Sgpt > 19.0 AND  Gammagt <= 26.0 AND  Drinks <= 5.0 AND  Gammagt > 21.0  THEN Class = 2 (0.59503776/0.6142008)
+Rule[8]: IF  Gammagt > 9.0 AND  Sgpt > 19.0 AND  Gammagt <= 26.0 AND  Drinks > 5.0  THEN Class = 1 (2.0669014/2.1178536)
+Rule[9]: IF  Gammagt > 9.0 AND  Sgpt > 19.0 AND  Gammagt > 26.0 AND  Sgot <= 23.0  THEN Class = 1 (1.032367/1.692543)
+Rule[10]: IF  Gammagt > 9.0 AND  Sgpt > 19.0 AND  Gammagt > 26.0 AND  Sgot > 23.0 AND  Gammagt <= 94.0  THEN Class = 2 (4.8940353/5.57356)
+Rule[11]: IF  Gammagt > 9.0 AND  Sgpt > 19.0 AND  Gammagt > 26.0 AND  Sgot > 23.0 AND  Gammagt > 94.0  THEN Class = 1 (0.6595897/0.9425497)
+
+Accuracy in training: 0.8838709677419355
+Accuracy in test: 0.5428571428571428
+AUC in training: 0.971923076923077
+AUC in test: 0.6033333333333333

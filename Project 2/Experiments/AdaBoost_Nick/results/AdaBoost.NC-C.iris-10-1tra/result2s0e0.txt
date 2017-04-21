@@ -1,0 +1,74 @@
+@Classifier number 0: 
+Number of Rules: 5
+Rule[1]: IF  PetalWidth <= 0.6  THEN Class = Iris-setosa (0.33333328/0.33333328)
+Rule[2]: IF  PetalWidth > 0.6 AND  PetalWidth <= 1.7 AND  PetalLength <= 4.9  THEN Class = Iris-versicolor (0.3111111/0.3185185)
+Rule[3]: IF  PetalWidth > 0.6 AND  PetalWidth <= 1.7 AND  PetalLength > 4.9 AND  PetalWidth <= 1.5  THEN Class = Iris-virginica (0.022222223/0.022222223)
+Rule[4]: IF  PetalWidth > 0.6 AND  PetalWidth <= 1.7 AND  PetalLength > 4.9 AND  PetalWidth > 1.5  THEN Class = Iris-versicolor (0.014814815/0.014814815)
+Rule[5]: IF  PetalWidth > 0.6 AND  PetalWidth > 1.7  THEN Class = Iris-virginica (0.3037037/0.3111111)
+
+@Classifier number 1: 
+Number of Rules: 3
+Rule[1]: IF  PetalWidth <= 0.6  THEN Class = Iris-setosa (2.0300517/2.0300517)
+Rule[2]: IF  PetalWidth > 0.6 AND  PetalWidth <= 1.6  THEN Class = Iris-versicolor (1.9398272/2.075164)
+Rule[3]: IF  PetalWidth > 0.6 AND  PetalWidth > 1.6  THEN Class = Iris-virginica (2.8496046/3.894719)
+
+@Classifier number 2: 
+Number of Rules: 5
+Rule[1]: IF  PetalWidth <= 0.6  THEN Class = Iris-setosa (0.31071383/0.31071383)
+Rule[2]: IF  PetalWidth > 0.6 AND  PetalLength <= 5.0 AND  SepalLength <= 5.3 AND  PetalLength <= 4.2  THEN Class = Iris-versicolor (0.034523763/0.034523763)
+Rule[3]: IF  PetalWidth > 0.6 AND  PetalLength <= 5.0 AND  SepalLength <= 5.3 AND  PetalLength > 4.2  THEN Class = Iris-virginica (0.15305708/0.15305708)
+Rule[4]: IF  PetalWidth > 0.6 AND  PetalLength <= 5.0 AND  SepalLength > 5.3  THEN Class = Iris-versicolor (1.3005874/1.387128)
+Rule[5]: IF  PetalWidth > 0.6 AND  PetalLength > 5.0  THEN Class = Iris-virginica (0.33189085/0.3387956)
+
+@Classifier number 3: 
+Number of Rules: 5
+Rule[1]: IF  PetalWidth <= 0.6  THEN Class = Iris-setosa (0.31071383/0.31071383)
+Rule[2]: IF  PetalWidth > 0.6 AND  PetalLength <= 4.8  THEN Class = Iris-versicolor (1.2761894/1.527186)
+Rule[3]: IF  PetalWidth > 0.6 AND  PetalLength > 4.8 AND  PetalWidth <= 1.7 AND  PetalWidth <= 1.5  THEN Class = Iris-virginica (0.19629219/0.2101017)
+Rule[4]: IF  PetalWidth > 0.6 AND  PetalLength > 4.8 AND  PetalWidth <= 1.7 AND  PetalWidth > 1.5  THEN Class = Iris-versicolor (0.117644206/0.117644206)
+Rule[5]: IF  PetalWidth > 0.6 AND  PetalLength > 4.8 AND  PetalWidth > 1.7  THEN Class = Iris-virginica (0.6671311/0.6671311)
+
+@Classifier number 4: 
+Number of Rules: 6
+Rule[1]: IF  PetalWidth <= 0.6  THEN Class = Iris-setosa (0.67647016/0.67647016)
+Rule[2]: IF  PetalWidth > 0.6 AND  SepalWidth <= 3.0 AND  PetalWidth <= 1.6 AND  SepalWidth <= 2.2 AND  PetalLength <= 4.7  THEN Class = Iris-versicolor (0.04509802/0.04509802)
+Rule[3]: IF  PetalWidth > 0.6 AND  SepalWidth <= 3.0 AND  PetalWidth <= 1.6 AND  SepalWidth <= 2.2 AND  PetalLength > 4.7  THEN Class = Iris-virginica (0.1681108/0.1681108)
+Rule[4]: IF  PetalWidth > 0.6 AND  SepalWidth <= 3.0 AND  PetalWidth <= 1.6 AND  SepalWidth > 2.2  THEN Class = Iris-versicolor (0.7149935/0.73681927)
+Rule[5]: IF  PetalWidth > 0.6 AND  SepalWidth <= 3.0 AND  PetalWidth > 1.6  THEN Class = Iris-virginica (3.0570507/3.0679636)
+Rule[6]: IF  PetalWidth > 0.6 AND  SepalWidth > 3.0  THEN Class = Iris-versicolor (1.2038764/1.4443988)
+
+@Classifier number 5: 
+Number of Rules: 3
+Rule[1]: IF  PetalWidth <= 0.6  THEN Class = Iris-setosa (2.7058806/2.7058806)
+Rule[2]: IF  PetalWidth > 0.6 AND  PetalWidth <= 1.6  THEN Class = Iris-versicolor (3.2940652/3.9082196)
+Rule[3]: IF  PetalWidth > 0.6 AND  PetalWidth > 1.6  THEN Class = Iris-virginica (13.167096/14.35774)
+
+@Classifier number 6: 
+Number of Rules: 3
+Rule[1]: IF  PetalWidth <= 0.6  THEN Class = Iris-setosa (0.6187704/0.6187704)
+Rule[2]: IF  PetalWidth > 0.6 AND  PetalLength <= 5.0  THEN Class = Iris-versicolor (1.8766944/2.380259)
+Rule[3]: IF  PetalWidth > 0.6 AND  PetalLength > 5.0  THEN Class = Iris-virginica (2.0011408/2.0350327)
+
+@Classifier number 7: 
+Number of Rules: 3
+Rule[1]: IF  PetalWidth <= 0.6  THEN Class = Iris-setosa (1.5558367/1.5558367)
+Rule[2]: IF  PetalWidth > 0.6 AND  PetalLength <= 4.7  THEN Class = Iris-versicolor (1.3483918/1.6514324)
+Rule[3]: IF  PetalWidth > 0.6 AND  PetalLength > 4.7  THEN Class = Iris-virginica (8.032072/9.549968)
+
+@Classifier number 8: 
+Number of Rules: 4
+Rule[1]: IF  PetalWidth <= 0.6  THEN Class = Iris-setosa (0.68028605/0.68028605)
+Rule[2]: IF  PetalWidth > 0.6 AND  PetalWidth <= 1.8 AND  SepalLength <= 4.9  THEN Class = Iris-virginica (0.35791588/0.37303334)
+Rule[3]: IF  PetalWidth > 0.6 AND  PetalWidth <= 1.8 AND  SepalLength > 4.9  THEN Class = Iris-versicolor (3.0594158/3.7702487)
+Rule[4]: IF  PetalWidth > 0.6 AND  PetalWidth > 1.8  THEN Class = Iris-virginica (1.2020035/1.2020035)
+
+@Classifier number 9: 
+Number of Rules: 3
+Rule[1]: IF  PetalLength <= 1.9  THEN Class = Iris-setosa (1.2556188/1.2556188)
+Rule[2]: IF  PetalLength > 1.9 AND  PetalWidth <= 1.6  THEN Class = Iris-versicolor (2.6437383/3.4063275)
+Rule[3]: IF  PetalLength > 1.9 AND  PetalWidth > 1.6  THEN Class = Iris-virginica (6.322462/6.7440004)
+
+Accuracy in training: 0.6666666666666666
+Accuracy in test: 0.6666666666666666
+AUC in training: 1.0
+AUC in test: 1.0
