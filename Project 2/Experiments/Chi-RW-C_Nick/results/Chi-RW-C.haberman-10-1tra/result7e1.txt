@@ -1,0 +1,18 @@
+@Number of rules: 16
+
+1: Age IS L_0 AND Year IS L_1 AND Positive IS L_0: negative with Rule Weight: 0.6487896596432909
+2: Age IS L_1 AND Year IS L_1 AND Positive IS L_0: negative with Rule Weight: 0.5247990956966982
+3: Age IS L_1 AND Year IS L_0 AND Positive IS L_0: negative with Rule Weight: 0.5557867713169318
+4: Age IS L_1 AND Year IS L_2 AND Positive IS L_0: negative with Rule Weight: 0.5344049969015597
+5: Age IS L_1 AND Year IS L_2 AND Positive IS L_1: negative with Rule Weight: 0.11664668314287752
+6: Age IS L_0 AND Year IS L_1 AND Positive IS L_1: negative with Rule Weight: 0.2116694941179741
+7: Age IS L_0 AND Year IS L_0 AND Positive IS L_0: negative with Rule Weight: 0.6624124333399807
+8: Age IS L_2 AND Year IS L_1 AND Positive IS L_0: negative with Rule Weight: 0.4993497615792452
+9: Age IS L_2 AND Year IS L_2 AND Positive IS L_0: negative with Rule Weight: 0.7417888396408686
+10: Age IS L_1 AND Year IS L_1 AND Positive IS L_1: positive with Rule Weight: 0.14687591956841622
+11: Age IS L_2 AND Year IS L_0 AND Positive IS L_0: negative with Rule Weight: 0.22804862158187664
+12: Age IS L_0 AND Year IS L_2 AND Positive IS L_0: negative with Rule Weight: 0.38446269411902106
+13: Age IS L_0 AND Year IS L_0 AND Positive IS L_1: negative with Rule Weight: 0.40336222563959195
+14: Age IS L_1 AND Year IS L_2 AND Positive IS L_2: negative with Rule Weight: 1.0
+15: Age IS L_0 AND Year IS L_2 AND Positive IS L_1: positive with Rule Weight: 0.041453910239182816
+16: Age IS L_1 AND Year IS L_0 AND Positive IS L_1: positive with Rule Weight: 0.14872592880762545

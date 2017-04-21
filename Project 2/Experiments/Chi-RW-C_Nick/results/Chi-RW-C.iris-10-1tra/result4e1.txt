@@ -1,0 +1,17 @@
+@Number of rules: 15
+
+1: SepalLength IS L_0 AND SepalWidth IS L_1 AND PetalLength IS L_0 AND PetalWidth IS L_0: Iris-setosa with Rule Weight: 0.9974407602141161
+2: SepalLength IS L_1 AND SepalWidth IS L_2 AND PetalLength IS L_0 AND PetalWidth IS L_0: Iris-setosa with Rule Weight: 1.0
+3: SepalLength IS L_1 AND SepalWidth IS L_1 AND PetalLength IS L_0 AND PetalWidth IS L_0: Iris-setosa with Rule Weight: 0.9932796399688383
+4: SepalLength IS L_0 AND SepalWidth IS L_0 AND PetalLength IS L_0 AND PetalWidth IS L_0: Iris-setosa with Rule Weight: 0.917661135855941
+5: SepalLength IS L_1 AND SepalWidth IS L_1 AND PetalLength IS L_1 AND PetalWidth IS L_1: Iris-versicolor with Rule Weight: 0.5571321988353702
+6: SepalLength IS L_1 AND SepalWidth IS L_0 AND PetalLength IS L_1 AND PetalWidth IS L_1: Iris-versicolor with Rule Weight: 0.634311186941659
+7: SepalLength IS L_0 AND SepalWidth IS L_0 AND PetalLength IS L_1 AND PetalWidth IS L_1: Iris-versicolor with Rule Weight: 0.7460574550159332
+8: SepalLength IS L_1 AND SepalWidth IS L_1 AND PetalLength IS L_2 AND PetalWidth IS L_2: Iris-virginica with Rule Weight: 0.849917260605062
+9: SepalLength IS L_2 AND SepalWidth IS L_1 AND PetalLength IS L_2 AND PetalWidth IS L_2: Iris-virginica with Rule Weight: 0.9526860495019916
+10: SepalLength IS L_1 AND SepalWidth IS L_1 AND PetalLength IS L_2 AND PetalWidth IS L_1: Iris-virginica with Rule Weight: 0.09718824966587349
+11: SepalLength IS L_2 AND SepalWidth IS L_1 AND PetalLength IS L_2 AND PetalWidth IS L_1: Iris-virginica with Rule Weight: 0.5643987146077751
+12: SepalLength IS L_1 AND SepalWidth IS L_0 AND PetalLength IS L_2 AND PetalWidth IS L_1: Iris-virginica with Rule Weight: 0.12491549499046713
+13: SepalLength IS L_1 AND SepalWidth IS L_1 AND PetalLength IS L_1 AND PetalWidth IS L_2: Iris-virginica with Rule Weight: 0.5803140180350072
+14: SepalLength IS L_1 AND SepalWidth IS L_0 AND PetalLength IS L_1 AND PetalWidth IS L_2: Iris-virginica with Rule Weight: 0.586510529589748
+15: SepalLength IS L_2 AND SepalWidth IS L_0 AND PetalLength IS L_2 AND PetalWidth IS L_2: Iris-virginica with Rule Weight: 0.9606178672413896
