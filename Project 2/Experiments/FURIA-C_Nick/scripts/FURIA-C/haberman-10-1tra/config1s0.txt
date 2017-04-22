@@ -1,0 +1,7 @@
+algorithm = FURIA
+inputData = "../datasets/haberman-10-1tra/haberman-10-1tra-10-2tra.dat" "../datasets/haberman-10-1tra/haberman-10-1tra-10-2tra.dat" "../datasets/haberman-10-1tra/haberman-10-1tra-10-2tst.dat" 
+outputData = "../results/FURIA-C.haberman-10-1tra/result1s0.tra" "../results/FURIA-C.haberman-10-1tra/result1s0.tst" "../results/FURIA-C.haberman-10-1tra/result1s0e0.txt"  
+
+seed = 1286082570
+Number of Optimizations = 2
+Number of folds = 3

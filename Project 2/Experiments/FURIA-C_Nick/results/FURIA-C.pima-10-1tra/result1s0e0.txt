@@ -1,0 +1,41 @@
+FURIA rules:
+===========
+
+(Plas <= 123(-> 128)) => Class=tested_negative (CF = 0.81)
+ => Class=tested_negative (CF = 0.0)
+(Plas <= 127(-> 128)) => Class=tested_negative (CF = 0.81)
+(Plas <= 143(-> 152)) => Class=tested_negative (CF = 0.75)
+(Plas <= 154(-> 175)) and (Age <= 30(-> 47)) and (Pres >= 56(-> 0)) and (Pedi <= 0.336(-> 0.402)) => Class=tested_negative (CF = 0.83)
+(Plas <= 129(-> 136)) and (Pedi <= 0.34(-> 0.344)) => Class=tested_negative (CF = 0.83)
+(Plas <= 154(-> 158)) => Class=tested_negative (CF = 0.73)
+ => Class=tested_negative (CF = 0.0)
+(Plas <= 123(-> 125)) => Class=tested_negative (CF = 0.82)
+(Plas <= 157(-> 171)) => Class=tested_negative (CF = 0.71)
+ => Class=tested_positive (CF = 0.0)
+ => Class=tested_positive (CF = 0.0)
+(Age >= 29(-> 28)) and (Plas >= 100(-> 99)) and (Mass >= 29.9(-> 29.7)) => Class=tested_positive (CF = 0.66)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Plas <= 123(-> 128)) and (Age <= 28(-> 29)) and (Mass <= 30.9(-> 31)) and (Preg <= 7(-> 8)) => Class=tested_negative (CF = 0.99)
+(Plas <= 99(-> 100)) => Class=tested_negative (CF = 0.91)
+(Plas <= 127(-> 128)) and (Age <= 28(-> 31)) and (Insu >= 100(-> 99)) and (Pedi <= 0.605(-> 0.674)) => Class=tested_negative (CF = 0.99)
+(Plas <= 143(-> 152)) and (Mass <= 27.3(-> 27.4)) and (Pedi >= 0.409(-> 0.402)) => Class=tested_negative (CF = 0.99)
+(Plas <= 154(-> 175)) and (Age <= 30(-> 47)) and (Pres >= 56(-> 0)) and (Pedi <= 0.336(-> 0.402)) and (Mass <= 26.2(-> 26.4)) => Class=tested_negative (CF = 0.99)
+(Plas <= 129(-> 136)) and (Pedi <= 0.34(-> 0.344)) and (Mass >= 34.1(-> 32.9)) and (Preg >= 2(-> 1)) and (Pedi >= 0.267(-> 0.261)) => Class=tested_negative (CF = 0.96)
+(Plas <= 154(-> 158)) and (Age <= 30(-> 32)) and (Pres >= 74(-> 70)) and (Mass <= 41.5(-> 42.1)) and (Mass >= 34.5(-> 34.2)) => Class=tested_negative (CF = 0.95)
+(Mass <= 30.1(-> 30.4)) and (Preg <= 7(-> 8)) and (Pres >= 82(-> 80)) => Class=tested_negative (CF = 0.95)
+(Plas <= 123(-> 125)) and (Insu >= 48(-> 36)) and (Insu <= 135(-> 145)) => Class=tested_negative (CF = 0.92)
+(Plas <= 157(-> 171)) and (Age <= 24(-> 25)) and (Skin >= 14(-> 0)) => Class=tested_negative (CF = 0.93)
+(Plas >= 156(-> 155)) => Class=tested_positive (CF = 0.8)
+(Plas >= 124(-> 123)) and (Mass >= 41.8(-> 41.5)) => Class=tested_positive (CF = 0.83)
+(Age >= 29(-> 28)) and (Plas >= 100(-> 99)) and (Mass >= 29.9(-> 29.7)) and (Pedi >= 0.529(-> 0.488)) => Class=tested_positive (CF = 0.76)
+
+Number of Rules : 13
+
+
+
+
+REGLAS = 13

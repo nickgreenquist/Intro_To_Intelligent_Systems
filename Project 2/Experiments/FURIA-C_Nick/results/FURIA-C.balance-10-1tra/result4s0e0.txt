@@ -1,0 +1,59 @@
+FURIA rules:
+===========
+
+ => Balance_scale=L (CF = 0.0)
+(Right-distance <= 1(-> 2)) => Balance_scale=L (CF = 0.77)
+(Right-weight <= 1(-> 2)) => Balance_scale=L (CF = 0.76)
+(Right-distance <= 2(-> 3)) => Balance_scale=L (CF = 0.68)
+(Right-weight <= 2(-> 3)) and (Right-distance <= 2(-> 3)) => Balance_scale=L (CF = 0.84)
+(Right-weight <= 2(-> 3)) and (Right-distance <= 2(-> 3)) => Balance_scale=L (CF = 0.84)
+(Right-weight <= 1(-> 2)) => Balance_scale=L (CF = 0.76)
+(Right-distance <= 3(-> 4)) => Balance_scale=L (CF = 0.6)
+(Right-distance <= 2(-> 3)) and (Right-weight <= 3(-> 4)) => Balance_scale=L (CF = 0.79)
+(Right-distance <= 1(-> 2)) => Balance_scale=L (CF = 0.77)
+ => Balance_scale=L (CF = 0.0)
+(Left-distance <= 2(-> 3)) => Balance_scale=R (CF = 0.68)
+(Left-weight <= 1(-> 2)) => Balance_scale=R (CF = 0.76)
+(Left-distance <= 2(-> 3)) and (Left-weight <= 2(-> 3)) => Balance_scale=R (CF = 0.84)
+ => Balance_scale=R (CF = 0.0)
+(Left-distance <= 1(-> 2)) => Balance_scale=R (CF = 0.79)
+(Left-weight <= 1(-> 2)) => Balance_scale=R (CF = 0.76)
+ => Balance_scale=R (CF = 0.0)
+ => Balance_scale=R (CF = 0.0)
+ => Balance_scale=R (CF = 0.0)
+(Left-distance <= 1(-> 2)) => Balance_scale=R (CF = 0.79)
+ => Balance_scale=R (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Left-distance >= 3(-> 2)) and (Left-weight >= 3(-> 2)) and (Right-weight <= 3(-> 4)) => Balance_scale=L (CF = 0.94)
+(Right-distance <= 1(-> 2)) and (Left-distance >= 3(-> 2)) and (Left-weight >= 2(-> 1)) => Balance_scale=L (CF = 0.98)
+(Right-weight <= 1(-> 2)) and (Left-weight >= 3(-> 2)) and (Left-distance >= 2(-> 1)) => Balance_scale=L (CF = 0.98)
+(Right-distance <= 2(-> 3)) and (Left-weight >= 3(-> 2)) and (Left-distance >= 3(-> 2)) => Balance_scale=L (CF = 0.98)
+(Right-weight <= 2(-> 3)) and (Right-distance <= 2(-> 3)) and (Left-distance >= 3(-> 2)) => Balance_scale=L (CF = 0.96)
+(Right-weight <= 2(-> 3)) and (Right-distance <= 2(-> 3)) and (Left-weight >= 3(-> 2)) => Balance_scale=L (CF = 0.95)
+(Right-weight <= 1(-> 2)) and (Left-distance >= 3(-> 2)) and (Left-weight >= 2(-> 1)) => Balance_scale=L (CF = 0.98)
+(Right-distance <= 3(-> 4)) and (Left-distance >= 4(-> 3)) and (Left-weight >= 4(-> 3)) => Balance_scale=L (CF = 0.98)
+(Right-distance <= 2(-> 3)) and (Right-weight <= 3(-> 4)) and (Left-distance >= 4(-> 3)) => Balance_scale=L (CF = 0.95)
+(Right-distance <= 1(-> 2)) and (Left-distance >= 2(-> 1)) and (Left-weight >= 3(-> 2)) => Balance_scale=L (CF = 0.98)
+(Left-distance >= 5(-> 4)) and (Left-weight >= 5(-> 4)) => Balance_scale=L (CF = 0.92)
+(Left-distance <= 2(-> 3)) and (Right-distance >= 3(-> 2)) and (Right-weight >= 3(-> 2)) => Balance_scale=R (CF = 0.97)
+(Left-weight <= 1(-> 2)) and (Right-distance >= 3(-> 2)) and (Right-weight >= 2(-> 1)) => Balance_scale=R (CF = 0.98)
+(Left-distance <= 2(-> 3)) and (Left-weight <= 2(-> 3)) and (Right-distance >= 2(-> 1)) => Balance_scale=R (CF = 0.92)
+(Right-weight >= 4(-> 3)) and (Right-distance >= 3(-> 2)) and (Left-weight <= 3(-> 4)) => Balance_scale=R (CF = 0.95)
+(Left-distance <= 1(-> 2)) and (Right-weight >= 2(-> 1)) and (Left-weight <= 3(-> 4)) => Balance_scale=R (CF = 0.93)
+(Left-weight <= 1(-> 2)) and (Right-weight >= 3(-> 2)) and (Right-distance >= 2(-> 1)) => Balance_scale=R (CF = 0.98)
+(Right-weight >= 5(-> 4)) and (Left-distance <= 2(-> 3)) and (Left-weight <= 4(-> 5)) => Balance_scale=R (CF = 0.94)
+(Right-distance >= 4(-> 3)) and (Left-distance <= 3(-> 4)) and (Right-weight >= 3(-> 2)) => Balance_scale=R (CF = 0.96)
+(Right-distance >= 4(-> 3)) and (Right-weight >= 3(-> 2)) and (Left-weight <= 3(-> 4)) => Balance_scale=R (CF = 0.96)
+(Left-distance <= 1(-> 2)) and (Right-distance >= 4(-> 3)) => Balance_scale=R (CF = 0.93)
+(Right-weight >= 5(-> 4)) and (Right-distance >= 4(-> 3)) and (Left-distance <= 4(-> 5)) => Balance_scale=R (CF = 0.97)
+
+Number of Rules : 22
+
+
+
+
+REGLAS = 22

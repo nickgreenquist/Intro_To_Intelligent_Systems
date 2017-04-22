@@ -1,0 +1,31 @@
+FURIA rules:
+===========
+
+(Shell_weight <= 0.253(-> 0.26)) => Rings=8 (CF = 0.2)
+ => Rings=5 (CF = 0.0)
+ => Rings=5 (CF = 0.0)
+ => Rings=4 (CF = 0.0)
+ => Rings=4 (CF = 0.0)
+ => Rings=4 (CF = 0.0)
+ => Rings=6 (CF = 0.0)
+ => Rings=3 (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Shell_weight <= 0.253(-> 0.26)) and (Shucked_weight >= 0.2375(-> 0.2365)) and (Sex = I) and (Viscera_weight <= 0.144(-> 0.1455)) and (Height <= 0.13(-> 0.135)) and (Viscera_weight >= 0.103(-> 0.1025)) => Rings=8 (CF = 0.59)
+(Shell_weight <= 0.0385(-> 0.0405)) and (Shucked_weight >= 0.0385(-> 0.038)) and (Viscera_weight <= 0.024(-> 0.0245)) => Rings=5 (CF = 0.61)
+(Shell_weight <= 0.073(-> 0.0885)) and (Diameter <= 0.22(-> 0.225)) and (Shucked_weight >= 0.0585(-> 0.0575)) and (Sex = I) => Rings=5 (CF = 0.74)
+(Length <= 0.28(-> 0.285)) and (Shell_weight <= 0.0215(-> 0.022)) and (Height >= 0.06(-> 0.055)) => Rings=4 (CF = 0.57)
+(Whole_weight <= 0.1185(-> 0.1195)) and (Diameter <= 0.17(-> 0.175)) and (Viscera_weight >= 0.006(-> 0.0055)) and (Viscera_weight <= 0.0095(-> 0.01)) => Rings=4 (CF = 0.63)
+(Shell_weight <= 0.0305(-> 0.031)) and (Length <= 0.225(-> 0.23)) and (Length >= 0.22(-> 0.215)) => Rings=4 (CF = 0.63)
+(Shell_weight <= 0.1195(-> 0.12)) and (Diameter <= 0.275(-> 0.28)) and (Viscera_weight >= 0.0265(-> 0.0255)) and (Height <= 0.075(-> 0.08)) and (Length >= 0.325(-> 0.32)) => Rings=6 (CF = 0.53)
+(Shell_weight <= 0.017(-> 0.0345)) and (Diameter <= 0.12(-> 0.125)) and (Height >= 0.03(-> 0.025)) => Rings=3 (CF = 0.5)
+
+Number of Rules : 8
+
+
+
+
+REGLAS = 8

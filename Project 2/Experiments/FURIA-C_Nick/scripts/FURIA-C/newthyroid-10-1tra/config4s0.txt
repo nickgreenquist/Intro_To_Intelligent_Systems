@@ -1,0 +1,7 @@
+algorithm = FURIA
+inputData = "../datasets/newthyroid-10-1tra/newthyroid-10-1tra-10-5tra.dat" "../datasets/newthyroid-10-1tra/newthyroid-10-1tra-10-5tra.dat" "../datasets/newthyroid-10-1tra/newthyroid-10-1tra-10-5tst.dat" 
+outputData = "../results/FURIA-C.newthyroid-10-1tra/result4s0.tra" "../results/FURIA-C.newthyroid-10-1tra/result4s0.tst" "../results/FURIA-C.newthyroid-10-1tra/result4s0e0.txt"  
+
+seed = 1286082570
+Number of Optimizations = 2
+Number of folds = 3

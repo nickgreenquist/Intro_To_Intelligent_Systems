@@ -1,0 +1,33 @@
+FURIA rules:
+===========
+
+ => Class=tested_negative (CF = 0.0)
+(Plas <= 127(-> 129)) => Class=tested_negative (CF = 0.8)
+(Plas <= 123(-> 124)) => Class=tested_negative (CF = 0.82)
+ => Class=tested_negative (CF = 0.0)
+(Plas <= 157(-> 161)) => Class=tested_negative (CF = 0.72)
+ => Class=tested_negative (CF = 0.0)
+(Plas <= 155(-> 177)) => Class=tested_negative (CF = 0.71)
+ => Class=tested_positive (CF = 0.0)
+ => Class=tested_positive (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Plas <= 106(-> 107)) and (Age <= 28(-> 29)) and (Mass <= 30.9(-> 31)) => Class=tested_negative (CF = 0.99)
+(Plas <= 127(-> 129)) and (Age <= 30(-> 31)) and (Pedi <= 0.495(-> 0.514)) and (Insu >= 37(-> 0)) and (Plas >= 105(-> 104)) => Class=tested_negative (CF = 0.98)
+(Plas <= 123(-> 124)) and (Preg <= 6(-> 7)) => Class=tested_negative (CF = 0.86)
+(Mass <= 25.4(-> 25.6)) and (Plas <= 145(-> 156)) => Class=tested_negative (CF = 0.96)
+(Plas <= 157(-> 161)) and (Pedi <= 0.204(-> 0.205)) => Class=tested_negative (CF = 0.85)
+(Mass <= 29.9(-> 30.1)) and (Age >= 54(-> 53)) => Class=tested_negative (CF = 0.82)
+(Plas <= 155(-> 177)) and (Age <= 24(-> 25)) and (Skin >= 13(-> 0)) and (Skin <= 32(-> 33)) => Class=tested_negative (CF = 0.96)
+(Plas >= 156(-> 155)) and (Mass >= 30(-> 29.8)) => Class=tested_positive (CF = 0.85)
+(Plas >= 128(-> 127)) and (Mass >= 34(-> 33.9)) => Class=tested_positive (CF = 0.74)
+
+Number of Rules : 9
+
+
+
+
+REGLAS = 9

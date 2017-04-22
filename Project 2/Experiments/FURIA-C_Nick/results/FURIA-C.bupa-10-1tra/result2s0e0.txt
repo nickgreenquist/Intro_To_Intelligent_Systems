@@ -1,0 +1,45 @@
+FURIA rules:
+===========
+
+(Gammagt <= 20(-> 25)) => Selector=1 (CF = 0.53)
+(Alkphos >= 60(-> 59)) and (Gammagt <= 35(-> 36)) => Selector=1 (CF = 0.58)
+ => Selector=1 (CF = 0.0)
+(Alkphos >= 60(-> 59)) and (Gammagt <= 20(-> 21)) => Selector=1 (CF = 0.65)
+ => Selector=2 (CF = 0.0)
+(Sgpt <= 22(-> 25)) => Selector=2 (CF = 0.67)
+ => Selector=2 (CF = 0.0)
+(Sgpt <= 19(-> 20)) and (Mcv <= 90(-> 91)) => Selector=2 (CF = 0.85)
+ => Selector=2 (CF = 0.0)
+ => Selector=2 (CF = 0.0)
+(Gammagt >= 36(-> 9)) => Selector=2 (CF = 0.65)
+(Sgot >= 22(-> 16)) => Selector=2 (CF = 0.62)
+ => Selector=2 (CF = 0.0)
+ => Selector=2 (CF = 0.0)
+ => Selector=2 (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Gammagt <= 20(-> 25)) and (Sgpt >= 20(-> 19)) and (Sgot <= 20(-> 21)) => Selector=1 (CF = 0.87)
+(Alkphos >= 60(-> 59)) and (Gammagt <= 35(-> 36)) and (Sgpt >= 30(-> 29)) => Selector=1 (CF = 0.85)
+(Drinks >= 6(-> 5)) and (Sgpt >= 36(-> 35)) and (Sgot <= 42(-> 43)) => Selector=1 (CF = 0.79)
+(Alkphos >= 60(-> 59)) and (Gammagt <= 20(-> 21)) and (Mcv >= 91(-> 90)) => Selector=1 (CF = 0.8)
+(Gammagt >= 36(-> 35)) and (Drinks <= 5(-> 6)) and (Drinks >= 3(-> 2)) => Selector=2 (CF = 0.97)
+(Sgpt <= 22(-> 25)) and (Alkphos <= 59(-> 60)) and (Mcv >= 91(-> 90)) => Selector=2 (CF = 0.89)
+(Gammagt >= 21(-> 20)) and (Sgpt <= 27(-> 28)) and (Sgot >= 23(-> 22)) and (Drinks <= 8(-> 9)) => Selector=2 (CF = 0.97)
+(Sgpt <= 19(-> 20)) and (Mcv <= 90(-> 91)) and (Alkphos <= 76(-> 79)) => Selector=2 (CF = 0.94)
+(Gammagt >= 21(-> 20)) and (Drinks <= 4(-> 6)) and (Alkphos <= 65(-> 68)) and (Gammagt <= 30(-> 31)) and (Sgot >= 18(-> 17)) => Selector=2 (CF = 0.96)
+(Gammagt >= 36(-> 34)) and (Mcv <= 87(-> 88)) => Selector=2 (CF = 0.92)
+(Gammagt >= 36(-> 9)) and (Sgot >= 47(-> 45)) => Selector=2 (CF = 0.89)
+(Sgot >= 22(-> 16)) and (Alkphos <= 60(-> 63)) and (Gammagt >= 48(-> 42)) and (Sgpt <= 41(-> 42)) => Selector=2 (CF = 0.95)
+(Sgot >= 22(-> 21)) and (Mcv <= 88(-> 89)) and (Sgpt <= 28(-> 30)) => Selector=2 (CF = 0.89)
+(Gammagt >= 36(-> 34)) and (Gammagt <= 48(-> 56)) and (Sgot >= 24(-> 23)) => Selector=2 (CF = 0.93)
+(Mcv >= 94(-> 93)) and (Sgpt <= 24(-> 26)) and (Drinks >= 1(-> 0.5)) => Selector=2 (CF = 0.89)
+
+Number of Rules : 15
+
+
+
+
+REGLAS = 15

@@ -1,0 +1,27 @@
+FURIA rules:
+===========
+
+ => Customer=1 (CF = 0.0)
+ => Customer=1 (CF = 0.0)
+ => Customer=1 (CF = 0.0)
+ => Customer=1 (CF = 0.0)
+ => Customer=2 (CF = 0.0)
+(StatusAccount = A12) => Customer=2 (CF = 0.39)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(StatusAccount = A14) => Customer=1 (CF = 0.88)
+(DurationMonth <= 16(-> 18)) => Customer=1 (CF = 0.79)
+(CreditAmount >= 2323(-> 2319)) and (DurationMonth <= 30(-> 33)) => Customer=1 (CF = 0.75)
+(SavingsAccount = A65) and (StatusAccount = A12) => Customer=1 (CF = 0.83)
+(StatusAccount = A11) and (DurationMonth >= 16(-> 15)) => Customer=2 (CF = 0.59)
+(StatusAccount = A12) and (DurationMonth >= 27(-> 26)) => Customer=2 (CF = 0.56)
+
+Number of Rules : 6
+
+
+
+
+REGLAS = 6

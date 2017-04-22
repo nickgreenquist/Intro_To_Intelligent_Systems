@@ -1,0 +1,51 @@
+FURIA rules:
+===========
+
+ => Site=cp (CF = 0.0)
+(Alm1 <= 53(-> 62)) => Site=cp (CF = 0.63)
+ => Site=cp (CF = 0.0)
+(Alm1 <= 47(-> 49)) => Site=cp (CF = 0.7)
+ => Site=im (CF = 0.0)
+ => Site=im (CF = 0.0)
+ => Site=im (CF = 0.0)
+ => Site=im (CF = 0.0)
+ => Site=imL (CF = 0.0)
+ => Site=imU (CF = 0.0)
+ => Site=imU (CF = 0.0)
+ => Site=imU (CF = 0.0)
+ => Site=om (CF = 0.0)
+ => Site=om (CF = 0.0)
+ => Site=omL (CF = 0.0)
+ => Site=pp (CF = 0.0)
+(Mcg >= 56(-> 51)) => Site=pp (CF = 0.32)
+ => Site=pp (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Alm1 <= 38(-> 39)) and (Mcg <= 54(-> 56)) and (Aac <= 51(-> 52)) => Site=cp (CF = 0.98)
+(Alm1 <= 53(-> 62)) and (Mcg <= 56(-> 57)) and (Gvh <= 49(-> 51)) and (Alm1 >= 31(-> 28)) => Site=cp (CF = 0.98)
+(Alm1 <= 35(-> 36)) and (Alm1 >= 15(-> 9)) => Site=cp (CF = 0.95)
+(Alm1 <= 47(-> 49)) and (Mcg <= 52(-> 56)) => Site=cp (CF = 0.93)
+(Alm1 >= 61(-> 59)) and (Mcg <= 63(-> 64)) => Site=im (CF = 0.83)
+(Alm2 >= 69(-> 68)) and (Alm1 <= 72(-> 73)) => Site=im (CF = 0.74)
+(Alm1 >= 66(-> 65)) and (Mcg <= 72(-> 73)) => Site=im (CF = 0.8)
+(Alm2 >= 89(-> 88)) => Site=im (CF = 0.78)
+(Lip <= 1(-> 48)) and (Aac <= 51(-> 52)) => Site=imL (CF = 0.5)
+(Mcg >= 75(-> 74)) and (Alm1 >= 73(-> 72)) => Site=imU (CF = 0.89)
+(Alm2 >= 62(-> 49)) and (Mcg >= 58(-> 52)) and (Gvh <= 51(-> 52)) and (Alm2 <= 77(-> 78)) => Site=imU (CF = 0.68)
+(Aac <= 7(-> 31)) and (Alm2 >= 68(-> 39)) and (Gvh >= 53(-> 51)) => Site=imU (CF = 0.64)
+(Aac >= 72(-> 71)) and (Gvh >= 57(-> 54)) => Site=om (CF = 0.87)
+(Aac >= 65(-> 63)) and (Alm1 <= 54(-> 58)) and (Alm1 >= 41(-> 28)) => Site=om (CF = 0.85)
+(Lip <= 1(-> 48)) and (Mcg >= 66(-> 49)) and (Mcg <= 71(-> 75)) => Site=omL (CF = 0.67)
+(Gvh >= 59(-> 58)) and (Aac <= 51(-> 65)) and (Alm1 <= 65(-> 67)) and (Alm1 >= 36(-> 35)) => Site=pp (CF = 0.94)
+(Mcg >= 56(-> 51)) and (Aac <= 47(-> 49)) and (Gvh <= 8(-> 36)) => Site=pp (CF = 0.76)
+(Gvh >= 56(-> 55)) and (Aac <= 63(-> 65)) and (Mcg >= 63(-> 59)) and (Alm1 <= 68(-> 71)) => Site=pp (CF = 0.92)
+
+Number of Rules : 18
+
+
+
+
+REGLAS = 18

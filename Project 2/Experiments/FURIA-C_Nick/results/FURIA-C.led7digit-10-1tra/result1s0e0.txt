@@ -1,0 +1,41 @@
+FURIA rules:
+===========
+
+(Led4 <= 0(-> 1)) => number=0 (CF = 0.22)
+ => number=1 (CF = 0.0)
+ => number=2 (CF = 0.0)
+ => number=2 (CF = 0.0)
+ => number=3 (CF = 0.0)
+ => number=4 (CF = 0.0)
+ => number=4 (CF = 0.0)
+ => number=5 (CF = 0.0)
+(Led5 <= 0(-> 1)) => number=5 (CF = 0.17)
+ => number=6 (CF = 0.0)
+(Led4 <= 0(-> 1)) and (Led7 <= 0(-> 1)) and (Led1 >= 1(-> 0)) => number=7 (CF = 0.77)
+ => number=8 (CF = 0.0)
+(Led2 >= 1(-> 0)) and (Led5 <= 0(-> 1)) and (Led3 >= 1(-> 0)) => number=9 (CF = 0.38)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Led4 <= 0(-> 1)) and (Led5 >= 1(-> 0)) and (Led2 >= 1(-> 0)) and (Led3 >= 1(-> 0)) => number=0 (CF = 0.78)
+(Led1 <= 0(-> 1)) and (Led4 <= 0(-> 1)) and (Led2 <= 0(-> 1)) and (Led7 <= 0(-> 1)) => number=1 (CF = 0.79)
+(Led6 <= 0(-> 1)) and (Led5 >= 1(-> 0)) and (Led2 <= 0(-> 1)) => number=2 (CF = 0.87)
+(Led6 <= 0(-> 1)) and (Led4 >= 1(-> 0)) and (Led1 >= 1(-> 0)) and (Led3 >= 1(-> 0)) => number=2 (CF = 0.73)
+(Led2 <= 0(-> 1)) and (Led7 >= 1(-> 0)) and (Led5 <= 0(-> 1)) and (Led3 >= 1(-> 0)) and (Led6 >= 1(-> 0)) and (Led4 >= 1(-> 0)) => number=3 (CF = 0.9)
+(Led1 <= 0(-> 1)) and (Led2 >= 1(-> 0)) and (Led7 <= 0(-> 1)) => number=4 (CF = 0.88)
+(Led1 <= 0(-> 1)) and (Led4 >= 1(-> 0)) and (Led5 <= 0(-> 1)) and (Led7 <= 0(-> 1)) => number=4 (CF = 0.92)
+(Led3 <= 0(-> 1)) and (Led5 <= 0(-> 1)) and (Led7 >= 1(-> 0)) => number=5 (CF = 0.75)
+(Led5 <= 0(-> 1)) and (Led3 <= 0(-> 1)) and (Led1 >= 1(-> 0)) and (Led2 >= 1(-> 0)) => number=5 (CF = 0.85)
+(Led3 <= 0(-> 1)) and (Led5 >= 1(-> 0)) and (Led6 >= 1(-> 0)) => number=6 (CF = 0.81)
+(Led4 <= 0(-> 1)) and (Led7 <= 0(-> 1)) and (Led1 >= 1(-> 0)) and (Led2 <= 0(-> 1)) => number=7 (CF = 0.87)
+(Led5 >= 1(-> 0)) and (Led2 >= 1(-> 0)) and (Led3 >= 1(-> 0)) and (Led4 >= 1(-> 0)) and (Led7 >= 1(-> 0)) => number=8 (CF = 0.6)
+(Led2 >= 1(-> 0)) and (Led5 <= 0(-> 1)) and (Led3 >= 1(-> 0)) and (Led7 >= 1(-> 0)) => number=9 (CF = 0.57)
+
+Number of Rules : 13
+
+
+
+
+REGLAS = 13

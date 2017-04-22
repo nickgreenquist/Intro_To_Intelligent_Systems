@@ -1,0 +1,27 @@
+FURIA rules:
+===========
+
+(Sex >= 0.521(-> -1.92)) and (Class >= -0.923(-> -1.87)) and (Class <= 0.0214(-> 0.965)) and (Age <= -0.228(-> 4.38)) => Survived=-1.0 (CF = 0.86)
+(Sex >= 0.521(-> -1.92)) and (Class >= 0.965(-> -1.87)) => Survived=-1.0 (CF = 0.79)
+(Sex >= 0.521(-> -1.92)) and (Age <= -0.228(-> 4.38)) => Survived=-1.0 (CF = 0.8)
+(Class >= 0.0214(-> -0.923)) and (Class <= 0.0214(-> 0.965)) => Survived=-1.0 (CF = 0.74)
+(Sex <= -1.92(-> 0.521)) => Survived=1.0 (CF = 0.73)
+(Age >= 4.38(-> -0.228)) and (Class <= -0.923(-> 0.0214)) => Survived=1.0 (CF = 0.95)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Sex >= 0.521(-> -1.92)) and (Class >= -0.923(-> -1.87)) and (Class <= 0.0214(-> 0.965)) and (Age <= -0.228(-> 4.38)) => Survived=-1.0 (CF = 0.86)
+(Sex >= 0.521(-> -1.92)) and (Class >= 0.965(-> -1.87)) => Survived=-1.0 (CF = 0.79)
+(Sex >= 0.521(-> -1.92)) and (Age <= -0.228(-> 4.38)) => Survived=-1.0 (CF = 0.8)
+(Class >= 0.0214(-> -0.923)) and (Class <= 0.0214(-> 0.965)) => Survived=-1.0 (CF = 0.74)
+(Sex <= -1.92(-> 0.521)) => Survived=1.0 (CF = 0.73)
+(Age >= 4.38(-> -0.228)) and (Class <= -0.923(-> 0.0214)) => Survived=1.0 (CF = 0.95)
+
+Number of Rules : 6
+
+
+
+
+REGLAS = 6

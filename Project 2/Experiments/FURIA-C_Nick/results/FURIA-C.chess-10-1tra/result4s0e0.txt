@@ -1,0 +1,73 @@
+FURIA rules:
+===========
+
+ => Class=won (CF = 0.0)
+ => Class=won (CF = 0.0)
+(Bxqsq = f) => Class=won (CF = 0.65)
+(Bxqsq = f) => Class=won (CF = 0.65)
+(Bxqsq = f) => Class=won (CF = 0.65)
+(Bxqsq = f) and (R2ar8 = f) and (Bkxcr = f) and (Skrxp = f) and (Reskr = f) => Class=won (CF = 0.87)
+(Bxqsq = f) => Class=won (CF = 0.65)
+(Bxqsq = f) and (Wkovl = f) and (Bkxcr = f) and (Bkona = f) and (Mulch = f) => Class=won (CF = 0.85)
+(R2ar8 = f) and (Bkxcr = f) and (Bxqsq = f) and (Bkxbq = f) and (Reskr = f) and (Thrsk = f) and (Wknck = t) => Class=won (CF = 0.81)
+ => Class=nowin (CF = 0.0)
+(Wknck = t) and (Rimmx = f) => Class=nowin (CF = 0.95)
+ => Class=nowin (CF = 0.0)
+(Wknck = t) and (Rimmx = f) => Class=nowin (CF = 0.95)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+(Wkovl = f) and (Wknck = t) and (Rimmx = f) => Class=nowin (CF = 0.88)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+ => Class=nowin (CF = 0.0)
+(Wknck = t) and (Rimmx = f) => Class=nowin (CF = 0.95)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Rimmx = t) => Class=won (CF = 1.0)
+(Wknck = f) and (Bxqsq = f) and (Wkpos = t) and (Rxmsq = f) and (Katri5 = n) => Class=won (CF = 1.0)
+(Bxqsq = f) and (Wknck = f) and (Wkna8 = f) and (Katri5 = w) => Class=won (CF = 1.0)
+(Bxqsq = f) and (Wknck = f) and (Bkxbq = t) => Class=won (CF = 1.0)
+(Bxqsq = f) and (Bkblk = t) and (Bkxbq = f) and (Cntxt = t) and (Hdchk = f) => Class=won (CF = 0.97)
+(Bxqsq = f) and (R2ar8 = f) and (Bkxcr = f) and (Skrxp = f) and (Reskr = f) and (Simpl = f) and (Blxwp = f) => Class=won (CF = 0.97)
+(Bxqsq = f) and (Qxmsq = t) and (Wknck = f) and (Katri5 = n) => Class=won (CF = 0.97)
+(Bxqsq = f) and (Wkovl = f) and (Bkxcr = f) and (Bkona = f) and (Mulch = f) and (Bkxbq = t) and (Bkon8 = f) and (Blxwp = f) => Class=won (CF = 0.99)
+(R2ar8 = f) and (Bkxcr = f) and (Bxqsq = f) and (Bkxbq = f) and (Reskr = f) and (Thrsk = f) and (Wknck = t) and (Wtoeg = n) and (Mulch = f) and (Skach = f) => Class=won (CF = 0.97)
+(Bxqsq = t) and (Rimmx = f) => Class=nowin (CF = 1.0)
+(Wknck = t) and (Rimmx = f) and (Wkovl = t) and (Bknwy = f) => Class=nowin (CF = 1.0)
+(Wkpos = f) and (Cntxt = f) and (Rimmx = f) and (Bknwy = f) => Class=nowin (CF = 0.99)
+(Wknck = t) and (Rimmx = f) and (Bkxcr = t) => Class=nowin (CF = 1.0)
+(Wkpos = f) and (Katri5 = n) and (Bkxbq = f) and (Wkcti = f) and (Bkblk = f) and (Bxqsq = f) => Class=nowin (CF = 0.99)
+(Mulch = t) and (Rimmx = f) and (Katri5 = n) => Class=nowin (CF = 0.99)
+(Katri5 = b) and (Bkblk = f) and (Bkxbq = f) => Class=nowin (CF = 0.99)
+(Skrxp = t) and (Rimmx = f) and (Wknck = t) => Class=nowin (CF = 0.99)
+(Rxmsq = t) and (Qxmsq = f) and (Bkxbq = f) and (Bxqsq = f) and (R2ar8 = t) => Class=nowin (CF = 0.98)
+(Wkpos = f) and (Katri5 = n) and (Bkxbq = f) and (Rimmx = f) and (Bkblk = f) and (Reskr = t) => Class=nowin (CF = 0.99)
+(Wkovl = f) and (Wknck = t) and (Rimmx = f) and (Bkona = t) => Class=nowin (CF = 0.99)
+(Hdchk = t) => Class=nowin (CF = 0.93)
+(Thrsk = t) and (Rimmx = f) and (Wknck = t) => Class=nowin (CF = 0.97)
+(Wkpos = f) and (Cntxt = f) and (Rimmx = f) and (Simpl = t) => Class=nowin (CF = 0.98)
+(Wkpos = f) and (Katri5 = n) and (Bkxbq = f) and (Reskr = f) and (Skach = t) and (Bkblk = f) => Class=nowin (CF = 0.79)
+(Bkon8 = t) and (Wknck = t) and (Rimmx = f) => Class=nowin (CF = 0.98)
+(Wkpos = f) and (Katri5 = n) and (Cntxt = f) and (R2ar8 = t) and (Bknwy = t) => Class=nowin (CF = 0.87)
+(Wkpos = f) and (Katri5 = n) and (Simpl = t) and (Bkxbq = f) and (Reskr = f) and (Wknck = f) and (Bkblk = f) => Class=nowin (CF = 0.97)
+(Dsopp = t) and (Wtoeg = t) and (Dwipd = g) and (Skewr = t) and (Bkxbq = f) => Class=nowin (CF = 0.87)
+(Wknck = t) and (Rimmx = f) and (Blxwp = t) => Class=nowin (CF = 1.0)
+
+Number of Rules : 29
+
+
+
+
+REGLAS = 29

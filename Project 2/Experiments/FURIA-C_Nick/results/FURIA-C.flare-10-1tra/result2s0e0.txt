@@ -1,0 +1,29 @@
+FURIA rules:
+===========
+
+ => Class=H (CF = 0.0)
+ => Class=D (CF = 0.0)
+ => Class=D (CF = 0.0)
+(SpotDistribution = O) => Class=C (CF = 0.4)
+(SpotDistribution = O) => Class=C (CF = 0.4)
+ => Class=B (CF = 0.0)
+ => Class=E (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(SpotDistribution = X) => Class=H (CF = 1.0)
+(SpotDistribution = I) and (Evolution = 3) and (HistComplex = 1) => Class=D (CF = 0.65)
+(SpotDistribution = I) and (Evolution = 3) and (Area = 1) => Class=D (CF = 0.63)
+(SpotDistribution = O) and (LargestSpotSize = R) => Class=C (CF = 0.67)
+(SpotDistribution = O) and (LargestSpotSize = S) => Class=C (CF = 0.57)
+(LargestSpotSize = X) => Class=B (CF = 0.99)
+(HistComplex = 2) and (SpotDistribution = C) => Class=E (CF = 0.56)
+
+Number of Rules : 7
+
+
+
+
+REGLAS = 7

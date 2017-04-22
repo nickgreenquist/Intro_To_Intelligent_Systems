@@ -1,0 +1,39 @@
+FURIA rules:
+===========
+
+ => Class=normal (CF = 0.0)
+ => Class=metastases (CF = 0.0)
+(Lym_nodes_enlar <= 2(-> 3)) => Class=metastases (CF = 0.69)
+(No_of_nodes_in <= 1(-> 2)) => Class=metastases (CF = 0.79)
+ => Class=metastases (CF = 0.0)
+(Early_uptake_in = no) => Class=metastases (CF = 0.78)
+(Block_of_affere = no) => Class=malign_lymph (CF = 0.66)
+ => Class=malign_lymph (CF = 0.0)
+ => Class=malign_lymph (CF = 0.0)
+(Block_of_affere = no) and (Changes_in_lym = oval) => Class=malign_lymph (CF = 0.76)
+(Block_of_affere = no) and (Special_forms = chalices) and (No_of_nodes_in <= 1(-> 2)) => Class=malign_lymph (CF = 0.73)
+ => Class=fibrosis (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Lymphatics = normal) => Class=normal (CF = 0.51)
+(Block_of_affere = yes) and (Changes_in_node = lac_margin) => Class=metastases (CF = 0.93)
+(Lym_nodes_enlar <= 2(-> 3)) and (Changes_in_lym = round) => Class=metastases (CF = 0.93)
+(No_of_nodes_in <= 1(-> 2)) and (Special_forms = no) => Class=metastases (CF = 0.88)
+(Exclusion_of_no = no) and (Changes_in_node = lacunar) => Class=metastases (CF = 0.91)
+(Early_uptake_in = no) and (Lymphatics = arched) => Class=metastases (CF = 0.9)
+(Block_of_affere = no) and (Early_uptake_in = yes) and (Special_forms = vesicles) and (Dislocation_of = yes) => Class=malign_lymph (CF = 0.96)
+(Changes_in_node = lac_central) and (No_of_nodes_in >= 2(-> 1)) => Class=malign_lymph (CF = 0.93)
+(Changes_in_node = lacunar) and (Exclusion_of_no = yes) and (Lym_nodes_enlar >= 3(-> 2)) and (Special_forms = vesicles) => Class=malign_lymph (CF = 0.93)
+(Block_of_affere = no) and (Changes_in_lym = oval) and (Special_forms = vesicles) => Class=malign_lymph (CF = 0.95)
+(Block_of_affere = no) and (Special_forms = chalices) and (No_of_nodes_in <= 1(-> 2)) and (Regeneration_of = no) => Class=malign_lymph (CF = 0.83)
+(Lym_nodes_dimin >= 2(-> 1)) and (By_pass = yes) => Class=fibrosis (CF = 0.68)
+
+Number of Rules : 12
+
+
+
+
+REGLAS = 12

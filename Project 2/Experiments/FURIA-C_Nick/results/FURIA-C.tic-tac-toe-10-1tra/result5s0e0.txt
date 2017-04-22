@@ -1,0 +1,59 @@
+FURIA rules:
+===========
+
+(MiddleMiddle = x) => Class=positive (CF = 0.79)
+(MiddleMiddle = x) => Class=positive (CF = 0.79)
+ => Class=positive (CF = 0.0)
+ => Class=positive (CF = 0.0)
+(MiddleMiddle = x) and (TopMiddle = x) => Class=positive (CF = 0.78)
+(BottomLeft = x) and (TopLeft = x) => Class=positive (CF = 0.78)
+ => Class=positive (CF = 0.0)
+(MiddleMiddle = x) => Class=positive (CF = 0.79)
+ => Class=positive (CF = 0.0)
+ => Class=positive (CF = 0.0)
+ => Class=negative (CF = 0.0)
+ => Class=negative (CF = 0.0)
+ => Class=negative (CF = 0.0)
+ => Class=negative (CF = 0.0)
+ => Class=negative (CF = 0.0)
+(MiddleLeft = o) => Class=negative (CF = 0.3)
+ => Class=negative (CF = 0.0)
+(TopRight = o) and (BottomRight = o) => Class=negative (CF = 0.55)
+ => Class=negative (CF = 0.0)
+(MiddleRight = x) and (BottomLeft = x) and (TopMiddle = x) => Class=negative (CF = 0.56)
+ => Class=negative (CF = 0.0)
+(BottomRight = o) and (MiddleLeft = o) => Class=negative (CF = 0.3)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(MiddleMiddle = x) and (BottomRight = x) and (TopLeft = x) => Class=positive (CF = 0.99)
+(MiddleMiddle = x) and (BottomRight = b) and (TopLeft = b) => Class=positive (CF = 0.98)
+(TopRight = x) and (MiddleMiddle = x) and (BottomLeft = x) => Class=positive (CF = 0.99)
+(MiddleMiddle = b) and (TopLeft = x) and (TopRight = x) and (TopMiddle = x) => Class=positive (CF = 0.98)
+(MiddleMiddle = x) and (TopMiddle = x) and (BottomMiddle = x) => Class=positive (CF = 0.99)
+(BottomLeft = x) and (TopLeft = x) and (MiddleLeft = x) => Class=positive (CF = 0.99)
+(BottomRight = x) and (TopRight = x) and (MiddleRight = x) => Class=positive (CF = 0.99)
+(MiddleMiddle = x) and (MiddleLeft = x) and (MiddleRight = x) => Class=positive (CF = 0.99)
+(BottomRight = x) and (BottomLeft = x) and (BottomMiddle = x) => Class=positive (CF = 0.99)
+(TopRight = x) and (TopLeft = x) and (TopMiddle = x) => Class=positive (CF = 0.99)
+(MiddleMiddle = o) and (TopRight = o) and (BottomLeft = o) => Class=negative (CF = 0.97)
+(MiddleMiddle = o) and (TopLeft = o) and (BottomRight = o) => Class=negative (CF = 0.97)
+(MiddleMiddle = o) and (TopMiddle = o) and (BottomMiddle = o) => Class=negative (CF = 0.96)
+(TopLeft = o) and (TopRight = o) and (TopMiddle = o) => Class=negative (CF = 0.96)
+(BottomLeft = o) and (BottomRight = o) and (BottomMiddle = o) => Class=negative (CF = 0.96)
+(MiddleLeft = o) and (MiddleMiddle = o) and (MiddleRight = o) => Class=negative (CF = 0.96)
+(TopLeft = o) and (BottomLeft = o) and (MiddleLeft = o) => Class=negative (CF = 0.96)
+(TopRight = o) and (BottomRight = o) and (MiddleRight = o) => Class=negative (CF = 0.96)
+(MiddleMiddle = o) and (MiddleLeft = x) and (TopLeft = o) and (TopMiddle = x) and (TopRight = x) and (MiddleRight = o) => Class=negative (CF = 0.78)
+(MiddleRight = x) and (BottomLeft = x) and (TopMiddle = x) and (BottomRight = x) and (TopRight = o) and (BottomMiddle = o) => Class=negative (CF = 0.74)
+(BottomMiddle = x) and (TopMiddle = o) and (BottomLeft = o) and (TopRight = x) and (TopLeft = x) and (MiddleLeft = x) => Class=negative (CF = 0.74)
+(BottomRight = o) and (MiddleLeft = o) and (TopMiddle = o) and (TopLeft = x) and (MiddleRight = x) and (BottomMiddle = x) => Class=negative (CF = 0.74)
+
+Number of Rules : 22
+
+
+
+
+REGLAS = 22

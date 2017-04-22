@@ -1,0 +1,59 @@
+FURIA rules:
+===========
+
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+(Minor_variance >= 378(-> 376)) => Class=saab (CF = 0.4)
+ => Class=saab (CF = 0.0)
+ => Class=bus (CF = 0.0)
+ => Class=bus (CF = 0.0)
+ => Class=bus (CF = 0.0)
+ => Class=bus (CF = 0.0)
+ => Class=bus (CF = 0.0)
+ => Class=bus (CF = 0.0)
+(Distance_circularity >= 91(-> 84)) => Class=opel (CF = 0.41)
+(Minor_variance >= 388(-> 357)) and (Max_length_aspect_ratio >= 8(-> 7)) => Class=opel (CF = 0.47)
+ => Class=opel (CF = 0.0)
+ => Class=opel (CF = 0.0)
+(Minor_variance >= 388(-> 354)) and (Max_length_aspect_ratio >= 8(-> 7)) and (Hollows_ratio <= 198(-> 199)) => Class=opel (CF = 0.56)
+ => Class=opel (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Elongatedness >= 43(-> 42)) and (Max_length_aspect_ratio >= 9(-> 8)) and (Distance_circularity >= 73(-> 72)) => Class=van (CF = 0.98)
+(Scatter_ratio <= 143(-> 144)) and (Length_rectangular >= 139(-> 138)) and (Minor_variance <= 290(-> 293)) => Class=van (CF = 0.97)
+(Praxis_rectangular <= 17(-> 18)) and (Length_rectangular >= 125(-> 124)) and (Scatter_ratio <= 120(-> 121)) => Class=van (CF = 0.92)
+(Scatter_ratio <= 143(-> 147)) and (Max_length_aspect_ratio >= 8(-> 7)) and (Minor_kurtosis <= 13(-> 23)) and (Praxis_aspect_ratio >= 59(-> 58)) => Class=van (CF = 0.96)
+(Scatter_ratio <= 136(-> 140)) and (Compactness >= 92(-> 90)) and (Circularity >= 35(-> 34)) => Class=van (CF = 0.94)
+(Minor_variance <= 253(-> 324)) and (Minor_kurtosis <= 19(-> 21)) and (Compactness >= 83(-> 82)) and (Radius_ratio <= 116(-> 118)) => Class=van (CF = 0.92)
+(Major_variance <= 177(-> 179)) and (Length_rectangular >= 148(-> 147)) and (Compactness >= 87(-> 86)) => Class=van (CF = 0.97)
+(Scatter_ratio <= 130(-> 132)) and (Hollows_ratio >= 203(-> 201)) and (Compactness <= 89(-> 90)) => Class=van (CF = 0.88)
+(Minor_variance >= 378(-> 376)) and (Hollows_ratio >= 197(-> 196)) and (Compactness >= 104(-> 103)) and (Major_skewness >= 68(-> 67)) => Class=saab (CF = 0.86)
+(Major_skewness <= 70(-> 71)) and (Major_variance >= 177(-> 176)) and (Praxis_aspect_ratio <= 68(-> 69)) => Class=saab (CF = 0.56)
+(Max_length_aspect_ratio <= 7(-> 8)) and (Minor_variance >= 317(-> 282)) and (Major_skewness >= 72(-> 71)) and (Length_rectangular >= 142(-> 141)) and (Minor_skewness <= 7(-> 8)) => Class=bus (CF = 0.98)
+(Max_length_aspect_ratio <= 7(-> 8)) and (Praxis_aspect_ratio >= 67(-> 66)) => Class=bus (CF = 0.98)
+(Major_skewness >= 80(-> 79)) and (Circularity >= 42(-> 41)) and (Hollows_ratio <= 190(-> 192)) => Class=bus (CF = 0.98)
+(Max_length_aspect_ratio <= 7(-> 8)) and (Praxis_aspect_ratio >= 63(-> 62)) and (Distance_circularity <= 79(-> 81)) and (Scatter_ratio >= 141(-> 137)) and (Minor_kurtosis <= 22(-> 24)) => Class=bus (CF = 0.98)
+(Hollows_ratio <= 191(-> 192)) and (Circularity >= 43(-> 41)) and (Praxis_aspect_ratio >= 60(-> 59)) and (Scatter_ratio >= 147(-> 144)) => Class=bus (CF = 0.97)
+(Distance_circularity <= 75(-> 77)) and (Minor_variance >= 307(-> 285)) and (Minor_kurtosis <= 5(-> 8)) and (Minor_skewness <= 8(-> 10)) and (Length_rectangular <= 146(-> 147)) and (Circularity >= 39(-> 38)) => Class=bus (CF = 0.96)
+(Distance_circularity >= 91(-> 84)) and (Compactness <= 103(-> 104)) and (Length_rectangular >= 169(-> 168)) and (Praxis_aspect_ratio <= 66(-> 67)) => Class=opel (CF = 0.95)
+(Minor_variance >= 388(-> 357)) and (Max_length_aspect_ratio >= 8(-> 7)) and (Praxis_aspect_ratio >= 67(-> 66)) and (Hollows_ratio <= 195(-> 196)) => Class=opel (CF = 0.89)
+(Major_skewness <= 67(-> 68)) and (Elongatedness <= 37(-> 38)) and (Gyration_radius <= 200(-> 201)) => Class=opel (CF = 0.66)
+(Length_rectangular <= 135(-> 144)) and (Compactness <= 80(-> 82)) => Class=opel (CF = 0.74)
+(Minor_variance >= 388(-> 354)) and (Max_length_aspect_ratio >= 8(-> 7)) and (Hollows_ratio <= 198(-> 199)) and (Major_variance >= 226(-> 225)) and (Compactness <= 106(-> 107)) => Class=opel (CF = 0.88)
+(Length_rectangular <= 135(-> 136)) and (Max_length_aspect_ratio >= 7(-> 6)) and (Praxis_aspect_ratio <= 57(-> 58)) and (Hollows_ratio >= 189(-> 188)) => Class=opel (CF = 0.75)
+
+Number of Rules : 22
+
+
+
+
+REGLAS = 22

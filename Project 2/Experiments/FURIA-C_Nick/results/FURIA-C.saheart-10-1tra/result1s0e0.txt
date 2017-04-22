@@ -1,0 +1,39 @@
+FURIA rules:
+===========
+
+ => Chd=0 (CF = 0.0)
+(Age <= 50(-> 51)) => Chd=0 (CF = 0.78)
+ => Chd=0 (CF = 0.0)
+(Age <= 50(-> 51)) => Chd=0 (CF = 0.78)
+(Tobacco <= 4.48(-> 8.75)) => Chd=0 (CF = 0.71)
+ => Chd=0 (CF = 0.0)
+ => Chd=0 (CF = 0.0)
+(Obesity >= 28.84(-> 28.75)) => Chd=0 (CF = 0.61)
+ => Chd=0 (CF = 0.0)
+ => Chd=0 (CF = 0.0)
+ => Chd=1 (CF = 0.0)
+ => Chd=1 (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Age <= 31(-> 32)) and (Tobacco <= 0.5(-> 0.52)) => Chd=0 (CF = 0.98)
+(Age <= 50(-> 51)) and (Typea <= 53(-> 54)) and (Ldl <= 5.29(-> 5.45)) and (Obesity >= 24.72(-> 24.7)) => Chd=0 (CF = 0.96)
+(Famhist = Absent) and (Tobacco <= 7.5(-> 7.77)) and (Tobacco >= 5.4(-> 5.2)) => Chd=0 (CF = 0.94)
+(Age <= 50(-> 51)) and (Adiposity <= 25.1(-> 25.22)) and (Adiposity >= 22.74(-> 22.7)) and (Sbp <= 154(-> 158)) => Chd=0 (CF = 0.98)
+(Tobacco <= 4.48(-> 8.75)) and (Famhist = Absent) and (Sbp <= 134(-> 136)) and (Ldl >= 5.51(-> 5.46)) => Chd=0 (CF = 0.97)
+(Ldl <= 5.09(-> 5.11)) and (Tobacco <= 4.18(-> 4.2)) and (Adiposity >= 27.55(-> 26.75)) and (Adiposity <= 32.97(-> 33.23)) => Chd=0 (CF = 0.95)
+(Adiposity <= 18.95(-> 20.22)) and (Obesity >= 21.13(-> 21.06)) and (Age <= 38(-> 39)) => Chd=0 (CF = 0.99)
+(Obesity >= 28.84(-> 28.75)) and (Adiposity <= 34.46(-> 34.8)) and (Sbp >= 144(-> 142)) => Chd=0 (CF = 0.84)
+(Famhist = Absent) and (Ldl >= 4.75(-> 4.41)) and (Adiposity >= 29.3(-> 28.56)) and (Alcohol >= 8.23(-> 6.43)) => Chd=0 (CF = 0.9)
+(Adiposity <= 21.39(-> 21.53)) and (Alcohol <= 12.86(-> 14.77)) and (Age <= 48(-> 49)) and (Sbp >= 126(-> 122)) => Chd=0 (CF = 0.97)
+(Age >= 49(-> 48)) and (Famhist = Present) => Chd=1 (CF = 0.68)
+(Age >= 50(-> 48)) and (Tobacco >= 7.6(-> 7.5)) => Chd=1 (CF = 0.74)
+
+Number of Rules : 12
+
+
+
+
+REGLAS = 12

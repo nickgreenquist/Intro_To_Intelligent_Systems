@@ -1,0 +1,7 @@
+algorithm = FURIA
+inputData = "../datasets/ecoli-10-1tra/ecoli-10-1tra-10-3tra.dat" "../datasets/ecoli-10-1tra/ecoli-10-1tra-10-3tra.dat" "../datasets/ecoli-10-1tra/ecoli-10-1tra-10-3tst.dat" 
+outputData = "../results/FURIA-C.ecoli-10-1tra/result2s0.tra" "../results/FURIA-C.ecoli-10-1tra/result2s0.tst" "../results/FURIA-C.ecoli-10-1tra/result2s0e0.txt"  
+
+seed = 1286082570
+Number of Optimizations = 2
+Number of folds = 3

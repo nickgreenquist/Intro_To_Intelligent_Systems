@@ -1,0 +1,33 @@
+FURIA rules:
+===========
+
+ => Class=tested_negative (CF = 0.0)
+ => Class=tested_negative (CF = 0.0)
+ => Class=tested_negative (CF = 0.0)
+(Plas <= 154(-> 155)) => Class=tested_negative (CF = 0.73)
+(Plas <= 127(-> 129)) => Class=tested_negative (CF = 0.8)
+(Mass <= 33.2(-> 33.6)) => Class=tested_negative (CF = 0.74)
+ => Class=tested_negative (CF = 0.0)
+ => Class=tested_positive (CF = 0.0)
+(Age >= 29(-> 28)) and (Mass >= 26.5(-> 26)) and (Plas >= 100(-> 99)) => Class=tested_positive (CF = 0.62)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Plas <= 123(-> 125)) and (Age <= 28(-> 29)) => Class=tested_negative (CF = 0.92)
+(Mass <= 26.4(-> 26.5)) and (Plas <= 151(-> 156)) => Class=tested_negative (CF = 0.96)
+(Plas <= 99(-> 100)) => Class=tested_negative (CF = 0.91)
+(Plas <= 154(-> 155)) and (Age <= 30(-> 32)) and (Pres >= 74(-> 72)) and (Mass <= 41.3(-> 42.1)) and (Plas >= 126(-> 125)) and (Preg <= 4(-> 5)) => Class=tested_negative (CF = 0.97)
+(Plas <= 127(-> 129)) and (Mass >= 34.7(-> 34.3)) and (Pedi <= 0.324(-> 0.325)) => Class=tested_negative (CF = 0.86)
+(Mass <= 33.2(-> 33.6)) and (Age <= 26(-> 27)) and (Pres <= 66(-> 68)) => Class=tested_negative (CF = 0.95)
+(Mass <= 28.8(-> 30.1)) and (Age >= 57(-> 55)) => Class=tested_negative (CF = 0.89)
+(Plas >= 128(-> 127)) and (Mass >= 30(-> 29.9)) => Class=tested_positive (CF = 0.73)
+(Age >= 29(-> 28)) and (Mass >= 26.5(-> 26)) and (Plas >= 100(-> 99)) and (Plas <= 119(-> 120)) and (Pedi >= 0.254(-> 0.251)) and (Preg >= 4(-> 3)) => Class=tested_positive (CF = 0.76)
+
+Number of Rules : 9
+
+
+
+
+REGLAS = 9

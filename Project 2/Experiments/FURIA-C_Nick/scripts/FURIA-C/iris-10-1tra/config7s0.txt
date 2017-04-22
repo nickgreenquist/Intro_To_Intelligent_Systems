@@ -1,0 +1,7 @@
+algorithm = FURIA
+inputData = "../datasets/iris-10-1tra/iris-10-1tra-10-8tra.dat" "../datasets/iris-10-1tra/iris-10-1tra-10-8tra.dat" "../datasets/iris-10-1tra/iris-10-1tra-10-8tst.dat" 
+outputData = "../results/FURIA-C.iris-10-1tra/result7s0.tra" "../results/FURIA-C.iris-10-1tra/result7s0.tst" "../results/FURIA-C.iris-10-1tra/result7s0e0.txt"  
+
+seed = 1286082570
+Number of Optimizations = 2
+Number of folds = 3
