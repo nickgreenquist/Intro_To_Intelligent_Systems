@@ -1,0 +1,105 @@
+@Number of Rules: 52
+if(Elongatedness>42.0 && Max_length_aspect_ratio>8.0 && Distance_circularity>72.0) (80/80)
+	output=van
+else if(Scatter_ratio<=139.0 && Length_rectangular>138.0) (41/41)
+	output=van
+else if(Minor_variance<=309.0 && Max_length_aspect_ratio>7.0 && Praxis_aspect_ratio>57.0 && Minor_kurtosis<=10.0) (27/27)
+	output=van
+else if(Scatter_ratio<=136.0 && Length_rectangular>131.0 && Compactness>86.0 && Major_skewness>63.0) (36/36)
+	output=van
+else if(Scatter_ratio<=130.0 && Length_rectangular>126.0 && Gyration_radius<=125.0) (11/11)
+	output=van
+else if(Minor_variance<=221.0 && Circularity>35.0 && Major_kurtosis<=186.0) (10/11)
+	output=van
+else if(Scatter_ratio<=119.0 && Elongatedness<=57.0) (13/13)
+	output=van
+else if(Major_variance<=177.0 && Max_length_aspect_ratio>9.0) (55/56)
+	output=van
+else if(Scatter_ratio<=148.0 && Elongatedness<=44.0 && Compactness>88.0) (1/1)
+	output=van
+else if(Scatter_ratio<=146.0 && Distance_circularity>78.0 && Compactness<=88.0) (2/2)
+	output=van
+else if(Minor_variance<=294.0 && Circularity>42.0) (11/11)
+	output=van
+else if(Scatter_ratio<=133.0 && Length_rectangular>130.0) (40/45)
+	output=van
+else if(Max_length_aspect_ratio>7.0 && Hollows_ratio<=198.0 && Minor_variance>705.0) (28/30)
+	output=opel
+else if(Max_length_aspect_ratio>7.0 && Hollows_ratio<=196.0 && Distance_circularity>70.0) (56/120)
+	output=opel
+else if(Major_skewness<=67.0 && Hollows_ratio<=203.0 && Praxis_aspect_ratio<=57.0 && Major_kurtosis<=193.0) (9/12)
+	output=opel
+else if(Max_length_aspect_ratio>7.0 && Length_rectangular>172.0 && Hollows_ratio<=198.0) (29/31)
+	output=opel
+else if(Major_skewness<=68.0 && Hollows_ratio<=203.0 && Gyration_radius>144.0 && Minor_kurtosis>11.0 && Minor_skewness<=12.0 && Compactness<=94.0) (8/11)
+	output=opel
+else if(Max_length_aspect_ratio>7.0 && Hollows_ratio<=198.0 && Length_rectangular>171.0 && Compactness<=103.0) (24/24)
+	output=opel
+else if(Major_variance<=152.0 && Compactness<=82.0) (10/14)
+	output=opel
+else if(Major_skewness<=67.0 && Hollows_ratio<=203.0) (44/96)
+	output=opel
+else if(Major_skewness<=71.0 && Minor_kurtosis>23.0 && Praxis_aspect_ratio<=57.0) (10/14)
+	output=opel
+else if(Major_skewness<=76.0 && Praxis_aspect_ratio<=62.0 && Radius_ratio<=128.0) (6/20)
+	output=opel
+else if(Minor_skewness>10.0 && Compactness<=95.0 && Major_variance>166.0 && Length_rectangular<=142.0) (10/12)
+	output=opel
+else if(Max_length_aspect_ratio>7.0 && Hollows_ratio<=198.0 && Minor_variance>669.0 && Minor_kurtosis>4.0) (32/37)
+	output=opel
+else if(Max_length_aspect_ratio>7.0 && Length_rectangular>172.0 && Praxis_aspect_ratio<=65.0) (22/24)
+	output=opel
+else if(Max_length_aspect_ratio>7.0 && Hollows_ratio<=198.0 && Length_rectangular>169.0 && Compactness<=103.0) (27/30)
+	output=opel
+else if(Max_length_aspect_ratio>8.0 && Major_variance<=214.0 && Circularity>51.0) (5/7)
+	output=opel
+else if(Distance_circularity>76.0 && Compactness<=97.0 && Major_kurtosis<=191.0 && Circularity>46.0) (16/52)
+	output=opel
+else if(Gyration_radius<=168.0 && Major_skewness<=63.0 && Compactness<=89.0) (4/10)
+	output=opel
+else if(Major_skewness<=65.0 && Praxis_aspect_ratio>60.0 && Major_kurtosis>195.0) (12/38)
+	output=opel
+else if(Minor_kurtosis>24.0 && Radius_ratio>201.0 && Compactness<=101.0) (9/12)
+	output=opel
+else if(Major_skewness<=72.0 && Hollows_ratio<=198.0 && Praxis_aspect_ratio>59.0 && Gyration_radius<=145.0) (7/14)
+	output=opel
+else if(Max_length_aspect_ratio>7.0 && Praxis_aspect_ratio>61.0 && Circularity<=51.0 && Distance_circularity>106.0) (5/6)
+	output=opel
+else if(Distance_circularity>80.0 && Length_rectangular<=150.0 && Max_length_aspect_ratio>9.0 && Hollows_ratio<=204.0) (7/21)
+	output=opel
+else if(Minor_variance<=426.0 && Praxis_rectangular>19.0 && Radius_ratio<=170.0) (10/57)
+	output=opel
+else if(Minor_kurtosis<=4.0 && Gyration_radius<=165.0 && Circularity>42.0) (2/4)
+	output=opel
+else if(Minor_kurtosis<=4.0 && Scatter_ratio<=135.0 && Circularity>40.0) (1/9)
+	output=opel
+else if(Minor_skewness>10.0 && Minor_variance<=426.0 && Major_variance>176.0 && Major_kurtosis<=192.0) (6/9)
+	output=opel
+else if(Gyration_radius>240.0 && Compactness<=99.0) (3/3)
+	output=opel
+else if(Length_rectangular<=126.0 && Distance_circularity>78.0) (1/2)
+	output=opel
+else if(Max_length_aspect_ratio>7.0 && Distance_circularity>75.0) (126/348)
+	output=saab
+else if(Length_rectangular<=137.0 && Praxis_aspect_ratio<=62.0) (58/154)
+	output=saab
+else if(Major_skewness<=70.0 && Praxis_aspect_ratio<=64.0 && Scatter_ratio>151.0) (72/132)
+	output=saab
+else if(Major_variance<=166.0 && Length_rectangular<=142.0) (40/137)
+	output=saab
+else if(Max_length_aspect_ratio>8.0 && Distance_circularity>70.0) (112/311)
+	output=saab
+else if(Minor_skewness>9.0 && Radius_ratio<=154.0 && Compactness>86.0) (13/43)
+	output=saab
+else if(Gyration_radius<=130.0 && Compactness<=92.0 && Radius_ratio<=174.0) (15/43)
+	output=saab
+else if(Max_length_aspect_ratio>8.0 && Compactness>88.0) (111/299)
+	output=saab
+else if(Minor_kurtosis<=2.0 && Distance_circularity>73.0 && Compactness<=84.0) (1/1)
+	output=saab
+else if(Major_skewness<=66.0 && Circularity>42.0 && Max_length_aspect_ratio>6.0) (29/67)
+	output=saab
+else if(Circularity<=37.0 && Hollows_ratio<=197.0) (21/48)
+	output=saab
+else 
+	output=bus

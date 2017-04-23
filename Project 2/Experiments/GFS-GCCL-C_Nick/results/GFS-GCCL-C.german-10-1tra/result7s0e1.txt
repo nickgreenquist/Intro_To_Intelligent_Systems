@@ -1,0 +1,148 @@
+
+Rule base with 20 rules, 39 variables and 39 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If then Class is 1 with certainty degree 0.4
+
+Fitness: 175
+
+
+Rule 2:
+
+If "X11 is Label 5" and "X16 is Label 1" and "X18 is Label 1" then Class is 1 with certainty degree 0.42857142857142855
+
+Fitness: 103
+
+
+Rule 3:
+
+If "X18 is Label 5" then Class is 1 with certainty degree 0.4189189189189189
+
+Fitness: 60
+
+
+Rule 4:
+
+If "X11 is Label 1" then Class is 1 with certainty degree 0.456
+
+Fitness: 59
+
+
+Rule 5:
+
+If "X11 is Label 5" and "X18 is Label 1" then Class is 1 with certainty degree 0.423841059602649
+
+Fitness: 50
+
+
+Rule 6:
+
+If "X8 is Label 1" and "X16 is Label 1" and "X18 is Label 1" then Class is 1 with certainty degree 0.4925373134328358
+
+Fitness: 49
+
+
+Rule 7:
+
+If "X13 is Label 3" then Class is 1 with certainty degree 0.5074356184258249
+
+Fitness: 47
+
+
+Rule 8:
+
+If "X8 is Label 1" and "X18 is Label 5" then Class is 1 with certainty degree 0.6923076923076923
+
+Fitness: 21
+
+
+Rule 9:
+
+If "X5 is Label 1" then Class is 1 with certainty degree 0.44534865232116094
+
+Fitness: 16
+
+
+Rule 10:
+
+If "X8 is Label 1" then Class is 1 with certainty degree 0.4745762711864407
+
+Fitness: 14
+
+
+Rule 11:
+
+If "X8 is Label 4" and "X11 is Label 1" and "X16 is Label 1" then Class is 1 with certainty degree 0.8181818181818181
+
+Fitness: 10
+
+
+Rule 12:
+
+If "X11 is Label 5" and "X16 is Label 4" and "X18 is Label 1" then Class is 1 with certainty degree 0.6666666666666667
+
+Fitness: 8
+
+
+Rule 13:
+
+If "X13 is Label 2" then Class is 1 with certainty degree 0.40286094477711193
+
+Fitness: 5
+
+
+Rule 14:
+
+If "X2 is Label 4" and "X11 is Label 1" then Class is 1 with certainty degree 0.7938144329896908
+
+Fitness: 4
+
+
+Rule 15:
+
+If "X13 is Label 4" then Class is 1 with certainty degree 0.45494505494505505
+
+Fitness: 3
+
+
+Rule 16:
+
+If "X16 is Label 4" then Class is 1 with certainty degree 0.6153846153846152
+
+Fitness: 2
+
+
+Rule 17:
+
+If "X5 is Label 1" and "X11 is Label 1" and "X16 is Label 4" then Class is 1 with certainty degree 1.0
+
+Fitness: 2
+
+
+Rule 18:
+
+If "X11 is Label 1" and "X13 is Label 5" then Class is 1 with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 19:
+
+If "X8 is Label 1" and "X13 is Label 5" and "X16 is Label 1" and "X18 is Label 1" then Class is 1 with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 20:
+
+If "X5 is Label 5" and "X11 is Label 5" and "X16 is Label 1" and "X18 is Label 1" then Class is 2 with certainty degree 1.0
+
+Fitness: 1
+
+
+
+Training Accuracy:	70.11111111111111%
+Test Accuracy:		70.0%
+

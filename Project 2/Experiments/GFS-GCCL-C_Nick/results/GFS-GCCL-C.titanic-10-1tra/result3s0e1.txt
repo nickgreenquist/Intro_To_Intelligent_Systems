@@ -1,0 +1,22 @@
+
+Rule base with 2 rules, 2 variables and 2 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X3 is Label 5" then Class is -1.0 with certainty degree 0.5747422680412371
+
+Fitness: 1222
+
+
+Rule 2:
+
+If "X3 is Label 1" then Class is 1.0 with certainty degree 0.44522144522144524
+
+Fitness: 310
+
+
+
+Training Accuracy:	77.3346794548208%
+Test Accuracy:		80.0%
+

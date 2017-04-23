@@ -1,0 +1,9 @@
+@Number of Rules: 4
+if(flavanoids<=1.39 && ColorIntensity>3.6) (43/43)
+	output=3
+else if(Proline>750.0 && ColorIntensity>3.35) (51/56)
+	output=1
+else if(Alcohol>13.11 && Proline>472.0 && MalicAcid>1.25) (46/65)
+	output=1
+else 
+	output=2

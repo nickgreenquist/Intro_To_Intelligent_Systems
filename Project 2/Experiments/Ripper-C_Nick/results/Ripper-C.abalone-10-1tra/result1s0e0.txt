@@ -1,0 +1,617 @@
+@Number of Rules: 308
+if(Height>0.19 && Viscera_weight<=0.19 && Diameter>0.46) (1/1)
+	output=26
+else if(Diameter>0.58 && Viscera_weight<=0.3215) (1/1)
+	output=29
+else if(Diameter<=0.1 && Length>0.13) (1/1)
+	output=2
+else if(Shell_weight>0.5235 && Length<=0.55) (1/1)
+	output=27
+else if(Shell_weight>0.815 && Length<=0.665) (1/1)
+	output=27
+else if(Shell_weight>0.5475 && Shucked_weight<=0.533 && Length>0.68) (1/1)
+	output=24
+else if(Shell_weight>0.7 && Length<=0.7 && Diameter>0.5) (1/3)
+	output=24
+else if(Height>0.165 && Viscera_weight<=0.1635 && Length>0.575 && Shucked_weight<=0.3325) (1/1)
+	output=22
+else if(Height>0.21 && Viscera_weight<=0.327 && Whole_weight>1.752) (2/4)
+	output=22
+else if(Shucked_weight<=0.2475 && Shell_weight>0.24 && Diameter>0.415) (1/3)
+	output=22
+else if(Height>0.21 && Length<=0.625 && Viscera_weight>0.2595 && Shucked_weight<=0.496) (1/2)
+	output=22
+else if(Height>0.175 && Shucked_weight<=0.158) (1/2)
+	output=22
+else if(Length>0.775) (1/4)
+	output=23
+else if(Length>0.78) (1/2)
+	output=23
+else if(Shell_weight>0.2595 && Whole_weight<=0.8175 && Length<=0.515 && Height>0.155) (2/4)
+	output=23
+else if(Viscera_weight>0.564) (1/5)
+	output=23
+else if(Height>0.145 && Shucked_weight<=0.241 && Whole_weight>0.742 && Sex=F) (1/3)
+	output=23
+else if(Shell_weight>0.3595 && Height<=0.15 && Viscera_weight<=0.2025 && Length>0.58) (1/1)
+	output=23
+else if(Shell_weight>0.4575 && Whole_weight<=1.3 && Viscera_weight>0.2595 && Length<=0.63) (1/1)
+	output=23
+else if(Sex=F && Height<=0.135 && Shell_weight>0.2575 && Diameter<=0.415) (1/2)
+	output=23
+else if(Height>0.22 && Shucked_weight<=0.378 && Diameter>0.47) (1/1)
+	output=23
+else if(Shell_weight>0.566 && Whole_weight<=1.596 && Height<=0.2) (3/3)
+	output=21
+else if(Diameter>0.545 && Shucked_weight<=0.525 && Length<=0.68) (2/2)
+	output=21
+else if(Shell_weight>0.3745 && Viscera_weight<=0.165 && Sex=F && Shucked_weight<=0.358) (2/2)
+	output=21
+else if(Diameter>0.55 && Shucked_weight<=0.545 && Sex=M) (1/1)
+	output=21
+else if(Diameter>0.585 && Viscera_weight<=0.3405) (1/1)
+	output=21
+else if(Sex=F && Shucked_weight<=0.165 && Shell_weight>0.195) (1/2)
+	output=21
+else if(Height>0.185 && Shucked_weight<=0.4635 && Whole_weight>1.2355 && Shell_weight<=0.39 && Sex=F) (1/1)
+	output=21
+else if(Shucked_weight<=0.225 && Height>0.145 && Shell_weight<=0.17 && Sex=M) (1/2)
+	output=21
+else if(Shell_weight>0.7 && Length<=0.665) (1/4)
+	output=21
+else if(Sex=I && Whole_weight>0.9365 && Length<=0.53) (1/1)
+	output=21
+else if(Viscera_weight<=0.006 && Whole_weight<=0.023 && Height>0.02) (8/13)
+	output=3
+else if(Shell_weight<=0.017 && Shucked_weight>0.021 && Length<=0.205) (1/1)
+	output=3
+else if(Whole_weight<=0.041 && Shell_weight>0.01 && Diameter>0.145) (2/4)
+	output=3
+else if(Shell_weight<=0.017 && Length>0.23) (1/3)
+	output=3
+else if(Shell_weight<=0.01 && Length>0.2 && Sex=M) (1/1)
+	output=3
+else if(Height<=0.03 && Shell_weight>0.01 && Length<=0.19) (1/1)
+	output=3
+else if(Shell_weight>0.3575 && Viscera_weight<=0.236 && Height<=0.17 && Length<=0.595) (6/16)
+	output=20
+else if(Shell_weight>0.369 && Shucked_weight<=0.367 && Height<=0.16) (3/4)
+	output=20
+else if(Height>0.16 && Diameter<=0.44 && Length>0.56 && Shucked_weight<=0.393 && Whole_weight>0.909) (2/5)
+	output=20
+else if(Shell_weight>0.399 && Height<=0.175 && Length>0.72 && Shucked_weight<=0.765) (1/1)
+	output=20
+else if(Shell_weight>0.513 && Length<=0.7 && Viscera_weight>0.478) (1/2)
+	output=20
+else if(Height>0.145 && Viscera_weight<=0.2215 && Shell_weight>0.4405 && Whole_weight<=1.3445) (3/6)
+	output=20
+else if(Height>0.145 && Viscera_weight<=0.156 && Whole_weight>0.7095 && Shucked_weight<=0.299 && Shell_weight<=0.225 && Sex=I) (1/1)
+	output=20
+else if(Shell_weight>0.4295 && Whole_weight<=1.484 && Viscera_weight>0.2705 && Length<=0.65 && Shucked_weight>0.5195 && Diameter>0.505) (3/5)
+	output=20
+else if(Sex=F && Shell_weight>0.602 && Viscera_weight<=0.3695 && Shucked_weight>0.5605) (1/4)
+	output=20
+else if(Shell_weight>0.2645 && Viscera_weight<=0.2165 && Shucked_weight<=0.275 && Diameter>0.41 && Length<=0.53 && Whole_weight>0.7155) (2/6)
+	output=20
+else if(Shell_weight>0.3145 && Viscera_weight<=0.2165 && Sex=I && Whole_weight>1.1625) (1/1)
+	output=20
+else if(Height>0.15 && Viscera_weight<=0.196 && Length<=0.5 && Diameter>0.395 && Shucked_weight>0.242 && Shell_weight<=0.225) (1/2)
+	output=20
+else if(Shell_weight>0.3995 && Whole_weight<=1.3135 && Shucked_weight>0.556) (1/2)
+	output=20
+else if(Shell_weight>0.2595 && Diameter<=0.41 && Length>0.535 && Shucked_weight<=0.3445 && Whole_weight>0.873) (3/4)
+	output=19
+else if(Shell_weight>0.314 && Shucked_weight<=0.4715 && Viscera_weight<=0.175 && Whole_weight>0.9815 && Sex=M) (2/4)
+	output=19
+else if(Shell_weight>0.2845 && Viscera_weight<=0.1625 && Whole_weight<=0.9 && Shucked_weight>0.273 && Diameter<=0.45 && Height>0.14) (3/5)
+	output=19
+else if(Shell_weight>0.4095 && Shucked_weight<=0.63 && Whole_weight>1.6885 && Height<=0.16) (1/1)
+	output=19
+else if(Length>0.575 && Shucked_weight<=0.4715 && Viscera_weight>0.3205 && Height>0.175 && Shell_weight<=0.52) (2/4)
+	output=19
+else if(Height>0.15 && Viscera_weight>0.4345 && Length<=0.695 && Diameter>0.53 && Whole_weight<=1.885) (4/5)
+	output=19
+else if(Shell_weight>0.214 && Shucked_weight<=0.275 && Whole_weight>0.8085 && Viscera_weight<=0.169) (2/4)
+	output=19
+else if(Shell_weight>0.2595 && Shucked_weight<=0.435 && Whole_weight>0.995 && Viscera_weight<=0.212 && Sex=F && Height<=0.15) (1/2)
+	output=19
+else if(Diameter>0.51 && Whole_weight<=1.016) (1/1)
+	output=19
+else if(Shell_weight>0.4095 && Height<=0.185 && Whole_weight<=1.1805 && Viscera_weight>0.2245) (1/3)
+	output=19
+else if(Shell_weight>0.159 && Shucked_weight<=0.1145 && Length>0.38) (1/1)
+	output=19
+else if(Shell_weight>0.214 && Diameter<=0.39 && Length>0.495 && Viscera_weight<=0.144 && Whole_weight>0.651) (2/3)
+	output=19
+else if(Whole_weight>1.46 && Shucked_weight<=0.5835 && Shell_weight<=0.42 && Diameter>0.485) (2/3)
+	output=19
+else if(Diameter>0.47 && Whole_weight<=1.0105 && Height>0.155 && Shell_weight<=0.27) (1/1)
+	output=19
+else if(Shell_weight>0.3095 && Shucked_weight<=0.5515 && Whole_weight>1.306) (12/77)
+	output=18
+else if(Shell_weight>0.3045 && Whole_weight<=0.9065 && Length>0.54 && Shucked_weight>0.2925 && Diameter<=0.455) (3/7)
+	output=18
+else if(Height>0.175 && Shell_weight>0.897) (1/1)
+	output=18
+else if(Height>0.16 && Length<=0.61 && Shell_weight>0.2935 && Shucked_weight<=0.2985 && Viscera_weight>0.195) (2/2)
+	output=18
+else if(Height>0.17 && Length<=0.605 && Diameter>0.47 && Shell_weight<=0.32 && Sex=F && Whole_weight>0.8575) (2/2)
+	output=18
+else if(Whole_weight>1.8065 && Height<=0.19 && Viscera_weight<=0.3885 && Length<=0.71) (2/5)
+	output=18
+else if(Shell_weight>0.249 && Viscera_weight<=0.1905 && Height>0.19) (1/4)
+	output=18
+else if(Shell_weight>0.2595 && Viscera_weight<=0.176 && Height<=0.12 && Length<=0.525) (1/2)
+	output=18
+else if(Whole_weight>1.443 && Shucked_weight<=0.627 && Length<=0.64 && Height<=0.175 && Viscera_weight>0.2875) (2/2)
+	output=18
+else if(Whole_weight>1.488 && Shucked_weight<=0.627 && Height<=0.18 && Length<=0.65 && Sex=I) (1/1)
+	output=18
+else if(Shell_weight>0.1685 && Shucked_weight<=0.2175 && Whole_weight>0.6355 && Length<=0.485 && Diameter>0.375) (2/3)
+	output=18
+else if(Height>0.145 && Shucked_weight<=0.3935 && Whole_weight>0.952 && Viscera_weight<=0.1665 && Sex=F) (1/2)
+	output=18
+else if(Whole_weight<=0.1185 && Shell_weight<=0.0215 && Length>0.235 && Diameter>0.175) (8/8)
+	output=4
+else if(Whole_weight<=0.131 && Length<=0.23 && Height<=0.045 && Diameter<=0.125) (10/19)
+	output=4
+else if(Shucked_weight<=0.05 && Diameter<=0.165) (28/60)
+	output=4
+else if(Viscera_weight<=0.035 && Length<=0.225 && Shell_weight>0.013) (5/12)
+	output=4
+else if(Length<=0.3 && Height<=0.06 && Shucked_weight>0.0415 && Shell_weight<=0.026) (2/2)
+	output=4
+else if(Whole_weight<=0.147 && Shell_weight>0.04 && Shucked_weight<=0.051 && Diameter>0.23) (2/2)
+	output=4
+else if(Shucked_weight<=0.06 && Viscera_weight<=0.008) (21/44)
+	output=4
+else if(Shell_weight<=0.0305 && Whole_weight>0.0865 && Height<=0.055) (1/1)
+	output=4
+else if(Shell_weight<=0.0305 && Whole_weight<=0.0465 && Diameter<=0.11) (5/11)
+	output=4
+else if(Viscera_weight<=0.035 && Shell_weight>0.0415 && Height<=0.05) (1/2)
+	output=4
+else if(Shucked_weight<=0.06 && Height>0.08 && Whole_weight<=0.1065) (2/2)
+	output=4
+else if(Shucked_weight<=0.06 && Viscera_weight>0.0305 && Shell_weight<=0.0305) (1/1)
+	output=4
+else if(Diameter<=0.205 && Shell_weight<=0.02 && Whole_weight<=0.0195) (6/12)
+	output=4
+else if(Shell_weight<=0.026 && Viscera_weight<=0.0095 && Whole_weight<=0.019) (5/11)
+	output=4
+else if(Length<=0.26 && Diameter>0.2 && Shell_weight<=0.0305) (1/1)
+	output=4
+else if(Shucked_weight<=0.06 && Height>0.085 && Diameter<=0.23 && Sex=M) (1/3)
+	output=4
+else if(Shell_weight<=0.0255 && Length>0.265) (1/2)
+	output=4
+else if(Viscera_weight<=0.035 && Shell_weight>0.0635 && Length<=0.36 && Shucked_weight>0.0575) (1/2)
+	output=4
+else if(Shell_weight>0.249 && Diameter<=0.44 && Whole_weight>0.923 && Shucked_weight<=0.3605 && Viscera_weight>0.158) (5/19)
+	output=17
+else if(Height>0.165 && Shell_weight>0.5675 && Viscera_weight<=0.3415 && Diameter>0.485) (4/18)
+	output=17
+else if(Height>0.15 && Shucked_weight<=0.419 && Viscera_weight<=0.143 && Shell_weight>0.198 && Diameter<=0.425 && Length>0.495 && Sex=M) (2/5)
+	output=17
+else if(Height>0.165 && Shucked_weight<=0.4385 && Whole_weight>1.14 && Diameter<=0.47 && Viscera_weight>0.2225) (3/4)
+	output=17
+else if(Height>0.165 && Shell_weight>0.512 && Viscera_weight<=0.3415 && Diameter>0.545 && Sex=F) (3/4)
+	output=17
+else if(Height>0.165 && Shell_weight>0.5085 && Viscera_weight<=0.3415 && Diameter>0.56) (2/3)
+	output=17
+else if(Diameter>0.495 && Shucked_weight<=0.5875 && Height>0.18 && Viscera_weight<=0.252 && Whole_weight>1.2395) (2/7)
+	output=17
+else if(Shell_weight>0.4095 && Viscera_weight>0.46 && Shucked_weight<=0.735 && Length>0.7) (2/3)
+	output=17
+else if(Shell_weight>0.2045 && Diameter<=0.44 && Height>0.135 && Whole_weight<=0.6445 && Sex=F && Viscera_weight<=0.1335) (2/5)
+	output=17
+else if(Shell_weight>0.249 && Shucked_weight<=0.5095 && Whole_weight>1.295 && Viscera_weight<=0.295 && Diameter<=0.485) (1/3)
+	output=17
+else if(Shell_weight>0.1945 && Whole_weight>2.398 && Diameter<=0.595 && Length>0.725) (2/2)
+	output=17
+else if(Shell_weight>0.3395 && Shucked_weight<=0.4445 && Diameter>0.49 && Height>0.19) (4/6)
+	output=16
+else if(Shell_weight>0.415 && Shucked_weight<=0.6255 && Length<=0.66 && Viscera_weight>0.2565 && Height>0.195) (8/22)
+	output=16
+else if(Shell_weight>0.3345 && Shucked_weight<=0.4445 && Viscera_weight<=0.1575 && Height>0.155) (2/4)
+	output=16
+else if(Shell_weight>0.412 && Shucked_weight<=0.598 && Diameter<=0.525 && Viscera_weight>0.305 && Length>0.68) (1/1)
+	output=16
+else if(Shell_weight>0.655 && Length<=0.74) (5/21)
+	output=16
+else if(Shell_weight>0.329 && Shucked_weight<=0.4445 && Diameter>0.495 && Height>0.19) (4/5)
+	output=16
+else if(Height>0.13 && Shucked_weight<=0.4445 && Shell_weight>0.325 && Whole_weight>1.1155 && Viscera_weight>0.262 && Sex=M && Diameter>0.48) (6/7)
+	output=16
+else if(Shell_weight>0.294 && Shucked_weight<=0.413 && Whole_weight>0.9765 && Height>0.19 && Viscera_weight>0.2145) (3/7)
+	output=16
+else if(Height>0.13 && Shucked_weight<=0.2265 && Whole_weight>0.595 && Length<=0.475) (2/4)
+	output=16
+else if(Shell_weight>0.3195 && Length<=0.54 && Sex=F) (3/7)
+	output=16
+else if(Shell_weight>0.249 && Shucked_weight<=0.4085 && Whole_weight>0.986 && Viscera_weight<=0.199 && Length>0.57) (2/6)
+	output=16
+else if(Height>0.13 && Shucked_weight<=0.3235 && Whole_weight>0.772 && Shell_weight<=0.29 && Length<=0.515 && Viscera_weight>0.174 && Sex=F) (1/2)
+	output=16
+else if(Height>0.13 && Shucked_weight<=0.3235 && Whole_weight>0.7745 && Length>0.555 && Shell_weight<=0.275 && Diameter<=0.445) (2/4)
+	output=16
+else if(Shell_weight>0.4125 && Length<=0.66 && Diameter>0.54 && Shucked_weight>0.6565 && Viscera_weight<=0.3455) (2/4)
+	output=16
+else if(Shell_weight>0.2945 && Shucked_weight<=0.4565 && Whole_weight>1.0935 && Diameter<=0.435) (2/2)
+	output=15
+else if(Shell_weight>0.29 && Shucked_weight<=0.487 && Diameter>0.525 && Whole_weight>1.1895) (3/6)
+	output=15
+else if(Shell_weight>0.239 && Shucked_weight<=0.394 && Whole_weight>0.9745 && Length<=0.57 && Diameter<=0.44) (4/12)
+	output=15
+else if(Shell_weight>0.2545 && Shucked_weight<=0.4445 && Height>0.19 && Length>0.58) (4/12)
+	output=15
+else if(Shell_weight>0.239 && Shucked_weight<=0.4445 && Length<=0.565 && Whole_weight>0.9795) (8/29)
+	output=15
+else if(Shell_weight>0.249 && Shucked_weight<=0.377 && Whole_weight<=0.595) (2/3)
+	output=15
+else if(Viscera_weight>0.148 && Shucked_weight<=0.3445 && Whole_weight>0.8215 && Height>0.18 && Diameter<=0.44 && Length>0.53) (2/3)
+	output=15
+else if(Viscera_weight>0.158 && Shucked_weight<=0.316 && Sex=M && Diameter>0.43 && Length>0.515) (2/11)
+	output=15
+else if(Shell_weight>0.239 && Shucked_weight<=0.3445 && Viscera_weight>0.1775 && Height<=0.125) (2/5)
+	output=15
+else if(Shell_weight>0.3245 && Shucked_weight<=0.6025 && Whole_weight>1.461 && Diameter<=0.505) (5/13)
+	output=15
+else if(Shell_weight>0.3595 && Shucked_weight<=0.6055 && Whole_weight>1.411 && Height<=0.17 && Viscera_weight<=0.297) (3/3)
+	output=15
+else if(Viscera_weight>0.148 && Shell_weight>0.4525 && Shucked_weight<=0.751 && Whole_weight>1.6705 && Diameter<=0.535 && Height<=0.175) (1/6)
+	output=15
+else if(Shell_weight<=0.055 && Diameter<=0.22 && Height<=0.06) (30/94)
+	output=5
+else if(Shell_weight<=0.061 && Diameter<=0.22 && Shucked_weight<=0.0415 && Viscera_weight>0.02) (18/32)
+	output=5
+else if(Shell_weight<=0.06 && Diameter<=0.22 && Shucked_weight>0.0575 && Sex=I) (9/11)
+	output=5
+else if(Shell_weight<=0.077 && Diameter<=0.21 && Viscera_weight<=0.016 && Sex=I) (22/75)
+	output=5
+else if(Shell_weight<=0.061 && Viscera_weight<=0.0245 && Whole_weight>0.106 && Height<=0.075) (9/14)
+	output=5
+else if(Shell_weight<=0.077 && Shucked_weight>0.1375) (6/12)
+	output=5
+else if(Shell_weight<=0.0705 && Length<=0.3 && Viscera_weight>0.039 && Shucked_weight<=0.065) (4/5)
+	output=5
+else if(Shell_weight<=0.0585 && Viscera_weight<=0.0245 && Height<=0.05 && Diameter>0.13) (11/27)
+	output=5
+else if(Shell_weight<=0.0765 && Diameter<=0.185) (31/96)
+	output=5
+else if(Shell_weight<=0.06 && Viscera_weight<=0.0245 && Length<=0.23 && Shucked_weight>0.0205) (5/10)
+	output=5
+else if(Shell_weight<=0.0675 && Diameter>0.285 && Viscera_weight<=0.044) (2/3)
+	output=5
+else if(Shell_weight<=0.1015 && Viscera_weight<=0.0345 && Whole_weight<=0.094 && Diameter>0.2) (2/4)
+	output=5
+else if(Shell_weight<=0.0655 && Viscera_weight>0.0415 && Whole_weight<=0.2015 && Shucked_weight>0.078 && Length<=0.315) (1/1)
+	output=5
+else if(Shell_weight<=0.06 && Length>0.355 && Viscera_weight<=0.0345) (2/4)
+	output=5
+else if(Shell_weight<=0.1015 && Viscera_weight<=0.0475 && Shucked_weight>0.0835 && Whole_weight<=0.2015 && Diameter>0.26) (3/6)
+	output=5
+else if(Shell_weight<=0.1015 && Shucked_weight<=0.073 && Length>0.31 && Whole_weight<=0.1575 && Diameter>0.24 && Viscera_weight>0.032) (2/3)
+	output=5
+else if(Shell_weight<=0.1015 && Whole_weight>0.3645 && Shucked_weight<=0.169 && Viscera_weight<=0.092) (2/2)
+	output=5
+else if(Viscera_weight<=0.061 && Shell_weight<=0.058 && Whole_weight>0.1965 && Length>0.34 && Sex=I && Height>0.08) (2/5)
+	output=5
+else if(Viscera_weight<=0.0565 && Shell_weight<=0.0445 && Height>0.085 && Sex=M) (1/1)
+	output=5
+else if(Viscera_weight<=0.061 && Shucked_weight>0.1185 && Diameter<=0.305 && Length>0.39 && Whole_weight<=0.2985 && Height>0.09) (2/4)
+	output=5
+else if(Viscera_weight<=0.0565 && Whole_weight>0.32 && Length<=0.375) (1/1)
+	output=5
+else if(Shell_weight>0.3095 && Shucked_weight<=0.4525 && Viscera_weight>0.271 && Whole_weight<=1.092) (4/7)
+	output=14
+else if(Shell_weight>0.1895 && Shucked_weight<=0.3075 && Whole_weight>0.7585 && Length>0.55) (7/15)
+	output=14
+else if(Shell_weight>0.349 && Viscera_weight<=0.2755 && Diameter<=0.46 && Shucked_weight>0.3595 && Height<=0.175) (5/14)
+	output=14
+else if(Shell_weight>0.1895 && Shucked_weight<=0.3345 && Whole_weight>0.7205 && Length<=0.5 && Viscera_weight>0.185) (3/5)
+	output=14
+else if(Shell_weight>0.3095 && Shucked_weight<=0.4525 && Viscera_weight>0.273 && Whole_weight<=1.092) (4/5)
+	output=14
+else if(Shell_weight>0.3195 && Shucked_weight<=0.416 && Height>0.185 && Length>0.54) (3/15)
+	output=14
+else if(Shell_weight>0.1895 && Shucked_weight<=0.3305 && Whole_weight>0.7585 && Height>0.17 && Sex=M) (4/9)
+	output=14
+else if(Shell_weight>0.354 && Length<=0.65 && Viscera_weight>0.3335 && Whole_weight>1.5675 && Shucked_weight<=0.6745) (2/5)
+	output=14
+else if(Shell_weight>0.3195 && Height>0.215 && Shucked_weight<=0.6175 && Sex=F) (4/10)
+	output=14
+else if(Shell_weight>0.479 && Whole_weight<=1.5015) (4/30)
+	output=14
+else if(Shell_weight>0.1895 && Shucked_weight<=0.2505 && Length<=0.485 && Whole_weight>0.5885 && Viscera_weight<=0.128) (4/5)
+	output=14
+else if(Shell_weight>0.1845 && Shucked_weight<=0.404 && Height>0.145 && Sex=I && Diameter<=0.425 && Whole_weight>0.7585 && Viscera_weight<=0.171) (2/3)
+	output=14
+else if(Shell_weight>0.249 && Whole_weight>1.893 && Viscera_weight<=0.3565) (2/5)
+	output=14
+else if(Shell_weight>0.2545 && Height<=0.145 && Whole_weight>1.1605 && Length<=0.605 && Shucked_weight<=0.581) (3/4)
+	output=14
+else if(Shell_weight>0.2295 && Shucked_weight<=0.358 && Whole_weight>0.8825 && Diameter<=0.435) (9/28)
+	output=13
+else if(Shell_weight>0.2745 && Shucked_weight<=0.442 && Whole_weight>1.0525 && Diameter<=0.48) (13/61)
+	output=13
+else if(Shell_weight>0.234 && Shucked_weight<=0.3385 && Diameter<=0.425 && Viscera_weight>0.189 && Whole_weight<=0.8465) (6/13)
+	output=13
+else if(Shell_weight>0.2695 && Shucked_weight<=0.4845 && Whole_weight>1.1155 && Height<=0.155 && Diameter<=0.47) (4/7)
+	output=13
+else if(Shell_weight>0.2745 && Shucked_weight<=0.442 && Whole_weight>1.035 && Length<=0.6) (10/55)
+	output=13
+else if(Shell_weight>0.249 && Shucked_weight<=0.358 && Height<=0.13 && Viscera_weight<=0.181) (6/15)
+	output=13
+else if(Shell_weight>0.3245 && Diameter>0.51 && Shucked_weight<=0.519 && Height<=0.16 && Length>0.615) (4/9)
+	output=13
+else if(Shell_weight>0.404 && Shucked_weight<=0.7305 && Diameter>0.54 && Length<=0.7 && Whole_weight>1.672 && Viscera_weight>0.3665) (5/10)
+	output=13
+else if(Shell_weight>0.2745 && Height>0.185 && Diameter>0.51 && Shucked_weight<=0.567 && Whole_weight>1.2695) (6/26)
+	output=13
+else if(Height>0.165 && Diameter>0.51 && Whole_weight>1.817 && Length<=0.695 && Shell_weight<=0.4535) (3/3)
+	output=13
+else if(Shell_weight>0.2595 && Shucked_weight<=0.358 && Length<=0.525 && Viscera_weight<=0.171 && Height>0.145 && Diameter<=0.415) (5/10)
+	output=13
+else if(Shell_weight>0.1945 && Shucked_weight<=0.2465 && Height<=0.135 && Viscera_weight>0.1455 && Whole_weight<=0.6355) (4/5)
+	output=13
+else if(Shell_weight>0.3195 && Height>0.195 && Length<=0.655 && Diameter>0.515 && Shucked_weight<=0.7305) (3/16)
+	output=13
+else if(Shell_weight>0.274 && Diameter>0.54 && Shucked_weight<=0.6965 && Length>0.69 && Whole_weight>1.52 && Viscera_weight<=0.4115) (7/15)
+	output=13
+else if(Shell_weight>0.319 && Shucked_weight<=0.4915 && Whole_weight>1.1445 && Viscera_weight<=0.278 && Length<=0.62 && Diameter>0.48 && Sex=F) (3/6)
+	output=13
+else if(Shell_weight>0.3195 && Length<=0.62 && Diameter>0.485 && Shucked_weight>0.485 && Whole_weight<=1.221 && Sex=M && Height<=0.19) (4/8)
+	output=13
+else if(Shell_weight<=0.0945 && Viscera_weight<=0.0385 && Sex=I && Whole_weight<=0.097) (20/108)
+	output=6
+else if(Shell_weight<=0.098 && Viscera_weight<=0.033 && Diameter<=0.19) (14/103)
+	output=6
+else if(Shell_weight<=0.119 && Diameter<=0.275 && Sex=I && Length<=0.35 && Shucked_weight>0.056 && Whole_weight<=0.172 && Viscera_weight<=0.0375 && Height>0.06) (20/40)
+	output=6
+else if(Shell_weight<=0.094 && Viscera_weight<=0.033 && Shucked_weight>0.0615 && Whole_weight<=0.221) (17/30)
+	output=6
+else if(Shell_weight<=0.098 && Sex=I && Whole_weight>0.3045 && Length>0.395 && Viscera_weight<=0.075 && Diameter<=0.32) (14/20)
+	output=6
+else if(Shell_weight<=0.102 && Height<=0.085 && Shucked_weight>0.0765 && Diameter<=0.28) (29/63)
+	output=6
+else if(Shell_weight<=0.1195 && Sex=I && Diameter<=0.275 && Shucked_weight>0.096 && Length>0.365) (9/14)
+	output=6
+else if(Shell_weight<=0.1195 && Height<=0.09 && Diameter<=0.22 && Shucked_weight>0.05) (12/27)
+	output=6
+else if(Shell_weight<=0.1385 && Sex=I && Length<=0.38 && Viscera_weight>0.056 && Height<=0.095) (11/19)
+	output=6
+else if(Shell_weight<=0.134 && Viscera_weight<=0.0405 && Sex=I && Height>0.095 && Shucked_weight>0.083 && Whole_weight<=0.244) (4/4)
+	output=6
+else if(Shell_weight<=0.142 && Height<=0.105 && Sex=I && Viscera_weight>0.0715 && Length<=0.44 && Shucked_weight>0.1635 && Whole_weight<=0.4165) (10/19)
+	output=6
+else if(Shell_weight<=0.1385 && Height<=0.095 && Whole_weight<=0.127 && Shucked_weight>0.0415 && Viscera_weight<=0.0285 && Diameter>0.195) (13/29)
+	output=6
+else if(Shell_weight<=0.1565 && Sex=I && Diameter<=0.33 && Viscera_weight>0.0795 && Height<=0.105 && Whole_weight<=0.4165) (9/18)
+	output=6
+else if(Shell_weight<=0.131 && Whole_weight<=0.2645 && Sex=I && Height<=0.095 && Length>0.39) (4/5)
+	output=6
+else if(Shell_weight<=0.1575 && Length<=0.345 && Viscera_weight>0.038 && Whole_weight<=0.185 && Shucked_weight>0.073 && Height>0.075) (5/8)
+	output=6
+else if(Shell_weight<=0.1385 && Shucked_weight>0.2005 && Sex=F && Viscera_weight<=0.115 && Diameter<=0.35) (3/3)
+	output=6
+else if(Shell_weight<=0.1575 && Viscera_weight<=0.051 && Height>0.085 && Whole_weight<=0.18 && Length<=0.34 && Shucked_weight>0.062) (5/8)
+	output=6
+else if(Shell_weight<=0.1575 && Length<=0.345 && Sex=I && Viscera_weight>0.0395 && Shucked_weight<=0.0695) (3/9)
+	output=6
+else if(Shell_weight<=0.1575 && Shucked_weight>0.2035 && Whole_weight<=0.4565) (10/37)
+	output=6
+else if(Shell_weight<=0.1575 && Whole_weight<=0.312 && Sex=I && Length<=0.31 && Viscera_weight>0.029) (13/28)
+	output=6
+else if(Shell_weight<=0.1575 && Shucked_weight>0.234 && Viscera_weight>0.1045 && Whole_weight<=0.5215 && Height>0.11) (3/6)
+	output=6
+else if(Shell_weight<=0.1575 && Whole_weight<=0.2985 && Length>0.395 && Shucked_weight>0.123) (5/11)
+	output=6
+else if(Length<=0.385 && Shell_weight>0.128 && Sex=I) (3/4)
+	output=6
+else if(Shell_weight<=0.1575 && Whole_weight<=0.2725 && Shucked_weight>0.0875 && Diameter<=0.27 && Viscera_weight>0.047 && Sex=I && Height>0.085) (2/5)
+	output=6
+else if(Shell_weight<=0.1575 && Shucked_weight>0.261 && Height>0.14 && Sex=M) (1/3)
+	output=6
+else if(Shell_weight>0.3995 && Whole_weight>2.081 && Shucked_weight<=1.017) (10/25)
+	output=12
+else if(Shell_weight>0.3015 && Shucked_weight<=0.407 && Whole_weight>0.986 && Viscera_weight>0.223) (8/34)
+	output=12
+else if(Shell_weight>0.3005 && Whole_weight>1.834 && Viscera_weight<=0.38) (5/14)
+	output=12
+else if(Shell_weight>0.3535 && Shucked_weight<=0.5315 && Whole_weight>1.2635 && Length<=0.62) (6/18)
+	output=12
+else if(Shell_weight>0.3045 && Shucked_weight>0.9035 && Viscera_weight<=0.3645) (4/5)
+	output=12
+else if(Diameter>0.475 && Shell_weight>0.441 && Height<=0.19 && Sex=M && Shucked_weight>0.647 && Whole_weight<=1.623 && Length<=0.68) (4/5)
+	output=12
+else if(Height>0.15 && Shell_weight>0.361 && Shucked_weight<=0.7255 && Viscera_weight>0.2945 && Length>0.685) (9/55)
+	output=12
+else if(Shell_weight>0.304 && Shucked_weight<=0.426 && Viscera_weight>0.222 && Sex=F && Diameter<=0.47) (7/21)
+	output=12
+else if(Height>0.15 && Shucked_weight<=0.3665 && Viscera_weight<=0.1635 && Shell_weight<=0.245 && Length>0.505 && Whole_weight<=0.795) (7/16)
+	output=12
+else if(Height>0.155 && Shucked_weight<=0.3865 && Diameter<=0.4 && Length<=0.45) (2/5)
+	output=12
+else if(Shell_weight>0.2795 && Diameter>0.475 && Viscera_weight<=0.2675 && Whole_weight>1.15 && Length<=0.62 && Shucked_weight<=0.4605) (2/4)
+	output=12
+else if(Height>0.16 && Shucked_weight<=0.3865 && Length>0.55 && Sex=F && Diameter<=0.465 && Shell_weight<=0.265) (4/5)
+	output=12
+else if(Shell_weight>0.234 && Shucked_weight<=0.2985 && Diameter<=0.415 && Height<=0.155) (11/42)
+	output=12
+else if(Shell_weight>0.302 && Viscera_weight<=0.221 && Height>0.16 && Diameter>0.49 && Length<=0.65) (7/15)
+	output=12
+else if(Height>0.17 && Shucked_weight>0.95 && Shell_weight>0.6) (6/13)
+	output=12
+else if(Shell_weight<=0.144 && Sex=I && Height<=0.1 && Shucked_weight>0.0855 && Whole_weight<=0.2205) (23/45)
+	output=7
+else if(Shell_weight<=0.144 && Sex=I && Diameter<=0.305 && Height<=0.1 && Viscera_weight>0.034 && Shucked_weight<=0.128 && Whole_weight>0.2505) (21/40)
+	output=7
+else if(Shell_weight<=0.1485 && Sex=I && Height<=0.095 && Shucked_weight<=0.109 && Viscera_weight>0.043) (26/59)
+	output=7
+else if(Shell_weight<=0.144 && Sex=I && Diameter<=0.25 && Shucked_weight>0.0545) (24/83)
+	output=7
+else if(Shell_weight<=0.144 && Sex=I && Diameter<=0.35 && Shucked_weight>0.1515) (69/170)
+	output=7
+else if(Shell_weight<=0.1515 && Height<=0.095 && Whole_weight<=0.1155 && Shucked_weight>0.038) (8/44)
+	output=7
+else if(Shell_weight<=0.1825 && Height<=0.11 && Whole_weight<=0.1915 && Diameter>0.255 && Shucked_weight>0.0705) (8/20)
+	output=7
+else if(Shell_weight<=0.192 && Length<=0.435 && Diameter<=0.295 && Viscera_weight>0.068 && Shucked_weight>0.134) (6/6)
+	output=7
+else if(Shell_weight<=0.192 && Length<=0.435 && Height<=0.085 && Diameter>0.285 && Viscera_weight<=0.0585) (9/11)
+	output=7
+else if(Shell_weight<=0.192 && Height<=0.1 && Shucked_weight>0.124 && Diameter<=0.335 && Length>0.41 && Whole_weight<=0.313) (5/7)
+	output=7
+else if(Shell_weight<=0.192 && Whole_weight<=0.3355 && Viscera_weight>0.068 && Shucked_weight>0.134 && Height<=0.105) (11/16)
+	output=7
+else if(Shell_weight<=0.189 && Whole_weight<=0.2305 && Viscera_weight<=0.0255 && Height>0.07) (4/25)
+	output=7
+else if(Shell_weight<=0.1915 && Length<=0.38 && Diameter<=0.25 && Viscera_weight>0.039 && Sex=I) (10/27)
+	output=7
+else if(Shell_weight<=0.192 && Length<=0.435 && Viscera_weight>0.0695 && Whole_weight<=0.334 && Height>0.105 && Shucked_weight>0.124) (4/9)
+	output=7
+else if(Shell_weight<=0.1895 && Diameter<=0.295) (127/552)
+	output=7
+else if(Shell_weight<=0.143 && Sex=I && Length<=0.405 && Diameter<=0.25 && Whole_weight>0.17) (15/26)
+	output=7
+else if(Shell_weight<=0.192 && Shucked_weight>0.31 && Whole_weight<=0.6475 && Length>0.47 && Viscera_weight<=0.149) (7/13)
+	output=7
+else if(Shell_weight<=0.192 && Viscera_weight>0.1405 && Shucked_weight>0.2655 && Sex=M && Length>0.53 && Whole_weight<=0.818 && Diameter>0.385) (6/7)
+	output=7
+else if(Shell_weight<=0.1895 && Height<=0.12 && Viscera_weight>0.0875 && Length<=0.435 && Shucked_weight>0.1675 && Sex=F && Diameter<=0.325) (2/2)
+	output=7
+else if(Shell_weight<=0.18 && Shucked_weight>0.2295 && Height<=0.115 && Diameter<=0.38 && Length>0.455 && Viscera_weight>0.115) (9/17)
+	output=7
+else if(Shell_weight<=0.205 && Whole_weight>0.28 && Length<=0.435 && Diameter>0.325 && Viscera_weight>0.0935 && Height<=0.12 && Shucked_weight>0.154 && Sex=M) (1/1)
+	output=7
+else if(Shell_weight<=0.186 && Viscera_weight>0.082 && Height<=0.125 && Whole_weight<=0.4195 && Shucked_weight>0.149 && Sex=M && Diameter<=0.325 && Length>0.415) (2/3)
+	output=7
+else if(Shell_weight>0.279 && Whole_weight>1.52 && Shucked_weight<=0.779 && Height>0.195 && Sex=F) (14/40)
+	output=11
+else if(Diameter>0.48 && Shell_weight>0.404 && Viscera_weight<=0.3255 && Shucked_weight>0.554 && Whole_weight<=1.5075) (19/44)
+	output=11
+else if(Shell_weight>0.2835 && Whole_weight>1.5265) (98/333)
+	output=11
+else if(Shell_weight>0.2595 && Shucked_weight<=0.5725 && Length>0.615 && Viscera_weight<=0.213) (10/25)
+	output=11
+else if(Shell_weight>0.2505 && Diameter>0.48 && Whole_weight<=1.348 && Viscera_weight>0.2695 && Length>0.625 && Height<=0.165 && Shucked_weight<=0.565) (16/39)
+	output=11
+else if(Diameter>0.48 && Whole_weight>1.5535 && Shucked_weight<=0.8005 && Viscera_weight>0.397 && Height>0.175 && Shell_weight<=0.575) (19/33)
+	output=11
+else if(Shell_weight>0.2485 && Shucked_weight<=0.46 && Viscera_weight>0.271 && Length<=0.6) (6/16)
+	output=11
+else if(Shell_weight>0.2485 && Diameter>0.48 && Length<=0.63 && Shucked_weight<=0.531 && Whole_weight<=1.0385 && Viscera_weight>0.185) (6/15)
+	output=11
+else if(Shell_weight>0.2485 && Shucked_weight<=0.474 && Whole_weight<=0.8365 && Viscera_weight>0.148 && Height<=0.13) (3/10)
+	output=11
+else if(Shell_weight>0.2485 && Shucked_weight<=0.47 && Viscera_weight<=0.2115 && Whole_weight>1.004 && Length>0.56 && Height<=0.165) (7/25)
+	output=11
+else if(Height>0.14 && Shucked_weight<=0.3215 && Sex=F && Length<=0.485 && Viscera_weight>0.1165) (4/11)
+	output=11
+else if(Height>0.14 && Whole_weight<=1.443 && Shell_weight>0.3425 && Sex=M && Viscera_weight<=0.261 && Shucked_weight<=0.5275 && Diameter>0.46) (8/41)
+	output=11
+else if(Shell_weight>0.249 && Length<=0.64 && Height>0.16 && Diameter>0.485 && Viscera_weight<=0.2985 && Whole_weight>1.289 && Shucked_weight>0.4945) (14/40)
+	output=11
+else if(Shell_weight>0.1775 && Shucked_weight<=0.3225 && Sex=F && Viscera_weight<=0.165 && Length>0.5 && Whole_weight<=0.6295) (5/15)
+	output=11
+else if(Shell_weight>0.2595 && Whole_weight<=0.9715 && Shucked_weight<=0.332 && Length>0.56) (4/20)
+	output=11
+else if(Shell_weight>0.2385 && Whole_weight<=1.494 && Length>0.645 && Shucked_weight>0.647 && Viscera_weight>0.3555) (4/4)
+	output=11
+else if(Shell_weight<=0.211 && Sex=I && Length<=0.495 && Shucked_weight>0.2385) (34/63)
+	output=8
+else if(Shell_weight<=0.2335 && Sex=I && Length<=0.51 && Shucked_weight>0.245 && Height<=0.13) (35/60)
+	output=8
+else if(Shell_weight<=0.2415 && Sex=I && Whole_weight<=0.5705 && Diameter>0.37 && Shucked_weight>0.222) (23/34)
+	output=8
+else if(Shell_weight<=0.2335 && Sex=I && Diameter<=0.39) (183/905)
+	output=8
+else if(Shell_weight<=0.23 && Sex=I && Length<=0.495 && Shucked_weight>0.244 && Viscera_weight<=0.1405) (29/50)
+	output=8
+else if(Shell_weight<=0.2565 && Shucked_weight>0.289 && Length<=0.52 && Whole_weight>0.722 && Viscera_weight>0.1575) (13/32)
+	output=8
+else if(Shell_weight<=0.253 && Whole_weight<=0.6445 && Shucked_weight>0.222 && Height<=0.12 && Viscera_weight<=0.119) (39/83)
+	output=8
+else if(Shell_weight<=0.253 && Shucked_weight>0.3325 && Length<=0.57 && Viscera_weight>0.215) (8/16)
+	output=8
+else if(Shell_weight<=0.251 && Shucked_weight>0.3325 && Whole_weight<=0.7875 && Height>0.13) (25/56)
+	output=8
+else if(Shell_weight<=0.2515 && Length>0.55 && Sex=M && Height>0.15 && Viscera_weight<=0.1975) (5/11)
+	output=8
+else if(Shell_weight<=0.27 && Shucked_weight>0.4035 && Viscera_weight<=0.207 && Whole_weight>0.98 && Length>0.575) (6/8)
+	output=8
+else if(Shell_weight<=0.2565 && Whole_weight>0.848 && Shucked_weight<=0.43 && Diameter>0.435 && Length<=0.59 && Viscera_weight<=0.2065 && Height>0.14) (8/15)
+	output=8
+else if(Shell_weight<=0.244 && Viscera_weight<=0.1465 && Shucked_weight>0.188 && Diameter<=0.365 && Height<=0.115 && Length>0.45) (22/64)
+	output=8
+else if(Height<=0.135 && Whole_weight>0.5975 && Shell_weight<=0.182 && Viscera_weight<=0.1445 && Shucked_weight>0.2895) (19/36)
+	output=8
+else if(Shell_weight<=0.283 && Sex=F && Shucked_weight>0.4015 && Height<=0.135 && Viscera_weight>0.18) (6/11)
+	output=8
+else if(Shell_weight<=0.2815 && Viscera_weight>0.188 && Whole_weight>0.9835 && Shucked_weight<=0.479 && Diameter<=0.465 && Height<=0.165) (8/28)
+	output=8
+else if(Shell_weight<=0.283 && Viscera_weight>0.188 && Shucked_weight<=0.444 && Length>0.58 && Whole_weight<=0.906 && Height>0.14) (7/14)
+	output=8
+else if(Diameter<=0.435 && Length>0.55 && Shell_weight<=0.2295 && Whole_weight>0.873) (5/8)
+	output=8
+else if(Height<=0.13 && Sex=M && Shell_weight<=0.15 && Viscera_weight>0.0515 && Shucked_weight<=0.214 && Whole_weight>0.401 && Diameter>0.3 && Length<=0.47) (11/23)
+	output=8
+else if(Length<=0.6 && Height<=0.13 && Shell_weight>0.1875 && Shucked_weight>0.335 && Whole_weight<=0.728) (6/8)
+	output=8
+else if(Shell_weight<=0.2315 && Sex=F && Whole_weight<=0.66 && Shucked_weight>0.243 && Length<=0.47) (5/9)
+	output=8
+else if(Shell_weight>0.3225 && Viscera_weight<=0.262 && Diameter>0.5) (18/71)
+	output=10
+else if(Shell_weight>0.253 && Whole_weight>1.331 && Shucked_weight<=0.617 && Height>0.165 && Length>0.61) (29/121)
+	output=10
+else if(Shell_weight>0.253 && Height>0.16 && Shucked_weight<=0.5635 && Whole_weight>1.099 && Viscera_weight<=0.3105 && Diameter>0.49 && Length<=0.65) (21/90)
+	output=10
+else if(Shell_weight>0.3185 && Diameter>0.525) (55/302)
+	output=10
+else if(Shell_weight>0.255 && Height>0.18) (81/453)
+	output=10
+else if(Shell_weight>0.2515 && Whole_weight>1.3305 && Viscera_weight>0.3595 && Height<=0.185) (24/79)
+	output=10
+else if(Shell_weight>0.2515 && Shucked_weight<=0.4845 && Height>0.16) (44/259)
+	output=10
+else if(Shell_weight>0.2515 && Diameter<=0.48 && Viscera_weight>0.2655) (43/120)
+	output=10
+else if(Shell_weight>0.2925 && Whole_weight>1.337 && Viscera_weight>0.3775) (41/193)
+	output=10
+else if(Height>0.13 && Viscera_weight<=0.177 && Whole_weight>0.6885 && Diameter<=0.415) (21/86)
+	output=10
+else if(Shell_weight>0.254 && Viscera_weight<=0.2065 && Whole_weight>0.958 && Diameter<=0.46) (11/38)
+	output=10
+else if(Shell_weight>0.3155 && Viscera_weight<=0.262) (61/315)
+	output=10
+else if(Shucked_weight<=0.388 && Shell_weight>0.231 && Viscera_weight>0.204 && Whole_weight<=0.8815) (11/35)
+	output=10
+else if(Shell_weight>0.2415 && Whole_weight<=1.1155 && Height<=0.145 && Length>0.565) (39/127)
+	output=10
+else if(Length<=0.495 && Shell_weight>0.15 && Viscera_weight>0.114 && Shucked_weight<=0.2135) (12/47)
+	output=10
+else if(Length<=0.42 && Sex=F && Whole_weight>0.3485) (6/16)
+	output=10
+else if(Shucked_weight<=0.331 && Sex=F && Viscera_weight<=0.074 && Length>0.37 && Shell_weight<=0.125) (9/22)
+	output=10
+else if(Viscera_weight>0.165 && Whole_weight<=0.8935 && Shell_weight>0.235 && Length<=0.555 && Shucked_weight>0.2845) (21/68)
+	output=10
+else if(Viscera_weight<=0.057 && Diameter>0.255 && Height<=0.095) (11/146)
+	output=10
+else if(Shell_weight>0.276 && Whole_weight>1.331 && Shucked_weight<=0.694) (73/309)
+	output=10
+else if(Shucked_weight<=0.3145 && Whole_weight>0.6485 && Shell_weight<=0.215 && Viscera_weight>0.171 && Length<=0.515) (5/13)
+	output=10
+else if(Shell_weight>0.3195 && Viscera_weight>0.3535 && Shucked_weight<=0.805 && Length>0.61) (32/163)
+	output=10
+else if(Diameter<=0.385 && Shell_weight>0.1225 && Height<=0.12 && Length<=0.445 && Whole_weight<=0.407) (7/26)
+	output=10
+else if(Whole_weight<=0.8935 && Height>0.145 && Shell_weight<=0.23 && Shucked_weight>0.269 && Diameter<=0.42) (9/45)
+	output=10
+else if(Height<=0.155 && Diameter>0.42 && Shell_weight<=0.245 && Shucked_weight<=0.45 && Whole_weight>0.7905 && Viscera_weight>0.1925 && Sex=M) (7/19)
+	output=10
+else if(Height<=0.155 && Viscera_weight>0.097 && Shucked_weight<=0.2635 && Sex=M && Length<=0.45) (6/18)
+	output=10
+else 
+	output=9

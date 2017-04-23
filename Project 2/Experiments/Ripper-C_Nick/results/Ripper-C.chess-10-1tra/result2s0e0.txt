@@ -1,0 +1,47 @@
+@Number of Rules: 23
+if(Bxqsq=t && Rimmx=f) (663/663)
+	output=nowin
+else if(Wkpos=f && Cntxt=f && Rimmx=f) (136/139)
+	output=nowin
+else if(Wknck=t && Rimmx=f && Bkxcr=t) (377/377)
+	output=nowin
+else if(Wkpos=f && Katri5=n && Bkxbq=f && Wkcti=f && Bkblk=f && Bkon8=f) (138/138)
+	output=nowin
+else if(Mulch=t && Rimmx=f && Katri5=n) (104/104)
+	output=nowin
+else if(Katri5=b && Bkblk=f && Bkxbq=f) (73/73)
+	output=nowin
+else if(Skrxp=t && Rimmx=f && Wknck=t) (115/115)
+	output=nowin
+else if(Wkpos=f && Katri5=n && Bkxbq=f && Wknck=f && Bkblk=f && Wkovl=t) (104/105)
+	output=nowin
+else if(Rxmsq=t && Qxmsq=f && Bkxbq=f && Wkovl=t && Bxqsq=f) (51/51)
+	output=nowin
+else if(Wkovl=f && Hdchk=t) (14/14)
+	output=nowin
+else if(Wkovl=f && Wknck=t && Rimmx=f && Bkona=t) (71/71)
+	output=nowin
+else if(Wkovl=f && Wkpos=f && Katri5=n && Rimmx=f && Bkxbq=f && Reskr=t) (35/35)
+	output=nowin
+else if(Wknck=t && Rimmx=f && Thrsk=t) (36/36)
+	output=nowin
+else if(Skach=t && Bkblk=f) (8/8)
+	output=nowin
+else if(Bkon8=t && Wknck=t && Wtoeg=n && Rimmx=f) (34/34)
+	output=nowin
+else if(Thrsk=t && Spcop=t) (1/1)
+	output=nowin
+else if(Wknck=t && Rimmx=f && Wkovl=t && Bknwy=f) (461/461)
+	output=nowin
+else if(Reskd=t && Katri5=n && Bkxbq=f) (4/4)
+	output=nowin
+else if(R2ar8=f && Rkxwp=t && Wtoeg=t && Rimmx=f && Wknck=t) (12/12)
+	output=nowin
+else if(Wknck=t && Rimmx=f && R2ar8=t && Wkovl=t) (456/456)
+	output=nowin
+else if(Dsopp=t && Dwipd=g && Wtoeg=t && Skewr=t && Bkxbq=f) (5/5)
+	output=nowin
+else if(Wkpos=f && Bkspr=t && Simpl=t && Katri5=n && Blxwp=f) (11/13)
+	output=nowin
+else 
+	output=won

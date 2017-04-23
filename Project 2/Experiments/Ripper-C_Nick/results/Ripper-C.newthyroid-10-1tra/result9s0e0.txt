@@ -1,0 +1,15 @@
+@Number of Rules: 7
+if(thyroxin<=5.6 && TSH_value>1.5) (24/24)
+	output=3
+else if(thyroxin<=6.5 && thyroidstimulating>1.6 && triiodothyronine<=1.3) (19/19)
+	output=3
+else if(thyroidstimulating>2.8 && T3resin>112.0) (20/20)
+	output=3
+else if(TSH_value<=0.4 && thyroxin>11.1) (29/30)
+	output=2
+else if(T3resin<=95.0 && TSH_value<=-0.2) (8/8)
+	output=2
+else if(T3resin>130.0 && thyroxin>9.7) (2/2)
+	output=2
+else 
+	output=1

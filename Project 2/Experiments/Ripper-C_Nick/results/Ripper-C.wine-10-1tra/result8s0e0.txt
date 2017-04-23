@@ -1,0 +1,11 @@
+@Number of Rules: 5
+if(Hue<=0.76 && flavanoids<=1.57 && Ash>1.98) (34/34)
+	output=3
+else if(flavanoids<=1.2 && Alcohol>12.37) (33/33)
+	output=3
+else if(Proline>750.0 && Alcohol>12.47 && AlcalinityOfAsh<=22.5) (52/56)
+	output=1
+else if(Alcohol>13.11 && MalicAcid>1.25 && AlcalinityOfAsh<=20.5) (46/57)
+	output=1
+else 
+	output=2

@@ -1,0 +1,121 @@
+@Number of Rules: 60
+if(Safety=high && Buying=low && Lug_boot=big && Persons=4) (12/16)
+	output=vgood
+else if(Safety=high && Buying=low && Persons=more && Lug_boot=big && Maint=high) (3/3)
+	output=vgood
+else if(Safety=high && Buying=med && Maint=low && Lug_boot=big && Persons=4) (3/3)
+	output=vgood
+else if(Safety=high && Persons=more && Buying=low && Lug_boot=big && Maint=med) (4/4)
+	output=vgood
+else if(Safety=high && Buying=low && Persons=more && Maint=low && Lug_boot=big) (4/4)
+	output=vgood
+else if(Safety=high && Buying=med && Maint=med && Lug_boot=big && Persons=4) (4/4)
+	output=vgood
+else if(Safety=high && Persons=more && Lug_boot=med && Buying=low) (9/16)
+	output=vgood
+else if(Safety=high && Buying=low && Lug_boot=big && Persons=4 && Maint=high) (4/4)
+	output=vgood
+else if(Safety=high && Buying=med && Persons=more && Maint=med && Lug_boot=big) (3/3)
+	output=vgood
+else if(Safety=high && Lug_boot=med && Buying=low && Persons=4 && Doors=5more) (3/4)
+	output=vgood
+else if(Safety=high && Maint=low && Buying=med && Persons=more && Lug_boot=big) (4/4)
+	output=vgood
+else if(Safety=high && Lug_boot=med && Buying=med && Persons=more && Doors=3 && Maint=med) (1/1)
+	output=vgood
+else if(Safety=high && Lug_boot=med && Buying=med && Maint=low && Doors=5more && Persons=4) (1/1)
+	output=vgood
+else if(Doors=4 && Lug_boot=med && Safety=high && Persons=4 && Buying=low) (3/4)
+	output=vgood
+else if(Doors=4 && Maint=med && Buying=med && Lug_boot=med && Persons=4) (1/1)
+	output=vgood
+else if(Buying=med && Maint=low && Safety=high && Persons=more && Lug_boot=med) (3/4)
+	output=vgood
+else if(Maint=low && Buying=low && Persons=4 && Safety=high) (6/12)
+	output=good
+else if(Maint=low && Buying=med && Safety=med && Lug_boot=big && Persons=4) (4/4)
+	output=good
+else if(Buying=low && Maint=med && Persons=4 && Safety=high) (5/11)
+	output=good
+else if(Buying=low && Safety=med && Maint=med && Persons=more && Lug_boot=big) (3/3)
+	output=good
+else if(Maint=low && Buying=med && Persons=more && Safety=med && Lug_boot=big) (4/4)
+	output=good
+else if(Maint=low && Buying=med && Safety=high && Persons=4) (5/9)
+	output=good
+else if(Buying=low && Safety=med && Maint=low && Lug_boot=big) (7/10)
+	output=good
+else if(Buying=low && Maint=med && Safety=med && Persons=4 && Lug_boot=big) (4/4)
+	output=good
+else if(Buying=low && Persons=more && Maint=low && Safety=high) (4/12)
+	output=good
+else if(Persons=more && Maint=low && Buying=med && Safety=high) (4/12)
+	output=good
+else if(Buying=low && Maint=med && Persons=more && Safety=high) (3/11)
+	output=good
+else if(Lug_boot=med && Safety=med && Maint=low && Buying=med && Doors=5more && Persons=4) (1/1)
+	output=good
+else if(Buying=low && Safety=med && Lug_boot=med && Persons=more && Maint=med) (3/4)
+	output=good
+else if(Lug_boot=med && Maint=low && Safety=med && Doors=4 && Buying=med) (1/1)
+	output=good
+else if(Buying=low && Lug_boot=med && Safety=med && Maint=low && Persons=more) (3/4)
+	output=good
+else if(Maint=low && Safety=med && Lug_boot=med && Buying=med && Persons=more && Doors=3) (1/1)
+	output=good
+else if(Buying=low && Persons=4 && Lug_boot=med && Safety=med && Doors=5more && Maint=med) (1/1)
+	output=good
+else if(Buying=low && Maint=low && Persons=4 && Safety=med && Lug_boot=med) (2/4)
+	output=good
+else if(Maint=low && Buying=med && Lug_boot=med && Persons=more && Doors=5more && Safety=med) (1/1)
+	output=good
+else if(Safety=high && Persons=4 && Maint=med) (28/44)
+	output=acc
+else if(Safety=high && Persons=4 && Buying=med) (28/42)
+	output=acc
+else if(Persons=more && Safety=high) (85/172)
+	output=acc
+else if(Safety=med && Persons=4 && Lug_boot=big && Buying=med) (12/16)
+	output=acc
+else if(Safety=med && Persons=more && Lug_boot=big) (36/57)
+	output=acc
+else if(Persons=4 && Safety=high && Maint=low) (21/42)
+	output=acc
+else if(Safety=med && Persons=4 && Buying=low && Maint=high) (11/11)
+	output=acc
+else if(Safety=med && Persons=4 && Maint=med) (26/42)
+	output=acc
+else if(Safety=med && Persons=more && Lug_boot=med && Maint=med) (11/16)
+	output=acc
+else if(Persons=4 && Safety=med && Maint=low && Lug_boot=big) (7/14)
+	output=acc
+else if(Safety=med && Persons=more && Lug_boot=med && Buying=med) (11/16)
+	output=acc
+else if(Persons=4 && Safety=high && Buying=low) (17/46)
+	output=acc
+else if(Safety=med && Buying=low && Persons=more) (24/44)
+	output=acc
+else if(Persons=4 && Safety=med && Maint=low && Buying=med) (6/11)
+	output=acc
+else if(Persons=4 && Safety=med && Buying=low && Maint=low) (6/11)
+	output=acc
+else if(Persons=4 && Safety=high && Buying=high && Maint=high) (11/11)
+	output=acc
+else if(Safety=med && Persons=4 && Doors=4 && Lug_boot=med) (7/10)
+	output=acc
+else if(Safety=med && Persons=more && Maint=low && Lug_boot=med) (7/15)
+	output=acc
+else if(Safety=med && Persons=4 && Lug_boot=big && Buying=low) (6/13)
+	output=acc
+else if(Safety=med && Persons=more && Buying=med && Maint=low) (4/12)
+	output=acc
+else if(Safety=med && Doors=5more && Persons=4 && Lug_boot=med) (7/13)
+	output=acc
+else if(Maint=high && Buying=high && Safety=med && Lug_boot=big && Persons=4) (4/4)
+	output=acc
+else if(Persons=more && Safety=med && Maint=med && Buying=med) (11/12)
+	output=acc
+else if(Persons=more && Maint=high && Buying=high && Lug_boot=med && Safety=med) (3/4)
+	output=acc
+else 
+	output=unacc

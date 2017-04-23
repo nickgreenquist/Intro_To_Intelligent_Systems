@@ -1,0 +1,45 @@
+@Number of Rules: 22
+if(K<=0.0 && Ba<=0.0 && RI<=1.5196925 && Na>13.7225) (8/8)
+	output=6
+else if(K>0.73278 && Na<=14.00845) (5/7)
+	output=5
+else if(Ca>9.85236 && RI<=1.52171992 && Na<=13.2703) (6/6)
+	output=5
+else if(Ca>11.52016 && RI<=1.523679) (4/4)
+	output=5
+else if(Al<=0.74903 && Na<=13.6427 && RI<=1.51777898) (1/1)
+	output=3
+else if(RI<=1.51693612 && Al<=1.3814 && Si<=72.6996) (5/5)
+	output=3
+else if(Si<=72.1396 && RI<=1.5183257 && Na<=13.52965) (3/5)
+	output=3
+else if(Al<=0.82928 && RI<=1.52126432 && Na<=14.321 && Mg>2.76135) (4/4)
+	output=3
+else if(Na<=12.15975 && RI<=1.51643496) (1/1)
+	output=3
+else if(RI<=1.51645774 && Al<=1.25942 && Mg<=3.39893) (2/3)
+	output=3
+else if(Fe>0.1785 && RI>1.52019366) (1/2)
+	output=3
+else if(Ba>0.1386 && Na>12.85135) (23/25)
+	output=7
+else if(Si>73.8084) (1/5)
+	output=7
+else if(RI>1.5229956 && Mg>2.90054) (1/2)
+	output=7
+else if(Na>14.7732 && RI>1.51572878) (7/8)
+	output=7
+else if(Al<=1.40066 && Mg>3.25076 && RI>1.51850794) (23/30)
+	output=1
+else if(Al<=1.41029 && RI<=1.51784732 && Si>72.8116) (21/29)
+	output=1
+else if(RI>1.5173006 && Si>72.5708 && K>0.52164) (31/39)
+	output=1
+else if(RI<=1.515706 && Ca>8.03392) (3/8)
+	output=1
+else if(Si>72.722 && Na>13.33015) (6/35)
+	output=1
+else if(Fe>0.1275 && RI<=1.51595658) (2/3)
+	output=1
+else 
+	output=2

@@ -1,0 +1,617 @@
+
+Rule base with 87 rules, 197 variables and 197 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X2 is Label 5" and "X4 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 21
+
+
+Rule 2:
+
+If "X1 is Label 1" and "X4 is Label 5" then Class is R with certainty degree 1.0
+
+Fitness: 20
+
+
+Rule 3:
+
+If "X2 is Label 5" and "X3 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 17
+
+
+Rule 4:
+
+If "X1 is Label 1" and "X3 is Label 5" then Class is R with certainty degree 1.0
+
+Fitness: 16
+
+
+Rule 5:
+
+If "X2 is Label 1" and "X4 is Label 5" then Class is R with certainty degree 0.9318181818181818
+
+Fitness: 12
+
+
+Rule 6:
+
+If "X1 is Label 1" and "X3 is Label 4" then Class is R with certainty degree 0.875
+
+Fitness: 12
+
+
+Rule 7:
+
+If "X1 is Label 4" and "X2 is Label 4" then Class is L with certainty degree 0.75
+
+Fitness: 11
+
+
+Rule 8:
+
+If "X1 is Label 5" and "X2 is Label 5" then Class is L with certainty degree 0.9347826086956522
+
+Fitness: 10
+
+
+Rule 9:
+
+If "X2 is Label 1" and "X3 is Label 4" then Class is R with certainty degree 0.9318181818181818
+
+Fitness: 10
+
+
+Rule 10:
+
+If "X2 is Label 1" and "X3 is Label 5" then Class is R with certainty degree 0.9347826086956522
+
+Fitness: 10
+
+
+Rule 11:
+
+If "X3 is Label 5" and "X4 is Label 4" then Class is R with certainty degree 0.7954545454545454
+
+Fitness: 10
+
+
+Rule 12:
+
+If "X1 is Label 5" and "X2 is Label 4" then Class is L with certainty degree 0.8571428571428571
+
+Fitness: 10
+
+
+Rule 13:
+
+If "X2 is Label 4" and "X3 is Label 1" then Class is L with certainty degree 0.88
+
+Fitness: 9
+
+
+Rule 14:
+
+If "X1 is Label 4" and "X4 is Label 1" then Class is L with certainty degree 0.9318181818181818
+
+Fitness: 9
+
+
+Rule 15:
+
+If "X3 is Label 5" and "X4 is Label 5" then Class is R with certainty degree 0.9375
+
+Fitness: 8
+
+
+Rule 16:
+
+If "X2 is Label 2" and "X4 is Label 5" then Class is R with certainty degree 0.8421052631578947
+
+Fitness: 8
+
+
+Rule 17:
+
+If "X2 is Label 4" and "X4 is Label 1" then Class is L with certainty degree 0.8695652173913043
+
+Fitness: 8
+
+
+Rule 18:
+
+If "X1 is Label 4" and "X2 is Label 5" then Class is L with certainty degree 0.8043478260869565
+
+Fitness: 8
+
+
+Rule 19:
+
+If "X1 is Label 1" and "X3 is Label 3" then Class is R with certainty degree 0.7954545454545454
+
+Fitness: 8
+
+
+Rule 20:
+
+If "X1 is Label 4" and "X3 is Label 1" then Class is L with certainty degree 0.875
+
+Fitness: 7
+
+
+Rule 21:
+
+If "X1 is Label 5" and "X4 is Label 1" then Class is L with certainty degree 0.9318181818181818
+
+Fitness: 7
+
+
+Rule 22:
+
+If "X1 is Label 5" and "X3 is Label 2" then Class is L with certainty degree 0.7857142857142857
+
+Fitness: 7
+
+
+Rule 23:
+
+If "X3 is Label 4" and "X4 is Label 5" then Class is R with certainty degree 0.7857142857142857
+
+Fitness: 7
+
+
+Rule 24:
+
+If "X1 is Label 4" and "X4 is Label 2" then Class is L with certainty degree 0.7391304347826086
+
+Fitness: 6
+
+
+Rule 25:
+
+If "X2 is Label 2" and "X4 is Label 4" then Class is R with certainty degree 0.6086956521739131
+
+Fitness: 6
+
+
+Rule 26:
+
+If "X1 is Label 3" and "X4 is Label 1" then Class is L with certainty degree 0.8043478260869565
+
+Fitness: 6
+
+
+Rule 27:
+
+If "X2 is Label 4" and "X4 is Label 2" then Class is L with certainty degree 0.625
+
+Fitness: 6
+
+
+Rule 28:
+
+If "X2 is Label 3" and "X3 is Label 4" then Class is R with certainty degree 0.4782608695652174
+
+Fitness: 6
+
+
+Rule 29:
+
+If "X3 is Label 3" and "X4 is Label 5" then Class is R with certainty degree 0.5909090909090909
+
+Fitness: 6
+
+
+Rule 30:
+
+If "X3 is Label 1" and "X4 is Label 1" then Class is L with certainty degree 0.925
+
+Fitness: 6
+
+
+Rule 31:
+
+If "X1 is Label 2" and "X3 is Label 3" then Class is R with certainty degree 0.4782608695652174
+
+Fitness: 5
+
+
+Rule 32:
+
+If "X1 is Label 1" then Class is R with certainty degree 0.6891891891891891
+
+Fitness: 5
+
+
+Rule 33:
+
+If "X1 is Label 2" and "X2 is Label 2" and "X3 is Label 5" then Class is R with certainty degree 1.0
+
+Fitness: 5
+
+
+Rule 34:
+
+If "X1 is Label 3" and "X2 is Label 3" and "X3 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 5
+
+
+Rule 35:
+
+If "X1 is Label 3" and "X2 is Label 1" and "X3 is Label 4" then Class is R with certainty degree 1.0
+
+Fitness: 5
+
+
+Rule 36:
+
+If "X1 is Label 3" and "X2 is Label 2" and "X3 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 5
+
+
+Rule 37:
+
+If "X2 is Label 1" and "X4 is Label 4" then Class is R with certainty degree 0.875
+
+Fitness: 5
+
+
+Rule 38:
+
+If "X2 is Label 5" and "X3 is Label 2" then Class is L with certainty degree 0.7391304347826086
+
+Fitness: 5
+
+
+Rule 39:
+
+If "X1 is Label 1" and "X4 is Label 3" then Class is R with certainty degree 0.8125
+
+Fitness: 5
+
+
+Rule 40:
+
+If "X3 is Label 4" then Class is R with certainty degree 0.42920353982300885
+
+Fitness: 5
+
+
+Rule 41:
+
+If "X1 is Label 3" and "X2 is Label 4" and "X3 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 5
+
+
+Rule 42:
+
+If "X1 is Label 2" and "X2 is Label 3" and "X4 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 5
+
+
+Rule 43:
+
+If "X1 is Label 3" and "X4 is Label 2" then Class is L with certainty degree 0.6086956521739131
+
+Fitness: 4
+
+
+Rule 44:
+
+If "X1 is Label 4" and "X3 is Label 2" then Class is L with certainty degree 0.7272727272727273
+
+Fitness: 4
+
+
+Rule 45:
+
+If "X2 is Label 1" and "X4 is Label 3" then Class is R with certainty degree 0.8125
+
+Fitness: 4
+
+
+Rule 46:
+
+If "X2 is Label 5" and "X4 is Label 2" then Class is L with certainty degree 0.76
+
+Fitness: 4
+
+
+Rule 47:
+
+If "X1 is Label 5" and "X4 is Label 2" then Class is L with certainty degree 0.7272727272727273
+
+Fitness: 4
+
+
+Rule 48:
+
+If "X1 is Label 5" and "X3 is Label 1" and "X4 is Label 2" then Class is L with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 49:
+
+If "X1 is Label 1" and "X2 is Label 1" and "X3 is Label 3" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 50:
+
+If "X1 is Label 5" and "X2 is Label 5" and "X4 is Label 2" then Class is L with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 51:
+
+If "X1 is Label 1" and "X2 is Label 1" and "X3 is Label 4" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 52:
+
+If "X1 is Label 4" and "X3 is Label 1" and "X4 is Label 2" then Class is L with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 53:
+
+If "X1 is Label 5" and "X2 is Label 4" and "X3 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 54:
+
+If "X1 is Label 4" and "X3 is Label 1" and "X4 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 55:
+
+If "X1 is Label 1" and "X2 is Label 1" and "X3 is Label 2" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 56:
+
+If "X1 is Label 4" and "X2 is Label 5" and "X3 is Label 3" then Class is L with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 57:
+
+If "X2 is Label 1" and "X3 is Label 5" and "X4 is Label 5" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 58:
+
+If "X1 is Label 1" and "X2 is Label 2" and "X4 is Label 3" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 59:
+
+If "X1 is Label 4" and "X3 is Label 2" and "X4 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 60:
+
+If "X1 is Label 5" and "X3 is Label 3" and "X4 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 61:
+
+If "X1 is Label 5" and "X3 is Label 1" then Class is L with certainty degree 0.9285714285714286
+
+Fitness: 4
+
+
+Rule 62:
+
+If "X1 is Label 2" and "X2 is Label 1" and "X3 is Label 5" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 63:
+
+If "X1 is Label 3" and "X2 is Label 5" and "X4 is Label 2" then Class is L with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 64:
+
+If "X2 is Label 1" and "X3 is Label 3" and "X4 is Label 4" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 65:
+
+If "X2 is Label 1" and "X3 is Label 2" and "X4 is Label 3" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 66:
+
+If "X2 is Label 2" and "X3 is Label 4" and "X4 is Label 4" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 67:
+
+If "X1 is Label 2" and "X3 is Label 5" then Class is R with certainty degree 0.7857142857142857
+
+Fitness: 4
+
+
+Rule 68:
+
+If "X2 is Label 2" and "X3 is Label 4" and "X4 is Label 3" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 69:
+
+If "X2 is Label 1" then Class is R with certainty degree 0.6739130434782609
+
+Fitness: 4
+
+
+Rule 70:
+
+If "X2 is Label 3" and "X3 is Label 5" and "X4 is Label 5" then Class is R with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 71:
+
+If "X2 is Label 4" then Class is L with certainty degree 0.42105263157894735
+
+Fitness: 4
+
+
+Rule 72:
+
+If "X3 is Label 5" and "X4 is Label 3" then Class is R with certainty degree 0.6739130434782609
+
+Fitness: 3
+
+
+Rule 73:
+
+If "X2 is Label 3" and "X3 is Label 2" then Class is L with certainty degree 0.5
+
+Fitness: 3
+
+
+Rule 74:
+
+If "X1 is Label 5" and "X2 is Label 3" then Class is L with certainty degree 0.625
+
+Fitness: 3
+
+
+Rule 75:
+
+If "X2 is Label 3" and "X3 is Label 1" then Class is L with certainty degree 0.7954545454545454
+
+Fitness: 3
+
+
+Rule 76:
+
+If "X1 is Label 1" and "X2 is Label 1" then Class is R with certainty degree 0.9347826086956522
+
+Fitness: 3
+
+
+Rule 77:
+
+If "X1 is Label 5" and "X3 is Label 2" and "X4 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 3
+
+
+Rule 78:
+
+If "X1 is Label 3" and "X3 is Label 2" and "X4 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 3
+
+
+Rule 79:
+
+If "X1 is Label 5" and "X2 is Label 2" and "X4 is Label 5" then Class is R with certainty degree 1.0
+
+Fitness: 3
+
+
+Rule 80:
+
+If "X1 is Label 5" and "X2 is Label 3" and "X3 is Label 1" then Class is L with certainty degree 1.0
+
+Fitness: 3
+
+
+Rule 81:
+
+If "X2 is Label 2" and "X3 is Label 5" and "X4 is Label 3" then Class is R with certainty degree 1.0
+
+Fitness: 3
+
+
+Rule 82:
+
+If "X2 is Label 2" and "X4 is Label 3" then Class is R with certainty degree 0.5434782608695652
+
+Fitness: 3
+
+
+Rule 83:
+
+If "X2 is Label 2" and "X3 is Label 5" then Class is R with certainty degree 0.76
+
+Fitness: 2
+
+
+Rule 84:
+
+If "X4 is Label 1" then Class is L with certainty degree 0.6651785714285714
+
+Fitness: 2
+
+
+Rule 85:
+
+If "X3 is Label 1" then Class is L with certainty degree 0.668141592920354
+
+Fitness: 2
+
+
+Rule 86:
+
+If "X1 is Label 3" and "X2 is Label 5" then Class is L with certainty degree 0.5909090909090909
+
+Fitness: 2
+
+
+Rule 87:
+
+If then Class is L with certainty degree 0.19414893617021275
+
+Fitness: 1
+
+
+
+Training Accuracy:	89.53900709219859%
+Test Accuracy:		85.24590163934425%
+

@@ -1,0 +1,50 @@
+
+Rule base with 6 rules, 6 variables and 6 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X3 is Label 1" then Class is negative with certainty degree 0.6121478229052324
+
+Fitness: 138
+
+
+Rule 2:
+
+If then Class is negative with certainty degree 0.47101449275362317
+
+Fitness: 37
+
+
+Rule 3:
+
+If "X2 is Label 2" and "X3 is Label 1" then Class is negative with certainty degree 0.7468432399137668
+
+Fitness: 12
+
+
+Rule 4:
+
+If "X1 is Label 1" then Class is negative with certainty degree 0.7627677100494231
+
+Fitness: 9
+
+
+Rule 5:
+
+If "X2 is Label 2" then Class is negative with certainty degree 0.6012084592145016
+
+Fitness: 5
+
+
+Rule 6:
+
+If "X1 is Label 4" then Class is negative with certainty degree 0.5102339181286548
+
+Fitness: 2
+
+
+
+Training Accuracy:	73.55072463768117%
+Test Accuracy:		73.33333333333333%
+

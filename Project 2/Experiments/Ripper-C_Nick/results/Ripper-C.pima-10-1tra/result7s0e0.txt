@@ -1,0 +1,59 @@
+@Number of Rules: 29
+if(Plas>127.0 && Mass>29.9 && Pedi>0.42 && Insu<=237.0) (63/72)
+	output=tested_positive
+else if(Plas>129.0 && Mass>33.2) (93/122)
+	output=tested_positive
+else if(Age>27.0 && Insu>126.0) (68/99)
+	output=tested_positive
+else if(Plas>123.0 && Mass>30.0 && Pedi>0.427 && Preg>7.0) (23/24)
+	output=tested_positive
+else if(Preg>2.0 && Pedi>0.501 && Mass>32.0 && Age>31.0 && Insu<=0.0) (17/20)
+	output=tested_positive
+else if(Plas>127.0 && Mass>33.2 && Insu<=200.0 && Pres<=78.0 && Pedi>0.304) (35/39)
+	output=tested_positive
+else if(Age>30.0 && Mass>27.8 && Skin<=23.0 && Plas>142.0) (32/37)
+	output=tested_positive
+else if(Plas>101.0 && Insu<=48.0 && Pedi>0.252 && Preg>6.0 && Age<=31.0 && Mass>0.0) (5/5)
+	output=tested_positive
+else if(Skin<=0.0 && Plas>111.0 && Pres<=76.0 && Mass>29.9) (37/47)
+	output=tested_positive
+else if(Plas>122.0 && Mass>30.0 && Age>40.0 && Preg>7.0 && Insu>108.0) (15/15)
+	output=tested_positive
+else if(Age>24.0 && Plas>123.0 && Pres<=74.0 && Preg>7.0) (18/23)
+	output=tested_positive
+else if(Plas>111.0 && Age<=36.0 && Preg>2.0 && Mass>31.2 && Insu<=105.0) (19/28)
+	output=tested_positive
+else if(Plas>123.0 && Mass<=27.6 && Age>24.0 && Skin>0.0) (7/15)
+	output=tested_positive
+else if(Preg>2.0 && Pedi>0.317 && Mass>25.0 && Skin<=27.0 && Pres<=78.0 && Plas>106.0) (31/44)
+	output=tested_positive
+else if(Pres>75.0 && Insu>110.0 && Preg>4.0) (26/33)
+	output=tested_positive
+else if(Mass>30.5 && Plas<=102.0 && Pedi<=0.248 && Pres>80.0 && Skin<=36.0) (4/6)
+	output=tested_positive
+else if(Plas>127.0 && Mass>29.9 && Pedi>0.433 && Pres<=68.0) (25/29)
+	output=tested_positive
+else if(Preg>9.0 && Pres<=72.0 && Pedi>0.251 && Age<=46.0) (9/10)
+	output=tested_positive
+else if(Age>25.0 && Pedi>0.839 && Plas<=100.0 && Insu>67.0) (4/7)
+	output=tested_positive
+else if(Insu<=0.0 && Mass>38.1 && Plas<=102.0 && Pedi>0.194) (5/7)
+	output=tested_positive
+else if(Insu<=0.0 && Plas>110.0 && Pres<=72.0 && Age>37.0 && Skin>0.0) (7/8)
+	output=tested_positive
+else if(Pres<=30.0 && Mass>29.8 && Plas<=100.0) (2/2)
+	output=tested_positive
+else if(Pedi>0.509 && Plas<=118.0 && Mass>32.4 && Age<=23.0 && Preg>0.0) (3/4)
+	output=tested_positive
+else if(Age>49.0 && Mass<=24.8 && Pedi<=0.232 && Plas>137.0) (3/3)
+	output=tested_positive
+else if(Pedi>0.733 && Plas<=109.0 && Insu<=0.0 && Preg<=0.0) (2/4)
+	output=tested_positive
+else if(Pres<=64.0 && Skin>31.0 && Plas<=78.0) (1/1)
+	output=tested_positive
+else if(Age>51.0 && Mass<=23.8 && Pedi<=0.277 && Preg<=8.0) (3/5)
+	output=tested_positive
+else if(Mass>57.3) (2/2)
+	output=tested_positive
+else 
+	output=tested_negative

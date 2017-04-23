@@ -1,0 +1,547 @@
+
+Rule base with 77 rules, 171 variables and 171 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X30 is Label 4" then Class is g with certainty degree 0.8232586818171809
+
+Fitness: 32
+
+
+Rule 2:
+
+If "X1 is Label 1" and "X22 is Label 5" then Class is b with certainty degree 1.0
+
+Fitness: 18
+
+
+Rule 3:
+
+If "X2 is Label 3" then Class is b with certainty degree 0.7864429402230907
+
+Fitness: 17
+
+
+Rule 4:
+
+If "X1 is Label 1" then Class is b with certainty degree 1.0
+
+Fitness: 16
+
+
+Rule 5:
+
+If "X2 is Label 5" and "X6 is Label 5" then Class is g with certainty degree 0.6508470138650899
+
+Fitness: 12
+
+
+Rule 6:
+
+If "X2 is Label 5" and "X30 is Label 4" then Class is g with certainty degree 0.9024727417523606
+
+Fitness: 12
+
+
+Rule 7:
+
+If "X12 is Label 5" and "X23 is Label 3" and "X27 is Label 3" then Class is g with certainty degree 0.9588767130419237
+
+Fitness: 12
+
+
+Rule 8:
+
+If "X27 is Label 3" then Class is g with certainty degree 0.5848629050532516
+
+Fitness: 11
+
+
+Rule 9:
+
+If "X5 is Label 4" then Class is g with certainty degree 0.7310185482318209
+
+Fitness: 10
+
+
+Rule 10:
+
+If "X6 is Label 5" and "X7 is Label 3" and "X20 is Label 5" and "X30 is Label 5" then Class is g with certainty degree 0.9472798084488159
+
+Fitness: 9
+
+
+Rule 11:
+
+If "X7 is Label 1" then Class is b with certainty degree 0.8361368909512762
+
+Fitness: 7
+
+
+Rule 12:
+
+If "X4 is Label 5" and "X33 is Label 2" then Class is g with certainty degree 0.898423003317482
+
+Fitness: 7
+
+
+Rule 13:
+
+If "X2 is Label 5" and "X18 is Label 2" then Class is g with certainty degree 0.9411227215556965
+
+Fitness: 7
+
+
+Rule 14:
+
+If "X6 is Label 1" then Class is b with certainty degree 1.0
+
+Fitness: 6
+
+
+Rule 15:
+
+If "X4 is Label 3" and "X7 is Label 3" and "X23 is Label 3" then Class is b with certainty degree 0.7816306324075264
+
+Fitness: 5
+
+
+Rule 16:
+
+If "X6 is Label 5" and "X9 is Label 3" and "X27 is Label 3" then Class is g with certainty degree 0.8820002075879296
+
+Fitness: 5
+
+
+Rule 17:
+
+If "X22 is Label 5" and "X23 is Label 3" and "X30 is Label 5" then Class is g with certainty degree 0.9434297047775426
+
+Fitness: 5
+
+
+Rule 18:
+
+If "X31 is Label 4" then Class is g with certainty degree 0.6320007123141306
+
+Fitness: 5
+
+
+Rule 19:
+
+If "X5 is Label 3" and "X32 is Label 5" then Class is g with certainty degree 0.7277576101844554
+
+Fitness: 5
+
+
+Rule 20:
+
+If "X15 is Label 3" and "X30 is Label 4" then Class is g with certainty degree 0.8802570142622668
+
+Fitness: 4
+
+
+Rule 21:
+
+If "X4 is Label 5" and "X6 is Label 5" and "X7 is Label 3" and "X30 is Label 5" then Class is g with certainty degree 0.9250192180764402
+
+Fitness: 4
+
+
+Rule 22:
+
+If "X13 is Label 3" and "X26 is Label 1" then Class is b with certainty degree 1.0
+
+Fitness: 3
+
+
+Rule 23:
+
+If "X9 is Label 1" and "X28 is Label 5" then Class is b with certainty degree 1.0
+
+Fitness: 3
+
+
+Rule 24:
+
+If "X19 is Label 3" and "X32 is Label 4" then Class is g with certainty degree 0.7776865779252448
+
+Fitness: 3
+
+
+Rule 25:
+
+If "X2 is Label 5" and "X23 is Label 3" then Class is g with certainty degree 0.8015111172809832
+
+Fitness: 3
+
+
+Rule 26:
+
+If "X2 is Label 5" and "X12 is Label 5" and "X23 is Label 3" and "X27 is Label 3" then Class is g with certainty degree 0.9601893160464869
+
+Fitness: 3
+
+
+Rule 27:
+
+If "X10 is Label 2" then Class is g with certainty degree 0.6714245731877972
+
+Fitness: 3
+
+
+Rule 28:
+
+If "X2 is Label 5" and "X24 is Label 2" then Class is g with certainty degree 0.9220100090842298
+
+Fitness: 3
+
+
+Rule 29:
+
+If "X2 is Label 5" and "X7 is Label 4" then Class is g with certainty degree 0.8990181658789744
+
+Fitness: 3
+
+
+Rule 30:
+
+If "X2 is Label 5" and "X6 is Label 5" and "X21 is Label 3" then Class is g with certainty degree 0.8676993982468737
+
+Fitness: 3
+
+
+Rule 31:
+
+If "X7 is Label 5" and "X12 is Label 5" then Class is b with certainty degree 0.839571299830044
+
+Fitness: 3
+
+
+Rule 32:
+
+If "X13 is Label 1" then Class is b with certainty degree 0.9958210803281227
+
+Fitness: 2
+
+
+Rule 33:
+
+If "X4 is Label 5" and "X11 is Label 3" and "X30 is Label 5" then Class is g with certainty degree 0.8027171261507857
+
+Fitness: 2
+
+
+Rule 34:
+
+If "X33 is Label 2" then Class is g with certainty degree 0.6986815821014781
+
+Fitness: 2
+
+
+Rule 35:
+
+If "X2 is Label 5" and "X6 is Label 5" and "X16 is Label 4" then Class is g with certainty degree 0.8330729324487776
+
+Fitness: 2
+
+
+Rule 36:
+
+If "X18 is Label 5" and "X32 is Label 4" then Class is g with certainty degree 0.8510096460905262
+
+Fitness: 2
+
+
+Rule 37:
+
+If "X2 is Label 5" and "X9 is Label 4" and "X30 is Label 2" then Class is g with certainty degree 0.9829542173237545
+
+Fitness: 2
+
+
+Rule 38:
+
+If "X23 is Label 4" and "X27 is Label 4" and "X29 is Label 5" then Class is g with certainty degree 0.963824227558602
+
+Fitness: 2
+
+
+Rule 39:
+
+If "X28 is Label 5" and "X30 is Label 4" and "X33 is Label 3" then Class is g with certainty degree 1.0
+
+Fitness: 2
+
+
+Rule 40:
+
+If "X16 is Label 2" then Class is g with certainty degree 0.6032378881237163
+
+Fitness: 2
+
+
+Rule 41:
+
+If "X9 is Label 3" and "X30 is Label 4" then Class is g with certainty degree 0.8349819268401357
+
+Fitness: 2
+
+
+Rule 42:
+
+If "X10 is Label 5" and "X15 is Label 1" then Class is b with certainty degree 0.9066462792254371
+
+Fitness: 2
+
+
+Rule 43:
+
+If "X26 is Label 2" then Class is g with certainty degree 0.7376885675102854
+
+Fitness: 2
+
+
+Rule 44:
+
+If "X22 is Label 1" and "X30 is Label 1" then Class is b with certainty degree 0.7551651494027926
+
+Fitness: 1
+
+
+Rule 45:
+
+If "X9 is Label 4" and "X30 is Label 2" then Class is g with certainty degree 0.8711071087859603
+
+Fitness: 1
+
+
+Rule 46:
+
+If "X5 is Label 1" and "X21 is Label 5" then Class is b with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 47:
+
+If "X17 is Label 3" and "X21 is Label 3" and "X27 is Label 3" then Class is g with certainty degree 0.6244202915462203
+
+Fitness: 1
+
+
+Rule 48:
+
+If "X19 is Label 2" then Class is g with certainty degree 0.4884999393669912
+
+Fitness: 1
+
+
+Rule 49:
+
+If "X14 is Label 3" then Class is b with certainty degree 0.5083723257114269
+
+Fitness: 1
+
+
+Rule 50:
+
+If "X8 is Label 3" and "X18 is Label 3" then Class is b with certainty degree 0.6316466882426036
+
+Fitness: 1
+
+
+Rule 51:
+
+If "X18 is Label 4" then Class is g with certainty degree 0.5144961917842427
+
+Fitness: 1
+
+
+Rule 52:
+
+If "X2 is Label 5" then Class is g with certainty degree 0.5672855743514675
+
+Fitness: 1
+
+
+Rule 53:
+
+If "X2 is Label 5" and "X20 is Label 2" then Class is g with certainty degree 0.7933394990660028
+
+Fitness: 1
+
+
+Rule 54:
+
+If "X9 is Label 4" then Class is g with certainty degree 0.5576519052523171
+
+Fitness: 1
+
+
+Rule 55:
+
+If "X2 is Label 5" and "X28 is Label 5" and "X30 is Label 4" then Class is g with certainty degree 0.9194936689442459
+
+Fitness: 1
+
+
+Rule 56:
+
+If "X5 is Label 4" and "X30 is Label 4" then Class is g with certainty degree 0.9444772461473008
+
+Fitness: 1
+
+
+Rule 57:
+
+If "X13 is Label 4" then Class is g with certainty degree 0.5619023332908327
+
+Fitness: 1
+
+
+Rule 58:
+
+If "X25 is Label 4" and "X27 is Label 1" then Class is b with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 59:
+
+If "X2 is Label 5" and "X6 is Label 5" and "X7 is Label 4" then Class is g with certainty degree 0.9431623514255874
+
+Fitness: 1
+
+
+Rule 60:
+
+If "X4 is Label 5" and "X31 is Label 2" then Class is g with certainty degree 0.8485026337911938
+
+Fitness: 1
+
+
+Rule 61:
+
+If "X3 is Label 5" and "X15 is Label 5" and "X18 is Label 2" then Class is g with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 62:
+
+If "X9 is Label 3" and "X13 is Label 2" and "X30 is Label 4" then Class is g with certainty degree 0.8645082559834947
+
+Fitness: 1
+
+
+Rule 63:
+
+If "X2 is Label 5" and "X6 is Label 5" and "X13 is Label 3" and "X27 is Label 2" then Class is g with certainty degree 0.9859704791355169
+
+Fitness: 1
+
+
+Rule 64:
+
+If "X2 is Label 5" and "X4 is Label 5" and "X9 is Label 5" and "X14 is Label 2" and "X28 is Label 3" then Class is g with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 65:
+
+If "X2 is Label 5" and "X6 is Label 5" and "X23 is Label 4" then Class is g with certainty degree 0.8630436910267778
+
+Fitness: 1
+
+
+Rule 66:
+
+If "X6 is Label 5" and "X30 is Label 4" and "X32 is Label 4" then Class is g with certainty degree 0.8972955269764846
+
+Fitness: 1
+
+
+Rule 67:
+
+If "X12 is Label 1" and "X17 is Label 1" and "X18 is Label 4" then Class is g with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 68:
+
+If "X6 is Label 5" and "X8 is Label 1" and "X21 is Label 3" then Class is b with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 69:
+
+If "X4 is Label 5" and "X13 is Label 1" and "X20 is Label 5" and "X30 is Label 5" then Class is b with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 70:
+
+If "X13 is Label 1" and "X19 is Label 5" then Class is b with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 71:
+
+If "X30 is Label 1" then Class is b with certainty degree 0.7479569892473118
+
+Fitness: 1
+
+
+Rule 72:
+
+If "X1 is Label 5" and "X22 is Label 5" then Class is g with certainty degree 0.5878381160195973
+
+Fitness: 1
+
+
+Rule 73:
+
+If "X11 is Label 5" and "X19 is Label 1" and "X22 is Label 1" and "X26 is Label 5" and "X30 is Label 5" then Class is b with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 74:
+
+If "X5 is Label 1" and "X19 is Label 2" then Class is b with certainty degree 0.8113071415535967
+
+Fitness: 1
+
+
+Rule 75:
+
+If "X11 is Label 2" and "X22 is Label 5" and "X30 is Label 5" then Class is g with certainty degree 0.7795515279861973
+
+Fitness: 1
+
+
+Rule 76:
+
+If "X15 is Label 1" and "X33 is Label 4" then Class is b with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 77:
+
+If "X5 is Label 1" and "X20 is Label 3" and "X27 is Label 3" then Class is b with certainty degree 1.0
+
+Fitness: 1
+
+
+
+Training Accuracy:	93.9873417721519%
+Test Accuracy:		88.57142857142857%
+

@@ -1,0 +1,71 @@
+@Number of Rules: 35
+if(Lip<=1.0 && Alm2>74.0) (1/1)
+	output=imL
+else if(Mcg>84.0 && Alm1<=52.0) (1/1)
+	output=imS
+else if(Alm2>78.0 && Alm1<=76.0 && Aac<=54.0 && Mcg>48.0) (1/1)
+	output=imS
+else if(Lip<=1.0 && Mcg>49.0) (4/4)
+	output=omL
+else if(Aac>64.0 && Alm2<=52.0 && Gvh>3.0 && Mcg>34.0 && Alm1<=58.0) (14/15)
+	output=om
+else if(Alm2<=29.0 && Mcg>63.0 && Gvh<=9.0 && Aac>46.0) (1/1)
+	output=om
+else if(Aac>71.0 && Alm1<=57.0) (10/10)
+	output=om
+else if(Gvh>74.0 && Mcg<=61.0) (2/2)
+	output=om
+else if(Aac<=7.0 && Alm2<=26.0 && Mcg>63.0 && Alm1<=33.0) (1/1)
+	output=om
+else if(Mcg>62.0 && Alm1>54.0) (23/47)
+	output=imU
+else if(Mcg>74.0 && Gvh<=71.0) (16/23)
+	output=imU
+else if(Lip<=1.0) (1/8)
+	output=imU
+else if(Alm1>47.0 && Mcg>46.0 && Gvh<=46.0 && Aac>57.0) (9/11)
+	output=imU
+else if(Aac<=6.0 && Mcg>48.0 && Gvh<=38.0) (1/1)
+	output=imU
+else if(Mcg>71.0 && Alm1>72.0) (13/15)
+	output=imU
+else if(Alm2>85.0 && Mcg<=7.0 && Alm1<=86.0) (1/1)
+	output=imU
+else if(Alm1<=7.0 && Mcg>63.0 && Gvh<=48.0 && Aac<=54.0) (1/1)
+	output=imU
+else if(Gvh>56.0 && Alm2<=56.0) (36/55)
+	output=pp
+else if(Mcg>55.0 && Alm2<=42.0 && Alm1>45.0) (13/31)
+	output=pp
+else if(Mcg>55.0 && Aac<=46.0 && Alm2<=29.0) (10/14)
+	output=pp
+else if(Mcg>61.0 && Alm2<=56.0 && Alm1>38.0) (27/48)
+	output=pp
+else if(Gvh>67.0) (22/35)
+	output=pp
+else if(Alm1<=4.0 && Mcg<=29.0 && Alm2>17.0) (1/2)
+	output=pp
+else if(Mcg>59.0 && Gvh<=6.0 && Alm2<=38.0) (1/1)
+	output=pp
+else if(Gvh>56.0 && Alm2<=56.0 && Mcg>24.0) (34/50)
+	output=pp
+else if(Alm1<=28.0 && Alm2>37.0 && Mcg<=32.0 && Aac>37.0) (2/7)
+	output=pp
+else if(Alm1>52.0) (59/113)
+	output=im
+else if(Alm2>59.0) (55/85)
+	output=im
+else if(Alm1>55.0) (59/101)
+	output=im
+else if(Alm1>53.0) (59/110)
+	output=im
+else if(Aac<=0.0) (1/1)
+	output=im
+else if(Alm1>46.0 && Gvh>46.0) (33/77)
+	output=im
+else if(Aac>63.0 && Mcg>27.0) (7/30)
+	output=im
+else if(Aac<=33.0 && Mcg<=16.0) (2/4)
+	output=im
+else 
+	output=cp

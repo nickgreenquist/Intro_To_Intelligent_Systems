@@ -1,0 +1,106 @@
+
+Rule base with 14 rules, 16 variables and 16 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X2 is Label 2" then Class is 2 with certainty degree 0.27475955289836246
+
+Fitness: 67
+
+
+Rule 2:
+
+If "X1 is Label 3" then Class is 2 with certainty degree 0.2679045092838194
+
+Fitness: 37
+
+
+Rule 3:
+
+If then Class is 2 with certainty degree 0.16129032258064516
+
+Fitness: 36
+
+
+Rule 4:
+
+If "X4 is Label 2" then Class is 2 with certainty degree 0.177522658610272
+
+Fitness: 20
+
+
+Rule 5:
+
+If "X5 is Label 2" and "X6 is Label 1" then Class is 2 with certainty degree 0.3081350459745909
+
+Fitness: 5
+
+
+Rule 6:
+
+If "X5 is Label 4" then Class is 2 with certainty degree 0.4301675977653632
+
+Fitness: 4
+
+
+Rule 7:
+
+If "X6 is Label 4" then Class is 1 with certainty degree 0.5789473684210527
+
+Fitness: 4
+
+
+Rule 8:
+
+If "X4 is Label 4" then Class is 2 with certainty degree 0.6153846153846153
+
+Fitness: 3
+
+
+Rule 9:
+
+If "X6 is Label 5" then Class is 1 with certainty degree 1.0
+
+Fitness: 2
+
+
+Rule 10:
+
+If "X1 is Label 2" then Class is 2 with certainty degree 0.3333333333333332
+
+Fitness: 2
+
+
+Rule 11:
+
+If "X2 is Label 2" and "X6 is Label 1" then Class is 2 with certainty degree 0.28055735033851176
+
+Fitness: 2
+
+
+Rule 12:
+
+If "X5 is Label 5" then Class is 2 with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 13:
+
+If "X3 is Label 5" then Class is 2 with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 14:
+
+If "X4 is Label 3" and "X6 is Label 3" then Class is 2 with certainty degree 0.2572721396250809
+
+Fitness: 1
+
+
+
+Training Accuracy:	59.67741935483871%
+Test Accuracy:		54.285714285714285%
+

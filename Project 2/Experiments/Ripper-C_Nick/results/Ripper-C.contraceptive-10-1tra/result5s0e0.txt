@@ -1,0 +1,139 @@
+@Number of Rules: 69
+if(Wife_education>3.0 && Children>2.0 && Wife_age>36.0 && Husband_occupation<=1.0 && Wife_religion<=0.0) (10/14)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>36.0 && Wife_religion<=0.0 && Standard-of-living>3.0 && Wife_working<=0.0) (7/10)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>33.0 && Wife_working<=0.0 && Media_exposure<=0.0 && Standard-of-living<=3.0) (6/8)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>36.0 && Husband_occupation<=1.0 && Standard-of-living<=3.0) (8/14)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>34.0 && Wife_working<=0.0 && Husband_occupation<=2.0 && Media_exposure<=0.0 && Standard-of-living<=3.0) (4/4)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>32.0 && Wife_religion>0.0 && Wife_working<=0.0) (19/28)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>30.0 && Husband_education>3.0 && Husband_occupation>1.0 && Standard-of-living>2.0 && Wife_working>0.0 && Wife_religion>0.0 && Media_exposure=null) (21/41)
+	output=2
+else if(Husband_occupation<=1.0 && Children>1.0 && Standard-of-living<=3.0 && Husband_education<=3.0 && Wife_age<=45.0 && Wife_religion<=0.0) (2/2)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>35.0 && Husband_occupation<=1.0 && Husband_education>3.0 && Wife_working=null && Standard-of-living=null && Wife_religion=null && Media_exposure=null) (31/52)
+	output=2
+else if(Wife_education>3.0 && Wife_age<=37.0 && Children>0.0 && Wife_religion<=0.0 && Husband_occupation>1.0 && Standard-of-living>3.0 && Husband_education>3.0 && Wife_working>0.0 && Media_exposure=null) (8/18)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>33.0 && Wife_working<=0.0 && Husband_occupation<=2.0) (26/37)
+	output=2
+else if(Wife_education>2.0 && Standard-of-living>3.0 && Wife_age<=34.0 && Children>0.0 && Husband_occupation>2.0 && Wife_working<=0.0 && Husband_education<=3.0) (3/5)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>33.0 && Wife_working<=0.0 && Wife_religion<=0.0) (11/18)
+	output=2
+else if(Husband_occupation<=1.0 && Wife_age<=29.0 && Children>1.0) (26/66)
+	output=2
+else if(Standard-of-living>3.0 && Wife_education>2.0 && Children>0.0 && Wife_age<=24.0 && Husband_occupation<=1.0 && Wife_working>0.0 && Wife_religion=null && Husband_education=null && Media_exposure=null) (5/12)
+	output=2
+else if(Wife_education>2.0 && Children>1.0 && Wife_age>31.0 && Husband_occupation>1.0 && Wife_religion<=0.0 && Media_exposure<=0.0 && Standard-of-living<=3.0 && Wife_working>0.0) (5/8)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>34.0 && Husband_occupation<=2.0 && Wife_working<=0.0 && Wife_religion<=0.0 && Standard-of-living<=2.0) (1/1)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>28.0 && Husband_occupation>2.0 && Husband_education>3.0 && Wife_working<=0.0) (6/9)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>33.0 && Wife_working<=0.0 && Husband_occupation<=2.0 && Standard-of-living<=3.0) (4/4)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>36.0 && Wife_working<=0.0 && Standard-of-living<=3.0) (4/5)
+	output=2
+else if(Wife_education>2.0 && Husband_occupation>2.0 && Children>3.0 && Standard-of-living<=2.0 && Wife_working<=0.0) (2/5)
+	output=2
+else if(Wife_education>3.0 && Children>2.0 && Wife_age>34.0 && Wife_working<=0.0 && Husband_occupation<=2.0 && Standard-of-living<=3.0) (4/4)
+	output=2
+else if(Husband_education>3.0 && Wife_religion<=0.0 && Children>1.0 && Wife_education<=3.0 && Wife_age<=35.0) (8/16)
+	output=2
+else if(Standard-of-living>3.0 && Children>4.0 && Wife_age<=35.0 && Husband_education<=3.0 && Wife_working>0.0 && Husband_occupation>2.0) (5/8)
+	output=2
+else if(Wife_education>2.0 && Children>3.0 && Wife_religion<=0.0 && Wife_age<=41.0 && Husband_occupation>2.0) (3/7)
+	output=2
+else if(Wife_education>2.0 && Wife_age>30.0 && Children>1.0 && Husband_occupation>2.0 && Wife_working<=0.0 && Standard-of-living<=2.0) (2/5)
+	output=2
+else if(Wife_education>2.0 && Children>0.0 && Wife_age<=25.0 && Husband_education>3.0 && Husband_occupation<=2.0 && Wife_religion<=0.0 && Standard-of-living<=3.0) (2/3)
+	output=2
+else if(Wife_education>2.0 && Children>0.0 && Wife_age<=24.0 && Husband_education>3.0 && Standard-of-living<=2.0 && Husband_occupation<=1.0) (3/3)
+	output=2
+else if(Wife_age>29.0 && Standard-of-living>3.0 && Children>6.0 && Husband_education<=1.0) (1/3)
+	output=2
+else if(Standard-of-living>3.0 && Wife_age<=34.0 && Wife_education>3.0 && Children>0.0 && Wife_working>0.0 && Wife_religion>0.0 && Husband_education<=3.0) (1/3)
+	output=2
+else if(Wife_age<=37.0 && Children>2.0 && Husband_occupation>2.0 && Standard-of-living>2.0 && Wife_education<=1.0) (11/13)
+	output=3
+else if(Children>1.0 && Wife_age<=37.0 && Wife_education>2.0 && Husband_occupation>2.0 && Wife_religion>0.0 && Wife_working>0.0 && Standard-of-living<=1.0) (6/8)
+	output=3
+else if(Wife_age<=37.0 && Children>2.0 && Standard-of-living>2.0 && Husband_occupation>2.0 && Wife_education>2.0 && Husband_education>3.0 && Wife_religion<=0.0) (8/16)
+	output=3
+else if(Children>1.0 && Wife_age<=37.0 && Standard-of-living>2.0 && Husband_occupation>2.0 && Wife_working>0.0 && Wife_education<=1.0) (12/14)
+	output=3
+else if(Wife_age<=37.0 && Children>2.0 && Wife_education>2.0 && Standard-of-living>3.0 && Husband_education>3.0 && Wife_working<=0.0) (18/35)
+	output=3
+else if(Wife_age<=37.0 && Children>2.0 && Standard-of-living>1.0 && Wife_working>0.0) (170/316)
+	output=3
+else if(Wife_age<=30.0 && Children>0.0 && Wife_education>3.0 && Husband_occupation>1.0) (54/98)
+	output=3
+else if(Wife_age<=41.0 && Children>0.0 && Wife_education>3.0 && Standard-of-living>3.0 && Husband_occupation>1.0 && Wife_religion>0.0) (30/66)
+	output=3
+else if(Children>0.0 && Wife_age<=32.0 && Standard-of-living<=2.0 && Husband_education<=3.0 && Wife_education>2.0) (32/48)
+	output=3
+else if(Children>1.0 && Wife_age<=33.0 && Standard-of-living<=2.0 && Husband_education>2.0 && Husband_occupation<=2.0 && Wife_education<=2.0) (4/7)
+	output=3
+else if(Children>1.0 && Wife_education>3.0 && Wife_working>0.0 && Wife_age<=27.0) (25/42)
+	output=3
+else if(Wife_age<=41.0 && Children>0.0 && Standard-of-living>2.0 && Husband_occupation<=1.0 && Wife_working<=0.0 && Wife_education<=3.0) (5/9)
+	output=3
+else if(Children>0.0 && Wife_age<=30.0 && Standard-of-living>1.0 && Husband_education<=3.0 && Media_exposure<=0.0 && Wife_education<=1.0) (14/21)
+	output=3
+else if(Children>0.0 && Wife_education>3.0 && Wife_age<=44.0 && Standard-of-living>3.0 && Wife_working>0.0) (84/208)
+	output=3
+else if(Children>0.0 && Wife_age<=35.0 && Standard-of-living>1.0 && Husband_education<=2.0 && Husband_occupation>2.0) (27/52)
+	output=3
+else if(Wife_age<=30.0 && Children>0.0 && Standard-of-living>2.0) (180/381)
+	output=3
+else if(Children>1.0 && Wife_education>3.0 && Husband_occupation<=1.0 && Wife_age<=39.0 && Standard-of-living>3.0) (40/101)
+	output=3
+else if(Children>1.0 && Wife_age<=37.0 && Standard-of-living>3.0 && Husband_occupation>2.0 && Husband_education<=2.0) (7/15)
+	output=3
+else if(Children>1.0 && Wife_age<=41.0 && Wife_education>3.0 && Wife_working>0.0) (87/211)
+	output=3
+else if(Children>2.0 && Wife_age<=37.0 && Wife_working>0.0 && Standard-of-living>2.0 && Husband_occupation>2.0 && Husband_education>2.0 && Wife_education<=1.0) (7/7)
+	output=3
+else if(Children>1.0 && Wife_age<=30.0 && Standard-of-living>1.0 && Husband_occupation>2.0) (98/160)
+	output=3
+else if(Children>1.0 && Wife_working<=0.0 && Standard-of-living>2.0 && Wife_education<=3.0 && Wife_age>45.0 && Husband_education>2.0) (4/5)
+	output=3
+else if(Husband_education<=3.0 && Wife_age<=41.0 && Children>3.0 && Husband_occupation<=2.0 && Wife_working<=0.0 && Wife_education>1.0 && Standard-of-living<=2.0) (5/7)
+	output=3
+else if(Children>2.0 && Wife_education>3.0 && Wife_age>43.0 && Husband_education<=3.0 && Husband_occupation<=1.0) (2/3)
+	output=3
+else if(Wife_age<=41.0 && Children>3.0 && Media_exposure<=0.0 && Standard-of-living<=1.0 && Wife_education<=2.0) (6/11)
+	output=3
+else if(Children>1.0 && Wife_age<=41.0 && Husband_education>2.0 && Wife_education>1.0 && Standard-of-living>2.0 && Media_exposure>0.0) (3/9)
+	output=3
+else if(Wife_age<=41.0 && Children>0.0 && Standard-of-living<=3.0 && Husband_occupation<=1.0 && Wife_education>2.0 && Media_exposure<=0.0 && Wife_working>0.0 && Husband_education=null && Wife_religion=null) (16/45)
+	output=3
+else if(Wife_age>37.0 && Wife_religion<=0.0 && Children>1.0 && Husband_education<=3.0 && Standard-of-living>3.0) (5/7)
+	output=3
+else if(Wife_age>34.0 && Husband_education>3.0 && Children>3.0 && Wife_education>3.0 && Wife_working>0.0 && Wife_religion<=0.0 && Husband_occupation>1.0) (2/9)
+	output=3
+else if(Wife_age>38.0 && Children<=5.0 && Husband_education>2.0 && Standard-of-living<=3.0 && Husband_occupation>2.0 && Wife_education>1.0) (5/11)
+	output=3
+else if(Wife_working<=0.0 && Wife_age<=21.0 && Wife_education<=2.0 && Standard-of-living<=2.0 && Husband_occupation>2.0) (3/3)
+	output=3
+else if(Wife_age>30.0 && Wife_working<=0.0 && Husband_education>2.0 && Children>3.0 && Standard-of-living<=3.0 && Wife_education>1.0 && Husband_occupation>1.0 && Media_exposure=null && Wife_religion=null) (9/24)
+	output=3
+else if(Wife_age>37.0 && Wife_education>3.0 && Wife_working<=0.0 && Standard-of-living<=2.0) (1/2)
+	output=3
+else if(Wife_education<=1.0 && Wife_age<=25.0 && Standard-of-living<=1.0 && Husband_occupation>2.0) (2/2)
+	output=3
+else if(Wife_age>37.0 && Standard-of-living>3.0 && Children>12.0) (2/2)
+	output=3
+else if(Wife_age>37.0 && Standard-of-living>3.0 && Wife_working<=0.0 && Children>4.0 && Wife_religion>0.0 && Husband_education>1.0) (6/11)
+	output=3
+else if(Wife_age<=17.0 && Standard-of-living<=1.0 && Husband_education>2.0) (2/2)
+	output=3
+else if(Wife_education<=1.0 && Wife_age<=41.0 && Husband_education<=2.0 && Children<=2.0 && Husband_occupation<=2.0) (2/2)
+	output=3
+else 
+	output=1

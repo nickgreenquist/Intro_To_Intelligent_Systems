@@ -1,0 +1,29 @@
+@Number of Rules: 14
+if(PPERSAUT>5.0 && MKOOPKLA>6.0 && PBRAND>3.0 && MSKC<=2.0 && MBERZELF>0.0 && MINKM30>0.0 && MSKB2<=2.0 && MBERARBO>0.0) (11/16)
+	output=1
+else if(PPERSAUT>5.0 && PBRAND>2.0 && MOPLLAAG<=4.0 && MBERMIDD>4.0 && MAUT0<=0.0 && MOSTYPE>36.0 && MHHUUR<=8.0) (6/7)
+	output=1
+else if(PPERSAUT>5.0 && MOPLLAAG<=4.0 && PBRAND>3.0 && MFALLEEN<=1.0 && MFWEKIND<=4.0 && MSKA>4.0) (14/21)
+	output=1
+else if(PPERSAUT>5.0 && PBRAND>2.0 && MOPLHOOG>1.0 && MHHUUR<=1.0 && MAUT0>1.0 && MKOOPKLA>6.0 && MOPLMIDD>2.0 && MSKB1>3.0) (5/9)
+	output=1
+else if(PPERSAUT>5.0 && PBRAND>2.0 && MKOOPKLA>6.0 && MBERMIDD>3.0 && MSKA<=0.0 && MAANTHUI>1.0) (11/15)
+	output=1
+else if(PPERSAUT>5.0 && MOPLLAAG<=4.0 && PBRAND>3.0 && MHHUUR<=1.0 && MZFONDS>6.0 && MSKA<=0.0 && MINK3045>4.0 && PLEVEN<=0.0) (5/5)
+	output=1
+else if(PPERSAUT>5.0 && PBRAND>2.0 && MOPLLAAG<=4.0 && MGODPR>6.0 && MBERMIDD>3.0 && MFGEKIND<=4.0 && MAUT2>2.0) (7/11)
+	output=1
+else if(PPERSAUT>5.0 && PBRAND>2.0 && MKOOPKLA>6.0 && MBERMIDD>3.0 && MGODPR>5.0 && PWAPART<=0.0 && MGODOV<=0.0) (4/5)
+	output=1
+else if(PPERSAUT>5.0 && MINK4575>2.0 && PBRAND>2.0 && MHHUUR<=0.0 && MOSTYPE<=8.0 && MRELGE<=7.0 && MSKB2<=0.0) (6/9)
+	output=1
+else if(PPERSAUT>5.0 && MINK4575>2.0 && MOPLLAAG<=4.0 && MHHUUR<=1.0 && MFALLEEN>1.0 && MINKM30>1.0 && MAUT2<=1.0 && MSKC<=2.0 && MBERMIDD>2.0) (4/7)
+	output=1
+else if(PPERSAUT>5.0 && PBRAND>2.0 && MSKA>1.0 && MRELOV>1.0 && MSKB1<=1.0 && MSKB2>2.0 && PWAPART>1.0 && MINK7512>0.0 && MFGEKIND>4.0) (3/4)
+	output=1
+else if(PPERSAUT>5.0 && MOPLHOOG>1.0 && PBRAND>2.0 && MZFONDS>6.0 && MSKA>2.0 && MOSTYPE>33.0) (5/10)
+	output=1
+else if(PPERSAUT>5.0 && MSKA>1.0 && PWAPART>1.0 && MFWEKIND>5.0 && MSKB1>0.0 && MOSTYPE>9.0 && APERSAUT>1.0 && MOPLMIDD>2.0) (5/8)
+	output=1
+else 
+	output=0

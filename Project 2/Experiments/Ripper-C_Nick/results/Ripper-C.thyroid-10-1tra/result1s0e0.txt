@@ -1,0 +1,23 @@
+@Number of Rules: 11
+if(FTI<=0.064 && TSH>0.0082 && T3<=0.011) (108/110)
+	output=1
+else if(FTI<=0.064 && TSH>0.0059 && T3<=0.023 && T4U<=0.116) (117/121)
+	output=1
+else if(FTI<=0.064 && TSH>0.00939 && T3<=0.01) (104/105)
+	output=1
+else if(FTI<=0.061 && TSH>0.0075 && Age>0.27) (120/129)
+	output=1
+else if(TSH>0.006 && On_thyroxine<=0.0 && T3<=0.02 && FTI>0.068 && Thyroid_surgery<=0.0 && TT4<=0.146) (244/244)
+	output=2
+else if(TSH>0.006 && On_thyroxine<=0.0 && TT4<=0.146 && T3>0.0206 && FTI>0.069) (68/72)
+	output=2
+else if(TSH>0.0062 && FTI<=0.068 && TT4>0.052 && T4U<=0.104 && On_thyroxine<=0.0) (14/21)
+	output=2
+else if(TSH>0.017 && FTI<=0.068 && TT4>0.048 && On_thyroxine<=0.0) (8/32)
+	output=2
+else if(TSH>0.011 && T4U>0.122 && Age>0.17 && TT4<=0.084) (1/16)
+	output=2
+else if(Age<=0.01 && FTI>0.121 && TSH>0.0017) (2/2)
+	output=2
+else 
+	output=3

@@ -1,0 +1,23 @@
+@Number of Rules: 11
+if(Sex<=-1.92 && Class<=-0.923) (212/228)
+	output=1.0
+else if(Sex<=-1.92 && Class>0.0214 && Age=null) (16/19)
+	output=1.0
+else if(Sex<=-1.92 && Class<=-0.923 && Age>-0.228) (12/12)
+	output=1.0
+else if(Class<=-1.87 && Age>-0.228) (6/6)
+	output=1.0
+else if(Age>-0.228 && Class<=-0.923) (27/27)
+	output=1.0
+else if(Age>-0.228 && Sex<=-1.92 && Class=null) (13/28)
+	output=1.0
+else if(Sex<=-1.92 && Class>-0.923 && Age<=-0.228) (83/167)
+	output=1.0
+else if(Class>0.0214 && Sex=null && Age=null) (173/776)
+	output=1.0
+else if(Class<=-1.87 && Sex>-1.92 && Age=null) (54/159)
+	output=1.0
+else if(Class>-0.923 && Sex>-1.92 && Age>-0.228) (11/43)
+	output=1.0
+else 
+	output=-1.0

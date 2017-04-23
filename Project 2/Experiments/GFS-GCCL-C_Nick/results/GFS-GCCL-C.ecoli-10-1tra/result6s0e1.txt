@@ -1,0 +1,463 @@
+
+Rule base with 65 rules, 162 variables and 162 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X3 is Label 5" and "X6 is Label 2" then Class is cp with certainty degree 0.800119310804646
+
+Fitness: 18
+
+
+Rule 2:
+
+If "X2 is Label 3" and "X3 is Label 5" and "X6 is Label 2" then Class is cp with certainty degree 0.9051292504529526
+
+Fitness: 15
+
+
+Rule 3:
+
+If "X1 is Label 2" and "X3 is Label 5" then Class is cp with certainty degree 0.7249961748355178
+
+Fitness: 11
+
+
+Rule 4:
+
+If "X3 is Label 5" and "X7 is Label 4" then Class is im with certainty degree 0.5381531471335027
+
+Fitness: 11
+
+
+Rule 5:
+
+If "X2 is Label 3" and "X3 is Label 5" and "X7 is Label 3" then Class is cp with certainty degree 0.7994158932422004
+
+Fitness: 10
+
+
+Rule 6:
+
+If "X3 is Label 5" and "X7 is Label 3" then Class is cp with certainty degree 0.6295275244156378
+
+Fitness: 10
+
+
+Rule 7:
+
+If "X1 is Label 2" and "X6 is Label 2" then Class is cp with certainty degree 0.9564151966927926
+
+Fitness: 8
+
+
+Rule 8:
+
+If "X3 is Label 5" and "X6 is Label 5" then Class is im with certainty degree 0.6501650165016503
+
+Fitness: 7
+
+
+Rule 9:
+
+If "X2 is Label 5" and "X3 is Label 5" then Class is pp with certainty degree 0.6788727171595439
+
+Fitness: 6
+
+
+Rule 10:
+
+If "X1 is Label 3" and "X3 is Label 5" and "X7 is Label 3" then Class is cp with certainty degree 0.8151228420395513
+
+Fitness: 6
+
+
+Rule 11:
+
+If "X5 is Label 3" and "X6 is Label 2" then Class is cp with certainty degree 0.8480242076309102
+
+Fitness: 6
+
+
+Rule 12:
+
+If "X1 is Label 3" and "X6 is Label 2" then Class is cp with certainty degree 0.896177249832591
+
+Fitness: 5
+
+
+Rule 13:
+
+If "X1 is Label 3" and "X3 is Label 5" and "X6 is Label 4" then Class is im with certainty degree 0.7968004652668788
+
+Fitness: 5
+
+
+Rule 14:
+
+If "X2 is Label 1" and "X7 is Label 4" then Class is im with certainty degree 0.8500907932894272
+
+Fitness: 4
+
+
+Rule 15:
+
+If "X3 is Label 5" and "X6 is Label 4" then Class is im with certainty degree 0.4992559523809524
+
+Fitness: 4
+
+
+Rule 16:
+
+If "X5 is Label 5" then Class is om with certainty degree 0.7496598639455783
+
+Fitness: 3
+
+
+Rule 17:
+
+If "X1 is Label 2" and "X3 is Label 5" and "X7 is Label 3" then Class is cp with certainty degree 0.8738429925746041
+
+Fitness: 3
+
+
+Rule 18:
+
+If "X3 is Label 5" and "X6 is Label 1" and "X7 is Label 4" then Class is im with certainty degree 0.7737174982431482
+
+Fitness: 3
+
+
+Rule 19:
+
+If "X2 is Label 1" and "X6 is Label 5" then Class is im with certainty degree 0.9648181102132501
+
+Fitness: 3
+
+
+Rule 20:
+
+If "X1 is Label 4" and "X2 is Label 5" and "X3 is Label 5" then Class is pp with certainty degree 0.7274792137709091
+
+Fitness: 3
+
+
+Rule 21:
+
+If "X3 is Label 1" then Class is omL with certainty degree 0.4920634920634921
+
+Fitness: 3
+
+
+Rule 22:
+
+If "X1 is Label 3" and "X3 is Label 5" and "X7 is Label 2" then Class is cp with certainty degree 0.779296571724792
+
+Fitness: 2
+
+
+Rule 23:
+
+If "X3 is Label 1" and "X7 is Label 2" then Class is omL with certainty degree 0.8095238095238094
+
+Fitness: 2
+
+
+Rule 24:
+
+If "X1 is Label 1" and "X3 is Label 5" and "X6 is Label 4" then Class is im with certainty degree 0.8442209670753548
+
+Fitness: 2
+
+
+Rule 25:
+
+If "X6 is Label 1" and "X7 is Label 1" then Class is cp with certainty degree 0.6394591572365675
+
+Fitness: 2
+
+
+Rule 26:
+
+If "X1 is Label 3" and "X3 is Label 5" then Class is cp with certainty degree 0.5616676947639612
+
+Fitness: 2
+
+
+Rule 27:
+
+If "X1 is Label 5" and "X4 is Label 5" and "X7 is Label 4" then Class is imU with certainty degree 0.6875116055005692
+
+Fitness: 2
+
+
+Rule 28:
+
+If "X2 is Label 2" and "X3 is Label 5" and "X7 is Label 2" then Class is cp with certainty degree 0.8740372835965472
+
+Fitness: 2
+
+
+Rule 29:
+
+If "X2 is Label 2" and "X3 is Label 5" and "X7 is Label 3" then Class is cp with certainty degree 0.9214726687198526
+
+Fitness: 2
+
+
+Rule 30:
+
+If "X1 is Label 5" and "X6 is Label 5" then Class is imU with certainty degree 0.8500200560010281
+
+Fitness: 2
+
+
+Rule 31:
+
+If "X2 is Label 2" and "X3 is Label 5" and "X6 is Label 2" then Class is cp with certainty degree 0.9563979500528756
+
+Fitness: 2
+
+
+Rule 32:
+
+If "X1 is Label 1" and "X3 is Label 5" and "X7 is Label 3" then Class is cp with certainty degree 0.7611044931121904
+
+Fitness: 2
+
+
+Rule 33:
+
+If "X1 is Label 2" and "X3 is Label 5" and "X5 is Label 3" then Class is cp with certainty degree 0.7961362347258064
+
+Fitness: 2
+
+
+Rule 34:
+
+If "X3 is Label 5" and "X5 is Label 3" then Class is cp with certainty degree 0.4717665485120763
+
+Fitness: 2
+
+
+Rule 35:
+
+If "X3 is Label 5" and "X5 is Label 3" and "X7 is Label 3" then Class is cp with certainty degree 0.6894610778443114
+
+Fitness: 2
+
+
+Rule 36:
+
+If "X1 is Label 3" and "X2 is Label 2" and "X3 is Label 5" then Class is cp with certainty degree 0.8484597196998254
+
+Fitness: 2
+
+
+Rule 37:
+
+If "X1 is Label 3" and "X6 is Label 1" then Class is cp with certainty degree 0.7083951100791673
+
+Fitness: 2
+
+
+Rule 38:
+
+If "X3 is Label 5" and "X5 is Label 3" and "X6 is Label 5" then Class is im with certainty degree 0.7541817649427182
+
+Fitness: 2
+
+
+Rule 39:
+
+If "X2 is Label 4" and "X3 is Label 5" and "X7 is Label 4" then Class is im with certainty degree 0.6487063216857828
+
+Fitness: 2
+
+
+Rule 40:
+
+If "X1 is Label 3" and "X7 is Label 4" then Class is im with certainty degree 0.7192899765620828
+
+Fitness: 1
+
+
+Rule 41:
+
+If "X3 is Label 5" and "X7 is Label 2" then Class is cp with certainty degree 0.5001793458766752
+
+Fitness: 1
+
+
+Rule 42:
+
+If "X1 is Label 4" and "X4 is Label 5" and "X5 is Label 5" then Class is om with certainty degree 0.8857803086572584
+
+Fitness: 1
+
+
+Rule 43:
+
+If "X1 is Label 3" and "X6 is Label 5" then Class is im with certainty degree 0.9282444174530505
+
+Fitness: 1
+
+
+Rule 44:
+
+If "X2 is Label 2" and "X3 is Label 5" and "X6 is Label 1" and "X7 is Label 2" then Class is cp with certainty degree 0.9947105612904805
+
+Fitness: 1
+
+
+Rule 45:
+
+If "X3 is Label 1" and "X7 is Label 4" then Class is imL with certainty degree 0.836734693877551
+
+Fitness: 1
+
+
+Rule 46:
+
+If "X1 is Label 2" and "X2 is Label 2" then Class is cp with certainty degree 0.8682655935613682
+
+Fitness: 1
+
+
+Rule 47:
+
+If "X3 is Label 5" and "X7 is Label 5" then Class is im with certainty degree 0.7384750219106048
+
+Fitness: 1
+
+
+Rule 48:
+
+If "X4 is Label 1" then Class is imL with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 49:
+
+If "X6 is Label 1" and "X7 is Label 2" then Class is cp with certainty degree 0.6516464260803418
+
+Fitness: 1
+
+
+Rule 50:
+
+If "X1 is Label 3" and "X3 is Label 5" and "X5 is Label 3" then Class is cp with certainty degree 0.6295280115679807
+
+Fitness: 1
+
+
+Rule 51:
+
+If "X2 is Label 3" and "X5 is Label 1" and "X6 is Label 1" then Class is im with certainty degree 0.6467271708683473
+
+Fitness: 1
+
+
+Rule 52:
+
+If "X2 is Label 2" and "X6 is Label 1" then Class is cp with certainty degree 0.8896579196335208
+
+Fitness: 1
+
+
+Rule 53:
+
+If "X2 is Label 1" and "X3 is Label 5" and "X6 is Label 4" then Class is im with certainty degree 0.7211764307713135
+
+Fitness: 1
+
+
+Rule 54:
+
+If "X2 is Label 3" and "X3 is Label 5" and "X6 is Label 2" and "X7 is Label 2" then Class is cp with certainty degree 0.9286272820063165
+
+Fitness: 1
+
+
+Rule 55:
+
+If "X1 is Label 5" and "X3 is Label 5" then Class is imU with certainty degree 0.46599867383776616
+
+Fitness: 1
+
+
+Rule 56:
+
+If "X1 is Label 1" and "X3 is Label 5" and "X6 is Label 2" then Class is cp with certainty degree 0.9683038954754416
+
+Fitness: 1
+
+
+Rule 57:
+
+If "X1 is Label 1" and "X2 is Label 3" and "X3 is Label 5" then Class is cp with certainty degree 0.6416309040129952
+
+Fitness: 1
+
+
+Rule 58:
+
+If "X1 is Label 2" and "X3 is Label 5" and "X7 is Label 2" then Class is cp with certainty degree 0.9224563104028282
+
+Fitness: 1
+
+
+Rule 59:
+
+If "X2 is Label 4" and "X3 is Label 5" and "X5 is Label 5" then Class is om with certainty degree 0.8379095370738824
+
+Fitness: 1
+
+
+Rule 60:
+
+If "X2 is Label 5" and "X3 is Label 5" and "X5 is Label 2" then Class is pp with certainty degree 0.9806709224547929
+
+Fitness: 1
+
+
+Rule 61:
+
+If "X2 is Label 3" and "X5 is Label 3" and "X6 is Label 1" then Class is cp with certainty degree 0.6970009636006088
+
+Fitness: 1
+
+
+Rule 62:
+
+If "X3 is Label 1" and "X5 is Label 5" then Class is om with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 63:
+
+If "X5 is Label 5" and "X6 is Label 3" then Class is om with certainty degree 0.9233119140419255
+
+Fitness: 1
+
+
+Rule 64:
+
+If "X1 is Label 3" and "X3 is Label 5" and "X5 is Label 2" then Class is cp with certainty degree 0.7450950875608412
+
+Fitness: 1
+
+
+Rule 65:
+
+If "X2 is Label 1" and "X5 is Label 3" and "X6 is Label 1" then Class is cp with certainty degree 1.0
+
+Fitness: 1
+
+
+
+Training Accuracy:	68.31683168316832%
+Test Accuracy:		69.6969696969697%
+

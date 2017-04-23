@@ -1,0 +1,27 @@
+@Number of Rules: 13
+if(Lymphatics=normal) (2/2)
+	output=normal
+else if(Lym_nodes_dimin>1.0 && By_pass=yes) (4/4)
+	output=fibrosis
+else if(No_of_nodes_in>2.0 && Special_forms=vesicles && By_pass=no) (26/27)
+	output=malign_lymph
+else if(Changes_in_node=lac_central) (19/20)
+	output=malign_lymph
+else if(Block_of_affere=no && Extravasates=yes) (18/21)
+	output=malign_lymph
+else if(Regeneration_of=yes && By_pass=yes) (5/9)
+	output=malign_lymph
+else if(No_of_nodes_in>3.0 && Changes_in_lym=oval) (12/13)
+	output=malign_lymph
+else if(Block_of_affere=no && Special_forms=chalices && Lymphatics=arched) (4/5)
+	output=malign_lymph
+else if(Changes_in_node=lacunar && No_of_nodes_in>1.0 && Lym_nodes_enlar<=3.0 && Special_forms=vesicles) (13/15)
+	output=malign_lymph
+else if(Block_of_affere=no && Early_uptake_in=yes && Lymphatics=displaced) (10/11)
+	output=malign_lymph
+else if(Block_of_affere=no && No_of_nodes_in>1.0) (30/36)
+	output=malign_lymph
+else if(Changes_in_node=lacunar && Special_forms=chalices && Lymphatics=deformed) (1/1)
+	output=malign_lymph
+else 
+	output=metastases
