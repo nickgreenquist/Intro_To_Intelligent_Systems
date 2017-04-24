@@ -1,0 +1,44 @@
+TEST RESULTS
+============
+Classifier= led7digit 
+Fold 0 : CORRECT=0.6599999999999999 N/C=0.0 
+Fold 1 : CORRECT=0.5800000000000001 N/C=0.0 
+Fold 2 : CORRECT=0.6799999999999999 N/C=0.0 
+Fold 3 : CORRECT=0.6 N/C=0.0 
+Fold 4 : CORRECT=0.76 N/C=0.0 
+Fold 5 : CORRECT=0.72 N/C=0.0 
+Fold 6 : CORRECT=0.56 N/C=0.0 
+Fold 7 : CORRECT=0.6 N/C=0.0 
+Fold 8 : CORRECT=0.6799999999999999 N/C=0.0 
+Fold 9 : CORRECT=0.64 N/C=0.0 
+Global Classification Error + N/C:
+0.352 
+stddev Global Classification Error + N/C:
+0.060794736614282696 
+Correctly classified:
+0.648 
+Global N/C:
+0.0 
+
+TRAIN RESULTS
+============
+Classifier= led7digit 
+Summary of data, Classifiers: led7digit 
+Fold 0 : CORRECT=0.7444444444444445 N/C=0.0 
+Fold 1 : CORRECT=0.6933333333333334 N/C=0.0 
+Fold 2 : CORRECT=0.6888888888888889 N/C=0.0 
+Fold 3 : CORRECT=0.6444444444444444 N/C=0.0 
+Fold 4 : CORRECT=0.7 N/C=0.0 
+Fold 5 : CORRECT=0.72 N/C=0.0 
+Fold 6 : CORRECT=0.64 N/C=0.0 
+Fold 7 : CORRECT=0.7022222222222223 N/C=0.0 
+Fold 8 : CORRECT=0.7266666666666667 N/C=0.0 
+Fold 9 : CORRECT=0.6711111111111111 N/C=0.0 
+Global Classification Error + N/C:
+0.3068888888888889 
+stddev Global Classification Error + N/C:
+0.032102459426569724 
+Correctly classified:
+0.6931111111111111 
+Global N/C:
+0.0 

@@ -1,0 +1,27 @@
+FURIA rules:
+===========
+
+(Plas <= 127(-> 128)) => Class=tested_negative (CF = 0.82)
+ => Class=tested_negative (CF = 0.0)
+(Plas <= 133(-> 134)) => Class=tested_negative (CF = 0.79)
+(Plas <= 143(-> 146)) => Class=tested_negative (CF = 0.76)
+ => Class=tested_positive (CF = 0.0)
+ => Class=tested_positive (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Plas <= 127(-> 128)) and (Age <= 27(-> 28)) => Class=tested_negative (CF = 0.91)
+(Plas <= 99(-> 100)) => Class=tested_negative (CF = 0.91)
+(Plas <= 133(-> 134)) and (Pedi <= 0.499(-> 0.503)) => Class=tested_negative (CF = 0.85)
+(Plas <= 143(-> 146)) and (Mass <= 28.8(-> 28.9)) => Class=tested_negative (CF = 0.91)
+(Plas >= 158(-> 157)) => Class=tested_positive (CF = 0.82)
+(Plas >= 128(-> 127)) and (Mass >= 30(-> 29.9)) => Class=tested_positive (CF = 0.73)
+
+Number of Rules : 6
+
+
+
+
+REGLAS = 6

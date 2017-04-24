@@ -1,0 +1,110 @@
+@Classifier number 0: 
+Number of Rules: 5
+Rule[1]: IF  Sex <= -1.92 AND  Class <= -0.923  THEN Class = 1.0 (0.10701697/0.11509376)
+Rule[2]: IF  Sex <= -1.92 AND  Class > -0.923  THEN Class = -1.0 (0.049974754/0.09843539)
+Rule[3]: IF  Sex > -1.92 AND  Age <= -0.228  THEN Class = -1.0 (0.60272276/0.75718904)
+Rule[4]: IF  Sex > -1.92 AND  Age > -0.228 AND  Class <= -0.923  THEN Class = 1.0 (0.0075719324/0.0075719324)
+Rule[5]: IF  Sex > -1.92 AND  Age > -0.228 AND  Class > -0.923  THEN Class = -1.0 (0.016153457/0.021706207)
+
+@Classifier number 1: 
+Number of Rules: 5
+Rule[1]: IF  Sex <= -1.92  THEN Class = 1.0 (137.00363/172.15208)
+Rule[2]: IF  Sex > -1.92 AND  Class <= -1.87  THEN Class = 1.0 (54.96707/75.27547)
+Rule[3]: IF  Sex > -1.92 AND  Class > -1.87 AND  Class <= 0.0214 AND  Age <= -0.228  THEN Class = -1.0 (93.99887/172.9997)
+Rule[4]: IF  Sex > -1.92 AND  Class > -1.87 AND  Class <= 0.0214 AND  Age > -0.228  THEN Class = 1.0 (12.934141/19.123392)
+Rule[5]: IF  Sex > -1.92 AND  Class > -1.87 AND  Class > 0.0214  THEN Class = 1.0 (173.0/289.63055)
+
+@Classifier number 2: 
+Number of Rules: 10
+Rule[1]: IF  Class <= 0.0214 AND  Class <= -0.923 AND  Age <= -0.228 AND  Sex <= -1.92 AND  Class <= -1.87  THEN Class = 1.0 (6.672195/10.672195)
+Rule[2]: IF  Class <= 0.0214 AND  Class <= -0.923 AND  Age <= -0.228 AND  Sex <= -1.92 AND  Class > -1.87  THEN Class = -1.0 (12.0/15.835198)
+Rule[3]: IF  Class <= 0.0214 AND  Class <= -0.923 AND  Age <= -0.228 AND  Sex > -1.92 AND  Class <= -1.87  THEN Class = -1.0 (20.308483/34.976486)
+Rule[4]: IF  Class <= 0.0214 AND  Class <= -0.923 AND  Age <= -0.228 AND  Sex > -1.92 AND  Class > -1.87  THEN Class = 1.0 (14.0/21.197601)
+Rule[5]: IF  Class <= 0.0214 AND  Class <= -0.923 AND  Age > -0.228  THEN Class = 1.0 (1.4184984/1.4184984)
+Rule[6]: IF  Class <= 0.0214 AND  Class > -0.923 AND  Age <= -0.228  THEN Class = 1.0 (83.199165/117.20086)
+Rule[7]: IF  Class <= 0.0214 AND  Class > -0.923 AND  Age > -0.228 AND  Sex <= -1.92  THEN Class = 1.0 (3.5311837/6.432396)
+Rule[8]: IF  Class <= 0.0214 AND  Class > -0.923 AND  Age > -0.228 AND  Sex > -1.92  THEN Class = -1.0 (6.1892543/9.177176)
+Rule[9]: IF  Class > 0.0214 AND  Sex <= -1.92  THEN Class = 1.0 (4.346072/4.9263144)
+Rule[10]: IF  Class > 0.0214 AND  Sex > -1.92  THEN Class = -1.0 (116.62817/163.62125)
+
+@Classifier number 3: 
+Number of Rules: 7
+Rule[1]: IF  Class <= 0.0214 AND  Sex <= -1.92 AND  Class <= -0.923 AND  Class <= -1.87  THEN Class = -1.0 (4.0/5.533331)
+Rule[2]: IF  Class <= 0.0214 AND  Sex <= -1.92 AND  Class <= -0.923 AND  Class > -1.87  THEN Class = 1.0 (3.9669693/6.7031426)
+Rule[3]: IF  Class <= 0.0214 AND  Sex <= -1.92 AND  Class > -0.923  THEN Class = -1.0 (4.6419377/5.8806496)
+Rule[4]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class <= -1.87  THEN Class = 1.0 (3.7268925/4.8845468)
+Rule[5]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class > -1.87 AND  Age <= -0.228  THEN Class = -1.0 (25.533138/43.54616)
+Rule[6]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class > -1.87 AND  Age > -0.228  THEN Class = 1.0 (0.8667732/1.219583)
+Rule[7]: IF  Class > 0.0214  THEN Class = 1.0 (11.995711/18.788988)
+
+@Classifier number 4: 
+Number of Rules: 9
+Rule[1]: IF  Class <= 0.0214 AND  Sex <= -1.92 AND  Class <= -1.87  THEN Class = 1.0 (5.563654/9.563643)
+Rule[2]: IF  Class <= 0.0214 AND  Sex <= -1.92 AND  Class > -1.87 AND  Age <= -0.228  THEN Class = -1.0 (6.1532145/9.530737)
+Rule[3]: IF  Class <= 0.0214 AND  Sex <= -1.92 AND  Class > -1.87 AND  Age > -0.228  THEN Class = 1.0 (0.45638117/0.7787382)
+Rule[4]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class <= -0.923 AND  Age <= -0.228 AND  Class <= -1.87  THEN Class = -1.0 (1.8668936/3.496668)
+Rule[5]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class <= -0.923 AND  Age <= -0.228 AND  Class > -1.87  THEN Class = 1.0 (5.1478953/8.346813)
+Rule[6]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class <= -0.923 AND  Age > -0.228  THEN Class = 1.0 (0.1796879/0.1796879)
+Rule[7]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class > -0.923 AND  Age <= -0.228  THEN Class = 1.0 (23.900942/32.050003)
+Rule[8]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class > -0.923 AND  Age > -0.228  THEN Class = -1.0 (0.5689576/0.9009495)
+Rule[9]: IF  Class > 0.0214  THEN Class = -1.0 (10.955257/16.286741)
+
+@Classifier number 5: 
+Number of Rules: 8
+Rule[1]: IF  Class <= 0.0214 AND  Age <= -0.228 AND  Class <= -1.87 AND  Sex <= -1.92  THEN Class = -1.0 (4.0/5.371403)
+Rule[2]: IF  Class <= 0.0214 AND  Age <= -0.228 AND  Class <= -1.87 AND  Sex > -1.92  THEN Class = 1.0 (0.7243453/0.9304796)
+Rule[3]: IF  Class <= 0.0214 AND  Age <= -0.228 AND  Class > -1.87 AND  Sex <= -1.92  THEN Class = 1.0 (2.448083/3.7365)
+Rule[4]: IF  Class <= 0.0214 AND  Age <= -0.228 AND  Class > -1.87 AND  Sex > -1.92  THEN Class = -1.0 (11.347985/18.564695)
+Rule[5]: IF  Class <= 0.0214 AND  Age > -0.228 AND  Class <= -0.923  THEN Class = 1.0 (0.14835772/0.14835772)
+Rule[6]: IF  Class <= 0.0214 AND  Age > -0.228 AND  Class > -0.923 AND  Sex <= -1.92  THEN Class = -1.0 (0.14326976/0.17911163)
+Rule[7]: IF  Class <= 0.0214 AND  Age > -0.228 AND  Class > -0.923 AND  Sex > -1.92  THEN Class = 1.0 (0.14755182/0.21037334)
+Rule[8]: IF  Class > 0.0214  THEN Class = 1.0 (2.4306972/3.6725993)
+
+@Classifier number 6: 
+Number of Rules: 9
+Rule[1]: IF  Class <= 0.0214 AND  Sex <= -1.92 AND  Class <= -1.87  THEN Class = 1.0 (5.2589426/9.258939)
+Rule[2]: IF  Class <= 0.0214 AND  Sex <= -1.92 AND  Class > -1.87 AND  Age <= -0.228  THEN Class = -1.0 (2.7734427/4.15049)
+Rule[3]: IF  Class <= 0.0214 AND  Sex <= -1.92 AND  Class > -1.87 AND  Age > -0.228  THEN Class = 1.0 (0.16808785/0.24867705)
+Rule[4]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class <= -0.923 AND  Age <= -0.228 AND  Class <= -1.87  THEN Class = -1.0 (0.44372296/0.85116684)
+Rule[5]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class <= -0.923 AND  Age <= -0.228 AND  Class > -1.87  THEN Class = 1.0 (2.75299/4.552385)
+Rule[6]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class <= -0.923 AND  Age > -0.228  THEN Class = 1.0 (0.12400176/0.12400176)
+Rule[7]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class > -0.923 AND  Age <= -0.228  THEN Class = 1.0 (12.78173/17.365551)
+Rule[8]: IF  Class <= 0.0214 AND  Sex > -1.92 AND  Class > -0.923 AND  Age > -0.228  THEN Class = -1.0 (0.1352298/0.21822761)
+Rule[9]: IF  Class > 0.0214  THEN Class = -1.0 (2.67335/4.0406156)
+
+@Classifier number 7: 
+Number of Rules: 8
+Rule[1]: IF  Class <= -1.87 AND  Sex <= -1.92  THEN Class = -1.0 (4.0/5.3585587)
+Rule[2]: IF  Class <= -1.87 AND  Sex > -1.92  THEN Class = 1.0 (0.25318488/0.3175889)
+Rule[3]: IF  Class > -1.87 AND  Sex <= -1.92 AND  Class <= -0.923  THEN Class = 1.0 (1.0115947/1.6204814)
+Rule[4]: IF  Class > -1.87 AND  Sex <= -1.92 AND  Class > -0.923 AND  Age <= -0.228  THEN Class = 1.0 (0.2971998/0.3895323)
+Rule[5]: IF  Class > -1.87 AND  Sex <= -1.92 AND  Class > -0.923 AND  Age > -0.228  THEN Class = -1.0 (0.045331452/0.056529842)
+Rule[6]: IF  Class > -1.87 AND  Sex > -1.92 AND  Class <= 0.0214 AND  Age <= -0.228  THEN Class = -1.0 (6.3832846/10.391762)
+Rule[7]: IF  Class > -1.87 AND  Sex > -1.92 AND  Class <= 0.0214 AND  Age > -0.228  THEN Class = 1.0 (0.09468153/0.114309385)
+Rule[8]: IF  Class > -1.87 AND  Sex > -1.92 AND  Class > 0.0214  THEN Class = 1.0 (0.7342481/1.1041125)
+
+@Classifier number 8: 
+Number of Rules: 9
+Rule[1]: IF  Sex <= -1.92 AND  Class <= -1.87  THEN Class = 1.0 (5.3583713/9.358382)
+Rule[2]: IF  Sex <= -1.92 AND  Class > -1.87 AND  Age <= -0.228  THEN Class = -1.0 (1.7675722/2.5714104)
+Rule[3]: IF  Sex <= -1.92 AND  Class > -1.87 AND  Age > -0.228  THEN Class = 1.0 (0.1317056/0.16071771)
+Rule[4]: IF  Sex > -1.92 AND  Class <= 0.0214 AND  Class <= -0.923 AND  Age <= -0.228 AND  Class <= -1.87  THEN Class = -1.0 (0.16234376/0.3090239)
+Rule[5]: IF  Sex > -1.92 AND  Class <= 0.0214 AND  Class <= -0.923 AND  Age <= -0.228 AND  Class > -1.87  THEN Class = 1.0 (1.7906321/2.9422436)
+Rule[6]: IF  Sex > -1.92 AND  Class <= 0.0214 AND  Class <= -0.923 AND  Age > -0.228  THEN Class = 1.0 (0.14110595/0.14110595)
+Rule[7]: IF  Sex > -1.92 AND  Class <= 0.0214 AND  Class > -0.923 AND  Age <= -0.228  THEN Class = 1.0 (8.313655/11.247265)
+Rule[8]: IF  Sex > -1.92 AND  Class <= 0.0214 AND  Class > -0.923 AND  Age > -0.228  THEN Class = -1.0 (0.04947626/0.079355486)
+Rule[9]: IF  Sex > -1.92 AND  Class > 0.0214  THEN Class = -1.0 (0.93232286/1.4022436)
+
+@Classifier number 9: 
+Number of Rules: 6
+Rule[1]: IF  Class <= -1.87 AND  Sex <= -1.92  THEN Class = -1.0 (4.0/5.395621)
+Rule[2]: IF  Class <= -1.87 AND  Sex > -1.92  THEN Class = 1.0 (0.12517338/0.15218022)
+Rule[3]: IF  Class > -1.87 AND  Sex <= -1.92  THEN Class = 1.0 (0.8231865/1.2870346)
+Rule[4]: IF  Class > -1.87 AND  Sex > -1.92 AND  Age <= -0.228 AND  Class <= 0.0214  THEN Class = -1.0 (4.085276/6.7116327)
+Rule[5]: IF  Class > -1.87 AND  Sex > -1.92 AND  Age <= -0.228 AND  Class > 0.0214  THEN Class = 1.0 (0.3007482/0.45584083)
+Rule[6]: IF  Class > -1.87 AND  Sex > -1.92 AND  Age > -0.228  THEN Class = 1.0 (0.08171917/0.08994981)
+
+Accuracy in training: 0.7819283190307925
+Accuracy in test: 0.7954545454545454
+AUC in training: 0.7437651472781507
+AUC in test: 0.7629738160506664

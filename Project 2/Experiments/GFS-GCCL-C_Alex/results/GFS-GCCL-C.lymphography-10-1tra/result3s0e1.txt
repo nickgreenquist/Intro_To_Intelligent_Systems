@@ -1,0 +1,71 @@
+
+Rule base with 9 rules, 10 variables and 10 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X18 is Label 1" then Class is metastases with certainty degree 0.6883116883116882
+
+Fitness: 37
+
+
+Rule 2:
+
+If "X10 is Label 2" then Class is metastases with certainty degree 0.6218905472636819
+
+Fitness: 15
+
+
+Rule 3:
+
+If "X10 is Label 5" then Class is malign_lymph with certainty degree 0.8333333333333334
+
+Fitness: 14
+
+
+Rule 4:
+
+If "X18 is Label 3" then Class is malign_lymph with certainty degree 0.7066666666666667
+
+Fitness: 10
+
+
+Rule 5:
+
+If then Class is metastases with certainty degree 0.4096692111959288
+
+Fitness: 9
+
+
+Rule 6:
+
+If "X10 is Label 1" and "X18 is Label 1" then Class is metastases with certainty degree 0.7222222222222222
+
+Fitness: 5
+
+
+Rule 7:
+
+If "X18 is Label 4" then Class is malign_lymph with certainty degree 0.8558558558558559
+
+Fitness: 4
+
+
+Rule 8:
+
+If "X10 is Label 1" then Class is metastases with certainty degree 0.6
+
+Fitness: 2
+
+
+Rule 9:
+
+If "X10 is Label 1" and "X18 is Label 5" then Class is malign_lymph with certainty degree 1.0
+
+Fitness: 1
+
+
+
+Training Accuracy:	74.04580152671755%
+Test Accuracy:		52.94117647058824%
+

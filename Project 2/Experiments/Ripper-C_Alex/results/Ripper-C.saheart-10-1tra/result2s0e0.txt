@@ -1,0 +1,55 @@
+@Number of Rules: 27
+if(Age>50.0 && Tobacco>4.1 && Obesity<=28.67 && Adiposity>29.79) (19/22)
+	output=1
+else if(Tobacco>0.75 && Age>48.0 && Famhist=Present && Sbp>152.0 && Typea>33.0) (23/25)
+	output=1
+else if(Age>50.0 && Sbp<=146.0 && Obesity>29.29 && Adiposity>31.4) (12/14)
+	output=1
+else if(Age>49.0 && Ldl>5.04 && Typea>55.0 && Sbp<=188.0) (26/30)
+	output=1
+else if(Age>30.0 && Typea>58.0 && Tobacco<=3.15 && Famhist=Present && Sbp<=136.0) (8/10)
+	output=1
+else if(Age>31.0 && Tobacco>7.5 && Adiposity<=28.81 && Alcohol>27.03) (10/11)
+	output=1
+else if(Typea>53.0 && Ldl>3.99 && Age>60.0 && Adiposity>23.07) (10/14)
+	output=1
+else if(Tobacco>0.48 && Famhist=Present && Ldl>5.97 && Age<=45.0 && Obesity>22.51) (8/12)
+	output=1
+else if(Age>50.0 && Tobacco>7.28 && Typea<=47.0) (16/18)
+	output=1
+else if(Age>50.0 && Tobacco>7.44 && Adiposity>32.03) (18/22)
+	output=1
+else if(Age>38.0 && Obesity<=28.99 && Ldl>6.14 && Tobacco<=3.5 && Typea>48.0) (10/11)
+	output=1
+else if(Tobacco>0.31 && Ldl<=4.59 && Sbp<=108.0) (5/7)
+	output=1
+else if(Age>50.0 && Tobacco>7.44 && Typea<=52.0) (20/23)
+	output=1
+else if(Tobacco>2.16 && Adiposity<=29.27 && Sbp<=130.0 && Age>46.0 && Obesity>25.31 && Ldl<=5.24) (6/6)
+	output=1
+else if(Tobacco>3.99 && Obesity<=25.62 && Sbp<=126.0 && Alcohol<=19.34) (9/12)
+	output=1
+else if(Sbp>132.0 && Typea>68.0 && Famhist=Absent) (4/4)
+	output=1
+else if(Sbp>132.0 && Age<=48.0 && Tobacco>1.2 && Obesity<=25.62 && Typea<=50.0) (5/7)
+	output=1
+else if(Sbp>132.0 && Tobacco<=2.52 && Ldl>3.66 && Age<=45.0 && Famhist=Absent && Adiposity>18.53 && Typea<=65.0) (9/16)
+	output=1
+else if(Alcohol<=0.26 && Obesity<=21.06 && Ldl>3.28) (4/7)
+	output=1
+else if(Obesity<=23.65 && Alcohol>14.4 && Ldl>3.95) (11/11)
+	output=1
+else if(Alcohol>25.86 && Tobacco>6.17 && Age<=43.0) (3/4)
+	output=1
+else if(Famhist=Present && Age>57.0 && Tobacco<=2.0 && Sbp>128.0) (5/7)
+	output=1
+else if(Tobacco>8.0 && Age<=41.0 && Sbp<=134.0) (3/3)
+	output=1
+else if(Alcohol>88.66 && Adiposity<=25.78) (4/6)
+	output=1
+else if(Obesity<=18.46 && Ldl<=2.39) (1/2)
+	output=1
+else if(Sbp>166.0 && Tobacco>4.18) (15/18)
+	output=1
+else 
+	output=0

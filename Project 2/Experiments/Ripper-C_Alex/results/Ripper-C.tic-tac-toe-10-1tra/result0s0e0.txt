@@ -1,0 +1,31 @@
+@Number of Rules: 15
+if(MiddleMiddle=o && BottomRight=o && TopLeft=o) (44/44)
+	output=negative
+else if(MiddleMiddle=o && BottomLeft=o && TopRight=o) (48/48)
+	output=negative
+else if(MiddleMiddle=o && BottomMiddle=o && TopMiddle=o) (33/33)
+	output=negative
+else if(TopRight=o && TopLeft=o && TopMiddle=o) (32/32)
+	output=negative
+else if(BottomLeft=o && TopLeft=o && MiddleLeft=o) (32/32)
+	output=negative
+else if(BottomRight=o && BottomLeft=o && BottomMiddle=o) (32/32)
+	output=negative
+else if(MiddleRight=o && MiddleMiddle=o && MiddleLeft=o) (33/33)
+	output=negative
+else if(TopRight=o && MiddleRight=o && BottomRight=o) (33/33)
+	output=negative
+else if(MiddleLeft=x && TopLeft=o && BottomRight=x && TopMiddle=x && TopRight=x && MiddleRight=o) (3/3)
+	output=negative
+else if(TopLeft=x && MiddleRight=x && BottomMiddle=x && TopMiddle=o && BottomRight=o && TopRight=x) (2/2)
+	output=negative
+else if(TopRight=o && MiddleLeft=o && MiddleRight=x && TopLeft=x && BottomLeft=x && TopMiddle=x) (3/3)
+	output=negative
+else if(BottomLeft=o && TopMiddle=o && MiddleRight=o && MiddleLeft=x && BottomMiddle=x) (3/3)
+	output=negative
+else if(TopRight=o && TopLeft=o && BottomMiddle=o && MiddleRight=o) (1/1)
+	output=negative
+else if(MiddleMiddle=o && TopLeft=o && TopRight=o && BottomMiddle=o) (1/1)
+	output=negative
+else 
+	output=positive

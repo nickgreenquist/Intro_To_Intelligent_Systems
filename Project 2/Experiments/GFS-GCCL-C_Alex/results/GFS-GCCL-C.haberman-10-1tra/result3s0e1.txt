@@ -1,0 +1,92 @@
+
+Rule base with 12 rules, 18 variables and 18 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X3 is Label 1" then Class is negative with certainty degree 0.5908263560247543
+
+Fitness: 126
+
+
+Rule 2:
+
+If then Class is negative with certainty degree 0.4690909090909091
+
+Fitness: 39
+
+
+Rule 3:
+
+If "X2 is Label 2" and "X3 is Label 1" then Class is negative with certainty degree 0.7492180835939722
+
+Fitness: 15
+
+
+Rule 4:
+
+If "X2 is Label 2" then Class is negative with certainty degree 0.6384180790960451
+
+Fitness: 6
+
+
+Rule 5:
+
+If "X1 is Label 1" then Class is negative with certainty degree 0.775875486381323
+
+Fitness: 5
+
+
+Rule 6:
+
+If "X1 is Label 4" and "X3 is Label 1" then Class is negative with certainty degree 0.6081689703370088
+
+Fitness: 3
+
+
+Rule 7:
+
+If "X1 is Label 1" and "X3 is Label 1" then Class is negative with certainty degree 0.8071505958829902
+
+Fitness: 2
+
+
+Rule 8:
+
+If "X1 is Label 1" and "X2 is Label 1" then Class is negative with certainty degree 0.836048344718865
+
+Fitness: 2
+
+
+Rule 9:
+
+If "X1 is Label 4" and "X2 is Label 4" then Class is negative with certainty degree 0.702857142857143
+
+Fitness: 2
+
+
+Rule 10:
+
+If "X1 is Label 4" then Class is negative with certainty degree 0.5126050420168067
+
+Fitness: 1
+
+
+Rule 11:
+
+If "X1 is Label 2" and "X2 is Label 2" then Class is negative with certainty degree 0.7510729613733904
+
+Fitness: 1
+
+
+Rule 12:
+
+If "X1 is Label 5" and "X2 is Label 1" then Class is positive with certainty degree 0.6971428571428572
+
+Fitness: 1
+
+
+
+Training Accuracy:	73.81818181818181%
+Test Accuracy:		74.19354838709677%
+

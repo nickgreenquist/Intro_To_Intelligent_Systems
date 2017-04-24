@@ -187,4 +187,4 @@ elseif ( APLEZIER > 0.000000 ) then
 @NumberOfInCorrectlyClassifiedTest 61
 @PercentageOfInCorrectlyClassifiedTest 6.2054935%
 
-@ElapsedTime 0:0:40
+@ElapsedTime 0:0:39

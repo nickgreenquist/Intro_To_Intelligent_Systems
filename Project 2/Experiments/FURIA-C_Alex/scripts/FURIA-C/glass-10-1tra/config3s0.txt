@@ -1,0 +1,7 @@
+algorithm = FURIA
+inputData = "../datasets/glass-10-1tra/glass-10-1tra-10-4tra.dat" "../datasets/glass-10-1tra/glass-10-1tra-10-4tra.dat" "../datasets/glass-10-1tra/glass-10-1tra-10-4tst.dat" 
+outputData = "../results/FURIA-C.glass-10-1tra/result3s0.tra" "../results/FURIA-C.glass-10-1tra/result3s0.tst" "../results/FURIA-C.glass-10-1tra/result3s0e0.txt"  
+
+seed = 1286082570
+Number of Optimizations = 2
+Number of folds = 3

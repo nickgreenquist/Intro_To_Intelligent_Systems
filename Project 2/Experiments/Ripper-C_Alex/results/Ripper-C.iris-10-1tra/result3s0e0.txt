@@ -1,0 +1,15 @@
+@Number of Rules: 7
+if(PetalLength<=1.9) (45/45)
+	output=Iris-setosa
+else if(PetalWidth<=1.6 && PetalLength<=5.1 && SepalWidth>2.2) (41/86)
+	output=Iris-versicolor
+else if(PetalWidth<=1.5 && PetalLength<=4.9) (41/86)
+	output=Iris-versicolor
+else if(PetalLength<=5.0 && SepalLength>6.3) (11/11)
+	output=Iris-versicolor
+else if(SepalLength<=5.9 && PetalWidth<=1.8 && PetalLength<=4.2) (20/65)
+	output=Iris-versicolor
+else if(PetalLength<=4.8 && SepalLength<=5.9) (24/70)
+	output=Iris-versicolor
+else 
+	output=Iris-virginica

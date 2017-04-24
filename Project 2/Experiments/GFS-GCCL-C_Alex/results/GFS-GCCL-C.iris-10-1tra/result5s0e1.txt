@@ -1,0 +1,127 @@
+
+Rule base with 17 rules, 22 variables and 22 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X4 is Label 1" then Class is Iris-setosa with certainty degree 1.0
+
+Fitness: 39
+
+
+Rule 2:
+
+If "X4 is Label 3" then Class is Iris-versicolor with certainty degree 0.828193832599119
+
+Fitness: 22
+
+
+Rule 3:
+
+If "X4 is Label 4" then Class is Iris-virginica with certainty degree 0.695431472081218
+
+Fitness: 17
+
+
+Rule 4:
+
+If "X4 is Label 5" then Class is Iris-virginica with certainty degree 1.0
+
+Fitness: 12
+
+
+Rule 5:
+
+If "X3 is Label 3" then Class is Iris-versicolor with certainty degree 0.7937145557655951
+
+Fitness: 11
+
+
+Rule 6:
+
+If "X3 is Label 4" then Class is Iris-virginica with certainty degree 0.6014319809069216
+
+Fitness: 6
+
+
+Rule 7:
+
+If "X3 is Label 3" and "X4 is Label 3" then Class is Iris-versicolor with certainty degree 0.9508647348528233
+
+Fitness: 5
+
+
+Rule 8:
+
+If "X3 is Label 5" then Class is Iris-virginica with certainty degree 1.0
+
+Fitness: 4
+
+
+Rule 9:
+
+If "X2 is Label 4" then Class is Iris-setosa with certainty degree 0.6454545454545456
+
+Fitness: 3
+
+
+Rule 10:
+
+If "X1 is Label 5" then Class is Iris-virginica with certainty degree 1.0
+
+Fitness: 2
+
+
+Rule 11:
+
+If "X2 is Label 3" and "X4 is Label 3" then Class is Iris-versicolor with certainty degree 0.8661825726141079
+
+Fitness: 2
+
+
+Rule 12:
+
+If "X1 is Label 2" then Class is Iris-setosa with certainty degree 0.43341404358353486
+
+Fitness: 1
+
+
+Rule 13:
+
+If "X2 is Label 5" then Class is Iris-setosa with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 14:
+
+If "X2 is Label 1" then Class is Iris-versicolor with certainty degree 0.5875000000000001
+
+Fitness: 1
+
+
+Rule 15:
+
+If "X1 is Label 2" and "X3 is Label 3" then Class is Iris-versicolor with certainty degree 0.8701562499999997
+
+Fitness: 1
+
+
+Rule 16:
+
+If "X1 is Label 2" and "X4 is Label 3" then Class is Iris-versicolor with certainty degree 0.9569256756756754
+
+Fitness: 1
+
+
+Rule 17:
+
+If "X3 is Label 1" and "X4 is Label 2" then Class is Iris-setosa with certainty degree 1.0
+
+Fitness: 1
+
+
+
+Training Accuracy:	95.55555555555556%
+Test Accuracy:		93.33333333333333%
+

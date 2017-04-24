@@ -1,0 +1,7 @@
+algorithm = Ripper
+inputData = "../datasets/ecoli-10-1tra/ecoli-10-1tra-10-3tra.dat" "../datasets/ecoli-10-1tra/ecoli-10-1tra-10-3tra.dat" "../datasets/ecoli-10-1tra/ecoli-10-1tra-10-3tst.dat" 
+outputData = "../results/Ripper-C.ecoli-10-1tra/result2s0.tra" "../results/Ripper-C.ecoli-10-1tra/result2s0.tst" "../results/Ripper-C.ecoli-10-1tra/result2s0e0.txt"  
+
+seed = 1286082570
+grow_pct = 0.66
+K = 2

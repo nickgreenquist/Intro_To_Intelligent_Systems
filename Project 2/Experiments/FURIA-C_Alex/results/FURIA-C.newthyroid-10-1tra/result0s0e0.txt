@@ -1,0 +1,27 @@
+FURIA rules:
+===========
+
+(thyroxin <= 5.6(-> 5.7)) => class=3 (CF = 0.87)
+(TSH_value >= 11.5(-> 7.7)) => class=3 (CF = 0.84)
+(thyroxin >= 12.9(-> 11.1)) and (TSH_value <= 0.4(-> 0.6)) => class=2 (CF = 0.94)
+(triiodothyronine >= 3.3(-> 3.1)) => class=2 (CF = 0.93)
+(thyroxin <= 12.4(-> 12.9)) and (thyroxin >= 5.7(-> 5.3)) and (TSH_value <= 7.7(-> 11.5)) => class=1 (CF = 0.98)
+(TSH_value >= 0.6(-> 0.4)) and (thyroxin >= 8.1(-> 6.8)) and (T3resin <= 133(-> 144)) => class=1 (CF = 0.99)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(thyroxin <= 5.6(-> 5.7)) => class=3 (CF = 0.87)
+(TSH_value >= 11.5(-> 7.7)) => class=3 (CF = 0.84)
+(thyroxin >= 12.9(-> 11.1)) and (TSH_value <= 0.4(-> 0.6)) => class=2 (CF = 0.94)
+(triiodothyronine >= 3.3(-> 3.1)) => class=2 (CF = 0.93)
+(thyroxin <= 12.4(-> 12.9)) and (thyroxin >= 5.7(-> 5.3)) and (TSH_value <= 7.7(-> 11.5)) => class=1 (CF = 0.98)
+(TSH_value >= 0.6(-> 0.4)) and (thyroxin >= 8.1(-> 6.8)) and (T3resin <= 133(-> 144)) => class=1 (CF = 0.99)
+
+Number of Rules : 6
+
+
+
+
+REGLAS = 6

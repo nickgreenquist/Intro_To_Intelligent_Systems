@@ -1,0 +1,27 @@
+@Number of Rules: 13
+if(Pulse5<=0.222 && Pulse6<=0.152) (58/59)
+	output=b
+else if(Pulse27>0.992 && Pulse31<=0.351) (42/42)
+	output=b
+else if(Pulse27>0.988 && Pulse16<=-0.347) (19/19)
+	output=b
+else if(Pulse14<=-0.697) (27/28)
+	output=b
+else if(Pulse8<=-0.673 && Pulse34>-0.447) (18/18)
+	output=b
+else if(Pulse4>0.678 && Pulse11>-0.315) (21/22)
+	output=b
+else if(Pulse23>0.981 && Pulse9<=0.664) (17/17)
+	output=b
+else if(Pulse32>0.868 && Pulse4<=0.054) (19/19)
+	output=b
+else if(Pulse3<=-0.205) (20/20)
+	output=b
+else if(Pulse10<=-0.118 && Pulse9<=0.627 && Pulse3>0.468) (6/6)
+	output=b
+else if(Pulse29<=-1.0) (19/20)
+	output=b
+else if(Pulse4<=-0.173 && Pulse9<=0.258) (10/10)
+	output=b
+else 
+	output=g

@@ -1,0 +1,12 @@
+@Number of rules: 10
+
+1: Class IS L_0 AND Age IS L_0 AND Sex IS L_2: -1.0 with Rule Weight: 0.4570285741018616
+2: Class IS L_1 AND Age IS L_0 AND Sex IS L_0: 1.0 with Rule Weight: 0.22001065759594834
+3: Class IS L_1 AND Age IS L_0 AND Sex IS L_2: -1.0 with Rule Weight: 0.7203871893456355
+4: Class IS L_0 AND Age IS L_2 AND Sex IS L_2: 1.0 with Rule Weight: 1.0
+5: Class IS L_2 AND Age IS L_0 AND Sex IS L_2: -1.0 with Rule Weight: 0.5615774799901736
+6: Class IS L_2 AND Age IS L_0 AND Sex IS L_0: 1.0 with Rule Weight: 0.11179327822361565
+7: Class IS L_0 AND Age IS L_0 AND Sex IS L_0: 1.0 with Rule Weight: 0.8996869118034709
+8: Class IS L_1 AND Age IS L_2 AND Sex IS L_2: -1.0 with Rule Weight: 0.17563998205890724
+9: Class IS L_1 AND Age IS L_2 AND Sex IS L_0: 1.0 with Rule Weight: 0.25662374750732486
+10: Class IS L_0 AND Age IS L_2 AND Sex IS L_0: 1.0 with Rule Weight: 1.0

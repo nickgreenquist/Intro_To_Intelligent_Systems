@@ -1,0 +1,3 @@
+@Number of rules: 1
+
+1: Sex IS L_1 AND Length IS L_1 AND Diameter IS L_1 AND Height IS L_2 AND Whole_weight IS L_0 AND Shucked_weight IS L_0 AND Viscera_weight IS L_0 AND Shell_weight IS L_0: 8 with Rule Weight: 1.0

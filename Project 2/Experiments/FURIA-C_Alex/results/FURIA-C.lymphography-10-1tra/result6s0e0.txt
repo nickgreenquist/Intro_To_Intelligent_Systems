@@ -1,0 +1,33 @@
+FURIA rules:
+===========
+
+ => Class=normal (CF = 0.0)
+ => Class=metastases (CF = 0.0)
+ => Class=metastases (CF = 0.0)
+ => Class=metastases (CF = 0.0)
+ => Class=metastases (CF = 0.0)
+ => Class=malign_lymph (CF = 0.0)
+(Block_of_affere = no) => Class=malign_lymph (CF = 0.64)
+ => Class=malign_lymph (CF = 0.0)
+ => Class=fibrosis (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Lymphatics = normal) => Class=normal (CF = 0.51)
+(Changes_in_node = lac_margin) and (Block_of_affere = yes) and (No_of_nodes_in <= 3(-> 4)) => Class=metastases (CF = 0.98)
+(No_of_nodes_in <= 1(-> 2)) => Class=metastases (CF = 0.81)
+(Changes_in_node = lac_margin) and (Changes_in_lym = round) => Class=metastases (CF = 0.92)
+(Special_forms = chalices) => Class=metastases (CF = 0.82)
+(Changes_in_node = lac_central) => Class=malign_lymph (CF = 0.92)
+(Block_of_affere = no) and (Special_forms = vesicles) and (Changes_in_lym = oval) => Class=malign_lymph (CF = 0.95)
+(Changes_in_node = lacunar) and (Lym_nodes_enlar >= 3(-> 2)) and (Special_forms = vesicles) => Class=malign_lymph (CF = 0.93)
+(Lym_nodes_dimin >= 2(-> 1)) and (By_pass = yes) => Class=fibrosis (CF = 0.68)
+
+Number of Rules : 9
+
+
+
+
+REGLAS = 9

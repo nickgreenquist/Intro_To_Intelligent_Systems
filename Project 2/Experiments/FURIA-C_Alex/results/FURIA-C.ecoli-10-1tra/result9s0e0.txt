@@ -1,0 +1,55 @@
+FURIA rules:
+===========
+
+ => Site=cp (CF = 0.0)
+(Alm1 <= 53(-> 62)) => Site=cp (CF = 0.62)
+(Alm1 <= 49(-> 51)) => Site=cp (CF = 0.68)
+(Alm1 <= 55(-> 61)) => Site=cp (CF = 0.62)
+ => Site=cp (CF = 0.0)
+ => Site=im (CF = 0.0)
+ => Site=im (CF = 0.0)
+ => Site=im (CF = 0.0)
+ => Site=imL (CF = 0.0)
+ => Site=imU (CF = 0.0)
+ => Site=imU (CF = 0.0)
+ => Site=imU (CF = 0.0)
+ => Site=om (CF = 0.0)
+ => Site=om (CF = 0.0)
+(Gvh >= 57(-> 47)) => Site=om (CF = 0.16)
+ => Site=omL (CF = 0.0)
+ => Site=pp (CF = 0.0)
+ => Site=pp (CF = 0.0)
+(Mcg >= 61(-> 57)) => Site=pp (CF = 0.34)
+ => Site=pp (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Alm1 <= 38(-> 39)) and (Mcg <= 54(-> 61)) and (Aac <= 49(-> 51)) => Site=cp (CF = 0.98)
+(Alm1 <= 53(-> 62)) and (Mcg <= 56(-> 57)) and (Gvh <= 38(-> 39)) => Site=cp (CF = 0.98)
+(Alm1 <= 49(-> 51)) and (Mcg <= 41(-> 43)) => Site=cp (CF = 0.94)
+(Alm1 <= 55(-> 61)) and (Mcg <= 52(-> 57)) and (Gvh <= 58(-> 59)) => Site=cp (CF = 0.94)
+(Alm1 <= 38(-> 39)) and (Gvh <= 55(-> 57)) and (Alm1 >= 35(-> 31)) => Site=cp (CF = 0.96)
+(Alm1 >= 61(-> 59)) and (Mcg <= 46(-> 47)) and (Alm2 <= 79(-> 84)) => Site=im (CF = 0.94)
+(Alm2 >= 63(-> 61)) and (Mcg <= 46(-> 47)) and (Mcg >= 12(-> 7)) => Site=im (CF = 0.93)
+(Alm2 >= 66(-> 61)) and (Mcg <= 74(-> 75)) => Site=im (CF = 0.74)
+(Lip <= 1(-> 48)) and (Aac <= 51(-> 54)) => Site=imL (CF = 0.4)
+(Mcg >= 75(-> 74)) and (Alm1 >= 73(-> 71)) => Site=imU (CF = 0.88)
+(Alm2 >= 75(-> 74)) and (Mcg >= 58(-> 45)) and (Alm2 <= 78(-> 79)) and (Aac <= 64(-> 71)) => Site=imU (CF = 0.82)
+(Alm2 >= 62(-> 56)) and (Mcg >= 64(-> 63)) and (Alm2 <= 68(-> 69)) => Site=imU (CF = 0.69)
+(Aac >= 72(-> 71)) and (Gvh >= 59(-> 54)) => Site=om (CF = 0.8)
+(Aac >= 65(-> 63)) and (Alm1 <= 54(-> 58)) and (Alm1 >= 39(-> 28)) => Site=om (CF = 0.85)
+(Gvh >= 57(-> 47)) and (Alm1 <= 33(-> 34)) and (Alm1 >= 33(-> 32)) => Site=om (CF = 0.53)
+(Lip <= 1(-> 48)) and (Mcg >= 66(-> 49)) and (Chg >= 5(-> 1)) => Site=omL (CF = 0.67)
+(Gvh >= 59(-> 58)) and (Aac <= 44(-> 45)) and (Alm1 <= 65(-> 71)) => Site=pp (CF = 0.93)
+(Gvh >= 56(-> 53)) and (Alm1 <= 52(-> 53)) and (Alm1 >= 48(-> 47)) => Site=pp (CF = 0.83)
+(Mcg >= 61(-> 57)) and (Aac <= 47(-> 48)) and (Mcg <= 74(-> 75)) and (Alm1 >= 39(-> 38)) => Site=pp (CF = 0.93)
+(Gvh >= 57(-> 55)) and (Aac <= 51(-> 64)) and (Aac >= 49(-> 48)) and (Mcg >= 63(-> 61)) => Site=pp (CF = 0.78)
+
+Number of Rules : 20
+
+
+
+
+REGLAS = 20

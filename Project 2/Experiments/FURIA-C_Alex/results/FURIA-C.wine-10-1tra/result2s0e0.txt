@@ -1,0 +1,27 @@
+FURIA rules:
+===========
+
+ => Class=1 (CF = 0.0)
+ => Class=2 (CF = 0.0)
+ => Class=2 (CF = 0.0)
+ => Class=2 (CF = 0.0)
+ => Class=2 (CF = 0.0)
+ => Class=3 (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Proline >= 760(-> 714)) and (flavanoids >= 2.19(-> 2.14)) => Class=1 (CF = 0.96)
+(ColorIntensity <= 3.8(-> 3.85)) and (Proline <= 750(-> 830)) => Class=2 (CF = 0.98)
+(Alcohol <= 12.72(-> 12.85)) and (flavanoids >= 1.41(-> 1.36)) => Class=2 (CF = 0.98)
+(Magnesium <= 86(-> 88)) and (Alcohol >= 13.03(-> 12.87)) => Class=2 (CF = 0.84)
+(ColorIntensity <= 3.35(-> 3.52)) => Class=2 (CF = 0.98)
+(flavanoids <= 1.39(-> 1.41)) and (ColorIntensity >= 3.85(-> 3.6)) => Class=3 (CF = 0.97)
+
+Number of Rules : 6
+
+
+
+
+REGLAS = 6

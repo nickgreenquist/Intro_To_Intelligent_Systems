@@ -1,0 +1,23 @@
+FURIA rules:
+===========
+
+(PetalLength <= 1.9(-> 3)) => Class=Iris-setosa (CF = 0.97)
+(SepalWidth <= 2.9(-> 3)) and (PetalLength <= 4.7(-> 4.8)) and (SepalLength >= 4.9(-> 4.5)) => Class=Iris-versicolor (CF = 0.96)
+(PetalLength >= 4.1(-> 1.9)) and (PetalWidth <= 1.6(-> 1.8)) and (PetalLength <= 4.9(-> 5)) => Class=Iris-versicolor (CF = 0.97)
+(PetalLength >= 4.8(-> 4.7)) => Class=Iris-virginica (CF = 0.88)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(PetalLength <= 1.9(-> 3)) => Class=Iris-setosa (CF = 0.97)
+(SepalWidth <= 2.9(-> 3)) and (PetalLength <= 4.7(-> 4.8)) and (SepalLength >= 4.9(-> 4.5)) => Class=Iris-versicolor (CF = 0.96)
+(PetalLength >= 4.1(-> 1.9)) and (PetalWidth <= 1.6(-> 1.8)) and (PetalLength <= 4.9(-> 5)) => Class=Iris-versicolor (CF = 0.97)
+(PetalLength >= 4.8(-> 4.7)) => Class=Iris-virginica (CF = 0.88)
+
+Number of Rules : 4
+
+
+
+
+REGLAS = 4

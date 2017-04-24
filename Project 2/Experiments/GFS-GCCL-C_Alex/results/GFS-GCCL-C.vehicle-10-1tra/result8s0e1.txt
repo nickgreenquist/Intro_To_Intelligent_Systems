@@ -1,0 +1,568 @@
+
+Rule base with 80 rules, 183 variables and 183 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X8 is Label 3" and "X18 is Label 1" then Class is bus with certainty degree 0.7690249912002814
+
+Fitness: 30
+
+
+Rule 2:
+
+If "X8 is Label 3" and "X17 is Label 2" and "X18 is Label 3" then Class is van with certainty degree 0.6138622539309694
+
+Fitness: 22
+
+
+Rule 3:
+
+If "X8 is Label 2" then Class is saab with certainty degree 0.2130081300813009
+
+Fitness: 18
+
+
+Rule 4:
+
+If "X3 is Label 3" and "X4 is Label 3" and "X17 is Label 4" then Class is bus with certainty degree 0.6463764759998937
+
+Fitness: 18
+
+
+Rule 5:
+
+If "X1 is Label 4" and "X2 is Label 4" then Class is saab with certainty degree 0.33164930007367655
+
+Fitness: 17
+
+
+Rule 6:
+
+If "X9 is Label 3" and "X18 is Label 4" then Class is saab with certainty degree 0.44068263143407643
+
+Fitness: 12
+
+
+Rule 7:
+
+If "X7 is Label 1" then Class is van with certainty degree 0.4193754453207542
+
+Fitness: 12
+
+
+Rule 8:
+
+If "X9 is Label 1" and "X18 is Label 5" then Class is van with certainty degree 0.5268817204301075
+
+Fitness: 11
+
+
+Rule 9:
+
+If "X2 is Label 3" and "X18 is Label 2" then Class is bus with certainty degree 0.45795240874019294
+
+Fitness: 10
+
+
+Rule 10:
+
+If "X3 is Label 5" then Class is saab with certainty degree 0.3052743740010655
+
+Fitness: 10
+
+
+Rule 11:
+
+If "X11 is Label 3" then Class is opel with certainty degree 0.23774670795408337
+
+Fitness: 10
+
+
+Rule 12:
+
+If "X2 is Label 3" and "X18 is Label 1" then Class is bus with certainty degree 0.9192924267551132
+
+Fitness: 9
+
+
+Rule 13:
+
+If "X7 is Label 2" and "X8 is Label 3" and "X16 is Label 1" then Class is bus with certainty degree 0.3235225519580465
+
+Fitness: 9
+
+
+Rule 14:
+
+If "X9 is Label 3" then Class is saab with certainty degree 0.2689075630252103
+
+Fitness: 9
+
+
+Rule 15:
+
+If "X7 is Label 4" and "X18 is Label 2" then Class is bus with certainty degree 0.6102140119708909
+
+Fitness: 8
+
+
+Rule 16:
+
+If "X7 is Label 2" and "X8 is Label 3" and "X10 is Label 3" then Class is van with certainty degree 0.2708071779478308
+
+Fitness: 8
+
+
+Rule 17:
+
+If "X3 is Label 3" and "X4 is Label 3" then Class is bus with certainty degree 0.4753664346266775
+
+Fitness: 7
+
+
+Rule 18:
+
+If "X2 is Label 3" and "X7 is Label 2" and "X18 is Label 1" then Class is bus with certainty degree 0.9404170457948028
+
+Fitness: 7
+
+
+Rule 19:
+
+If "X1 is Label 2" and "X7 is Label 2" and "X8 is Label 3" then Class is bus with certainty degree 0.3222501357729586
+
+Fitness: 7
+
+
+Rule 20:
+
+If "X10 is Label 5" then Class is opel with certainty degree 0.7561904761904762
+
+Fitness: 7
+
+
+Rule 21:
+
+If "X16 is Label 4" and "X18 is Label 3" then Class is opel with certainty degree 0.4365477243684261
+
+Fitness: 7
+
+
+Rule 22:
+
+If "X5 is Label 2" and "X8 is Label 3" and "X15 is Label 2" then Class is bus with certainty degree 0.32350814443547327
+
+Fitness: 7
+
+
+Rule 23:
+
+If "X7 is Label 4" and "X11 is Label 3" then Class is opel with certainty degree 0.3168622060378056
+
+Fitness: 6
+
+
+Rule 24:
+
+If "X2 is Label 5" then Class is opel with certainty degree 0.40685358255451703
+
+Fitness: 6
+
+
+Rule 25:
+
+If "X7 is Label 1" and "X16 is Label 2" and "X17 is Label 3" then Class is van with certainty degree 0.740001882172322
+
+Fitness: 6
+
+
+Rule 26:
+
+If "X9 is Label 3" and "X18 is Label 5" then Class is saab with certainty degree 0.7685185185185185
+
+Fitness: 6
+
+
+Rule 27:
+
+If "X7 is Label 1" and "X15 is Label 3" then Class is van with certainty degree 0.5220949931622884
+
+Fitness: 6
+
+
+Rule 28:
+
+If "X8 is Label 3" and "X10 is Label 4" and "X18 is Label 3" then Class is van with certainty degree 0.9739390088077131
+
+Fitness: 6
+
+
+Rule 29:
+
+If "X2 is Label 3" and "X17 is Label 2" and "X18 is Label 3" then Class is van with certainty degree 0.5935552398868712
+
+Fitness: 6
+
+
+Rule 30:
+
+If "X12 is Label 1" and "X17 is Label 4" then Class is van with certainty degree 0.46969388956057484
+
+Fitness: 6
+
+
+Rule 31:
+
+If "X7 is Label 1" and "X16 is Label 1" then Class is van with certainty degree 0.534830065153094
+
+Fitness: 6
+
+
+Rule 32:
+
+If "X4 is Label 3" and "X11 is Label 3" and "X18 is Label 3" then Class is opel with certainty degree 0.32917463331462843
+
+Fitness: 5
+
+
+Rule 33:
+
+If "X1 is Label 2" and "X7 is Label 2" and "X8 is Label 3" and "X14 is Label 2" then Class is bus with certainty degree 0.37236115304301387
+
+Fitness: 5
+
+
+Rule 34:
+
+If "X2 is Label 2" and "X16 is Label 4" then Class is opel with certainty degree 0.3450036469730125
+
+Fitness: 5
+
+
+Rule 35:
+
+If "X7 is Label 2" and "X8 is Label 3" and "X13 is Label 3" and "X18 is Label 1" then Class is bus with certainty degree 0.929465607605609
+
+Fitness: 5
+
+
+Rule 36:
+
+If "X4 is Label 2" and "X11 is Label 4" then Class is bus with certainty degree 0.8601716416264037
+
+Fitness: 5
+
+
+Rule 37:
+
+If "X7 is Label 1" and "X9 is Label 1" and "X16 is Label 2" then Class is van with certainty degree 0.592311740231617
+
+Fitness: 5
+
+
+Rule 38:
+
+If "X1 is Label 5" then Class is saab with certainty degree 0.685925925925926
+
+Fitness: 5
+
+
+Rule 39:
+
+If "X7 is Label 5" then Class is bus with certainty degree 0.9992270531400965
+
+Fitness: 5
+
+
+Rule 40:
+
+If "X7 is Label 1" and "X16 is Label 2" then Class is van with certainty degree 0.5547222503744244
+
+Fitness: 5
+
+
+Rule 41:
+
+If "X1 is Label 4" and "X18 is Label 1" then Class is bus with certainty degree 0.9767827529021558
+
+Fitness: 5
+
+
+Rule 42:
+
+If "X3 is Label 3" and "X5 is Label 2" and "X7 is Label 2" then Class is bus with certainty degree 0.26077906686049196
+
+Fitness: 4
+
+
+Rule 43:
+
+If "X9 is Label 1" and "X16 is Label 2" and "X18 is Label 3" then Class is van with certainty degree 0.5293646021246745
+
+Fitness: 4
+
+
+Rule 44:
+
+If "X9 is Label 3" and "X15 is Label 4" and "X18 is Label 3" then Class is saab with certainty degree 0.5861139197842938
+
+Fitness: 4
+
+
+Rule 45:
+
+If "X9 is Label 3" and "X18 is Label 3" then Class is opel with certainty degree 0.29319371727748694
+
+Fitness: 4
+
+
+Rule 46:
+
+If "X8 is Label 3" and "X14 is Label 2" and "X18 is Label 2" then Class is bus with certainty degree 0.30332488717002043
+
+Fitness: 4
+
+
+Rule 47:
+
+If "X10 is Label 5" and "X18 is Label 3" then Class is opel with certainty degree 0.843193327375633
+
+Fitness: 4
+
+
+Rule 48:
+
+If "X9 is Label 1" and "X17 is Label 3" and "X18 is Label 4" then Class is van with certainty degree 0.4842717420037008
+
+Fitness: 4
+
+
+Rule 49:
+
+If "X7 is Label 2" and "X8 is Label 3" and "X13 is Label 3" and "X18 is Label 3" then Class is van with certainty degree 0.5132005874942511
+
+Fitness: 4
+
+
+Rule 50:
+
+If "X7 is Label 2" and "X8 is Label 3" and "X10 is Label 4" and "X16 is Label 1" then Class is van with certainty degree 0.9833759216591252
+
+Fitness: 3
+
+
+Rule 51:
+
+If "X7 is Label 1" and "X15 is Label 2" then Class is van with certainty degree 0.49293855166122624
+
+Fitness: 3
+
+
+Rule 52:
+
+If "X4 is Label 3" and "X11 is Label 3" then Class is saab with certainty degree 0.26363605286039143
+
+Fitness: 3
+
+
+Rule 53:
+
+If "X16 is Label 4" then Class is opel with certainty degree 0.2596956308296513
+
+Fitness: 3
+
+
+Rule 54:
+
+If "X3 is Label 2" and "X7 is Label 1" then Class is van with certainty degree 0.44440433212996394
+
+Fitness: 3
+
+
+Rule 55:
+
+If "X7 is Label 1" and "X9 is Label 1" and "X15 is Label 2" then Class is van with certainty degree 0.5510206087772846
+
+Fitness: 3
+
+
+Rule 56:
+
+If "X16 is Label 4" and "X17 is Label 3" then Class is saab with certainty degree 0.34116885219362153
+
+Fitness: 3
+
+
+Rule 57:
+
+If "X9 is Label 1" then Class is van with certainty degree 0.2542772861356932
+
+Fitness: 3
+
+
+Rule 58:
+
+If "X3 is Label 3" and "X8 is Label 2" and "X9 is Label 3" then Class is bus with certainty degree 0.5978578024007387
+
+Fitness: 3
+
+
+Rule 59:
+
+If "X9 is Label 1" and "X18 is Label 3" then Class is van with certainty degree 0.35794871794871785
+
+Fitness: 3
+
+
+Rule 60:
+
+If "X11 is Label 4" and "X17 is Label 2" then Class is bus with certainty degree 0.7293164441401346
+
+Fitness: 3
+
+
+Rule 61:
+
+If "X3 is Label 4" and "X8 is Label 3" and "X15 is Label 4" and "X18 is Label 3" then Class is van with certainty degree 0.8438970413344503
+
+Fitness: 3
+
+
+Rule 62:
+
+If "X3 is Label 3" and "X17 is Label 4" then Class is bus with certainty degree 0.2581089711270211
+
+Fitness: 3
+
+
+Rule 63:
+
+If "X2 is Label 5" and "X15 is Label 2" and "X18 is Label 3" then Class is opel with certainty degree 0.6890176304402245
+
+Fitness: 3
+
+
+Rule 64:
+
+If "X5 is Label 1" and "X8 is Label 4" and "X13 is Label 2" and "X15 is Label 2" then Class is van with certainty degree 0.4085235590831604
+
+Fitness: 3
+
+
+Rule 65:
+
+If "X3 is Label 3" and "X13 is Label 3" then Class is bus with certainty degree 0.2782971882938873
+
+Fitness: 3
+
+
+Rule 66:
+
+If "X2 is Label 3" and "X8 is Label 3" and "X15 is Label 2" then Class is bus with certainty degree 0.40724361845051515
+
+Fitness: 3
+
+
+Rule 67:
+
+If "X8 is Label 3" and "X18 is Label 3" then Class is van with certainty degree 0.3044513812453765
+
+Fitness: 3
+
+
+Rule 68:
+
+If "X3 is Label 4" and "X8 is Label 3" and "X18 is Label 3" then Class is van with certainty degree 0.5937028921317232
+
+Fitness: 2
+
+
+Rule 69:
+
+If "X3 is Label 3" and "X4 is Label 3" and "X13 is Label 3" then Class is bus with certainty degree 0.5464715406904559
+
+Fitness: 2
+
+
+Rule 70:
+
+If "X7 is Label 4" and "X10 is Label 4" and "X15 is Label 4" then Class is saab with certainty degree 0.5949487472803534
+
+Fitness: 2
+
+
+Rule 71:
+
+If "X7 is Label 2" and "X8 is Label 3" then Class is bus with certainty degree 0.2088428969965859
+
+Fitness: 2
+
+
+Rule 72:
+
+If "X9 is Label 2" and "X17 is Label 2" and "X18 is Label 3" then Class is van with certainty degree 0.5784556196757351
+
+Fitness: 2
+
+
+Rule 73:
+
+If "X10 is Label 3" and "X18 is Label 1" then Class is bus with certainty degree 0.8426591189491257
+
+Fitness: 2
+
+
+Rule 74:
+
+If "X12 is Label 4" and "X18 is Label 3" then Class is opel with certainty degree 0.5000939538462915
+
+Fitness: 2
+
+
+Rule 75:
+
+If "X12 is Label 5" then Class is bus with certainty degree 1.0
+
+Fitness: 2
+
+
+Rule 76:
+
+If "X6 is Label 4" then Class is van with certainty degree 0.8260869565217391
+
+Fitness: 2
+
+
+Rule 77:
+
+If "X7 is Label 1" and "X14 is Label 1" then Class is van with certainty degree 0.525077873302362
+
+Fitness: 2
+
+
+Rule 78:
+
+If "X5 is Label 5" then Class is van with certainty degree 0.7688172043010753
+
+Fitness: 2
+
+
+Rule 79:
+
+If "X9 is Label 3" and "X15 is Label 5" then Class is saab with certainty degree 0.943502824858757
+
+Fitness: 2
+
+
+Rule 80:
+
+If "X7 is Label 4" and "X15 is Label 5" then Class is saab with certainty degree 1.0
+
+Fitness: 2
+
+
+
+Training Accuracy:	61.811023622047244%
+Test Accuracy:		59.523809523809526%
+

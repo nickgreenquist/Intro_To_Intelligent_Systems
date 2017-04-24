@@ -1,0 +1,57 @@
+FURIA rules:
+===========
+
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+ => Class=van (CF = 0.0)
+(Minor_variance >= 378(-> 376)) and (Max_length_aspect_ratio >= 8(-> 6)) => Class=saab (CF = 0.48)
+(Minor_variance >= 373(-> 371)) and (Major_skewness <= 70(-> 71)) => Class=saab (CF = 0.51)
+ => Class=saab (CF = 0.0)
+ => Class=saab (CF = 0.0)
+ => Class=bus (CF = 0.0)
+ => Class=bus (CF = 0.0)
+ => Class=bus (CF = 0.0)
+ => Class=bus (CF = 0.0)
+ => Class=bus (CF = 0.0)
+(Distance_circularity >= 91(-> 90)) and (Compactness <= 103(-> 104)) => Class=opel (CF = 0.62)
+(Minor_variance >= 388(-> 387)) and (Max_length_aspect_ratio >= 8(-> 7)) and (Compactness <= 103(-> 104)) => Class=opel (CF = 0.62)
+(Major_skewness <= 67(-> 68)) and (Major_variance >= 174(-> 172)) => Class=opel (CF = 0.47)
+ => Class=opel (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Elongatedness >= 43(-> 42)) and (Max_length_aspect_ratio >= 9(-> 8)) and (Distance_circularity >= 73(-> 72)) => Class=van (CF = 0.98)
+(Minor_variance <= 309(-> 314)) and (Length_rectangular >= 132(-> 131)) and (Compactness >= 90(-> 89)) and (Radius_ratio <= 144(-> 145)) => Class=van (CF = 0.95)
+(Minor_variance <= 309(-> 311)) and (Length_rectangular >= 133(-> 128)) and (Praxis_aspect_ratio >= 60(-> 58)) and (Max_length_aspect_ratio >= 8(-> 7)) => Class=van (CF = 0.95)
+(Scatter_ratio <= 137(-> 138)) and (Praxis_rectangular <= 17(-> 18)) and (Length_rectangular >= 126(-> 125)) and (Minor_skewness <= 17(-> 20)) => Class=van (CF = 0.94)
+(Praxis_rectangular <= 18(-> 19)) and (Length_rectangular >= 129(-> 128)) and (Gyration_radius <= 138(-> 139)) and (Minor_skewness >= 3(-> 1)) => Class=van (CF = 0.93)
+(Scatter_ratio <= 137(-> 138)) and (Length_rectangular >= 137(-> 136)) and (Major_skewness >= 64(-> 61)) => Class=van (CF = 0.96)
+(Scatter_ratio <= 123(-> 125)) and (Major_variance >= 138(-> 137)) and (Compactness <= 87(-> 89)) => Class=van (CF = 0.9)
+(Major_variance <= 177(-> 178)) and (Scatter_ratio >= 160(-> 157)) => Class=van (CF = 0.93)
+(Minor_variance >= 378(-> 376)) and (Max_length_aspect_ratio >= 8(-> 6)) and (Compactness >= 108(-> 107)) and (Gyration_radius >= 212(-> 210)) => Class=saab (CF = 0.94)
+(Minor_variance >= 373(-> 371)) and (Major_skewness <= 70(-> 71)) and (Praxis_aspect_ratio <= 61(-> 62)) and (Praxis_aspect_ratio >= 58(-> 57)) => Class=saab (CF = 0.77)
+(Compactness >= 104(-> 103)) and (Hollows_ratio >= 196(-> 191)) and (Circularity <= 54(-> 55)) => Class=saab (CF = 0.76)
+(Length_rectangular <= 130(-> 131)) and (Minor_variance >= 263(-> 261)) and (Radius_ratio <= 136(-> 138)) => Class=saab (CF = 0.88)
+(Max_length_aspect_ratio <= 7(-> 8)) and (Minor_variance >= 317(-> 291)) and (Praxis_aspect_ratio >= 63(-> 62)) and (Distance_circularity <= 79(-> 80)) => Class=bus (CF = 0.98)
+(Major_skewness >= 79(-> 78)) and (Circularity >= 42(-> 41)) and (Hollows_ratio <= 190(-> 191)) => Class=bus (CF = 0.98)
+(Max_length_aspect_ratio <= 7(-> 8)) and (Circularity >= 42(-> 41)) and (Elongatedness <= 36(-> 37)) => Class=bus (CF = 0.97)
+(Distance_circularity <= 73(-> 74)) and (Minor_variance >= 299(-> 296)) and (Length_rectangular >= 139(-> 138)) and (Praxis_aspect_ratio >= 59(-> 58)) => Class=bus (CF = 0.91)
+(Praxis_aspect_ratio >= 69(-> 68)) and (Major_kurtosis >= 192(-> 190)) => Class=bus (CF = 0.95)
+(Distance_circularity >= 91(-> 90)) and (Compactness <= 103(-> 104)) and (Length_rectangular >= 172(-> 171)) => Class=opel (CF = 0.92)
+(Minor_variance >= 388(-> 387)) and (Max_length_aspect_ratio >= 8(-> 7)) and (Compactness <= 103(-> 104)) and (Scatter_ratio >= 189(-> 188)) => Class=opel (CF = 0.75)
+(Major_skewness <= 67(-> 68)) and (Major_variance >= 174(-> 172)) and (Compactness <= 92(-> 93)) => Class=opel (CF = 0.62)
+(Length_rectangular <= 133(-> 137)) and (Major_kurtosis <= 178(-> 179)) => Class=opel (CF = 0.81)
+
+Number of Rules : 21
+
+
+
+
+REGLAS = 21

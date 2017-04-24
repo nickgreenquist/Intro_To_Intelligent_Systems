@@ -1,0 +1,53 @@
+FURIA rules:
+===========
+
+(FTI <= 0.064(-> 0.066)) and (TSH >= 0.0097(-> 0.00939)) and (T3 <= 0.011(-> 0.012)) => Class=1 (CF = 0.97)
+(FTI <= 0.064(-> 0.06451)) and (TSH >= 0.018(-> 0.014)) => Class=1 (CF = 0.94)
+(FTI <= 0.061(-> 0.066)) and (TSH >= 0.0062(-> 0.0058)) and (T3 <= 0.02(-> 0.023)) and (T4U <= 0.119(-> 0.125)) => Class=1 (CF = 0.95)
+(FTI <= 0.02983(-> 0.06451)) and (TSH >= 0.035(-> 0.01679)) and (Age <= 0.65(-> 0.68)) => Class=1 (CF = 0.94)
+(FTI <= 0.061(-> 0.06451)) and (TSH >= 0.0077(-> 0.0058)) => Class=1 (CF = 0.9)
+(TSH >= 0.0061(-> 0.006)) => Class=2 (CF = 0.52)
+(TSH >= 0.0061(-> 0.006)) => Class=2 (CF = 0.52)
+(TSH >= 0.0062(-> 0.0053)) => Class=2 (CF = 0.49)
+(TSH >= 0.016(-> 0.015)) => Class=2 (CF = 0.3)
+ => Class=3 (CF = 0.0)
+ => Class=3 (CF = 0.0)
+ => Class=3 (CF = 0.0)
+(Thyroid_surgery >= 1(-> 0)) => Class=3 (CF = 0.96)
+ => Class=3 (CF = 0.0)
+ => Class=3 (CF = 0.0)
+ => Class=3 (CF = 0.0)
+(Thyroid_surgery >= 1(-> 0)) => Class=3 (CF = 0.96)
+ => Class=3 (CF = 0.0)
+(FTI <= 0.068(-> 0.074)) => Class=3 (CF = 0.56)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(FTI <= 0.064(-> 0.066)) and (TSH >= 0.0097(-> 0.00939)) and (T3 <= 0.011(-> 0.012)) and (Thyroid_surgery <= 0(-> 1)) => Class=1 (CF = 0.98)
+(FTI <= 0.064(-> 0.06451)) and (TSH >= 0.018(-> 0.014)) and (TT4 >= 0.038(-> 0.037)) => Class=1 (CF = 0.96)
+(FTI <= 0.061(-> 0.066)) and (TSH >= 0.0062(-> 0.0058)) and (T3 <= 0.02(-> 0.023)) and (T4U <= 0.119(-> 0.125)) and (TSH <= 0.01029(-> 0.01679)) => Class=1 (CF = 0.83)
+(FTI <= 0.02983(-> 0.06451)) and (TSH >= 0.035(-> 0.01679)) and (Age <= 0.65(-> 0.68)) and (Thyroid_surgery <= 0(-> 1)) => Class=1 (CF = 0.97)
+(FTI <= 0.061(-> 0.06451)) and (TSH >= 0.0077(-> 0.0058)) and (Age >= 0.52(-> 0.51)) and (Age <= 0.61(-> 0.68)) and (On_antithyroid_medication <= 0(-> 1)) => Class=1 (CF = 0.95)
+(TSH >= 0.0061(-> 0.006)) and (FTI >= 0.06493(-> 0.064)) and (On_thyroxine <= 0(-> 1)) and (T3 <= 0.019(-> 0.02)) and (Thyroid_surgery <= 0(-> 1)) => Class=2 (CF = 0.98)
+(TSH >= 0.0061(-> 0.006)) and (FTI >= 0.065(-> 0.063)) and (On_thyroxine <= 0(-> 1)) and (TT4 <= 0.141(-> 0.148)) and (Thyroid_surgery <= 0(-> 1)) and (TT4 >= 0.062(-> 0.061)) and (T3 <= 0.03(-> 0.031)) => Class=2 (CF = 0.99)
+(TSH >= 0.0062(-> 0.0053)) and (T3 >= 0.027(-> 0.026)) and (T4U >= 0.123(-> 0.121)) and (TT4 <= 0.139(-> 0.153)) => Class=2 (CF = 0.81)
+(TSH >= 0.016(-> 0.015)) and (FTI >= 0.125(-> 0.108)) and (TSH <= 0.019(-> 0.021)) => Class=2 (CF = 0.74)
+(TSH <= 0.006(-> 0.0061)) => Class=3 (CF = 1.0)
+(On_thyroxine >= 1(-> 0)) and (FTI >= 0.06451(-> 0.064)) => Class=3 (CF = 1.0)
+(TT4 >= 0.151(-> 0.15)) => Class=3 (CF = 1.0)
+(Thyroid_surgery >= 1(-> 0)) and (TT4 >= 0.074(-> 0.065)) => Class=3 (CF = 1.0)
+(T3 >= 0.027(-> 0.026)) and (TT4 <= 0.063(-> 0.074)) => Class=3 (CF = 0.99)
+(T3 >= 0.0201(-> 0.02)) and (T3 <= 0.0206(-> 0.0208)) => Class=3 (CF = 1.0)
+(T3 >= 0.031(-> 0.029)) and (T4U <= 0.11(-> 0.116)) => Class=3 (CF = 1.0)
+(Thyroid_surgery >= 1(-> 0)) and (Age <= 0.17(-> 0.28)) => Class=3 (CF = 0.98)
+(On_antithyroid_medication >= 1(-> 0)) and (TT4 <= 0.045(-> 0.064)) => Class=3 (CF = 0.99)
+(FTI <= 0.068(-> 0.074)) and (TSH <= 0.01(-> 0.01029)) and (T4U >= 0.109(-> 0.103)) and (Sex <= 0(-> 1)) => Class=3 (CF = 1.0)
+
+Number of Rules : 19
+
+
+
+
+REGLAS = 19

@@ -1,0 +1,15 @@
+
+Rule base with 1 rules, 0 variables and 0 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If then Class is H with certainty degree 0.1725
+
+Fitness: 298
+
+
+
+Training Accuracy:	31.041666666666668%
+Test Accuracy:		31.132075471698112%
+

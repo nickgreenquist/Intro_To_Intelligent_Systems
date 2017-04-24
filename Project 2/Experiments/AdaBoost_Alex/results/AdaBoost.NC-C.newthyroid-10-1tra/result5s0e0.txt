@@ -1,0 +1,92 @@
+@Classifier number 0: 
+Number of Rules: 8
+Rule[1]: IF  thyroxin <= 5.6  THEN Class = 3 (0.12886597/0.13402061)
+Rule[2]: IF  thyroxin > 5.6 AND  triiodothyronine <= 2.6 AND  thyroxin <= 14.3 AND  thyroidstimulating <= 2.3  THEN Class = 1 (0.6494837/0.6546383)
+Rule[3]: IF  thyroxin > 5.6 AND  triiodothyronine <= 2.6 AND  thyroxin <= 14.3 AND  thyroidstimulating > 2.3 AND  T3resin <= 113.0  THEN Class = 1 (0.0154639175/0.0154639175)
+Rule[4]: IF  thyroxin > 5.6 AND  triiodothyronine <= 2.6 AND  thyroxin <= 14.3 AND  thyroidstimulating > 2.3 AND  T3resin > 113.0  THEN Class = 3 (0.010309278/0.010309278)
+Rule[5]: IF  thyroxin > 5.6 AND  triiodothyronine <= 2.6 AND  thyroxin > 14.3 AND  TSH_value <= 0.9  THEN Class = 2 (0.025773196/0.025773196)
+Rule[6]: IF  thyroxin > 5.6 AND  triiodothyronine <= 2.6 AND  thyroxin > 14.3 AND  TSH_value > 0.9  THEN Class = 1 (0.010309278/0.010309278)
+Rule[7]: IF  thyroxin > 5.6 AND  triiodothyronine > 2.6 AND  TSH_value <= 1.2  THEN Class = 2 (0.13402061/0.13402061)
+Rule[8]: IF  thyroxin > 5.6 AND  triiodothyronine > 2.6 AND  TSH_value > 1.2  THEN Class = 1 (0.0154639175/0.0154639175)
+
+@Classifier number 1: 
+Number of Rules: 9
+Rule[1]: IF  TSH_value <= 0.4  THEN Class = 2 (2.1263957/2.576954)
+Rule[2]: IF  TSH_value > 0.4 AND  thyroidstimulating <= 3.7 AND  TSH_value <= 4.7 AND  triiodothyronine <= 0.8 AND  thyroxin <= 4.2  THEN Class = 3 (0.037546538/0.037546538)
+Rule[3]: IF  TSH_value > 0.4 AND  thyroidstimulating <= 3.7 AND  TSH_value <= 4.7 AND  triiodothyronine <= 0.8 AND  thyroxin > 4.2  THEN Class = 1 (0.11263961/0.11263961)
+Rule[4]: IF  TSH_value > 0.4 AND  thyroidstimulating <= 3.7 AND  TSH_value <= 4.7 AND  triiodothyronine > 0.8 AND  triiodothyronine <= 2.5  THEN Class = 1 (4.9048467/4.9048467)
+Rule[5]: IF  TSH_value > 0.4 AND  thyroidstimulating <= 3.7 AND  TSH_value <= 4.7 AND  triiodothyronine > 0.8 AND  triiodothyronine > 2.5 AND  TSH_value <= 1.0  THEN Class = 2 (0.037546538/0.037546538)
+Rule[6]: IF  TSH_value > 0.4 AND  thyroidstimulating <= 3.7 AND  TSH_value <= 4.7 AND  triiodothyronine > 0.8 AND  triiodothyronine > 2.5 AND  TSH_value > 1.0  THEN Class = 1 (0.11263961/0.11263961)
+Rule[7]: IF  TSH_value > 0.4 AND  thyroidstimulating <= 3.7 AND  TSH_value > 4.7 AND  thyroxin <= 5.9  THEN Class = 3 (0.11263961/0.11263961)
+Rule[8]: IF  TSH_value > 0.4 AND  thyroidstimulating <= 3.7 AND  TSH_value > 4.7 AND  thyroxin > 5.9  THEN Class = 1 (0.4505585/0.4505585)
+Rule[9]: IF  TSH_value > 0.4 AND  thyroidstimulating > 3.7  THEN Class = 3 (0.8635702/0.8635702)
+
+@Classifier number 2: 
+Number of Rules: 11
+Rule[1]: IF  thyroidstimulating <= 3.7 AND  T3resin <= 97.0  THEN Class = 2 (1.7133842/1.9386632)
+Rule[2]: IF  thyroidstimulating <= 3.7 AND  T3resin > 97.0 AND  triiodothyronine <= 2.9 AND  thyroxin <= 14.3 AND  TSH_value <= 4.7 AND  triiodothyronine <= 0.9 AND  thyroxin <= 4.2  THEN Class = 3 (0.037546538/0.037546538)
+Rule[3]: IF  thyroidstimulating <= 3.7 AND  T3resin > 97.0 AND  triiodothyronine <= 2.9 AND  thyroxin <= 14.3 AND  TSH_value <= 4.7 AND  triiodothyronine <= 0.9 AND  thyroxin > 4.2  THEN Class = 1 (0.11263961/0.11263961)
+Rule[4]: IF  thyroidstimulating <= 3.7 AND  T3resin > 97.0 AND  triiodothyronine <= 2.9 AND  thyroxin <= 14.3 AND  TSH_value <= 4.7 AND  triiodothyronine > 0.9  THEN Class = 1 (10.154499/10.154499)
+Rule[5]: IF  thyroidstimulating <= 3.7 AND  T3resin > 97.0 AND  triiodothyronine <= 2.9 AND  thyroxin <= 14.3 AND  TSH_value > 4.7 AND  thyroxin <= 5.9  THEN Class = 3 (0.075093076/0.075093076)
+Rule[6]: IF  thyroidstimulating <= 3.7 AND  T3resin > 97.0 AND  triiodothyronine <= 2.9 AND  thyroxin <= 14.3 AND  TSH_value > 4.7 AND  thyroxin > 5.9  THEN Class = 1 (0.41301197/0.41301197)
+Rule[7]: IF  thyroidstimulating <= 3.7 AND  T3resin > 97.0 AND  triiodothyronine <= 2.9 AND  thyroxin > 14.3 AND  T3resin <= 113.0  THEN Class = 2 (0.11263961/0.11263961)
+Rule[8]: IF  thyroidstimulating <= 3.7 AND  T3resin > 97.0 AND  triiodothyronine <= 2.9 AND  thyroxin > 14.3 AND  T3resin > 113.0  THEN Class = 1 (0.075093076/0.075093076)
+Rule[9]: IF  thyroidstimulating <= 3.7 AND  T3resin > 97.0 AND  triiodothyronine > 2.9 AND  thyroidstimulating <= 1.8  THEN Class = 2 (0.33791888/0.33791888)
+Rule[10]: IF  thyroidstimulating <= 3.7 AND  T3resin > 97.0 AND  triiodothyronine > 2.9 AND  thyroidstimulating > 1.8  THEN Class = 1 (0.037546538/0.037546538)
+Rule[11]: IF  thyroidstimulating > 3.7  THEN Class = 3 (0.8635702/0.8635702)
+
+@Classifier number 3: 
+Number of Rules: 4
+Rule[1]: IF  TSH_value <= 6.8 AND  triiodothyronine <= 2.6 AND  thyroidstimulating <= 3.7  THEN Class = 1 (14.324168/15.208166)
+Rule[2]: IF  TSH_value <= 6.8 AND  triiodothyronine <= 2.6 AND  thyroidstimulating > 3.7  THEN Class = 3 (0.24122638/0.24122638)
+Rule[3]: IF  TSH_value <= 6.8 AND  triiodothyronine > 2.6  THEN Class = 2 (1.5679711/1.7488908)
+Rule[4]: IF  TSH_value > 6.8  THEN Class = 3 (2.1458254/2.2664385)
+
+@Classifier number 4: 
+Number of Rules: 7
+Rule[1]: IF  TSH_value <= 0.4  THEN Class = 2 (3.5188496/4.0489006)
+Rule[2]: IF  TSH_value > 0.4 AND  thyroxin <= 5.6  THEN Class = 3 (1.9547871/2.0529475)
+Rule[3]: IF  TSH_value > 0.4 AND  thyroxin > 5.6 AND  thyroidstimulating <= 2.7 AND  thyroxin <= 13.5  THEN Class = 1 (6.4610877/6.4610877)
+Rule[4]: IF  TSH_value > 0.4 AND  thyroxin > 5.6 AND  thyroidstimulating <= 2.7 AND  thyroxin > 13.5 AND  TSH_value <= 1.0  THEN Class = 2 (0.033170197/0.033170197)
+Rule[5]: IF  TSH_value > 0.4 AND  thyroxin > 5.6 AND  thyroidstimulating <= 2.7 AND  thyroxin > 13.5 AND  TSH_value > 1.0  THEN Class = 1 (0.099510595/0.099510595)
+Rule[6]: IF  TSH_value > 0.4 AND  thyroxin > 5.6 AND  thyroidstimulating > 2.7 AND  T3resin <= 113.0  THEN Class = 1 (0.066340394/0.066340394)
+Rule[7]: IF  TSH_value > 0.4 AND  thyroxin > 5.6 AND  thyroidstimulating > 2.7 AND  T3resin > 113.0  THEN Class = 3 (0.066340394/0.066340394)
+
+@Classifier number 5: 
+Number of Rules: 3
+Rule[1]: IF  thyroxin <= 12.9 AND  thyroidstimulating <= 3.7  THEN Class = 1 (13.247461/14.652138)
+Rule[2]: IF  thyroxin <= 12.9 AND  thyroidstimulating > 3.7  THEN Class = 3 (1.0136142/1.0136142)
+Rule[3]: IF  thyroxin > 12.9  THEN Class = 2 (2.276318/2.540739)
+
+@Classifier number 6: 
+Number of Rules: 3
+Rule[1]: IF  thyroxin <= 5.6  THEN Class = 3 (4.388849/4.647695)
+Rule[2]: IF  thyroxin > 5.6 AND  TSH_value <= 0.4  THEN Class = 2 (2.8360047/4.2337375)
+Rule[3]: IF  thyroxin > 5.6 AND  TSH_value > 0.4  THEN Class = 1 (5.9962626/6.0913243)
+
+@Classifier number 7: 
+Number of Rules: 6
+Rule[1]: IF  TSH_value <= 4.6 AND  triiodothyronine <= 2.6 AND  thyroxin <= 3.7  THEN Class = 3 (0.48383874/0.48383874)
+Rule[2]: IF  TSH_value <= 4.6 AND  triiodothyronine <= 2.6 AND  thyroxin > 3.7 AND  thyroxin <= 14.3 AND  T3resin <= 92.0  THEN Class = 2 (0.17622168/0.28747138)
+Rule[3]: IF  TSH_value <= 4.6 AND  triiodothyronine <= 2.6 AND  thyroxin > 3.7 AND  thyroxin <= 14.3 AND  T3resin > 92.0  THEN Class = 1 (10.216875/10.216875)
+Rule[4]: IF  TSH_value <= 4.6 AND  triiodothyronine <= 2.6 AND  thyroxin > 3.7 AND  thyroxin > 14.3  THEN Class = 2 (0.3844594/0.7452809)
+Rule[5]: IF  TSH_value <= 4.6 AND  triiodothyronine > 2.6  THEN Class = 2 (1.4808706/1.6346545)
+Rule[6]: IF  TSH_value > 4.6  THEN Class = 3 (2.277754/2.7801483)
+
+@Classifier number 8: 
+Number of Rules: 3
+Rule[1]: IF  thyroxin <= 6.8  THEN Class = 3 (1.6080794/2.7172723)
+Rule[2]: IF  thyroxin > 6.8 AND  triiodothyronine <= 3.1  THEN Class = 1 (10.636174/11.2431135)
+Rule[3]: IF  thyroxin > 6.8 AND  triiodothyronine > 3.1  THEN Class = 2 (0.79265267/0.79265267)
+
+@Classifier number 9: 
+Number of Rules: 4
+Rule[1]: IF  TSH_value <= 0.6 AND  thyroxin <= 10.6  THEN Class = 1 (0.48314816/0.48314816)
+Rule[2]: IF  TSH_value <= 0.6 AND  thyroxin > 10.6  THEN Class = 2 (3.2401187/3.4115226)
+Rule[3]: IF  TSH_value > 0.6 AND  thyroidstimulating <= 3.7  THEN Class = 1 (9.769234/10.083924)
+Rule[4]: IF  TSH_value > 0.6 AND  thyroidstimulating > 3.7  THEN Class = 3 (0.6564195/0.6564195)
+
+Accuracy in training: 0.30412371134020616
+Accuracy in test: 0.19047619047619047
+AUC in training: 0.8941619585687383
+AUC in test: 0.8944444444444445

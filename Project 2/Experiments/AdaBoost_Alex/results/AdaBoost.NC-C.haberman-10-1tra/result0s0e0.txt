@@ -1,0 +1,139 @@
+@Classifier number 0: 
+Number of Rules: 1
+Rule[1]: IF  THEN Class = negative (0.7381812/0.9999991)
+
+@Classifier number 1: 
+Number of Rules: 17
+Rule[1]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age <= 38.0  THEN Class = negative (4.600903/5.600902)
+Rule[2]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age <= 72.0 AND  Year <= 68.0 AND  Year <= 59.0  THEN Class = positive (11.0/17.35363)
+Rule[3]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age <= 72.0 AND  Year <= 68.0 AND  Year > 59.0 AND  Positive <= 3.0 AND  Age <= 41.0  THEN Class = positive (3.0/4.0954533)
+Rule[4]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age <= 72.0 AND  Year <= 68.0 AND  Year > 59.0 AND  Positive <= 3.0 AND  Age > 41.0 AND  Year <= 66.0 AND  Year <= 61.0  THEN Class = negative (5.2581744/7.258173)
+Rule[5]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age <= 72.0 AND  Year <= 68.0 AND  Year > 59.0 AND  Positive <= 3.0 AND  Age > 41.0 AND  Year <= 66.0 AND  Year > 61.0 AND  Positive <= 2.0 AND  Positive <= 1.0 AND  Year <= 65.0  THEN Class = positive (10.0/17.44908)
+Rule[6]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age <= 72.0 AND  Year <= 68.0 AND  Year > 59.0 AND  Positive <= 3.0 AND  Age > 41.0 AND  Year <= 66.0 AND  Year > 61.0 AND  Positive <= 2.0 AND  Positive <= 1.0 AND  Year > 65.0  THEN Class = negative (2.8481781/3.8481786)
+Rule[7]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age <= 72.0 AND  Year <= 68.0 AND  Year > 59.0 AND  Positive <= 3.0 AND  Age > 41.0 AND  Year <= 66.0 AND  Year > 61.0 AND  Positive <= 2.0 AND  Positive > 1.0  THEN Class = negative (0.8763624/0.8763624)
+Rule[8]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age <= 72.0 AND  Year <= 68.0 AND  Year > 59.0 AND  Positive <= 3.0 AND  Age > 41.0 AND  Year <= 66.0 AND  Year > 61.0 AND  Positive > 2.0  THEN Class = positive (2.0/2.4381812)
+Rule[9]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age <= 72.0 AND  Year <= 68.0 AND  Year > 59.0 AND  Positive <= 3.0 AND  Age > 41.0 AND  Year > 66.0  THEN Class = negative (4.162722/5.162721)
+Rule[10]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age <= 72.0 AND  Year <= 68.0 AND  Year > 59.0 AND  Positive > 3.0  THEN Class = negative (1.9718153/1.9718153)
+Rule[11]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age <= 72.0 AND  Year > 68.0  THEN Class = positive (3.0/3.6572719)
+Rule[12]: IF  Positive <= 4.0 AND  Age <= 77.0 AND  Age > 38.0 AND  Age > 72.0  THEN Class = negative (1.3145436/1.3145436)
+Rule[13]: IF  Positive <= 4.0 AND  Age > 77.0  THEN Class = positive (2.0/2.0)
+Rule[14]: IF  Positive > 4.0 AND  Age <= 42.0  THEN Class = positive (3.0/5.409997)
+Rule[15]: IF  Positive > 4.0 AND  Age > 42.0 AND  Year <= 68.0 AND  Age <= 69.0  THEN Class = positive (33.0/37.162727)
+Rule[16]: IF  Positive > 4.0 AND  Age > 42.0 AND  Year <= 68.0 AND  Age > 69.0  THEN Class = negative (0.4381812/0.4381812)
+Rule[17]: IF  Positive > 4.0 AND  Age > 42.0 AND  Year > 68.0  THEN Class = negative (0.4381812/0.4381812)
+
+@Classifier number 2: 
+Number of Rules: 9
+Rule[1]: IF  Positive <= 0.0  THEN Class = negative (13.681546/18.754211)
+Rule[2]: IF  Positive > 0.0 AND  Age <= 43.0  THEN Class = negative (4.4426093/5.4668264)
+Rule[3]: IF  Positive > 0.0 AND  Age > 43.0 AND  Age <= 60.0 AND  Positive <= 1.0  THEN Class = negative (2.4654875/2.8751743)
+Rule[4]: IF  Positive > 0.0 AND  Age > 43.0 AND  Age <= 60.0 AND  Positive > 1.0 AND  Positive <= 35.0 AND  Age <= 57.0 AND  Positive <= 22.0 AND  Positive <= 15.0  THEN Class = positive (5.530774/8.8277445)
+Rule[5]: IF  Positive > 0.0 AND  Age > 43.0 AND  Age <= 60.0 AND  Positive > 1.0 AND  Positive <= 35.0 AND  Age <= 57.0 AND  Positive <= 22.0 AND  Positive > 15.0  THEN Class = negative (0.70215106/1.1118379)
+Rule[6]: IF  Positive > 0.0 AND  Age > 43.0 AND  Age <= 60.0 AND  Positive > 1.0 AND  Positive <= 35.0 AND  Age <= 57.0 AND  Positive > 22.0  THEN Class = positive (0.61453027/0.61453027)
+Rule[7]: IF  Positive > 0.0 AND  Age > 43.0 AND  Age <= 60.0 AND  Positive > 1.0 AND  Positive <= 35.0 AND  Age > 57.0  THEN Class = negative (0.6625775/1.0722643)
+Rule[8]: IF  Positive > 0.0 AND  Age > 43.0 AND  Age <= 60.0 AND  Positive > 1.0 AND  Positive > 35.0  THEN Class = negative (0.2190906/0.2190906)
+Rule[9]: IF  Positive > 0.0 AND  Age > 43.0 AND  Age > 60.0  THEN Class = positive (5.2532783/6.837098)
+
+@Classifier number 3: 
+Number of Rules: 11
+Rule[1]: IF  Age <= 45.0 AND  Positive <= 0.0  THEN Class = positive (2.2560544/2.5467815)
+Rule[2]: IF  Age <= 45.0 AND  Positive > 0.0  THEN Class = negative (0.46265116/0.80465937)
+Rule[3]: IF  Age > 45.0 AND  Age <= 59.0 AND  Positive <= 12.0  THEN Class = negative (1.8249664/2.3638515)
+Rule[4]: IF  Age > 45.0 AND  Age <= 59.0 AND  Positive > 12.0 AND  Year <= 65.0 AND  Positive <= 19.0 AND  Positive <= 16.0  THEN Class = positive (0.03474299/0.03474299)
+Rule[5]: IF  Age > 45.0 AND  Age <= 59.0 AND  Positive > 12.0 AND  Year <= 65.0 AND  Positive <= 19.0 AND  Positive > 16.0  THEN Class = negative (0.012386473/0.012386473)
+Rule[6]: IF  Age > 45.0 AND  Age <= 59.0 AND  Positive > 12.0 AND  Year <= 65.0 AND  Positive > 19.0  THEN Class = positive (0.13716471/0.13716471)
+Rule[7]: IF  Age > 45.0 AND  Age <= 59.0 AND  Positive > 12.0 AND  Year > 65.0 AND  Positive <= 16.0  THEN Class = positive (0.011580996/0.011580996)
+Rule[8]: IF  Age > 45.0 AND  Age <= 59.0 AND  Positive > 12.0 AND  Year > 65.0 AND  Positive > 16.0  THEN Class = negative (0.034922097/0.034922097)
+Rule[9]: IF  Age > 45.0 AND  Age > 59.0 AND  Positive <= 20.0 AND  Age <= 65.0  THEN Class = positive (0.92959774/1.3584763)
+Rule[10]: IF  Age > 45.0 AND  Age > 59.0 AND  Positive <= 20.0 AND  Age > 65.0  THEN Class = negative (0.4752776/0.70997715)
+Rule[11]: IF  Age > 45.0 AND  Age > 59.0 AND  Positive > 20.0  THEN Class = negative (0.12193178/0.12193178)
+
+@Classifier number 4: 
+Number of Rules: 17
+Rule[1]: IF  Age <= 57.0 AND  Age <= 33.0  THEN Class = negative (0.16403195/0.16403195)
+Rule[2]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age <= 34.0  THEN Class = positive (1.1322346/1.212359)
+Rule[3]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age <= 40.0  THEN Class = negative (0.6990869/0.8540819)
+Rule[4]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year <= 61.0 AND  Positive <= 8.0  THEN Class = negative (0.63136137/0.8335455)
+Rule[5]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year <= 61.0 AND  Positive > 8.0  THEN Class = positive (0.35932824/0.38367164)
+Rule[6]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year > 61.0 AND  Age <= 43.0  THEN Class = positive (0.20051572/0.38642406)
+Rule[7]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year > 61.0 AND  Age > 43.0 AND  Year <= 66.0 AND  Age <= 45.0  THEN Class = positive (1.1920426/1.2295315)
+Rule[8]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year > 61.0 AND  Age > 43.0 AND  Year <= 66.0 AND  Age > 45.0 AND  Year <= 65.0  THEN Class = positive (1.0512314/1.3020304)
+Rule[9]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year > 61.0 AND  Age > 43.0 AND  Year <= 66.0 AND  Age > 45.0 AND  Year > 65.0  THEN Class = negative (0.13098805/0.16089202)
+Rule[10]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year > 61.0 AND  Age > 43.0 AND  Year > 66.0 AND  Positive <= 2.0  THEN Class = negative (0.14101937/0.14101937)
+Rule[11]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year > 61.0 AND  Age > 43.0 AND  Year > 66.0 AND  Positive > 2.0 AND  Positive <= 15.0 AND  Age <= 54.0 AND  Positive <= 3.0  THEN Class = positive (0.05980796/0.05980796)
+Rule[12]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year > 61.0 AND  Age > 43.0 AND  Year > 66.0 AND  Positive > 2.0 AND  Positive <= 15.0 AND  Age <= 54.0 AND  Positive > 3.0 AND  Positive <= 5.0  THEN Class = negative (0.01994634/0.01994634)
+Rule[13]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year > 61.0 AND  Age > 43.0 AND  Year > 66.0 AND  Positive > 2.0 AND  Positive <= 15.0 AND  Age <= 54.0 AND  Positive > 3.0 AND  Positive > 5.0  THEN Class = positive (0.05980796/0.0797543)
+Rule[14]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year > 61.0 AND  Age > 43.0 AND  Year > 66.0 AND  Positive > 2.0 AND  Positive <= 15.0 AND  Age > 54.0  THEN Class = negative (0.0243434/0.029490508)
+Rule[15]: IF  Age <= 57.0 AND  Age > 33.0 AND  Age > 34.0 AND  Age > 40.0 AND  Year > 61.0 AND  Age > 43.0 AND  Year > 66.0 AND  Positive > 2.0 AND  Positive > 15.0  THEN Class = negative (0.021159349/0.021159349)
+Rule[16]: IF  Age > 57.0 AND  Age <= 65.0  THEN Class = negative (1.495009/1.9309237)
+Rule[17]: IF  Age > 57.0 AND  Age > 65.0  THEN Class = positive (0.6060317/0.884927)
+
+@Classifier number 5: 
+Number of Rules: 13
+Rule[1]: IF  Positive <= 14.0 AND  Year <= 59.0 AND  Age <= 35.0  THEN Class = positive (1.0/1.023548)
+Rule[2]: IF  Positive <= 14.0 AND  Year <= 59.0 AND  Age > 35.0 AND  Age <= 41.0  THEN Class = negative (0.14167358/0.14167358)
+Rule[3]: IF  Positive <= 14.0 AND  Year <= 59.0 AND  Age > 35.0 AND  Age > 41.0  THEN Class = positive (0.9994006/1.6700613)
+Rule[4]: IF  Positive <= 14.0 AND  Year > 59.0 AND  Age <= 65.0 AND  Age <= 44.0 AND  Year <= 65.0  THEN Class = negative (2.0299695/2.0634916)
+Rule[5]: IF  Positive <= 14.0 AND  Year > 59.0 AND  Age <= 65.0 AND  Age <= 44.0 AND  Year > 65.0  THEN Class = positive (0.3404038/0.67259616)
+Rule[6]: IF  Positive <= 14.0 AND  Year > 59.0 AND  Age <= 65.0 AND  Age > 44.0 AND  Age <= 45.0  THEN Class = positive (1.0132906/1.1827902)
+Rule[7]: IF  Positive <= 14.0 AND  Year > 59.0 AND  Age <= 65.0 AND  Age > 44.0 AND  Age > 45.0 AND  Age <= 64.0 AND  Positive <= 1.0 AND  Positive <= 0.0 AND  Age <= 51.0  THEN Class = positive (0.52893835/0.85237896)
+Rule[8]: IF  Positive <= 14.0 AND  Year > 59.0 AND  Age <= 65.0 AND  Age > 44.0 AND  Age > 45.0 AND  Age <= 64.0 AND  Positive <= 1.0 AND  Positive <= 0.0 AND  Age > 51.0  THEN Class = negative (0.95351833/1.0193372)
+Rule[9]: IF  Positive <= 14.0 AND  Year > 59.0 AND  Age <= 65.0 AND  Age > 44.0 AND  Age > 45.0 AND  Age <= 64.0 AND  Positive <= 1.0 AND  Positive > 0.0  THEN Class = positive (0.845772/1.1033452)
+Rule[10]: IF  Positive <= 14.0 AND  Year > 59.0 AND  Age <= 65.0 AND  Age > 44.0 AND  Age > 45.0 AND  Age <= 64.0 AND  Positive > 1.0  THEN Class = negative (1.3939974/1.7569325)
+Rule[11]: IF  Positive <= 14.0 AND  Year > 59.0 AND  Age <= 65.0 AND  Age > 44.0 AND  Age > 45.0 AND  Age > 64.0  THEN Class = positive (0.29065144/0.37058616)
+Rule[12]: IF  Positive <= 14.0 AND  Year > 59.0 AND  Age > 65.0  THEN Class = negative (2.0711846/2.2698727)
+Rule[13]: IF  Positive > 14.0  THEN Class = positive (1.5147656/1.6536113)
+
+@Classifier number 6: 
+Number of Rules: 7
+Rule[1]: IF  Positive <= 20.0 AND  Positive <= 2.0 AND  Age <= 38.0  THEN Class = negative (1.9147187/2.2052824)
+Rule[2]: IF  Positive <= 20.0 AND  Positive <= 2.0 AND  Age > 38.0 AND  Year <= 68.0  THEN Class = negative (11.291558/14.044196)
+Rule[3]: IF  Positive <= 20.0 AND  Positive <= 2.0 AND  Age > 38.0 AND  Year > 68.0  THEN Class = positive (0.086450785/0.09924744)
+Rule[4]: IF  Positive <= 20.0 AND  Positive > 2.0 AND  Age <= 69.0 AND  Age <= 54.0  THEN Class = negative (2.5785954/3.4905355)
+Rule[5]: IF  Positive <= 20.0 AND  Positive > 2.0 AND  Age <= 69.0 AND  Age > 54.0  THEN Class = positive (1.1671742/1.5458633)
+Rule[6]: IF  Positive <= 20.0 AND  Positive > 2.0 AND  Age > 69.0  THEN Class = negative (0.6466653/0.65535426)
+Rule[7]: IF  Positive > 20.0  THEN Class = positive (1.2338787/1.5695349)
+
+@Classifier number 7: 
+Number of Rules: 12
+Rule[1]: IF  Positive <= 21.0 AND  Positive <= 20.0 AND  Year <= 65.0 AND  Year <= 64.0 AND  Year <= 59.0 AND  Age <= 33.0  THEN Class = negative (0.096598856/0.096598856)
+Rule[2]: IF  Positive <= 21.0 AND  Positive <= 20.0 AND  Year <= 65.0 AND  Year <= 64.0 AND  Year <= 59.0 AND  Age > 33.0 AND  Age <= 35.0  THEN Class = positive (0.33631393/0.33631393)
+Rule[3]: IF  Positive <= 21.0 AND  Positive <= 20.0 AND  Year <= 65.0 AND  Year <= 64.0 AND  Year <= 59.0 AND  Age > 33.0 AND  Age > 35.0 AND  Year <= 58.0  THEN Class = positive (0.5200085/0.79466254)
+Rule[4]: IF  Positive <= 21.0 AND  Positive <= 20.0 AND  Year <= 65.0 AND  Year <= 64.0 AND  Year <= 59.0 AND  Age > 33.0 AND  Age > 35.0 AND  Year > 58.0  THEN Class = negative (0.42193195/0.70103806)
+Rule[5]: IF  Positive <= 21.0 AND  Positive <= 20.0 AND  Year <= 65.0 AND  Year <= 64.0 AND  Year > 59.0 AND  Age <= 40.0  THEN Class = negative (0.46600273/0.46600273)
+Rule[6]: IF  Positive <= 21.0 AND  Positive <= 20.0 AND  Year <= 65.0 AND  Year <= 64.0 AND  Year > 59.0 AND  Age > 40.0 AND  Age <= 60.0 AND  Positive <= 4.0  THEN Class = negative (1.8972635/2.4401112)
+Rule[7]: IF  Positive <= 21.0 AND  Positive <= 20.0 AND  Year <= 65.0 AND  Year <= 64.0 AND  Year > 59.0 AND  Age > 40.0 AND  Age <= 60.0 AND  Positive > 4.0  THEN Class = positive (0.4519205/0.5987121)
+Rule[8]: IF  Positive <= 21.0 AND  Positive <= 20.0 AND  Year <= 65.0 AND  Year <= 64.0 AND  Year > 59.0 AND  Age > 40.0 AND  Age > 60.0  THEN Class = positive (1.5334619/1.9603466)
+Rule[9]: IF  Positive <= 21.0 AND  Positive <= 20.0 AND  Year <= 65.0 AND  Year > 64.0  THEN Class = positive (0.9136936/1.1896142)
+Rule[10]: IF  Positive <= 21.0 AND  Positive <= 20.0 AND  Year > 65.0  THEN Class = negative (2.7945318/3.870996)
+Rule[11]: IF  Positive <= 21.0 AND  Positive > 20.0  THEN Class = positive (0.29835346/0.29835346)
+Rule[12]: IF  Positive > 21.0  THEN Class = negative (0.8322839/0.87688875)
+
+@Classifier number 8: 
+Number of Rules: 13
+Rule[1]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age <= 62.0 AND  Age <= 33.0  THEN Class = negative (0.62230825/0.62230825)
+Rule[2]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age <= 62.0 AND  Age > 33.0 AND  Year <= 61.0 AND  Year <= 59.0  THEN Class = positive (1.2014254/1.9863671)
+Rule[3]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age <= 62.0 AND  Age > 33.0 AND  Year <= 61.0 AND  Year > 59.0  THEN Class = negative (1.7828901/1.8734365)
+Rule[4]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age <= 62.0 AND  Age > 33.0 AND  Year > 61.0 AND  Positive <= 3.0 AND  Age <= 38.0  THEN Class = negative (0.31881633/0.31881633)
+Rule[5]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age <= 62.0 AND  Age > 33.0 AND  Year > 61.0 AND  Positive <= 3.0 AND  Age > 38.0 AND  Year <= 67.0 AND  Year <= 66.0 AND  Positive <= 2.0 AND  Positive <= 1.0  THEN Class = positive (3.082982/4.1467824)
+Rule[6]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age <= 62.0 AND  Age > 33.0 AND  Year > 61.0 AND  Positive <= 3.0 AND  Age > 38.0 AND  Year <= 67.0 AND  Year <= 66.0 AND  Positive <= 2.0 AND  Positive > 1.0  THEN Class = negative (0.17503928/0.17503928)
+Rule[7]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age <= 62.0 AND  Age > 33.0 AND  Year > 61.0 AND  Positive <= 3.0 AND  Age > 38.0 AND  Year <= 67.0 AND  Year <= 66.0 AND  Positive > 2.0  THEN Class = positive (0.4500467/0.45936617)
+Rule[8]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age <= 62.0 AND  Age > 33.0 AND  Year > 61.0 AND  Positive <= 3.0 AND  Age > 38.0 AND  Year <= 67.0 AND  Year > 66.0  THEN Class = negative (0.78817207/0.8286349)
+Rule[9]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age <= 62.0 AND  Age > 33.0 AND  Year > 61.0 AND  Positive <= 3.0 AND  Age > 38.0 AND  Year > 67.0  THEN Class = positive (1.0333142/1.1423488)
+Rule[10]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age <= 62.0 AND  Age > 33.0 AND  Year > 61.0 AND  Positive > 3.0  THEN Class = negative (1.9232591/3.087113)
+Rule[11]: IF  Age <= 72.0 AND  Age <= 71.0 AND  Age > 62.0  THEN Class = negative (2.4856348/2.9306338)
+Rule[12]: IF  Age <= 72.0 AND  Age > 71.0  THEN Class = positive (0.7811856/0.879336)
+Rule[13]: IF  Age > 72.0  THEN Class = negative (1.2294285/1.266633)
+
+@Classifier number 9: 
+Number of Rules: 5
+Rule[1]: IF  Positive <= 4.0 AND  Age <= 59.0  THEN Class = negative (12.936266/15.405563)
+Rule[2]: IF  Positive <= 4.0 AND  Age > 59.0 AND  Positive <= 0.0  THEN Class = negative (3.0890238/3.9986308)
+Rule[3]: IF  Positive <= 4.0 AND  Age > 59.0 AND  Positive > 0.0  THEN Class = positive (0.991235/1.3359482)
+Rule[4]: IF  Positive > 4.0 AND  Age <= 54.0  THEN Class = positive (3.3609962/3.6703107)
+Rule[5]: IF  Positive > 4.0 AND  Age > 54.0  THEN Class = negative (0.9470674/1.5097039)
+
+Accuracy in training: 0.8218181818181818
+Accuracy in test: 0.7419354838709677
+AUC in training: 0.9086275314723591
+AUC in test: 0.5555555555555555

@@ -1,0 +1,83 @@
+@Number of Rules: 41
+if(POS32=T && POS31=G && POS35=G && POS34=A && POS36=T) (210/210)
+	output=EI
+else if(POS32=T && POS31=G && POS35=G && POS34=A && POS6=G) (161/161)
+	output=EI
+else if(POS32=T && POS31=G && POS35=G && POS33=A && POS40=G) (99/99)
+	output=EI
+else if(POS32=T && POS31=G && POS35=G && POS36=T) (276/278)
+	output=EI
+else if(POS32=T && POS31=G && POS33=A && POS34=A) (226/228)
+	output=EI
+else if(POS32=T && POS31=G && POS35=G && POS53=G && POS33=G) (108/108)
+	output=EI
+else if(POS32=T && POS31=G && POS35=G && POS39=C && POS38=C) (82/84)
+	output=EI
+else if(POS32=T && POS31=G && POS35=G && POS24=G) (204/206)
+	output=EI
+else if(POS32=T && POS31=G && POS33=A && POS35=C && POS30=G) (23/25)
+	output=EI
+else if(POS31=G && POS32=T && POS35=G) (584/618)
+	output=EI
+else if(POS31=G && POS32=T && POS28=A && POS41=G) (99/104)
+	output=EI
+else if(POS31=G && POS32=T && POS4=G && POS44=G) (62/70)
+	output=EI
+else if(POS31=G && POS32=T && POS9=G && POS15=C && POS30=G && POS18=C) (26/26)
+	output=EI
+else if(POS31=G && POS32=T && POS33=A && POS38=G) (81/86)
+	output=EI
+else if(POS31=G && POS32=T && POS57=A && POS9=G && POS17=C) (16/17)
+	output=EI
+else if(POS31=G && POS59=C && POS33=G && POS8=G && POS7=G) (8/9)
+	output=EI
+else if(POS31=G && POS32=T && POS60=A && POS12=A && POS28=C) (22/24)
+	output=EI
+else if(POS10=C && POS16=A && POS31=G && POS37=C && POS29=A) (9/9)
+	output=EI
+else if(POS16=A && POS55=G && POS18=A && POS53=G && POS14=A) (2/2)
+	output=EI
+else if(POS38=C && POS31=G && POS44=G && POS4=T && POS10=T) (4/4)
+	output=EI
+else if(POS22=N) (1/1)
+	output=EI
+else if(POS18=A && POS13=G && POS1=G && POS3=T && POS32=T) (8/8)
+	output=EI
+else if(POS25=A && POS24=T && POS38=C && POS1=C) (1/1)
+	output=EI
+else if(POS25=A && POS37=C && POS18=G && POS5=C && POS9=G) (4/5)
+	output=EI
+else if(POS29=T && POS5=C && POS58=A && POS1=T) (1/2)
+	output=EI
+else if(POS29=A && POS30=G && POS28=C && POS24=C) (250/288)
+	output=IE
+else if(POS29=A && POS30=G && POS28=C && POS24=T && POS20=T) (120/126)
+	output=IE
+else if(POS29=A && POS30=G && POS21=T && POS25=T) (162/182)
+	output=IE
+else if(POS29=A && POS30=G && POS25=C && POS32=T) (104/192)
+	output=IE
+else if(POS29=A && POS30=G && POS22=C && POS8=C) (87/109)
+	output=IE
+else if(POS29=A && POS30=G && POS22=T && POS31=G && POS19=T) (59/72)
+	output=IE
+else if(POS29=A && POS30=G && POS28=T) (122/141)
+	output=IE
+else if(POS29=A && POS30=G && POS28=C && POS23=T) (203/233)
+	output=IE
+else if(POS29=A && POS30=G && POS28=C) (546/735)
+	output=IE
+else if(POS30=G && POS15=C && POS22=T && POS59=G && POS2=C) (12/14)
+	output=IE
+else if(POS39=G && POS50=C && POS59=G && POS22=T && POS7=C) (3/5)
+	output=IE
+else if(POS14=T && POS55=C && POS60=C && POS3=A && POS18=T) (5/6)
+	output=IE
+else if(POS51=A && POS36=G && POS56=T && POS6=A && POS1=T) (1/1)
+	output=IE
+else if(POS43=A && POS22=C && POS34=T && POS6=C && POS57=G) (5/5)
+	output=IE
+else if(POS33=T && POS28=A && POS2=G && POS3=A) (1/2)
+	output=IE
+else 
+	output=N

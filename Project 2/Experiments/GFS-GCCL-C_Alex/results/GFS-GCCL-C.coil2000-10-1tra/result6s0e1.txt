@@ -1,0 +1,162 @@
+
+Rule base with 22 rules, 101 variables and 101 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X12 is Label 1" and "X30 is Label 3" and "X49 is Label 1" then Class is 0 with certainty degree 0.8871884282577805
+
+Fitness: 1318
+
+
+Rule 2:
+
+If "X2 is Label 1" and "X8 is Label 1" and "X12 is Label 1" and "X15 is Label 5" and "X56 is Label 1" then Class is 0 with certainty degree 0.8032555351487776
+
+Fitness: 440
+
+
+Rule 3:
+
+If "X37 is Label 5" then Class is 0 with certainty degree 0.9560618388934095
+
+Fitness: 348
+
+
+Rule 4:
+
+If "X12 is Label 1" and "X24 is Label 1" and "X30 is Label 3" and "X51 is Label 1" then Class is 0 with certainty degree 0.9073545729993321
+
+Fitness: 302
+
+
+Rule 5:
+
+If "X1 is Label 1" and "X8 is Label 1" and "X12 is Label 1" and "X24 is Label 1" and "X47 is Label 4" and "X66 is Label 1" then Class is 0 with certainty degree 0.5667244165732044
+
+Fitness: 214
+
+
+Rule 6:
+
+If "X13 is Label 1" and "X14 is Label 4" and "X27 is Label 2" and "X34 is Label 3" and "X67 is Label 1" then Class is 0 with certainty degree 0.8368567682726974
+
+Fitness: 123
+
+
+Rule 7:
+
+If "X2 is Label 1" and "X12 is Label 1" and "X18 is Label 2" and "X22 is Label 1" and "X24 is Label 3" then Class is 0 with certainty degree 0.7690544300325249
+
+Fitness: 101
+
+
+Rule 8:
+
+If "X12 is Label 1" and "X29 is Label 3" and "X39 is Label 2" and "X47 is Label 4" then Class is 0 with certainty degree 0.904461469130239
+
+Fitness: 88
+
+
+Rule 9:
+
+If "X12 is Label 1" and "X30 is Label 3" then Class is 0 with certainty degree 0.8866122323216753
+
+Fitness: 62
+
+
+Rule 10:
+
+If "X14 is Label 4" and "X27 is Label 2" and "X30 is Label 3" and "X38 is Label 4" and "X51 is Label 1" then Class is 0 with certainty degree 0.9895637048847659
+
+Fitness: 58
+
+
+Rule 11:
+
+If "X1 is Label 2" and "X3 is Label 2" and "X12 is Label 1" and "X33 is Label 3" and "X37 is Label 2" and "X45 is Label 1" and "X58 is Label 1" then Class is 0 with certainty degree 0.8122138589276013
+
+Fitness: 49
+
+
+Rule 12:
+
+If "X12 is Label 1" and "X23 is Label 4" and "X33 is Label 1" and "X35 is Label 4" and "X49 is Label 1" and "X59 is Label 4" and "X68 is Label 2" and "X74 is Label 1" then Class is 0 with certainty degree 1.0
+
+Fitness: 6
+
+
+Rule 13:
+
+If "X12 is Label 1" and "X19 is Label 5" and "X30 is Label 3" and "X51 is Label 1" then Class is 0 with certainty degree 0.9579439252336449
+
+Fitness: 4
+
+
+Rule 14:
+
+If "X28 is Label 2" and "X35 is Label 5" and "X50 is Label 4" and "X54 is Label 1" then Class is 0 with certainty degree 1.0
+
+Fitness: 3
+
+
+Rule 15:
+
+If "X16 is Label 3" and "X19 is Label 2" and "X30 is Label 3" and "X31 is Label 3" and "X32 is Label 3" and "X44 is Label 4" and "X59 is Label 4" then Class is 0 with certainty degree 1.0
+
+Fitness: 3
+
+
+Rule 16:
+
+If "X6 is Label 2" and "X15 is Label 3" and "X25 is Label 4" and "X48 is Label 5" then Class is 0 with certainty degree 1.0
+
+Fitness: 2
+
+
+Rule 17:
+
+If "X5 is Label 3" and "X23 is Label 1" and "X29 is Label 1" and "X47 is Label 5" and "X60 is Label 1" and "X67 is Label 1" and "X68 is Label 2" then Class is 0 with certainty degree 1.0
+
+Fitness: 2
+
+
+Rule 18:
+
+If "X30 is Label 3" and "X39 is Label 4" and "X63 is Label 2" then Class is 0 with certainty degree 0.7000000000000001
+
+Fitness: 2
+
+
+Rule 19:
+
+If "X20 is Label 4" and "X52 is Label 3" then Class is 0 with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 20:
+
+If "X12 is Label 1" and "X18 is Label 3" and "X22 is Label 4" and "X78 is Label 5" then Class is 1 with certainty degree 0.12249443207126941
+
+Fitness: 1
+
+
+Rule 21:
+
+If "X4 is Label 5" and "X8 is Label 3" and "X10 is Label 2" and "X24 is Label 3" and "X27 is Label 3" and "X44 is Label 2" and "X59 is Label 1" then Class is 0 with certainty degree 1.0
+
+Fitness: 1
+
+
+Rule 22:
+
+If "X12 is Label 1" and "X30 is Label 3" and "X54 is Label 3" and "X57 is Label 5" then Class is 1 with certainty degree 1.0
+
+Fitness: 1
+
+
+
+Training Accuracy:	35.39592760180996%
+Test Accuracy:		36.96537678207739%
+

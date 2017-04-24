@@ -1,0 +1,19 @@
+FURIA rules:
+===========
+
+ => Survival=negative (CF = 0.0)
+ => Survival=negative (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Positive <= 4(-> 5)) => Survival=negative (CF = 0.81)
+(Age <= 41(-> 42)) => Survival=negative (CF = 0.84)
+
+Number of Rules : 2
+
+
+
+
+REGLAS = 2

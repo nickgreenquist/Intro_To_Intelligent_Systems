@@ -1,0 +1,25 @@
+FURIA rules:
+===========
+
+(A8 = 0) and (A5 <= 7(-> 8)) and (A6 <= 4(-> 5)) and (A14 <= 2101(-> 2691)) => Class=0 (CF = 0.99)
+(A8 = 0) => Class=0 (CF = 0.92)
+(A9 = 0) and (A5 <= 8(-> 9)) and (A2 >= 2342(-> 2333)) => Class=0 (CF = 0.86)
+(A8 = 1) => Class=1 (CF = 0.79)
+(A12 = 3) => Class=1 (CF = 0.74)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(A8 = 0) and (A5 <= 7(-> 8)) and (A6 <= 4(-> 5)) and (A14 <= 2101(-> 2691)) => Class=0 (CF = 0.99)
+(A8 = 0) => Class=0 (CF = 0.92)
+(A9 = 0) and (A5 <= 8(-> 9)) and (A2 >= 2342(-> 2333)) => Class=0 (CF = 0.86)
+(A8 = 1) => Class=1 (CF = 0.79)
+(A12 = 3) => Class=1 (CF = 0.74)
+
+Number of Rules : 5
+
+
+
+
+REGLAS = 5

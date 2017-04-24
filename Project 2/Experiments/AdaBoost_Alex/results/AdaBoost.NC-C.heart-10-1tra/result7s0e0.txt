@@ -1,0 +1,118 @@
+@Classifier number 0: 
+Number of Rules: 17
+Rule[1]: IF  Thal <= 3.0 AND  ChestPainType <= 3.0  THEN Class = 1 (0.3333332/0.3703702)
+Rule[2]: IF  Thal <= 3.0 AND  ChestPainType > 3.0 AND  MajorVessels <= 0.0 AND  Age <= 54.0  THEN Class = 1 (0.061728403/0.061728403)
+Rule[3]: IF  Thal <= 3.0 AND  ChestPainType > 3.0 AND  MajorVessels <= 0.0 AND  Age > 54.0 AND  Slope <= 1.0 AND  ResElectrocardiographic <= 1.0  THEN Class = 1 (0.012345679/0.012345679)
+Rule[4]: IF  Thal <= 3.0 AND  ChestPainType > 3.0 AND  MajorVessels <= 0.0 AND  Age > 54.0 AND  Slope <= 1.0 AND  ResElectrocardiographic > 1.0  THEN Class = 2 (0.008230452/0.012345679)
+Rule[5]: IF  Thal <= 3.0 AND  ChestPainType > 3.0 AND  MajorVessels <= 0.0 AND  Age > 54.0 AND  Slope > 1.0 AND  ResElectrocardiographic <= 1.0  THEN Class = 2 (0.016460905/0.016460905)
+Rule[6]: IF  Thal <= 3.0 AND  ChestPainType > 3.0 AND  MajorVessels <= 0.0 AND  Age > 54.0 AND  Slope > 1.0 AND  ResElectrocardiographic > 1.0  THEN Class = 1 (0.012345679/0.012345679)
+Rule[7]: IF  Thal <= 3.0 AND  ChestPainType > 3.0 AND  MajorVessels > 0.0 AND  Sex <= 0.0 AND  Oldpeak <= 9.0  THEN Class = 1 (0.012345679/0.012345679)
+Rule[8]: IF  Thal <= 3.0 AND  ChestPainType > 3.0 AND  MajorVessels > 0.0 AND  Sex <= 0.0 AND  Oldpeak > 9.0  THEN Class = 2 (0.012345679/0.012345679)
+Rule[9]: IF  Thal <= 3.0 AND  ChestPainType > 3.0 AND  MajorVessels > 0.0 AND  Sex > 0.0  THEN Class = 2 (0.04938272/0.04938272)
+Rule[10]: IF  Thal > 3.0 AND  MajorVessels <= 0.0 AND  ExerciseInduced <= 0.0 AND  FastingBloodSugar <= 0.0 AND  Thal <= 6.0  THEN Class = 1 (0.016460905/0.016460905)
+Rule[11]: IF  Thal > 3.0 AND  MajorVessels <= 0.0 AND  ExerciseInduced <= 0.0 AND  FastingBloodSugar <= 0.0 AND  Thal > 6.0 AND  Age <= 52.0  THEN Class = 2 (0.024691356/0.03292181)
+Rule[12]: IF  Thal > 3.0 AND  MajorVessels <= 0.0 AND  ExerciseInduced <= 0.0 AND  FastingBloodSugar <= 0.0 AND  Thal > 6.0 AND  Age > 52.0  THEN Class = 1 (0.037037037/0.045267493)
+Rule[13]: IF  Thal > 3.0 AND  MajorVessels <= 0.0 AND  ExerciseInduced <= 0.0 AND  FastingBloodSugar > 0.0  THEN Class = 1 (0.02057613/0.02057613)
+Rule[14]: IF  Thal > 3.0 AND  MajorVessels <= 0.0 AND  ExerciseInduced > 0.0 AND  Slope <= 1.0 AND  SerumCholestoral <= 248.0  THEN Class = 1 (0.012345679/0.012345679)
+Rule[15]: IF  Thal > 3.0 AND  MajorVessels <= 0.0 AND  ExerciseInduced > 0.0 AND  Slope <= 1.0 AND  SerumCholestoral > 248.0  THEN Class = 2 (0.012345679/0.012345679)
+Rule[16]: IF  Thal > 3.0 AND  MajorVessels <= 0.0 AND  ExerciseInduced > 0.0 AND  Slope > 1.0  THEN Class = 2 (0.057613175/0.061728403)
+Rule[17]: IF  Thal > 3.0 AND  MajorVessels > 0.0  THEN Class = 2 (0.21810691/0.23868303)
+
+@Classifier number 1: 
+Number of Rules: 8
+Rule[1]: IF  Oldpeak <= 16.0 AND  RestBloodPressure <= 156.0 AND  MajorVessels <= 1.0 AND  Oldpeak <= 2.0 AND  MaxHeartRate <= 71.0  THEN Class = 2 (0.1101712/0.1101712)
+Rule[2]: IF  Oldpeak <= 16.0 AND  RestBloodPressure <= 156.0 AND  MajorVessels <= 1.0 AND  Oldpeak <= 2.0 AND  MaxHeartRate > 71.0  THEN Class = 1 (13.830621/16.48319)
+Rule[3]: IF  Oldpeak <= 16.0 AND  RestBloodPressure <= 156.0 AND  MajorVessels <= 1.0 AND  Oldpeak > 2.0 AND  Oldpeak <= 3.0  THEN Class = 2 (2.1101713/2.3305135)
+Rule[4]: IF  Oldpeak <= 16.0 AND  RestBloodPressure <= 156.0 AND  MajorVessels <= 1.0 AND  Oldpeak > 2.0 AND  Oldpeak > 3.0 AND  MajorVessels <= 0.0  THEN Class = 1 (5.1865087/6.2882214)
+Rule[5]: IF  Oldpeak <= 16.0 AND  RestBloodPressure <= 156.0 AND  MajorVessels <= 1.0 AND  Oldpeak > 2.0 AND  Oldpeak > 3.0 AND  MajorVessels > 0.0  THEN Class = 2 (2.3220546/2.7627397)
+Rule[6]: IF  Oldpeak <= 16.0 AND  RestBloodPressure <= 156.0 AND  MajorVessels > 1.0  THEN Class = 2 (3.542398/5.203426)
+Rule[7]: IF  Oldpeak <= 16.0 AND  RestBloodPressure > 156.0  THEN Class = 2 (2.991541/3.5423973)
+Rule[8]: IF  Oldpeak > 16.0  THEN Class = 2 (6.855995/7.847537)
+
+@Classifier number 2: 
+Number of Rules: 8
+Rule[1]: IF  FastingBloodSugar <= 0.0 AND  Age <= 62.0 AND  MaxHeartRate <= 160.0 AND  RestBloodPressure <= 106.0  THEN Class = 1 (0.3508356/0.4610068)
+Rule[2]: IF  FastingBloodSugar <= 0.0 AND  Age <= 62.0 AND  MaxHeartRate <= 160.0 AND  RestBloodPressure > 106.0 AND  Sex <= 0.0  THEN Class = 1 (0.47799766/0.9373389)
+Rule[3]: IF  FastingBloodSugar <= 0.0 AND  Age <= 62.0 AND  MaxHeartRate <= 160.0 AND  RestBloodPressure > 106.0 AND  Sex > 0.0 AND  RestBloodPressure <= 174.0  THEN Class = 2 (4.100393/4.690228)
+Rule[4]: IF  FastingBloodSugar <= 0.0 AND  Age <= 62.0 AND  MaxHeartRate <= 160.0 AND  RestBloodPressure > 106.0 AND  Sex > 0.0 AND  RestBloodPressure > 174.0  THEN Class = 1 (0.1101712/0.1101712)
+Rule[5]: IF  FastingBloodSugar <= 0.0 AND  Age <= 62.0 AND  MaxHeartRate > 160.0 AND  RestBloodPressure <= 150.0  THEN Class = 1 (1.8068153/2.6516304)
+Rule[6]: IF  FastingBloodSugar <= 0.0 AND  Age <= 62.0 AND  MaxHeartRate > 160.0 AND  RestBloodPressure > 150.0  THEN Class = 2 (0.1469791/0.1469791)
+Rule[7]: IF  FastingBloodSugar <= 0.0 AND  Age > 62.0  THEN Class = 1 (1.6198486/2.0428863)
+Rule[8]: IF  FastingBloodSugar > 0.0  THEN Class = 1 (2.0857308/2.7508473)
+
+@Classifier number 3: 
+Number of Rules: 7
+Rule[1]: IF  SerumCholestoral <= 242.0 AND  Age <= 57.0 AND  Oldpeak <= 19.0 AND  Slope <= 2.0  THEN Class = 1 (3.1810207/3.7728164)
+Rule[2]: IF  SerumCholestoral <= 242.0 AND  Age <= 57.0 AND  Oldpeak <= 19.0 AND  Slope > 2.0  THEN Class = 2 (0.14893427/0.20414612)
+Rule[3]: IF  SerumCholestoral <= 242.0 AND  Age <= 57.0 AND  Oldpeak > 19.0  THEN Class = 2 (0.19649106/0.19649106)
+Rule[4]: IF  SerumCholestoral <= 242.0 AND  Age > 57.0  THEN Class = 2 (1.5455432/1.9683291)
+Rule[5]: IF  SerumCholestoral > 242.0 AND  MaxHeartRate <= 154.0  THEN Class = 2 (4.5727115/5.132717)
+Rule[6]: IF  SerumCholestoral > 242.0 AND  MaxHeartRate > 154.0 AND  ChestPainType <= 3.0  THEN Class = 1 (0.8016749/1.1294266)
+Rule[7]: IF  SerumCholestoral > 242.0 AND  MaxHeartRate > 154.0 AND  ChestPainType > 3.0  THEN Class = 2 (1.2387863/1.42778)
+
+@Classifier number 4: 
+Number of Rules: 7
+Rule[1]: IF  MajorVessels <= 0.0 AND  Thal <= 6.0 AND  RestBloodPressure <= 108.0  THEN Class = 2 (0.7679085/1.2829882)
+Rule[2]: IF  MajorVessels <= 0.0 AND  Thal <= 6.0 AND  RestBloodPressure > 108.0 AND  RestBloodPressure <= 165.0  THEN Class = 1 (7.6401887/8.290083)
+Rule[3]: IF  MajorVessels <= 0.0 AND  Thal <= 6.0 AND  RestBloodPressure > 108.0 AND  RestBloodPressure > 165.0  THEN Class = 2 (0.15283999/0.27480593)
+Rule[4]: IF  MajorVessels <= 0.0 AND  Thal > 6.0  THEN Class = 2 (2.0539849/3.8001778)
+Rule[5]: IF  MajorVessels > 0.0 AND  RestBloodPressure <= 108.0  THEN Class = 1 (0.98554045/1.1763284)
+Rule[6]: IF  MajorVessels > 0.0 AND  RestBloodPressure > 108.0 AND  Age <= 67.0  THEN Class = 2 (6.760002/7.9455028)
+Rule[7]: IF  MajorVessels > 0.0 AND  RestBloodPressure > 108.0 AND  Age > 67.0  THEN Class = 1 (0.81675124/1.0460112)
+
+@Classifier number 5: 
+Number of Rules: 6
+Rule[1]: IF  Oldpeak <= 16.0 AND  MaxHeartRate <= 95.0  THEN Class = 2 (0.49038395/0.49038395)
+Rule[2]: IF  Oldpeak <= 16.0 AND  MaxHeartRate > 95.0 AND  MajorVessels <= 0.0 AND  RestBloodPressure <= 156.0  THEN Class = 1 (17.632128/19.280333)
+Rule[3]: IF  Oldpeak <= 16.0 AND  MaxHeartRate > 95.0 AND  MajorVessels <= 0.0 AND  RestBloodPressure > 156.0  THEN Class = 2 (0.6606753/1.0934716)
+Rule[4]: IF  Oldpeak <= 16.0 AND  MaxHeartRate > 95.0 AND  MajorVessels > 0.0 AND  Sex <= 0.0  THEN Class = 1 (3.0517826/3.391022)
+Rule[5]: IF  Oldpeak <= 16.0 AND  MaxHeartRate > 95.0 AND  MajorVessels > 0.0 AND  Sex > 0.0  THEN Class = 2 (4.8036547/6.681857)
+Rule[6]: IF  Oldpeak > 16.0  THEN Class = 2 (3.5485337/4.300242)
+
+@Classifier number 6: 
+Number of Rules: 11
+Rule[1]: IF  ChestPainType <= 3.0 AND  Age <= 45.0  THEN Class = 1 (2.3786569/2.3786569)
+Rule[2]: IF  ChestPainType <= 3.0 AND  Age > 45.0 AND  Age <= 47.0  THEN Class = 2 (0.770418/1.0133404)
+Rule[3]: IF  ChestPainType <= 3.0 AND  Age > 45.0 AND  Age > 47.0 AND  MaxHeartRate <= 108.0  THEN Class = 2 (0.32909152/0.41660222)
+Rule[4]: IF  ChestPainType <= 3.0 AND  Age > 45.0 AND  Age > 47.0 AND  MaxHeartRate > 108.0 AND  RestBloodPressure <= 178.0  THEN Class = 1 (8.444125/10.257558)
+Rule[5]: IF  ChestPainType <= 3.0 AND  Age > 45.0 AND  Age > 47.0 AND  MaxHeartRate > 108.0 AND  RestBloodPressure > 178.0  THEN Class = 2 (0.1239814/0.1239814)
+Rule[6]: IF  ChestPainType > 3.0 AND  Oldpeak <= 6.0 AND  SerumCholestoral <= 327.0 AND  Slope <= 2.0 AND  Age <= 41.0  THEN Class = 2 (0.30838975/0.30838975)
+Rule[7]: IF  ChestPainType > 3.0 AND  Oldpeak <= 6.0 AND  SerumCholestoral <= 327.0 AND  Slope <= 2.0 AND  Age > 41.0 AND  MaxHeartRate <= 99.0  THEN Class = 2 (0.1603308/0.1603308)
+Rule[8]: IF  ChestPainType > 3.0 AND  Oldpeak <= 6.0 AND  SerumCholestoral <= 327.0 AND  Slope <= 2.0 AND  Age > 41.0 AND  MaxHeartRate > 99.0  THEN Class = 1 (5.128619/6.606668)
+Rule[9]: IF  ChestPainType > 3.0 AND  Oldpeak <= 6.0 AND  SerumCholestoral <= 327.0 AND  Slope > 2.0  THEN Class = 2 (0.28693765/0.28693765)
+Rule[10]: IF  ChestPainType > 3.0 AND  Oldpeak <= 6.0 AND  SerumCholestoral > 327.0  THEN Class = 2 (1.1923054/1.2798162)
+Rule[11]: IF  ChestPainType > 3.0 AND  Oldpeak > 6.0  THEN Class = 2 (3.3819401/3.8161201)
+
+@Classifier number 7: 
+Number of Rules: 6
+Rule[1]: IF  MajorVessels <= 0.0 AND  MaxHeartRate <= 169.0 AND  SerumCholestoral <= 341.0 AND  SerumCholestoral <= 271.0  THEN Class = 1 (6.132795/8.731356)
+Rule[2]: IF  MajorVessels <= 0.0 AND  MaxHeartRate <= 169.0 AND  SerumCholestoral <= 341.0 AND  SerumCholestoral > 271.0  THEN Class = 2 (2.7832866/3.6565263)
+Rule[3]: IF  MajorVessels <= 0.0 AND  MaxHeartRate <= 169.0 AND  SerumCholestoral > 341.0  THEN Class = 1 (1.1145728/1.1145728)
+Rule[4]: IF  MajorVessels <= 0.0 AND  MaxHeartRate > 169.0  THEN Class = 1 (3.0823889/3.1479871)
+Rule[5]: IF  MajorVessels > 0.0 AND  MaxHeartRate <= 105.0  THEN Class = 1 (0.52568233/1.0107367)
+Rule[6]: IF  MajorVessels > 0.0 AND  MaxHeartRate > 105.0  THEN Class = 2 (9.218733/11.45668)
+
+@Classifier number 8: 
+Number of Rules: 5
+Rule[1]: IF  Slope <= 1.0  THEN Class = 1 (8.1552725/10.106606)
+Rule[2]: IF  Slope > 1.0 AND  MaxHeartRate <= 156.0 AND  RestBloodPressure <= 106.0  THEN Class = 1 (0.17705128/0.17705128)
+Rule[3]: IF  Slope > 1.0 AND  MaxHeartRate <= 156.0 AND  RestBloodPressure > 106.0 AND  ChestPainType <= 2.0  THEN Class = 1 (0.40742782/0.70706433)
+Rule[4]: IF  Slope > 1.0 AND  MaxHeartRate <= 156.0 AND  RestBloodPressure > 106.0 AND  ChestPainType > 2.0  THEN Class = 2 (6.5901947/7.2954607)
+Rule[5]: IF  Slope > 1.0 AND  MaxHeartRate > 156.0  THEN Class = 1 (1.2218386/1.918234)
+
+@Classifier number 9: 
+Number of Rules: 9
+Rule[1]: IF  Thal <= 3.0 AND  RestBloodPressure <= 156.0 AND  Oldpeak <= 16.0 AND  Age <= 76.0 AND  SerumCholestoral <= 188.0  THEN Class = 2 (0.3952318/0.7290764)
+Rule[2]: IF  Thal <= 3.0 AND  RestBloodPressure <= 156.0 AND  Oldpeak <= 16.0 AND  Age <= 76.0 AND  SerumCholestoral > 188.0  THEN Class = 1 (5.8479495/7.1035976)
+Rule[3]: IF  Thal <= 3.0 AND  RestBloodPressure <= 156.0 AND  Oldpeak <= 16.0 AND  Age > 76.0  THEN Class = 2 (0.21629505/0.21629505)
+Rule[4]: IF  Thal <= 3.0 AND  RestBloodPressure <= 156.0 AND  Oldpeak > 16.0  THEN Class = 2 (0.4738188/0.51948345)
+Rule[5]: IF  Thal <= 3.0 AND  RestBloodPressure > 156.0  THEN Class = 2 (1.2560123/1.4420933)
+Rule[6]: IF  Thal > 3.0 AND  RestBloodPressure <= 108.0  THEN Class = 1 (0.30759162/0.35938373)
+Rule[7]: IF  Thal > 3.0 AND  RestBloodPressure > 108.0 AND  ChestPainType <= 1.0 AND  RestBloodPressure <= 160.0  THEN Class = 1 (0.13104302/0.13104302)
+Rule[8]: IF  Thal > 3.0 AND  RestBloodPressure > 108.0 AND  ChestPainType <= 1.0 AND  RestBloodPressure > 160.0  THEN Class = 2 (0.040383544/0.058257785)
+Rule[9]: IF  Thal > 3.0 AND  RestBloodPressure > 108.0 AND  ChestPainType > 1.0  THEN Class = 2 (7.2236385/7.9783106)
+
+Accuracy in training: 0.9218106995884774
+Accuracy in test: 0.8518518518518519
+AUC in training: 0.9836762688614541
+AUC in test: 0.8500000000000001

@@ -1,0 +1,23 @@
+FURIA rules:
+===========
+
+ => Chd=0 (CF = 0.0)
+(Tobacco <= 7.44(-> 7.77)) => Chd=0 (CF = 0.71)
+(Age <= 50(-> 51)) => Chd=0 (CF = 0.79)
+ => Chd=1 (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Age <= 38(-> 39)) => Chd=0 (CF = 0.86)
+(Tobacco <= 7.44(-> 7.77)) and (Famhist = Absent) => Chd=0 (CF = 0.8)
+(Age <= 50(-> 51)) and (Tobacco >= 4.2(-> 4)) => Chd=0 (CF = 0.73)
+(Age >= 49(-> 48)) and (Famhist = Present) => Chd=1 (CF = 0.69)
+
+Number of Rules : 4
+
+
+
+
+REGLAS = 4

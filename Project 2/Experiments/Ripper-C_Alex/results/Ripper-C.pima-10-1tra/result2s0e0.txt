@@ -1,0 +1,35 @@
+@Number of Rules: 17
+if(Plas>127.0 && Mass>29.9 && Pedi>0.433 && Insu<=300.0) (69/81)
+	output=tested_positive
+else if(Age>28.0 && Plas>161.0) (57/68)
+	output=tested_positive
+else if(Plas>106.0 && Mass>29.9 && Age>31.0 && Skin<=0.0 && Pedi<=0.278 && Pres<=66.0) (7/7)
+	output=tested_positive
+else if(Plas>127.0 && Mass>35.1 && Pres<=76.0 && Insu<=328.0 && Preg<=9.0) (30/36)
+	output=tested_positive
+else if(Age>28.0 && Insu>126.0 && Pedi<=0.412 && Pres>74.0) (12/15)
+	output=tested_positive
+else if(Plas>102.0 && Age>27.0 && Insu>78.0 && Preg<=1.0 && Pedi<=0.962) (16/17)
+	output=tested_positive
+else if(Plas>127.0 && Mass>29.9 && Age>39.0) (58/71)
+	output=tested_positive
+else if(Plas>99.0 && Age>30.0 && Mass>26.7 && Pedi>0.251 && Pres>68.0 && Preg>5.0 && Skin>33.0) (18/22)
+	output=tested_positive
+else if(Plas>102.0 && Preg>3.0 && Pedi>0.904 && Mass>27.1) (14/17)
+	output=tested_positive
+else if(Plas>101.0 && Mass>26.4 && Insu<=0.0 && Pres<=62.0 && Pedi<=0.302 && Preg<=7.0) (9/10)
+	output=tested_positive
+else if(Plas>133.0 && Pedi>0.329 && Age>24.0 && Preg<=3.0) (32/38)
+	output=tested_positive
+else if(Age>31.0 && Mass>26.6 && Plas<=125.0 && Skin<=27.0 && Preg<=6.0 && Pres<=84.0) (18/30)
+	output=tested_positive
+else if(Plas>123.0 && Pedi<=0.383 && Insu>440.0) (5/5)
+	output=tested_positive
+else if(Preg>6.0 && Age<=32.0) (10/13)
+	output=tested_positive
+else if(Plas>103.0 && Insu<=74.0 && Mass>27.4 && Pedi>0.434 && Skin>28.0 && Preg<=0.0) (5/5)
+	output=tested_positive
+else if(Mass>28.8 && Insu<=36.0 && Plas>111.0 && Age<=36.0 && Pedi<=0.693 && Pres>60.0 && Skin>26.0 && Preg>2.0) (3/4)
+	output=tested_positive
+else 
+	output=tested_negative

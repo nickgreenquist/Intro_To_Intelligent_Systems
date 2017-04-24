@@ -1,0 +1,46 @@
+@Classifier number 0: 
+Number of Rules: 15
+Rule[1]: IF  Pulse5 <= 0.041  THEN Class = b (0.1835444/0.1835444)
+Rule[2]: IF  Pulse5 > 0.041 AND  Pulse27 <= 0.992 AND  Pulse3 <= 0.727 AND  Pulse3 <= 0.101  THEN Class = b (0.015822785/0.015822785)
+Rule[3]: IF  Pulse5 > 0.041 AND  Pulse27 <= 0.992 AND  Pulse3 <= 0.727 AND  Pulse3 > 0.101 AND  Pulse7 <= 0.91 AND  Pulse24 <= 0.226 AND  Pulse10 <= -0.091 AND  Pulse3 <= 0.479  THEN Class = g (0.006329114/0.006329114)
+Rule[4]: IF  Pulse5 > 0.041 AND  Pulse27 <= 0.992 AND  Pulse3 <= 0.727 AND  Pulse3 > 0.101 AND  Pulse7 <= 0.91 AND  Pulse24 <= 0.226 AND  Pulse10 <= -0.091 AND  Pulse3 > 0.479  THEN Class = b (0.006329114/0.006329114)
+Rule[5]: IF  Pulse5 > 0.041 AND  Pulse27 <= 0.992 AND  Pulse3 <= 0.727 AND  Pulse3 > 0.101 AND  Pulse7 <= 0.91 AND  Pulse24 <= 0.226 AND  Pulse10 > -0.091  THEN Class = g (0.13291144/0.13291144)
+Rule[6]: IF  Pulse5 > 0.041 AND  Pulse27 <= 0.992 AND  Pulse3 <= 0.727 AND  Pulse3 > 0.101 AND  Pulse7 <= 0.91 AND  Pulse24 > 0.226 AND  Pulse9 <= 0.35  THEN Class = b (0.009493671/0.009493671)
+Rule[7]: IF  Pulse5 > 0.041 AND  Pulse27 <= 0.992 AND  Pulse3 <= 0.727 AND  Pulse3 > 0.101 AND  Pulse7 <= 0.91 AND  Pulse24 > 0.226 AND  Pulse9 > 0.35  THEN Class = g (0.009493671/0.012658228)
+Rule[8]: IF  Pulse5 > 0.041 AND  Pulse27 <= 0.992 AND  Pulse3 <= 0.727 AND  Pulse3 > 0.101 AND  Pulse7 > 0.91  THEN Class = b (0.009493671/0.009493671)
+Rule[9]: IF  Pulse5 > 0.041 AND  Pulse27 <= 0.992 AND  Pulse3 > 0.727  THEN Class = g (0.4493674/0.46202564)
+Rule[10]: IF  Pulse5 > 0.041 AND  Pulse27 > 0.992 AND  Pulse1 <= 0.0  THEN Class = b (0.05696202/0.05696202)
+Rule[11]: IF  Pulse5 > 0.041 AND  Pulse27 > 0.992 AND  Pulse1 > 0.0 AND  Pulse3 <= 0.727  THEN Class = b (0.028481016/0.028481016)
+Rule[12]: IF  Pulse5 > 0.041 AND  Pulse27 > 0.992 AND  Pulse1 > 0.0 AND  Pulse3 > 0.727 AND  Pulse31 <= 0.114  THEN Class = b (0.006329114/0.006329114)
+Rule[13]: IF  Pulse5 > 0.041 AND  Pulse27 > 0.992 AND  Pulse1 > 0.0 AND  Pulse3 > 0.727 AND  Pulse31 > 0.114 AND  Pulse20 <= -0.428  THEN Class = b (0.018987343/0.018987343)
+Rule[14]: IF  Pulse5 > 0.041 AND  Pulse27 > 0.992 AND  Pulse1 > 0.0 AND  Pulse3 > 0.727 AND  Pulse31 > 0.114 AND  Pulse20 > -0.428 AND  Pulse6 <= -0.734  THEN Class = b (0.006329114/0.006329114)
+Rule[15]: IF  Pulse5 > 0.041 AND  Pulse27 > 0.992 AND  Pulse1 > 0.0 AND  Pulse3 > 0.727 AND  Pulse31 > 0.114 AND  Pulse20 > -0.428 AND  Pulse6 > -0.734  THEN Class = g (0.04113924/0.044303797)
+
+@Classifier number 1: 
+Number of Rules: 8
+Rule[1]: IF  Pulse5 <= 0.041  THEN Class = b (2.968438/2.968438)
+Rule[2]: IF  Pulse5 > 0.041 AND  Pulse34 <= 0.902 AND  Pulse6 <= -0.332  THEN Class = b (2.61416/2.7677002)
+Rule[3]: IF  Pulse5 > 0.041 AND  Pulse34 <= 0.902 AND  Pulse6 > -0.332 AND  Pulse3 <= 0.101  THEN Class = b (0.71652/0.71652)
+Rule[4]: IF  Pulse5 > 0.041 AND  Pulse34 <= 0.902 AND  Pulse6 > -0.332 AND  Pulse3 > 0.101 AND  Pulse4 <= -0.148  THEN Class = b (1.35826/2.1771398)
+Rule[5]: IF  Pulse5 > 0.041 AND  Pulse34 <= 0.902 AND  Pulse6 > -0.332 AND  Pulse3 > 0.101 AND  Pulse4 > -0.148 AND  Pulse8 <= -0.936  THEN Class = b (0.10236/0.10236)
+Rule[6]: IF  Pulse5 > 0.041 AND  Pulse34 <= 0.902 AND  Pulse6 > -0.332 AND  Pulse3 > 0.101 AND  Pulse4 > -0.148 AND  Pulse8 > -0.936 AND  Pulse14 <= -0.697  THEN Class = b (0.10236/0.10236)
+Rule[7]: IF  Pulse5 > 0.041 AND  Pulse34 <= 0.902 AND  Pulse6 > -0.332 AND  Pulse3 > 0.101 AND  Pulse4 > -0.148 AND  Pulse8 > -0.936 AND  Pulse14 > -0.697  THEN Class = g (9.212384/9.417104)
+Rule[8]: IF  Pulse5 > 0.041 AND  Pulse34 > 0.902  THEN Class = b (3.460619/3.6141586)
+
+@Classifier number 2: 
+Number of Rules: 10
+Rule[1]: IF  Pulse3 <= 0.186  THEN Class = b (2.7637184/2.7637184)
+Rule[2]: IF  Pulse3 > 0.186 AND  Pulse16 <= -0.975  THEN Class = b (2.1095004/2.1095004)
+Rule[3]: IF  Pulse3 > 0.186 AND  Pulse16 > -0.975 AND  Pulse8 <= -0.993  THEN Class = b (1.56298/1.56298)
+Rule[4]: IF  Pulse3 > 0.186 AND  Pulse16 > -0.975 AND  Pulse8 > -0.993 AND  Pulse10 <= -0.634  THEN Class = b (1.05118/1.05118)
+Rule[5]: IF  Pulse3 > 0.186 AND  Pulse16 > -0.975 AND  Pulse8 > -0.993 AND  Pulse10 > -0.634 AND  Pulse24 <= -1.0  THEN Class = b (1.20472/1.2559)
+Rule[6]: IF  Pulse3 > 0.186 AND  Pulse16 > -0.975 AND  Pulse8 > -0.993 AND  Pulse10 > -0.634 AND  Pulse24 > -1.0 AND  Pulse4 <= 0.678 AND  Pulse5 <= 0.413  THEN Class = b (1.5024813/2.0654612)
+Rule[7]: IF  Pulse3 > 0.186 AND  Pulse16 > -0.975 AND  Pulse8 > -0.993 AND  Pulse10 > -0.634 AND  Pulse24 > -1.0 AND  Pulse4 <= 0.678 AND  Pulse5 > 0.413 AND  Pulse25 <= 0.474 AND  Pulse21 <= 0.574  THEN Class = g (5.1033382/5.154518)
+Rule[8]: IF  Pulse3 > 0.186 AND  Pulse16 > -0.975 AND  Pulse8 > -0.993 AND  Pulse10 > -0.634 AND  Pulse24 > -1.0 AND  Pulse4 <= 0.678 AND  Pulse5 > 0.413 AND  Pulse25 <= 0.474 AND  Pulse21 > 0.574  THEN Class = b (1.6488807/1.8024207)
+Rule[9]: IF  Pulse3 > 0.186 AND  Pulse16 > -0.975 AND  Pulse8 > -0.993 AND  Pulse10 > -0.634 AND  Pulse24 > -1.0 AND  Pulse4 <= 0.678 AND  Pulse5 > 0.413 AND  Pulse25 > 0.474  THEN Class = g (15.262439/15.364799)
+Rule[10]: IF  Pulse3 > 0.186 AND  Pulse16 > -0.975 AND  Pulse8 > -0.993 AND  Pulse10 > -0.634 AND  Pulse24 > -1.0 AND  Pulse4 > 0.678  THEN Class = b (1.5118/1.6141601)
+
+Accuracy in training: 1.0
+Accuracy in test: 0.9142857142857143
+AUC in training: 1.0
+AUC in test: 0.9184782608695652

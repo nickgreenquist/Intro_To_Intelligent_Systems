@@ -1,0 +1,39 @@
+FURIA rules:
+===========
+
+(Pulse5 >= 0.233(-> 0)) and (Pulse27 <= 0.998(-> 1)) => Class=g (CF = 0.92)
+(Pulse5 >= 0.042(-> 0)) and (Pulse27 <= 0.998(-> 1)) => Class=g (CF = 0.91)
+(Pulse5 >= 0.16(-> 0)) and (Pulse1 >= 1(-> 0)) => Class=g (CF = 0.85)
+(Pulse8 >= 0.073(-> -1)) => Class=g (CF = 0.7)
+ => Class=b (CF = 0.0)
+(Pulse27 >= 1(-> -1)) => Class=b (CF = 0.38)
+ => Class=b (CF = 0.0)
+ => Class=b (CF = 0.0)
+(Pulse4 <= -0.05(-> -0.044)) => Class=b (CF = 0.55)
+ => Class=b (CF = 0.0)
+ => Class=b (CF = 0.0)
+ => Class=b (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Pulse5 >= 0.233(-> 0)) and (Pulse27 <= 0.998(-> 1)) and (Pulse3 >= 0.744(-> 0.727)) and (Pulse3 <= 0.997(-> 1)) => Class=g (CF = 0.99)
+(Pulse5 >= 0.042(-> 0)) and (Pulse27 <= 0.998(-> 1)) and (Pulse21 >= 0.268(-> 0.249)) => Class=g (CF = 0.95)
+(Pulse5 >= 0.16(-> 0)) and (Pulse1 >= 1(-> 0)) and (Pulse3 >= 0.869(-> 0.853)) and (Pulse10 >= -0.282(-> -0.5)) => Class=g (CF = 0.94)
+(Pulse8 >= 0.073(-> -1)) and (Pulse4 >= 0.025(-> 0)) and (Pulse6 >= 0.173(-> 0.15)) and (Pulse12 >= 0.149(-> 0.08)) => Class=g (CF = 0.99)
+(Pulse5 <= 0.041(-> 0.042)) => Class=b (CF = 0.98)
+(Pulse27 >= 1(-> -1)) and (Pulse1 <= 0(-> 1)) => Class=b (CF = 0.96)
+(Pulse27 >= 1(-> 0.869)) and (Pulse3 <= 0.853(-> 0.869)) and (Pulse5 >= 0.828(-> 0.808)) => Class=b (CF = 0.93)
+(Pulse8 <= -1(-> -0.974)) => Class=b (CF = 0.95)
+(Pulse4 <= -0.05(-> -0.044)) and (Pulse8 >= 0.329(-> 0.192)) => Class=b (CF = 0.9)
+(Pulse6 <= -0.231(-> -0.208)) and (Pulse21 <= 0.649(-> 0.966)) => Class=b (CF = 0.94)
+(Pulse3 <= 0.059(-> 0.195)) => Class=b (CF = 0.98)
+(Pulse24 >= 0.164(-> -0.002)) and (Pulse7 <= 0.265(-> 0.273)) => Class=b (CF = 0.94)
+
+Number of Rules : 12
+
+
+
+
+REGLAS = 12

@@ -1,0 +1,51 @@
+FURIA rules:
+===========
+
+ => Class=normal (CF = 0.0)
+(Changes_in_node = lac_margin) => Class=metastases (CF = 0.83)
+(No_of_nodes_in <= 1(-> 2)) => Class=metastases (CF = 0.79)
+(Changes_in_node = lac_margin) => Class=metastases (CF = 0.83)
+(No_of_nodes_in <= 1(-> 2)) => Class=metastases (CF = 0.79)
+(Changes_in_node = lac_margin) and (Early_uptake_in = no) => Class=metastases (CF = 0.9)
+(Dislocation_of = no) => Class=metastases (CF = 0.67)
+ => Class=metastases (CF = 0.0)
+(Special_forms = chalices) => Class=metastases (CF = 0.78)
+ => Class=metastases (CF = 0.0)
+ => Class=malign_lymph (CF = 0.0)
+ => Class=malign_lymph (CF = 0.0)
+ => Class=malign_lymph (CF = 0.0)
+(Block_of_affere = no) => Class=malign_lymph (CF = 0.65)
+ => Class=malign_lymph (CF = 0.0)
+ => Class=malign_lymph (CF = 0.0)
+(Block_of_affere = no) and (Changes_in_stru = faint) => Class=malign_lymph (CF = 0.72)
+ => Class=fibrosis (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(Lymphatics = normal) => Class=normal (CF = 0.51)
+(Changes_in_node = lac_margin) and (Block_of_affere = yes) and (No_of_nodes_in <= 2(-> 3)) => Class=metastases (CF = 0.98)
+(No_of_nodes_in <= 1(-> 2)) and (Special_forms = no) and (Dislocation_of = yes) => Class=metastases (CF = 0.91)
+(Changes_in_node = lac_margin) and (By_pass = yes) and (Changes_in_lym = round) => Class=metastases (CF = 0.94)
+(No_of_nodes_in <= 1(-> 2)) and (Block_of_affere = yes) => Class=metastases (CF = 0.97)
+(Changes_in_node = lac_margin) and (Early_uptake_in = no) and (Defect_in_node = lac_central) => Class=metastases (CF = 0.91)
+(Dislocation_of = no) and (Changes_in_lym = round) and (Lymphatics = arched) => Class=metastases (CF = 0.93)
+(Special_forms = no) and (Lym_nodes_enlar >= 3(-> 2)) => Class=metastases (CF = 0.82)
+(Special_forms = chalices) and (Changes_in_lym = round) and (Early_uptake_in = yes) => Class=metastases (CF = 0.94)
+(Exclusion_of_no = no) and (Changes_in_node = lacunar) and (Extravasates = no) => Class=metastases (CF = 0.89)
+(No_of_nodes_in >= 3(-> 2)) and (By_pass = no) and (Dislocation_of = yes) => Class=malign_lymph (CF = 0.91)
+(Changes_in_node = lac_central) => Class=malign_lymph (CF = 0.9)
+(Changes_in_node = lacunar) and (Exclusion_of_no = yes) and (Changes_in_lym = oval) and (Defect_in_node = lacunar) => Class=malign_lymph (CF = 0.9)
+(Block_of_affere = no) and (Changes_in_stru = drop_like) and (Lym_nodes_enlar >= 2(-> 1)) => Class=malign_lymph (CF = 0.85)
+(Changes_in_stru = stripped) => Class=malign_lymph (CF = 0.85)
+(Lym_nodes_enlar >= 3(-> 2)) and (Changes_in_node = lacunar) and (Extravasates = yes) => Class=malign_lymph (CF = 0.9)
+(Block_of_affere = no) and (Changes_in_stru = faint) and (Lymphatics = deformed) and (Dislocation_of = yes) => Class=malign_lymph (CF = 0.77)
+(Lym_nodes_dimin >= 2(-> 1)) and (By_pass = yes) => Class=fibrosis (CF = 0.68)
+
+Number of Rules : 18
+
+
+
+
+REGLAS = 18

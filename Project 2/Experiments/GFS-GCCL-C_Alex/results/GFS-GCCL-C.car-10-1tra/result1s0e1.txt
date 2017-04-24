@@ -1,0 +1,15 @@
+
+Rule base with 1 rules, 0 variables and 0 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If then Class is unacc with certainty degree 0.6004287245444802
+
+Fitness: 1089
+
+
+
+Training Accuracy:	70.03215434083602%
+Test Accuracy:		69.94219653179191%
+

@@ -1,0 +1,9 @@
+@Number of Rules: 4
+if(A2>2.0 && A4>1.0) (87/87)
+	output=0
+else if(A5>3.0) (94/94)
+	output=0
+else if(A2>2.0 && A5<=2.0) (69/69)
+	output=0
+else 
+	output=1

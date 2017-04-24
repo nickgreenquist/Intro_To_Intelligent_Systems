@@ -1,0 +1,17 @@
+@Number of Rules: 8
+if(Sex<=-1.92 && Class<=-0.923) (205/220)
+	output=1.0
+else if(Sex<=-1.92 && Class>0.0214) (19/21)
+	output=1.0
+else if(Sex<=-1.92 && Class<=-0.923 && Age>-0.228) (12/12)
+	output=1.0
+else if(Class<=-1.87 && Age>-0.228) (6/6)
+	output=1.0
+else if(Sex>-1.92 && Age>-0.228 && Class<=-0.923) (16/16)
+	output=1.0
+else if(Sex<=-1.92 && Class>-0.923) (105/203)
+	output=1.0
+else if(Class<=-1.87 && Sex>-1.92 && Age=null) (50/155)
+	output=1.0
+else 
+	output=-1.0

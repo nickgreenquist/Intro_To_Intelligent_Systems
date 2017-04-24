@@ -1,0 +1,71 @@
+
+Rule base with 9 rules, 9 variables and 9 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X5 is Label 5" then Class is 0 with certainty degree 1.0
+
+Fitness: 100
+
+
+Rule 2:
+
+If "X2 is Label 3" then Class is 1 with certainty degree 0.5230769230769231
+
+Fitness: 99
+
+
+Rule 3:
+
+If "X2 is Label 5" then Class is 0 with certainty degree 0.84375
+
+Fitness: 83
+
+
+Rule 4:
+
+If "X5 is Label 1" then Class is 1 with certainty degree 0.27835051546391754
+
+Fitness: 31
+
+
+Rule 5:
+
+If "X5 is Label 4" then Class is 1 with certainty degree 0.5913978494623654
+
+Fitness: 30
+
+
+Rule 6:
+
+If "X5 is Label 2" and "X6 is Label 1" then Class is 1 with certainty degree 0.42857142857142866
+
+Fitness: 18
+
+
+Rule 7:
+
+If "X4 is Label 1" then Class is 1 with certainty degree 0.13178294573643412
+
+Fitness: 6
+
+
+Rule 8:
+
+If "X3 is Label 5" then Class is 1 with certainty degree 0.061224489795918366
+
+Fitness: 6
+
+
+Rule 9:
+
+If then Class is 1 with certainty degree 0.05670103092783505
+
+Fitness: 5
+
+
+
+Training Accuracy:	97.42268041237114%
+Test Accuracy:		95.45454545454545%
+

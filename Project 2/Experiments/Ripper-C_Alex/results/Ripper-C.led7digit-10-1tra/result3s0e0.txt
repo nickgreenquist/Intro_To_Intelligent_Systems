@@ -1,0 +1,185 @@
+@Number of Rules: 92
+if(Led1<=0.0 && Led4<=0.0 && Led7<=0.0 && Led2<=0.0) (25/32)
+	output=1
+else if(Led1<=0.0 && Led4<=0.0 && Led2<=0.0 && Led6>0.0 && Led3<=0.0) (4/4)
+	output=1
+else if(Led4<=0.0 && Led1<=0.0 && Led5<=0.0 && Led2<=0.0 && Led6>0.0) (22/28)
+	output=1
+else if(Led1<=0.0 && Led4<=0.0 && Led2<=0.0 && Led7<=0.0 && Led3<=0.0) (3/3)
+	output=1
+else if(Led1<=0.0 && Led4<=0.0 && Led5<=0.0 && Led3<=0.0) (4/4)
+	output=1
+else if(Led1<=0.0 && Led4<=0.0 && Led2<=0.0 && Led3<=0.0) (4/4)
+	output=1
+else if(Led7<=0.0 && Led2<=0.0 && Led1<=0.0 && Led4<=0.0 && Led6<=0.0) (2/3)
+	output=1
+else if(Led2<=0.0 && Led1<=0.0 && Led4<=0.0 && Led7<=0.0 && Led5>0.0) (3/3)
+	output=1
+else if(Led7<=0.0 && Led1<=0.0 && Led4<=0.0 && Led2<=0.0 && Led6>0.0 && Led3<=0.0) (3/3)
+	output=1
+else if(Led7<=0.0 && Led2<=0.0 && Led4>0.0 && Led6>0.0 && Led1>0.0 && Led3=null && Led5=null) (1/5)
+	output=1
+else if(Led4<=0.0 && Led5<=0.0 && Led2>0.0 && Led1<=0.0 && Led7<=0.0 && Led3=null && Led6=null) (1/4)
+	output=1
+else if(Led7<=0.0 && Led2<=0.0 && Led1>0.0 && Led4>0.0 && Led5=null && Led3=null && Led6=null) (1/4)
+	output=1
+else if(Led7<=0.0 && Led2<=0.0 && Led3<=0.0 && Led1>0.0 && Led6>0.0 && Led4=null && Led5=null) (1/2)
+	output=1
+else if(Led7<=0.0 && Led2<=0.0 && Led1>0.0 && Led6>0.0 && Led5<=0.0 && Led3=null && Led4=null) (1/27)
+	output=1
+else if(Led4<=0.0 && Led5<=0.0 && Led2<=0.0 && Led7>0.0 && Led3>0.0 && Led6>0.0 && Led1=null) (1/6)
+	output=1
+else if(Led4<=0.0 && Led5>0.0 && Led2>0.0 && Led3>0.0) (29/35)
+	output=0
+else if(Led4<=0.0 && Led7>0.0 && Led3>0.0 && Led6>0.0 && Led5>0.0) (27/33)
+	output=0
+else if(Led4<=0.0 && Led5>0.0 && Led2>0.0 && Led3>0.0 && Led7<=0.0) (3/3)
+	output=0
+else if(Led4<=0.0 && Led5>0.0 && Led2>0.0 && Led3>0.0 && Led1<=0.0) (3/4)
+	output=0
+else if(Led4<=0.0 && Led5>0.0 && Led3>0.0 && Led6>0.0 && Led1<=0.0) (4/8)
+	output=0
+else if(Led4<=0.0 && Led5>0.0 && Led2>0.0 && Led7<=0.0) (3/4)
+	output=0
+else if(Led4<=0.0 && Led5>0.0 && Led2>0.0 && Led3>0.0 && Led6>0.0 && Led7<=0.0) (3/3)
+	output=0
+else if(Led4<=0.0 && Led5>0.0 && Led2>0.0 && Led3>0.0 && Led1>0.0 && Led7<=0.0) (2/2)
+	output=0
+else if(Led4<=0.0 && Led7>0.0 && Led2>0.0 && Led5<=0.0 && Led3>0.0 && Led1>0.0 && Led6=null) (2/6)
+	output=0
+else if(Led5>0.0 && Led6>0.0 && Led2<=0.0 && Led3<=0.0 && Led1=null && Led4=null && Led7=null) (1/3)
+	output=0
+else if(Led7>0.0 && Led3>0.0 && Led4<=0.0 && Led2<=0.0 && Led6>0.0 && Led5<=0.0 && Led1=null) (1/6)
+	output=0
+else if(Led5>0.0 && Led6>0.0 && Led4<=0.0 && Led3<=0.0 && Led7>0.0 && Led1=null && Led2=null) (1/4)
+	output=0
+else if(Led5>0.0 && Led6>0.0 && Led3>0.0 && Led1>0.0 && Led4>0.0 && Led2>0.0 && Led7=null) (3/35)
+	output=0
+else if(Led3<=0.0 && Led5>0.0 && Led6>0.0 && Led1>0.0 && Led2>0.0 && Led7>0.0) (25/27)
+	output=6
+else if(Led3<=0.0 && Led5>0.0 && Led2>0.0 && Led1<=0.0) (4/5)
+	output=6
+else if(Led3<=0.0 && Led5>0.0 && Led6>0.0) (34/41)
+	output=6
+else if(Led3<=0.0 && Led5>0.0 && Led6>0.0 && Led7>0.0) (30/35)
+	output=6
+else if(Led3<=0.0 && Led5>0.0 && Led6>0.0 && Led1>0.0 && Led7>0.0) (27/31)
+	output=6
+else if(Led3<=0.0 && Led5>0.0 && Led6>0.0 && Led1>0.0 && Led7>0.0 && Led4<=0.0) (4/7)
+	output=6
+else if(Led5>0.0 && Led2>0.0 && Led3<=0.0 && Led6<=0.0 && Led4>0.0) (1/2)
+	output=6
+else if(Led3<=0.0 && Led5>0.0 && Led2>0.0 && Led7>0.0 && Led1>0.0) (26/30)
+	output=6
+else if(Led2>0.0 && Led5>0.0 && Led1<=0.0 && Led7>0.0 && Led4>0.0 && Led3>0.0) (1/5)
+	output=6
+else if(Led3<=0.0 && Led1>0.0 && Led7<=0.0 && Led4<=0.0 && Led6>0.0 && Led5=null && Led2=null) (1/2)
+	output=6
+else if(Led2>0.0 && Led7>0.0 && Led3<=0.0 && Led6>0.0 && Led1>0.0 && Led4>0.0 && Led5=null) (2/29)
+	output=6
+else if(Led2>0.0 && Led5>0.0 && Led4<=0.0 && Led1>0.0 && Led6>0.0 && Led3=null && Led7=null) (1/26)
+	output=6
+else if(Led2>0.0 && Led6<=0.0 && Led5<=0.0 && Led3>0.0 && Led7>0.0 && Led1=null && Led4=null) (1/2)
+	output=6
+else if(Led5>0.0 && Led2>0.0 && Led6>0.0 && Led1>0.0 && Led3>0.0 && Led4=null && Led7=null) (2/35)
+	output=6
+else if(Led2>0.0 && Led7>0.0 && Led4<=0.0 && Led5<=0.0 && Led3>0.0) (4/7)
+	output=9
+else if(Led2>0.0 && Led3>0.0 && Led5<=0.0 && Led1>0.0 && Led7>0.0 && Led4<=0.0) (4/6)
+	output=9
+else if(Led2>0.0 && Led1>0.0 && Led7<=0.0 && Led3>0.0 && Led6<=0.0) (1/2)
+	output=9
+else if(Led2>0.0 && Led1>0.0 && Led5<=0.0 && Led3>0.0 && Led7>0.0) (26/43)
+	output=9
+else if(Led2>0.0 && Led4<=0.0 && Led5>0.0 && Led1=null && Led6=null && Led3=null && Led7=null) (2/26)
+	output=9
+else if(Led2>0.0 && Led7>0.0 && Led1<=0.0 && Led5<=0.0 && Led3>0.0 && Led4>0.0 && Led6=null) (3/7)
+	output=9
+else if(Led6>0.0 && Led3>0.0 && Led7>0.0 && Led4<=0.0 && Led1>0.0 && Led5=null && Led2=null) (1/6)
+	output=9
+else if(Led2>0.0 && Led3>0.0 && Led1>0.0 && Led7<=0.0 && Led5<=0.0 && Led4>0.0 && Led6=null) (2/4)
+	output=9
+else if(Led2>0.0 && Led7>0.0 && Led6>0.0 && Led4<=0.0 && Led1>0.0 && Led3=null && Led5=null) (1/3)
+	output=9
+else if(Led7>0.0 && Led6>0.0 && Led1>0.0 && Led5>0.0 && Led2>0.0 && Led3>0.0 && Led4=null) (3/35)
+	output=9
+else if(Led2>0.0 && Led7>0.0 && Led6>0.0 && Led5>0.0 && Led4>0.0 && Led3>0.0 && Led1=null) (1/4)
+	output=9
+else if(Led3<=0.0 && Led1>0.0 && Led2>0.0 && Led7>0.0 && Led6>0.0 && Led5<=0.0 && Led4=null) (2/29)
+	output=9
+else if(Led7>0.0 && Led6>0.0 && Led2<=0.0 && Led1>0.0 && Led5<=0.0 && Led4>0.0 && Led3=null) (2/28)
+	output=9
+else if(Led6<=0.0 && Led5>0.0 && Led2<=0.0) (31/33)
+	output=2
+else if(Led6<=0.0 && Led5>0.0 && Led3<=0.0) (7/9)
+	output=2
+else if(Led6<=0.0 && Led3>0.0 && Led1>0.0 && Led4>0.0) (28/40)
+	output=2
+else if(Led6<=0.0 && Led5>0.0 && Led2<=0.0 && Led7>0.0) (25/25)
+	output=2
+else if(Led6<=0.0 && Led5>0.0 && Led2<=0.0 && Led3>0.0) (26/27)
+	output=2
+else if(Led6<=0.0 && Led4<=0.0 && Led7>0.0 && Led2<=0.0) (5/6)
+	output=2
+else if(Led5>0.0 && Led2<=0.0 && Led4>0.0 && Led1=null && Led7=null && Led3=null && Led6=null) (1/4)
+	output=2
+else if(Led5>0.0 && Led7>0.0 && Led6>0.0 && Led3>0.0 && Led4>0.0 && Led1=null && Led2=null) (1/35)
+	output=2
+else if(Led3<=0.0 && Led7>0.0 && Led6<=0.0) (6/13)
+	output=5
+else if(Led3<=0.0 && Led7>0.0 && Led2>0.0) (33/75)
+	output=5
+else if(Led3<=0.0 && Led7>0.0) (38/91)
+	output=5
+else if(Led3<=0.0 && Led1>0.0 && Led2>0.0) (36/77)
+	output=5
+else if(Led3<=0.0 && Led1>0.0 && Led2>0.0 && Led5<=0.0 && Led6<=0.0) (5/5)
+	output=5
+else if(Led3<=0.0 && Led7>0.0 && Led5<=0.0 && Led2>0.0 && Led1>0.0) (31/37)
+	output=5
+else if(Led2>0.0 && Led5<=0.0 && Led1>0.0 && Led7>0.0 && Led3>0.0 && Led6=null && Led4=null) (3/35)
+	output=5
+else if(Led1<=0.0 && Led2>0.0 && Led7<=0.0) (36/39)
+	output=4
+else if(Led7<=0.0 && Led4>0.0 && Led1<=0.0) (36/39)
+	output=4
+else if(Led1<=0.0 && Led2>0.0 && Led5<=0.0 && Led4>0.0) (34/39)
+	output=4
+else if(Led7<=0.0 && Led2>0.0 && Led4>0.0 && Led5<=0.0 && Led1=null && Led3=null && Led6=null) (1/4)
+	output=4
+else if(Led7<=0.0 && Led2>0.0 && Led4<=0.0 && Led1=null && Led5=null && Led3=null && Led6=null) (1/3)
+	output=4
+else if(Led5>0.0 && Led2>0.0) (40/131)
+	output=8
+else if(Led2>0.0 && Led1<=0.0) (6/63)
+	output=8
+else if(Led2>0.0 && Led7>0.0 && Led3<=0.0) (3/75)
+	output=8
+else if(Led4>0.0 && Led5>0.0) (39/122)
+	output=8
+else if(Led5>0.0 && Led2>0.0 && Led6<=0.0) (7/17)
+	output=8
+else if(Led5>0.0 && Led4>0.0 && Led6<=0.0) (6/40)
+	output=8
+else if(Led2>0.0 && Led7>0.0 && Led5<=0.0 && Led1=null && Led4=null && Led3=null && Led6=null) (3/35)
+	output=8
+else if(Led4>0.0 && Led1>0.0 && Led6>0.0 && Led7>0.0 && Led5<=0.0 && Led3=null && Led2=null) (1/28)
+	output=8
+else if(Led7<=0.0) (47/146)
+	output=7
+else if(Led4<=0.0 && Led5>0.0) (5/60)
+	output=7
+else if(Led7<=0.0 && Led4<=0.0 && Led6<=0.0) (6/10)
+	output=7
+else if(Led1<=0.0 && Led6<=0.0 && Led4>0.0) (1/10)
+	output=7
+else if(Led7<=0.0 && Led4<=0.0) (43/84)
+	output=7
+else if(Led7<=0.0 && Led4<=0.0 && Led1<=0.0) (6/37)
+	output=7
+else if(Led3<=0.0 && Led1=null && Led6=null && Led5=null && Led4=null && Led7=null && Led2=null) (1/4)
+	output=7
+else if(Led4<=0.0 && Led1>0.0 && Led7>0.0 && Led6=null && Led5=null && Led3=null && Led2=null) (1/6)
+	output=7
+else 
+	output=3

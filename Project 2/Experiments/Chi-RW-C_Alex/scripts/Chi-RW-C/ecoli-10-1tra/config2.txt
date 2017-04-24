@@ -1,0 +1,8 @@
+algorithm = Fuzzy Rule Learning Model by the Chi et al. approach with rule weights
+inputData = "../datasets/ecoli-10-1tra/ecoli-10-1tra-10-3tra.dat" "../datasets/ecoli-10-1tra/ecoli-10-1tra-10-3tra.dat" "../datasets/ecoli-10-1tra/ecoli-10-1tra-10-3tst.dat" 
+outputData = "../results/Chi-RW-C.ecoli-10-1tra/result2.tra" "../results/Chi-RW-C.ecoli-10-1tra/result2.tst" "../results/Chi-RW-C.ecoli-10-1tra/result2e0.txt"  "../results/Chi-RW-C.ecoli-10-1tra/result2e1.txt"  
+
+Number of Labels = 3
+T-norm for the Computation of the Compatibility Degree = Product
+Rule Weight = Penalized_Certainty_Factor
+Fuzzy Reasoning Method = Winning_Rule

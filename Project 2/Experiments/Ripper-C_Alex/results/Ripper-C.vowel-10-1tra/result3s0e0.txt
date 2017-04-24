@@ -1,0 +1,129 @@
+@Number of Rules: 64
+if(F1<=0.35 && F3>1.264) (36/36)
+	output=0
+else if(F1<=-0.106) (44/45)
+	output=0
+else if(F2>0.727 && F0<=-4.047 && F9<=0.982 && F7<=0.123) (15/15)
+	output=0
+else if(F1<=0.418 && F0<=-3.639) (22/22)
+	output=0
+else if(F2>1.093) (9/9)
+	output=0
+else if(F1<=0.7 && F5>1.215) (31/83)
+	output=1
+else if(F4>0.503 && F1<=1.066 && SpeakerNumber>3.0) (28/53)
+	output=1
+else if(F4>0.239 && F9>0.645 && F2>0.157) (12/24)
+	output=1
+else if(F3>1.232 && F8<=-0.761 && F5>0.764) (18/27)
+	output=1
+else if(F1<=0.716 && F6>0.145) (22/65)
+	output=1
+else if(F9>1.044 && F4>0.209 && F1>1.078) (6/6)
+	output=1
+else if(F1<=1.322 && F4>0.143) (36/121)
+	output=2
+else if(F1<=1.412 && F2<=-1.415) (15/34)
+	output=2
+else if(F1<=1.553 && SpeakerNumber>11.0 && F4>-1.211) (13/39)
+	output=2
+else if(F1<=0.755 && F2<=-0.66) (18/81)
+	output=2
+else if(F3>1.211 && Sex>0.0 && F8>-0.787) (26/72)
+	output=2
+else if(F9>1.034 && SpeakerNumber>12.0 && F0<=-2.964) (6/9)
+	output=2
+else if(F0>-2.343 && F7<=0.678 && F1<=2.433) (46/62)
+	output=3
+else if(F1<=2.091 && F2<=-0.716 && F5<=0.287 && SpeakerNumber>4.0) (20/27)
+	output=3
+else if(F1<=2.089 && F2<=-0.719 && F9>0.013 && F8>-0.473 && F7<=0.955) (20/25)
+	output=3
+else if(F1<=1.4 && Sex>0.0 && SpeakerNumber>5.0 && F0<=-3.055) (6/44)
+	output=3
+else if(F0>-2.378 && F2<=-1.046 && TT<=0.0) (12/47)
+	output=3
+else if(F9<=-1.013 && Sex<=0.0) (1/7)
+	output=3
+else if(F0>-3.058 && F1>2.014 && F9<=-0.301 && F4<=-0.485 && F2<=0.084 && F7>-0.382) (35/37)
+	output=4
+else if(F0>-3.058 && F1>1.795 && F2<=-1.131) (25/46)
+	output=4
+else if(F0>-2.971 && F1>1.652 && SpeakerNumber<=4.0) (24/53)
+	output=4
+else if(F0>-2.729 && F6<=-0.214 && F3<=0.367 && Sex<=0.0) (8/19)
+	output=4
+else if(F7<=0.016 && F3<=-0.335 && F2<=-0.887 && F1<=3.42) (4/4)
+	output=4
+else if(F6>0.864 && F3>-0.2) (4/9)
+	output=4
+else if(SpeakerNumber<=0.0 && F8<=-0.218 && F9<=-0.568) (1/8)
+	output=4
+else if(F8>0.619 && F0>-2.982 && TT>0.0) (2/4)
+	output=4
+else if(F0>-2.946 && F6>-0.233 && F8>-0.898 && F1>1.021) (54/162)
+	output=5
+else if(F0>-2.53) (35/191)
+	output=5
+else if(F7<=0.146 && F1<=2.027 && F2<=-0.862) (10/27)
+	output=5
+else if(F0>-3.092 && F6>0.418 && TT<=0.0 && F1>1.033) (8/21)
+	output=5
+else if(F7<=-0.404 && TT<=0.0 && SpeakerNumber<=0.0) (3/3)
+	output=5
+else if(F0>-3.642 && F1>2.014 && SpeakerNumber<=11.0) (42/121)
+	output=6
+else if(F0>-3.687 && F7<=0.506 && F4<=-0.416 && F9>-0.562) (29/98)
+	output=6
+else if(F0>-3.756 && F1>2.719 && F8<=-0.58) (24/49)
+	output=6
+else if(F8<=-1.309 && F4<=-0.131) (7/13)
+	output=6
+else if(F0>-2.69 && F9>0.184) (8/55)
+	output=6
+else if(F1>3.281 && F0>-4.13 && F3<=-0.209) (30/46)
+	output=7
+else if(F4<=-1.166 && F2<=0.304) (31/66)
+	output=7
+else if(F1>3.391 && F7>0.314 && TT<=0.0) (22/24)
+	output=7
+else if(F5<=0.097 && F4<=-0.929 && SpeakerNumber>2.0) (19/36)
+	output=7
+else if(F6>0.578 && F9<=-0.64) (7/19)
+	output=7
+else if(F1>3.651 && SpeakerNumber>9.0 && F9>-0.719) (16/21)
+	output=7
+else if(F6<=-1.454) (2/2)
+	output=7
+else if(F5>0.515 && F3<=0.183 && SpeakerNumber>4.0 && F9>-1.01) (22/121)
+	output=8
+else if(F0>-4.261 && F1>2.814) (25/161)
+	output=8
+else if(F0>-4.261 && F1>2.44 && F8>-0.791 && F9<=-0.203) (32/111)
+	output=8
+else if(F4<=-1.041 && F2>-0.62) (11/99)
+	output=8
+else if(F7>1.186) (10/60)
+	output=8
+else if(F2<=-0.492 && F9>0.304 && F3>0.439) (7/46)
+	output=8
+else if(F5>1.413 && F7>0.862 && F0<=-3.543) (5/5)
+	output=8
+else if(F3<=-0.849 && F0>-4.947) (4/17)
+	output=8
+else if(F6<=-0.49 && F2<=-0.415 && TT>0.0) (3/8)
+	output=8
+else if(F4<=-0.65 && F9>0.472) (11/55)
+	output=8
+else if(F6<=-0.618 && SpeakerNumber<=8.0) (1/49)
+	output=8
+else if(F5>1.449 && F1>1.86) (2/8)
+	output=8
+else if(F0<=-3.74) (77/272)
+	output=9
+else if(F2<=-1.405) (6/91)
+	output=9
+else if(F1<=0.742 && TT<=0.0) (1/94)
+	output=9
+else 
+	output=10

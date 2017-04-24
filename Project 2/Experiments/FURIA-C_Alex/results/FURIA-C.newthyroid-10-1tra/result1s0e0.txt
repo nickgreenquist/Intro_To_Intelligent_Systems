@@ -1,0 +1,31 @@
+FURIA rules:
+===========
+
+(thyroxin <= 5.6(-> 6.1)) and (TSH_value >= 2.2(-> 1.5)) => class=3 (CF = 0.93)
+(thyroxin <= 6.5(-> 7.6)) and (thyroidstimulating >= 1.7(-> 1.6)) and (triiodothyronine <= 1.3(-> 1.7)) => class=3 (CF = 0.93)
+(thyroxin >= 12.9(-> 11.3)) and (TSH_value <= 0.4(-> 0.5)) => class=2 (CF = 0.94)
+(triiodothyronine >= 3.3(-> 3.1)) => class=2 (CF = 0.92)
+(T3resin <= 95(-> 100)) and (thyroxin >= 11.1(-> 10.4)) => class=2 (CF = 0.92)
+(thyroxin <= 12.4(-> 12.9)) and (thyroxin >= 5.7(-> 5.3)) and (TSH_value >= 0.1(-> 0)) and (TSH_value <= 7.7(-> 11.5)) => class=1 (CF = 0.99)
+(thyroxin >= 7.3(-> 6.5)) and (triiodothyronine <= 2.5(-> 3)) and (thyroxin <= 13.8(-> 15.2)) and (T3resin >= 98(-> 97)) => class=1 (CF = 0.99)
+(TSH_value <= 2(-> 6.3)) and (TSH_value >= 1.4(-> 0.6)) and (thyroxin >= 4.2(-> 3.8)) => class=1 (CF = 0.99)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(thyroxin <= 5.6(-> 6.1)) and (TSH_value >= 2.2(-> 1.5)) => class=3 (CF = 0.93)
+(thyroxin <= 6.5(-> 7.6)) and (thyroidstimulating >= 1.7(-> 1.6)) and (triiodothyronine <= 1.3(-> 1.7)) => class=3 (CF = 0.93)
+(thyroxin >= 12.9(-> 11.3)) and (TSH_value <= 0.4(-> 0.5)) => class=2 (CF = 0.94)
+(triiodothyronine >= 3.3(-> 3.1)) => class=2 (CF = 0.92)
+(T3resin <= 95(-> 100)) and (thyroxin >= 11.1(-> 10.4)) => class=2 (CF = 0.92)
+(thyroxin <= 12.4(-> 12.9)) and (thyroxin >= 5.7(-> 5.3)) and (TSH_value >= 0.1(-> 0)) and (TSH_value <= 7.7(-> 11.5)) => class=1 (CF = 0.99)
+(thyroxin >= 7.3(-> 6.5)) and (triiodothyronine <= 2.5(-> 3)) and (thyroxin <= 13.8(-> 15.2)) and (T3resin >= 98(-> 97)) => class=1 (CF = 0.99)
+(TSH_value <= 2(-> 6.3)) and (TSH_value >= 1.4(-> 0.6)) and (thyroxin >= 4.2(-> 3.8)) => class=1 (CF = 0.99)
+
+Number of Rules : 8
+
+
+
+
+REGLAS = 8

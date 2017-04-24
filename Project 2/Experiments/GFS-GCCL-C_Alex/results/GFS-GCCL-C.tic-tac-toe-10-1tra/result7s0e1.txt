@@ -1,0 +1,15 @@
+
+Rule base with 1 rules, 0 variables and 0 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If then Class is positive with certainty degree 0.31554524361948955
+
+Fitness: 567
+
+
+
+Training Accuracy:	65.77726218097449%
+Test Accuracy:		61.458333333333336%
+

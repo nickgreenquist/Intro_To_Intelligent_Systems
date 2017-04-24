@@ -1,0 +1,79 @@
+@Number of Rules: 39
+if(Mcg>84.0 && Alm1<=52.0) (1/1)
+	output=imS
+else if(Alm2>78.0 && Alm1<=76.0 && Mcg>48.0 && Aac<=54.0) (1/1)
+	output=imS
+else if(Chg<=1.0) (1/1)
+	output=imL
+else if(Lip<=1.0 && Alm2>74.0) (1/1)
+	output=imL
+else if(Lip<=1.0 && Mcg>49.0) (5/6)
+	output=omL
+else if(Aac>66.0 && Gvh>67.0) (11/11)
+	output=om
+else if(Aac>75.0) (8/8)
+	output=om
+else if(Aac>64.0 && Alm1<=54.0 && Mcg>34.0) (12/12)
+	output=om
+else if(Gvh>56.0 && Alm1<=33.0 && Mcg<=64.0 && Aac>6.0) (2/3)
+	output=om
+else if(Mcg>73.0 && Gvh<=9.0 && Alm2<=29.0) (1/1)
+	output=om
+else if(Mcg>74.0 && Alm1>71.0) (12/13)
+	output=imU
+else if(Mcg>71.0 && Aac>55.0) (11/18)
+	output=imU
+else if(Alm2>67.0 && Alm1<=74.0 && Mcg>45.0 && Gvh<=51.0 && Aac>51.0 && Lip=null && Chg=null) (7/10)
+	output=imU
+else if(Alm1>58.0 && Gvh<=46.0 && Mcg>45.0 && Aac<=48.0) (6/8)
+	output=imU
+else if(Alm2>73.0 && Lip<=1.0) (1/2)
+	output=imU
+else if(Aac<=7.0 && Alm1>46.0 && Mcg<=57.0) (2/5)
+	output=imU
+else if(Mcg>74.0 && Aac>51.0) (11/15)
+	output=imU
+else if(Aac>63.0 && Gvh<=29.0 && Alm1>65.0) (1/1)
+	output=imU
+else if(Mcg>76.0) (14/20)
+	output=imU
+else if(Mcg>74.0 && Alm1>72.0) (12/12)
+	output=imU
+else if(Aac>66.0 && Mcg>27.0 && Gvh<=45.0) (1/2)
+	output=imU
+else if(Alm1>78.0 && Mcg>61.0 && Alm2<=81.0 && Aac<=58.0) (2/2)
+	output=imU
+else if(Gvh>56.0 && Alm2<=52.0 && Alm1>35.0) (28/42)
+	output=pp
+else if(Mcg>61.0 && Aac<=47.0) (31/41)
+	output=pp
+else if(Gvh>56.0 && Mcg>64.0) (19/29)
+	output=pp
+else if(Gvh>53.0 && Alm2<=3.0) (3/6)
+	output=pp
+else if(Gvh>58.0 && Alm2<=56.0) (33/50)
+	output=pp
+else if(Gvh>67.0 && Mcg<=7.0) (1/2)
+	output=pp
+else if(Gvh>58.0 && Alm1<=54.0) (31/43)
+	output=pp
+else if(Gvh>58.0 && Alm1<=65.0) (33/49)
+	output=pp
+else if(Mcg>59.0 && Gvh<=6.0) (2/3)
+	output=pp
+else if(Mcg>56.0 && Alm2<=51.0 && Gvh>55.0) (29/43)
+	output=pp
+else if(Alm1<=4.0 && Mcg<=29.0 && Alm2>39.0) (1/1)
+	output=pp
+else if(Alm1<=28.0 && Alm2>37.0 && Mcg<=32.0 && Aac>39.0 && Gvh>3.0 && Chg=null && Lip=null) (2/5)
+	output=pp
+else if(Alm1>55.0) (62/103)
+	output=im
+else if(Alm2>61.0) (54/82)
+	output=im
+else if(Aac>63.0 && Mcg>31.0) (8/31)
+	output=im
+else if(Aac<=33.0 && Alm2>43.0) (4/9)
+	output=im
+else 
+	output=cp

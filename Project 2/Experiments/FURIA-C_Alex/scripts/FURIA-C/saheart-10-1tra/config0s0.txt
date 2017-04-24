@@ -1,0 +1,7 @@
+algorithm = FURIA
+inputData = "../datasets/saheart-10-1tra/saheart-10-1tra-10-1tra.dat" "../datasets/saheart-10-1tra/saheart-10-1tra-10-1tra.dat" "../datasets/saheart-10-1tra/saheart-10-1tra-10-1tst.dat" 
+outputData = "../results/FURIA-C.saheart-10-1tra/result0s0.tra" "../results/FURIA-C.saheart-10-1tra/result0s0.tst" "../results/FURIA-C.saheart-10-1tra/result0s0e0.txt"  
+
+seed = 1286082570
+Number of Optimizations = 2
+Number of folds = 3

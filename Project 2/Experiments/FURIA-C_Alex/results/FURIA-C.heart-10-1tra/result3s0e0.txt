@@ -1,0 +1,37 @@
+FURIA rules:
+===========
+
+ => Class=1 (CF = 0.0)
+(MajorVessels <= 0(-> 1)) => Class=1 (CF = 0.75)
+ => Class=1 (CF = 0.0)
+(MajorVessels <= 0(-> 1)) => Class=1 (CF = 0.75)
+(MajorVessels <= 0(-> 1)) => Class=1 (CF = 0.75)
+ => Class=1 (CF = 0.0)
+(ChestPainType >= 4(-> 3)) => Class=2 (CF = 0.73)
+(Thal >= 7(-> 6)) and (MaxHeartRate <= 144(-> 145)) => Class=2 (CF = 0.91)
+(Thal >= 6(-> 3)) => Class=2 (CF = 0.73)
+ => Class=2 (CF = 0.0)
+ => Class=2 (CF = 0.0)
+
+
+
+Reglas Buenas
+Inside m_Ruleset
+(ChestPainType <= 3(-> 4)) and (Thal <= 3(-> 6)) and (RestBloodPressure <= 132(-> 134)) and (RestBloodPressure >= 110(-> 108)) => Class=1 (CF = 0.98)
+(MajorVessels <= 0(-> 1)) and (Thal <= 6(-> 7)) and (MaxHeartRate >= 162(-> 161)) => Class=1 (CF = 0.96)
+(ChestPainType <= 3(-> 4)) and (Sex <= 0(-> 1)) => Class=1 (CF = 0.96)
+(MajorVessels <= 0(-> 1)) and (MaxHeartRate >= 137(-> 114)) and (Oldpeak >= 4(-> 3)) and (Age >= 52(-> 50)) and (ExerciseInduced <= 0(-> 1)) => Class=1 (CF = 0.97)
+(MajorVessels <= 0(-> 1)) and (RestBloodPressure <= 112(-> 118)) => Class=1 (CF = 0.84)
+(ChestPainType <= 3(-> 4)) and (Age <= 52(-> 54)) and (Slope <= 1(-> 2)) => Class=1 (CF = 0.95)
+(ChestPainType >= 4(-> 3)) and (MajorVessels >= 1(-> 0)) => Class=2 (CF = 0.95)
+(Thal >= 7(-> 6)) and (MaxHeartRate <= 144(-> 145)) and (Slope >= 2(-> 1)) => Class=2 (CF = 0.97)
+(Thal >= 6(-> 3)) and (SerumCholestoral >= 246(-> 234)) and (ChestPainType >= 4(-> 3)) => Class=2 (CF = 0.97)
+(Oldpeak >= 25(-> 24)) => Class=2 (CF = 0.86)
+(Age >= 56(-> 55)) and (Sex >= 1(-> 0)) and (SerumCholestoral >= 246(-> 245)) and (ChestPainType <= 3(-> 4)) => Class=2 (CF = 0.85)
+
+Number of Rules : 11
+
+
+
+
+REGLAS = 11

@@ -1,0 +1,23 @@
+@Classifier number 0: 
+Number of Rules: 5
+Rule[1]: IF  flavanoids <= 1.57 AND  ColorIntensity <= 3.8  THEN Class = 2 (0.08125001/0.08125001)
+Rule[2]: IF  flavanoids <= 1.57 AND  ColorIntensity > 3.8  THEN Class = 3 (0.2687499/0.2749999)
+Rule[3]: IF  flavanoids > 1.57 AND  Alcohol <= 12.77  THEN Class = 2 (0.2749999/0.2749999)
+Rule[4]: IF  flavanoids > 1.57 AND  Alcohol > 12.77 AND  Proline <= 650.0  THEN Class = 2 (0.025/0.025)
+Rule[5]: IF  flavanoids > 1.57 AND  Alcohol > 12.77 AND  Proline > 650.0  THEN Class = 1 (0.33749983/0.34374982)
+
+@Classifier number 1: 
+Number of Rules: 8
+Rule[1]: IF  flavanoids <= 1.39 AND  ColorIntensity <= 3.6  THEN Class = 2 (0.4138967/0.4138967)
+Rule[2]: IF  flavanoids <= 1.39 AND  ColorIntensity > 3.6  THEN Class = 3 (1.7383665/1.7383665)
+Rule[3]: IF  flavanoids > 1.39 AND  Alcohol <= 13.03 AND  OD280/OD315 <= 3.5  THEN Class = 2 (3.8625367/3.8625367)
+Rule[4]: IF  flavanoids > 1.39 AND  Alcohol <= 13.03 AND  OD280/OD315 > 3.5 AND  Alcohol <= 12.7  THEN Class = 2 (0.124169014/0.124169014)
+Rule[5]: IF  flavanoids > 1.39 AND  Alcohol <= 13.03 AND  OD280/OD315 > 3.5 AND  Alcohol > 12.7  THEN Class = 1 (0.08277934/0.08277934)
+Rule[6]: IF  flavanoids > 1.39 AND  Alcohol > 13.03 AND  Proline <= 650.0 AND  Magnesium <= 108.0  THEN Class = 2 (0.124169014/0.124169014)
+Rule[7]: IF  flavanoids > 1.39 AND  Alcohol > 13.03 AND  Proline <= 650.0 AND  Magnesium > 108.0  THEN Class = 3 (0.04138967/0.04138967)
+Rule[8]: IF  flavanoids > 1.39 AND  Alcohol > 13.03 AND  Proline > 650.0  THEN Class = 1 (2.1522634/2.1522634)
+
+Accuracy in training: 0.725
+Accuracy in test: 0.7222222222222222
+AUC in training: 0.8754704630993291
+AUC in test: 0.8125

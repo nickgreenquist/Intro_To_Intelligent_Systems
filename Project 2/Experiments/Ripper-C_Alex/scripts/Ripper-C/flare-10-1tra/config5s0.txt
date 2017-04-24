@@ -1,0 +1,7 @@
+algorithm = Ripper
+inputData = "../datasets/flare-10-1tra/flare-10-1tra-10-6tra.dat" "../datasets/flare-10-1tra/flare-10-1tra-10-6tra.dat" "../datasets/flare-10-1tra/flare-10-1tra-10-6tst.dat" 
+outputData = "../results/Ripper-C.flare-10-1tra/result5s0.tra" "../results/Ripper-C.flare-10-1tra/result5s0.tst" "../results/Ripper-C.flare-10-1tra/result5s0e0.txt"  
+
+seed = 1286082570
+grow_pct = 0.66
+K = 2

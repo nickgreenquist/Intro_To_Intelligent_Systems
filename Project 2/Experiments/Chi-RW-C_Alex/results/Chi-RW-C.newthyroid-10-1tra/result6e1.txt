@@ -1,0 +1,21 @@
+@Number of rules: 19
+
+1: T3resin IS L_1 AND thyroxin IS L_1 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 1 with Rule Weight: 0.7727366716380051
+2: T3resin IS L_1 AND thyroxin IS L_1 AND triiodothyronine IS L_1 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 1 with Rule Weight: 0.5271465398696065
+3: T3resin IS L_2 AND thyroxin IS L_1 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 1 with Rule Weight: 0.7875802406498149
+4: T3resin IS L_1 AND thyroxin IS L_0 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 1 with Rule Weight: 0.7501468784922525
+5: T3resin IS L_2 AND thyroxin IS L_1 AND triiodothyronine IS L_1 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 1 with Rule Weight: 0.5751354915274967
+6: T3resin IS L_1 AND thyroxin IS L_1 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_0 AND TSH_value IS L_1: 1 with Rule Weight: 0.6615855296877006
+7: T3resin IS L_0 AND thyroxin IS L_2 AND triiodothyronine IS L_1 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 2 with Rule Weight: 1.0
+8: T3resin IS L_1 AND thyroxin IS L_2 AND triiodothyronine IS L_1 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 2 with Rule Weight: 0.945645654160374
+9: T3resin IS L_0 AND thyroxin IS L_1 AND triiodothyronine IS L_2 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 2 with Rule Weight: 1.0
+10: T3resin IS L_0 AND thyroxin IS L_2 AND triiodothyronine IS L_2 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 2 with Rule Weight: 1.0
+11: T3resin IS L_0 AND thyroxin IS L_1 AND triiodothyronine IS L_1 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 2 with Rule Weight: 0.6594682995737845
+12: T3resin IS L_1 AND thyroxin IS L_2 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 2 with Rule Weight: 0.6994804507844906
+13: T3resin IS L_2 AND thyroxin IS L_2 AND triiodothyronine IS L_1 AND thyroidstimulating IS L_0 AND TSH_value IS L_0: 2 with Rule Weight: 0.9263790754515923
+14: T3resin IS L_2 AND thyroxin IS L_0 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_1 AND TSH_value IS L_0: 3 with Rule Weight: 0.8526359934767049
+15: T3resin IS L_1 AND thyroxin IS L_0 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_1 AND TSH_value IS L_0: 3 with Rule Weight: 0.11475120337150636
+16: T3resin IS L_2 AND thyroxin IS L_0 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_0 AND TSH_value IS L_1: 3 with Rule Weight: 0.4561182145046544
+17: T3resin IS L_1 AND thyroxin IS L_0 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_0 AND TSH_value IS L_2: 3 with Rule Weight: 1.0
+18: T3resin IS L_1 AND thyroxin IS L_0 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_1 AND TSH_value IS L_1: 3 with Rule Weight: 0.819070549462854
+19: T3resin IS L_1 AND thyroxin IS L_0 AND triiodothyronine IS L_0 AND thyroidstimulating IS L_2 AND TSH_value IS L_1: 3 with Rule Weight: 1.0

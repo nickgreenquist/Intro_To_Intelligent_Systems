@@ -1,0 +1,44 @@
+TEST RESULTS
+============
+Classifier= lymphography 
+Fold 0 : CORRECT=0.06666666666666665 N/C=0.8666666666666667 
+Fold 1 : CORRECT=0.0714285714285714 N/C=0.9285714285714286 
+Fold 2 : CORRECT=0.0 N/C=1.0 
+Fold 3 : CORRECT=0.11764705882352944 N/C=0.7647058823529411 
+Fold 4 : CORRECT=0.2142857142857143 N/C=0.7857142857142857 
+Fold 5 : CORRECT=0.19999999999999996 N/C=0.8 
+Fold 6 : CORRECT=0.1428571428571429 N/C=0.8571428571428571 
+Fold 7 : CORRECT=0.1333333333333333 N/C=0.8666666666666667 
+Fold 8 : CORRECT=0.2142857142857143 N/C=0.7857142857142857 
+Fold 9 : CORRECT=0.06666666666666665 N/C=0.9333333333333333 
+Global Classification Error + N/C:
+0.877282913165266 
+stddev Global Classification Error + N/C:
+0.06874561940950842 
+Correctly classified:
+0.12271708683473403 
+Global N/C:
+0.8588515406162462 
+
+TRAIN RESULTS
+============
+Classifier= lymphography 
+Summary of data, Classifiers: lymphography 
+Fold 0 : CORRECT=1.0 N/C=0.0 
+Fold 1 : CORRECT=1.0 N/C=0.0 
+Fold 2 : CORRECT=1.0 N/C=0.0 
+Fold 3 : CORRECT=1.0 N/C=0.0 
+Fold 4 : CORRECT=1.0 N/C=0.0 
+Fold 5 : CORRECT=1.0 N/C=0.0 
+Fold 6 : CORRECT=1.0 N/C=0.0 
+Fold 7 : CORRECT=1.0 N/C=0.0 
+Fold 8 : CORRECT=1.0 N/C=0.0 
+Fold 9 : CORRECT=1.0 N/C=0.0 
+Global Classification Error + N/C:
+0.0 
+stddev Global Classification Error + N/C:
+0.0 
+Correctly classified:
+1.0 
+Global N/C:
+0.0 

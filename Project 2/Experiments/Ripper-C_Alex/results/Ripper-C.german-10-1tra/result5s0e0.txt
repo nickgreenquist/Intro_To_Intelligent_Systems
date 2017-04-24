@@ -1,0 +1,79 @@
+@Number of Rules: 39
+if(StatusAccount=A11 && InstallmentRate>2.0 && CreditAmount>3104.0 && ResidenceSince>3.0 && SavingsAccount=A61) (18/20)
+	output=2
+else if(StatusAccount=A11 && DurationMonth>15.0 && CreditAmount<=2303.0 && Telephone=A191) (28/33)
+	output=2
+else if(StatusAccount=A11 && Job=A173 && DurationMonth>30.0 && Age<=34.0) (16/18)
+	output=2
+else if(StatusAccount=A12 && Property=A124 && Age>41.0) (12/14)
+	output=2
+else if(StatusAccount=A11 && InstallmentRate>3.0 && Age<=42.0 && DurationMonth>24.0) (15/17)
+	output=2
+else if(StatusAccount=A11 && Age<=35.0 && InstallmentRate>2.0 && Purpose=A40) (19/21)
+	output=2
+else if(StatusAccount=A11 && CreditAmount>3905.0 && Age>30.0 && Housing=A152) (12/15)
+	output=2
+else if(StatusAccount=A12 && DurationMonth>20.0 && SavingsAccount=A61 && ResidenceSince>2.0) (19/26)
+	output=2
+else if(StatusAccount=A12 && EmploymentSince=A72 && Housing=A151) (12/16)
+	output=2
+else if(StatusAccount=A11 && DurationMonth>30.0 && Age<=34.0) (18/21)
+	output=2
+else if(Age<=34.0 && Purpose=A40 && InstallmentPlans=A141 && DurationMonth<=18.0) (5/5)
+	output=2
+else if(StatusAccount=A11 && DurationMonth>15.0 && CreditAmount<=2235.0 && EmploymentSince=A73) (14/14)
+	output=2
+else if(StatusAccount=A12 && DurationMonth>21.0 && CreditAmount>12204.0) (10/10)
+	output=2
+else if(CreditAmount>4151.0 && StatusAndSex=A92 && InstallmentPlans=A141) (7/9)
+	output=2
+else if(DurationMonth>15.0 && StatusAccount=A11 && CreditAmount<=2712.0 && Job=A173) (28/38)
+	output=2
+else if(SavingsAccount=A61 && CreditAmount>6110.0 && Age<=28.0 && StatusAccount=A14) (5/7)
+	output=2
+else if(CreditAmount>3913.0 && Purpose=A49 && DurationMonth>36.0) (10/13)
+	output=2
+else if(Age<=34.0 && StatusAccount=A13 && Property=A121 && DurationMonth>6.0 && Job=A172) (3/3)
+	output=2
+else if(DurationMonth>15.0 && CreditHistory=A33 && SavingsAccount=A61 && CreditAmount<=2538.0) (10/13)
+	output=2
+else if(Purpose=A46 && StatusAccount=A11) (9/12)
+	output=2
+else if(CreditAmount>3079.0 && EmploymentSince=A73 && Age>39.0 && DurationMonth<=18.0) (4/5)
+	output=2
+else if(StatusAccount=A11 && NCredits<=1.0 && Guarantors=A101 && DurationMonth>10.0 && CreditAmount<=1372.0 && ResidenceSince>2.0 && Age<=47.0) (12/16)
+	output=2
+else if(StatusAccount=A12 && Property=A122 && CreditAmount>4771.0 && ResidenceSince<=2.0) (6/7)
+	output=2
+else if(StatusAccount=A12 && Age<=34.0 && InstallmentRate<=2.0 && CreditAmount<=2762.0 && DurationMonth>13.0) (4/6)
+	output=2
+else if(StatusAccount=A12 && InstallmentRate>3.0 && CreditAmount>2899.0 && Age<=28.0) (8/8)
+	output=2
+else if(StatusAccount=A12 && ResidenceSince<=3.0 && NCredits>1.0 && Property=A124) (3/4)
+	output=2
+else if(StatusAccount=A12 && CreditAmount<=1512.0 && Property=A123 && SavingsAccount=A61 && Age>27.0) (6/9)
+	output=2
+else if(CreditHistory=A30 && InstallmentRate>3.0 && Age>27.0) (8/9)
+	output=2
+else if(Age<=31.0 && ResidenceSince<=2.0 && SavingsAccount=A61 && StatusAccount=A12 && InstallmentPlans=A142) (3/3)
+	output=2
+else if(Property=A122 && StatusAccount=A12 && EmploymentSince=A73 && InstallmentRate>1.0) (8/10)
+	output=2
+else if(CreditAmount>3104.0 && Age<=31.0 && InstallmentRate>1.0 && EmploymentSince=A73 && StatusAndSex=A92 && CreditHistory=A32) (6/7)
+	output=2
+else if(Age<=26.0 && ResidenceSince<=2.0 && DurationMonth>36.0) (8/8)
+	output=2
+else if(EmploymentSince=A72 && NCredits>1.0 && SavingsAccount=A62) (4/4)
+	output=2
+else if(DurationMonth>11.0 && CreditAmount<=947.0 && StatusAccount=A13 && InstallmentRate>3.0) (3/4)
+	output=2
+else if(CreditHistory=A32 && Guarantors=A102 && SavingsAccount=A61) (8/13)
+	output=2
+else if(Housing=A153 && EmploymentSince=A73 && CreditAmount<=2149.0 && NCredits<=1.0) (3/5)
+	output=2
+else if(StatusAndSex=A91 && Housing=A151 && DurationMonth<=21.0) (4/4)
+	output=2
+else if(Age<=26.0 && DurationMonth<=12.0 && Property=A122 && Purpose=A43) (2/2)
+	output=2
+else 
+	output=1

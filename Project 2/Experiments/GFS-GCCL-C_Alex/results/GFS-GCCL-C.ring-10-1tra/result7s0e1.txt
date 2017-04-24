@@ -1,0 +1,631 @@
+
+Rule base with 89 rules, 291 variables and 291 labels.
+-----------------------------------------------------------------------------------
+
+Rule 1:
+
+If "X13 is Label 2" then Class is 0 with certainty degree 0.6537649364244957
+
+Fitness: 295
+
+
+Rule 2:
+
+If "X10 is Label 2" then Class is 0 with certainty degree 0.6399548489319383
+
+Fitness: 280
+
+
+Rule 3:
+
+If "X8 is Label 2" then Class is 0 with certainty degree 0.6612008217417256
+
+Fitness: 280
+
+
+Rule 4:
+
+If "X18 is Label 2" then Class is 0 with certainty degree 0.8602244009485717
+
+Fitness: 254
+
+
+Rule 5:
+
+If "X3 is Label 2" then Class is 0 with certainty degree 0.5887805021451579
+
+Fitness: 246
+
+
+Rule 6:
+
+If "X15 is Label 2" then Class is 0 with certainty degree 0.5603094524385747
+
+Fitness: 226
+
+
+Rule 7:
+
+If "X2 is Label 2" then Class is 0 with certainty degree 0.5630679132150218
+
+Fitness: 201
+
+
+Rule 8:
+
+If "X14 is Label 2" then Class is 0 with certainty degree 0.5709789403154574
+
+Fitness: 199
+
+
+Rule 9:
+
+If "X9 is Label 2" then Class is 0 with certainty degree 0.5073371287744591
+
+Fitness: 178
+
+
+Rule 10:
+
+If "X17 is Label 2" then Class is 0 with certainty degree 0.49640333453198354
+
+Fitness: 174
+
+
+Rule 11:
+
+If "X4 is Label 3" and "X6 is Label 3" and "X17 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.4735295209325812
+
+Fitness: 114
+
+
+Rule 12:
+
+If "X4 is Label 2" then Class is 0 with certainty degree 0.4238676311002026
+
+Fitness: 112
+
+
+Rule 13:
+
+If "X4 is Label 3" and "X10 is Label 3" and "X14 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.44720603080635385
+
+Fitness: 104
+
+
+Rule 14:
+
+If "X3 is Label 3" and "X4 is Label 3" and "X12 is Label 3" and "X15 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.5530772195180478
+
+Fitness: 96
+
+
+Rule 15:
+
+If "X6 is Label 3" and "X15 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.4452840201708598
+
+Fitness: 88
+
+
+Rule 16:
+
+If "X2 is Label 3" and "X15 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.437416973066746
+
+Fitness: 85
+
+
+Rule 17:
+
+If "X2 is Label 3" and "X3 is Label 3" and "X4 is Label 3" and "X8 is Label 3" and "X15 is Label 3" then Class is 1 with certainty degree 0.5416904013105666
+
+Fitness: 81
+
+
+Rule 18:
+
+If "X6 is Label 3" and "X8 is Label 3" and "X14 is Label 3" and "X15 is Label 3" then Class is 1 with certainty degree 0.4235680364690651
+
+Fitness: 81
+
+
+Rule 19:
+
+If "X3 is Label 3" and "X11 is Label 3" and "X15 is Label 3" then Class is 1 with certainty degree 0.33166809865288827
+
+Fitness: 73
+
+
+Rule 20:
+
+If "X3 is Label 3" and "X4 is Label 3" and "X12 is Label 3" and "X15 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.5378558017644796
+
+Fitness: 71
+
+
+Rule 21:
+
+If "X4 is Label 3" and "X8 is Label 3" and "X14 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.5342352498290986
+
+Fitness: 68
+
+
+Rule 22:
+
+If "X2 is Label 3" and "X14 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.34379973877975134
+
+Fitness: 68
+
+
+Rule 23:
+
+If "X3 is Label 3" and "X4 is Label 3" and "X15 is Label 3" then Class is 1 with certainty degree 0.36596669119936837
+
+Fitness: 63
+
+
+Rule 24:
+
+If "X4 is Label 3" and "X14 is Label 3" and "X15 is Label 3" and "X16 is Label 3" then Class is 1 with certainty degree 0.45012362392983435
+
+Fitness: 61
+
+
+Rule 25:
+
+If "X14 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.33787089263710623
+
+Fitness: 60
+
+
+Rule 26:
+
+If "X4 is Label 3" and "X6 is Label 3" and "X12 is Label 3" and "X16 is Label 3" then Class is 1 with certainty degree 0.44599405161086186
+
+Fitness: 56
+
+
+Rule 27:
+
+If "X6 is Label 2" and "X14 is Label 3" then Class is 0 with certainty degree 0.4941058125582026
+
+Fitness: 55
+
+
+Rule 28:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X15 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.45963604375349676
+
+Fitness: 55
+
+
+Rule 29:
+
+If "X1 is Label 3" and "X10 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.33217379106178563
+
+Fitness: 55
+
+
+Rule 30:
+
+If "X4 is Label 3" and "X6 is Label 3" and "X15 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.45873548379993506
+
+Fitness: 55
+
+
+Rule 31:
+
+If "X4 is Label 3" and "X6 is Label 3" and "X12 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.4595584426789699
+
+Fitness: 53
+
+
+Rule 32:
+
+If "X4 is Label 3" and "X6 is Label 3" and "X10 is Label 3" and "X16 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.5427591510361515
+
+Fitness: 53
+
+
+Rule 33:
+
+If "X1 is Label 3" and "X2 is Label 3" and "X4 is Label 3" and "X6 is Label 3" then Class is 1 with certainty degree 0.44184697950519536
+
+Fitness: 52
+
+
+Rule 34:
+
+If "X4 is Label 3" and "X11 is Label 3" and "X15 is Label 3" and "X16 is Label 3" then Class is 1 with certainty degree 0.4439175360847454
+
+Fitness: 50
+
+
+Rule 35:
+
+If "X4 is Label 3" and "X6 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.46176164712691087
+
+Fitness: 49
+
+
+Rule 36:
+
+If "X8 is Label 3" and "X12 is Label 3" and "X15 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.4152184018772174
+
+Fitness: 49
+
+
+Rule 37:
+
+If "X13 is Label 5" then Class is 0 with certainty degree 0.9632637832563211
+
+Fitness: 48
+
+
+Rule 38:
+
+If "X4 is Label 3" and "X14 is Label 3" and "X15 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.5401145584100278
+
+Fitness: 47
+
+
+Rule 39:
+
+If "X8 is Label 3" and "X14 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.32608994906178157
+
+Fitness: 47
+
+
+Rule 40:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X6 is Label 3" and "X8 is Label 3" and "X14 is Label 3" then Class is 1 with certainty degree 0.5217568578656692
+
+Fitness: 46
+
+
+Rule 41:
+
+If "X2 is Label 3" and "X3 is Label 3" and "X6 is Label 3" then Class is 1 with certainty degree 0.33685566940282424
+
+Fitness: 46
+
+
+Rule 42:
+
+If "X19 is Label 5" then Class is 0 with certainty degree 0.7827838463340961
+
+Fitness: 46
+
+
+Rule 43:
+
+If "X2 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.3407849447030129
+
+Fitness: 46
+
+
+Rule 44:
+
+If "X6 is Label 3" and "X10 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.3464344498046632
+
+Fitness: 45
+
+
+Rule 45:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.3627314214750551
+
+Fitness: 45
+
+
+Rule 46:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X6 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.5413225417647545
+
+Fitness: 45
+
+
+Rule 47:
+
+If "X6 is Label 3" and "X15 is Label 3" and "X16 is Label 3" then Class is 1 with certainty degree 0.34585213464417686
+
+Fitness: 42
+
+
+Rule 48:
+
+If "X4 is Label 3" and "X15 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.4600476683780922
+
+Fitness: 42
+
+
+Rule 49:
+
+If "X4 is Label 3" and "X10 is Label 3" and "X12 is Label 3" and "X15 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.5319549940171787
+
+Fitness: 41
+
+
+Rule 50:
+
+If "X4 is Label 3" and "X11 is Label 2" then Class is 0 with certainty degree 0.5478732104751621
+
+Fitness: 41
+
+
+Rule 51:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X15 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.4500340808875843
+
+Fitness: 41
+
+
+Rule 52:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X8 is Label 3" and "X15 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.5348199349979071
+
+Fitness: 41
+
+
+Rule 53:
+
+If "X2 is Label 3" and "X3 is Label 3" and "X6 is Label 3" and "X7 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.5015730876359398
+
+Fitness: 41
+
+
+Rule 54:
+
+If "X4 is Label 3" and "X5 is Label 3" and "X10 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.43540543567469836
+
+Fitness: 40
+
+
+Rule 55:
+
+If "X4 is Label 3" and "X6 is Label 3" and "X15 is Label 3" and "X16 is Label 3" and "X17 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.63459878056485
+
+Fitness: 40
+
+
+Rule 56:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X10 is Label 3" and "X15 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.5340431703416635
+
+Fitness: 40
+
+
+Rule 57:
+
+If "X2 is Label 3" and "X3 is Label 3" and "X4 is Label 3" and "X7 is Label 3" and "X16 is Label 3" then Class is 1 with certainty degree 0.5128009722919088
+
+Fitness: 40
+
+
+Rule 58:
+
+If "X6 is Label 3" and "X15 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.34723195869592144
+
+Fitness: 40
+
+
+Rule 59:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X6 is Label 3" and "X10 is Label 3" and "X12 is Label 3" then Class is 1 with certainty degree 0.5121433848264045
+
+Fitness: 39
+
+
+Rule 60:
+
+If "X12 is Label 3" and "X15 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.42377899594855495
+
+Fitness: 39
+
+
+Rule 61:
+
+If "X4 is Label 3" and "X13 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.343277910833627
+
+Fitness: 39
+
+
+Rule 62:
+
+If "X4 is Label 3" and "X8 is Label 3" and "X16 is Label 3" then Class is 1 with certainty degree 0.35486708849811455
+
+Fitness: 38
+
+
+Rule 63:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X15 is Label 3" and "X16 is Label 3" then Class is 1 with certainty degree 0.4532155816923094
+
+Fitness: 37
+
+
+Rule 64:
+
+If "X4 is Label 3" and "X5 is Label 3" and "X10 is Label 3" and "X15 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.5192066510708329
+
+Fitness: 37
+
+
+Rule 65:
+
+If "X1 is Label 2" and "X14 is Label 2" then Class is 0 with certainty degree 0.8877880295597418
+
+Fitness: 37
+
+
+Rule 66:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X6 is Label 3" and "X13 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.5219578296816754
+
+Fitness: 37
+
+
+Rule 67:
+
+If "X4 is Label 3" and "X6 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.3769862584095839
+
+Fitness: 36
+
+
+Rule 68:
+
+If "X8 is Label 5" then Class is 0 with certainty degree 0.9521406102520831
+
+Fitness: 36
+
+
+Rule 69:
+
+If "X14 is Label 3" and "X15 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.33111872852325147
+
+Fitness: 35
+
+
+Rule 70:
+
+If "X7 is Label 2" and "X9 is Label 2" then Class is 0 with certainty degree 0.9431146206271616
+
+Fitness: 34
+
+
+Rule 71:
+
+If "X2 is Label 2" and "X4 is Label 2" then Class is 0 with certainty degree 0.8175382013795243
+
+Fitness: 34
+
+
+Rule 72:
+
+If "X4 is Label 3" and "X16 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.3643573803667048
+
+Fitness: 34
+
+
+Rule 73:
+
+If "X11 is Label 2" and "X16 is Label 2" then Class is 0 with certainty degree 0.8678289203403322
+
+Fitness: 33
+
+
+Rule 74:
+
+If "X4 is Label 3" and "X8 is Label 3" and "X17 is Label 3" then Class is 1 with certainty degree 0.3518182467669335
+
+Fitness: 33
+
+
+Rule 75:
+
+If "X6 is Label 2" and "X8 is Label 2" then Class is 0 with certainty degree 0.8967766888662715
+
+Fitness: 33
+
+
+Rule 76:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X6 is Label 3" and "X10 is Label 3" and "X15 is Label 3" then Class is 1 with certainty degree 0.5219462417153359
+
+Fitness: 32
+
+
+Rule 77:
+
+If "X1 is Label 2" and "X3 is Label 4" then Class is 0 with certainty degree 0.6788309777950551
+
+Fitness: 31
+
+
+Rule 78:
+
+If "X2 is Label 3" and "X11 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.3280762833406686
+
+Fitness: 30
+
+
+Rule 79:
+
+If "X1 is Label 5" then Class is 0 with certainty degree 0.9527760215733585
+
+Fitness: 30
+
+
+Rule 80:
+
+If "X4 is Label 1" then Class is 0 with certainty degree 0.9982774295420835
+
+Fitness: 30
+
+
+Rule 81:
+
+If "X3 is Label 3" and "X6 is Label 3" and "X12 is Label 3" and "X18 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.49296599196202534
+
+Fitness: 30
+
+
+Rule 82:
+
+If "X14 is Label 3" and "X17 is Label 3" and "X19 is Label 2" then Class is 0 with certainty degree 0.7275972530397096
+
+Fitness: 29
+
+
+Rule 83:
+
+If "X2 is Label 3" and "X4 is Label 3" and "X6 is Label 3" and "X16 is Label 3" then Class is 1 with certainty degree 0.45312958293593514
+
+Fitness: 28
+
+
+Rule 84:
+
+If "X4 is Label 3" and "X6 is Label 3" and "X10 is Label 3" and "X15 is Label 3" and "X16 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.6173087096783972
+
+Fitness: 27
+
+
+Rule 85:
+
+If "X4 is Label 3" and "X6 is Label 3" and "X19 is Label 3" and "X20 is Label 3" then Class is 1 with certainty degree 0.40971154636607293
+
+Fitness: 6
+
+
+Rule 86:
+
+If "X6 is Label 3" and "X9 is Label 5" and "X12 is Label 3" then Class is 0 with certainty degree 0.9998824446509639
+
+Fitness: 2
+
+
+Rule 87:
+
+If "X2 is Label 3" and "X6 is Label 1" and "X20 is Label 4" then Class is 0 with certainty degree 1.0
+
+Fitness: 2
+
+
+Rule 88:
+
+If "X3 is Label 4" and "X6 is Label 3" and "X19 is Label 2" then Class is 0 with certainty degree 0.7902268529682593
+
+Fitness: 2
+
+
+Rule 89:
+
+If "X3 is Label 2" and "X4 is Label 3" and "X5 is Label 2" and "X6 is Label 2" then Class is 0 with certainty degree 0.9574611910452636
+
+Fitness: 1
+
+
+
+Training Accuracy:	89.8048048048048%
+Test Accuracy:		89.45945945945945%
+

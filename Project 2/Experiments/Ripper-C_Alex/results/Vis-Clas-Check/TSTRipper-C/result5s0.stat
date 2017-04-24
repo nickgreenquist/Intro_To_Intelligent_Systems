@@ -1,0 +1,44 @@
+TEST RESULTS
+============
+Classifier= chess 
+Fold 0 : CORRECT=0.9875 N/C=0.0 
+Fold 1 : CORRECT=0.990625 N/C=0.0 
+Fold 2 : CORRECT=0.990625 N/C=0.0 
+Fold 3 : CORRECT=0.9875 N/C=0.0 
+Fold 4 : CORRECT=0.984375 N/C=0.0 
+Fold 5 : CORRECT=0.99375 N/C=0.0 
+Fold 6 : CORRECT=1.0 N/C=0.0 
+Fold 7 : CORRECT=1.0 N/C=0.0 
+Fold 8 : CORRECT=0.9968652037617555 N/C=0.0 
+Fold 9 : CORRECT=1.0 N/C=0.0 
+Global Classification Error + N/C:
+0.006875979623824452 
+stddev Global Classification Error + N/C:
+0.005554460951188885 
+Correctly classified:
+0.9931240203761755 
+Global N/C:
+0.0 
+
+TRAIN RESULTS
+============
+Classifier= chess 
+Summary of data, Classifiers: chess 
+Fold 0 : CORRECT=0.997913769123783 N/C=0.0 
+Fold 1 : CORRECT=0.9989568845618915 N/C=0.0 
+Fold 2 : CORRECT=0.9982614742698191 N/C=0.0 
+Fold 3 : CORRECT=0.997913769123783 N/C=0.0 
+Fold 4 : CORRECT=0.9993045897079277 N/C=0.0 
+Fold 5 : CORRECT=0.9982614742698191 N/C=0.0 
+Fold 6 : CORRECT=0.9996524157108099 N/C=0.0 
+Fold 7 : CORRECT=0.9975669099756691 N/C=0.0 
+Fold 8 : CORRECT=1.0 N/C=0.0 
+Fold 9 : CORRECT=0.9986096628432395 N/C=0.0 
+Global Classification Error + N/C:
+0.00135590504132579 
+stddev Global Classification Error + N/C:
+7.687874713752924E-4 
+Correctly classified:
+0.9986440949586742 
+Global N/C:
+0.0 

@@ -1,0 +1,83 @@
+@Number of Rules: 41
+if(Right-distance<=3.0 && Left-distance<=1.0 && Right-weight<=1.0 && Left-weight<=3.0) (3/7)
+	output=B
+else if(Right-distance>4.0 && Left-distance>4.0 && Right-weight<=4.0 && Left-weight<=3.0) (3/12)
+	output=B
+else if(Right-distance<=2.0 && Left-weight<=2.0 && Right-weight<=2.0 && Left-distance<=2.0) (6/15)
+	output=B
+else if(Left-weight<=2.0 && Right-distance<=2.0 && Right-weight>4.0 && Left-distance>4.0) (2/4)
+	output=B
+else if(Left-distance>3.0 && Right-distance>3.0 && Left-weight>3.0 && Right-weight>3.0) (6/15)
+	output=B
+else if(Left-weight<=2.0 && Right-distance<=2.0 && Left-distance<=4.0 && Right-weight<=2.0) (7/31)
+	output=B
+else if(Left-distance>4.0 && Right-distance>4.0 && Left-weight>1.0 && Right-weight>1.0) (4/15)
+	output=B
+else if(Left-weight<=1.0 && Right-weight<=1.0 && Right-distance>4.0 && Left-distance>3.0) (1/1)
+	output=B
+else if(Right-weight<=2.0 && Left-distance<=2.0 && Left-weight<=1.0 && Right-distance<=2.0) (3/8)
+	output=B
+else if(Right-weight>3.0 && Left-weight>4.0 && Left-distance>3.0 && Right-distance>3.0) (3/7)
+	output=B
+else if(Right-weight<=3.0 && Left-distance<=3.0 && Right-distance<=2.0 && Left-weight<=2.0) (8/35)
+	output=B
+else if(Left-weight>3.0 && Right-distance>3.0 && Left-distance>4.0 && Right-weight>4.0) (2/4)
+	output=B
+else if(Left-weight>3.0 && Left-distance<=3.0 && Right-distance>3.0 && Right-weight<=3.0) (6/35)
+	output=B
+else if(Right-distance<=3.0 && Right-weight>3.0 && Left-weight>3.0 && Left-distance<=3.0) (6/32)
+	output=B
+else if(Right-weight<=3.0 && Left-distance<=3.0 && Right-distance<=3.0 && Left-weight<=3.0) (14/75)
+	output=B
+else if(Right-weight>3.0 && Left-distance>3.0 && Left-weight<=3.0 && Right-distance<=3.0) (6/33)
+	output=B
+else if(Left-distance<=1.0 && Right-weight<=2.0 && Right-distance<=2.0 && Left-weight<=4.0) (4/14)
+	output=B
+else if(Left-distance>3.0 && Right-distance>3.0 && Left-weight>2.0 && Right-weight>2.0) (8/35)
+	output=B
+else if(Left-distance>2.0 && Left-weight>3.0 && Right-weight<=3.0 && Right-distance<=4.0) (64/65)
+	output=L
+else if(Right-distance<=2.0 && Left-weight>2.0 && Left-distance>2.0) (82/83)
+	output=L
+else if(Right-weight<=2.0 && Right-distance<=2.0 && Left-distance>1.0 && Left-weight>1.0) (56/57)
+	output=L
+else if(Right-weight<=1.0 && Left-distance>2.0 && Right-distance<=4.0) (50/50)
+	output=L
+else if(Right-distance<=1.0 && Left-weight>1.0 && Left-distance>1.0) (74/74)
+	output=L
+else if(Right-weight<=2.0 && Left-weight>2.0 && Left-distance>1.0) (97/102)
+	output=L
+else if(Left-distance>3.0 && Right-distance<=3.0 && Left-weight>2.0 && Right-weight<=4.0) (63/64)
+	output=L
+else if(Right-distance<=3.0 && Right-weight<=3.0 && Left-weight>3.0) (75/82)
+	output=L
+else if(Left-distance>3.0 && Left-weight>3.0 && Right-weight<=4.0) (67/71)
+	output=L
+else if(Left-distance>2.0 && Right-weight<=2.0 && Left-weight>2.0) (77/77)
+	output=L
+else if(Left-distance>3.0 && Right-distance<=2.0 && Right-weight<=4.0 && Left-weight>1.0) (58/59)
+	output=L
+else if(Left-distance>4.0 && Left-weight>3.0) (42/46)
+	output=L
+else if(Right-distance<=1.0 && Right-weight<=2.0) (43/47)
+	output=L
+else if(Left-distance>4.0 && Right-weight<=3.0 && Left-weight>2.0) (39/40)
+	output=L
+else if(Left-distance>3.0 && Right-distance<=1.0) (44/47)
+	output=L
+else if(Right-distance<=3.0 && Left-distance>3.0 && Left-weight>2.0) (79/82)
+	output=L
+else if(Right-weight<=1.0 && Left-weight>1.0 && Left-distance>1.0) (67/68)
+	output=L
+else if(Right-weight<=2.0 && Left-distance>3.0 && Left-weight>1.0) (68/70)
+	output=L
+else if(Left-weight>4.0 && Right-distance<=1.0) (23/24)
+	output=L
+else if(Right-weight<=1.0 && Left-weight>4.0) (21/22)
+	output=L
+else if(Left-distance>4.0 && Right-weight<=2.0 && Right-distance<=2.0) (19/19)
+	output=L
+else if(Left-distance>4.0 && Left-weight>1.0 && Right-weight<=3.0 && Right-distance<=3.0) (33/33)
+	output=L
+else 
+	output=R
