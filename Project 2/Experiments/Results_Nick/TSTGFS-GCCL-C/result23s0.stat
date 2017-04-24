@@ -1,0 +1,44 @@
+TEST RESULTS
+============
+Classifier= splice 
+Fold 0 : CORRECT=0.0 N/C=1.0 
+Fold 1 : CORRECT=0.0 N/C=1.0 
+Fold 2 : CORRECT=0.0 N/C=1.0 
+Fold 3 : CORRECT=0.0 N/C=1.0 
+Fold 4 : CORRECT=0.0 N/C=1.0 
+Fold 5 : CORRECT=0.0 N/C=1.0 
+Fold 6 : CORRECT=0.0 N/C=1.0 
+Fold 7 : CORRECT=0.0 N/C=1.0 
+Fold 8 : CORRECT=0.0 N/C=1.0 
+Fold 9 : CORRECT=0.0 N/C=1.0 
+Global Classification Error + N/C:
+1.0 
+stddev Global Classification Error + N/C:
+0.0 
+Correctly classified:
+0.0 
+Global N/C:
+1.0 
+
+TRAIN RESULTS
+============
+Classifier= splice 
+Summary of data, Classifiers: splice 
+Fold 0 : CORRECT=0.0 N/C=1.0 
+Fold 1 : CORRECT=0.0 N/C=1.0 
+Fold 2 : CORRECT=0.0 N/C=1.0 
+Fold 3 : CORRECT=0.0 N/C=1.0 
+Fold 4 : CORRECT=0.0 N/C=1.0 
+Fold 5 : CORRECT=0.0 N/C=1.0 
+Fold 6 : CORRECT=0.0 N/C=1.0 
+Fold 7 : CORRECT=0.0 N/C=1.0 
+Fold 8 : CORRECT=0.0 N/C=1.0 
+Fold 9 : CORRECT=0.0 N/C=1.0 
+Global Classification Error + N/C:
+1.0 
+stddev Global Classification Error + N/C:
+0.0 
+Correctly classified:
+0.0 
+Global N/C:
+1.0 

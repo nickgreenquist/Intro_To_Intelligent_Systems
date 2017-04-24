@@ -1,0 +1,44 @@
+TEST RESULTS
+============
+Classifier= german 
+Fold 0 : CORRECT=0.6799999999999999 N/C=0.0 
+Fold 1 : CORRECT=0.61 N/C=0.0 
+Fold 2 : CORRECT=0.6699999999999999 N/C=0.0 
+Fold 3 : CORRECT=0.69 N/C=0.0 
+Fold 4 : CORRECT=0.76 N/C=0.0 
+Fold 5 : CORRECT=0.6799999999999999 N/C=0.0 
+Fold 6 : CORRECT=0.6699999999999999 N/C=0.0 
+Fold 7 : CORRECT=0.61 N/C=0.0 
+Fold 8 : CORRECT=0.62 N/C=0.0 
+Fold 9 : CORRECT=0.62 N/C=0.0 
+Global Classification Error + N/C:
+0.339 
+stddev Global Classification Error + N/C:
+0.04482186966203006 
+Correctly classified:
+0.661 
+Global N/C:
+0.0 
+
+TRAIN RESULTS
+============
+Classifier= german 
+Summary of data, Classifiers: german 
+Fold 0 : CORRECT=0.8677777777777778 N/C=0.0 
+Fold 1 : CORRECT=0.8522222222222222 N/C=0.0 
+Fold 2 : CORRECT=0.8722222222222222 N/C=0.0 
+Fold 3 : CORRECT=0.8788888888888888 N/C=0.0 
+Fold 4 : CORRECT=0.8755555555555555 N/C=0.0 
+Fold 5 : CORRECT=0.8811111111111111 N/C=0.0 
+Fold 6 : CORRECT=0.8511111111111112 N/C=0.0 
+Fold 7 : CORRECT=0.8822222222222222 N/C=0.0 
+Fold 8 : CORRECT=0.8555555555555556 N/C=0.0 
+Fold 9 : CORRECT=0.8422222222222222 N/C=0.0 
+Global Classification Error + N/C:
+0.13411111111111113 
+stddev Global Classification Error + N/C:
+0.013699148392022728 
+Correctly classified:
+0.8658888888888889 
+Global N/C:
+0.0 
