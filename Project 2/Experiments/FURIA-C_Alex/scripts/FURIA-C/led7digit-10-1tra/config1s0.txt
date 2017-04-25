@@ -1,7 +1,0 @@
-algorithm = FURIA
-inputData = "../datasets/led7digit-10-1tra/led7digit-10-1tra-10-2tra.dat" "../datasets/led7digit-10-1tra/led7digit-10-1tra-10-2tra.dat" "../datasets/led7digit-10-1tra/led7digit-10-1tra-10-2tst.dat" 
-outputData = "../results/FURIA-C.led7digit-10-1tra/result1s0.tra" "../results/FURIA-C.led7digit-10-1tra/result1s0.tst" "../results/FURIA-C.led7digit-10-1tra/result1s0e0.txt"  
-
-seed = 1286082570
-Number of Optimizations = 2
-Number of folds = 3

@@ -1,8 +1,0 @@
-algorithm = Fuzzy Rule Learning Model by the Chi et al. approach with rule weights
-inputData = "../datasets/balance-10-1tra/balance-10-1tra-10-1tra.dat" "../datasets/balance-10-1tra/balance-10-1tra-10-1tra.dat" "../datasets/balance-10-1tra/balance-10-1tra-10-1tst.dat" 
-outputData = "../results/Chi-RW-C.balance-10-1tra/result0.tra" "../results/Chi-RW-C.balance-10-1tra/result0.tst" "../results/Chi-RW-C.balance-10-1tra/result0e0.txt"  "../results/Chi-RW-C.balance-10-1tra/result0e1.txt"  
-
-Number of Labels = 3
-T-norm for the Computation of the Compatibility Degree = Product
-Rule Weight = Penalized_Certainty_Factor
-Fuzzy Reasoning Method = Winning_Rule

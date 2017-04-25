@@ -1,7 +1,0 @@
-algorithm = FURIA
-inputData = "../datasets/coil2000-10-1tra/coil2000-10-1tra-10-4tra.dat" "../datasets/coil2000-10-1tra/coil2000-10-1tra-10-4tra.dat" "../datasets/coil2000-10-1tra/coil2000-10-1tra-10-4tst.dat" 
-outputData = "../results/FURIA-C.coil2000-10-1tra/result3s0.tra" "../results/FURIA-C.coil2000-10-1tra/result3s0.tst" "../results/FURIA-C.coil2000-10-1tra/result3s0e0.txt"  
-
-seed = 1286082570
-Number of Optimizations = 2
-Number of folds = 3

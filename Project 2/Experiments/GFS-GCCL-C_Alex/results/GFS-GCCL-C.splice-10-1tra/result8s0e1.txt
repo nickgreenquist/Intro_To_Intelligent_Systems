@@ -1,8 +1,0 @@
-
-Rule base with 0 rules, 0 variables and 0 labels.
------------------------------------------------------------------------------------
-
-
-Training Accuracy:	0.0%
-Test Accuracy:		0.0%
-

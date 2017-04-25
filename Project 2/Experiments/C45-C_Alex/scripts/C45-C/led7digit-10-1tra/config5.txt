@@ -1,7 +1,0 @@
-algorithm = C4.5 Decision Tree
-inputData = "../datasets/led7digit-10-1tra/led7digit-10-1tra-10-6tra.dat" "../datasets/led7digit-10-1tra/led7digit-10-1tra-10-6tra.dat" "../datasets/led7digit-10-1tra/led7digit-10-1tra-10-6tst.dat" 
-outputData = "../results/C45-C.led7digit-10-1tra/result5.tra" "../results/C45-C.led7digit-10-1tra/result5.tst" "../results/C45-C.led7digit-10-1tra/result5e0.txt"  
-
-pruned = TRUE
-confidence = 0.25
-instancesPerLeaf = 2

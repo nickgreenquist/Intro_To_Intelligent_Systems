@@ -1,7 +1,0 @@
-algorithm = FURIA
-inputData = "../datasets/german-10-1tra/german-10-1tra-10-7tra.dat" "../datasets/german-10-1tra/german-10-1tra-10-7tra.dat" "../datasets/german-10-1tra/german-10-1tra-10-7tst.dat" 
-outputData = "../results/FURIA-C.german-10-1tra/result6s0.tra" "../results/FURIA-C.german-10-1tra/result6s0.tst" "../results/FURIA-C.german-10-1tra/result6s0e0.txt"  
-
-seed = 1286082570
-Number of Optimizations = 2
-Number of folds = 3

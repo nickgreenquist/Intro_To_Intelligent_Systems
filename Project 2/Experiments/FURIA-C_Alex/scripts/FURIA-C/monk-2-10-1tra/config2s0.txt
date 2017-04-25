@@ -1,7 +1,0 @@
-algorithm = FURIA
-inputData = "../datasets/monk-2-10-1tra/monk-2-10-1tra-10-3tra.dat" "../datasets/monk-2-10-1tra/monk-2-10-1tra-10-3tra.dat" "../datasets/monk-2-10-1tra/monk-2-10-1tra-10-3tst.dat" 
-outputData = "../results/FURIA-C.monk-2-10-1tra/result2s0.tra" "../results/FURIA-C.monk-2-10-1tra/result2s0.tst" "../results/FURIA-C.monk-2-10-1tra/result2s0e0.txt"  
-
-seed = 1286082570
-Number of Optimizations = 2
-Number of folds = 3

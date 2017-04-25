@@ -1,7 +1,0 @@
-algorithm = C4.5 Decision Tree
-inputData = "../datasets/vowel-10-1tra/vowel-10-1tra-10-10tra.dat" "../datasets/vowel-10-1tra/vowel-10-1tra-10-10tra.dat" "../datasets/vowel-10-1tra/vowel-10-1tra-10-10tst.dat" 
-outputData = "../results/C45-C.vowel-10-1tra/result9.tra" "../results/C45-C.vowel-10-1tra/result9.tst" "../results/C45-C.vowel-10-1tra/result9e0.txt"  
-
-pruned = TRUE
-confidence = 0.25
-instancesPerLeaf = 2

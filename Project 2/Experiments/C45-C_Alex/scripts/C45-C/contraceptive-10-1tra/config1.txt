@@ -1,7 +1,0 @@
-algorithm = C4.5 Decision Tree
-inputData = "../datasets/contraceptive-10-1tra/contraceptive-10-1tra-10-2tra.dat" "../datasets/contraceptive-10-1tra/contraceptive-10-1tra-10-2tra.dat" "../datasets/contraceptive-10-1tra/contraceptive-10-1tra-10-2tst.dat" 
-outputData = "../results/C45-C.contraceptive-10-1tra/result1.tra" "../results/C45-C.contraceptive-10-1tra/result1.tst" "../results/C45-C.contraceptive-10-1tra/result1e0.txt"  
-
-pruned = TRUE
-confidence = 0.25
-instancesPerLeaf = 2

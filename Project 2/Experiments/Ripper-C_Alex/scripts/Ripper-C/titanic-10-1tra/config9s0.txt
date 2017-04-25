@@ -1,7 +1,0 @@
-algorithm = Ripper
-inputData = "../datasets/titanic-10-1tra/titanic-10-1tra-10-10tra.dat" "../datasets/titanic-10-1tra/titanic-10-1tra-10-10tra.dat" "../datasets/titanic-10-1tra/titanic-10-1tra-10-10tst.dat" 
-outputData = "../results/Ripper-C.titanic-10-1tra/result9s0.tra" "../results/Ripper-C.titanic-10-1tra/result9s0.tst" "../results/Ripper-C.titanic-10-1tra/result9s0e0.txt"  
-
-seed = 1286082570
-grow_pct = 0.66
-K = 2

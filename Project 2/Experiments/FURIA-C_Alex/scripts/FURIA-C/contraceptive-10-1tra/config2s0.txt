@@ -1,7 +1,0 @@
-algorithm = FURIA
-inputData = "../datasets/contraceptive-10-1tra/contraceptive-10-1tra-10-3tra.dat" "../datasets/contraceptive-10-1tra/contraceptive-10-1tra-10-3tra.dat" "../datasets/contraceptive-10-1tra/contraceptive-10-1tra-10-3tst.dat" 
-outputData = "../results/FURIA-C.contraceptive-10-1tra/result2s0.tra" "../results/FURIA-C.contraceptive-10-1tra/result2s0.tst" "../results/FURIA-C.contraceptive-10-1tra/result2s0e0.txt"  
-
-seed = 1286082570
-Number of Optimizations = 2
-Number of folds = 3

@@ -1,7 +1,0 @@
-algorithm = FURIA
-inputData = "../datasets/lymphography-10-1tra/lymphography-10-1tra-10-1tra.dat" "../datasets/lymphography-10-1tra/lymphography-10-1tra-10-1tra.dat" "../datasets/lymphography-10-1tra/lymphography-10-1tra-10-1tst.dat" 
-outputData = "../results/FURIA-C.lymphography-10-1tra/result0s0.tra" "../results/FURIA-C.lymphography-10-1tra/result0s0.tst" "../results/FURIA-C.lymphography-10-1tra/result0s0e0.txt"  
-
-seed = 1286082570
-Number of Optimizations = 2
-Number of folds = 3
