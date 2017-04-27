@@ -1,0 +1,149 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{lscape}
+\title{Output tables for the test of Multiple comparisons.}
+\author{}
+\date{\today}
+\begin{document}
+\pagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+\section{Average rankings of Friedman test}
+
+
+
+Average ranks obtained by applying the Friedman procedure
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|}\hline
+Algorithm&Ranking\\\hline
+ AdaBoost.NC  & 4.9\\
+ C45  & 2.8\\
+ Chi-RW  & 5.5167\\
+ FURIA  & 1.8833\\
+ GAssist-Intervalar  & 3.4167\\
+ GFS-GCCL  & 5.0667\\
+ Ripper & 4.4167\\
+\hline
+\end{tabular}
+\caption{Average Rankings of the algorithms}
+\end{table}
+
+Friedman statistic considering reduction performance (distributed according to chi-square with 6 degrees of freedom: 68.671429.
+
+P-value computed by Friedman Test: 5.101452593692102E-11.\newline
+
+
+
+\pagebreak
+
+\section{Post hoc comparisons}
+
+Results achieved on post hoc comparisons for $\alpha = 0.05$, $\alpha = 0.10$ and adjusted p-values.
+
+\subsection{P-values for $\alpha=0.05$}
+
+\begin{table}[!htp]
+\centering\scriptsize
+\begin{tabular}{cccccc}
+$i$&algorithms&$z=(R_0 - R_i)/SE$&$p$&Holm&Shaffer\\
+\hline21& Chi-RW  vs.  FURIA &6.513996&0&0.002381&0.002381\\
+20& FURIA  vs.  GFS-GCCL &5.707217&0&0.0025&0.003333\\
+19& AdaBoost.NC  vs.  FURIA &5.408409&0&0.002632&0.003333\\
+18& C45  vs.  Chi-RW &4.870557&0.000001&0.002778&0.003333\\
+17& FURIA  vs.  Ripper&4.541869&0.000006&0.002941&0.003333\\
+16& C45  vs.  GFS-GCCL &4.063777&0.000048&0.003125&0.003333\\
+15& Chi-RW  vs.  GAssist-Intervalar &3.76497&0.000167&0.003333&0.003333\\
+14& AdaBoost.NC  vs.  C45 &3.76497&0.000167&0.003571&0.004545\\
+13& GAssist-Intervalar  vs.  GFS-GCCL &2.958191&0.003095&0.003846&0.004545\\
+12& C45  vs.  Ripper&2.898429&0.00375&0.004167&0.004545\\
+11& FURIA  vs.  GAssist-Intervalar &2.749026&0.005977&0.004545&0.004545\\
+10& AdaBoost.NC  vs.  GAssist-Intervalar &2.659384&0.007828&0.005&0.005\\
+9& Chi-RW  vs.  Ripper&1.972127&0.048595&0.005556&0.005556\\
+8& GAssist-Intervalar  vs.  Ripper&1.792843&0.072998&0.00625&0.00625\\
+7& C45  vs.  FURIA &1.643439&0.100292&0.007143&0.007143\\
+6& GFS-GCCL  vs.  Ripper&1.165348&0.243878&0.008333&0.008333\\
+5& AdaBoost.NC  vs.  Chi-RW &1.105586&0.268906&0.01&0.01\\
+4& C45  vs.  GAssist-Intervalar &1.105586&0.268906&0.0125&0.0125\\
+3& AdaBoost.NC  vs.  Ripper&0.866541&0.386194&0.016667&0.016667\\
+2& Chi-RW  vs.  GFS-GCCL &0.806779&0.419794&0.025&0.025\\
+1& AdaBoost.NC  vs.  GFS-GCCL &0.298807&0.765087&0.05&0.05\\
+\hline
+\end{tabular}
+\caption{P-values Table for $\alpha=0.05$}
+\end{table}Holm's procedure rejects those hypotheses that have an unadjusted p-value $\le0.004545$.
+
+Shaffer's procedure rejects those hypotheses that have an unadjusted p-value $\le0.002381$.
+
+\pagebreak
+
+\subsection{P-values for $\alpha=0.10$}
+
+\begin{table}[!htp]
+\centering\scriptsize
+\begin{tabular}{cccccc}
+$i$&algorithms&$z=(R_0 - R_i)/SE$&$p$&Holm&Shaffer\\
+\hline21& Chi-RW  vs.  FURIA &6.513996&0&0.004762&0.004762\\
+20& FURIA  vs.  GFS-GCCL &5.707217&0&0.005&0.006667\\
+19& AdaBoost.NC  vs.  FURIA &5.408409&0&0.005263&0.006667\\
+18& C45  vs.  Chi-RW &4.870557&0.000001&0.005556&0.006667\\
+17& FURIA  vs.  Ripper&4.541869&0.000006&0.005882&0.006667\\
+16& C45  vs.  GFS-GCCL &4.063777&0.000048&0.00625&0.006667\\
+15& Chi-RW  vs.  GAssist-Intervalar &3.76497&0.000167&0.006667&0.006667\\
+14& AdaBoost.NC  vs.  C45 &3.76497&0.000167&0.007143&0.009091\\
+13& GAssist-Intervalar  vs.  GFS-GCCL &2.958191&0.003095&0.007692&0.009091\\
+12& C45  vs.  Ripper&2.898429&0.00375&0.008333&0.009091\\
+11& FURIA  vs.  GAssist-Intervalar &2.749026&0.005977&0.009091&0.009091\\
+10& AdaBoost.NC  vs.  GAssist-Intervalar &2.659384&0.007828&0.01&0.01\\
+9& Chi-RW  vs.  Ripper&1.972127&0.048595&0.011111&0.011111\\
+8& GAssist-Intervalar  vs.  Ripper&1.792843&0.072998&0.0125&0.0125\\
+7& C45  vs.  FURIA &1.643439&0.100292&0.014286&0.014286\\
+6& GFS-GCCL  vs.  Ripper&1.165348&0.243878&0.016667&0.016667\\
+5& AdaBoost.NC  vs.  Chi-RW &1.105586&0.268906&0.02&0.02\\
+4& C45  vs.  GAssist-Intervalar &1.105586&0.268906&0.025&0.025\\
+3& AdaBoost.NC  vs.  Ripper&0.866541&0.386194&0.033333&0.033333\\
+2& Chi-RW  vs.  GFS-GCCL &0.806779&0.419794&0.05&0.05\\
+1& AdaBoost.NC  vs.  GFS-GCCL &0.298807&0.765087&0.1&0.1\\
+\hline
+\end{tabular}
+\caption{P-values Table for $\alpha=0.10$}
+\end{table}Holm's procedure rejects those hypotheses that have an unadjusted p-value $\le0.011111$.
+
+Shaffer's procedure rejects those hypotheses that have an unadjusted p-value $\le0.004762$.
+
+\pagebreak
+
+\subsection{Adjusted p-values}
+
+\begin{table}[!htp]
+\centering\scriptsize
+\begin{tabular}{ccccc}
+i&hypothesis&unadjusted $p$&$p_{Holm}$&$p_{Shaf}$\\
+\hline1& Chi-RW  vs . FURIA &0&0&0\\
+2& FURIA  vs . GFS-GCCL &0&0&0\\
+3& AdaBoost.NC  vs . FURIA &0&0.000001&0.000001\\
+4& C45  vs . Chi-RW &0.000001&0.00002&0.000017\\
+5& FURIA  vs . Ripper&0.000006&0.000095&0.000084\\
+6& C45  vs . GFS-GCCL &0.000048&0.000773&0.000724\\
+7& Chi-RW  vs . GAssist-Intervalar &0.000167&0.002499&0.002499\\
+8& AdaBoost.NC  vs . C45 &0.000167&0.002499&0.002499\\
+9& GAssist-Intervalar  vs . GFS-GCCL &0.003095&0.040229&0.03404\\
+10& C45  vs . Ripper&0.00375&0.045004&0.041254\\
+11& FURIA  vs . GAssist-Intervalar &0.005977&0.06575&0.06575\\
+12& AdaBoost.NC  vs . GAssist-Intervalar &0.007828&0.078284&0.078284\\
+13& Chi-RW  vs . Ripper&0.048595&0.437356&0.437356\\
+14& GAssist-Intervalar  vs . Ripper&0.072998&0.583984&0.510986\\
+15& C45  vs . FURIA &0.100292&0.702044&0.702044\\
+16& GFS-GCCL  vs . Ripper&0.243878&1.463269&1.463269\\
+17& AdaBoost.NC  vs . Chi-RW &0.268906&1.463269&1.463269\\
+18& C45  vs . GAssist-Intervalar &0.268906&1.463269&1.463269\\
+19& AdaBoost.NC  vs . Ripper&0.386194&1.463269&1.463269\\
+20& Chi-RW  vs . GFS-GCCL &0.419794&1.463269&1.463269\\
+21& AdaBoost.NC  vs . GFS-GCCL &0.765087&1.463269&1.463269\\
+\hline
+\end{tabular}
+\caption{Adjusted $p$-values}
+\end{table}
+
+\end{document}
